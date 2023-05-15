@@ -17,6 +17,7 @@
         @vite("resources/js/app.js")
     </head>
     <body>
+        <x-include.header></x-include.header>
         <div class="container">
             
             <div class="swiper">
@@ -41,7 +42,7 @@
             <hr />
             <div class="map-container">
             </div>
-            <x-ui.buttons.button class="someclass" type="sumbit" message="Узнать больше" ></x-ui.buttons.button>
+            {{-- <x-ui.buttons.button class="someclass" type="sumbit" message="Узнать больше" ></x-ui.buttons.button> --}}
             {{-- <script src="https://api-maps.yandex.ru/3.0/?apikey=<API-ключ>&lang=ru_RU"></script> --}}
             {{-- <script src="https://api-maps.yandex.ru/2.1/?apikey=8a5d8b7a-70b0-42fd-9967-2a17d163ce055&lang=ru_RU"></script> --}}
         </div>
