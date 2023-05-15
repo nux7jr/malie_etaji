@@ -374,3 +374,11 @@ footer {
 }
 @media (max-width: 768px) {
 }
+
+
+
+/*MORTGAGE CALCULATOR*/
+form.mortgage-calculator {
+    display: flex;
+    flex-direction: row;
+}
