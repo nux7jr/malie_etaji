@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
         
 
-        <!-- Styles --> 
+        <!-- Boundle --> 
         @vite("resources/css/app.css")
         @vite("resources/js/app.js")
     </head>
@@ -41,6 +41,7 @@
             <hr />
             <div class="map-container">
             </div>
+            <x-ui.buttons.button class="someclass" type="sumbit" message="Узнать больше" ></x-ui.buttons.button>
             {{-- <script src="https://api-maps.yandex.ru/3.0/?apikey=<API-ключ>&lang=ru_RU"></script> --}}
             {{-- <script src="https://api-maps.yandex.ru/2.1/?apikey=8a5d8b7a-70b0-42fd-9967-2a17d163ce055&lang=ru_RU"></script> --}}
         </div>
