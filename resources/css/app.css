@@ -110,3 +110,11 @@ a {
         max-width: 1100px;
     }
 }
+
+
+
+/*MORTGAGE CALCULATOR*/
+form.mortgage-calculator {
+    display: flex;
+    flex-direction: row;
+}
