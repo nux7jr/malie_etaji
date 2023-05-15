@@ -29,6 +29,6 @@
 </div>
 
 
-<div class="watermarks">Smart Core | {{ now()->year }} | alpha | {{ App::VERSION() }} </div>
+<x-include.footer></x-include.footer>
 </body>
 </html>
