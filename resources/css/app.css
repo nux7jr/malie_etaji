@@ -30,6 +30,7 @@ ul,
 li {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 a {
     text-decoration: none;
@@ -37,6 +38,24 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+}
+h1,
+h2,
+h3,
+p,
+small,
+span {
+    margin: 0;
+}
+a {
+    display: block;
 }
 /* map */
 .map-container {

@@ -42,6 +42,9 @@
             <div class="map-container">
                 
             </div>
+            <hr>
+            <button class="to">asdasd</button>
+            <button class="fo">asdasd</button>
             {{-- <script src="https://api-maps.yandex.ru/3.0/?apikey=<ваш API-ключ>&lang=ru_RU"></script> --}}
             {{-- <script src="https://api-maps.yandex.ru/2.1/?apikey=8a5d8b7a-70b0-42fd-9967-2a17d163ce055&lang=ru_RU"></script> --}}
         </div>
