@@ -19,7 +19,7 @@
     @vite("resources/js/app.js")
 </head>
 <body>
-<div>HEADER</div>
+<x-include.header></x-include.header>
 <div id="app" class="app">
     <div class="container">
         <div class="main-page">

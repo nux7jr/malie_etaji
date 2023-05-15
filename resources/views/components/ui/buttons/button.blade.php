@@ -1,3 +1,5 @@
-<button class="default__button {{$class}}" type="{{ $type }}" >
-    {{ $message }}
+<button {{$attributes->class([
+    'default__button'
+])}} type="{{$attributes->get('type')}}" >
+    {{ $slot }}
 </button>
