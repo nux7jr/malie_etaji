@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('components.home.index');
+    return view('home.index');
 });
-
-Route::get('/house_card', function (){
-    return view('components.cards.house-card');
+Route::get('/projects', function () {
+    return view('projects.index');
+});
+Route::get('/house_card', function () {
+    return view('cards.house-card');
 });
