@@ -1,5 +1,5 @@
 import "./bootstrap";
 import "./swipers_config";
 import "./map";
-import "./main";
+import "./menu";
 import "../css/app.css";
