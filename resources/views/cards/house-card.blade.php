@@ -1,11 +1,11 @@
 @extends('layouts.base')
 @vite("resources/css/temp.css")
 @section('head')
-
+    @vite("resources/css/house_card.css")
 @endsection
 @section('content')
 <section>
-    <h1>{{__('Ипотечный калькулятор')}}</h1>
+    <h1 class="section_heading">{{__('Ипотечный калькулятор')}}</h1>
 
     <x-calcus.form-mortgage-calculator>
         <div class="mortgage-calculator-left block">
@@ -57,7 +57,7 @@
             </x-ui.buttons.button>
         </div>
         <div class="mortgage-calculator-middle block">
-            <h2>{{__('Стандартная ипотека')}}</h2>
+            <h2 class="block__heading">{{__('Стандартная ипотека')}}</h2>
             <x-text.two-labels-in-card
                 label="{{__('Процентная ставка')}}"
                 first="{{$first = '4,8%'}}"
@@ -66,25 +66,26 @@
             </x-text.two-labels-in-card>
             <x-text.two-labels-in-card
                 label="{{__('Ежемесячный платеж')}}">
-                {{$mount_payment = __('6 689 ₽')}}
+                <h2>{{$mount_payment = __('6 689 ₽')}}</h2>
             </x-text.two-labels-in-card>
             <x-text.two-labels-in-card
                 label="{{__('Сумма кредита')}}">
-                {{$credit_summary = __('1 275 000 ₽')}}
+                <h2>{{$credit_summary = __('1 275 000 ₽')}}</h2>
             </x-text.two-labels-in-card>
             <x-text.two-labels-in-card
                 label="{{__('Налоговый вычет')}}"
                 tooltip="{{__('Подсказка')}}">
-                {{$tax = __('342 317 ₽')}}
+                <h2>{{$tax = __('342 317 ₽')}}</h2>
             </x-text.two-labels-in-card>
             <x-text.two-labels-in-card
                 label="{{__('Необходимый доход')}}"
                 tooltip="{{__('Подсказка')}}">
-                {{$needed_cash_flow = __('25 000 ₽')}}
+                <h2>{{$needed_cash_flow = __('25 000 ₽')}}</h2>
             </x-text.two-labels-in-card>
         </div>
         <div class="mortgage-calculator-right block">
             right content
+            <x-ui.inputs.radio name="toggle" checked="true"></x-ui.inputs.radio>
         </div>
     </x-calcus.form-mortgage-calculator>
 </section>

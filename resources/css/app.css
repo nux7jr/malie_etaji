@@ -357,6 +357,123 @@ footer {
     gap: 30px;
     margin-top: 13px;
 }
+
+/*INPUTS*/
+.switch{
+    position: relative;
+    background-color: var(--color-gray);
+    transition: 0.3s;
+
+    width: 77px;
+    height: 24px;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+}
+.switch label.radio{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    background-color: #ffffff;
+    border-radius: 70px;
+}
+.switch input[type="checkbox"]{
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.switch .slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    transition: 0.3s;
+}
+.switch:has(> input[type="checkbox"]:checked) > label{
+    transition: 0.3s;
+    transform: translateX(53px);
+}
+.switch:has(> input[type="checkbox"]:checked){
+    background-color: var(--color-red);
+    transition: 0.3s;
+}
+
+/*END INPUTS*/
+/*COMPONENTS*/
+.standart-two-lables {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.standart-two-lables div{
+    display: flex;
+    flex-direction: row;
+}
+
+.standart-two-lables div span{
+    margin-left: 10px;
+}
+
+.standart-two-lables div span{
+    margin-left: 10px;
+}
+
+.standart-two-lables h2{
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--color-black);
+}
+.standart-two-lables .red_color{
+    color: var(--color-red);
+}
+
+.standart-two-lables span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration-line: line-through;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: var(--color-grayest);
+}
+.standart-two-lables h4{
+    margin: 0 0 10px 0;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    color: var(--color-grayest);
+}
+
+.standart-two-lables img{
+    width: 15px;
+    height: 15px;
+}
+
+.standart-two-lables .htooltip{
+    margin-left: 11.5px;
+}
+/*END COMPONENTS*/
 /* for media */
 
 section,
@@ -384,111 +501,4 @@ footer {
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
-}
-
-/*MORTGAGE CALCULATOR*/
-form.mortgage-calculator {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-form.mortgage-calculator .block{
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    min-width: 507px;
-}
-
-#mortgage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 16px 20px;
-    margin-bottom: 10px;
-    gap: 15px;
-    border-radius: 70px;
-}
-
-.calcus-left-text{
-    background-color: #FEEDEE;
-    border-radius: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px;
-    margin-bottom: 30px;
-    gap: 10px;
-
-    font-size: 16px;
-}
-.calcus-left-text li {
-    list-style: disc;
-    list-style-position: inside;
-
-    padding-left: 10px;
-}
-
-form.mortgage-calculator .range {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 30px;
-}
-form.mortgage-calculator .range label {
-    margin-bottom: 10px;
-}
-form.mortgage-calculator .range .input {
-    background-color: #ffffff;
-    border-radius: 70px;
-    padding: 16px 20px;
-    gap: 15px;
-    left: 0px;
-    right: 0px;
-    align-items: center;
-}
-form.mortgage-calculator .range input {
-    display: flex;
-    flex-direction: row;
-}
-
-/*Midlle Block Content*/
-.mortgage-calculator-middle.block{
-    align-items: flex-start;
-    padding: 45px;
-    gap: 30px;
-
-    background: #ffffff;
-    border-radius: 50px;
-}
-.standart-two-lables {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.standart-two-lables div{
-    display: flex;
-    flex-direction: row;
-}
-
-.standart-two-lables div span{
-    margin-left: 10px;
-}
-
-.standart-two-lables div span{
-    margin-left: 10px;
-}
-
-.standart-two-lables img{
-    width: 15px;
-    height: 15px;
-}
-
-.standart-two-lables .htooltip{
-    margin-left: 11.5px;
 }

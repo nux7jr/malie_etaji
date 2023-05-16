@@ -5,14 +5,14 @@
 
     <div>
         @isset($first)
-        <h2>{{$first}}</h2>
+        <h2 class="red_color">{{$first}}</h2>
         @endisset
 
         @isset($second)
         <span>{{$second}}</span>
         @endisset
 
-        <h2>{{$slot}}</h2>
+        {{$slot}}
 
         @isset($tooltip)
             <a class="htooltip" rel="nofollow">
