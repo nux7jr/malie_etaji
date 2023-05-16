@@ -1,11 +1,14 @@
 @extends('layouts.base')
+@vite("resources/css/temp.css")
+@section('head')
 
+@endsection
 @section('content')
-
+<section>
     <h1>{{__('Ипотечный калькулятор')}}</h1>
 
     <x-calcus.form-mortgage-calculator>
-        <div class="mortgage-calculator-left-block">
+        <div class="mortgage-calculator-left block">
             <label for="mortgage">{{__('Специальная пограмма')}}</label>
             <x-ui.lists.dropdown id="mortgage" name="mortgage">
                     <?$some_options = [
@@ -53,7 +56,7 @@
                 {{__('Получить одобрение онлайн')}}
             </x-ui.buttons.button>
         </div>
-        <div class="mortgage-calculator-middle-block">
+        <div class="mortgage-calculator-middle block">
             <h2>{{__('Стандартная ипотека')}}</h2>
             <x-text.two-labels-in-card
                 label="{{__('Процентная ставка')}}"
@@ -80,8 +83,9 @@
                 {{$needed_cash_flow = __('25 000 ₽')}}
             </x-text.two-labels-in-card>
         </div>
-        <div class="mortgage-calculator-right-block" style="flex-direction: column;display: flex;">
+        <div class="mortgage-calculator-right block">
             right content
         </div>
     </x-calcus.form-mortgage-calculator>
+</section>
 @endsection

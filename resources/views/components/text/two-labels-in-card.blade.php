@@ -3,17 +3,21 @@
 ])}}>
     <h4>{{$attributes->get('label')}}</h4>
 
-    @isset($first)
-    <h2>{{$first}}</h2>
-    @endisset
+    <div>
+        @isset($first)
+        <h2>{{$first}}</h2>
+        @endisset
 
-    @isset($second)
-    <span>{{$second}}</span>
-    @endisset
+        @isset($second)
+        <span>{{$second}}</span>
+        @endisset
 
-    <h2>{{$slot}}</h2>
+        <h2>{{$slot}}</h2>
 
-    @isset($tooltip)
-    {{$tooltip}}
-    @endisset
+        @isset($tooltip)
+            <a class="htooltip" rel="nofollow">
+                <img src="/images/icons/tooltip_question.svg" title="{{$tooltip}}"/>
+            </a>
+        @endisset
+    </div>
 </div>

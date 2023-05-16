@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/house_card', function (){
-    return view('house-card');
+    return view('components.cards.house-card');
 });
