@@ -8,7 +8,7 @@
     --color-red: #f04b54;
     --color-silver: #f3f4f7;
     --color-blue: #2f3d61;
-    --swiper-theme-color: rgb(117, 76, 76);
+    --swiper-theme-color: #f04b54;
 }
 
 body {
@@ -357,7 +357,6 @@ footer {
     gap: 30px;
     margin-top: 13px;
 }
-
 /*INPUTS*/
 .switch{
     position: relative;
@@ -501,4 +500,111 @@ footer {
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
+}
+
+/*MORTGAGE CALCULATOR*/
+form.mortgage-calculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form.mortgage-calculator .block{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-width: 507px;
+}
+
+#mortgage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    gap: 15px;
+    border-radius: 70px;
+}
+
+.calcus-left-text{
+    background-color: #FEEDEE;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
+
+    font-size: 16px;
+}
+.calcus-left-text li {
+    list-style: disc;
+    list-style-position: inside;
+
+    padding-left: 10px;
+}
+
+form.mortgage-calculator .range {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+}
+form.mortgage-calculator .range label {
+    margin-bottom: 10px;
+}
+form.mortgage-calculator .range .input {
+    background-color: #ffffff;
+    border-radius: 70px;
+    padding: 16px 20px;
+    gap: 15px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+}
+form.mortgage-calculator .range input {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Midlle Block Content*/
+.mortgage-calculator-middle.block{
+    align-items: flex-start;
+    padding: 45px;
+    gap: 30px;
+
+    background: #ffffff;
+    border-radius: 50px;
+}
+.standart-two-lables {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.standart-two-lables div{
+    display: flex;
+    flex-direction: row;
+}
+
+.standart-two-lables div span{
+    margin-left: 10px;
+}
+
+.standart-two-lables div span{
+    margin-left: 10px;
+}
+
+.standart-two-lables img{
+    width: 15px;
+    height: 15px;
+}
+
+.standart-two-lables .htooltip{
+    margin-left: 11.5px;
 }

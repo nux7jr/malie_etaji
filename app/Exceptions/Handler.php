@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -23,9 +24,16 @@ class Handler extends ExceptionHandler
      */
     public function register(): void
     {
-        $this->reportable(function (Throwable $e) {
-            //
+        $this->renderable(function (NotFoundHttpException $e, $request) {
+            if ($request->is('/*')) { // <- Add your condition here
+                return response()->json([
+                    'message' => 'Vehicle record not found.'
+                ], 404);
+            }
         });
+        // $this->reportable(function (Throwable $e) {
+
+        // });
     }
     public function render($request, Exception|Throwable $exception)
     {
