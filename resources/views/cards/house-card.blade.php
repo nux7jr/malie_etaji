@@ -9,7 +9,7 @@
 
     <x-calcus.form-mortgage-calculator>
         <div class="mortgage-calculator-left block">
-            <label for="mortgage">{{__('Специальная пограмма')}}</label>
+            <h4><label for="mortgage">{{__('Специальная пограмма')}}</label></h4>
             <x-ui.lists.dropdown id="mortgage" name="mortgage">
                     <?$some_options = [
                         'Господдержка',
@@ -46,6 +46,7 @@
                 name="start-payment"
                 min="{{$min = 225000}}"
                 max="{{$max = 1000000}}"
+                percent="{{$percent = 15}}"
                 label="{{__('Первоначальный взнос, ₽')}}"></x-ui.inputs.range>
             <x-ui.inputs.range
                 name="loan-term"

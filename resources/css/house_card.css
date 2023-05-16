@@ -1,4 +1,7 @@
 /*MORTGAGE CALCULATOR*/
+.mortgage-calculator{
+    flex-wrap: nowrap
+}
 .section_heading{
     font-weight: 700;
     font-size: 42px;
@@ -8,6 +11,18 @@
     color: var(--color-black);
 
     margin-bottom: 50px;
+}
+form.mortgage-calculator h4{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    margin: 0 0 10px 0;
+
+    color: var(--color-grayest);
 }
 form.mortgage-calculator {
     display: flex;
@@ -61,13 +76,11 @@ form.mortgage-calculator .range {
 
     margin-bottom: 30px;
 }
-form.mortgage-calculator .range label {
-    margin-bottom: 10px;
-}
+
 form.mortgage-calculator .range .input {
     background-color: #ffffff;
     border-radius: 70px;
-    padding: 16px 20px;
+    padding: 20px 20px;
     gap: 15px;
     left: 0px;
     right: 0px;
@@ -76,6 +89,28 @@ form.mortgage-calculator .range .input {
 form.mortgage-calculator .range input {
     display: flex;
     flex-direction: row;
+
+    position: absolute;
+}
+
+form.mortgage-calculator .range .input h4{
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: var(--color-black);
+}
+.space__between{
+    display: flex;
+    justify-content: space-between;
+}
+
+form.mortgage-calculator .range .input h4.percent{
+    color: var(--color-grayest);
 }
 
 /*Midlle Block Content*/
