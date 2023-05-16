@@ -27,8 +27,6 @@
         </div>
     </div>
 </div>
-
-
 <x-include.footer></x-include.footer>
 </body>
 </html>

@@ -192,6 +192,7 @@ header {
 }
 .header__button,
 .heading-info__button {
+    cursor: pointer;
     transition: 0.4s;
 }
 .header__button:hover,
@@ -246,6 +247,16 @@ header {
 }
 .login {
     color: var(--color-red);
+}
+.header__submenu {
+    display: none;
+    align-items: center;
+    gap: 30px;
+}
+.header__goback {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
 }
 /* footer */
 footer {
@@ -375,8 +386,6 @@ footer {
 @media (max-width: 768px) {
 }
 
-
-
 /*MORTGAGE CALCULATOR*/
 form.mortgage-calculator {
     display: flex;
@@ -392,7 +401,7 @@ form.mortgage-calculator .block{
     min-width: 507px;
 }
 
-#mortgage{
+#mortgage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -417,23 +426,23 @@ form.mortgage-calculator .block{
 
     font-size: 16px;
 }
-.calcus-left-text li{
+.calcus-left-text li {
     list-style: disc;
     list-style-position: inside;
 
     padding-left: 10px;
 }
 
-form.mortgage-calculator .range{
+form.mortgage-calculator .range {
     display: flex;
     flex-direction: column;
 
     margin-bottom: 30px;
 }
-form.mortgage-calculator .range label{
+form.mortgage-calculator .range label {
     margin-bottom: 10px;
 }
-form.mortgage-calculator .range .input{
+form.mortgage-calculator .range .input {
     background-color: #ffffff;
     border-radius: 70px;
     padding: 16px 20px;
@@ -442,7 +451,7 @@ form.mortgage-calculator .range .input{
     right: 0px;
     align-items: center;
 }
-form.mortgage-calculator .range input{
+form.mortgage-calculator .range input {
     display: flex;
     flex-direction: row;
 }
@@ -456,7 +465,7 @@ form.mortgage-calculator .range input{
     background: #ffffff;
     border-radius: 50px;
 }
-.standart-two-lables{
+.standart-two-lables {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
