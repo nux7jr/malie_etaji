@@ -12,10 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    @vite("resources/js/app.js")
-    @vite("resources/css/app.css")
     
     @yield('head')
+    @vite("resources/js/app.js")
+    @vite("resources/css/app.css")
+
+    
+    
     <!-- Boundle -->
 </head>
 <body>

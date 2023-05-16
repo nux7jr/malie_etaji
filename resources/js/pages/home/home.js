@@ -9,10 +9,18 @@ const offer = new Swiper(".offer-swiper", {
     loop: true,
     pagination: {
         clickable: true,
-        el: ".swiper-pagination",
+        el: ".offer-slide__pagination",
     },
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+});
+
+const services = new Swiper(".services-swiper", {
+    loop: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".services-button-next",
+        prevEl: ".services-button-prev",
     },
 });

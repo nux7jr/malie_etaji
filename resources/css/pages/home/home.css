@@ -9,8 +9,16 @@
 .main-offer {
     width: 785px;
     height: 650px;
-    background-color: rgba(0, 0, 255, 0.45);
+    background-color: transparent;
+
     flex: 1;
+}
+.offer-slide {
+    background-image: url(https://placehold.co/600x400);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
 }
 .offer-swiper {
     display: flex;
@@ -27,7 +35,7 @@
     border-radius: 50px;
 }
 .sec-offer {
-    background-color: cadetblue;
+    background-color: white;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -35,12 +43,17 @@
 }
 .sec-offer__paraf {
     max-width: 625px;
+    color: var(--color-black);
+}
+.main-offer__paraf {
+    color: var(--color-black);
 }
 .offer__wrapper {
     display: flex;
     gap: 50px;
     flex-direction: column;
 }
+
 .sec-offer__img {
     width: 46px;
     height: 46px;
@@ -102,7 +115,7 @@
     width: 71px;
     height: 8px;
     border-radius: 35px;
-    background-color: red;
+    background-color: var(--color-red);
     animation: progres 5.2s infinite linear;
 }
 .swiper-pagination.offer-slide__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -183,4 +196,45 @@
 .auto-play__heading,
 .auto-play__button {
     position: relative;
+}
+.auto-play__button {
+    background: #ffffff;
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 16px;
+}
+.sec-offer:first-child {
+    background-color: var(--color-red);
+}
+.sec-offer:first-child .sec-offer__heading {
+    color: white;
+}
+.sec-offer:first-child .sec-offer__paraf {
+    color: white;
+}
+.services-slide__img {
+    width: 57px;
+    height: 57px;
+}
+.services {
+    background-color: white;
+}
+.services__wrapper {
+    background-color: var(--color--background);
+    border-radius: 50px;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-left: 90px;
+
+    display: flex;
+}
+.services__heading {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100%;
+    color: var(--color-black);
+}
+.services-see {
+    flex: 1;
+    min-width: 864px
 }
