@@ -7,6 +7,8 @@ export default defineConfig({
             input: [
                 "resources/css/app.css",
                 "resources/js/app.js",
+
+                "resources/css/pages/error/error.css",
                 "resources/css/pages/home/home.css",
                 "resources/js/pages/home/home.js",
             ],

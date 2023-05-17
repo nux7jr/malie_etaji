@@ -134,7 +134,7 @@
     width: 400px;
     height: 214px;
     background-color: rgb(110, 106, 106);
-    background-image: url(/public/images/cards/card-img.jpg);
+    background-image: url(../../../images/cards/card-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -197,7 +197,7 @@
 .auto-play__button {
     position: relative;
 }
-.auto-play__button {
+.default__button.auto-play__button {
     background: #ffffff;
     color: var(--color-black);
     font-weight: 700;
@@ -224,8 +224,8 @@
     border-radius: 50px;
     margin-top: 50px;
     padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 90px;
-
     display: flex;
 }
 .services__heading {
@@ -236,5 +236,185 @@
 }
 .services-see {
     flex: 1;
-    min-width: 864px
+    min-width: 864px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-see__heading {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 100%;
+
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    color: var(--color-black);
+}
+.services-see__button {
+    width: fit-content;
+}
+.services-next,
+.services-prev {
+    width: 46px;
+    height: 46px;
+}
+.services-swiper .services-button-prev::after {
+    content: "";
+}
+.services-swiper .services-button-next::after {
+    content: "";
+}
+.services-swiper .services-button-next img {
+    transform: rotate(180deg);
+}
+
+.services-swiper .services-button-prev {
+    /* top: 61px; */
+    left: 60px;
+}
+.services-swiper .services-button-next {
+    /* top: 61px; */
+    right: 70px;
+}
+.services__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    background: #ffffff;
+    border-radius: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.services-slide {
+    max-width: 500px;
+}
+.services-slide__heading {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+.services-slide__text {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 370px;
+    color: var(--color-grayest);
+    margin-top: 20px;
+}
+.why-us {
+    background-color: white;
+}
+.why-us__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: row;
+    gap: 100px;
+    display: flex;
+}
+.why-us__heading {
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--color-black);
+}
+.why-us__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+.why-us__card {
+    padding: 50px;
+    background-color: var(--color-beige);
+    border-radius: 50px;
+    width: 337px;
+}
+.why-us__title {
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--color-red);
+}
+.why_us__text {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-grayest);
+    margin-top: 40px;
+}
+.why-us__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-red);
+}
+.why-us__paraf {
+    color: var(--color-grayest);
+}
+.why-us__card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.build {
+    background-color: white;
+}
+.build__wrapper {
+    background-color: var(--color--background);
+    border-radius: 50px;
+    padding-top: 83px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.build__heading {
+    font-weight: 700;
+    font-size: 42px;
+    flex: 1 1 100%;
+    color: var(--color-black);
+}
+.build__header {
+    display: flex;
+    align-items: center;
+}
+
+.build__paraf {
+    color: var(--color-grayest);
+    font-weight: 500;
+}
+.default__button.build__button {
+    font-weight: 700;
+    color: var(--color-red);
+    background-color: var(--color-pink);
+}
+.default__button.build__button--active {
+    color: white;
+    background-color: var(--color-red);
+}
+.build__option {
+    display: flex;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.image-slide {
+    background-color: blueviolet;
+}
+
+.image-swiper {
+    min-width: 700px;
+    min-height: 410px;
+    border-radius: 50px;
+}
+.build-inner {
+    display: flex;
+    gap: 50px;
+}
+.build__wrapper .swiper-scrollbar {
+    display: none;
+}
+.build-wrapper {
+    height: 500px;
+}
+.build-swiper {
+    height: 500px;
+}
+.build-button-prev::after {
+    content: url("../../../images/build/back.svg") !important;
 }

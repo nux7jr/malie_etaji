@@ -92,7 +92,7 @@ hr {
     line-height: 100%;
     color: #ffffff;
 
-    padding: 20px 20px;
+    padding: 15px 20px;
     background: var(--color-red);
     cursor: pointer;
     transition: 0.3s;
@@ -101,7 +101,7 @@ hr {
     outline: none;
 }
 .default__button:focus {
-    border: 1px solid rgba(0, 0, 0, 0.408);
+    /* border: 1px solid rgba(0, 0, 0, 0.408); */
 }
 .default__button:hover {
     opacity: 0.8;
@@ -358,7 +358,7 @@ footer {
     margin-top: 13px;
 }
 /*INPUTS*/
-.switch{
+.switch {
     position: relative;
     background-color: var(--color-gray);
     transition: 0.3s;
@@ -373,7 +373,7 @@ footer {
     padding: 5px;
     gap: 15px;
 }
-.switch label.radio{
+.switch label.radio {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -389,24 +389,24 @@ footer {
     background-color: #ffffff;
     border-radius: 70px;
 }
-.switch input[type="checkbox"]{
+.switch input[type="checkbox"] {
     position: absolute;
     display: none;
     visibility: hidden;
     opacity: 0;
 }
-.switch .slider{
+.switch .slider {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 70px;
     transition: 0.3s;
 }
-.switch:has(> input[type="checkbox"]:checked) > label{
+.switch:has(> input[type="checkbox"]:checked) > label {
     transition: 0.3s;
     transform: translateX(53px);
 }
-.switch:has(> input[type="checkbox"]:checked){
+.switch:has(> input[type="checkbox"]:checked) {
     background-color: var(--color-red);
     transition: 0.3s;
 }
@@ -419,43 +419,43 @@ footer {
     flex-direction: column;
 }
 
-.standart-two-lables div{
+.standart-two-lables div {
     display: flex;
     flex-direction: row;
 }
 
-.standart-two-lables div span{
+.standart-two-lables div span {
     margin-left: 10px;
 }
 
-.standart-two-lables div span{
+.standart-two-lables div span {
     margin-left: 10px;
 }
 
-.standart-two-lables h2{
+.standart-two-lables h2 {
     font-size: 31px;
     font-weight: 700;
     line-height: 100%;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: "pnum" on, "lnum" on;
     color: var(--color-black);
 }
-.standart-two-lables .red_color{
+.standart-two-lables .red_color {
     color: var(--color-red);
 }
 
-.standart-two-lables span{
+.standart-two-lables span {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
     text-decoration-line: line-through;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: "pnum" on, "lnum" on;
 
     color: var(--color-grayest);
 }
-.standart-two-lables h4{
+.standart-two-lables h4 {
     margin: 0 0 10px 0;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: "pnum" on, "lnum" on;
 
     font-size: 16px;
     font-weight: 500;
@@ -464,12 +464,12 @@ footer {
     color: var(--color-grayest);
 }
 
-.standart-two-lables img{
+.standart-two-lables img {
     width: 15px;
     height: 15px;
 }
 
-.standart-two-lables .htooltip{
+.standart-two-lables .htooltip {
     margin-left: 11.5px;
 }
 /*END COMPONENTS*/
@@ -508,7 +508,7 @@ form.mortgage-calculator {
     flex-direction: row;
     justify-content: space-between;
 }
-form.mortgage-calculator .block{
+form.mortgage-calculator .block {
     margin-right: 50px;
     display: flex;
     flex-direction: column;
@@ -529,8 +529,8 @@ form.mortgage-calculator .block{
     border-radius: 70px;
 }
 
-.calcus-left-text{
-    background-color: #FEEDEE;
+.calcus-left-text {
+    background-color: #feedee;
     border-radius: 50px;
 
     display: flex;
@@ -573,7 +573,7 @@ form.mortgage-calculator .range input {
 }
 
 /*Midlle Block Content*/
-.mortgage-calculator-middle.block{
+.mortgage-calculator-middle.block {
     align-items: flex-start;
     padding: 45px;
     gap: 30px;
@@ -587,24 +587,24 @@ form.mortgage-calculator .range input {
     flex-direction: column;
 }
 
-.standart-two-lables div{
+.standart-two-lables div {
     display: flex;
     flex-direction: row;
 }
 
-.standart-two-lables div span{
+.standart-two-lables div span {
     margin-left: 10px;
 }
 
-.standart-two-lables div span{
+.standart-two-lables div span {
     margin-left: 10px;
 }
 
-.standart-two-lables img{
+.standart-two-lables img {
     width: 15px;
     height: 15px;
 }
 
-.standart-two-lables .htooltip{
+.standart-two-lables .htooltip {
     margin-left: 11.5px;
 }

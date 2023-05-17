@@ -2,7 +2,7 @@
     <div class="footer__wrapper">
         <div class="footer__item footer-info">
             <a class="footer-info__link" href="/">
-                <img class="footer-info__img" src="images/logos/logo.svg" alt="logo">
+                <img class="footer-info__img" src="{{ Vite::asset('resources/images/logos/logo.svg')}}" alt="logo">
             </a>
             <p class="footer-info__paraf">
                 {{ __('Федеральная строительная компания  «Малые Этажи»') }}
@@ -19,14 +19,14 @@
                 {{ __('Соцсети') }}
                 <div class="footer-info__social social">
                     <a class="social__link" href="http://" target="_blank" rel="noopener noreferrer">
-                        <img class="social__img" src="images/icons/social/telega.svg" alt="telegram">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/telega.svg')}}" alt="telegram">
                     </a>
                     <a class="social__link" href="https://www.youtube.com/channel/UCAKkEcrR2pzA8Z9KKbL-i7Q"
                         target="_blank" rel="noopener noreferrer">
-                        <img class="social__img" src="images/icons/social/youtube.svg" alt="youtube">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/youtube.svg')}}" alt="youtube">
                     </a>
                     <a class="social__link" href="https://vk.com/malie_etaji" target="_blank" rel="noopener noreferrer">
-                        <img class="social__img" src="images/icons/social/vk.svg" alt="vk">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/vk.svg')}}" alt="vk">
                     </a>
                 </div>
             </h3>

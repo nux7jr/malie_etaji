@@ -1,17 +1,17 @@
 <section class="heading-info">
     <div class="header-select__wrapper">
         <button title="{{ __('Выбор города')}}" class="heading-info__button geo__button">
-            <img class="geo__img" src="images/icons/geo.svg" alt="{{ __('Красноярск') }}">
+            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg')}}" alt="{{ __('Красноярск') }}">
             {{ __('Красноярск') }}
-            <img class="geo__img" src="images/icons/geo_arr.svg" alt="{{ __('Красноярск') }}">
+            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg')}}" alt="{{ __('Красноярск') }}">
         </button>
         <div class="user__option">
             <button class="heading-info__button search">
-                <img class="search__img" src="images/icons/search.svg" alt="{{ __('Поиск') }}">
+                <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg')}}" alt="{{ __('Поиск') }}">
                 {{ __('Поиск') }}
             </button>
             <button class="heading-info__button login">
-                <img src="images/icons/person.svg" alt="{{ __('Войти') }}">
+                <img src="{{ Vite::asset('resources/images/icons/person.svg')}}" alt="{{ __('Войти') }}">
                 {{ __('Войти') }}
             </button>
         </div>
@@ -21,7 +21,7 @@
     <div class="header__wrapper">
         <nav class="header__item navigation">
             <a class="header__button header__link header__logo" href="/">
-                <img src="images/logos/logo.svg" alt="logo">
+                <img src="{{ Vite::asset('resources/images/logos/logo.svg') }}" alt="logo">
             </a>
             <div class="header__submenu header__submenu--first">
                 <button class="header__goback">
@@ -105,7 +105,7 @@
             </div>
             <div class="header__call">
                 <button class="header__button call__button">
-                    <img class="call__img" src="images/icons/call.svg" alt=" {{ __('Заказать звонок') }}">
+                    <img class="call__img" src="{{ Vite::asset('resources/images/icons/call.svg')}}" alt=" {{ __('Заказать звонок') }}">
                     {{ __('Заказать звонок') }}
                 </button>
                 <a class="header__button phone__link" href="tel:+7 (900) 999-99-99">+7 (900) 999-99-99</a>
