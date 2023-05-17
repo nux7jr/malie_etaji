@@ -89,6 +89,7 @@ hr {
 }
 .default__button {
     font-size: 16px;
+    font-weight: 700;
     line-height: 100%;
     color: #ffffff;
 
@@ -358,6 +359,62 @@ footer {
     margin-top: 13px;
 }
 /*INPUTS*/
+.custom-select-dropdown {
+    position: relative;
+}
+
+.custom-select-dropdown select{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-select-selected {
+    background-color: #ffffff;
+}
+
+.dropdown-select-selected:after {
+    position: absolute;
+    content: url("/public/images/icons/dropdown_arr.svg");
+
+    height: 4px;
+    width: 8px;
+    left: calc(100% - 8px/2 - 32px);
+    top: calc(50% - 4px/2 - 14px);
+}
+
+.dropdown-select-items div,.dropdown-select-selected {
+    color: var(--color-black);
+    margin-bottom: 10px;
+    border-radius: 70px;
+    padding: 20px 20px;
+
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    cursor: pointer;
+}
+
+.dropdown-select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    /*z-index: 4;*/
+}
+
+.dropdown-select-hide {
+    display: none;
+}
+
+.dropdown-select-items div:hover, .dropdown-same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .switch{
     position: relative;
     background-color: var(--color-gray);
@@ -500,111 +557,4 @@ footer {
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
-}
-
-/*MORTGAGE CALCULATOR*/
-form.mortgage-calculator {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-form.mortgage-calculator .block{
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    min-width: 507px;
-}
-
-#mortgage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 16px 20px;
-    margin-bottom: 10px;
-    gap: 15px;
-    border-radius: 70px;
-}
-
-.calcus-left-text{
-    background-color: #FEEDEE;
-    border-radius: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px;
-    margin-bottom: 30px;
-    gap: 10px;
-
-    font-size: 16px;
-}
-.calcus-left-text li {
-    list-style: disc;
-    list-style-position: inside;
-
-    padding-left: 10px;
-}
-
-form.mortgage-calculator .range {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 30px;
-}
-form.mortgage-calculator .range label {
-    margin-bottom: 10px;
-}
-form.mortgage-calculator .range .input {
-    background-color: #ffffff;
-    border-radius: 70px;
-    padding: 16px 20px;
-    gap: 15px;
-    left: 0px;
-    right: 0px;
-    align-items: center;
-}
-form.mortgage-calculator .range input {
-    display: flex;
-    flex-direction: row;
-}
-
-/*Midlle Block Content*/
-.mortgage-calculator-middle.block{
-    align-items: flex-start;
-    padding: 45px;
-    gap: 30px;
-
-    background: #ffffff;
-    border-radius: 50px;
-}
-.standart-two-lables {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.standart-two-lables div{
-    display: flex;
-    flex-direction: row;
-}
-
-.standart-two-lables div span{
-    margin-left: 10px;
-}
-
-.standart-two-lables div span{
-    margin-left: 10px;
-}
-
-.standart-two-lables img{
-    width: 15px;
-    height: 15px;
-}
-
-.standart-two-lables .htooltip{
-    margin-left: 11.5px;
 }

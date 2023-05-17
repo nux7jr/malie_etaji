@@ -1,8 +1,9 @@
 @extends('layouts.base')
-@vite("resources/css/temp.css")
+
 @section('head')
     @vite("resources/css/house_card.css")
 @endsection
+
 @section('content')
 <section>
     <h1 class="section_heading">{{__('Ипотечный калькулятор')}}</h1>
