@@ -1,9 +1,11 @@
 @extends ("layouts.base")
-@vite("resources/css/pages/home/home.css")
-@vite("resources/js/pages/home/home.js")
 @section('head')
-
+@yield("index.head")
+@vite("resources/js/pages/home/home.js")
+@vite("resources/css/pages/home/home.css")
 @endsection
+
+
 @section ("content")
     <section class="offer">
         <div class="main-offer offer-swiper swiper">
@@ -175,15 +177,13 @@
           </div>
           <div class="swiper build-swiper">
             <div class="swiper-wrapper build-wrapper">
-              <div class="swiper-slide build-slide double">
+              <div class="swiper-slide build-slide single">
                 <div class="build-inner">
                   <div class="swiper image-swiper">
                     <div class="swiper-wrapper image-wrapper">
                       <div class="swiper-slide image-slide">
-                        1111111111111111111
                       </div>
-                      <div class="swiper-slide image-slide">
-                        222222222222222222222222222222222
+                      <div class="swiper-slide image-slide" style="background-image: url('https://placehold.co/600x400');">
                       </div>
                     </div>
                     <div class="swiper-pagination image__pagination"></div>
@@ -195,26 +195,34 @@
                     </p> 
                     <div class="inner-time">
                       <div class="inner-time__item">
-                        <p class="inner-time__paraf">80 <span class="inner-time__text"></span></p>
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
                         <p class="inner-time-info">
                           Площадь дома
                         </p>
                       </div>
                     </div>
+                    <div class="inner-price">
+                      <p class="inner-price__value">5 667 789 <span class="inner-price__text">рублей</span></p>  
+                      <p class="inner-price__info">
+                        Стоимость дома
+                      </p>
+                    </div>                    
                   </div>
                 </div>
               </div>
-              {{--  --}}
-              {{--  --}}
               <div class="swiper-slide build-slide double">
                 <div class="build-inner">
                   <div class="swiper image-swiper">
                     <div class="swiper-wrapper image-wrapper">
                       <div class="swiper-slide image-slide">
-                        1111111111111111111
                       </div>
-                      <div class="swiper-slide image-slide">
-                        222222222222222222222222222222222
+                      <div class="swiper-slide image-slide" style="background-color: black">
                       </div>
                     </div>
                     <div class="swiper-pagination image__pagination"></div>
@@ -226,12 +234,180 @@
                     </p> 
                     <div class="inner-time">
                       <div class="inner-time__item">
-                        <p class="inner-time__paraf">80 <span class="inner-time__text"></span></p>
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
                         <p class="inner-time-info">
                           Площадь дома
                         </p>
                       </div>
                     </div>
+                    <div class="inner-price">
+                      <p class="inner-price__value">5 667 789 <span class="inner-price__text">рублей</span></p>  
+                      <p class="inner-price__info">
+                        Стоимость дома
+                      </p>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide build-slide double">
+                <div class="build-inner">
+                  <div class="swiper image-swiper">
+                    <div class="swiper-wrapper image-wrapper">
+                      <div class="swiper-slide image-slide">
+                      </div>
+                      <div class="swiper-slide image-slide" style="background-color: black">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination image__pagination"></div>
+                  </div>
+                  <div class="build-inner__item inner-info">
+                    <h1 class="inner-info__heading">{{__('Дом 8-02К (Шале), Мужичкино')}}</h1>
+                    <p class="inner-info__paraf">
+                      {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.')}}
+                    </p> 
+                    <div class="inner-time">
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner-price">
+                      <p class="inner-price__value">5 667 789 <span class="inner-price__text">рублей</span></p>  
+                      <p class="inner-price__info">
+                        Стоимость дома
+                      </p>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide build-slide double">
+                <div class="build-inner">
+                  <div class="swiper image-swiper">
+                    <div class="swiper-wrapper image-wrapper">
+                      <div class="swiper-slide image-slide">
+                      </div>
+                      <div class="swiper-slide image-slide" style="background-color: black">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination image__pagination"></div>
+                  </div>
+                  <div class="build-inner__item inner-info">
+                    <h1 class="inner-info__heading">{{__('Дом 8-02К (Шале), Мужичкино')}}</h1>
+                    <p class="inner-info__paraf">
+                      {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.')}}
+                    </p> 
+                    <div class="inner-time">
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner-price">
+                      <p class="inner-price__value">5 667 789 <span class="inner-price__text">рублей</span></p>  
+                      <p class="inner-price__info">
+                        Стоимость дома
+                      </p>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide build-slide barn">
+                <div class="build-inner">
+                  <div class="swiper image-swiper">
+                    <div class="swiper-wrapper image-wrapper">
+                      <div class="swiper-slide image-slide">
+                      </div>
+                      <div class="swiper-slide image-slide" style="background-color: black">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination image__pagination"></div>
+                  </div>
+                  <div class="build-inner__item inner-info">
+                    <h1 class="inner-info__heading">{{__('Дом 8-02К (Шале), barn')}}</h1>
+                    <p class="inner-info__paraf">
+                      {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.')}}
+                    </p> 
+                    <div class="inner-time">
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner-price">
+                      <p class="inner-price__value">5 667 789 <span class="inner-price__text">рублей</span></p>  
+                      <p class="inner-price__info">
+                        Стоимость дома
+                      </p>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide build-slide barn">
+                <div class="build-inner">
+                  <div class="swiper image-swiper">
+                    <div class="swiper-wrapper image-wrapper">
+                      <div class="swiper-slide image-slide">
+                      </div>
+                      <div class="swiper-slide image-slide" style="background-color: black">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination image__pagination"></div>
+                  </div>
+                  <div class="build-inner__item inner-info">
+                    <h1 class="inner-info__heading">{{__('Дом 8-02К (Шале), barn')}}</h1>
+                    <p class="inner-info__paraf">
+                      {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.')}}
+                    </p> 
+                    <div class="inner-time">
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                      <div class="inner-time__item">
+                        <p class="inner-time__paraf">80 <span class="inner-time__text">м2</span></p>
+                        <p class="inner-time-info">
+                          Площадь дома
+                        </p>
+                      </div>
+                    </div>
+                    <div class="inner-price">
+                      <p class="inner-price__value">5 667 789 <span class="inner-price__text">рублей</span></p>  
+                      <p class="inner-price__info">
+                        Стоимость дома
+                      </p>
+                    </div>                    
                   </div>
                 </div>
               </div>
@@ -246,7 +422,9 @@
           </div>
         </div>
       </section>
-            
+    @yield("content.home")
+      <x-section.tech>
+      </x-section.tech>
         {{-- <div class="swiper">
 
             <div class="swiper-wrapper">

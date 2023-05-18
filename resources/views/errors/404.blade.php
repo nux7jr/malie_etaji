@@ -16,6 +16,6 @@
                     <a class="default__button error__link" href="/projects">{{__('Посмотреть проекты')}}</a>
                 </div>
         </div>
-        <img src="/images/error/illustration.png" alt="error">
+        <img src="{{ Vite::asset('resources/images/error/illustration.png') }}" alt="error">
         </section>
 @endsection

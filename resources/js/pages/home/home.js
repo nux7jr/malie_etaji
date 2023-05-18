@@ -86,6 +86,8 @@ const image = new Swiper(".image-swiper", {
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
+        stopOnLastSlide: false,
+        waitForTransition: false,
     },
     pagination: {
         clickable: true,

@@ -25,7 +25,7 @@
             </a>
             <div class="header__submenu header__submenu--first">
                 <button class="header__goback">
-                    <img src="images/icons/back.svg" alt="back">
+                    <img src="{{ Vite::asset('resources/images/icons/back.svg') }}" alt="back">
                 </button>
                 <a title="{{ __('Все проекты') }}" class="header__button header__link" href="/projects">
                     {{ __('Все проекты') }}

@@ -12,7 +12,8 @@
         <div class="mortgage-calculator-left block">
             <h4><label for="mortgage">{{__('Специальная пограмма')}}</label></h4>
             <x-ui.lists.dropdown id="mortgage" name="mortgage">
-                    <?$some_options = [
+                    <?php
+                    $some_options = [
                         'Господдержка',
                         'для IT-специалистов',
                         'для семей с детьми',

@@ -394,7 +394,10 @@
     padding-bottom: 50px;
 }
 .image-slide {
-    background-color: blueviolet;
+    background-color: rgb(171, 170, 172);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .image-swiper {
@@ -415,6 +418,105 @@
 .build-swiper {
     height: 500px;
 }
-.build-button-prev::after {
-    content: url("../../../images/build/back.svg") !important;
+.build-swiper .build-button-prev::after {
+    content: url("../../../images/build/back.svg");
+    position: absolute;
+    bottom: -186px;
+    right: -1317px;
+}
+.build-swiper .build-button-next::after {
+    content: url("../../../images/build/next.svg");
+    position: absolute;
+    bottom: -186px;
+    left: -9px;
+}
+.build-swiper .build__pagination {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 16px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    gap: 3px;
+    margin-left: -142px;
+    padding-bottom: 45px;
+}
+.build-swiper .swiper-pagination-current,
+.swiper-pagination-total {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.inner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.inner-info__heading {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--color-black);
+}
+.inner-info__paraf {
+    color: var(--color-grayest);
+    font-weight: 500;
+    font-size: 16px;
+}
+.inner-time {
+    display: flex;
+    gap: 46px;
+}
+.inner-time__paraf,
+.inner-price__value {
+    font-weight: 500;
+    font-size: 60px;
+    color: var(--color-red);
+    font-feature-settings: "pnum" on, "lnum" on;
+}
+.inner-time__text,
+.inner-price__text {
+    font-size: 16px;
+}
+.inner-time-info,
+.inner-price__info {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+
+    font-feature-settings: "pnum" on, "lnum" on;
+}
+.asd {
+    background: red;
+}
+.swiper-pagination.image__pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 38px;
+}
+.image__pagination > .swiper-pagination-bullet {
+    width: 40px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 35px;
+    opacity: 1;
+    position: relative;
+}
+.image__pagination > .swiper-pagination-bullet-active {
+    width: 71px;
+    height: 8px;
+    border-radius: 35px;
+    position: relative;
+}
+.image__pagination > .swiper-pagination-bullet-active::after {
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    width: 71px;
+    height: 8px;
+    border-radius: 35px;
+    background-color: var(--color-red);
+    animation: progres 5.2s infinite linear;
 }
