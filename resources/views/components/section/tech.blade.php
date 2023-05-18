@@ -22,7 +22,6 @@
         </div>
         <button class="default__button tech-card__button">
           {{__('Узнать больше')}}
-          
         </button>
     </div>
     <div class="nap-wrapper">
@@ -40,7 +39,6 @@
       <div class="small-card normal-card">
         <h1 class="small-card__heading">
           {{__('Фундамент')}}
-          
         </h1>
         <p class="small-card__text">
           {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.')}}</p>
@@ -51,7 +49,6 @@
       <div class="small-card smalls-card">
         <h1 class="small-card__heading">
           {{__('Котлы')}}
-          
         </h1>
         <p class="small-card__text">
           {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. ')}}</p>
@@ -62,7 +59,6 @@
       <div class="small-card long-card">
         <h1 class="small-card__heading">
           {{__('Нанофильтры для окон')}}
-          
         </h1>
         <p class="small-card__text">
           {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.')}}</p>

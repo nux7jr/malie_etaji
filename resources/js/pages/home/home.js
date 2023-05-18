@@ -94,3 +94,38 @@ const image = new Swiper(".image-swiper", {
         el: ".image__pagination",
     },
 });
+const menu = [
+    "1 этап",
+    "2 этап",
+    "3 этап",
+    "4 этап",
+    "5 этап",
+    "6 этап",
+    "3 этап",
+];
+const stage = new Swiper(".stage-swiper", {
+    pagination: {
+        el: ".stage-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + menu[index] + "</span>";
+        },
+    },
+    navigation: {
+        nextEl: ".stage-button-next",
+        prevEl: ".stage-button-prev",
+    },
+});
+
+const spec = new Swiper(".spec-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+        clickable: true,
+        el: ".spec-pagination",
+    },
+    navigation: {
+        nextEl: ".spec-button-next",
+        prevEl: ".spec-button-prev",
+    },
+});
