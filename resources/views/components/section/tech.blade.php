@@ -1,4 +1,10 @@
-@vite("resources/css/components/tech.css")
+@push('head')
+    @once
+        @vite("resources/css/components/tech.css")
+    @endonce
+@endpush
+
+
 <section class="tech">
   <h1 class="tech__heading">
     {{__('Технологии, которые мы используем в строительстве')}}
@@ -6,14 +12,10 @@
   <div class="tech__wrapper">
     <div class="tech__item tech-card">
       <div class="tech-card__header">
-        <h1 class="tech-card__heading">
-          {{__('SIP-панели')}}
-          </h1>
-        <p class="tech-card__paraf">
-          {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
-          В то время некий безымянный печатник создал большую 
-          коллекцию размеров и форм шрифтов.')}}
-          </p>
+        <h1 class="tech-card__heading">SIP-панели</h1>
+        <p class="tech-card__paraf">Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+          В то время некий безымянный печатник создал большую
+          коллекцию размеров и форм шрифтов.</p>
         </div>
         <div class="tech-card__img">
           <img class="tech-card__icon" src="{{ Vite::asset('resources/images/components/img.svg')}}" alt="">
