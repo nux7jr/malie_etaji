@@ -1,4 +1,89 @@
+.tech {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+.tech__heading {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100%;
+    max-width: 700px;
+    color: var(--color-black);
+    font-feature-settings: "pnum" on, "lnum" on;
+}
+
 .tech-card__icon {
-    width: 20px;
-    height: 20px;
+    max-width: 191px;
+}
+.tech__item {
+    padding: 50px 90px;
+    border-radius: 50px;
+}
+.small-card__img {
+    width: 46px;
+    height: 46px;
+}
+.small-card {
+    background-color: var(--color-beige);
+    color: var(--color-black);
+}
+.small-card__text {
+    color: var(--color-grayest);
+}
+.tech-card {
+    background-color: var(--color-red);
+    color: white;
+    max-width: 327px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.tech__wrapper {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+}
+.tech-card__heading {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 100%;
+}
+.tech-card__button {
+    background-color: white;
+    color: var(--color-red);
+    width: fit-content;
+}
+.nap-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.small-card {
+    border-radius: 50px;
+    padding: 50px 90px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.long-card {
+    width: 350px;
+    flex: 1;
+}
+.smalls-card {
+    width: 174px;
+}
+.small-card__heading {
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--color-black);
+    white-space: nowrap;
+}
+.tech-card__paraf {
+    margin-top: 27px;
+}
+
+.normal-card {
+    flex: 1;
 }

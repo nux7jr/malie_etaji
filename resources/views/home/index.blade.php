@@ -1,6 +1,7 @@
 @extends ("layouts.base")
+
+
 @section('head')
-@yield("index.head")
 @vite("resources/js/pages/home/home.js")
 @vite("resources/css/pages/home/home.css")
 @endsection
@@ -64,12 +65,11 @@
       <h1 class="which-house__heading">
         {{__('Какие дома мы строим')}}
       </h1>
-      
-      <div class="which-house__wrapper">
-        @for ($i = 0; $i < 6; $i++)
-        <x-ui.cards.autoplay>
-        </x-ui.cards.autoplay>
-        @endfor
+      <div class="which-house__wrapper">                
+          @for ($i = 0; $i < 6; $i++)
+            <x-ui.cards.autoplay >
+            </x-ui.cards.autoplay>
+          @endfor
       </div>
     </section>
     <section class="services">
@@ -422,7 +422,7 @@
           </div>
         </div>
       </section>
-    @yield("content.home")
+    {{-- @yield("content.home") --}}
       <x-section.tech>
       </x-section.tech>
         {{-- <div class="swiper">
