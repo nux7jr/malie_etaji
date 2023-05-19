@@ -14,8 +14,13 @@ export default defineConfig({
                 "resources/css/pages/home/home.css",
                 "resources/js/pages/home/home.js",
 
+                // js components
+                "resources/js/components/feedback.js",
                 // for components
                 "resources/css/components/tech.css",
+                "resources/css/components/constructor.css",
+                "resources/css/components/order.css",
+                "resources/css/components/feedback.css",
             ],
             refresh: true,
         }),

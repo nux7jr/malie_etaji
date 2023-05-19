@@ -6,9 +6,6 @@
 @endsection --}}
 
 
-@section ("content")
+@section('content')
     <section>PROJECT</section>
-    <x-section.tech>
-    </x-section.tech>
 @endsection
-

@@ -648,6 +648,7 @@
 }
 .spec {
     display: flex;
+    padding-bottom: 100px;
 }
 .spec-button {
     cursor: pointer;
@@ -688,13 +689,13 @@
     position: absolute;
     top: 127px;
     left: -968px;
-    z-index: 10;
+    z-index: 1;
 }
 .spec-button-next {
     position: absolute;
     top: 128px;
     left: 3px;
-    z-index: 10;
+    z-index: 1;
 }
 .spec-option__img {
     width: 46px;
@@ -724,4 +725,59 @@
 .spec-pagination > .swiper-pagination-bullet-active {
     width: 71px;
     background: var(--color-red);
+}
+.spec__small {
+    color: var(--color-grayest);
+    font-weight: 500;
+    font-size: 16px;
+}
+.spec__name {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 25px;
+}
+.spec__profile {
+    color: var(--color-grayest);
+    font-weight: 500;
+    font-size: 16px;
+}
+.advantages {
+    padding-top: 100px;
+    background-color: white;
+}
+.advantages-card__img {
+    height: 57px;
+    width: 57px;
+}
+.advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+.advantages-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.advantages-card__paraf {
+    max-width: 230px;
+}
+.advantages__heading {
+    font-weight: 700;
+    font-size: 42px;
+
+    font-feature-settings: "pnum" on, "lnum" on;
+}
+.advantages-card {
+    padding: 32px 30px;
+    background-color: var(--color-beige);
+    border-radius: 50px;
+}
+.advantages-card__paraf {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-black);
 }

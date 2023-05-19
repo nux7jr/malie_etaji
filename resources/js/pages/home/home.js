@@ -1,6 +1,9 @@
-import "./video";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
+import "./video";
+import { initFeedback } from "../../components/feedback.js";
+initFeedback(Swiper);
+
 const offer = new Swiper(".offer-swiper", {
     autoplay: {
         delay: 5000,
