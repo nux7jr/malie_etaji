@@ -3,6 +3,8 @@ import "swiper/css/bundle";
 import "./video";
 import { initFeedback } from "../../components/feedback.js";
 initFeedback(Swiper);
+import { initProjects } from "../../components/project-item";
+initProjects(Swiper);
 
 const offer = new Swiper(".offer-swiper", {
     autoplay: {
@@ -130,5 +132,14 @@ const spec = new Swiper(".spec-swiper", {
     navigation: {
         nextEl: ".spec-button-next",
         prevEl: ".spec-button-prev",
+    },
+});
+
+const trusted = new Swiper(".trusted-swiper", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    pagination: {
+        clickable: true,
+        el: ".trusted-pagination",
     },
 });

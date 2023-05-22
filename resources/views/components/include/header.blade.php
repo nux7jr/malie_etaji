@@ -1,23 +1,28 @@
 <section class="heading-info">
     <div class="header-select__wrapper">
-        <button title="{{ __('Выбор города')}}" class="heading-info__button geo__button">
-            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg')}}" alt="{{ __('Красноярск') }}">
+        <button title="{{ __('Выбор города') }}" class="heading-info__button geo__button">
+            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg') }}" alt="{{ __('Красноярск') }}">
             {{ __('Красноярск') }}
-            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg')}}" alt="{{ __('Красноярск') }}">
+            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg') }}"
+                alt="{{ __('Красноярск') }}">
         </button>
         <div class="user__option">
             <button class="heading-info__button search">
-                <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg')}}" alt="{{ __('Поиск') }}">
+                <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg') }}"
+                    alt="{{ __('Поиск') }}">
                 {{ __('Поиск') }}
             </button>
             <button class="heading-info__button login">
-                <img src="{{ Vite::asset('resources/images/icons/person.svg')}}" alt="{{ __('Войти') }}">
+                <img src="{{ Vite::asset('resources/images/icons/person.svg') }}" alt="{{ __('Войти') }}">
                 {{ __('Войти') }}
             </button>
         </div>
     </div>
 </section>
 <header>
+    {{-- @php
+        dd($path);
+    @endphp --}}
     <div class="header__wrapper">
         <nav class="header__item navigation">
             <a class="header__button header__link header__logo" href="/">
@@ -78,12 +83,12 @@
                 </a>
             </div>
             <div class="header__links">
-                <a role="link" href="#" title="{{ __('Посмотреть все проекты') }}" class="header__button header__link submenu">
+                <button title="{{ __('Посмотреть все проекты') }}" class="header__button header__link submenu">
                     {{ __('Проекты') }}
-                </a>
-                <a role="link" href="#" title="{{ __('Виды ипотеки') }}" class="header__button header__link submenu">
+                </button>
+                <button title="{{ __('Виды ипотеки') }}" class="header__button header__link submenu">
                     {{ __('Ипотека') }}
-                </a>
+                </button>
                 <a title="{{ __('Инвестиции') }}" class="header__button header__link" href="/invest">
                     {{ __('Инвестиции') }}
                 </a>
@@ -105,7 +110,8 @@
             </div>
             <div class="header__call">
                 <button class="header__button call__button">
-                    <img class="call__img" src="{{ Vite::asset('resources/images/icons/call.svg')}}" alt=" {{ __('Заказать звонок') }}">
+                    <img class="call__img" src="{{ Vite::asset('resources/images/icons/call.svg') }}"
+                        alt=" {{ __('Заказать звонок') }}">
                     {{ __('Заказать звонок') }}
                 </button>
                 <a class="header__button phone__link" href="tel:+7 (900) 999-99-99">+7 (900) 999-99-99</a>
