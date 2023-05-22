@@ -1,9 +1,11 @@
 <div {{$attributes->class(['range'])}}>
+    @isset($label)
     <h4>
         <label>
             {{$attributes->get('label')}}
         </label>
     </h4>
+    @endisset
     <div {{$attributes->class([
         'input'
     ])}}>
@@ -17,6 +19,7 @@
             </h4>
             @endisset
         </div>
+        <div class="width"></div>
         <input type="range"
            id="{{$attributes->get('name')}}"
            name="{{$attributes->get('name')}}"
@@ -24,6 +27,8 @@
            max="{{$attributes->get('max')}}"
            value="{{$attributes->get('min')}}"
            placeholder="{{$attributes->get('min')}}"
+           step="{{((float)$attributes->get('max') - (float)$attributes->get('min'))/100}}"
+{{--           oninput="rangeValue.innerText = this.value"--}}
         >
     </div>
 </div>

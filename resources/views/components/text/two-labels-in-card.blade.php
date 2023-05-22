@@ -16,7 +16,7 @@
 
         @isset($tooltip)
             <a class="htooltip" rel="nofollow">
-                <img src="/images/icons/tooltip_question.svg" title="{{$tooltip}}"/>
+                <img src="{{\Illuminate\Support\Facades\Vite::asset("resources/images/icons/tooltip_question.svg")}}" title="{{$tooltip}}"/>
             </a>
         @endisset
     </div>

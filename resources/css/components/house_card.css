@@ -1,7 +1,4 @@
 /*MORTGAGE CALCULATOR*/
-.mortgage-calculator{
-    flex-wrap: nowrap
-}
 .section_heading{
     font-weight: 700;
     font-size: 42px;
@@ -11,6 +8,14 @@
     color: var(--color-black);
 
     margin-bottom: 50px;
+}
+.form__wrapper{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+
+    max-width: 1620px;
 }
 form.mortgage-calculator h4{
     font-family: 'Raleway';
@@ -30,12 +35,9 @@ form.mortgage-calculator {
     justify-content: space-between;
 }
 form.mortgage-calculator .block{
-    margin-right: 50px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
-
-    min-width: 507px;
+    flex: 1 1 33%;
 }
 
 .calcus-left-text{
@@ -72,6 +74,7 @@ form.mortgage-calculator .block{
 form.mortgage-calculator .range {
     display: flex;
     flex-direction: column;
+    min-width: 227px;
 
     margin-bottom: 30px;
 }
@@ -85,11 +88,10 @@ form.mortgage-calculator .range .input {
     right: 0px;
     align-items: center;
 }
+
 form.mortgage-calculator .range input {
     display: flex;
     flex-direction: row;
-
-    position: absolute;
 }
 
 form.mortgage-calculator .range .input h4{
@@ -106,17 +108,27 @@ form.mortgage-calculator .range .input h4{
 .space__between{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 form.mortgage-calculator .range .input h4.percent{
     color: var(--color-grayest);
 }
+.mortgage-calculator-right h4:nth-last-child(1){
+    margin-bottom: 0px;
+}
 
+/*Left Block Content*/
+.mortgage-calculator-left{
+    justify-content: space-around;
+}
+/*END Left Block*/
 /*Midlle Block Content*/
 .mortgage-calculator-middle.block{
     align-items: flex-start;
     padding: 45px;
-    /*gap: 30px;*/
+    max-width: calc(506px - 90px);
+
 
     background: #ffffff;
     border-radius: 50px;
@@ -131,4 +143,93 @@ form.mortgage-calculator .range .input h4.percent{
     color: var(--color-black);
 
     margin-bottom: 30px;
+}
+
+.millions{
+    color: var(--color-red);
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.thousands{
+    color: var(--color-red);
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.hundreds{
+    color: var(--color-red);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+}
+form.mortgage-calculator h4.m_padding{
+    padding-bottom: 44.8px;
+    margin-bottom: 0px;
+}
+
+form.mortgage-calculator .label_percents_toggle h4{
+    color: var(--color-black);
+    font-weight: 700;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    padding-right: 20px;
+}
+
+form.mortgage-calculator .label_percents_toggle .grayest{
+    color: var(--color-grayest);
+    transition: 0.3s;
+}
+
+.label_percents_toggle{
+    margin-bottom: 20px;
+}
+
+form.mortgage-calculator .benefits{
+    display: flex;
+    flex-direction: row;
+}
+
+form.mortgage-calculator .benefits .range{
+    padding-right: 75px;
+    margin-bottom: 0px;
+}
+
+form.mortgage-calculator .benefits .benefit{
+    padding-right: 48px;
+}
+
+.benefits{
+    margin-bottom: 20px;
+}
+
+.benefits .price{
+    color: var(--color-black);
+    font-weight: 700;
+}
+
+.benefits .red_color{
+    color: var(--color-red);
+    font-weight: 700;
+}
+
+form.mortgage-calculator h4.clarification{
+    color: var(--color-black);
+    margin-bottom: 0px;
+}
+
+.mortgage-calculator hr {
+    height: 0px;
+    border: 1px solid var(--color-gray);
+    margin: 43.8px 0;
+    padding: 0;
+}
+
+.label_percents_toggle .space__between {
+    flex-direction: row-reverse;
+}
+
+form.mortgage-calculator .label_percents_toggle h4.red_color {
+    color: var(--color-red);
+    transition: 0.3s;
 }

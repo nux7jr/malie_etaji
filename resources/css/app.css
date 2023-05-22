@@ -359,6 +359,42 @@ footer {
     margin-top: 13px;
 }
 /*INPUTS*/
+.range .width{
+    height: 0px;
+    width: 100%;
+}
+.range input[type="range"]::-moz-range-thumb {
+    border-radius: 50%;
+    background-color: var(--color-red);
+    border: none;
+    height: 18px;
+    width: 18px;
+}
+.range input[type="range"]::-webkit-slider-thumb{
+    -webkit-slider-thumb: none;
+    appearance: none;
+
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-red);
+    height: 18px;
+    width: 18px;
+    border: none;
+}
+.range input[type="range"]{
+    margin-left: 4px;
+    margin-top: 19px;
+    position: absolute;
+
+    -webkit-appearance: none;
+    height: 2px;
+    background-color: rgba(0,0,0,0);
+
+    background-image: linear-gradient(var(--color-red), var(--color-red));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+
 .custom-select-dropdown {
     position: relative;
 }
@@ -375,7 +411,7 @@ footer {
 
 .dropdown-select-selected:after {
     position: absolute;
-    content: url("/public/images/icons/dropdown_arr.svg");
+    content: url("/resources/images/icons/dropdown_arr.svg");
 
     height: 4px;
     width: 8px;
@@ -397,10 +433,14 @@ footer {
 
     cursor: pointer;
 }
+.dropdown-select-items div:nth-last-child(1){
+    margin-bottom: 0px;
+}
 
 .dropdown-select-items {
     position: absolute;
     background-color: #ffffff;
+    border-radius: 28px;
     top: 100%;
     left: 0;
     right: 0;
@@ -459,11 +499,11 @@ footer {
     border-radius: 70px;
     transition: 0.3s;
 }
-.switch:has(> input[type="checkbox"]:checked) > label {
+.switch.active > label {
     transition: 0.3s;
     transform: translateX(53px);
 }
-.switch:has(> input[type="checkbox"]:checked) {
+.switch.active {
     background-color: var(--color-red);
     transition: 0.3s;
 }
