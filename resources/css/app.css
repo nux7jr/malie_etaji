@@ -111,9 +111,9 @@ hr {
 /* header */
 header {
     background-color: white;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0 0 50px 50px;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 3;
 }
 
@@ -155,7 +155,7 @@ header {
 
 .navigation {
     background-color: white;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0 0 50px 50px;
     height: 89px;
 
     align-items: center;
@@ -176,7 +176,6 @@ header {
     cursor: pointer;
     gap: 15px;
 
-    font-family: "Raleway";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -262,7 +261,7 @@ header {
 /* footer */
 footer {
     background-color: rgb(255, 255, 255);
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 50px 50px 0 0;
 }
 .footer-contact__link,
 .footer-pages__link,
@@ -360,7 +359,7 @@ footer {
 }
 /*INPUTS*/
 .range .width{
-    height: 0px;
+    height: 0;
     width: 100%;
 }
 .range input[type="range"]::-moz-range-thumb {
@@ -391,7 +390,7 @@ footer {
     background-color: rgba(0,0,0,0);
 
     background-image: linear-gradient(var(--color-red), var(--color-red));
-    background-size: 0% 100%;
+    background-size: 0 100%;
     background-repeat: no-repeat;
 }
 
@@ -434,7 +433,7 @@ footer {
     cursor: pointer;
 }
 .dropdown-select-items div:nth-last-child(1){
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .dropdown-select-items {
