@@ -71,7 +71,6 @@ function closeAllSelect(elmnt) {
     for (i = 0; i < xl; i++) {
         if (arrNo.indexOf(i)) {
             x[i].classList.add("dropdown-select-hide");
-            console.log(x[i].classList)
         }
     }
 }
@@ -79,3 +78,73 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
+function setColorPercent() {
+    const checkbox = this.querySelector('input[type="checkbox"]');
+    const switch_ = checkbox.closest('.switch');
+    const h4 = switch_.closest('.space__between').querySelector('h4');
+
+    if (checkbox !== 'undefined' && h4 !== 'undefined' && h4.classList !== null){
+        if (checkbox.checked === true){
+            h4.classList.forEach(function(el){
+                el === 'grayest' ? h4.classList.remove(['grayest']) : null;
+                el === 'red_color' ? h4.classList.remove(['red_color']) : null;
+            });
+            switch_.classList.add(['active']);
+            h4.classList.add(['red_color']);
+        }else {
+            h4.classList.forEach(function(el){
+                el === 'grayest' ? h4.classList.remove(['grayest']) : null;
+                el === 'red_color' ? h4.classList.remove(['red_color']) : null;
+            });
+            switch_.classList.remove(['active']);
+            h4.classList.add(['grayest']);
+        }
+    }
+
+}
+function radio_wrapper(){
+    const input_radios = document.querySelectorAll('.switch');
+    if (input_radios !== 'undefined'){
+        input_radios.forEach(function (input, index){
+            input.addEventListener('click', setColorPercent);
+        });
+    }
+}
+
+function setWidthRange(input) {
+    const width = input.querySelector('.width');
+    const range = input.querySelector('input[type="range"]');
+    range.style.width = width.clientWidth - 10 + 'px';
+}
+
+function handleInputChange(e) {
+    let target = e.target
+    if (e.target.type !== 'range') {
+        target = document.getElementById('range')
+    }
+    const min = target.min
+    const max = target.max
+    const val = target.value
+
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+}
+
+function range_wrapper(){
+    const input_ranges = document.querySelectorAll('.range');
+    if (input_ranges !== 'undefined'){
+        input_ranges.forEach(function (input, index){
+            setWidthRange(input);
+            new ResizeObserver(()=>{
+                setWidthRange(input);
+            }).observe(input);
+            input.addEventListener('input', handleInputChange);
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    radio_wrapper();
+    range_wrapper();
+});

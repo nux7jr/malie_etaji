@@ -2,5 +2,5 @@
     'mortgage-calculator'
 ])}}>
     @csrf
-    {{$slot}}
+    <div class="form__wrapper">{{$slot}}</div>
 </form>
