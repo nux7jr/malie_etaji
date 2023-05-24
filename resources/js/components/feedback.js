@@ -1,4 +1,5 @@
 import "fslightbox";
+
 export function initFeedback(Swiper) {
     const feedback = new Swiper(".feedback-swiper", {
         slidesPerView: 3,

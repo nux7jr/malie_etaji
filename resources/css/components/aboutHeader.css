@@ -2,15 +2,14 @@
     width: 46px;
     height: 46px;
 }
-.about {
-    padding-bottom: 70px;
-}
+
 .about-router__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.about {
+.about__wrapper {
+    padding-bottom: 70px;
     display: flex;
     flex: 1 1 50%;
     gap: 50px;

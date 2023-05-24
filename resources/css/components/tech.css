@@ -29,6 +29,7 @@
 }
 .small-card__text {
     color: var(--color-grayest);
+    font-weight: 500;
 }
 .tech-card {
     background-color: var(--color-red);
@@ -82,6 +83,7 @@
 }
 .tech-card__paraf {
     margin-top: 27px;
+    font-weight: 500;
 }
 
 .normal-card {

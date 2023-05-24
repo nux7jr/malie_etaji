@@ -116,7 +116,7 @@
     height: 8px;
     border-radius: 35px;
     background-color: var(--color-red);
-    animation: progres 5.2s infinite linear;
+    animation: progres 5.2s forwards linear;
 }
 .swiper-pagination.offer-slide__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 50px;
@@ -519,7 +519,7 @@
     height: 8px;
     border-radius: 35px;
     background-color: var(--color-red);
-    animation: progres 5.2s infinite linear;
+    animation: progres 5.2s forwards linear;
 }
 .stage {
     background-color: white;
