@@ -118,9 +118,9 @@ hr {
 
     outline: none;
 }
-.default__button:focus {
-    /* border: 1px solid rgba(0, 0, 0, 0.408); */
-}
+/* .default__button:focus {
+    border: 1px solid rgba(0, 0, 0, 0.408);
+} */
 .default__button:hover {
     opacity: 0.8;
 }
@@ -374,8 +374,18 @@ footer {
     gap: 30px;
     margin-top: 13px;
 }
+
 /*INPUTS*/
-.range .width{
+.default__input {
+    background: #ffffff;
+    border-radius: 70px;
+    font-size: inherit;
+    color: inherit;
+    padding: 20px;
+    border-color: transparent;
+    transition: 0.2s;
+}
+.range .width {
     height: 0;
     width: 100%;
 }
@@ -386,7 +396,7 @@ footer {
     height: 18px;
     width: 18px;
 }
-.range input[type="range"]::-webkit-slider-thumb{
+.range input[type="range"]::-webkit-slider-thumb {
     -webkit-slider-thumb: none;
     appearance: none;
 
@@ -397,14 +407,14 @@ footer {
     width: 18px;
     border: none;
 }
-.range input[type="range"]{
+.range input[type="range"] {
     margin-left: 4px;
     margin-top: 19px;
     position: absolute;
 
     -webkit-appearance: none;
     height: 2px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 
     background-image: linear-gradient(var(--color-red), var(--color-red));
     background-size: 0 100%;
@@ -426,15 +436,22 @@ footer {
 }
 
 .dropdown-select-selected:after {
-    position: absolute;
     content: url("/resources/images/icons/dropdown_arr.svg");
 
-    height: 4px;
-    width: 8px;
-    left: calc(100% - 8px / 2 - 32px);
-    top: calc(50% - 4px / 2 - 14px);
+    position: absolute;
+    content: url(http://127.0.0.1:5173/resources/images/icons/dropdown_arr.svg);
+    height: 24px;
+    width: 24px;
+    right: 10px;
+    top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s all;
 }
-
+.dropdown-select-arrow-active::after {
+    transform: rotate(180deg);
+}
 .dropdown-select-items div,
 .dropdown-select-selected {
     color: var(--color-black);
@@ -449,8 +466,11 @@ footer {
     font-feature-settings: "pnum" on, "lnum" on;
 
     cursor: pointer;
+    position: relative;
+    transition: 0.2s all;
 }
-.dropdown-select-items div:nth-last-child(1){
+
+.dropdown-select-items div:nth-last-child(1) {
     margin-bottom: 0;
 }
 

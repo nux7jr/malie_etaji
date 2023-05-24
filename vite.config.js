@@ -13,9 +13,12 @@ export default defineConfig({
                 // for page
                 "resources/js/pages/home/home.js",
                 "resources/css/pages/home/home.css",
+
                 "resources/css/pages/about/about.css",
                 "resources/js/pages/about/about.js",
 
+                "resources/css/pages/projects/projects.css",
+                "resources/js/pages/projects/projects.js",
                 // js components
                 "resources/js/components/feedback.js",
                 "resources/js/components/project-item.js",
