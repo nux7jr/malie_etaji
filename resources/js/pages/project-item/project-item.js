@@ -3,7 +3,7 @@ import "swiper/css/bundle";
 
 const project_item = new Swiper(".project-item__swiper", {
     slidesPerView: 1,
-    loop: true,
+    // loop: true,
     navigation: {
         nextEl: ".project-item__next",
         prevEl: ".project-item__prev",

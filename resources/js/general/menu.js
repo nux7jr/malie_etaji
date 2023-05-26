@@ -1,14 +1,18 @@
 const sub_menu_links = [...document.querySelectorAll(".submenu")];
 const main_menu = document.querySelector(".header__links");
-const first_sub_menu = document.querySelector(".header__submenu--first");
+
 const logo = document.querySelector(".header__logo");
 const close_button = document.querySelectorAll(".header__goback");
 
 sub_menu_links.forEach((element) => {
     element.addEventListener("click", (evt) => {
+        const curr__submenu = evt.target.dataset.menu;
+        const submenu = document.querySelector(
+            `.header__submenu--${curr__submenu}`
+        );
         logo.classList.add("visually-hidden");
         main_menu.classList.add("visually-hidden");
-        first_sub_menu.style.display = "flex";
+        submenu.style.display = "flex";
     });
 });
 

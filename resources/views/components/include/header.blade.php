@@ -1,7 +1,8 @@
 <section class="heading-info">
     <div class="header-select__wrapper">
         <button title="{{ __('Выбор города') }}" class="heading-info__button geo__button">
-            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg') }}" alt="{{ __('Красноярск') }}">
+            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg') }}"
+                alt="{{ __('Красноярск') }}">
             {{ __('Красноярск') }}
             <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg') }}"
                 alt="{{ __('Красноярск') }}">
@@ -21,7 +22,7 @@
 </section>
 <header>
     {{-- @php
-        dd($path);
+    dd($path);
     @endphp --}}
     <div class="header__wrapper">
         <nav class="header__item navigation">
@@ -35,16 +36,17 @@
                 <a title="{{ __('Все проекты') }}" class="header__button header__link" href="/projects">
                     {{ __('Все проекты') }}
                 </a>
-                <a title="{{ __('Одноэтажные') }}" class="header__button header__link" href="/single">
+                <a title="{{ __('Одноэтажные') }}" class="header__button header__link" href="/projects/single">
                     {{ __('Одноэтажные') }}
                 </a>
-                <a title="{{ __('Двухэтажные') }}" class="header__button header__link" href="/double">
+                <a title="{{ __('Двухэтажные') }}" class="header__button header__link" href="/projects/double">
                     {{ __('Двухэтажные') }}
                 </a>
-                <a title="{{ __('Барны') }}" class="header__button header__link" href="/barns">
+                <a title="{{ __('Барны') }}" class="header__button header__link" href="/projects/barn">
                     {{ __('Барны') }}
                 </a>
-                <a title="{{ __('Конструктор дома') }}" class="header__button header__link" href="/constructor">
+                <a title="{{ __('Конструктор дома') }}" class="header__button header__link"
+                    href="/projects/#constructor">
                     {{ __('Конструктор дома') }}
                 </a>
                 <a title="{{ __('Экскурсия по объектам') }}" class="header__button header__link" href="/ecs">
@@ -57,7 +59,7 @@
             </div>
             <div class="header__submenu header__submenu--second">
                 <button class="header__goback">
-                    <img src="images/icons/back.svg" alt="back">
+                    <img src="{{ Vite::asset('resources/images/icons/back.svg') }}" alt="back">
                 </button>
                 <a title="{{ __('Семейная ипотека') }}" class="header__button header__link" href="/family">
                     {{ __('Семейная ипотека') }}
@@ -83,10 +85,11 @@
                 </a>
             </div>
             <div class="header__links">
-                <button title="{{ __('Посмотреть все проекты') }}" class="header__button header__link submenu">
+                <button data-menu="first" title="{{ __('Посмотреть все проекты') }}"
+                    class="header__button header__link submenu">
                     {{ __('Проекты') }}
                 </button>
-                <button title="{{ __('Виды ипотеки') }}" class="header__button header__link submenu">
+                <button data-menu="second" title="{{ __('Виды ипотеки') }}" class="header__button header__link submenu">
                     {{ __('Ипотека') }}
                 </button>
                 <a title="{{ __('Инвестиции') }}" class="header__button header__link" href="/invest">

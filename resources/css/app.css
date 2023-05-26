@@ -10,7 +10,9 @@
     --color-blue: #2f3d61;
     --swiper-theme-color: #f04b54;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;

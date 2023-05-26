@@ -16,16 +16,7 @@
                 <div class="project-input project-filter__item">
                     <label for="house-list" class="project-input__label">Линейка домов</label>
                     <x-ui.lists.dropdown class="house-list__dropdown" id="house-list" name="house-list">
-                        <?php
-                $house_setting = [
-                    'Не выбрано',
-                    'Все',
-                    'Дом 2',
-                    'Дом 3',
-                    'Дом 4',
-                    'Дом 4',
-                    'Дом 4',];
-                ?>
+
                         @foreach($house_setting as $option)
                         <x-ui.lists.option value="{{$option}}">
                             {{$option}}

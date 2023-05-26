@@ -329,6 +329,12 @@
 .flex-one {
     flex: 1;
 }
+.peculiarities {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
 .peculiarities__heading {
     font-weight: 700;
     font-size: 42px;
@@ -354,4 +360,92 @@
     font-size: 25px;
     font-feature-settings: "pnum" on, "lnum" on;
     color: white;
+}
+.datepiker__input {
+    display: none;
+}
+.project-review {
+    margin-top: 100px;
+    display: flex;
+    padding: 90px;
+    border-radius: 50px;
+    gap: 50px;
+    color: var(--color-black);
+    background-color: var(--color--background);
+}
+.project-review__paraf {
+    max-width: 417px;
+    margin-top: 50px;
+}
+.datepiker {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+.datepiker__input:checked + .datepiker__label {
+    background-color: var(--color-red);
+}
+.datepiker__label {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 35px;
+    background-color: var(--color-pink);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.datepiker__list-inputs {
+    display: flex;
+    gap: 20px;
+}
+.datepiker__title {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 16px;
+}
+.datepiker__day {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-red);
+}
+.datepiker__input:checked + .datepiker__label > .datepiker__day {
+    color: white;
+}
+.datepiker__input:checked + .datepiker__label > .datepiker__title {
+    color: white;
+}
+.project-review__heading {
+    font-weight: 700;
+    font-size: 42px;
+    max-width: 417px;
+}
+.datepiker__user-info__wrapper {
+    display: flex;
+    gap: 50px;
+}
+.user-info__item {
+    flex: 1;
+}
+.datepiker__policy {
+    display: flex;
+    gap: 4px;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.datepiker__policy a {
+    color: var(--color-red);
+}
+.datepiker__user-info__wrapper > .user-info__item {
+    font-weight: 600;
+}
+.datepiker__option > .custom-select-dropdown {
+    max-width: 580px;
+}
+.mortgage-calc {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }

@@ -44,7 +44,7 @@
             </div>
             <hr class="project-item__hr" />
             <div class="project-item__option">
-                <a class="default__button" href="projects/228">{{ __('Подробнее') }}</a>
+                <a class="default__button" href="/projects/228">{{ __('Подробнее') }}</a>
                 <button class="default__button project-item__call">{{ __('Хочу такой дом') }}</button>
             </div>
         </div>

@@ -30,7 +30,7 @@ export default defineConfig({
 
                 // for components
                 "resources/css/components/path.css",
-
+                "resources/css/components/house_card.css",
                 "resources/css/components/certificates.css",
                 "resources/css/components/tech.css",
                 "resources/css/components/aboutHeader.css",
