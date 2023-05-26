@@ -21,7 +21,15 @@ Route::get('/', function () {
 Route::get('/projects', function () {
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
-        '1' => ['path' => '/about', 'name' => 'Проекты'],
+        '1' => ['path' => '/projects', 'name' => 'Проекты'],
+    ]]);
+});
+Route::get('/projects/{id}', function ($id) {
+
+    return view('project-item.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/projects', 'name' => 'Проекты'],
+        '3' => ['path' => $id, 'name' => 'curr ID or name'],
     ]]);
 });
 

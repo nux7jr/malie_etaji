@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "link": "/some-proj/id",
+    "images": [
+      "https://placehold.co/507x267",
+      "https://placehold.co/507x267",
+      "https://placehold.co/507x267"
+    ],
+    "title": "ДВ 17-02",
+    "price": "от 4,5 млн ₽",
+    "inner_info": [
+      "100,7 м2", "5 комнат", "1 санузел", "2 этажа"
+    ],
+    "tags": [
+      "С гаражом", "С гаражом"
+    ]
+  },
+  {
+    "id": 2,
+    "link": "/some-proj/id",
+    "images": [
+      "https://placehold.co/507x267",
+      "https://placehold.co/507x267",
+      "https://placehold.co/507x267"
+    ],
+    "title": "ДВ 17-02",
+    "price": "от 3,5 млн ₽",
+    "inner_info": [
+      "100,7 м2", "5 комнат", "1 санузел", "2 этажа"
+    ],
+    "tags": [
+      "С гаражом", "С гаражом"
+    ]
+  }
+]

@@ -22,12 +22,12 @@
     }
 
     to {
-        height: 267px;
+        height: 247px;
     }
 }
 @keyframes slideDeff {
     from {
-        height: 267px;
+        height: 247px;
     }
 
     to {
@@ -54,7 +54,7 @@
     gap: 20px;
 }
 .project-item__call {
-    color: var(--color-black);
+    color: var(--color-red);
     background-color: white;
 }
 .house-info {
@@ -147,4 +147,15 @@
 }
 .project-item:hover * .project-slide {
     animation: 0.2s forwards alternate slideInner;
+}
+.project-item__wrapper.dark * .project-item__call {
+    color: var(--color-black);
+    background-color: var(--color--background);
+}
+.project-item__wrapper.dark * .house-tag__item {
+    color: var(--color-black);
+    background-color: var(--color--background);
+}
+.more__button {
+    margin: 0 auto;
 }

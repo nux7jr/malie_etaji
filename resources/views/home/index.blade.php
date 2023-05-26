@@ -592,7 +592,6 @@
 <section class="advantages">
     <h1 class="advantages__heading">
         {{ __('Наши преимущества') }}
-
     </h1>
     <div class="advantages__wrapper">
         @for ($i = 0; $i < 8; $i++) <div class="advantages-card">
@@ -644,7 +643,7 @@
         </a>
     </div>
     <div class="home-projects__wrapper">
-        @for ($i = 0; $i < 3; $i++) <x-cards.project-item>
+        @for ($i = 0; $i < 3; $i++) <x-cards.project-item class="home-projects__item">
             </x-cards.project-item>
             @endfor
     </div>

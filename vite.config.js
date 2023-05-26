@@ -19,6 +19,10 @@ export default defineConfig({
 
                 "resources/css/pages/projects/projects.css",
                 "resources/js/pages/projects/projects.js",
+
+                "resources/css/pages/project-item/project-item.css",
+                "resources/js/pages/project-item/project-item.js",
+
                 // js components
                 "resources/js/components/feedback.js",
                 "resources/js/components/project-item.js",

@@ -1,10 +1,14 @@
 import * as noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
 
-const rangeSliderInit = () => {
+
+import { initProjects } from "../../components/project-item";
+initProjects(Swiper);
+
+const filterInit = () => {
     const nonLinearSlider = document.querySelector(".rangees");
-    // const start = document.querySelector(".formatting-end");
-    // const end = document.querySelector(".formatting-start");
 
     const formatForSlider = {
         from: function (formattedValue) {
@@ -26,20 +30,47 @@ const rangeSliderInit = () => {
         format: formatForSlider,
     });
     nonLinearSlider.noUiSlider.set(["3000000", "15700000"]);
-    var formatValues = [
+    const formatValues = [
         document.querySelector(".formatting-end"),
         document.querySelector(".formatting-start"),
+    ];
+    const hiddenInputs = [
+        document.querySelector(".hide-end"),
+        document.querySelector(".hide-start"),
     ];
     nonLinearSlider.noUiSlider.on(
         "update",
         function (values, handle, unencoded) {
-            console.log(values[handle]);
+            // const bar = Number(values[handle].replace(",", ".")) * 1000000;
+            const bar = values[handle].replace(",", ".");
+
+            hiddenInputs[handle].value = bar;
             formatValues[handle].innerHTML = values[handle];
         }
     );
+    // send + cls
+    const filter_form = document.querySelector(".filter__form");
+    const cls_button = document.querySelector(".cls__button");
+    const dropdownItems = document.querySelector(".dropdown-select-items");
+
+    filter_form.addEventListener("submit", async (evt) => {
+        evt.preventDefault();
+        const res = await fetch("/kek", {
+            method: "POST",
+            body: new FormData(filter_form),
+        });
+        console.log(res);
+    });
+
+    cls_button.addEventListener("click", (evt) => {
+        evt.preventDefault();
+        filter_form.reset();
+        nonLinearSlider.noUiSlider.set(["3000000", "15700000"]);
+        dropdownItems.firstChild.click();
+    });
 };
 const init = () => {
-    rangeSliderInit(); // запускаем функцию инициализации слайдера
+    filterInit();
 };
 
-window.addEventListener("DOMContentLoaded", init); // запускаем функцию init, когда документ будет загружен и готов к взаимодействию
+window.addEventListener("DOMContentLoaded", init);
