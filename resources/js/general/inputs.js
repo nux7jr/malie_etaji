@@ -85,6 +85,8 @@ function setColorPercent() {
     const switch_ = checkbox.closest('.switch');
     const h4 = switch_.closest('.space__between').querySelector('h4');
 
+    checkbox.checked = !checkbox.checked;
+
     if (checkbox !== 'undefined' && h4 !== 'undefined' && h4.classList !== null){
         if (checkbox.checked === true){
             h4.classList.forEach(function(el){
@@ -119,6 +121,30 @@ function setWidthRange(input) {
     range.style.width = width.clientWidth - 10 + 'px';
 }
 
+function setValueRange(input, range){
+    const label = input.querySelector('.input h4');
+    label.textContent = range.value;
+    if (range.id === 'start-payment'){
+        const percent = input.querySelector('.input .percent');
+        const price = document.querySelector('#price');
+        percent.textContent = Math.round((range.value / price.value) * 100, 0) + '%';
+    }
+    if (range.id === 'price'){
+        const percent = document.querySelector('.input[name="start-payment"] .percent');
+        const h4 = document.querySelector('.input[name="start-payment"] h4');
+        const ranger_percent = document.querySelector('.input[name="start-payment"] input[type="range"]');
+
+        ranger_percent.min = Math.round(range.value * 0.15,0);
+        ranger_percent.max = Math.round(range.value,0);
+        ranger_percent.step = (ranger_percent.max - ranger_percent.min) / 100;
+
+        h4.textContent = Math.round(ranger_percent.value,0);
+        percent.textContent = Math.round((ranger_percent.value / range.value) * 100,0) + '%';
+
+        ranger_percent.style.backgroundSize = (ranger_percent.value - ranger_percent.min) * 100 / (ranger_percent.max - ranger_percent.min)  + '% 100%';
+    }
+}
+
 function handleInputChange(e) {
     let target = e.target
     if (e.target.type !== 'range') {
@@ -140,6 +166,10 @@ function range_wrapper(){
                 setWidthRange(input);
             }).observe(input);
             input.addEventListener('input', handleInputChange);
+            const range = input.querySelector('input');
+            range.addEventListener('change', (event) =>{
+                setValueRange(input, range);
+            });
         });
     }
 }

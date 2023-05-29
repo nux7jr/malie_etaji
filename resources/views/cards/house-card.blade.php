@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<section>
+<section class="default__section">
     <h1 class="section_heading">{{__('Ипотечный калькулятор')}}</h1>
 
     <x-calcus.form-mortgage-calculator>
