@@ -22,13 +22,13 @@ export default defineConfig({
 
                 "resources/css/pages/project-item/project-item.css",
                 "resources/js/pages/project-item/project-item.js",
-
                 // js components
                 "resources/js/components/feedback.js",
                 "resources/js/components/project-item.js",
                 "resources/js/components/certificates.js",
-
+                "resources/js/pages/technologies/technologies.js",
                 // for components
+                "resources/css/pages/technologies/technologies.css",
                 "resources/css/components/path.css",
                 "resources/css/components/house_card.css",
                 "resources/css/components/certificates.css",

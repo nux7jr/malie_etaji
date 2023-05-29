@@ -1,0 +1,1 @@
+import{S as e}from"./swiper-bundle.min-17f9adeb.js";new e(".project-item__swiper",{slidesPerView:1,navigation:{nextEl:".project-item__next",prevEl:".project-item__prev"}});new e(".about-project__swiper",{autoplay:{delay:5e3,disableOnInteraction:!1},loop:!0,pagination:{clickable:!0,el:".about-project__pagination"}});
