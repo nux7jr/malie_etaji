@@ -441,7 +441,6 @@ footer {
     content: url("/resources/images/icons/dropdown_arr.svg");
 
     position: absolute;
-    content: url(http://127.0.0.1:5173/resources/images/icons/dropdown_arr.svg);
     height: 24px;
     width: 24px;
     right: 10px;
