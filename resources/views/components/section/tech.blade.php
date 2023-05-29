@@ -1,7 +1,7 @@
 @push('head')
-    @once
-        @vite('resources/css/components/tech.css')
-    @endonce
+@once
+@vite('resources/css/components/tech.css')
+@endonce
 @endpush
 
 
@@ -18,12 +18,11 @@
                 </p>
             </div>
             <div class="tech-card__img">
-                <img class="tech-card__icon" src="{{ Vite::asset('resources/images/components/img.svg') }}"
-                    alt="">
+                <img class="tech-card__icon" src="{{ Vite::asset('resources/images/components/img.svg') }}" alt="">
             </div>
-            <button class="default__button tech-card__button">
+            <a href="/about/technologies" class="default__button tech-card__button">
                 {{ __('Узнать больше') }}
-            </button>
+            </a>
         </div>
         <div class="nap-wrapper">
             <div class="small-card normal-card">
@@ -32,7 +31,8 @@
 
                 </h1>
                 <p class="small-card__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
+                    время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
                 </p>
                 <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
                     <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
@@ -44,7 +44,8 @@
                     {{ __('Фундамент') }}
                 </h1>
                 <p class="small-card__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
+                    время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
                 </p>
                 <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
 
@@ -69,7 +70,8 @@
                     {{ __('Нанофильтры для окон') }}
                 </h1>
                 <p class="small-card__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
+                    время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
                 </p>
                 <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
                     <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"

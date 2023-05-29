@@ -1,0 +1,47 @@
+.certificates {
+    color: var(--color-black);
+    background-color: white;
+}
+.certificates__text {
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 30px;
+
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: var(--color-grayest);
+}
+.certificates-swiper {
+    margin-top: 50px;
+}
+.certificates__heading {
+    font-weight: 700;
+    font-size: 42px;
+}
+.certificates__img {
+    width: 228.33px;
+    height: 313px;
+    background-color: var(--color-grayest);
+    border-radius: 50px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.certificates-swiper .swiper-pagination {
+    position: static;
+    padding-top: 50px;
+}
+.certificates-swiper .swiper-pagination-bullet {
+    width: 40px;
+    height: 8px;
+    border-radius: 35px;
+    transition: 0.2s;
+    background: var(--color-pink);
+    opacity: 1;
+}
+.certificates-swiper .swiper-pagination-bullet-active {
+    width: 71px;
+    height: 8px;
+    background: var(--color-red);
+}

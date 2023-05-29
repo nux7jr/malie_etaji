@@ -1,11 +1,11 @@
 @push('head')
-    @once
-        @vite('resources/css/components/constructor.css')
-    @endonce
+@once
+@vite('resources/css/components/constructor.css')
+@endonce
 @endpush
 
 
-<section class="constructor">
+<section class="constructor" id="constructor">
     <h1 class="constructor__heading">
         {{ __('Конструктор дома') }}
     </h1>
@@ -20,8 +20,8 @@
                     {{ __('Выберите тип дома') }}
 
                     <button class="tooltip">
-                        <img class="toltip-button__img" src="{{ Vite::asset('resources/images/components/toltip.svg') }}"
-                            alt="toltip">
+                        <img class="toltip-button__img"
+                            src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
                         <span class="tooltiptext">
                             {{ __(' Tooltip text') }}
                         </span>
@@ -29,8 +29,8 @@
                 </h2>
                 <div class="ganeral-wrapper house-type__wrapper">
                     <div class="ganeral-item house-type__item">
-                        <input checked id="single" class="ganeral-input house-type__input visually-hidden"
-                            type="radio" name="house-type" value="Одноэтажный" />
+                        <input checked id="single" class="ganeral-input house-type__input visually-hidden" type="radio"
+                            name="house-type" value="Одноэтажный" />
                         <label class="ganeral-lablel house-type__label" for="single">
                             {{ __('Одноэтажный') }}
 
@@ -68,32 +68,28 @@
                 </h2>
                 <div class="ganeral-wrapper">
                     <div class="ganeral-item">
-                        <input id="size-xs" class="ganeral-input visually-hidden" type="radio" name="size"
-                            value="XS" />
+                        <input id="size-xs" class="ganeral-input visually-hidden" type="radio" name="size" value="XS" />
                         <label class="ganeral-lablel" for="size-xs">XS
                         </label>
                     </div>
                     <div class="ganeral-item ">
-                        <input checked id="size-s" class="ganeral-input visually-hidden" type="radio"
-                            name="size" value="S" />
+                        <input checked id="size-s" class="ganeral-input visually-hidden" type="radio" name="size"
+                            value="S" />
                         <label class="ganeral-lablel" for="size-s">S
                         </label>
                     </div>
                     <div class="ganeral-item">
-                        <input id="size-m" class="ganeral-input visually-hidden" type="radio" name="size"
-                            value="M" />
+                        <input id="size-m" class="ganeral-input visually-hidden" type="radio" name="size" value="M" />
                         <label class="ganeral-lablel" for="size-m">M
                         </label>
                     </div>
                     <div class="ganeral-item">
-                        <input id="size-l" class="ganeral-input visually-hidden" type="radio" name="size"
-                            value="L" />
+                        <input id="size-l" class="ganeral-input visually-hidden" type="radio" name="size" value="L" />
                         <label class="ganeral-lablel" for="size-l">L
                         </label>
                     </div>
                     <div class="ganeral-item">
-                        <input id="size-xl" class="ganeral-input visually-hidden" type="radio" name="size"
-                            value="XL" />
+                        <input id="size-xl" class="ganeral-input visually-hidden" type="radio" name="size" value="XL" />
                         <label class="ganeral-lablel" for="size-xl">XL
                         </label>
                     </div>

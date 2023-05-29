@@ -1,81 +1,35 @@
 @push('head')
     @once
-        @vite('resources/css/components/tech.css')
+        @vite('resources/css/components/feedback.css')
     @endonce
 @endpush
 
-
-<section class="tech">
-    <h1 class="tech__heading">
-        {{ __('Технологии, которые мы используем в строительстве') }}
-    </h1>
-    <div class="tech__wrapper">
-        <div class="tech__item tech-card">
-            <div class="tech-card__header">
-                <h1 class="tech-card__heading">{{ __('SIP-панели') }}</h1>
-                <p class="tech-card__paraf">
-                    {{ __('Lorem Ipsum является стандартной для текстов на латинице с начала XVI века.') }}
-                </p>
-            </div>
-            <div class="tech-card__img">
-                <img class="tech-card__icon" src="{{ Vite::asset('resources/images/components/img.svg') }}"
-                    alt="">
-            </div>
-            <button class="default__button tech-card__button">
-                {{ __('Узнать больше') }}
-            </button>
-        </div>
-        <div class="nap-wrapper">
-            <div class="small-card normal-card">
-                <h1 class="small-card__heading">
-                    {{ __('Теплые полы') }}
-
-                </h1>
-                <p class="small-card__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
-                </p>
-                <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
-                        alt="">
-                </a>
-            </div>
-            <div class="small-card normal-card">
-                <h1 class="small-card__heading">
-                    {{ __('Фундамент') }}
-                </h1>
-                <p class="small-card__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
-                </p>
-                <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
-
-                    <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
-                        alt="">
-                </a>
-            </div>
-            <div class="small-card smalls-card">
-                <h1 class="small-card__heading">
-                    {{ __('Котлы') }}
-                </h1>
-                <p class="small-card__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. ') }}
-                </p>
-                <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
-                        alt="">
-                </a>
-            </div>
-            <div class="small-card long-card">
-                <h1 class="small-card__heading">
-                    {{ __('Нанофильтры для окон') }}
-                </h1>
-                <p class="small-card__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
-                </p>
-                <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
-                    <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
-                        alt="">
-                </a>
-            </div>
+<section class="feedback">
+    <h1 class="feedback__heading">Отзывы клиентов “Малые этажи”</h1>
+    <div class="swiper feedback-swiper">
+        <div class="swiper-wrapper feedback-wrapper">
+            @for ($i = 0; $i < 16; $i++)
+                <div class="swiper-slide feedback-slide">
+                    <a style="background-image: url(https://placehold.co/255x300)" class="feedback-slide__video"
+                        data-fslightbox="youtube-video" data-video-poster="https://placehold.co/255x300"
+                        href="https://www.youtube.com/watch?v=d4eDWc8g0e0">
+                        <img class="play-button__img" src="{{ Vite::asset('resources/images/components/play.svg') }}"
+                            alt="play">
+                    </a>
+                </div>
+            @endfor
         </div>
     </div>
+    <div class="feedback__option">
+        <div class="feedback-button-prev">
+            <img class="feedback-button__prev-img feedback_btn"
+                src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="play">
+        </div>
+        <div class="feedback-button-next">
+            <img class="feedback-button__next-img feedback_btn"
+                src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="play">
+        </div>
+
+    </div>
+
 </section>
