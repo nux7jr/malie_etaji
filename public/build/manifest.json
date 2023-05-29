@@ -97,7 +97,7 @@
     "src": "resources/css/pages/home/home.css"
   },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-d84b833a.css",
+    "file": "assets/project-item-98a2f87a.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
@@ -303,9 +303,10 @@
     "src": "resources/js/pages/home/home.js"
   },
   "resources/js/pages/project-item/project-item.js": {
-    "file": "assets/project-item-776961c0.js",
+    "file": "assets/project-item-71805910.js",
     "imports": [
-      "_swiper-bundle.min-17f9adeb.js"
+      "_swiper-bundle.min-17f9adeb.js",
+      "_project-item-2e1beb0b.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/project-item/project-item.js"

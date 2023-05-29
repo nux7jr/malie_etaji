@@ -8,7 +8,7 @@
 @section('content')
 <div class="swiper project-item__swiper">
   <x-ui.path.path paths={!!json_encode($paths)!!} class="project-item__path"></x-ui.path.path>
-  <div class="swiper-wrapper project-item__wrapper">
+  <div class="swiper-wrapper project-item__wrapperes">
     @for ($i = 0; $i < 10; $i++) <div class="swiper-slide project-item__slide"
       style="background-image: url('{{ Vite::asset('resources/images/project-item/big.jpg') }}')">
   </div>
@@ -267,6 +267,90 @@
 </section>
 <x-cards.house-card class="project-mortgage">
 </x-cards.house-card>
+<section class="project-mortgage">
+  <h1 class="project-mortgage__heading">
+    {{__('Ипотечные программы')}}
+  </h1>
+  <div class="project-mortgage__container">
+    <div class="swiper project-mortgage__swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper project-mortgage__wrapper">
+        <!-- Slides -->
+        @for ($i = 0; $i < 8; $i++) <div class="swiper-slide project-mortgage__slide">
+          <div class="project-mortgage__inner">
+            <h1 class="project-mortgage__h1">
+              {{__('от 3,5% для IT- специалистов')}}
+            </h1>
+            <a href="/mortgage" class="default__button project-mortgage__link">
+              {{__('Узнать больше')}}
+            </a>
+          </div>
+      </div>
+      @endfor
+    </div>
+  </div>
+  <div class="swiper-button-prev project-mortgage__prev"></div>
+  <div class="swiper-button-next project-mortgage__next"></div>
+  </div>
+</section>
+<section class="stability">
+  <div class="stability__header">
+    <h1 class="stability__heading">
+      {{__('Почему “Малые этажи” стабильная компания?')}}
+    </h1>
+    <p class="stability__paraf">
+      {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+      безымянный
+      печатник создал большую коллекцию размеров и форм шрифтов.')}}
+    </p>
+  </div>
+  <div class="stability__wrapper">
+    @for ($i = 0; $i < 4; $i++) <article class="stability-card">
+      <h2 class="stability-card__heading">
+        <span class="stability-card__big">
+          {{__('20')}}
+        </span>
+        {{__('построенных домов')}}
+      </h2>
+      <p class="stability-card__paraf">{{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала
+        XVI века. ')}}</p>
+      </article>
+      @endfor
+  </div>
+</section>
+<section class="office-map">
+  <h1 class="office-map__heading">
+    {{__('Офис продаж')}}
+  </h1>
+  <div class="office-map__container">
+    <div style="position:relative;overflow:hidden;"><a
+        href="https://yandex.ru/maps/org/malyye_etazhi/181477490988/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:0px;">Малые этажи</a><a
+        href="https://yandex.ru/maps/62/krasnoyarsk/category/construction_company/184107633/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:14px;">Строительная компания в Красноярске</a><a
+        href="https://yandex.ru/maps/62/krasnoyarsk/category/prefabricated_buildings/184107425/?utm_medium=mapframe&utm_source=maps"
+        style="color:#eee;font-size:12px;position:absolute;top:28px;">Быстровозводимые здания в Красноярске</a><iframe
+        id="map-frame"
+        src="https://yandex.ru/map-widget/v1/?ll=92.923116%2C56.036678&mode=search&oid=181477490988&ol=biz&sctx=ZAAAAAgBEAAaKAoSCQ9fJoqQNldAERnG3SBaAUxAEhIJTl5kAn6N3z8RkzZV98jmxD8iBgABAgMEBSgKOABAPkgBagJydZ0BzcxMPaABAKgBAL0ByTL3MsIBBqyCm4ekBeoBAPIBAPgBAIICFdC80LDQu9GL0LUg0Y3RgtCw0LbQuIoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=92.923116%2C56.036678&sspn=0.015407%2C0.005099&text=%D0%BC%D0%B0%D0%BB%D1%8B%D0%B5%20%D1%8D%D1%82%D0%B0%D0%B6%D0%B8&z=17"
+        width="100%" height="700" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+  </div>
+</section>
+
+
+<section class="more-projects">
+  <div class="more-projects__header">
+    <h1 class="more-projects__heading">{{ __('Похожие проекты') }}</h1>
+    <a class="default__button" href="projects">
+      {{__('Все проекты')}}
+    </a>
+  </div>
+  <div class="more-projects__wrapper">
+    @for ($i = 0; $i < 3; $i++) <x-cards.project-item class="more-projects__item">
+      </x-cards.project-item>
+      @endfor
+  </div>
+</section>
+
 
 @endsection
 {{-- @for ($i = 0; $i < 8; $i++) --}} {{-- @endfor --}}

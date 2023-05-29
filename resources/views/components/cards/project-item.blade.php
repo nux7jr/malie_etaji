@@ -14,10 +14,10 @@
                     <div class="project-slide" style="background-image: url(https://placehold.co/507x267)"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="project-slide"></div>
+                    <div class="project-slide" style="background-image: url(https://placehold.co/507x267)"></div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="project-slide"></div>
+                    <div class="project-slide" style="background-image: url(https://placehold.co/507x267)"></div>
                 </div>
             </div>
             <div class="swiper-pagination pagination-swiper"></div>

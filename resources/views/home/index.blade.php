@@ -21,7 +21,7 @@
                     <button class="default__button main-offer__button">{{ __('Узнать больше') }}</button>
                 </div>
             </div>
-            <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/700x300)">
+            <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/500x500)">
                 <div class="offer-slider__inner">
                     <h1 class="main-offer__heading">{{ __('Оффер') }}</h1>
                     <p class="main-offer__paraf">
@@ -504,13 +504,13 @@
         <div class="stage-pagination"></div>
         <div class="swiper stage-swiper">
             <div class="swiper-wrapper stage-wrapper">
-                @for ($i = 0; $i < 6; $i++) <div class="swiper-slide stage-slide">
+                @for ($i = 1; $i < 7; $i++) <div class="swiper-slide stage-slide">
                     <div class="stage-inner">
                         <div class="stage-right" style="background-image: url('https://placehold.co/650x530')">
                         </div>
                         <div class="stage-left">
                             <p class="stage-slide__index">
-                                {{ __('1 этап') }}
+                                {{ $i }}{{ __(' этап') }}
                             </p>
                             <h2 class="stage-slide__heading">
                                 {{ __('Согласование предварительных вопросов') }}
@@ -554,7 +554,7 @@
 <section class="spec">
     <div class="spec__header">
         <h1 class="spec__heading">
-            {{ __('Каждые этапы работ выполняют отдельные специалисты') }}
+            {{ __('Каждый этапы работ выполняют отдельные специалисты') }}
         </h1>
         <p class="spec__small">
             {{ __('А не мастер на все руки') }}
@@ -639,7 +639,7 @@
     <div class="home-projects__header">
         <h1 class="home-projects__heading">{{ __('Наши проекты') }}</h1>
         <a class="default__button" href="projects">
-            Все проекты
+            {{__('Все проекты')}}
         </a>
     </div>
     <div class="home-projects__wrapper">
