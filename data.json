@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ДВ 123-160", 
+    "category": "Дом",
+    "big_slider": {
+      "image": "/someurl"
+    },
+    "price_end": 4500000,
+    "price_finish": 6800000,
+    "item_info": {
+      "square": "160м2",
+      "floors": "2",
+      "bedrooms": "4",
+      "bathrooms": "2",
+      "ceiling": "2,9м",
+      "parking": "2"
+    }
+    
+  }
+]

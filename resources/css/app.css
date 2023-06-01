@@ -120,9 +120,6 @@ hr {
 
     outline: none;
 }
-/* .default__button:focus {
-    border: 1px solid rgba(0, 0, 0, 0.408);
-} */
 .default__button:hover {
     opacity: 0.8;
 }
@@ -233,9 +230,7 @@ header {
     outline: none;
     cursor: pointer;
 }
-.geo__button:focus {
-    border: 1px solid rgba(0, 0, 0, 0.408);
-}
+
 .geo__img {
     width: 24px;
     height: 24px;
@@ -260,10 +255,7 @@ header {
     outline: none;
     cursor: pointer;
 }
-.search:focus,
-.login:focus {
-    border: 1px solid rgba(0, 0, 0, 0.408);
-}
+
 .login {
     color: var(--color-red);
 }

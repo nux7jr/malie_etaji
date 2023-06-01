@@ -61,25 +61,32 @@
                 <button class="header__goback">
                     <img src="{{ Vite::asset('resources/images/icons/back.svg') }}" alt="back">
                 </button>
-                <a title="{{ __('Семейная ипотека') }}" class="header__button header__link" href="/family">
+                <a title="{{ __('Семейная ипотека') }}" class="header__button header__link"
+                    href="/mortgage/family/#mortgage-programs">
                     {{ __('Семейная ипотека') }}
                 </a>
-                <a title="{{ __('Материнский капитал') }}" class="header__button header__link" href="/single">
+                <a title="{{ __('Материнский капитал') }}" class="header__button header__link"
+                    href="/mortgage/capital/#mortgage-programs">
                     {{ __('Материнский капитал') }}
                 </a>
-                <a title="{{ __('Ипотека траншами') }}" class="header__button header__link" href="/double">
+                <a title="{{ __('Ипотека траншами') }}" class="header__button header__link"
+                    href="/mortgage/tranches/#mortgage-programs">
                     {{ __('Ипотека траншами') }}
                 </a>
-                <a title="{{ __('Рассрочка') }}" class="header__button header__link" href="/barns">
+                <a title="{{ __('Рассрочка') }}" class="header__button header__link"
+                    href="/mortgage/installment/#mortgage-programs">
                     {{ __('Рассрочка') }}
                 </a>
-                <a title="{{ __('Военная ипотека') }}" class="header__button header__link" href="/constructor">
+                <a title="{{ __('Военная ипотека') }}" class="header__button header__link"
+                    href="/mortgage/military/#mortgage-programs">
                     {{ __('Военная ипотека') }}
                 </a>
-                <a title="{{ __('Субсидии') }}" class="header__button header__link" href="/ecs">
+                <a title="{{ __('Субсидии') }}" class="header__button header__link"
+                    href="/mortgage/subsidies/#mortgage-programs">
                     {{ __('Субсидии') }}
                 </a>
-                <a title="{{ __('Trade-in') }}" class="header__button header__link" href="/live">
+                <a title="{{ __('Trade-in') }}" class="header__button header__link"
+                    href="/mortgage/trade/#mortgage-programs">
                     {{ __('Trade-in') }}
                     {{-- img! --}}
                 </a>

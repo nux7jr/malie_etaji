@@ -7,6 +7,9 @@ initFeedback(Swiper);
 import { initProjects } from "../../components/project-item";
 initProjects(Swiper);
 
+import { initTrusted } from "../../components/trusted";
+initTrusted(Swiper);
+
 const offer = new Swiper(".offer-swiper", {
     autoplay: {
         delay: 5000,
@@ -133,14 +136,5 @@ const spec = new Swiper(".spec-swiper", {
     navigation: {
         nextEl: ".spec-button-next",
         prevEl: ".spec-button-prev",
-    },
-});
-
-const trusted = new Swiper(".trusted-swiper", {
-    slidesPerView: 6,
-    spaceBetween: 10,
-    pagination: {
-        clickable: true,
-        el: ".trusted-pagination",
     },
 });

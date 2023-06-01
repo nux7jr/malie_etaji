@@ -5,4 +5,18 @@ export function initProjects(Swiper) {
             el: ".pagination-swiper",
         },
     });
+
+    // document.addEventListener("DOMContentLoaded", (evt) => {
+    //     const allProjectsAraeHover = document.querySelectorAll(
+    //         ".project-item__info"
+    //     );
+    //     allProjectsAraeHover.forEach((element) => {
+    //         element.addEventListener("mouseover", (evt) => {
+
+    //         });
+    //         element.addEventListener("mouseleave", (evt) => {
+
+    //         });
+    //     });
+    // });
 }

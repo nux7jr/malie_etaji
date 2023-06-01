@@ -159,3 +159,7 @@
 .more__button {
     margin: 0 auto;
 }
+/* off all */
+.project-slide {
+    pointer-events: none !important;
+}

@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home.index', ['path' => ['']]);
 });
+
+
+// projects
+
+
 Route::get('/projects', function () {
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
@@ -30,10 +35,7 @@ Route::get('/projects', function () {
         'Барны'
     ]]);
 });
-
-
 Route::get('/projects/barn', function () {
-
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
@@ -45,10 +47,7 @@ Route::get('/projects/barn', function () {
         'Двухэтажные',
     ]]);
 });
-
-
 Route::get('/projects/single', function () {
-
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
@@ -60,9 +59,7 @@ Route::get('/projects/single', function () {
         'Барны',
     ]]);
 });
-
 Route::get('/projects/double', function () {
-
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
@@ -76,6 +73,59 @@ Route::get('/projects/double', function () {
 });
 
 
+// mortgage
+
+Route::get('/mortgage', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "family"]);
+});
+
+Route::get('/mortgage/family', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "family"]);
+});
+Route::get('/mortgage/capital', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "capital"]);
+});
+Route::get('/mortgage/tranches', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "tranches"]);
+});
+
+Route::get('/mortgage/installment', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "installment"]);
+});
+
+Route::get('/mortgage/military', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "military"]);
+});
+Route::get('/mortgage/subsidies', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "subsidies"]);
+});
+Route::get('/mortgage/trade', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "trade"]);
+});
 
 
 Route::get('/projects/{id}', function ($id) {
@@ -86,7 +136,6 @@ Route::get('/projects/{id}', function ($id) {
         '3' => ['path' => $id, 'name' => 'curr ID or name'],
     ]]);
 });
-
 Route::get('/about/technologies', function () {
     return view('technologies.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
@@ -102,4 +151,27 @@ Route::get('/about', function () {
 });
 Route::get('/house_card', function () {
     return view('cards.house-card');
+});
+
+
+// blog
+Route::get('/blog', function () {
+    return view('blog.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/blog', 'name' => 'Блог'],
+    ]]);
+});
+
+Route::get('/blog/{id}', function ($id) {
+    return view('blog-item.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/blog', 'name' => 'Блог'],
+        '2' => ['path' => $id, 'name' => 'Название статьи'],
+    ]]);
+});
+Route::get('/contacts', function () {
+    return view('contacts.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/contacts', 'name' => 'Контакты'],
+    ]]);
 });

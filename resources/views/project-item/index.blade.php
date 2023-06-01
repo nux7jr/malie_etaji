@@ -318,7 +318,11 @@
       @endfor
   </div>
 </section>
-<section class="office-map">
+
+
+<x-section.office-map>
+</x-section.office-map>
+{{-- <section class="office-map">
   <h1 class="office-map__heading">
     {{__('Офис продаж')}}
   </h1>
@@ -334,7 +338,7 @@
         src="https://yandex.ru/map-widget/v1/?ll=92.923116%2C56.036678&mode=search&oid=181477490988&ol=biz&sctx=ZAAAAAgBEAAaKAoSCQ9fJoqQNldAERnG3SBaAUxAEhIJTl5kAn6N3z8RkzZV98jmxD8iBgABAgMEBSgKOABAPkgBagJydZ0BzcxMPaABAKgBAL0ByTL3MsIBBqyCm4ekBeoBAPIBAPgBAIICFdC80LDQu9GL0LUg0Y3RgtCw0LbQuIoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=92.923116%2C56.036678&sspn=0.015407%2C0.005099&text=%D0%BC%D0%B0%D0%BB%D1%8B%D0%B5%20%D1%8D%D1%82%D0%B0%D0%B6%D0%B8&z=17"
         width="100%" height="700" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
   </div>
-</section>
+</section> --}}
 
 
 <section class="more-projects">
