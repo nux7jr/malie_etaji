@@ -1,4 +1,3 @@
-import ymaps from "ymaps";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
@@ -8,17 +7,17 @@ initFeedback(Swiper);
 import { initCertificates } from "../../components/certificates";
 initCertificates(Swiper);
 
-const gallerys = new Swiper(".photo-gallery__swiper", {
+const unreal = new Swiper(".unreal-swiper", {
     slidesPerView: 3,
     spaceBetween: 50,
     pagination: {
-        el: ".photo-pagination",
+        el: ".unreal-pagination",
         clickable: true,
     },
     // initialSlide: 2,
     loop: true,
     navigation: {
-        nextEl: ".photo-gallery__button-next",
-        prevEl: ".photo-gallery__button-prev",
+        nextEl: ".unreal-next",
+        prevEl: ".unreal-prev",
     },
 });

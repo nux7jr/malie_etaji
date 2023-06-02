@@ -180,90 +180,8 @@
       </div>
     </div>
   </div>
-  <form class="project-review">
-    <div class="project-review__info">
-      <h1 class="project-review__heading">{{__('Запланируйте просмотр объекта')}}</h1>
-      <p class="project-review__paraf">{{__('С вами свяжется специалист по недвижимости, подтвердит выбранное время
-        просмотра, организует посещение предложения и проведёт вам экскурсию.')}}</p>
-    </div>
-    <div class="project-review__datepiker datepiker">
-      <h1 class="datepiker__heading">{{__('Выберите дату и время')}}</h1>
-      <div class="datepiker__list-inputs">
-        <div class="datepiker__list">
-          <input class="datepiker__input" type="radio" name="day" value="now" id="now">
-          <label class="datepiker__label" for="now">
-            <span class="datepiker__title">Сегодня</span>
-            <span class="datepiker__day">1 мая</span>
-          </label>
-        </div>
-        <div class="datepiker__list">
-          <input class="datepiker__input" type="radio" name="day" value="now1" id="now1">
-          <label class="datepiker__label" for="now1">
-            <span class="datepiker__title">Завтра</span>
-            <span class="datepiker__day">1 мая</span>
-          </label>
-        </div>
-        <div class="datepiker__list">
-          <input class="datepiker__input" type="radio" name="day" value="now2" id="now2">
-          <label class="datepiker__label" for="now2">
-            <span class="datepiker__title">Сегодня</span>
-            <span class="datepiker__day">1 мая</span>
-          </label>
-        </div>
-        <div class="datepiker__list">
-          <input class="datepiker__input" type="radio" name="day" value="now2" id="now3">
-          <label class="datepiker__label" for="now3">
-            <span class="datepiker__title">Сегодня</span>
-            <span class="datepiker__day">1 мая</span>
-          </label>
-        </div>
-        <div class="datepiker__list">
-          <input class="datepiker__input" type="radio" name="day" value="now2" id="now4">
-          <label class="datepiker__label" for="now4">
-            <span class="datepiker__title">Сегодня</span>
-            <span class="datepiker__day">1 мая</span>
-          </label>
-        </div>
-        <div class="datepiker__list">
-          <input class="datepiker__input" type="radio" name="day" value="now2" id="now5">
-          <label class="datepiker__label" for="now5">
-            <span class="datepiker__title">Сегодня</span>
-            <span class="datepiker__day">1 мая</span>
-          </label>
-        </div>
-      </div>
-
-      <div class="datepiker__option">
-        <x-ui.lists.dropdown class="datepiker__dropdown" id="datepiker" name="datepiker">
-          <?php
-                $short_setting = [
-                    'не выбранно',
-                    'Как можно быстрее',
-                    'Как можно дольше'];
-                ?>
-          @foreach($short_setting as $method)
-          <x-ui.lists.option value="{{$method}}">
-            {{$method}}
-          </x-ui.lists.option>
-          @endforeach
-        </x-ui.lists.dropdown>
-      </div>
-      <div class="datepiker__user-info">
-        <div class="datepiker__user-info__wrapper">
-          <x-ui.inputs.x-input class="user-info__item" placeholder="Имя" name='name'>
-          </x-ui.inputs.x-input>
-          <x-ui.inputs.x-input class="user-info__item" placeholder="Телефон" name='phone'>
-          </x-ui.inputs.x-input>
-          <button type="submit" class="default__button user-info__item">
-            Записаться на просмотр
-          </button>
-        </div>
-        <p class="datepiker__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a href="http://"
-            target="_blank" rel="noopener noreferrer"> обработку персональных данных</a></p>
-      </div>
-    </div>
-  </form>
-
+  <x-form.review>
+  </x-form.review>
 </section>
 <x-cards.house-card class="project-mortgage">
 </x-cards.house-card>
@@ -322,23 +240,6 @@
 
 <x-section.office-map>
 </x-section.office-map>
-{{-- <section class="office-map">
-  <h1 class="office-map__heading">
-    {{__('Офис продаж')}}
-  </h1>
-  <div class="office-map__container">
-    <div style="position:relative;overflow:hidden;"><a
-        href="https://yandex.ru/maps/org/malyye_etazhi/181477490988/?utm_medium=mapframe&utm_source=maps"
-        style="color:#eee;font-size:12px;position:absolute;top:0px;">Малые этажи</a><a
-        href="https://yandex.ru/maps/62/krasnoyarsk/category/construction_company/184107633/?utm_medium=mapframe&utm_source=maps"
-        style="color:#eee;font-size:12px;position:absolute;top:14px;">Строительная компания в Красноярске</a><a
-        href="https://yandex.ru/maps/62/krasnoyarsk/category/prefabricated_buildings/184107425/?utm_medium=mapframe&utm_source=maps"
-        style="color:#eee;font-size:12px;position:absolute;top:28px;">Быстровозводимые здания в Красноярске</a><iframe
-        id="map-frame"
-        src="https://yandex.ru/map-widget/v1/?ll=92.923116%2C56.036678&mode=search&oid=181477490988&ol=biz&sctx=ZAAAAAgBEAAaKAoSCQ9fJoqQNldAERnG3SBaAUxAEhIJTl5kAn6N3z8RkzZV98jmxD8iBgABAgMEBSgKOABAPkgBagJydZ0BzcxMPaABAKgBAL0ByTL3MsIBBqyCm4ekBeoBAPIBAPgBAIICFdC80LDQu9GL0LUg0Y3RgtCw0LbQuIoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=92.923116%2C56.036678&sspn=0.015407%2C0.005099&text=%D0%BC%D0%B0%D0%BB%D1%8B%D0%B5%20%D1%8D%D1%82%D0%B0%D0%B6%D0%B8&z=17"
-        width="100%" height="700" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
-  </div>
-</section> --}}
 
 
 <section class="more-projects">

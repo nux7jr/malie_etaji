@@ -30,6 +30,13 @@
       <button class="default__button smi__button">Заказать звонок</button>
       <button class="default__button smi__button">Позвонить</button>
     </div>
+
   </div>
 </section>
+<section class="contact-form">
+  <x-form.review>
+  </x-form.review>
+</section>
+
+<x-section.grid-template></x-section.grid-template>
 @endsection

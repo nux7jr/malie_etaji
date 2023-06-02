@@ -39,6 +39,9 @@
     font-feature-settings: "pnum" on, "lnum" on;
     max-width: 400px;
 }
+.smi {
+    padding-bottom: 100px;
+}
 .smi__paraf {
     color: var(--color-grayest);
     font-weight: 500;
@@ -52,4 +55,13 @@
 .smi__link {
     display: inline-block;
     color: var(--color-black);
+}
+.contact-form {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 50px;
+}
+.contact-form .project-review {
+    margin-top: 0;
 }

@@ -1,5 +1,5 @@
 .house-list__dropdown {
-    min-width: 506px;
+    min-width: 248px;
 }
 .house-list__dropdown > .dropdown-select-selected::after {
     content: url(/resources/images/icons/dropIcon.svg);
@@ -12,7 +12,7 @@
 }
 .rangees {
     margin: 0 auto;
-    max-width: 347px;
+    max-width: 314px;
     margin-bottom: 0;
 }
 .project-filter__wrapper {
@@ -33,8 +33,19 @@
     color: var(--color-grayest);
     font-feature-settings: "pnum" on, "lnum" on;
 }
+
+.line {
+    position: absolute;
+    left: calc(50% - 5px);
+    top: 30%;
+}
+.square-end,
+.square-start {
+    color: var(--color-black);
+}
 .project-input__rangees {
-    min-width: 397px;
+    position: relative;
+    min-width: 330px;
     background-color: white;
     height: 16px;
     padding: 20px;
@@ -101,12 +112,12 @@
 }
 
 .floors__input:checked + .floors__label {
-    background-color: var(--color-red);
-    color: white;
+    background-color: var(--color-pink);
+    color: var(--color-red);
 }
 .floors__wrapper {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .floors__label {
     font-weight: 700;
@@ -121,6 +132,14 @@
 }
 .project-input__price {
     padding-top: 30px;
+}
+.project-input__quare {
+    padding-top: 30px;
+}
+.rangees-square {
+    margin: 0 auto;
+    max-width: 314px;
+    margin-bottom: 0;
 }
 .project-input__label-price {
     margin-bottom: 10px;

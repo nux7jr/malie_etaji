@@ -3,14 +3,13 @@ import "nouislider/dist/nouislider.css";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
-
 import { initProjects } from "../../components/project-item";
 initProjects(Swiper);
 
 const filterInit = () => {
-    const nonLinearSlider = document.querySelector(".rangees");
-
-    const formatForSlider = {
+    const price_slider = document.querySelector(".rangees");
+    const square_slider = document.querySelector(".rangees-square");
+    const format_price = {
         from: function (formattedValue) {
             return Number(formattedValue);
         },
@@ -19,7 +18,7 @@ const filterInit = () => {
             return fo.toFixed(1).toString().replace(".", ",");
         },
     };
-    noUiSlider.create(nonLinearSlider, {
+    noUiSlider.create(price_slider, {
         connect: true,
         behaviour: "tap",
         start: [3000000, 15700000],
@@ -27,9 +26,30 @@ const filterInit = () => {
             min: [3000000],
             max: [15700000],
         },
-        format: formatForSlider,
+        format: format_price,
     });
-    nonLinearSlider.noUiSlider.set(["3000000", "15700000"]);
+
+    const format_square = {
+        from: function (formattedValue) {
+            return Number(formattedValue);
+        },
+        to: function (numericValue) {
+            return Math.round(numericValue / 10) * 10;
+        },
+    };
+    noUiSlider.create(square_slider, {
+        connect: true,
+        behaviour: "tap",
+        start: [50, 250],
+        range: {
+            min: [50],
+            max: [250],
+        },
+        format: format_square,
+    });
+    square_slider.noUiSlider.set(["50", "250"]);
+
+    price_slider.noUiSlider.set(["3000000", "15700000"]);
     const formatValues = [
         document.querySelector(".formatting-end"),
         document.querySelector(".formatting-start"),
@@ -38,16 +58,28 @@ const filterInit = () => {
         document.querySelector(".hide-end"),
         document.querySelector(".hide-start"),
     ];
-    nonLinearSlider.noUiSlider.on(
-        "update",
-        function (values, handle, unencoded) {
-            // const bar = Number(values[handle].replace(",", ".")) * 1000000;
-            const bar = values[handle].replace(",", ".");
+    price_slider.noUiSlider.on("update", function (values, handle, unencoded) {
+        const bar = values[handle].replace(",", ".");
 
-            hiddenInputs[handle].value = bar;
-            formatValues[handle].innerHTML = values[handle];
-        }
-    );
+        hiddenInputs[handle].value = bar;
+        formatValues[handle].innerHTML = values[handle];
+    });
+    //
+    const formatValuesSquare = [
+        document.querySelector(".square-end"),
+        document.querySelector(".square-start"),
+    ];
+    const hiddenInputsSquare = [
+        document.querySelector(".square-hide-end"),
+        document.querySelector(".square-hide-start"),
+    ];
+    square_slider.noUiSlider.on("update", function (values, handle, unencoded) {
+        const bar = values[handle];
+
+        hiddenInputsSquare[handle].value = bar;
+        formatValuesSquare[handle].innerHTML = values[handle];
+    });
+
     // send + cls
     const filter_form = document.querySelector(".filter__form");
     const cls_button = document.querySelector(".cls__button");
@@ -65,10 +97,13 @@ const filterInit = () => {
     cls_button.addEventListener("click", (evt) => {
         evt.preventDefault();
         filter_form.reset();
-        nonLinearSlider.noUiSlider.set(["3000000", "15700000"]);
+        price_slider.noUiSlider.set(["3000000", "15700000"]);
+        square_slider.noUiSlider.set(["50", "250"]);
+
         dropdownItems.firstChild.click();
     });
 };
+
 const init = () => {
     filterInit();
 };

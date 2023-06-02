@@ -134,11 +134,13 @@
     height: 8px;
     background-color: var(--color-red);
 }
-.project-item__hidden,
 .project-item__hr {
     display: none;
 }
-.project-item:hover * .project-item__hidden {
+.project-item__hidden {
+    display: none;
+}
+/* .project-item:hover * .project-item__hidden {
     animation: 0.4s forwards alternate slidein;
     display: block;
 }
@@ -155,11 +157,32 @@
 .project-item__wrapper.dark * .house-tag__item {
     color: var(--color-black);
     background-color: var(--color--background);
-}
+} */
 .more__button {
     margin: 0 auto;
 }
-/* off all */
+
 .project-slide {
-    pointer-events: none !important;
+    animation: 0.2s forwards alternate slideDeff;
+}
+
+.project-slide--acitve {
+    animation: 0.2s forwards alternate slideInner;
+}
+.project-item--active * .project-item__hidden {
+    animation: 0.4s forwards alternate slidein;
+    display: block;
+}
+.project-item--active * .project-item__hr {
+    animation: 0.4s forwards alternate slidein;
+    display: block;
+}
+
+.project-item__wrapper.dark * .project-item__call {
+    color: var(--color-black);
+    background-color: var(--color--background);
+}
+.project-item__wrapper.dark * .house-tag__item {
+    color: var(--color-black);
+    background-color: var(--color--background);
 }

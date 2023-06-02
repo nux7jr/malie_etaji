@@ -24,7 +24,6 @@
                         @endforeach
                     </x-ui.lists.dropdown>
                 </div>
-                {{-- price --}}
                 <div class="project-input project-input__price">
                     <p class="project-input__label project-input__label-price">Стоимость, млн ₽</p>
                     <div class="project-input__rangees">
@@ -33,7 +32,7 @@
                             <div class="formatting-end">
                             </div>
                         </div>
-                        —
+                        <span class="line">—</span>
                         <div class="rangees__inner">
                             до
                             <div class="formatting-start">
@@ -44,11 +43,27 @@
                     <input type="hidden" name="price-end" class="hide-start" />
                     <div class="rangees"></div>
                 </div>
-                <div class="project-input project-filter__item">
-                    <label for="square" class="project-input__label">Площадь, м2</label>
-                    <x-ui.inputs.x-input class="square-input" id="square" name="square" placeholder="До">
-                    </x-ui.inputs.x-input>
+
+                <div class="project-input project-input__quare">
+                    <p class="project-input__label project-input__label-price">Площадь, м2</p>
+                    <div class="project-input__rangees">
+                        <div class="rangees__inner">
+                            от
+                            <div class="square-end">
+                            </div>
+                        </div>
+                        <span class="line">—</span>
+                        <div class="rangees__inner">
+                            до
+                            <div class="square-start">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="square-start" class="square-hide-end" />
+                    <input type="hidden" name="square-end" class="square-hide-start" />
+                    <div class="rangees-square"></div>
                 </div>
+
                 <div class="project-input project-filter__item">
                     <label for="floors" class="project-input__label">Кол-во этажей</label>
                     <div class="floors__wrapper">
@@ -60,9 +75,19 @@
                             <input class="floors__input" type="radio" name="floor" value="2" id="two-floor">
                             <label class="floors__label" for="two-floor">2</label>
                         </div>
+                    </div>
+                </div>
+                <div class="project-input project-filter__item">
+                    <label for="floors" class="project-input__label">Дополнительно</label>
+                    <div class="floors__wrapper">
+
                         <div class="floors__item">
                             <input class="floors__input" type="checkbox" name="terrace" value="true" id="terrace">
                             <label class="floors__label" for="terrace">+ терасса</label>
+                        </div>
+                        <div class="floors__item">
+                            <input class="floors__input" type="checkbox" name="garage" value="true" id="garage">
+                            <label class="floors__label" for="garage">+ гараж</label>
                         </div>
                     </div>
                 </div>
@@ -76,8 +101,10 @@
     </form>
 </section>
 
-<section>
-</section>
+{{-- <section>
+    <x-ui.inputs.dobble-range>
+    </x-ui.inputs.dobble-range>
+</section> --}}
 
 <section class="project-info">
     <div class="project-info__sort">
