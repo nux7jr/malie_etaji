@@ -104,6 +104,11 @@
     "isEntry": true,
     "src": "resources/css/components/path.css"
   },
+  "resources/css/components/peculiarities.css": {
+    "file": "assets/peculiarities-3b659faf.css",
+    "isEntry": true,
+    "src": "resources/css/components/peculiarities.css"
+  },
   "resources/css/components/project-item.css": {
     "file": "assets/project-item-ee32dbb3.css",
     "isEntry": true,
