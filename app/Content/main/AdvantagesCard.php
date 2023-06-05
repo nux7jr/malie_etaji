@@ -7,6 +7,10 @@ use App\Structures\Image;
 
 class AdvantagesCard implements Arrayable
 {
+    /**
+     * Element use App\Structures\Image for build assets
+     * @var array|array[]
+     */
     private static array $card_elements;
     public function __construct(){
         self::$card_elements = [
@@ -26,25 +30,25 @@ class AdvantagesCard implements Arrayable
                 'img' => (new Image(
                     src: 'resources/images/icons/icon3.svg',
                 ))->getSrc(),
-                'text'     => __('Собственное конструкторское бюро, продуманные «Smart» планировки'),
+                'text'     => __('25 типовых ТОП-проектов'),
             ],
             [
                 'img' => (new Image(
                     src: 'resources/images/icons/icon4.svg',
                 ))->getSrc(),
-                'text'     => __('Современный дизайн домов'),
+                'text'     => __('Современный дизайн домов, продуманная планировка'),
             ],
             [
                 'img' => (new Image(
                     src: 'resources/images/icons/icon5.svg',
                 ))->getSrc(),
-                'text'     => __('Комплексный подход к строительству и отделке дома'),
+                'text'     => __('Услуги ипотечных брокеров'),
             ],
             [
                 'img' => (new Image(
                     src: 'resources/images/icons/icon6.svg',
                 ))->getSrc(),
-                'text'     => __('Продуманное подведение коммуникаций и обустройство дома'),
+                'text'     => __('Подбор земельных участков'),
             ],
             [
                 'img' => (new Image(
@@ -63,7 +67,7 @@ class AdvantagesCard implements Arrayable
     /**
      * @return array
      */
-    public function toArray()
+    public function toArray(): array
     {
         return self::$card_elements;
     }
