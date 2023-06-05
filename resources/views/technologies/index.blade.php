@@ -21,7 +21,7 @@
     </div>
     <div class="tech-abs">
       <div class="tech-about">
-        <img class="tech-about__img" src="{{ Vite::asset('/resources/images/tech/sip.webp') }}" alt="sip">
+        <img class="tech-about__img" src="{{ Vite::asset('resources/images/tech/sip.webp') }}" alt="sip">
 
         <div class="tech-about__info">
           <p class="tech-about__paraf">
