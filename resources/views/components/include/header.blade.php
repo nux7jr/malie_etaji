@@ -52,7 +52,7 @@
                 <a title="{{ __('Экскурсия по объектам') }}" class="header__button header__link" href="/ecs">
                     {{ __('Экскурсия по объектам') }}
                 </a>
-                <a title="{{ __('Live') }}" class="header__button header__link" href="/live">
+                <a title="{{ __('Live') }}" class="header__button header__link live__link" href="/live">
                     {{ __('Live') }}
                     {{-- img! --}}
                 </a>
@@ -119,7 +119,7 @@
                 </a>
             </div>
             <div class="header__call">
-                <button class="header__button call__button">
+                <button data-modal_id='modal__cell' class="header__button call__button">
                     <img class="call__img" src="{{ Vite::asset('resources/images/icons/call.svg') }}"
                         alt=" {{ __('Заказать звонок') }}">
                     {{ __('Заказать звонок') }}

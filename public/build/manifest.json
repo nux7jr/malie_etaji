@@ -14,8 +14,14 @@
   "_index-706639a7.js": {
     "file": "assets/index-706639a7.js"
   },
-  "_project-item-2e1beb0b.js": {
-    "file": "assets/project-item-2e1beb0b.js"
+  "_nouislider-2a461308.js": {
+    "css": [
+      "assets/nouislider-812efd31.css"
+    ],
+    "file": "assets/nouislider-2a461308.js"
+  },
+  "_project-item-5c3e1fdf.js": {
+    "file": "assets/project-item-5c3e1fdf.js"
   },
   "_swiper-bundle.min-17f9adeb.js": {
     "css": [
@@ -23,11 +29,18 @@
     ],
     "file": "assets/swiper-bundle.min-17f9adeb.js"
   },
+  "_trusted-e092632e.js": {
+    "file": "assets/trusted-e092632e.js"
+  },
   "_ymaps.esm-7917d817.js": {
     "file": "assets/ymaps.esm-7917d817.js"
   },
+  "nouislider.css": {
+    "file": "assets/nouislider-812efd31.css",
+    "src": "nouislider.css"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-431d26e6.css",
+    "file": "assets/app-8bac28d3.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -35,6 +48,11 @@
     "file": "assets/aboutHeader-d78ecb4e.css",
     "isEntry": true,
     "src": "resources/css/components/aboutHeader.css"
+  },
+  "resources/css/components/article.css": {
+    "file": "assets/article-311a6f8a.css",
+    "isEntry": true,
+    "src": "resources/css/components/article.css"
   },
   "resources/css/components/certificates.css": {
     "file": "assets/certificates-03d323d7.css",
@@ -45,6 +63,11 @@
     "file": "assets/constructor-34f07c53.css",
     "isEntry": true,
     "src": "resources/css/components/constructor.css"
+  },
+  "resources/css/components/faq.css": {
+    "file": "assets/faq-290658f8.css",
+    "isEntry": true,
+    "src": "resources/css/components/faq.css"
   },
   "resources/css/components/feedback.css": {
     "file": "assets/feedback-5a6c61a5.css",
@@ -61,6 +84,16 @@
     "isEntry": true,
     "src": "resources/css/components/house_card.css"
   },
+  "resources/css/components/modal.css": {
+    "file": "assets/modal-c851e64c.css",
+    "isEntry": true,
+    "src": "resources/css/components/modal.css"
+  },
+  "resources/css/components/office-map.css": {
+    "file": "assets/office-map-40c0d3d8.css",
+    "isEntry": true,
+    "src": "resources/css/components/office-map.css"
+  },
   "resources/css/components/order.css": {
     "file": "assets/order-44184947.css",
     "isEntry": true,
@@ -72,19 +105,44 @@
     "src": "resources/css/components/path.css"
   },
   "resources/css/components/project-item.css": {
-    "file": "assets/project-item-cb274698.css",
+    "file": "assets/project-item-ee32dbb3.css",
     "isEntry": true,
     "src": "resources/css/components/project-item.css"
+  },
+  "resources/css/components/selection.css": {
+    "file": "assets/selection-511c0612.css",
+    "isEntry": true,
+    "src": "resources/css/components/selection.css"
   },
   "resources/css/components/tech.css": {
     "file": "assets/tech-880ebd51.css",
     "isEntry": true,
     "src": "resources/css/components/tech.css"
   },
+  "resources/css/components/trusted.css": {
+    "file": "assets/trusted-e611862c.css",
+    "isEntry": true,
+    "src": "resources/css/components/trusted.css"
+  },
   "resources/css/pages/about/about.css": {
     "file": "assets/about-71ec1eba.css",
     "isEntry": true,
     "src": "resources/css/pages/about/about.css"
+  },
+  "resources/css/pages/blog-item/blog-item.css": {
+    "file": "assets/blog-item-79928389.css",
+    "isEntry": true,
+    "src": "resources/css/pages/blog-item/blog-item.css"
+  },
+  "resources/css/pages/blog/blog.css": {
+    "file": "assets/blog-178a57ce.css",
+    "isEntry": true,
+    "src": "resources/css/pages/blog/blog.css"
+  },
+  "resources/css/pages/contacts/contacts.css": {
+    "file": "assets/contacts-2c691447.css",
+    "isEntry": true,
+    "src": "resources/css/pages/contacts/contacts.css"
   },
   "resources/css/pages/error/error.css": {
     "file": "assets/error-66858aba.css",
@@ -92,22 +150,27 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-cf979d1d.css",
+    "file": "assets/home-c692a700.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
+  "resources/css/pages/mortgage/mortgage.css": {
+    "file": "assets/mortgage-b952e902.css",
+    "isEntry": true,
+    "src": "resources/css/pages/mortgage/mortgage.css"
+  },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-98a2f87a.css",
+    "file": "assets/project-item-3bb79043.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
   "resources/css/pages/projects/projects.css": {
-    "file": "assets/projects-dbcef256.css",
+    "file": "assets/projects-a7059550.css",
     "isEntry": true,
     "src": "resources/css/pages/projects/projects.css"
   },
   "resources/css/pages/technologies/technologies.css": {
-    "file": "assets/technologies-4ed993c7.js",
+    "file": "assets/technologies-5dc82e1a.css",
     "isEntry": true,
     "src": "resources/css/pages/technologies/technologies.css"
   },
@@ -147,6 +210,10 @@
     "file": "assets/illustration-fa0e48ef.png",
     "src": "resources/images/error/illustration.png"
   },
+  "resources/images/house/house.jpg": {
+    "file": "assets/house-7bfb54e6.jpg",
+    "src": "resources/images/house/house.jpg"
+  },
   "resources/images/icons/back.svg": {
     "file": "assets/back-ceb48ca2.svg",
     "src": "resources/images/icons/back.svg"
@@ -170,6 +237,10 @@
   "resources/images/icons/dropdown_arr.svg": {
     "file": "assets/dropdown_arr-9a420a46.svg",
     "src": "resources/images/icons/dropdown_arr.svg"
+  },
+  "resources/images/icons/faq.svg": {
+    "file": "assets/faq-619f1493.svg",
+    "src": "resources/images/icons/faq.svg"
   },
   "resources/images/icons/fire.svg": {
     "file": "assets/fire-3bb66cdd.svg",
@@ -227,6 +298,26 @@
     "file": "assets/logo-1068b90d.svg",
     "src": "resources/images/logos/logo.svg"
   },
+  "resources/images/modals/Telega.svg": {
+    "file": "assets/Telega-82e0ec60.svg",
+    "src": "resources/images/modals/Telega.svg"
+  },
+  "resources/images/modals/Viber.svg": {
+    "file": "assets/Viber-239df1a9.svg",
+    "src": "resources/images/modals/Viber.svg"
+  },
+  "resources/images/modals/WhatsUp.svg": {
+    "file": "assets/WhatsUp-94b05fb8.svg",
+    "src": "resources/images/modals/WhatsUp.svg"
+  },
+  "resources/images/modals/X.svg": {
+    "file": "assets/X-8c0dbaf2.svg",
+    "src": "resources/images/modals/X.svg"
+  },
+  "resources/images/order/content.jpg": {
+    "file": "assets/content-9d02146c.jpg",
+    "src": "resources/images/order/content.jpg"
+  },
   "resources/images/project-item/big.jpg": {
     "file": "assets/big-44bd5190.jpg",
     "src": "resources/images/project-item/big.jpg"
@@ -251,8 +342,12 @@
     "file": "assets/serv-c6f0285d.svg",
     "src": "resources/images/swiper/serv.svg"
   },
+  "resources/images/tech/sip.webp": {
+    "file": "assets/sip-3b5f81b7.webp",
+    "src": "resources/images/tech/sip.webp"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-837c306d.js",
+    "file": "assets/app-34545dd7.js",
     "imports": [
       "_ymaps.esm-7917d817.js"
     ],
@@ -267,6 +362,11 @@
     "isEntry": true,
     "src": "resources/js/components/certificates.js"
   },
+  "resources/js/components/faq.js": {
+    "file": "assets/faq-2d62f49f.js",
+    "isEntry": true,
+    "src": "resources/js/components/faq.js"
+  },
   "resources/js/components/feedback.js": {
     "file": "assets/feedback-14c0e025.js",
     "imports": [
@@ -275,10 +375,33 @@
     "isEntry": true,
     "src": "resources/js/components/feedback.js"
   },
+  "resources/js/components/modal.js": {
+    "file": "assets/modal-0237b33c.js",
+    "isEntry": true,
+    "src": "resources/js/components/modal.js"
+  },
+  "resources/js/components/office-map.js": {
+    "file": "assets/office-map-df40dd46.js",
+    "isEntry": true,
+    "src": "resources/js/components/office-map.js"
+  },
   "resources/js/components/project-item.js": {
     "file": "assets/project-item-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/project-item.js"
+  },
+  "resources/js/components/selection.js": {
+    "file": "assets/selection-8d7df662.js",
+    "imports": [
+      "_nouislider-2a461308.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/components/selection.js"
+  },
+  "resources/js/components/trusted.js": {
+    "file": "assets/trusted-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/components/trusted.js"
   },
   "resources/js/pages/about/about.js": {
     "file": "assets/about-82181705.js",
@@ -291,44 +414,63 @@
     "isEntry": true,
     "src": "resources/js/pages/about/about.js"
   },
+  "resources/js/pages/blog-item/blog-item.js": {
+    "file": "assets/blog-item-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/pages/blog-item/blog-item.js"
+  },
+  "resources/js/pages/blog/blog.js": {
+    "file": "assets/blog-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/pages/blog/blog.js"
+  },
+  "resources/js/pages/contacts/contacts.js": {
+    "file": "assets/contacts-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/pages/contacts/contacts.js"
+  },
   "resources/js/pages/home/home.js": {
-    "file": "assets/home-d8249f21.js",
+    "file": "assets/home-497413e2.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
       "_feedback-821451b8.js",
-      "_project-item-2e1beb0b.js",
+      "_project-item-5c3e1fdf.js",
+      "_trusted-e092632e.js",
       "_index-706639a7.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/home/home.js"
   },
-  "resources/js/pages/project-item/project-item.js": {
-    "file": "assets/project-item-71805910.js",
+  "resources/js/pages/mortgage/mortgage.js": {
+    "file": "assets/mortgage-ec094530.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
-      "_project-item-2e1beb0b.js"
+      "_trusted-e092632e.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/pages/mortgage/mortgage.js"
+  },
+  "resources/js/pages/project-item/project-item.js": {
+    "file": "assets/project-item-936906c2.js",
+    "imports": [
+      "_swiper-bundle.min-17f9adeb.js",
+      "_project-item-5c3e1fdf.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/project-item/project-item.js"
   },
-  "resources/js/pages/projects/projects.css": {
-    "file": "assets/projects-812efd31.css",
-    "src": "resources/js/pages/projects/projects.css"
-  },
   "resources/js/pages/projects/projects.js": {
-    "css": [
-      "assets/projects-812efd31.css"
-    ],
-    "file": "assets/projects-abb94c5c.js",
+    "file": "assets/projects-ad0525cc.js",
     "imports": [
+      "_nouislider-2a461308.js",
       "_swiper-bundle.min-17f9adeb.js",
-      "_project-item-2e1beb0b.js"
+      "_project-item-5c3e1fdf.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/projects/projects.js"
   },
   "resources/js/pages/technologies/technologies.js": {
-    "file": "assets/technologies-cf00165a.js",
+    "file": "assets/technologies-9e808a5e.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
       "_feedback-821451b8.js",

@@ -19,6 +19,7 @@ body {
     font-family: "Raleway", sans-serif;
     background-color: var(--color--background);
     font-variant-numeric: lining-nums;
+    position: relative;
 }
 .visually-hidden {
     position: absolute;
@@ -160,6 +161,7 @@ header {
 .header__links {
     display: flex;
     gap: 30px;
+    transition: 0.4s;
 }
 .header__logo {
     width: 286px;
@@ -261,7 +263,19 @@ header {
     outline: none;
     cursor: pointer;
 }
-
+.live__link {
+    position: relative;
+}
+.live__link::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -15px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-red);
+    border-radius: 999px;
+}
 .login {
     color: var(--color-red);
 }
@@ -269,6 +283,8 @@ header {
     display: none;
     align-items: center;
     gap: 30px;
+    opacity: 0;
+    transition: 0.5s all;
 }
 .header__goback {
     cursor: pointer;

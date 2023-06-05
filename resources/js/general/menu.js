@@ -11,15 +11,32 @@ sub_menu_links.forEach((element) => {
             `.header__submenu--${curr__submenu}`
         );
         logo.classList.add("visually-hidden");
-        main_menu.classList.add("visually-hidden");
-        submenu.style.display = "flex";
+        main_menu.style.transform = "translate(-50px, 0px)";
+        main_menu.style.opacity = "0";
+        setTimeout(() => {
+            submenu.style.display = "flex";
+            submenu.style.opacity = "1";
+            submenu.style.transform = "translate(0px, 0px)";
+            setTimeout(() => {}, 500);
+            main_menu.classList.add("visually-hidden");
+        }, 400);
     });
 });
 
 close_button.forEach((element) => {
     element.addEventListener("click", (evt) => {
-        evt.target.parentNode.parentNode.style.display = "none";
-        logo.classList.remove("visually-hidden");
-        main_menu.classList.remove("visually-hidden");
+        evt.target.parentNode.parentNode.style.opacity = "0";
+        evt.target.parentNode.parentNode.style.transform =
+            "translate(-100px, 0px)";
+        setTimeout(() => {
+            evt.target.parentNode.parentNode.style.display = "none";
+        }, 500);
+
+        setTimeout(() => {
+            main_menu.style.opacity = "1";
+            main_menu.style.transform = "translate(0px, 0px)";
+            main_menu.classList.remove("visually-hidden");
+            logo.classList.remove("visually-hidden");
+        }, 500);
     });
 });

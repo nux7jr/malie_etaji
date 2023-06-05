@@ -130,6 +130,7 @@
 }
 .user-info__item {
     flex: 1;
+    padding: 16px 20px;
 }
 .datepiker__policy {
     display: flex;

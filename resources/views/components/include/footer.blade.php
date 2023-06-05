@@ -9,7 +9,7 @@ $links = new Links();
                 <img class="footer-info__img" src="{{ Vite::asset('resources/images/logos/logo.svg')}}" alt="logo">
             </a>
             <p class="footer-info__paraf">
-                {{ __('Федеральная строительная компания  «Малые Этажи»') }}
+                {{ __('Федеральная строительная компания «Малые Этажи»') }}
             </p>
             <hr class="footer-info__hr" />
             <h3 class="footer-info__title footer__title">
@@ -23,14 +23,17 @@ $links = new Links();
                 {{ __('Соцсети') }}
                 <div class="footer-info__social social">
                     <a class="social__link" href="http://" target="_blank" rel="noopener noreferrer">
-                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/telega.svg')}}" alt="telegram">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/telega.svg')}}"
+                            alt="telegram">
                     </a>
                     <a class="social__link" href="https://www.youtube.com/channel/UCAKkEcrR2pzA8Z9KKbL-i7Q"
                         target="_blank" rel="noopener noreferrer">
-                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/youtube.svg')}}" alt="youtube">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/youtube.svg')}}"
+                            alt="youtube">
                     </a>
                     <a class="social__link" href="https://vk.com/malie_etaji" target="_blank" rel="noopener noreferrer">
-                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/vk.svg')}}" alt="vk">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/vk.svg')}}"
+                            alt="vk">
                     </a>
                 </div>
             </h3>
@@ -70,8 +73,9 @@ $links = new Links();
     <hr class="footer__hr">
     <div class="imp-info">
         <p class="imp-info__text">
-            {{ __('ЛЮБАЯ ИНФОРМАЦИЯ, ПРЕДСТАВЛЕННАЯ НА ДАННОМ САЙТЕ, НОСИТ ИСКЛЮЧИТЕЛЬНО ИНФОРМАЦИОННЫЙ ХАРАКТЕР И НИ ПРИ КАКИХ
-                                                                                                                                                УСЛОВИЯХ НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ, ОПРЕДЕЛЯЕМОЙ ПОЛОЖЕНИЯМИ СТАТЬИ 437 ГК РФ.') }}
+            {{ __('ЛЮБАЯ ИНФОРМАЦИЯ, ПРЕДСТАВЛЕННАЯ НА ДАННОМ САЙТЕ, НОСИТ ИСКЛЮЧИТЕЛЬНО ИНФОРМАЦИОННЫЙ ХАРАКТЕР И НИ
+            ПРИ КАКИХ
+            УСЛОВИЯХ НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ, ОПРЕДЕЛЯЕМОЙ ПОЛОЖЕНИЯМИ СТАТЬИ 437 ГК РФ.') }}
         </p>
         <div class="imp-info__wrapper">
             <a class="imp-info__link" href="http://policy" target="_blank" rel="noopener noreferrer">
