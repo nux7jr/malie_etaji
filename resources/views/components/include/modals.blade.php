@@ -3,7 +3,7 @@
     <section class="modal__wrapper">
       <div class="modal__content">
         <button class="modal__close">
-          <img class="modal__image-close" src="{{ Vite::asset('/resources/images/modals/X.svg') }}" alt="">
+          <img class="modal__image-close" src="{{ Vite::asset('resources/images/modals/X.svg') }}" alt="">
         </button>
         <div class="modal__info">
           <h1 class="modal__heading">{{__('Укажите ваши контакты')}}</h1>
