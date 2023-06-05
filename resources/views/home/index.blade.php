@@ -1,3 +1,7 @@
+@php
+    use App\Content\main\AdvantagesCard;
+    $advantages = new AdvantagesCard();
+@endphp
 @extends ("layouts.base")
 
 @section('head')
@@ -598,14 +602,18 @@
         {{ __('Наши преимущества') }}
     </h1>
     <div class="advantages__wrapper">
-        @for ($i = 0; $i < 8; $i++) <div class="advantages-card">
-            <img class="advantages-card__img" src="{{ Vite::asset('resources/images/icons/pit.svg') }}"
-                alt="advantages">
-            <p class="advantages-card__paraf">
-                {{ __('Собственное современное производство SIP-панелей') }}
-            </p>
-    </div>
-    @endfor
+        @foreach($advantages->toArray() as $advantage)
+            <div class="advantages-card">
+                <img
+                    class="advantages-card__img"
+                    src="{{$advantage['img']}}"
+                    alt="advantages"
+                >
+                <p class="advantages-card__paraf">
+                    {{$advantage['text']}}
+                </p>
+            </div>
+        @endforeach
     </div>
 </section>
 <x-section.order>
