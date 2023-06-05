@@ -3,7 +3,7 @@
     <section class="modal__wrapper">
       <div class="modal__content">
         <button class="modal__close">
-          <img class="modal__image-close" src="{{ Vite::asset('/resources/images/modals/X.svg') }}" alt="">
+          <img class="modal__image-close" src="{{ Vite::asset('resources/images/modals/X.svg') }}" alt="">
         </button>
         <div class="modal__info">
           <h1 class="modal__heading">{{__('Укажите ваши контакты')}}</h1>
@@ -21,13 +21,13 @@
               </h1>
               <div class="modal__social">
                 <a class="modal__link" href="http://">
-                  <img class="modal__img" src="{{ Vite::asset('/resources/images/modals/Telega.svg') }}" alt="telega">
+                  <img class="modal__img" src="{{ Vite::asset('resources/images/modals/Telega.svg') }}" alt="telega">
                 </a>
                 <a class="modal__link" href="http://">
-                  <img class="modal__img" src="{{ Vite::asset('/resources/images/modals/WhatsUp.svg') }}" alt="whatsUp">
+                  <img class="modal__img" src="{{ Vite::asset('resources/images/modals/WhatsUp.svg') }}" alt="whatsUp">
                 </a>
                 <a class="modal__link" href="http://">
-                  <img class="modal__img" src="{{ Vite::asset('/resources/images/modals/Viber.svg') }}" alt="Viber">
+                  <img class="modal__img" src="{{ Vite::asset('resources/images/modals/Viber.svg') }}" alt="Viber">
                 </a>
               </div>
             </div>

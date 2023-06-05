@@ -1,3 +1,7 @@
+@php
+use App\Content\Footer\Links;
+$links = new Links();
+@endphp
 <footer>
     <div class="footer__wrapper">
         <div class="footer__item footer-info">
@@ -41,39 +45,29 @@
             <a class="footer-contact__link" href="tel:+7 (391) 205-3-444">+7 (391) 205-3-444</a>
             <a class="footer-contact__link"
                 href="https://yandex.ru/maps/62/krasnoyarsk/?from=mapframe&ll=92.921431%2C56.036889&mode=usermaps&source=mapframe&um=constructor%3Abdbfdb53bc5f7aa4ba9394ef3d92e9ac554c7d206019d7e87446bead86d16700&utm_source=mapframe&z=15">Главный
-                офис: <br /> Красноярск, ул. Октябрьская, <br /> 8а, офис 208</a>
+                офис: <br /> Красноярск, ул. Октябрьская, 8а,<br />офис 208</a>
             <a class="footer-contact__link" href="mailto:zakaz@malie-etaji.ru">zakaz@malie-etaji.ru</a>
             <div class="map-container-footer">
 
             </div>
         </div>
-        <div class="footer__item footer-pages">
-            <h3 class="footer-pages__title footer__title">
-                {{ __('Страница') }}
-            </h3>
-            @for ($i = 0; $i < 12; $i++) <a class="footer-pages__link" href="http://">
-                {{ __('Название раздела') }}
-                </a>
-                @endfor
-        </div>
-        <div class="footer__item footer-pages">
-            <h3 class="footer-pages__title footer__title">
-                {{ __('Страница') }}
-            </h3>
-            @for ($i = 0; $i < 12; $i++) <a class="footer-pages__link" href="http://">
-                {{ __('Название раздела') }}
-                </a>
-                @endfor
-        </div>
-        <div class="footer__item footer-pages">
-            <h3 class="footer-pages__title footer__title">
-                {{ __('Страница') }}
-            </h3>
-            @for ($i = 0; $i < 12; $i++) <a class="footer-pages__link" href="http://">
-                {{ __('Название раздела') }}
-                </a>
-                @endfor
-        </div>
+        @foreach($links::getLinks() as $elements)
+            <div class="footer__item footer-pages">
+                @foreach($elements as $label)
+                    @if($label['header'] === true)
+                        <a class="footer-pages__link" href="{{$label['link']}}">
+                            <h3 class="footer-pages__title footer__title">
+                                {{$label['text']}}
+                            </h3>
+                        </a>
+                    @else
+                        <a class="footer-pages__link" href="{{$label['link']}}">
+                            {{$label['text']}}
+                        </a>
+                    @endif
+                @endforeach
+            </div>
+        @endforeach
     </div>
 
     <hr class="footer__hr">
