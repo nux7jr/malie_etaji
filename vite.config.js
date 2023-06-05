@@ -47,7 +47,6 @@ export default defineConfig({
                 "resources/css/components/trusted.css",
                 // for components
 
-
                 "resources/css/components/office-map.css",
                 "resources/js/components/office-map.js",
 
@@ -69,6 +68,10 @@ export default defineConfig({
 
                 "resources/js/components/faq.js",
                 "resources/css/components/faq.css",
+
+                // modal
+                "resources/css/components/modal.css",
+                "resources/js/components/modal.js",
             ],
             refresh: true,
         }),

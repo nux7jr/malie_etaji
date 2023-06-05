@@ -20,11 +20,15 @@
     @yield('head')
     @stack('head')
 
+
+    @vite('resources/css/components/modal.css')
+    @vite('resources/js/components/modal.js')
+
 </head>
 
 <body>
     {{-- @php
-        dd($path);
+    dd($path);
     @endphp --}}
     <x-include.header path={{ $path }}></x-include.header>
     <div id="app" class="app">
@@ -35,6 +39,7 @@
         </div>
     </div>
     <x-include.footer></x-include.footer>
+    <x-include.modals></x-include.modals>
 </body>
 
 </html>

@@ -18,7 +18,9 @@
                         безымянный печатник создал большую коллекцию размеров
                         и форм шрифтов.') }}
                     </p>
-                    <button class="default__button main-offer__button">{{ __('Узнать больше') }}</button>
+                    <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
+                        больше')
+                        }}</button>
                 </div>
             </div>
             <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/500x500)">
@@ -30,7 +32,9 @@
                         безымянный печатник создал большую коллекцию размеров
                         и форм шрифтов.') }}
                     </p>
-                    <button class="default__button main-offer__button">{{ __('Узнать больше') }}</button>
+                    <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
+                        больше')
+                        }}</button>
                 </div>
             </div>
             <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/1000x800)">

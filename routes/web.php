@@ -15,10 +15,31 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function () {
-    return view('home.index', ['path' => ['']]);
-});
+$which_house = [
+    '0' => [
+        "title" => 'Скачайте полный каталог',
+        "background" => '/asds/asd.png',
+        "link_text" => 'Скачать в PDF',
+        "link" => '/asd/asd',
+    ],
+    '1' => [
+        "title" => 'О компании Малые этажи',
+        "background" => '/asds/asd.png',
+        "link_text" => 'Подробнее',
+        "link" => '/asd/asd',
+    ],
+    '2' => [
+        "title" => 'Рассчитайте ипотеку',
+        "background" => '/asds/asd.png',
+        "link_text" => 'Рассчитать',
+        "link" => '/asd/asd',
+    ]
+];
 
+
+Route::get('/', function () {
+    return view('home.index');
+});
 
 // projects
 
