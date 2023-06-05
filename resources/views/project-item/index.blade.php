@@ -5,7 +5,12 @@
 @vite('resources/css/pages/project-item/project-item.css')
 @endsection
 
+
 @section('content')
+{{-- @php
+dd($info)
+@endphp --}}
+
 <div class="swiper project-item__swiper">
   <x-ui.path.path paths={!!json_encode($paths)!!} class="project-item__path"></x-ui.path.path>
   <div class="swiper-wrapper project-item__wrapperes">
@@ -17,15 +22,16 @@
 <div class="swiper-button-prev project-item__prev"></div>
 <div class="swiper-button-next project-item__next"></div>
 
+
 </div>
 <section class="project-info">
   <div class="project-info__header header-section">
     <div class="header-section__asd">
       <p class="header-section__placenamer">
-        {{__('Дом')}}
+        {{$info['category']}}
       </p>
       <h2 class="header-section__name">
-        {{__('ДВ13-93')}}</h2>
+        {{$info['name']}}</h2>
     </div>
     <div class="header-section__item">
       <div class="header-section__price">
@@ -40,7 +46,8 @@
           </button>
         </p>
         <h1 class="header-section__value">
-          {{__('4 500 000 ₽')}}
+          {{-- {{__('4 500 000 ₽')}} --}}
+          {{$info['price_end']}} ₽
         </h1>
       </div>
       <div class="header-section__price">
@@ -55,19 +62,49 @@
           </button>
         </p>
         <h1 class="header-section__value">
-          {{__('4 500 000 ₽')}}
+          {{-- {{__('4 500 000 ₽')}} --}}
+          {{$info['price_finish']}} ₽
         </h1>
       </div>
     </div>
   </div>
   <div class="project-settings">
-    @for ($i = 0; $i < 6; $i++) <div class="project-settings__card">
+    <div class="project-settings__card">
       <h1 class="project-settings__header">
-        {{__('2')}}
+        {{$info['item_info']['square']}}м2
       </h1>
       <p class="project-settings__name">{{__('площадь')}}</p>
-  </div>
-  @endfor
+    </div>
+    <div class="project-settings__card">
+      <h1 class="project-settings__header">
+        {{$info['item_info']['floors']}}
+      </h1>
+      <p class="project-settings__name">{{__('этажа')}}</p>
+    </div>
+    <div class="project-settings__card">
+      <h1 class="project-settings__header">
+        {{$info['item_info']['bedrooms']}}
+      </h1>
+      <p class="project-settings__name">{{__('спальни')}}</p>
+    </div>
+    <div class="project-settings__card">
+      <h1 class="project-settings__header">
+        {{$info['item_info']['bathrooms']}}
+      </h1>
+      <p class="project-settings__name">{{__('санузла')}}</p>
+    </div>
+    <div class="project-settings__card">
+      <h1 class="project-settings__header">
+        {{$info['item_info']['ceiling']}}
+      </h1>
+      <p class="project-settings__name">{{__('высота потолков')}}</p>
+    </div>
+    <div class="project-settings__card">
+      <h1 class="project-settings__header">
+        {{$info['item_info']['parking']}}
+      </h1>
+      <p class="project-settings__name">{{__('машиноместа')}}</p>
+    </div>
   </div>
   <hr class="project-hr">
   <div class="about-project">
@@ -93,12 +130,12 @@
         </p>
       </div>
       <div class="about-project__option">
-        <button class="about-project__button default__button">
+        <a href="/pdf" class="about-project__button default__button">
           <img class="about-project__button-img" src="{{ Vite::asset('resources/images/icons/download.svg') }}"
             alt="download">
           {{__('Скачать проект бесплатно')}}
           <span></span>
-        </button>
+        </a>
         <button class="about-project__mach default__button">
           {{__('Рассчитать ипотеку')}}
 
@@ -122,7 +159,6 @@
   <div class="project-preview__option">
     <button class="default__button project-preview__button project-preview__button-active">
       {{__('Планировка')}}</button>
-    <button class="default__button project-preview__button">{{__('С мебелью')}}</button>
     <button class="default__button project-preview__button">{{__('Фасад')}}</button>
     <button class="default__button project-preview__button">{{__('3D-визуализация')}}</button>
   </div>
@@ -250,9 +286,16 @@
     </a>
   </div>
   <div class="more-projects__wrapper">
-    @for ($i = 0; $i < 3; $i++) <x-cards.project-item class="more-projects__item">
-      </x-cards.project-item>
-      @endfor
+    @php
+    $json = \File::get('data.json');
+    $someprojects = json_decode($json, true);
+    $output = array_slice($someprojects, 0, 3);
+    @endphp
+
+    @foreach ($output as $key => $item)
+    <x-cards.project-item info="{!! json_encode($item) !!}">
+    </x-cards.project-item>
+    @endforeach
   </div>
 </section>
 

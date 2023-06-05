@@ -15,26 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-$which_house = [
-    '0' => [
-        "title" => 'Скачайте полный каталог',
-        "background" => '/asds/asd.png',
-        "link_text" => 'Скачать в PDF',
-        "link" => '/asd/asd',
-    ],
-    '1' => [
-        "title" => 'О компании Малые этажи',
-        "background" => '/asds/asd.png',
-        "link_text" => 'Подробнее',
-        "link" => '/asd/asd',
-    ],
-    '2' => [
-        "title" => 'Рассчитайте ипотеку',
-        "background" => '/asds/asd.png',
-        "link_text" => 'Рассчитать',
-        "link" => '/asd/asd',
-    ]
-];
+
 
 
 Route::get('/', function () {
@@ -42,7 +23,6 @@ Route::get('/', function () {
 });
 
 // projects
-
 
 Route::get('/projects', function () {
     return view('projects.index', ["paths" => [
@@ -150,12 +130,13 @@ Route::get('/mortgage/trade', function () {
 
 
 Route::get('/projects/{id}', function ($id) {
-
+    $json = \File::get('data.json');
+    $project = json_decode($json, true);
     return view('project-item.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
         '3' => ['path' => $id, 'name' => 'curr ID or name'],
-    ]]);
+    ], 'info' => $project[$id] ?? $project[1]],);
 });
 Route::get('/about/technologies', function () {
     return view('technologies.index', ["paths" => [

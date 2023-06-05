@@ -104,6 +104,11 @@
     "isEntry": true,
     "src": "resources/css/components/path.css"
   },
+  "resources/css/components/peculiarities.css": {
+    "file": "assets/peculiarities-3b659faf.css",
+    "isEntry": true,
+    "src": "resources/css/components/peculiarities.css"
+  },
   "resources/css/components/project-item.css": {
     "file": "assets/project-item-ee32dbb3.css",
     "isEntry": true,
@@ -253,6 +258,38 @@
   "resources/images/icons/geo_arr.svg": {
     "file": "assets/geo_arr-103f84ba.svg",
     "src": "resources/images/icons/geo_arr.svg"
+  },
+  "resources/images/icons/icon1.svg": {
+    "file": "assets/icon1-644e8dd7.svg",
+    "src": "resources/images/icons/icon1.svg"
+  },
+  "resources/images/icons/icon2.svg": {
+    "file": "assets/icon2-ab6b3e43.svg",
+    "src": "resources/images/icons/icon2.svg"
+  },
+  "resources/images/icons/icon3.svg": {
+    "file": "assets/icon3-6db036af.svg",
+    "src": "resources/images/icons/icon3.svg"
+  },
+  "resources/images/icons/icon4.svg": {
+    "file": "assets/icon4-e29dcb8b.svg",
+    "src": "resources/images/icons/icon4.svg"
+  },
+  "resources/images/icons/icon5.svg": {
+    "file": "assets/icon5-11a7e299.svg",
+    "src": "resources/images/icons/icon5.svg"
+  },
+  "resources/images/icons/icon6.svg": {
+    "file": "assets/icon6-4ffe7053.svg",
+    "src": "resources/images/icons/icon6.svg"
+  },
+  "resources/images/icons/icon7.svg": {
+    "file": "assets/icon7-efed0def.svg",
+    "src": "resources/images/icons/icon7.svg"
+  },
+  "resources/images/icons/icon8.svg": {
+    "file": "assets/icon8-fe5b81d8.svg",
+    "src": "resources/images/icons/icon8.svg"
   },
   "resources/images/icons/offer_arr.svg": {
     "file": "assets/offer_arr-f90a7d54.svg",

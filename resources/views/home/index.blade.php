@@ -1,3 +1,11 @@
+@php
+use App\Content\main\AdvantagesCard;
+$advantages = new AdvantagesCard();
+
+use App\Content\main\WhichHouse;
+$which_house = new WhichHouse();
+
+@endphp
 @extends ("layouts.base")
 
 @section('head')
@@ -80,11 +88,34 @@
     <h1 class="which-house__heading">
         {{ __('Какие дома мы строим') }}
     </h1>
+    {{-- @php
+    $which_house = [
+    '0' => [
+    "title" => 'Скачайте полный каталог',
+    "background" => '/asds/asd.png',
+    "linkText" => 'Скачать в PDF',
+    "link" => '/asd/asd.pdf',
+    ],
+    '1' => [
+    "title" => 'О компании Малые этажи',
+    "background" => '/asds/asd.png',
+    "linkText" => 'Подробнее',
+    "link" => '/about',
+    ],
+    '2' => [
+    "title" => 'Рассчитайте ипотеку',
+    "background" => '/asds/asd.png',
+    "linkText" => 'Рассчитать',
+    "link" => '/mortgage/#mortgage-calc',
+    ]
+    ];
+    @endphp --}}
 
     <div class="which-house__wrapper">
-        @for ($i = 0; $i < 6; $i++) <x-ui.cards.autoplay>
-            </x-ui.cards.autoplay>
-            @endfor
+        @foreach($which_house as $item) <x-ui.cards.autoplay title="{{$item['text']}}"
+            background="{{$item['background']}}" linkText="{{$item['link']['text']}}" link="{{$item['link']['link']}}">
+        </x-ui.cards.autoplay>
+        @endforeach
     </div>
 </section>
 <section class="services">
@@ -158,27 +189,53 @@
                 {{ __('Почему “Малые этажи” стабильная компания?') }}
             </h1>
             <p class="why-us__paraf">
-                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
-                некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                {{ __('Собственное производство строительных материалов. Строительство домов «под ключ» по
+                энергоэффективной технологии SIP-панелей - экологичный способ строительства, который обеспечивает
+                высокую тепло- и звукоизоляцию, а также долговечность и надежность. Непрерывный контроль качества
+                изготовления на всех этапах. Сопровождение сделки.') }}
             </p>
         </div>
         <div class="why-us__card-wrapper">
-            @for ($i = 0; $i < 4; $i++) <div class="why-us__card">
+            @php
+            $why = [
+            '0' => [
+            "title" => '150',
+            "subtitle" => 'объектов',
+            "text" => ' Построено нашими специалистами',
+            ],
+            '1' => [
+            "title" => '12',
+            "subtitle" => 'специалистов',
+            "text" => 'Максимально задействованы над каждым проектом',
+            ],
+            '2' => [
+            "title" => '5',
+            "subtitle" => 'лет гарантии',
+            "text" => 'На строительные работы',
+            ],
+            '3' => [
+            "title" => '+10',
+            "subtitle" => 'лет опыта',
+            "text" => 'Компании в строительной сфере',
+            ]
+            ];
+            @endphp
+
+            @foreach ($why as $item) <div class="why-us__card">
                 <h3 class="why-us__header">
                     <span class="why-us__title">
-                        {{ __('20') }}
+                        {{$item["title"]}}
                     </span>
                     <span class="why-us__subtitle">
-                        {{ __('построенных домов') }}
+                        {{$item["subtitle"]}}
                     </span>
                 </h3>
                 <p class="why_us__text">
-                    {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
-                    время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                    {{$item["text"]}}
                 </p>
+            </div>
+            @endforeach
         </div>
-        @endfor
-    </div>
     </div>
 </section>
 <section class="build">
@@ -598,14 +655,14 @@
         {{ __('Наши преимущества') }}
     </h1>
     <div class="advantages__wrapper">
-        @for ($i = 0; $i < 8; $i++) <div class="advantages-card">
-            <img class="advantages-card__img" src="{{ Vite::asset('resources/images/icons/pit.svg') }}"
-                alt="advantages">
+        @foreach($advantages->toArray() as $advantage)
+        <div class="advantages-card">
+            <img class="advantages-card__img" src="{{$advantage['img']}}" alt="advantages">
             <p class="advantages-card__paraf">
-                {{ __('Собственное современное производство SIP-панелей') }}
+                {{$advantage['text']}}
             </p>
-    </div>
-    @endfor
+        </div>
+        @endforeach
     </div>
 </section>
 <x-section.order>
@@ -627,9 +684,17 @@
         </a>
     </div>
     <div class="home-projects__wrapper">
-        @for ($i = 0; $i < 3; $i++) <x-cards.project-item class="home-projects__item">
-            </x-cards.project-item>
-            @endfor
+        @php
+        $json = \File::get('data.json');
+        $someprojects = json_decode($json, true);
+        $output = array_slice($someprojects, 0, 3);
+        @endphp
+
+        @foreach ($output as $key => $item)
+        <x-cards.project-item theme="dark" info="{!! json_encode($item) !!}">
+        </x-cards.project-item>
+        @endforeach
+
     </div>
 </section>
 @endsection

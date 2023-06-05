@@ -160,6 +160,8 @@
 } */
 .more__button {
     margin: 0 auto;
+    text-align: center;
+    display: flex;
 }
 
 .project-slide {
@@ -185,4 +187,7 @@
 .project-item__wrapper.dark * .house-tag__item {
     color: var(--color-black);
     background-color: var(--color--background);
+}
+.project-wrapper {
+    margin-bottom: 50px;
 }

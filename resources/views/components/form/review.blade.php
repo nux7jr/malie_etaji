@@ -79,7 +79,7 @@
       <div class="label_percents_toggle space__between">
         <h4>{{__('Мне нужен трансфер')}}
           <button class="tooltip">
-            <img class="toltip-button__img" src="{{ Vite::asset('/resources/images/components/toltip.svg') }}"
+            <img class="toltip-button__img" src="{{ Vite::asset('resources/images/components/toltip.svg') }}"
               alt="toltip">
             <span class="tooltiptext">
               Tooltip text

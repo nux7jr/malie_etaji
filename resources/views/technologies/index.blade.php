@@ -21,7 +21,7 @@
     </div>
     <div class="tech-abs">
       <div class="tech-about">
-        <img class="tech-about__img" src="{{ Vite::asset('/resources/images/tech/sip.webp') }}" alt="sip">
+        <img class="tech-about__img" src="{{ Vite::asset('resources/images/tech/sip.webp') }}" alt="sip">
 
         <div class="tech-about__info">
           <p class="tech-about__paraf">
@@ -75,13 +75,13 @@
     <div class="tech-call__item">
       <p class="tech-call__paraf">{{__('Не знаете что выбрать? Проконсультируйтесь с нашим специалистом')}}</p>
       <a class="tech-call__link" href="/">
-        <img class="tech-call__img" src="{{Vite::asset('/resources/images/icons/offer_arr_red.svg')}}" alt="link">
+        <img class="tech-call__img" src="{{Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
       </a>
     </div>
     <div class="tech-call__item">
       <p class="tech-call__paraf">{{__('Расчитать проект')}}</p>
       <a class="tech-call__link" href="/">
-        <img class="tech-call__img" src="{{Vite::asset('/resources/images/icons/offer_arr_red.svg')}}" alt="link">
+        <img class="tech-call__img" src="{{Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
       </a>
     </div>
   </div>
@@ -143,7 +143,7 @@
         {{__('Скидки и промокоды от наших партнеров')}}
       </h1>
       <a class="part-list__link" href="/">
-        <img class="part-list__img" src="{{ Vite::asset('/resources/images/icons/offer_arr_red.svg')}}" alt="link">
+        <img class="part-list__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
       </a>
     </div>
 

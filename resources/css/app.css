@@ -19,6 +19,7 @@ body {
     font-family: "Raleway", sans-serif;
     background-color: var(--color--background);
     position: relative;
+    overflow-x: hidden;
 }
 .visually-hidden {
     position: absolute;

@@ -6,6 +6,7 @@
 @endsection
 
 @section('content')
+
 <section class="filters">
     <x-ui.path.path class="filters-path" paths="{!! json_encode($paths) !!}">
     </x-ui.path.path>
@@ -100,12 +101,6 @@
         </div>
     </form>
 </section>
-
-{{-- <section>
-    <x-ui.inputs.dobble-range>
-    </x-ui.inputs.dobble-range>
-</section> --}}
-
 <section class="project-info">
     <div class="project-info__sort">
         <x-ui.lists.dropdown class="house-short__dropdown" id="house-short" name="house-short">
@@ -125,11 +120,18 @@
     </div>
 
     <div class="project-wrapper">
-        @for ($i = 0; $i < 9; $i++) <x-cards.project-item theme="dark" project-info={{}}>
-            </x-cards.project-item>
-            @endfor
-            <button class="default__button more__button">Показать еще 15 из 45 проектов</button>
+
+        @php
+        $json = \File::get('data.json');
+        $someprojects = json_decode($json, true);
+        @endphp
+
+        @foreach ($someprojects as $key => $item)
+        <x-cards.project-item theme="dark" info="{!! json_encode($item) !!}">
+        </x-cards.project-item>
+        @endforeach
     </div>
+    <button class="default__button more__button">Показать еще 15 из 45 проектов</button>
     <div class="project-call">
         <h1 class="project-call__heading">Авторизуйтесь в личном кабинете, чтобы экономить время и отслеживать все
             действия и этапы строительства</h1>

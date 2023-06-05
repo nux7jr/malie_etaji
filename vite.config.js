@@ -69,6 +69,8 @@ export default defineConfig({
                 "resources/js/components/faq.js",
                 "resources/css/components/faq.css",
 
+                "resources/css/components/peculiarities.css",
+
                 // modal
                 "resources/css/components/modal.css",
                 "resources/js/components/modal.js",
