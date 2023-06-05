@@ -7,9 +7,9 @@
 
 
 @section('content')
-{{-- @php
+@php
 dd($info)
-@endphp --}}
+@endphp
 
 <div class="swiper project-item__swiper">
   <x-ui.path.path paths={!!json_encode($paths)!!} class="project-item__path"></x-ui.path.path>

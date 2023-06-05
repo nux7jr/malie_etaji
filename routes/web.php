@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Content\main\HousesInfo;
 
-$HousesInfo = new HousesInfo();
+// $HousesInfo = new HousesInfo();
 
 
 Route::get('/', function () {
@@ -28,13 +28,12 @@ Route::get('/', function () {
 
 Route::get('/projects', function () {
 
-    // $housesInfo = new HousesInfo();
-    // $bar = $housesInfo->toArray();
-    // dd($bar);
+    $housesInfo = new HousesInfo();
+    $bar = $housesInfo->toArray();
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
-    ]], ["house_setting" => [
+    ], 'projects' => $bar], ["house_setting" => [
         'Не выбрано',
         'Все',
         'Одноэтажные',
@@ -138,13 +137,12 @@ Route::get('/mortgage/trade', function () {
 Route::get('/projects/{id}', function ($id) {
     $housesInfo = new HousesInfo();
     $bar = $housesInfo->toArray();
-    // $project = json_decode($bar, true);
 
     return view('project-item.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
         '3' => ['path' => $id, 'name' => 'curr ID or name'],
-    ], 'info' => $bar[$id] ?? $bar[1]],);
+    ], 'info' => $bar]);
 });
 Route::get('/about/technologies', function () {
     return view('technologies.index', ["paths" => [
