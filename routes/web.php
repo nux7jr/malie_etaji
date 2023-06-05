@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 
+use App\Content\main\HousesInfo;
 
+$HousesInfo = new HousesInfo();
 
 
 Route::get('/', function () {
@@ -25,6 +27,10 @@ Route::get('/', function () {
 // projects
 
 Route::get('/projects', function () {
+
+    // $housesInfo = new HousesInfo();
+    // $bar = $housesInfo->toArray();
+    // dd($bar);
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
@@ -130,13 +136,15 @@ Route::get('/mortgage/trade', function () {
 
 
 Route::get('/projects/{id}', function ($id) {
-    $json = \File::get('data.json');
-    $project = json_decode($json, true);
+    $housesInfo = new HousesInfo();
+    $bar = $housesInfo->toArray();
+    // $project = json_decode($bar, true);
+
     return view('project-item.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
         '3' => ['path' => $id, 'name' => 'curr ID or name'],
-    ], 'info' => $project[$id] ?? $project[1]],);
+    ], 'info' => $bar[$id] ?? $bar[1]],);
 });
 Route::get('/about/technologies', function () {
     return view('technologies.index', ["paths" => [

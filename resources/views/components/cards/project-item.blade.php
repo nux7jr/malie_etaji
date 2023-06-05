@@ -9,12 +9,12 @@
     </div> --}}
     <article class="project-item">
         @php
-        // dd(json_decode($info, true))
-        $project_info = json_decode($info, true)
+        $info = json_decode($info, true);
+        dd($projects)
         @endphp
         <div class="swiper project-swiper">
             <div class="swiper-wrapper">
-                @foreach ($project_info['big_slider_images'] as $item)
+                @foreach ($info['big_slider_images'] as $item)
                 <div class="swiper-slide">
                     <div class="project-slide" style="background-image: url({{ $item }})"></div>
                 </div>
@@ -27,20 +27,20 @@
         <div class="project-item__wrapper {{ isset($theme) ? $theme : "" }}">
             <div class="project-item__info">
                 <h2 class="project-item__heading">
-                    {{ __('ДВ 17-02') }}
+                    {{$info["name"]}}
                 </h2>
-                <p class="project-item__price">{{ __('от 4,5 млн ₽') }}</p>
+                <p class="project-item__price">{{$info["price_small"]}}</p>
             </div>
             <hr class="project-item__hr" />
             <div class="project-item__hidden">
                 <div class="house-info">
-                    <p class="house-info__paraf">{{$project_info['item_info']['square']}} м2</p>
-                    <p class="house-info__paraf">{{$project_info['item_info']['bedrooms']}} комнат</p>
-                    <p class="house-info__paraf">{{$project_info['item_info']['bathrooms']}} санузел</p>
-                    <p class="house-info__paraf">{{$project_info['item_info']['floors']}} этажа</p>
+                    <p class="house-info__paraf">{{$info['item_info']['square']}} м2</p>
+                    <p class="house-info__paraf">{{$info['item_info']['bedrooms']}} комнат</p>
+                    <p class="house-info__paraf">{{$info['item_info']['bathrooms']}} санузел</p>
+                    <p class="house-info__paraf">{{$info['item_info']['floors']}} этажа</p>
                 </div>
                 <div class="house-tag">
-                    @foreach ($project_info['tags'] as $item)
+                    @foreach ($info['tags'] as $item)
                     <p class="house-tag__item"> {{$item}} </p>
                     @endforeach
                 </div>

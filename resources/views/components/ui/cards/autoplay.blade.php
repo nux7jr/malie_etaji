@@ -1,6 +1,6 @@
-<article class="auto-play">
+<article class="auto-play" style="background-image: url({{$background}})">
   <video class="auto-play__video" autoplay muted="" hidden>
-    <source src="/video/video.mp4" type="video/mp4">
+    <source src="{{ $video }}" type="video/mp4">
   </video>
   <h2 class="auto-play__heading">
     {{ $title }}
