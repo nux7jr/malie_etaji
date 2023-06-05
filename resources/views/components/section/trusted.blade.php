@@ -1,8 +1,8 @@
 @push('head')
-@once
-@vite('resources/css/components/trusted.css')
-@vite('resources/js/components/trusted.js')
-@endonce
+    @once
+        @vite('resources/css/components/trusted.css')
+        @vite('resources/js/components/trusted.js')
+    @endonce
 @endpush
 
 <section class="trusted">
@@ -18,12 +18,13 @@
   <div class="swiper trusted-swiper">
 
     <div class="swiper-wrapper trusted-wrapper">
-      @for ($i = 0; $i < 10; $i++) <div class="swiper-slide trusted-slide">
-        <img src="https://www.vogue.com/verso/static/vogue/assets/us/logo.svg" alt="logo">
+      @for ($i = 0; $i < 10; $i++)
+        <div class="swiper-slide trusted-slide">
+            <img src="https://www.vogue.com/verso/static/vogue/assets/us/logo.svg" alt="logo">
+        </div>
+      @endfor
     </div>
-    @endfor
-  </div>
 
-  <div class="swiper-pagination trusted-pagination"></div>
+    <div class="swiper-pagination trusted-pagination"></div>
   </div>
 </section>
