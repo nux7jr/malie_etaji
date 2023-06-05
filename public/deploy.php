@@ -10,10 +10,9 @@
 $commands = array(
     'echo $PWD',
     'whoami',
-    'git add',
     'git commit -m temp',
     'git fetch --all',
-    'git reset --hard origin/master',
+    'git reset --hard origin/main',
     'git pull',
     'git status',
     'git submodule sync',
