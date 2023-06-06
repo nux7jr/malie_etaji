@@ -142,7 +142,7 @@ Route::get('/projects/{id}', function ($id) {
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
         '3' => ['path' => $id, 'name' => 'curr ID or name'],
-    ], 'info' => $bar]);
+    ], 'info' => $bar[$id] ?? $bar[1]]);
 });
 Route::get('/about/technologies', function () {
     return view('technologies.index', ["paths" => [

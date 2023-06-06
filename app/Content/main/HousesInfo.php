@@ -92,7 +92,7 @@ class HousesInfo implements Arrayable
       ],
       [
         'id' => __('1'),
-        'name' => __('ДВ 72-92'),
+        'name' => __('ДВ 72-22'),
         'category' => __('Двухэтажный'),
         'title' => __('Дом'),
         'big_slider_images' => [
@@ -111,7 +111,7 @@ class HousesInfo implements Arrayable
         ],
         'price_end' => 4500000,
         'price_finish' => 6800000,
-        'price_small' => __('от 4,2 млн ₽'),
+        'price_small' => __('от 4,5 млн ₽'),
         'item_info' => [
           'square' => '161',
           'floors' => '2',

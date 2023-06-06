@@ -426,7 +426,7 @@
 }
 .more-projects__wrapper {
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
 }
 .more-projects__heading {
     font-weight: 700;

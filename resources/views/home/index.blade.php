@@ -693,12 +693,7 @@ $HousesInfo = new HousesInfo();
     </div>
     <div class="home-projects__wrapper">
         @php
-        // $json = \File::get('data.json');
-        // $someprojects = json_decode($json, true);
         $output = array_slice($HousesInfo->toArray(), 0, 3);
-
-
-        // dd($HousesInfo->toArray())
         @endphp
 
         @foreach ($output as $key => $item)

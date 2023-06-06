@@ -120,14 +120,8 @@
     </div>
 
     <div class="project-wrapper">
-
-        {{-- @php
-        $json = \File::get('data.json');
-        $someprojects = json_decode($json, true);
-        @endphp --}}
-
         @foreach ($projects as $key => $item)
-        <x-cards.project-item theme="dark" info="{{$key}}">
+        <x-cards.project-item theme="dark" info="{!! json_encode($item) !!}">
         </x-cards.project-item>
         @endforeach
     </div>

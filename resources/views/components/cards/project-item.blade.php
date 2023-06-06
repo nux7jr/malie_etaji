@@ -10,7 +10,6 @@
     <article class="project-item">
         @php
         $info = json_decode($info, true);
-        // dd($projects)
         @endphp
         <div class="swiper project-swiper">
             <div class="swiper-wrapper">

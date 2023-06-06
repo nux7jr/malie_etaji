@@ -8,7 +8,10 @@
 
 @section('content')
 @php
-dd($info)
+
+use App\Content\main\HousesInfo;
+$HousesInfo = new HousesInfo();
+
 @endphp
 
 <div class="swiper project-item__swiper">
@@ -287,9 +290,7 @@ dd($info)
   </div>
   <div class="more-projects__wrapper">
     @php
-    $json = \File::get('data.json');
-    $someprojects = json_decode($json, true);
-    $output = array_slice($someprojects, 0, 3);
+    $output = array_slice($HousesInfo->toArray(), 0, 3);
     @endphp
 
     @foreach ($output as $key => $item)
