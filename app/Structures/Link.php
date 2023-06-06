@@ -43,7 +43,7 @@ class Link implements Arrayable
     public function getlink(): string{
         return self::$link;
     }
-    /**
+    /**get string text for link
      * @return string
      */
     public function getText(): string{

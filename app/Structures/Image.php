@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Vite;
 class Image implements Arrayable
 {
     private ?string $asset_src;
-
+    /**
+     * @param string|null $src
+     */
     public function __construct(?string $src){
         $this->asset_src = Vite::asset($src);
     }
@@ -23,7 +25,11 @@ class Image implements Arrayable
         ];
     }
 
-    public function getSrc(): string
+    /**
+     * return Vite:asset || null path
+     * @return string|null
+     */
+    public function getSrc(): string|null
     {
         return $this->asset_src;
     }
