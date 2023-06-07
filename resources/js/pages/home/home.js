@@ -21,18 +21,14 @@ const offer = new Swiper(".offer-swiper", {
         el: ".offer-slide__pagination",
     },
 });
-
 const services = new Swiper(".services-swiper", {
     slidesPerView: "auto",
     centeredSlides: true,
-
-    // loop: true,
     navigation: {
         nextEl: ".services-button-next",
         prevEl: ".services-button-prev",
     },
 });
-
 const all_buttons_build = document.querySelectorAll(".build__button");
 const houses_build = document.querySelectorAll(".build-slide");
 
@@ -127,8 +123,8 @@ const stage = new Swiper(".stage-swiper", {
 });
 
 const spec = new Swiper(".spec-swiper", {
-    slidesPerView: 3,
-    spaceBetween: 0,
+    slidesPerView: 1,
+    spaceBetween: 60,
     pagination: {
         clickable: true,
         el: ".spec-pagination",
@@ -136,5 +132,11 @@ const spec = new Swiper(".spec-swiper", {
     navigation: {
         nextEl: ".spec-button-next",
         prevEl: ".spec-button-prev",
+    },
+    breakpoints: {
+        999: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 50,
+        },
     },
 });

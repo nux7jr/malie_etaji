@@ -54,10 +54,10 @@ class HousesInfo implements Arrayable
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/72-92/5.jpg',
+            src: 'resources/images/double/72-92/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/72-92/6.jpg',
+            src: 'resources/images/double/72-92/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['С гаражом', 'С гаражом'],
@@ -65,18 +65,18 @@ class HousesInfo implements Arrayable
           'plan' => ['someurltoplan', 'someurltoplan2', 'someurltoplan3'],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/72-92/5.jpg',
+              src: 'resources/images/double/72-92/5.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/72-92/6.jpg',
+              src: 'resources/images/double/72-92/6.jpg',
             ))->getSrc()
           ],
           '3d' => [
             (new Image(
-              src: 'resources/images/barns/72-92/video1.mp4',
+              src: 'resources/images/double/72-92/video1.mp4',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/72-92/video1.mp4',
+              src: 'resources/images/double/72-92/video1.mp4',
             ))->getSrc(),
           ]
         ],
@@ -92,26 +92,26 @@ class HousesInfo implements Arrayable
       ],
       [
         'id' => __('1'),
-        'name' => __('ДВ 72-22'),
+        'name' => __('ДВ 80-96'),
         'category' => __('Двухэтажный'),
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/72-92/1.jpg',
+            src: 'resources/images/double/80-96/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/2.jpg',
+            src: 'resources/images/double/80-96/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/3.jpg',
+            src: 'resources/images/double/80-96/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/4.jpg',
+            src: 'resources/images/double/80-96/4.jpg',
           ))->getSrc(),
         ],
-        'price_end' => 4500000,
-        'price_finish' => 6800000,
-        'price_small' => __('от 4,5 млн ₽'),
+        'price_end' => 8000000,
+        'price_finish' => 10800000,
+        'price_small' => __('от 8,5 млн ₽'),
         'item_info' => [
           'square' => '161',
           'floors' => '2',
@@ -127,10 +127,10 @@ class HousesInfo implements Arrayable
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/72-92/5.jpg',
+            src: 'resources/images/double/80-96/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/72-92/6.jpg',
+            src: 'resources/images/double/80-96/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['С гаражом', 'С гаражом'],
@@ -138,18 +138,18 @@ class HousesInfo implements Arrayable
           'plan' => ['someurltoplan', 'someurltoplan2', 'someurltoplan3'],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/72-92/5.jpg',
+              src: 'resources/images/double/80-96/5.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/72-92/6.jpg',
+              src: 'resources/images/double/80-96/6.jpg',
             ))->getSrc()
           ],
           '3d' => [
             (new Image(
-              src: 'resources/images/barns/72-92/video1.mp4',
+              src: 'resources/images/double/80-96/video1.mp4',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/72-92/video1.mp4',
+              src: 'resources/images/double/75-92/video1.mp4',
             ))->getSrc(),
           ]
         ],

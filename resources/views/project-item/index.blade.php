@@ -17,13 +17,13 @@ $HousesInfo = new HousesInfo();
 <div class="swiper project-item__swiper">
   <x-ui.path.path paths={!!json_encode($paths)!!} class="project-item__path"></x-ui.path.path>
   <div class="swiper-wrapper project-item__wrapperes">
-    @for ($i = 0; $i < 10; $i++) <div class="swiper-slide project-item__slide"
-      style="background-image: url('{{ Vite::asset('resources/images/project-item/big.jpg') }}')">
+    @foreach ($info['big_slider_images'] as $item) <div class="swiper-slide project-item__slide"
+      style="background-image: url('{{ $item }}')">
+    </div>
+    @endforeach
   </div>
-  @endfor
-</div>
-<div class="swiper-button-prev project-item__prev"></div>
-<div class="swiper-button-next project-item__next"></div>
+  <div class="swiper-button-prev project-item__prev"></div>
+  <div class="swiper-button-next project-item__next"></div>
 
 
 </div>
@@ -49,7 +49,6 @@ $HousesInfo = new HousesInfo();
           </button>
         </p>
         <h1 class="header-section__value">
-          {{-- {{__('4 500 000 ₽')}} --}}
           {{$info['price_end']}} ₽
         </h1>
       </div>
@@ -65,7 +64,6 @@ $HousesInfo = new HousesInfo();
           </button>
         </p>
         <h1 class="header-section__value">
-          {{-- {{__('4 500 000 ₽')}} --}}
           {{$info['price_finish']}} ₽
         </h1>
       </div>
@@ -116,21 +114,11 @@ $HousesInfo = new HousesInfo();
         {{__('О проекте')}}
       </h1>
       <div class="about-project__text-wrapper">
+        @foreach ($info['about'] as $item)
         <p class="about-project__paraf">
-          {{__('Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-          стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал
-          большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не
-          только
-          успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.')}}
+          {{$item}}
         </p>
-        <p class="about-project__paraf">
-          {{__('Lorem Ipsum - это
-          текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-          на
-          латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм
-          шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
-          изменений пять веков, но и перешагнул в электронный дизайн.')}}
-        </p>
+        @endforeach
       </div>
       <div class="about-project__option">
         <a href="/pdf" class="about-project__button default__button">
@@ -139,23 +127,25 @@ $HousesInfo = new HousesInfo();
           {{__('Скачать проект бесплатно')}}
           <span></span>
         </a>
-        <button class="about-project__mach default__button">
+        <a href="/mortgage" class="about-project__mach default__button">
           {{__('Рассчитать ипотеку')}}
 
-        </button>
+        </a>
       </div>
     </div>
     <div class="about-project__list">
       <div class="swiper about-project__swiper">
         <div class="swiper-wrapper about-project__wrapper">
-          @for ($i = 0; $i < 10; $i++) <div class="swiper-slide about-project__slide">
-            <div class="about__image" style="background-image: url(https://placehold.co/600x400)"></div>
+          @foreach ($info['about_images'] as $item)
+
+          <div class="swiper-slide about-project__slide">
+            <div class="about__image" style="background-image: url({{ $item }})"></div>
+          </div>
+          @endforeach
         </div>
-        @endfor
+        <div class="swiper-pagination about-project__pagination"></div>
       </div>
-      <div class="swiper-pagination about-project__pagination"></div>
     </div>
-  </div>
   </div>
 </section>
 <section class="project-preview">

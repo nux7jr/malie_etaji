@@ -170,6 +170,8 @@
     padding: 20px;
     background-color: var(--color-pink);
     color: var(--color-red);
+    display: flex;
+    align-items: center;
 }
 .about-project__option {
     display: flex;

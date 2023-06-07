@@ -35,7 +35,6 @@
     background-color: var(--color-red);
     color: white;
     max-width: 327px;
-
     display: flex;
     flex-direction: column;
     gap: 90px;
@@ -88,4 +87,55 @@
 
 .normal-card {
     flex: 1;
+}
+@media (max-width: 1440px) {
+    .tech__wrapper {
+        flex-wrap: wrap;
+    }
+    .tech-card {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .small-card {
+        padding: 20px;
+    }
+    .tech__item {
+        padding: 20px;
+    }
+    .smalls-card {
+        width: -webkit-fill-available;
+    }
+    .small-card__heading {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .nap-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    .small-card {
+        width: -webkit-fill-available;
+    }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .tech {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .tech__wrapper {
+        margin-top: 20px;
+    }
+    .tech__heading {
+        font-size: 24px;
+    }
+    .tech-card__img {
+        display: none;
+    }
+    .tech-card {
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
 }

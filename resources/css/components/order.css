@@ -73,3 +73,52 @@
 .order-consultation__submit {
     cursor: pointer;
 }
+@media (max-width: 1690px) {
+    .order-consultation__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .order-consultation__form {
+        gap: 10px;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 1440px) {
+    .order-consultation__form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-consultation__input {
+        width: -webkit-fill-available;
+    }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .order-consultation {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .order-consultation__heading {
+        font-size: 20px;
+    }
+    .order-consultation__text {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .order-consultation__form {
+        gap: 20px;
+    }
+    .order-consultation__input {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 17px 20px;
+    }
+    .sender__info {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+}

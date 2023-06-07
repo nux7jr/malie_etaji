@@ -18,7 +18,7 @@
   <div class="swiper trusted-swiper">
 
     <div class="swiper-wrapper trusted-wrapper">
-      @for ($i = 0; $i < 10; $i++) <div class="swiper-slide trusted-slide">
+      @for ($i = 0; $i < 5; $i++) <div class="swiper-slide trusted-slide">
         <img src="https://www.vogue.com/verso/static/vogue/assets/us/logo.svg" alt="logo">
     </div>
     @endfor

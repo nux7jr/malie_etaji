@@ -10,6 +10,11 @@ use App\Content\main\HousesInfo;
 $HousesInfo = new HousesInfo();
 
 
+use App\Content\main\StageCards;
+$stage = new StageCards();
+
+
+
 @endphp
 @extends ("layouts.base")
 
@@ -93,31 +98,7 @@ $HousesInfo = new HousesInfo();
     <h1 class="which-house__heading">
         {{ __('Какие дома мы строим') }}
     </h1>
-    {{-- @php
-    $which_house = [
-    '0' => [
-    "title" => 'Скачайте полный каталог',
-    "background" => '/asds/asd.png',
-    "linkText" => 'Скачать в PDF',
-    "link" => '/asd/asd.pdf',
-    ],
-    '1' => [
-    "title" => 'О компании Малые этажи',
-    "background" => '/asds/asd.png',
-    "linkText" => 'Подробнее',
-    "link" => '/about',
-    ],
-    '2' => [
-    "title" => 'Рассчитайте ипотеку',
-    "background" => '/asds/asd.png',
-    "linkText" => 'Рассчитать',
-    "link" => '/mortgage/#mortgage-calc',
-    ]
-    ];
-    @endphp --}}
-    {{-- @php
-    dd($which_house)
-    @endphp --}}
+
     <div class="which-house__wrapper">
         @foreach($which_house->toArray() as $item) <x-ui.cards.autoplay title="{{$item['text']}}"
             background="{{$item['background']}}" linkText="{{$item['link']['text']}}" link="{{$item['link']['link']}}"
@@ -555,8 +536,14 @@ $HousesInfo = new HousesInfo();
             </div>
             <div class="build-wrapper__navigation">
                 <div class="build-wrapper__option">
-                    <div class="swiper-button-next build-button-next"></div>
-                    <div class="swiper-button-prev build-button-prev"></div>
+                    <div class="swiper-button-next build-button-next">
+                        <img class="mobile_nav-next mobile_nav"
+                            src="{{ Vite::asset('resources/images/build/next.svg') }}" alt="icon">
+                    </div>
+                    <div class="swiper-button-prev build-button-prev">
+                        <img class="mobile_nav-prev mobile_nav"
+                            src="{{ Vite::asset('resources/images/build/next.svg') }}" alt="icon">
+                    </div>
                 </div>
                 <div class="swiper-pagination build__pagination"></div>
             </div>
@@ -573,35 +560,30 @@ $HousesInfo = new HousesInfo();
         <div class="stage-pagination"></div>
         <div class="swiper stage-swiper">
             <div class="swiper-wrapper stage-wrapper">
-                @for ($i = 1; $i < 7; $i++) <div class="swiper-slide stage-slide">
+                @foreach ($stage->toArray() as $item) <div class="swiper-slide stage-slide">
                     <div class="stage-inner">
-                        <div class="stage-right" style="background-image: url('https://placehold.co/650x530')">
+                        <div class="stage-right" style="background-image: url({{ $item['image'] }})">
                         </div>
                         <div class="stage-left">
                             <p class="stage-slide__index">
-                                {{ $i }}{{ __(' этап') }}
+                                {{ $item['stage'] }}
                             </p>
                             <h2 class="stage-slide__heading">
-                                {{ __('Согласование предварительных вопросов') }}
+                                {{ $item['title']}}
                             </h2>
                             <div class="stage-slide__wrapper">
                                 <ul class="stage-slide__list">
                                     <p class="stage-slide__ul-heading">
-                                        {{ __('Что входит в 1-й этап:') }}
+                                        {{ $item['heading']}}
                                     </p>
+                                    @foreach ($item['list'] as $items)
                                     <li class="stage-slide__li">
-                                        {{ __('Консультация по выбору материала строительства;') }}
+                                        {{$items}}
                                     </li>
-                                    <li class="stage-slide__li">
-                                        {{ __('Подбор проекта дома при необходимости;') }}
-                                    </li>
-                                    <li class="stage-slide__li">
-                                        {{ __('Предварительный расчет строительства.') }}
-                                    </li>
+                                    @endforeach
                                 </ul>
                                 <p class="stage-slide__paraf">
-                                    {{ __('Первый этап помогает вам узнать преимущества работы с нами и ни к чему вас не
-                                    обязывает') }}
+                                    {{ $item['paraf'] }}
                                 </p>
                             </div>
                             <div class="stage-option">
@@ -616,9 +598,9 @@ $HousesInfo = new HousesInfo();
                             </div>
                         </div>
                     </div>
+                </div>
+                @endforeach
             </div>
-            @endfor
-        </div>
 </section>
 <section class="spec">
     <div class="spec__header">
@@ -632,7 +614,7 @@ $HousesInfo = new HousesInfo();
     </div>
     <div class="swiper spec-swiper">
         <div class="swiper-wrapper spec-wrapper">
-            @for ($i = 0; $i < 10; $i++) <div class="swiper-slide spec-slide">
+            @for ($i = 0; $i < 4; $i++) <div class="swiper-slide spec-slide">
                 <div class="spec__inner">
                     <img class="spec__img" src="https://placehold.co/255x300" alt="logo">
                     <p class="spec__name">
@@ -687,7 +669,7 @@ $HousesInfo = new HousesInfo();
 <section class="home-projects">
     <div class="home-projects__header">
         <h1 class="home-projects__heading">{{ __('Наши проекты') }}</h1>
-        <a class="default__button" href="projects">
+        <a class="default__button home-projects__link" href="projects">
             {{__('Все проекты')}}
         </a>
     </div>

@@ -633,7 +633,7 @@ footer {
     padding: 0 calc(50% - 810px);
 }
 
-@media (max-width: 1620px) {
+@media (max-width: 1690px) {
     section,
     header,
     footer {
@@ -646,10 +646,38 @@ footer {
     footer {
         padding: 0 calc(50% - 368px);
     }
+    .call__button {
+        display: none;
+    }
+    .header__links {
+        display: none;
+    }
 }
 @media (max-width: 1200px) {
+    section,
+    header,
+    footer {
+        padding: 0 20px;
+    }
+    .footer__wrapper {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .footer-pages__title {
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
 }
 @media (max-width: 992px) {
+    .default__button {
+        font-size: 12px;
+    }
+    .heading-info {
+        display: none;
+    }
+    .tooltip .tooltiptext {
+        left: -130px;
+    }
 }
 @media (max-width: 768px) {
 }

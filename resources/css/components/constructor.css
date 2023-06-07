@@ -108,6 +108,10 @@
     display: flex;
     padding-bottom: 20px;
     padding-right: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .constructor-preview__info {
     background-color: white;
@@ -157,4 +161,96 @@
     display: flex;
     gap: 50px;
     padding-top: 80px;
+}
+.second_slide {
+    display: none;
+}
+.not-back {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+@media (max-width: 1440px) {
+    .constructor__wrapper {
+        flex-wrap: wrap;
+    }
+    .ganeral-wrapper {
+        min-width: fit-content;
+        flex-wrap: wrap;
+    }
+    .constructor {
+        padding-top: 40px;
+        padding-bottom: 38px;
+    }
+    .constructor__heading {
+        font-size: 24px;
+    }
+    .constructor__wrapper {
+        padding-top: 40px;
+    }
+    .constructor-inner__heading {
+        font-size: 20px;
+    }
+    .ganeral-header {
+        font-size: 16px;
+    }
+    .constructor-inner {
+        gap: 22px;
+    }
+    .ganeral-wrapper {
+        margin-top: 12px;
+        row-gap: 10px;
+    }
+    .ganeral-item {
+        flex: 0;
+    }
+    .ganeral-lablel {
+        font-size: 12px;
+    }
+    .ganeral-input + .ganeral-lablel {
+        width: max-content;
+    }
+}
+@media (max-width: 1200px) {
+    .constructor-call {
+        flex-direction: column;
+    }
+}
+@media (max-width: 992px) {
+    .constructor-preview {
+        padding: 10px;
+        padding-bottom: 175px;
+        width: -webkit-fill-available;
+    }
+    .constructor-preview__info {
+        width: -webkit-fill-available;
+        justify-content: space-between;
+    }
+    .constructor__wrapper {
+        flex-direction: column;
+    }
+    .ganeral-input + .ganeral-lablel {
+        font-size: 12px;
+    }
+    .constructor-preview__paraf {
+        font-size: 16px;
+    }
+    .constructor-preview__text {
+        font-size: 10px;
+    }
+    .constructor__wrapper {
+        gap: 25px;
+    }
+    .constructor-call {
+        padding-top: 40px;
+        gap: 20px;
+    }
+    .constructor-call__text {
+        font-size: 16px;
+        text-align: left;
+    }
+    .constructor-call__button {
+        padding: 20px;
+    }
+}
+@media (max-width: 768px) {
 }

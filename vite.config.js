@@ -56,6 +56,9 @@ export default defineConfig({
                 "resources/css/components/tech.css",
                 "resources/css/components/aboutHeader.css",
                 "resources/css/components/constructor.css",
+
+                "resources/js/components/constructor.js",
+
                 "resources/css/components/order.css",
                 "resources/css/components/feedback.css",
                 "resources/css/components/project-item.css",
