@@ -680,4 +680,17 @@ footer {
     }
 }
 @media (max-width: 768px) {
+    .header__logo {
+        max-width: 152px;
+        display: flex;
+    }
+    .phone__link {
+        font-size: 11.0769px;
+        color: var(--color-black);
+    }
+}
+@media (max-width: 400px) {
+    .header__logo {
+        max-width: 125px;
+    }
 }

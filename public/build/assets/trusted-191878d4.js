@@ -1,0 +1,1 @@
+function i(e){new e(".trusted-swiper",{slidesPerView:1,spaceBetween:10,pagination:{clickable:!0,el:".trusted-pagination"},breakpoints:{499:{slidesPerView:1,spaceBetweenSlides:10},999:{slidesPerView:6,spaceBetweenSlides:10}}})}export{i};

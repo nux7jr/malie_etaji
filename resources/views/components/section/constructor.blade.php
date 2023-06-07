@@ -140,7 +140,7 @@
                 </div>
             </div>
             <div class="constructor-preview"
-                style="background-image: url({{ Vite::asset('/resources/images/double/72-92/2.jpg') }})">
+                style="background-image: url({{ Vite::asset('resources/images/double/72-92/2.jpg') }})">
                 <div class="constructor-preview__info">
                     <div class="constructor-preview__item">
                         <p class="constructor-preview__paraf">
@@ -281,7 +281,7 @@
                 </div>
             </div>
             <div class="constructor-preview"
-                style="background-image: url({{ Vite::asset('/resources/images/double/72-92/2.jpg') }})">
+                style="background-image: url({{ Vite::asset('resources/images/double/72-92/2.jpg') }})">
                 <div class="constructor-preview__info">
                     <div class="constructor-preview__item">
                         <p class="constructor-preview__paraf">

@@ -851,7 +851,7 @@
         font-weight: 700;
         font-size: 42px;
         color: var(--color-black);
-        white-space: nowrap;
+        /* white-space: nowrap; */
     }
     .tech-card__paraf {
         margin-top: 27px;
@@ -969,7 +969,7 @@
         font-weight: 700;
         font-size: 42px;
         color: var(--color-black);
-        white-space: nowrap;
+        /* white-space: nowrap; */
     }
     .tech-card__paraf {
         margin-top: 27px;

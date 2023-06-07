@@ -34,7 +34,7 @@ class WhichHouse implements Arrayable
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/about", text: 'Подробнее'))->toArray(),
                 'video' => (new Video(
-                    src: 'resources/images/barns/53-56/video1.mp4',
+                    src: 'resources/images/barns/29-42/video1.mp4',
                 ))->getSrc()
             ],
             [
@@ -44,7 +44,7 @@ class WhichHouse implements Arrayable
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/mortgage/#mortgage-programs", text: 'Рассчитать'))->toArray(),
                 'video' => (new Video(
-                    src: 'resources/images/barns/53-56/video1.mp4',
+                    src: 'resources/images/double/75-92/video1.mp4',
                 ))->getSrc()
             ],
 

@@ -35,10 +35,10 @@
               <button class="default__button">{{__('Отправить')}}</button>
             </div>
           </div>
-          <p class="modal__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a class="policy__link"
-              href="http://" target="_blank" rel="noopener noreferrer">
+          <span class="modal__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a
+              class="policy__link" href="http://" target="_blank" rel="noopener noreferrer">
               обработку персональных данных
-            </a></p>
+            </a></span>
         </div>
       </div>
     </section>
