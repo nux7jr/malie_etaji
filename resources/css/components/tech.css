@@ -62,7 +62,8 @@
 .small-card {
     border-radius: var(--border-raduis-defalut);
     padding: 50px 90px;
-    width: 280px;
+    min-width: 280px;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -138,4 +139,10 @@
     }
 }
 @media (max-width: 768px) {
+    .nap-wrapper {
+        gap: 20px;
+    }
+    .small-card {
+        min-width: fit-content;
+    }
 }

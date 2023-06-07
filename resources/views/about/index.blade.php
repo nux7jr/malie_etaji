@@ -29,20 +29,33 @@ dd($path)
 
             </p>
         </div>
-        <div class="your-house__wrapper">
-            @for ($i = 0; $i < 4; $i++) <article class="your-house__info">
-                <img class="your-house__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}" alt="fire">
-                <h3 class="your-house__act">
-                    {{__('Свой дом от “Малые этажи”')}}
-                </h3>
-                <p class="your-house__small-text">
-                    {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
-                    начала
-                    XVI
-                    века.')}}
-                </p>
-                </article>
-                @endfor
+        <div class="your-house__swipers swiper">
+            <div class="your-house__wrapper swiper-wrapper">
+                @for ($i = 0; $i < 4; $i++) <article class="swiper-slide">
+                    <div class="your-house__info">
+                        <img class="your-house__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
+                            alt="fire">
+                        <h3 class="your-house__act">
+                            {{__('Свой дом от “Малые этажи”')}}
+                        </h3>
+                        <p class="your-house__small-text">
+                            {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                            начала
+                            XVI
+                            века.')}}
+                        </p>
+                    </div>
+                    </article>
+                    @endfor
+            </div>
+            <div class="swiper-button-prev your-house__button-prev">
+                <img class="your-house-prev your-house_icno" src="{{ Vite::asset('resources/images/build/next.svg') }}"
+                    alt="prev">
+            </div>
+            <div class="swiper-button-next your-house__button-next">
+                <img class="your-house-next your-house_icno" src="{{ Vite::asset('resources/images/build/next.svg') }}"
+                    alt="next">
+            </div>
         </div>
     </div>
 </section>

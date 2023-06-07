@@ -45,3 +45,14 @@
     height: 8px;
     background: var(--color-red);
 }
+/* .certificates__img 740 */
+@media (max-width: 992px) {
+    .certificates__heading {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .certificates__img {
+        margin: 0 auto;
+    }
+}

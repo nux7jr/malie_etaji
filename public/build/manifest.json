@@ -1,6 +1,6 @@
 {
-  "_certificates-6f70a124.js": {
-    "file": "assets/certificates-6f70a124.js",
+  "_certificates-c010d61a.js": {
+    "file": "assets/certificates-c010d61a.js",
     "imports": [
       "_index-706639a7.js"
     ]
@@ -40,142 +40,142 @@
     "src": "nouislider.css"
   },
   "resources/css/app.css": {
-    "file": "assets/app-ee2d0d5a.css",
+    "file": "assets/app-91d55fa8.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/css/components/aboutHeader.css": {
-    "file": "assets/aboutHeader-d78ecb4e.css",
+    "file": "assets/aboutHeader-2c944092.css",
     "isEntry": true,
     "src": "resources/css/components/aboutHeader.css"
   },
   "resources/css/components/article.css": {
-    "file": "assets/article-311a6f8a.css",
+    "file": "assets/article-a4351d04.css",
     "isEntry": true,
     "src": "resources/css/components/article.css"
   },
   "resources/css/components/certificates.css": {
-    "file": "assets/certificates-03d323d7.css",
+    "file": "assets/certificates-008ce6f3.css",
     "isEntry": true,
     "src": "resources/css/components/certificates.css"
   },
   "resources/css/components/constructor.css": {
-    "file": "assets/constructor-aa41d9a9.css",
+    "file": "assets/constructor-a429a803.css",
     "isEntry": true,
     "src": "resources/css/components/constructor.css"
   },
   "resources/css/components/faq.css": {
-    "file": "assets/faq-290658f8.css",
+    "file": "assets/faq-8411db16.css",
     "isEntry": true,
     "src": "resources/css/components/faq.css"
   },
   "resources/css/components/feedback.css": {
-    "file": "assets/feedback-3868282f.css",
+    "file": "assets/feedback-e980fd0e.css",
     "isEntry": true,
     "src": "resources/css/components/feedback.css"
   },
   "resources/css/components/grid.css": {
-    "file": "assets/grid-0673be33.css",
+    "file": "assets/grid-d05766c9.css",
     "isEntry": true,
     "src": "resources/css/components/grid.css"
   },
   "resources/css/components/house_card.css": {
-    "file": "assets/house_card-0d41d57a.css",
+    "file": "assets/house_card-37e71478.css",
     "isEntry": true,
     "src": "resources/css/components/house_card.css"
   },
   "resources/css/components/modal.css": {
-    "file": "assets/modal-f248cae4.css",
+    "file": "assets/modal-04a94116.css",
     "isEntry": true,
     "src": "resources/css/components/modal.css"
   },
   "resources/css/components/office-map.css": {
-    "file": "assets/office-map-40c0d3d8.css",
+    "file": "assets/office-map-1525193a.css",
     "isEntry": true,
     "src": "resources/css/components/office-map.css"
   },
   "resources/css/components/order.css": {
-    "file": "assets/order-abe2fdd3.css",
+    "file": "assets/order-d3c71130.css",
     "isEntry": true,
     "src": "resources/css/components/order.css"
   },
   "resources/css/components/path.css": {
-    "file": "assets/path-4eb28325.css",
+    "file": "assets/path-67bcedf6.css",
     "isEntry": true,
     "src": "resources/css/components/path.css"
   },
   "resources/css/components/peculiarities.css": {
-    "file": "assets/peculiarities-3b659faf.css",
+    "file": "assets/peculiarities-d577a3f1.css",
     "isEntry": true,
     "src": "resources/css/components/peculiarities.css"
   },
   "resources/css/components/project-item.css": {
-    "file": "assets/project-item-82f9800d.css",
+    "file": "assets/project-item-91536b33.css",
     "isEntry": true,
     "src": "resources/css/components/project-item.css"
   },
   "resources/css/components/selection.css": {
-    "file": "assets/selection-511c0612.css",
+    "file": "assets/selection-fa607e9f.css",
     "isEntry": true,
     "src": "resources/css/components/selection.css"
   },
   "resources/css/components/tech.css": {
-    "file": "assets/tech-68bef3c7.css",
+    "file": "assets/tech-2d087091.css",
     "isEntry": true,
     "src": "resources/css/components/tech.css"
   },
   "resources/css/components/trusted.css": {
-    "file": "assets/trusted-8e4a3e2d.css",
+    "file": "assets/trusted-b6dffd24.css",
     "isEntry": true,
     "src": "resources/css/components/trusted.css"
   },
   "resources/css/pages/about/about.css": {
-    "file": "assets/about-71ec1eba.css",
+    "file": "assets/about-cb2f1de5.css",
     "isEntry": true,
     "src": "resources/css/pages/about/about.css"
   },
   "resources/css/pages/blog-item/blog-item.css": {
-    "file": "assets/blog-item-79928389.css",
+    "file": "assets/blog-item-32bb35e8.css",
     "isEntry": true,
     "src": "resources/css/pages/blog-item/blog-item.css"
   },
   "resources/css/pages/blog/blog.css": {
-    "file": "assets/blog-178a57ce.css",
+    "file": "assets/blog-58326529.css",
     "isEntry": true,
     "src": "resources/css/pages/blog/blog.css"
   },
   "resources/css/pages/contacts/contacts.css": {
-    "file": "assets/contacts-2c691447.css",
+    "file": "assets/contacts-be8867d2.css",
     "isEntry": true,
     "src": "resources/css/pages/contacts/contacts.css"
   },
   "resources/css/pages/error/error.css": {
-    "file": "assets/error-66858aba.css",
+    "file": "assets/error-37adedbb.css",
     "isEntry": true,
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-e63078d5.css",
+    "file": "assets/home-ec60b8f0.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
   "resources/css/pages/mortgage/mortgage.css": {
-    "file": "assets/mortgage-b952e902.css",
+    "file": "assets/mortgage-dc9d01c5.css",
     "isEntry": true,
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-16f19176.css",
+    "file": "assets/project-item-28b4265c.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
   "resources/css/pages/projects/projects.css": {
-    "file": "assets/projects-cb32fed2.css",
+    "file": "assets/projects-75e1e967.css",
     "isEntry": true,
     "src": "resources/css/pages/projects/projects.css"
   },
   "resources/css/pages/technologies/technologies.css": {
-    "file": "assets/technologies-5dc82e1a.css",
+    "file": "assets/technologies-5f2f8845.css",
     "isEntry": true,
     "src": "resources/css/pages/technologies/technologies.css"
   },
@@ -986,11 +986,11 @@
     "src": "resources/js/components/trusted.js"
   },
   "resources/js/pages/about/about.js": {
-    "file": "assets/about-82181705.js",
+    "file": "assets/about-aa7adcd9.js",
     "imports": [
       "_ymaps.esm-7917d817.js",
       "_swiper-bundle.min-17f9adeb.js",
-      "_certificates-6f70a124.js",
+      "_certificates-c010d61a.js",
       "_index-706639a7.js"
     ],
     "isEntry": true,
@@ -1052,11 +1052,11 @@
     "src": "resources/js/pages/projects/projects.js"
   },
   "resources/js/pages/technologies/technologies.js": {
-    "file": "assets/technologies-7cd5b1d4.js",
+    "file": "assets/technologies-2628a975.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
       "_feedback-9e57aa4b.js",
-      "_certificates-6f70a124.js",
+      "_certificates-c010d61a.js",
       "_index-706639a7.js"
     ],
     "isEntry": true,

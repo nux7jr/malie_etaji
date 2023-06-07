@@ -235,3 +235,9 @@
     color: var(--color-red);
     background-color: var(--color-pink);
 }
+
+@media (max-width: 1440px) {
+    .project-filter__wrapper {
+        flex-direction: column;
+    }
+}

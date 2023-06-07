@@ -69,3 +69,44 @@
 .z-card__link {
     width: fit-content;
 }
+@media (max-width: 1690px) {
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+    .grid-temp__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .grid-temp-z,
+    .grid-card {
+        padding: 20px;
+    }
+    .grid-temp-x {
+        flex-direction: column;
+    }
+    .stable__heading {
+        min-width: fit-content;
+    }
+    .grid-card__heading,
+    .z-card__heading {
+        font-size: 24px;
+    }
+    .z-card__text,
+    .grid-card__paraf {
+        font-size: 12px;
+    }
+    .grid-temp__wrapper {
+        padding-top: 40px;
+    }
+    .grid-temp__wrapper {
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .z-card__img {
+        display: none;
+    }
+}

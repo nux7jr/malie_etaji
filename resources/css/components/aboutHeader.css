@@ -79,6 +79,18 @@
     .about-router {
         gap: 20px;
     }
+    .about-router__item {
+        padding: 15px;
+    }
+    .about-router__link span {
+        font-size: 12px;
+        flex-direction: column;
+    }
+    .about-router__link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
 @media (max-width: 768px) {
 }

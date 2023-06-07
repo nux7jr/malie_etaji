@@ -136,7 +136,7 @@ hr {
 /* header */
 header {
     background-color: white;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 var(--border-raduis-defalut) var(--border-raduis-defalut);
     position: sticky;
     top: 0;
     z-index: 3;
@@ -679,8 +679,14 @@ footer {
     .tooltip .tooltiptext {
         left: -130px;
     }
+    .map-container-footer {
+        display: none;
+    }
     :root {
         --border-raduis-defalut: 25px;
+    }
+    .footer__wrapper {
+        padding-top: 30px;
     }
 }
 @media (max-width: 768px) {

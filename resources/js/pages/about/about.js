@@ -6,17 +6,42 @@ import { initCertificates } from "../../components/certificates";
 initCertificates(Swiper);
 
 const gallerys = new Swiper(".photo-gallery__swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 50,
     pagination: {
         el: ".photo-pagination",
         clickable: true,
     },
+
     // initialSlide: 2,
     loop: true,
     navigation: {
         nextEl: ".photo-gallery__button-next",
         prevEl: ".photo-gallery__button-prev",
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 50,
+        },
+    },
+});
+
+// your-house__swipers
+const your_house = new Swiper(".your-house__swipers", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+
+    loop: true,
+    navigation: {
+        nextEl: ".your-house__button-next",
+        prevEl: ".your-house__button-prev",
+    },
+    breakpoints: {
+        1440: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 30,
+        },
     },
 });
 

@@ -75,9 +75,6 @@
     }
 }
 @media (max-width: 1200px) {
-    .order-consultation__wrapper {
-        padding: 20px 30px;
-    }
 }
 @media (max-width: 992px) {
     .feedback__heading {

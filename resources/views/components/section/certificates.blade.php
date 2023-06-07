@@ -16,7 +16,7 @@
 
   <div class="swiper certificates-swiper">
     <div class="swiper-wrapper certificates-wrapper">
-      @for ($i = 0; $i < 10; $i++) <div class="swiper-slide certificates-slide">
+      @for ($i = 0; $i < 7; $i++) <div class="swiper-slide certificates-slide">
         <a data-fslightbox="gallery" href="https://placehold.co/228x313" class="certificates__img"
           style="background-image: url(https://placehold.co/228x313)">
 

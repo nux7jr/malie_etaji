@@ -5,8 +5,8 @@
 .your-house {
     background: white;
     padding-top: 100px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: var(--border-raduis-defalut);
+    border-top-right-radius: var(--border-raduis-defalut);
     color: var(--color-black);
 }
 .your-house__section {
@@ -29,15 +29,38 @@
 .your-house__wrapper {
     padding-top: 50px;
     display: flex;
-    gap: 50px;
+    /* gap: 50px; */
 }
-.your-house__info {
+.your-house_icno {
+    width: 46px;
+}
+.your-house__swipers {
+    padding: 0 40px;
+}
+.your-house__button-prev {
+    transform: rotate(180deg);
+}
+.swiper-slide > .your-house__info {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
+    padding: 34px;
     background-color: white;
     border-radius: var(--border-raduis-defalut);
+}
+.your-house__wrapper > .your-house__button-prev {
+    left: 20px !important;
+    right: auto;
+}
+.your-house__wrapper > .your-house__button-next {
+    left: 20px !important;
+    right: auto;
+}
+.your-house__button-prev::after {
+    content: "" !important;
+}
+.your-house__button-next::after {
+    content: "" !important;
 }
 .your-house__small-text,
 .your-house__paraf {
@@ -254,7 +277,7 @@
 }
 .building-maps .ymaps-2-1-79-float-button {
     background-color: var(--color-pink) !important;
-    border-radius: 50px !important;
+    border-radius: var(--border-raduis-defalut) !important;
 }
 .building-maps .ymaps-2-1-79-zoom__runner {
     background-color: var(--color-red) !important;
@@ -374,6 +397,10 @@
     .stable {
         flex-wrap: wrap;
     }
+    .stable__video {
+        height: 371px;
+        margin: 0 auto;
+    }
     .services-filters__option {
         overflow-x: scroll;
     }
@@ -395,6 +422,20 @@
     }
 }
 @media (max-width: 1440px) {
+    .your-house__header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .photo-wrapper {
+        padding: 20px;
+    }
+    .photo-header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .photo-gallery__swiper {
+        margin-top: 20px;
+    }
 }
 @media (max-width: 1200px) {
 }
@@ -413,6 +454,85 @@
         grid-template-columns: 1fr;
         width: 100%;
     }
+    .your-house__section {
+        padding: 42px;
+    }
+    .your-house__swipers {
+        padding: 0 40px !important;
+    }
+    .about-slogan__heading,
+    .your-house__heading,
+    .building-maps__heading,
+    .stable__heading,
+    .all-services__heading {
+        font-size: 24px;
+    }
+    .about-slogan__text,
+    .stable__text-paraf,
+    .building-maps__paraf {
+        font-size: 12px;
+    }
+    .your-house {
+        padding-top: 40px;
+    }
+    .building-maps {
+        padding-top: 40px;
+    }
+    .stable__list {
+        gap: 20px;
+    }
+    .your-house__header {
+        gap: 30px;
+    }
+    .stable {
+        gap: 20px;
+    }
+    .stable__list {
+        margin-top: 10px;
+    }
+    .all-services {
+        padding-top: 40px;
+    }
+    .all-services__inner {
+        margin-top: 25px;
+        padding: 20px;
+    }
+    .services-filters__wrapper {
+        padding-right: 15px;
+    }
+    .services-filters__button {
+        min-width: fit-content;
+    }
+    .services-filters__option {
+        gap: 10px;
+    }
+    .photo-gallery__option {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .photo-gallery__slide.swiper-slide-next .photo-gallery__img {
+        height: 288px;
+    }
+    .photo-gallery__swiper .photo-gallery__wrapper {
+        height: 304px;
+    }
+    .photo-gallery__heading {
+        font-size: 24px;
+    }
+    .photo-gallery {
+        padding-top: 40px;
+    }
 }
 @media (max-width: 768px) {
+    .services-filters__item,
+    .services-filters__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .services-filters__header {
+        margin-bottom: 20px;
+    }
+    .photo-gallery__swiper {
+        padding: 0 50px;
+    }
 }
