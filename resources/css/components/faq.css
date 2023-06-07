@@ -9,7 +9,7 @@
     flex-direction: column;
     padding: 20px;
     background-color: white;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     cursor: pointer;
     transition: 0.2s;
 }

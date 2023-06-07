@@ -19,6 +19,8 @@
                     вручения
                     ключей.') }}
                 </p>
+                <img class="about-image--mobile" src="https://placehold.co/780x444" alt="house">
+
             </div>
             <div class="about-router">
                 <div class="about-router__item">

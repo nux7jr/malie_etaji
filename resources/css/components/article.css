@@ -25,7 +25,7 @@
 .article-item {
     background-color: white;
     padding: 50px 89px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 
 .article__img,

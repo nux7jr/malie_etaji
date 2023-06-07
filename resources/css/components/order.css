@@ -5,7 +5,7 @@
     padding-bottom: 100px;
 }
 .order-consultation__wrapper {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     background-color: var(--color-beige);
     padding: 31.5px 90px;
 

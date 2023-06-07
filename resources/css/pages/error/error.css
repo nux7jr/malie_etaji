@@ -14,7 +14,7 @@
 .error__text {
     min-width: 600px;
     background: #ffffff;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     padding: 50px 90px;
     height: 186px;
     display: flex;

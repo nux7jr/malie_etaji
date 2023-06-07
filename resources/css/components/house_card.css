@@ -41,7 +41,7 @@ form.mortgage-calculator .block{
 
 .calcus-left-text{
     background-color: var(--color-beige);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     display: flex;
     flex-direction: column;
@@ -129,7 +129,7 @@ form.mortgage-calculator .range .input h4.percent{
 
 
     background: #ffffff;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 
 .block__heading{

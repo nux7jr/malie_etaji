@@ -22,7 +22,7 @@
 }
 .tech-slider__wrapper {
     background-color: var(--color--background);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     padding: 80px 89px;
 }
 
@@ -59,7 +59,7 @@
     margin-top: 40px;
 }
 .unreal-swiper * .unreal-slide {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     height: 288px;
     transition: 0.2s;
 }
@@ -111,7 +111,7 @@
 
 .tech-call__item {
     background-color: var(--color--background);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     display: flex;
     gap: 20px;
     align-items: center;
@@ -136,7 +136,7 @@
 .part-list__item {
     background-color: var(--color-pink);
     padding: 50px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     flex: 1 0 367.5px;
 
     background-repeat: no-repeat;

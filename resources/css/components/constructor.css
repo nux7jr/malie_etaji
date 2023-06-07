@@ -99,7 +99,7 @@
     padding-top: 80px;
 }
 .constructor-preview {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     flex: 1;
     background-color: rgb(54, 53, 53);
 
@@ -116,7 +116,7 @@
 .constructor-preview__info {
     background-color: white;
     padding: 20px 30px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     display: flex;
     text-align: center;
@@ -141,7 +141,7 @@
 }
 .constructor-call__button {
     background: white;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     flex: 1 1 50%;
     padding: 30px 90px;
 

@@ -7,8 +7,8 @@
 
     margin-top: -30px;
 
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: var(--border-raduis-defalut);
+    border-bottom-right-radius: var(--border-raduis-defalut);
     padding-bottom: 100px;
 }
 .blog-item__heading {
@@ -31,7 +31,7 @@
 .blog-item__text--red {
     padding: 30px;
     background-color: var(--color-pink);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .article-bottom__option {
     padding: 48px;

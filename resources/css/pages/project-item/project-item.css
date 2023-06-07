@@ -66,7 +66,7 @@
 }
 .project-info {
     background-color: white;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     padding-top: 100px;
     margin-top: -50px;
     position: relative;
@@ -102,7 +102,7 @@
 }
 .project-settings__card {
     padding: 30px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     background: var(--color-pink);
     color: var(--color-red);
     flex: 1;
@@ -181,7 +181,7 @@
     height: 500px;
 }
 .about-project__swiper {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     height: 500px;
 }
 .about-project__swiper * .swiper-pagination-bullet {
@@ -229,7 +229,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(100, 103, 119);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .project-preview__option {
     padding-top: 100px;
@@ -265,7 +265,7 @@
     width: 100%;
     height: 711px;
     background: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -278,7 +278,7 @@
     padding: 30px 90px;
     margin-bottom: 100px;
     background-color: white;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     align-items: center;
     justify-content: space-between;
 }
@@ -306,7 +306,7 @@
 
 .project-mortgage__slide {
     background-color: white;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     /* max-width: 200px; */
 }
@@ -368,8 +368,8 @@
 .stability {
     background-color: white;
     padding-top: 100px;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    border-top-right-radius: var(--border-raduis-defalut);
+    border-top-left-radius: var(--border-raduis-defalut);
 }
 .stability__wrapper {
     padding-top: 50px;
@@ -399,7 +399,7 @@
     padding: 50px;
     color: var(--color-red);
     background-color: var(--color-beige);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     display: flex;
     flex-direction: column;

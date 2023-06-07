@@ -1,8 +1,8 @@
 .trusted {
     background-color: white;
     padding-bottom: 106px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: var(--border-raduis-defalut);
+    border-bottom-right-radius: var(--border-raduis-defalut);
 }
 
 .trusted-swiper .swiper-pagination-bullet {

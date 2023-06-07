@@ -22,7 +22,7 @@
     width: 228.33px;
     height: 313px;
     background-color: var(--color-grayest);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     background-repeat: no-repeat;
     background-size: cover;

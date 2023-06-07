@@ -31,3 +31,15 @@
     padding-top: 54px;
     padding-bottom: 54px;
 }
+@media (max-width: 992px) {
+    .path__wrapper {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    .path__link {
+        font-size: 12px;
+    }
+    .path__link::before {
+        top: -6px;
+    }
+}

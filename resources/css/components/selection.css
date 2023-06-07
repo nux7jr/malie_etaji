@@ -44,7 +44,7 @@
     max-width: 417px;
     background-color: var(--color--background);
     padding: 20px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     font-weight: 700;
     justify-content: space-between;
@@ -69,7 +69,7 @@
     flex-direction: column;
     gap: 50px;
     max-width: calc(50% - 100px);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     padding: 50px 55px;
 }
 #house-list > .dropdown-select-selected {
@@ -107,7 +107,7 @@
     width: fit-content;
     background-color: var(--color--background);
     padding: 20px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     transition: 0.2s;
     cursor: pointer;
 }
@@ -155,5 +155,5 @@
 .selection__wrapper {
     padding: 50px;
     background-color: blueviolet;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }

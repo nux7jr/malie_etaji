@@ -9,6 +9,7 @@
     --color-silver: #f3f4f7;
     --color-blue: #2f3d61;
     --swiper-theme-color: #f04b54;
+    --border-raduis-defalut: 50px;
 }
 html {
     scroll-behavior: smooth;
@@ -94,10 +95,10 @@ hr {
 .map-container-footer {
     width: 368px;
     height: 200px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .map-container-footer *.ymaps-2-1-79-inner-panes {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .map-container-footer * .ymaps-2-1-79-map-bg {
     background-image: none;
@@ -677,6 +678,9 @@ footer {
     }
     .tooltip .tooltiptext {
         left: -130px;
+    }
+    :root {
+        --border-raduis-defalut: 25px;
     }
 }
 @media (max-width: 768px) {

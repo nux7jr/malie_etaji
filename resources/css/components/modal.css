@@ -34,9 +34,9 @@
     gap: 20px;
     position: relative;
     justify-content: space-between;
-    border-top-right-radius: 50px;
+    border-top-right-radius: var(--border-raduis-defalut);
     background-color: white;
-    border-top-left-radius: 50px;
+    border-top-left-radius: var(--border-raduis-defalut);
     padding: 60px 50px;
     padding-right: 100px;
 

@@ -39,12 +39,12 @@
 }
 .project-slide {
     background-color: rgb(95, 93, 97);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     height: 389px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     animation: 0.4s forwards alternate slideDeff;
 }

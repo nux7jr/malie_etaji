@@ -32,7 +32,7 @@
 }
 .sec-offer {
     padding: 50px 80px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .sec-offer {
     background-color: white;
@@ -79,7 +79,7 @@
     height: 650px;
 }
 .offer-swiper {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .sec-offer__button {
     cursor: pointer;
@@ -130,7 +130,7 @@
     padding-bottom: 100px;
 }
 .auto-play {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     width: 400px;
     height: 214px;
     background-color: rgb(110, 106, 106);
@@ -189,7 +189,7 @@
     width: 100%;
     height: 100%;
 
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     z-index: 0;
     object-fit: cover;
 }
@@ -221,7 +221,7 @@
 }
 .services__wrapper {
     background-color: var(--color--background);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     margin-top: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -283,7 +283,7 @@
     justify-content: center;
     gap: 25px;
     background: #ffffff;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -326,7 +326,7 @@
 .why-us__card {
     padding: 50px;
     background-color: var(--color-beige);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     width: 337px;
 }
 .why-us__title {
@@ -358,7 +358,7 @@
 }
 .build__wrapper {
     background-color: var(--color--background);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     padding-top: 83px;
     padding-left: 90px;
     padding-right: 90px;
@@ -404,7 +404,7 @@
 .image-swiper {
     min-width: 700px;
     min-height: 410px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .build-inner {
     display: flex;
@@ -588,7 +588,7 @@
     gap: 50px;
 }
 .stage-left {
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     padding: 90px;
     background-color: var(--color--background);
     max-width: 468px;
@@ -600,7 +600,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .stage-option__img {
     width: 46px;
@@ -748,8 +748,8 @@
 .advantages {
     padding-top: 100px;
     background-color: white;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: var(--border-raduis-defalut);
+    border-top-right-radius: var(--border-raduis-defalut);
 }
 .advantages-card__img {
     height: 57px;
@@ -780,7 +780,7 @@
 .advantages-card {
     padding: 32px 30px;
     background-color: var(--color-beige);
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .advantages-card__paraf {
     font-weight: 700;
@@ -833,7 +833,7 @@
         padding-bottom: 20px;
     }
     .small-card {
-        border-radius: 50px;
+        border-radius: var(--border-raduis-defalut);
         padding: 50px 90px;
         width: 280px;
         display: flex;
@@ -951,7 +951,7 @@
         display: none;
     }
     .small-card {
-        border-radius: 50px;
+        border-radius: var(--border-raduis-defalut);
         padding: 50px 90px;
         width: 280px;
         display: flex;
@@ -1254,6 +1254,9 @@
     }
     .mobile_nav {
         width: 46px;
+    }
+    .why-us__card {
+        padding: 20px;
     }
 }
 @media (max-width: 768px) {

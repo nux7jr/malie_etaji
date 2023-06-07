@@ -1,7 +1,7 @@
 .office-map {
     background-color: white;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: var(--border-raduis-defalut);
+    border-bottom-left-radius: var(--border-raduis-defalut);
     padding-top: 100px;
     padding-bottom: 100px;
 }

@@ -15,7 +15,7 @@
     padding: 50px 90px;
     flex: 1 1 10%;
     background-color: white;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@
     flex-direction: column;
     gap: 51px;
     padding: 50px 90px;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
     background-color: white;
 }
 .z-card__img {

@@ -18,7 +18,7 @@
 
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: var(--border-raduis-defalut);
 }
 .feedback_btn {
     width: 46px;
