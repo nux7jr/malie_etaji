@@ -17,9 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 use App\Content\main\HousesInfo;
 
-// $houses_info = new HousesInfo();
-
-
 Route::get('/', function () {
     return view('home.index');
 });

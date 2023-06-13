@@ -38,7 +38,7 @@ class WhichHouse implements Arrayable
             [
                 'text'     => __('Рассчитайте ипотеку'),
                 'background' => (new Image(
-                    src: 'resources/images/home/mont.jpg',
+                    src: 'resources/images/home/mont.png',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/mortgage/#mortgage-programs", text: 'Рассчитать'))->toArray(),
                 'video' => ''
