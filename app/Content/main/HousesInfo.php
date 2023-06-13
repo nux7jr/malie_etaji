@@ -7,17 +7,19 @@ use App\Structures\Image;
 use App\Structures\Link;
 use App\Structures\Video;
 use App\Structures\Pdf;
+use Illuminate\Support\Collection;
+use function Symfony\Component\String\s;
 
-class HousesInfo implements Arrayable
+class HousesInfo
 {
   /**
    * Element use App\Structures\Image for build assets
-   * @var array|array[]
+   * @var Collection
    */
-  private static array $card_elements;
+  public static Collection $card_elements;
   public function __construct()
   {
-    self::$card_elements = [
+    self::$card_elements = collect([
       [
         'id' => __('0'),
         'name' => __('Барн 29-42'),
@@ -42,10 +44,10 @@ class HousesInfo implements Arrayable
         'price_finish' => 3619000,
         'price_small' => __('от 0.9 млн ₽'),
         'item_info' => [
-          'square' => '42',
-          'floors' => '1',
-          'bedrooms' => '1',
-          'bathrooms' => '1',
+          'square' => 42,
+          'floors' => 1,
+          'bedrooms' => 1,
+          'bathrooms' => 1,
           'ceiling' => '2,9м',
         ],
         'formated_info' => [
@@ -123,10 +125,10 @@ class HousesInfo implements Arrayable
         'price_finish' => 4803000,
         'price_small' => __('от 1.6 млн ₽'),
         'item_info' => [
-          'square' => '56',
-          'floors' => '1',
-          'bedrooms' => '2',
-          'bathrooms' => '1',
+          'square' => 56,
+          'floors' => 1,
+          'bedrooms' => 2,
+          'bathrooms' => 1,
           'ceiling' => '3.8м',
         ],
         'formated_info' => [
@@ -204,10 +206,10 @@ class HousesInfo implements Arrayable
         'price_finish' => 5227000,
         'price_small' => __('от 1.8 млн ₽'),
         'item_info' => [
-          'square' => '77',
-          'floors' => '1',
-          'bedrooms' => '3',
-          'bathrooms' => '1',
+          'square' => 77,
+          'floors' => 1,
+          'bedrooms' => 3,
+          'bathrooms' => 1,
           'ceiling' => '2,9м',
         ],
         'formated_info' => [
@@ -284,10 +286,10 @@ class HousesInfo implements Arrayable
         'price_finish' => 5227000,
         'price_small' => __('от 1.8 млн ₽'),
         'item_info' => [
-          'square' => '67',
-          'floors' => '1',
-          'bedrooms' => '3',
-          'bathrooms' => '2',
+          'square' => 67,
+          'floors' => 1,
+          'bedrooms' => 3,
+          'bathrooms' => 2,
           'ceiling' => '3.8м',
         ],
         'formated_info' => [
@@ -359,10 +361,10 @@ class HousesInfo implements Arrayable
         'price_finish' => 5227000,
         'price_small' => __('от 1.8 млн ₽'),
         'item_info' => [
-          'square' => '67',
-          'floors' => '1',
-          'bedrooms' => '3',
-          'bathrooms' => '2',
+          'square' => 67,
+          'floors' => 1,
+          'bedrooms' => 3,
+          'bathrooms' => 2,
           'ceiling' => '3.8м',
         ],
         'formated_info' => [
@@ -414,13 +416,28 @@ class HousesInfo implements Arrayable
           'Панорамное остекление'
         ],
       ],
-    ];
+    ]);
   }
-  /**
-   * @return array
-   */
-  public function toArray(): array
+
+  public static function filter(array $settings): ?array
   {
-    return self::$card_elements;
+      return self::$card_elements->filter(function ($element) use ($settings){
+          $filtered =
+              ($settings['house-list'] === $element['category'] ||
+                  $settings['house-list'] === 'Все') &&
+              $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
+              $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
+              $element['item_info']['square'] >= floatval($settings['square-start']) &&
+              $element['item_info']['square'] <= floatval($settings['square-end']);
+          if ($filtered){
+              return $element;
+          }
+      })->toArray();
+  }
+
+  private static function strToMillion(string $value): int
+  {
+      $value = floatval($value) * 1000000;
+      return (int)$value;
   }
 }
