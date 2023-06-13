@@ -32,7 +32,7 @@ class WhichHouse implements Arrayable
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/about", text: 'Подробнее'))->toArray(),
                 'video' => (new Video(
-                    src: 'resources/images/barns/29-42/video1.mp4',
+                    src: 'resources/images/house/home.mp4',
                 ))->getSrc()
             ],
             [

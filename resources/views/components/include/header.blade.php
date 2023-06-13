@@ -90,6 +90,9 @@
                 </a>
             </div>
             <div class="header__links">
+                <a title="{{ __('Главная') }}" class="header__button header__link" href="/">
+                    {{ __('Главная') }}
+                </a>
                 <button data-menu="first" title="{{ __('Посмотреть все проекты') }}"
                     class="header__button header__link submenu">
                     {{ __('Проекты') }}

@@ -9,9 +9,9 @@
 @section('content')
 @php
 
+// use App\Content\main\HousesInfo;
+// $HousesInfo = new HousesInfo();
 use App\Content\main\HousesInfo;
-$HousesInfo = new HousesInfo();
-
 
 @endphp
 
@@ -358,7 +358,7 @@ $HousesInfo = new HousesInfo();
   </div>
   <div class="more-projects__wrapper">
     @php
-    $output = array_slice($HousesInfo->toArray(), 0, 3);
+    $output = array_slice(HousesInfo::$card_elements->toArray(), 0, 3);
     @endphp
 
     @foreach ($output as $key => $item)

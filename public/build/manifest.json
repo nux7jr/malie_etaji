@@ -155,7 +155,7 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-bb4e44b9.css",
+    "file": "assets/home-db77dcc8.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -251,10 +251,6 @@
     "file": "assets/plan-ad0641bc.pdf",
     "src": "resources/images/barns/29-42/plan.pdf"
   },
-  "resources/images/barns/29-42/video1.mp4": {
-    "file": "assets/video1-be55a5a1.mp4",
-    "src": "resources/images/barns/29-42/video1.mp4"
-  },
   "resources/images/barns/53-56/1.jpg": {
     "file": "assets/1-3be11973.jpg",
     "src": "resources/images/barns/53-56/1.jpg"
@@ -282,10 +278,6 @@
   "resources/images/barns/53-56/plan.pdf": {
     "file": "assets/plan-7ae58341.pdf",
     "src": "resources/images/barns/53-56/plan.pdf"
-  },
-  "resources/images/barns/53-56/video1.mp4": {
-    "file": "assets/video1-5c93c148.mp4",
-    "src": "resources/images/barns/53-56/video1.mp4"
   },
   "resources/images/barns/60-78/1.jpg": {
     "file": "assets/1-1e9774b2.jpg",
@@ -315,10 +307,6 @@
     "file": "assets/plan-f08c3da9.pdf",
     "src": "resources/images/barns/60-78/plan.pdf"
   },
-  "resources/images/barns/60-78/video1.mp4": {
-    "file": "assets/video1-bd01e7ce.mp4",
-    "src": "resources/images/barns/60-78/video1.mp4"
-  },
   "resources/images/barns/62-67/1.jpg": {
     "file": "assets/1-7755c02b.jpg",
     "src": "resources/images/barns/62-67/1.jpg"
@@ -346,10 +334,6 @@
   "resources/images/barns/62-67/plan.pdf": {
     "file": "assets/plan-1310e32a.pdf",
     "src": "resources/images/barns/62-67/plan.pdf"
-  },
-  "resources/images/barns/62-67/video1.mp4": {
-    "file": "assets/video1-53510b46.mp4",
-    "src": "resources/images/barns/62-67/video1.mp4"
   },
   "resources/images/barns/63-76/1.jpg": {
     "file": "assets/1-84b9a36c.jpg",
@@ -379,10 +363,6 @@
     "file": "assets/plan-558e2b5e.pdf",
     "src": "resources/images/barns/63-76/plan.pdf"
   },
-  "resources/images/barns/63-76/video1.mp4": {
-    "file": "assets/video1-bbca47f2.mp4",
-    "src": "resources/images/barns/63-76/video1.mp4"
-  },
   "resources/images/barns/75-90/1.jpg": {
     "file": "assets/1-df89aa31.jpg",
     "src": "resources/images/barns/75-90/1.jpg"
@@ -411,10 +391,6 @@
     "file": "assets/plan-8641ea61.pdf",
     "src": "resources/images/barns/75-90/plan.pdf"
   },
-  "resources/images/barns/75-90/video1.mp4": {
-    "file": "assets/video1-d66f175e.mp4",
-    "src": "resources/images/barns/75-90/video1.mp4"
-  },
   "resources/images/barns/86-102/1.jpg": {
     "file": "assets/1-b84306b4.jpg",
     "src": "resources/images/barns/86-102/1.jpg"
@@ -442,10 +418,6 @@
   "resources/images/barns/86-102/plan.pdf": {
     "file": "assets/plan-445f87a6.pdf",
     "src": "resources/images/barns/86-102/plan.pdf"
-  },
-  "resources/images/barns/86-102/video1.mp4": {
-    "file": "assets/video1-8bb0cae4.mp4",
-    "src": "resources/images/barns/86-102/video1.mp4"
   },
   "resources/images/barns/87-110/1.jpg": {
     "file": "assets/1-d02b2872.jpg",
@@ -493,11 +465,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -563,10 +535,6 @@
     "file": "assets/plan-3cfdfb2a.pdf",
     "src": "resources/images/double/112-141/plan.pdf"
   },
-  "resources/images/double/112-141/video1.mp4": {
-    "file": "assets/video1-735b8968.mp4",
-    "src": "resources/images/double/112-141/video1.mp4"
-  },
   "resources/images/double/123-160/1.jpg": {
     "file": "assets/1-dbdc3a0d.jpg",
     "src": "resources/images/double/123-160/1.jpg"
@@ -594,10 +562,6 @@
   "resources/images/double/123-160/plan.pdf": {
     "file": "assets/plan-176b60d3.pdf",
     "src": "resources/images/double/123-160/plan.pdf"
-  },
-  "resources/images/double/123-160/video1.mp4": {
-    "file": "assets/video1-c339c0f9.mp4",
-    "src": "resources/images/double/123-160/video1.mp4"
   },
   "resources/images/double/136-165-2/1.jpg": {
     "file": "assets/1-1fe3a377.jpg",
@@ -627,10 +591,6 @@
     "file": "assets/plan-8412333b.pdf",
     "src": "resources/images/double/136-165-2/plan.pdf"
   },
-  "resources/images/double/136-165-2/video1.mp4": {
-    "file": "assets/video1-f9b53c8c.mp4",
-    "src": "resources/images/double/136-165-2/video1.mp4"
-  },
   "resources/images/double/136-165/1.jpg": {
     "file": "assets/1-1d8df3cb.jpg",
     "src": "resources/images/double/136-165/1.jpg"
@@ -658,10 +618,6 @@
   "resources/images/double/136-165/plan.pdf": {
     "file": "assets/plan-46f36675.pdf",
     "src": "resources/images/double/136-165/plan.pdf"
-  },
-  "resources/images/double/136-165/video1.mp4": {
-    "file": "assets/video1-c6bbf0f5.mp4",
-    "src": "resources/images/double/136-165/video1.mp4"
   },
   "resources/images/double/72-92/1.jpg": {
     "file": "assets/1-1f919920.jpg",
@@ -691,10 +647,6 @@
     "file": "assets/plan-fda803ff.pdf",
     "src": "resources/images/double/72-92/plan.pdf"
   },
-  "resources/images/double/72-92/video1.mp4": {
-    "file": "assets/video1-ef8c8430.mp4",
-    "src": "resources/images/double/72-92/video1.mp4"
-  },
   "resources/images/double/75-92/1.jpg": {
     "file": "assets/1-b47da065.jpg",
     "src": "resources/images/double/75-92/1.jpg"
@@ -722,10 +674,6 @@
   "resources/images/double/75-92/plan.pdf": {
     "file": "assets/plan-825a6685.pdf",
     "src": "resources/images/double/75-92/plan.pdf"
-  },
-  "resources/images/double/75-92/video1.mp4": {
-    "file": "assets/video1-7d57e853.mp4",
-    "src": "resources/images/double/75-92/video1.mp4"
   },
   "resources/images/double/80-96/1.jpg": {
     "file": "assets/1-cba73854.jpg",
@@ -755,10 +703,6 @@
     "file": "assets/plan-41ed6d61.pdf",
     "src": "resources/images/double/80-96/plan.pdf"
   },
-  "resources/images/double/80-96/video1.mp4": {
-    "file": "assets/video1-1046a25c.mp4",
-    "src": "resources/images/double/80-96/video1.mp4"
-  },
   "resources/images/double/98-115/1.jpg": {
     "file": "assets/1-36dc434a.jpg",
     "src": "resources/images/double/98-115/1.jpg"
@@ -787,10 +731,6 @@
     "file": "assets/plan-37bf6204.pdf",
     "src": "resources/images/double/98-115/plan.pdf"
   },
-  "resources/images/double/98-115/video1.mp4": {
-    "file": "assets/video1-233069d6.mp4",
-    "src": "resources/images/double/98-115/video1.mp4"
-  },
   "resources/images/error/illustration.png": {
     "file": "assets/illustration-fa0e48ef.png",
     "src": "resources/images/error/illustration.png"
@@ -806,6 +746,10 @@
   "resources/images/home/mont.jpg": {
     "file": "assets/mont-deb81ffa.jpg",
     "src": "resources/images/home/mont.jpg"
+  },
+  "resources/images/house/home.mp4": {
+    "file": "assets/home-1361eaf6.mp4",
+    "src": "resources/images/house/home.mp4"
   },
   "resources/images/house/house.jpg": {
     "file": "assets/house-7bfb54e6.jpg",
@@ -1210,7 +1154,7 @@
     "src": "resources/js/pages/project-item/project-item.js"
   },
   "resources/js/pages/projects/projects.js": {
-    "file": "assets/projects-30e6a5a2.js",
+    "file": "assets/projects-1506b8f6.js",
     "imports": [
       "_nouislider-2a461308.js",
       "_swiper-bundle.min-17f9adeb.js",

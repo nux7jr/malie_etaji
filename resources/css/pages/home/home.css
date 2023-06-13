@@ -345,7 +345,7 @@
 .why-us__wraps {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 2px;
 }
 .why-us__heading {
     font-weight: 700;

@@ -84,12 +84,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/barns/29-42/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/barns/29-42/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -165,12 +160,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/barns/53-56/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/barns/53-56/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -244,12 +234,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/barns/60-78/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/barns/60-78/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -323,12 +308,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/barns/62-67/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/barns/62-67/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -401,12 +381,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/barns/63-76/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/barns/63-76/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -479,12 +454,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/barns/75-90/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/barns/75-90/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -557,12 +527,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/barns/86-102/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/barns/86-102/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -635,12 +600,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: '',
-            ))->getSrc(),
-            (new Image(
-              src: '',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -714,12 +674,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/double/112-141/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/double/112-141/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -792,12 +747,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/double/123-160/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/double/123-160/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -870,12 +820,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/double/123-160/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/double/123-160/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -948,12 +893,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/double/136-165-2/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/double/136-165-2/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -1027,12 +967,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/double/72-92/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/double/72-92/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -1106,12 +1041,7 @@ class HousesInfo
             ))->getSrc()
           ],
           '3d' => [
-            (new Image(
-              src: 'resources/images/double/75-92/video1.mp4',
-            ))->getSrc(),
-            (new Image(
-              src: 'resources/images/double/75-92/video1.mp4',
-            ))->getSrc(),
+            ''
           ]
         ],
         'peculiarities' => [
@@ -1127,23 +1057,23 @@ class HousesInfo
 
   public static function filter(array $settings): ?array
   {
-      return self::$card_elements->filter(function ($element) use ($settings){
-          $filtered =
-              ($settings['house-list'] === $element['category'] ||
-                  $settings['house-list'] === 'Все') &&
-              $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
-              $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
-              $element['item_info']['square'] >= floatval($settings['square-start']) &&
-              $element['item_info']['square'] <= floatval($settings['square-end']);
-          if ($filtered){
-              return $element;
-          }
-      })->toArray();
+    return self::$card_elements->filter(function ($element) use ($settings) {
+      $filtered =
+        ($settings['house-list'] === $element['category'] ||
+          $settings['house-list'] === 'Все') &&
+        $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
+        $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
+        $element['item_info']['square'] >= floatval($settings['square-start']) &&
+        $element['item_info']['square'] <= floatval($settings['square-end']);
+      if ($filtered) {
+        return $element;
+      }
+    })->toArray();
   }
 
   private static function strToMillion(string $value): int
   {
-      $value = floatval($value) * 1000000;
-      return (int)$value;
+    $value = floatval($value) * 1000000;
+    return (int)$value;
   }
 }
