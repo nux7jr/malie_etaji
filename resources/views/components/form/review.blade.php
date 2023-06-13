@@ -102,8 +102,8 @@
           Записаться на просмотр
         </button>
       </div>
-      <p class="datepiker__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a href="http://"
-          target="_blank" rel="noopener noreferrer"> обработку персональных данных</a></p>
+      <span class="datepiker__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a href="http://"
+          target="_blank" rel="noopener noreferrer"> обработку персональных данных</a></span>
     </div>
   </div>
 </form>

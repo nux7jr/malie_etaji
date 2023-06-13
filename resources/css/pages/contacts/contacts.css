@@ -19,8 +19,8 @@
     max-width: 554px;
 }
 .smi__call {
-    flex: 1;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 .smi__button {
@@ -55,6 +55,8 @@
 .smi__link {
     display: inline-block;
     color: var(--color-black);
+    font-weight: 700;
+    font-size: 25px;
 }
 .contact-form {
     background-color: white;
@@ -64,4 +66,18 @@
 }
 .contact-form .project-review {
     margin-top: 0;
+}
+@media (max-width: 1690px) {
+    .smi__call {
+        grid-template-columns: 1fr;
+    }
+    .smi__info {
+        min-width: fit-content;
+    }
+    .smi {
+        padding-bottom: 40px;
+    }
+    .contact-form {
+        padding-top: 40px;
+    }
 }

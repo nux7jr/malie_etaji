@@ -74,3 +74,29 @@
     color: var(--color-red);
     background-color: var(--color-pink);
 }
+.mobile-block {
+    display: none;
+}
+@media (max-width: 992px) {
+    .pc-block {
+        display: none;
+    }
+    .mobile-block {
+        display: block;
+    }
+    .faq__heading {
+        font-size: 24px;
+    }
+    .faq__toggle {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .faq__wrapper {
+        padding-top: 20px;
+        gap: 10px;
+    }
+    .faq {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}

@@ -1,6 +1,5 @@
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
-import "./video";
 import { initFeedback } from "../../components/feedback";
 initFeedback(Swiper);
 

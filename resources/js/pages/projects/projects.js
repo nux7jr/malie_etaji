@@ -33,10 +33,6 @@ function sortinSmallestToLargest(dataInfo) {
     Window.data = dataInfo;
 }
 function reRerenderHouses() {
-    // if (Window.data.length == 1) {
-    //     console.log("ERRR");
-    //     return;
-    // }
     if (Window.data.length !== 0) {
         parentEl.innerHTML = "";
         Window.data.forEach((element) => {

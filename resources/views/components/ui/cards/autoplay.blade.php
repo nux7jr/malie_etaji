@@ -1,7 +1,9 @@
 <article class="auto-play" style="background-image: url({{$background}})">
-  <video class="auto-play__video" autoplay muted="" hidden>
+  @if ($video !== '')
+  <video class="auto-play__video" muted="" autoplay loop>
     <source src="{{ $video }}" type="video/mp4">
   </video>
+  @endif
   <h2 class="auto-play__heading">
     {{ $title }}
   </h2>

@@ -8,7 +8,7 @@
 
 <section class="office-map">
   <h1 class="office-map__heading">
-    {{__('Офис продаж')}}
+    {{__('Контакты')}}
   </h1>
   <div class="office-map__container">
     <div style="position:relative;overflow:hidden;"><a

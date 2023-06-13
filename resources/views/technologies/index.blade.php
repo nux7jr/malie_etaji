@@ -13,35 +13,14 @@
     <h1 class="tech-slider__heading">
       {{__('Технологии, которые мы используем')}}
     </h1>
-    <div class="tech-slider__option">
-      @for ($i = 0; $i < 6; $i++) <button class="default__button tech-slider__button">ЛСТК</button>
-        @endfor
 
-        <button class="default__button tech-slider__button tech-slider__button-active">Сип-панели</button>
-    </div>
     <div class="tech-abs">
       <div class="tech-about">
         <img class="tech-about__img" src="{{ Vite::asset('resources/images/tech/sip.webp') }}" alt="sip">
-
         <div class="tech-about__info">
-          <p class="tech-about__paraf">
-            {{__('Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
-            Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.')}}
-          </p>
-          <p class="tech-about__paraf">
-            {{__('Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
-            Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.')}}
-          </p>
+          <h2 class="tech-about__h2">
+            SIP-панели
+          </h2>
           <p class="tech-about__paraf">
             {{__('Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
             Ipsum является стандартной
@@ -92,7 +71,6 @@
     {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
     безымянный
     печатник создал большую коллекцию размеров и форм шрифтов.')}}
-
   </p>
   <div class="part-list">
     <div class="part-list__item" style="background-image: url({{Vite::asset('resources/images/about/xl-pipe.jpg')}})">
@@ -146,7 +124,7 @@
         <img class="part-list__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
       </a>
     </div>
-
+    <button class="default__button part-more__button">Все технологии</button>
   </div>
 </section>
 

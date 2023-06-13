@@ -1060,7 +1060,8 @@ class HousesInfo
     return self::$card_elements->filter(function ($element) use ($settings) {
       $filtered =
         ($settings['house-list'] === $element['category'] ||
-          $settings['house-list'] === 'Все') &&
+          $settings['house-list'] === 'Все' ||
+          $settings['house-list'] === 'Не выбрано') &&
         $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
         $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
         $element['item_info']['square'] >= floatval($settings['square-start']) &&
