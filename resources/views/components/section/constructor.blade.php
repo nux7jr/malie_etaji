@@ -178,7 +178,7 @@
                         <div class="ganeral-item house-type__item">
                             <input id="date1" class="ganeral-input house-type__input visually-hidden" type="radio"
                                 name="house-date" value="В ближайшее 3 месяца" checked />
-                            <label class="ganeral-lablel house-type__label" for="date">
+                            <label class="ganeral-lablel house-type__label ganeral__date" for="date">
                                 {{ __('В ближайшее 3 месяца') }}
 
                             </label>
