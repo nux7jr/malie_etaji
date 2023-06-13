@@ -7,6 +7,14 @@
 
 @section('content')
 
+<script>
+    const data = '{!! json_encode($projects) !!}';
+    console.log(data)
+    Window.data = JSON.parse(data);
+
+</script>
+
+
 <section class="filters">
     <x-ui.path.path class="filters-path" paths="{!! json_encode($paths) !!}">
     </x-ui.path.path>
@@ -17,7 +25,6 @@
                 <div class="project-input project-filter__item">
                     <label for="house-list" class="project-input__label">Линейка домов</label>
                     <x-ui.lists.dropdown class="house-list__dropdown" id="house-list" name="house-list">
-
                         @foreach($house_setting as $option)
                         <x-ui.lists.option value="{{$option}}">
                             {{$option}}
@@ -125,10 +132,11 @@
         </x-cards.project-item>
         @endforeach
     </div>
-    <button class="default__button more__button">Показать еще 15 из 45 проектов</button>
+    <button class="default__button more__button">Показать еще <span class="q-projects">15</span>из
+        <span class="a-projects">45</span>проектов</button>
     <div class="project-call">
-        <h1 class="project-call__heading">Авторизуйтесь в личном кабинете, чтобы экономить время и отслеживать все
-            действия и этапы строительства</h1>
+        <h1 class="project-call__heading">{{__('Авторизуйтесь в личном кабинете, чтобы экономить время и отслеживать все
+            действия и этапы строительства')}}</h1>
         <a href="/">
             <img class="project-call__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
                 alt="icon">

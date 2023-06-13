@@ -307,8 +307,6 @@
 .project-mortgage__slide {
     background-color: white;
     border-radius: var(--border-raduis-defalut);
-
-    /* max-width: 200px; */
 }
 .project-mortgage__inner {
     padding: 50px 30px;
@@ -404,6 +402,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 1 1 25%;
 }
 .stability-card__heading {
     display: flex;
@@ -441,6 +440,71 @@
 }
 .more-projects__heading {
     margin-bottom: 52px;
+}
+.project-embed {
+    border-radius: var(--border-raduis-defalut);
+}
+.facade-inner {
+    display: flex;
+    flex: 1;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    min-width: 300px;
+    width: 100%;
+}
+.facade-swiper {
+    border-radius: var(--border-raduis-defalut);
+}
+.facade-swiper * .swiper-pagination-bullet {
+    width: 40px;
+    height: 8px;
+    background-color: var(--color-pink);
+    border-radius: 35px;
+    opacity: 1;
+    transition: 0.2s;
+}
+.facade-swiper * .swiper-pagination-bullet-active {
+    width: 71px;
+
+    position: relative;
+}
+.facade-swiper
+    .swiper-pagination.facade-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 30px;
+}
+
+.facade-swiper .swiper-pagination-bullet-active::after {
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    width: 71px;
+    height: 8px;
+    border-radius: 35px;
+    background-color: var(--color-red);
+    animation: progres 5.2s forwards linear;
+}
+.project-preview__item--video {
+    height: auto;
+    background-color: transparent;
+    max-width: calc(16 / 9 * 100vh);
+}
+.project-video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: inherit;
+}
+.facade {
+    display: none;
+}
+
+.d3 {
+    display: none;
 }
 
 @media (max-width: 1890px) {

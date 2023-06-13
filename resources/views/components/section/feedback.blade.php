@@ -4,7 +4,7 @@
 @endonce
 @endpush
 
-<section class="feedback">
+<section class="feedback" style="display: none">
     <h1 class="feedback__heading">Отзывы клиентов “Малые этажи”</h1>
     <div class="feedback__wrapper">
         <div class="swiper feedback-swiper">

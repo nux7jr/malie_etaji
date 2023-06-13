@@ -95,6 +95,12 @@
 .building-maps__paraf {
     margin-bottom: 50px;
     color: var(--color-grayest);
+    max-width: 784px;
+}
+.why-us__wraps {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .stable {
     background-color: white;
@@ -522,6 +528,29 @@
     .photo-gallery {
         padding-top: 40px;
     }
+    .your-house__wrapper {
+        padding-top: 20px;
+    }
+    .map-container {
+        height: 237px;
+    }
+    .ymaps-2-1-79-inner-panes {
+        height: auto;
+    }
+    .building-maps {
+        padding-bottom: 40px;
+    }
+    .services-filters__heading {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .services-filters__button {
+        font-size: 12px;
+    }
+    .stable__video-paraf {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .services-filters__item,
@@ -534,5 +563,8 @@
     }
     .photo-gallery__swiper {
         padding: 0 50px;
+    }
+    .your-house__swipers {
+        padding: 0 20px !important;
     }
 }

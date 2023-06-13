@@ -31,12 +31,20 @@ dd($path)
         </div>
         <div class="your-house__swipers swiper">
             <div class="your-house__wrapper swiper-wrapper">
-                @for ($i = 0; $i < 4; $i++) <article class="swiper-slide">
+                @php
+                $house_info = [
+                '0' => 'Энергоэффективный дом',
+                '1' => 'Короткие сроки строительства',
+                '2' => 'Smart-планировки',
+                '3' => 'Свой дом от “Малые этажи” '
+                ]
+                @endphp
+                @foreach ($house_info as $item) <article class="swiper-slide">
                     <div class="your-house__info">
                         <img class="your-house__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
                             alt="fire">
                         <h3 class="your-house__act">
-                            {{__('Свой дом от “Малые этажи”')}}
+                            {{$item}}
                         </h3>
                         <p class="your-house__small-text">
                             {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
@@ -45,8 +53,8 @@ dd($path)
                             века.')}}
                         </p>
                     </div>
-                    </article>
-                    @endfor
+                </article>
+                @endforeach
             </div>
             <div class="swiper-button-prev your-house__button-prev">
                 <img class="your-house-prev your-house_icno" src="{{ Vite::asset('resources/images/build/next.svg') }}"
@@ -59,7 +67,7 @@ dd($path)
         </div>
     </div>
 </section>
-<section class="building-maps">
+<section class="building-maps" id='building-maps'>
     <div class="building-maps__header">
         <h1 class="building-maps__heading">
             {{__('Карта построенных объектов')}}
@@ -81,21 +89,66 @@ dd($path)
         <h1 class="stable__heading">
             {{__('Почему “Малые этажи” стабильная компания?')}}
         </h1>
-        <p class="stable__text-paraf">
-            {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-            безымянный печатник создал большую коллекцию размеров и форм шрифтов.')}}
-        </p>
+        <div class="why-us__wraps">
+            <p class="why-us__paraf">
+                {{ __('Одной из ключевых причин стабильности компании, является наша команда высококвалифицированных
+                архитекторов, инженеров, строителей и менеджеров.') }}
+            </p>
+            <p class="why-us__paraf">
+                {{ __('Мы отличаемся высоким качеством услуг и материалов.') }}
+            </p>
+            <p class="why-us__paraf">
+                {{ __('Компания строго следит за соблюдением сроков строительства.') }}
+            </p>
+            <p class="why-us__paraf">
+                {{ __('Мы постоянно работаем над улучшением существующих строительных технологий и разработкой новых
+                проектов загородных домов.') }}
+            </p>
+            <p class="why-us__paraf">
+                {{ __('Клиенты компании "Малые этажи" получают не только высококачественные современные дома, но и
+                полную уверенность в надежности и безопасности своей инвестиции.') }}
+            </p>
+            <p class="why-us__paraf">
+                {{ __('Малые этажи – с нами строить легко!') }}
+            </p>
+        </div>
     </div>
     <div class="stable__list">
-        @for ($i = 0; $i < 4; $i++) <div class="stable-card">
+
+        @php
+        $why = [
+        '0' => [
+        "title" => '150',
+        "subtitle" => 'объектов',
+        "text" => ' Построено нашими специалистами',
+        ],
+        '1' => [
+        "title" => '12',
+        "subtitle" => 'специалистов',
+        "text" => 'Максимально задействованы над каждым проектом',
+        ],
+        '2' => [
+        "title" => '5',
+        "subtitle" => 'лет гарантии',
+        "text" => 'На строительные работы',
+        ],
+        '3' => [
+        "title" => '+10',
+        "subtitle" => 'лет опыта',
+        "text" => 'Компании в строительной сфере',
+        ]
+        ];
+        @endphp
+
+
+        @foreach ($why as $item) <div class="stable-card">
             <h1 class="stable-card__heading">
-                {{__('20')}}
-                <span class="stable-card__heading-small">{{__('построенных домов')}}</span>
+                {{$item['title']}}
+                <span class="stable-card__heading-small">{{$item['subtitle']}}</span>
             </h1>
-            <p class="stable-card__paraf">{{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
-                начала XVI века.')}}</p>
-    </div>
-    @endfor
+            <p class="stable-card__paraf">{{$item['text']}}</p>
+        </div>
+        @endforeach
     </div>
     <a class="stable__video" data-fslightbox="youtube-video" data-video-poster="https://placehold.co/255x300"
         href="https://www.youtube.com/watch?v=d4eDWc8g0e0">
@@ -212,9 +265,9 @@ dd($path)
 </section>
 <x-section.tech>
 </x-section.tech>
-<x-section.certificates>
+<x-section.certificates id='certificates'>
 </x-section.certificates>
-<section class="photo-gallery">
+<section class="photo-gallery" id='gallery'>
     <div class="photo-wrapper">
         <div class="photo-header">
             <h1 class="photo-gallery__heading">

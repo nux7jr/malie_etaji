@@ -7,12 +7,14 @@ $which_house = new WhichHouse();
 
 
 use App\Content\main\HousesInfo;
-$HousesInfo = new HousesInfo();
+$houses_info = new HousesInfo();
 
 
 use App\Content\main\StageCards;
 $stage = new StageCards();
 
+use App\Content\main\SpecPeople;
+$spec_people = new SpecPeople();
 
 
 @endphp
@@ -27,28 +29,25 @@ $stage = new StageCards();
 <section class="offer">
     <div class="main-offer offer-swiper swiper">
         <div class="offer-wrapper swiper-wrapper">
-            <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/600x400)">
+            <div class="offer-slide swiper-slide"
+                style="background-image: url({{ Vite::asset('resources/images/home/1.png') }})">
                 <div class="offer-slider__inner">
-                    <h1 class="main-offer__heading">{{ __('Оффер') }}</h1>
+                    <h1 class="main-offer__heading">{{ __('Ипотека от 2,7%') }}</h1>
                     <p class="main-offer__paraf">
-                        {{ __('Lorem Ipsum является стандартной "рыбой" для текстов
-                        на латинице с начала XVI века. В то время некий
-                        безымянный печатник создал большую коллекцию размеров
-                        и форм шрифтов.') }}
+                        {{ __('Совместно с банками партнерами мы предлагаем самые выгодные ставки по загородной
+                        ипотеке.') }}
                     </p>
                     <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
                         больше')
                         }}</button>
                 </div>
             </div>
-            <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/500x500)">
+            {{-- <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/500x500)">
                 <div class="offer-slider__inner">
-                    <h1 class="main-offer__heading">{{ __('Оффер') }}</h1>
+                    <h1 class="main-offer__heading">{{ __('Клиент-тур на строительные объекты') }}</h1>
                     <p class="main-offer__paraf">
-                        {{ __('Lorem Ipsum является стандартной "рыбой" для текстов
-                        на латинице с начала XVI века. В то время некий
-                        безымянный печатник создал большую коллекцию размеров
-                        и форм шрифтов.') }}
+                        {{ __('Записывайтесь на бесплатные групповые экскурсии по нашим объектам и получайте выгодные
+                        условия строительства с нами') }}
                     </p>
                     <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
                         больше')
@@ -57,40 +56,37 @@ $stage = new StageCards();
             </div>
             <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/1000x800)">
                 <div class="offer-slider__inner">
-                    <h1 class="main-offer__heading">{{ __('Оффер') }}</h1>
+                    <h1 class="main-offer__heading">{{ __('Дом вдвое дешевле городской квартиры') }}</h1>
                     <p class="main-offer__paraf">
-                        {{ __('Lorem Ipsum является стандартной "рыбой" для текстов
-                        на латинице с начала XVI века. В то время некий
-                        безымянный печатник создал большую коллекцию размеров
-                        и форм шрифтов.') }}
+                        {{ __('Строим современные энергоэффективные дома для жизни на природе') }}
                     </p>
                     <button class="default__button main-offer__button">{{ __('Узнать больше') }}</button>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <div class="swiper-pagination offer-slide__pagination"></div>
     </div>
     <div class="offer__wrapper">
         <div class="sec-offer">
-            <h1 class="sec-offer__heading">{{ __('Оффер') }}</h1>
+            <h1 class="sec-offer__heading">{{ __('Клиент-тур на строительные объекты') }}</h1>
             <p class="sec-offer__paraf">
-                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
-                некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                {{ __('Записывайтесь на бесплатные групповые экскурсии по нашим объектам и получайте выгодные условия
+                строительства с нами') }}
             </p>
             <button class="sec-offer__button">
                 <img class="sec-offer__img" src="{{ Vite::asset('resources/images/icons/offer_arr.svg') }}" alt="offer">
             </button>
         </div>
         <div class="sec-offer">
-            <h1 class="sec-offer__heading">{{ __('Оффер') }}</h1>
+            <h1 class="sec-offer__heading">{{ __('Дом вдвое дешевле городской квартиры') }}</h1>
             <p class="sec-offer__paraf">
-                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
-                некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                {{ __('Строим современные энергоэффективные дома для жизни на природе') }}
             </p>
-            <button class="sec-offer__button">
+            <a href="https://tiksan.ru/2023/05/19/dom-mechty-mozhet-stoit-vdvoe-deshevle-gorodskoj-kvartiry/"
+                class="sec-offer__button">
                 <img class="sec-offer__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
                     alt="offer">
-            </button>
+            </a>
         </div>
     </div>
 </section>
@@ -177,12 +173,29 @@ $stage = new StageCards();
             <h1 class="why-us__heading">
                 {{ __('Почему “Малые этажи” стабильная компания?') }}
             </h1>
-            <p class="why-us__paraf">
-                {{ __('Собственное производство строительных материалов. Строительство домов «под ключ» по
-                энергоэффективной технологии SIP-панелей - экологичный способ строительства, который обеспечивает
-                высокую тепло- и звукоизоляцию, а также долговечность и надежность. Непрерывный контроль качества
-                изготовления на всех этапах. Сопровождение сделки.') }}
-            </p>
+            <div class="why-us__wraps">
+                <p class="why-us__paraf">
+                    {{ __('Одной из ключевых причин стабильности компании, является наша команда высококвалифицированных
+                    архитекторов, инженеров, строителей и менеджеров.') }}
+                </p>
+                <p class="why-us__paraf">
+                    {{ __('Мы отличаемся высоким качеством услуг и материалов.') }}
+                </p>
+                <p class="why-us__paraf">
+                    {{ __('Компания строго следит за соблюдением сроков строительства.') }}
+                </p>
+                <p class="why-us__paraf">
+                    {{ __('Мы постоянно работаем над улучшением существующих строительных технологий и разработкой новых
+                    проектов загородных домов.') }}
+                </p>
+                <p class="why-us__paraf">
+                    {{ __('Клиенты компании "Малые этажи" получают не только высококачественные современные дома, но и
+                    полную уверенность в надежности и безопасности своей инвестиции.') }}
+                </p>
+                <p class="why-us__paraf">
+                    {{ __('Малые этажи – с нами строить легко!') }}
+                </p>
+            </div>
         </div>
         <div class="why-us__card-wrapper">
             @php
@@ -614,17 +627,21 @@ $stage = new StageCards();
     </div>
     <div class="swiper spec-swiper">
         <div class="swiper-wrapper spec-wrapper">
-            @for ($i = 0; $i < 4; $i++) <div class="swiper-slide spec-slide">
+            @php
+            $data_spec = $spec_people->toArray();
+            @endphp
+            @foreach ($data_spec as $item) <div class="swiper-slide spec-slide">
                 <div class="spec__inner">
-                    <img class="spec__img" src="https://placehold.co/255x300" alt="logo">
+                    <div class="spec__img" style="background-image: url({{$item['image']}})"></div>
+                    {{-- <img class="spec__img" src="{{$item['image']}}" alt="logo"> --}}
                     <p class="spec__name">
-                        {{ __('Имя Фамилия') }}</p>
+                        {{$item['name']}}</p>
                     <p class="spec__profile">
-                        {{ __('Специалист') }}</p>
+                        {{$item['spec']}}</p>
                 </div>
+            </div>
+            @endforeach
         </div>
-        @endfor
-    </div>
     </div>
     <div class="spec__option">
         <div class="spec-button spec-button-prev">
@@ -675,7 +692,7 @@ $stage = new StageCards();
     </div>
     <div class="home-projects__wrapper">
         @php
-        $output = array_slice($HousesInfo->toArray(), 0, 3);
+        $output = array_slice($houses_info->toArray(), 0, 3);
         @endphp
 
         @foreach ($output as $key => $item)

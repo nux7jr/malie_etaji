@@ -104,6 +104,12 @@
     .grid-temp__wrapper {
         gap: 20px;
     }
+    .grid-temp-x {
+        gap: 20px;
+    }
+    .grid-temp__wrapper {
+        padding-bottom: 40px;
+    }
 }
 @media (max-width: 768px) {
     .z-card__img {

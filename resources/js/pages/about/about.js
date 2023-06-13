@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         mapContainer.style.width = "100%";
         mapParentFooter.appendChild(mapContainer);
         const myMap = new maps.Map(mapContainer, {
-            center: [-8.369326, 115.166023],
+            center: [56.010569, 92.852572],
             zoom: 8,
         });
         myMap.behaviors.disable("scrollZoom");
@@ -99,6 +99,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         myMap.controls.remove("typeSelector");
         myMap.controls.remove("fullscreenControl");
         myMap.controls.remove("searchControl");
+        // new obj
+
+        //end
     } catch (error) {
         console.error("Something went wrong", error);
     }

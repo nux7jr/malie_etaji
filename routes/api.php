@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HousesCardsControllers;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,4 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+Route::group(['prefix' => 'houses'], function () {
+    Route::get('/', [HousesCardsControllers::class, 'index']);
+    Route::post('/', [HousesCardsControllers::class, 'store']);
+
+    // Route::get('/{id}', [HousesCardsControllers::class, 'show']);
 });

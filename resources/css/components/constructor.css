@@ -214,6 +214,9 @@
     .constructor-call {
         flex-direction: column;
     }
+    .full__lablel {
+        width: max-content;
+    }
 }
 @media (max-width: 992px) {
     .constructor-preview {
@@ -251,6 +254,35 @@
     .constructor-call__button {
         padding: 20px;
     }
+    .project-call {
+        margin-top: 40px;
+    }
 }
 @media (max-width: 768px) {
+    .ganeral-input + .ganeral-lablel {
+        padding: 12px 20px;
+    }
+    .constructor__next {
+        padding: 12px 20px;
+        max-height: 40px;
+        margin: auto 0;
+    }
+    .project-info {
+        padding-top: 26px;
+    }
+    .project-wrapper {
+        padding-top: 20px;
+    }
+    .project-item {
+        margin-bottom: 20px;
+    }
+    .project-call {
+        padding: 10px 20px;
+    }
+    .project-call__heading {
+        font-size: 16px;
+    }
+    .project-info {
+        padding-bottom: 40px;
+    }
 }

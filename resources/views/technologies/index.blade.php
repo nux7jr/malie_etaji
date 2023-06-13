@@ -95,7 +95,7 @@
 
   </p>
   <div class="part-list">
-    <div class="part-list__item" style="background-image: url({{Vite::asset('resources/images/house/house.jpg')}})">
+    <div class="part-list__item" style="background-image: url({{Vite::asset('resources/images/about/xl-pipe.jpg')}})">
     </div>
     <div class="part-list__item part-list__item--small">
       <h1 class="part-list__heading">
@@ -127,7 +127,7 @@
         {{__('Lorem Ipsum является стандартной "рыбой')}}
       </p>
     </div>
-    <div class="part-list__item" style="background-image: url({{Vite::asset('resources/images/house/house.jpg')}})">
+    <div class="part-list__item" style="background-image: url({{Vite::asset('resources/images/about/nf.jpg')}})">
     </div>
     <div class="part-list__item">
       <h1 class="part-list__heading">

@@ -32,7 +32,7 @@
                         <div class="ganeral-item house-type__item">
                             <input id="single1" class="ganeral-input house-type__input visually-hidden" type="radio"
                                 name="house-type" value="Одноэтажный" checked />
-                            <label class="ganeral-lablel house-type__label" for="single1">
+                            <label class="ganeral-lablel house-type__label full__lablel" for="single1">
                                 {{ __('Одноэтажный') }}
 
                             </label>
@@ -95,7 +95,7 @@
                     <h2 class="ganeral-header">
                         {{ __('Выберите стоимость') }}
 
-                        <button class="tooltip">
+                        <button class="tooltip" type="button">
                             <img class="toltip-button__img"
                                 src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
                             <span class="tooltiptext">

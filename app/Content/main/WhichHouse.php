@@ -18,14 +18,12 @@ class WhichHouse implements Arrayable
     {
         self::$card_elements = [
             [
-                'text'     => __('Собственное современное производство SIP-панелей'),
+                'text'     => __('Скачайте полный каталог'),
                 'background' => (new Image(
-                    src: 'resources/images/barns/53-56/4.jpg',
+                    src: 'resources/images/home/catal.png',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/asd.pdf", text: 'Скачать в PDF'))->toArray(),
-                'video' => (new Video(
-                    src: 'resources/images/barns/53-56/video1.mp4',
-                ))->getSrc(),
+                'video' => '',
             ],
             [
                 'text'     => __('О компании Малые этажи'),
@@ -40,12 +38,10 @@ class WhichHouse implements Arrayable
             [
                 'text'     => __('Рассчитайте ипотеку'),
                 'background' => (new Image(
-                    src: 'resources/images/double/75-92/2.jpg',
+                    src: 'resources/images/home/mont.jpg',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/mortgage/#mortgage-programs", text: 'Рассчитать'))->toArray(),
-                'video' => (new Video(
-                    src: 'resources/images/double/75-92/video1.mp4',
-                ))->getSrc()
+                'video' => ''
             ],
 
         ];

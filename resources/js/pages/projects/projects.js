@@ -2,10 +2,157 @@ import * as noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
-
 import { initProjects } from "../../components/project-item";
 initProjects(Swiper);
 
+const parentEl = document.querySelector(".project-wrapper");
+
+// function whit data
+function sortinLargestToSmallest(dataInfo) {
+    dataInfo.sort((a, b) => {
+        if (a.price_kit > b.price_kit) {
+            return 1;
+        }
+        if (a.price_kit < b.price_kit) {
+            return -1;
+        }
+        return 0;
+    });
+    Window.data = dataInfo;
+}
+function sortinSmallestToLargest(dataInfo) {
+    dataInfo.sort((a, b) => {
+        if (a.price_kit < b.price_kit) {
+            return 1;
+        }
+        if (a.price_kit > b.price_kit) {
+            return -1;
+        }
+        return 0;
+    });
+    Window.data = dataInfo;
+}
+function reRerenderHouses() {
+    console.log(Window.data.length);
+    if (Window.data.length == 1) {
+        console.log("ERRR");
+        return;
+    }
+    if (Window.data.length !== 0) {
+        parentEl.innerHTML = "";
+        Window.data.forEach((element) => {
+            let htm = `
+            <article class="project-item">
+            <div class="swiper project-swiper">
+                <div class="swiper-wrapper">
+                    ${element.big_slider_images
+                        .map(
+                            (url) =>
+                                '<div class="swiper-slide"><div class="project-slide" style="background-image: url(' +
+                                url +
+                                ')"></div></div>'
+                        )
+                        .join("")}
+                </div>
+                <div class="swiper-pagination pagination-swiper"></div>
+            </div>
+            <div class="project-item__wrapper dark">
+                <div class="project-item__info">
+                    <h2 class="project-item__heading">
+                    ${element.name}
+                    </h2>
+                    <p class="project-item__price">${element.price_small}</p>
+                </div>
+                <hr class="project-item__hr" />
+                <div class="project-item__hidden">
+                    <div class="house-info">
+                        <p class="house-info__paraf">${
+                            element.item_info.square
+                        } м2</p>
+                        <p class="house-info__paraf">${
+                            element.formated_info.bedrooms
+                        }</p>
+                        <p class="house-info__paraf">${
+                            element.formated_info.bathrooms
+                        }</p>
+                        <p class="house-info__paraf">${
+                            element.formated_info.floors
+                        }</p>
+                    </div>
+                    <div class="house-tag">
+                    ${element.tags
+                        .map(
+                            (tag) =>
+                                '<p class="house-tag__item">' + tag + "</p>"
+                        )
+                        .join("")}
+                    </div>
+                </div>
+                <hr class="project-item__hr" />
+                <div class="project-item__option">
+                    <a class="default__button" href="/projects/${
+                        element.id
+                    }">Подробнее</a>
+                    <button class="default__button project-item__call">Хочу такой дом</button>
+                </div>
+            </div>
+        </article>
+        `;
+            parentEl.innerHTML += htm;
+            initActivity();
+        });
+    } else {
+        conclusionNoHouses();
+    }
+}
+function conclusionNoHouses() {
+    const htm = `<div>По заданым параметрам нет домов</div>`;
+    parentEl.innerHTML = htm;
+}
+function initPagination() {
+    if (Window.data.length > 15) {
+        const pagButton = document.querySelector(".more__button");
+        pagButton.style.display = "flex";
+    }
+}
+function initActivity() {
+    const project_items = new Swiper(".project-swiper", {
+        pagination: {
+            clickable: true,
+            el: ".pagination-swiper",
+        },
+    });
+    const allProjectsAraeHover = document.querySelectorAll(
+        ".project-item__info"
+    );
+    const allArticle = document.querySelectorAll(".project-item");
+    allProjectsAraeHover.forEach((element) => {
+        element.addEventListener("mouseover", (evt) => {
+            const fo = evt.target.closest(".project-item");
+            fo.classList.add("project-item--active");
+            const baz = fo.querySelectorAll(".project-slide");
+            const bar = fo.querySelector(".project-swiper");
+            bar.classList.add("project-slide--acitve");
+            baz.forEach((elem) => {
+                elem.classList.add("project-slide--acitve");
+            });
+        });
+    });
+    allArticle.forEach((element) => {
+        element.addEventListener("mouseleave", (evt) => {
+            const fo = evt.target.closest(".project-item");
+            fo.classList.remove("project-item--active");
+            const baz = fo.querySelectorAll(".project-slide");
+            const bar = fo.querySelector(".project-swiper");
+            bar.classList.remove("project-slide--acitve");
+            baz.forEach((elem) => {
+                elem.classList.remove("project-slide--acitve");
+            });
+        });
+    });
+}
+
+// function init
 const filterInit = () => {
     const price_slider = document.querySelector(".rangees");
     const square_slider = document.querySelector(".rangees-square");
@@ -87,11 +234,17 @@ const filterInit = () => {
 
     filter_form.addEventListener("submit", async (evt) => {
         evt.preventDefault();
-        const res = await fetch("/kek", {
+        const res = await fetch("/api/houses", {
             method: "POST",
             body: new FormData(filter_form),
         });
-        console.log(res);
+        const fetch_data = await res.json();
+        Window.data = [];
+        fetch_data.data.forEach((el) => {
+            Window.data.push(el);
+        });
+        console.log(Window.data);
+        reRerenderHouses();
     });
 
     cls_button.addEventListener("click", (evt) => {
@@ -99,13 +252,32 @@ const filterInit = () => {
         filter_form.reset();
         price_slider.noUiSlider.set(["3000000", "15700000"]);
         square_slider.noUiSlider.set(["50", "250"]);
-
         dropdownItems.firstChild.click();
+    });
+};
+
+const sortInit = () => {
+    const allFilters = document.querySelectorAll(
+        ".project-info__sort .dropdown-select-items div"
+    );
+    allFilters.forEach((element) => {
+        element.addEventListener("click", (evt) => {
+            if (
+                document.querySelector("select[name='house-short']").value ===
+                "Сначала дешевле"
+            ) {
+                sortinLargestToSmallest(Window.data);
+            } else {
+                sortinSmallestToLargest(Window.data);
+            }
+            reRerenderHouses();
+        });
     });
 };
 
 const init = () => {
     filterInit();
+    sortInit();
 };
 
 window.addEventListener("DOMContentLoaded", init);

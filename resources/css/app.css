@@ -296,7 +296,7 @@ header {
 /* footer */
 footer {
     background-color: rgb(255, 255, 255);
-    border-radius: 50px 50px 0 0;
+    border-radius: var(--border-raduis-defalut) var(--border-raduis-defalut) 0 0;
 }
 .footer-contact__link,
 .footer-pages__link,

@@ -42,7 +42,6 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 100%;
-
     font-feature-settings: "pnum" on, "lnum" on;
     color: var(--color-black);
 }
@@ -54,7 +53,8 @@
 }
 .about-image {
     border-radius: var(--border-raduis-defalut);
-    height: 100%;
+    max-width: 784.5px;
+
     margin: auto;
 }
 .about-image--mobile {

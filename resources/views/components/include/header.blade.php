@@ -69,10 +69,10 @@
                     href="/mortgage/capital/#mortgage-programs">
                     {{ __('Материнский капитал') }}
                 </a>
-                <a title="{{ __('Ипотека траншами') }}" class="header__button header__link"
+                {{-- <a title="{{ __('Ипотека траншами') }}" class="header__button header__link"
                     href="/mortgage/tranches/#mortgage-programs">
                     {{ __('Ипотека траншами') }}
-                </a>
+                </a> --}}
                 <a title="{{ __('Рассрочка') }}" class="header__button header__link"
                     href="/mortgage/installment/#mortgage-programs">
                     {{ __('Рассрочка') }}

@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Content\main\HousesInfo;
 
-// $HousesInfo = new HousesInfo();
+// $houses_info = new HousesInfo();
 
 
 Route::get('/', function () {
@@ -25,15 +25,13 @@ Route::get('/', function () {
 });
 
 // projects
-
 Route::get('/projects', function () {
-
-    $housesInfo = new HousesInfo();
-    $bar = $housesInfo->toArray();
+    $houses_info = new HousesInfo();
+    $objects = $houses_info->toArray();
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
-    ], 'projects' => $bar], ["house_setting" => [
+    ], 'projects' => $objects], ["house_setting" => [
         'Не выбрано',
         'Все',
         'Одноэтажные',
@@ -42,10 +40,22 @@ Route::get('/projects', function () {
     ]]);
 });
 Route::get('/projects/barn', function () {
+
+    $houses_info = new HousesInfo();
+    $baz = $houses_info->toArray();
+
+    function filterBarn($arr)
+    {
+        return $arr['category'] === 'Барн';
+    };
+
+    $objects = (array_filter($baz, "filterBarn"));
+
+
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
-    ]], ["house_setting" => [
+    ], 'projects' => $objects], ["house_setting" => [
         'Барны',
         'Не выбрано',
         'Все',
@@ -54,10 +64,22 @@ Route::get('/projects/barn', function () {
     ]]);
 });
 Route::get('/projects/single', function () {
+
+    $houses_info = new HousesInfo();
+    $baz = $houses_info->toArray();
+
+    function filterSingle($arr)
+    {
+        return $arr['category'] === 'Одноэтажные';
+    };
+
+    $objects = (array_filter($baz, "filterSingle"));
+
+
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
-    ]], ["house_setting" => [
+    ], 'projects' => $objects], ["house_setting" => [
         'Одноэтажные',
         'Не выбрано',
         'Все',
@@ -66,10 +88,21 @@ Route::get('/projects/single', function () {
     ]]);
 });
 Route::get('/projects/double', function () {
+
+    $houses_info = new HousesInfo();
+    $baz = $houses_info->toArray();
+
+    function filterDouble($arr)
+    {
+        return $arr['category'] === 'Двухэтажные';
+    };
+
+    $objects = (array_filter($baz, "filterDouble"));
+
     return view('projects.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
-    ]], ["house_setting" => [
+    ], 'projects' => $objects], ["house_setting" => [
         'Двухэтажные',
         'Одноэтажные',
         'Все',
@@ -135,14 +168,15 @@ Route::get('/mortgage/trade', function () {
 
 
 Route::get('/projects/{id}', function ($id) {
-    $housesInfo = new HousesInfo();
-    $bar = $housesInfo->toArray();
+    $houses_info = new HousesInfo();
+    $arrayInfo = $houses_info->toArray();
+    $infoInner = $arrayInfo[$id] ?? $arrayInfo[1];
 
     return view('project-item.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
-        '3' => ['path' => $id, 'name' => 'curr ID or name'],
-    ], 'info' => $bar[$id] ?? $bar[1]]);
+        '3' => ['path' => $id, 'name' => $infoInner['name']],
+    ], 'info' => $infoInner]);
 });
 Route::get('/about/technologies', function () {
     return view('technologies.index', ["paths" => [

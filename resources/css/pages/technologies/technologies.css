@@ -117,6 +117,9 @@
     align-items: center;
     padding: 30px 89px;
 }
+.tech-part__paraf {
+    margin-top: 50px;
+}
 .tech-call__paraf {
     font-weight: 700;
     font-size: 25px;

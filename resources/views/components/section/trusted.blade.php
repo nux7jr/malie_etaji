@@ -5,7 +5,7 @@
 @endonce
 @endpush
 
-<section class="trusted">
+<section class="trusted" style="display: none">
   <h1 class="trusted__heading">
     {{ __('Нам доверяют') }}
   </h1>

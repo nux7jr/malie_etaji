@@ -3,7 +3,11 @@
 @vite('resources/css/components/aboutHeader.css')
 @endonce
 @endpush
-
+@php
+use App\Content\main\AboutHeading;
+$about_heading = new AboutHeading();
+$format_info = $about_heading->toArray();
+@endphp
 
 <section class="about">
     <x-ui.path.path paths="{!! $paths !!}">
@@ -11,53 +15,26 @@
     <div class="about__wrapper">
         <div class="about-slogan">
             <div class="about-slogan__wrapper">
-                <h1 class="about-slogan__heading">{{ __('Заголовок') }}</h1>
+                <h1 class="about-slogan__heading">{{$format_info['heading']}}</h1>
                 <p class="about-slogan__text">
-                    {{ __('СК «Малые Этажи» входит в группу компаний Tiksan Group — компания лидер в строительной и
-                    околостроительной
-                    сфере. Мы заинтересованы в создании шедевра — Вашей загородной мечты, от этапа проектирования до
-                    вручения
-                    ключей.') }}
+                    {{ $format_info['text'] }}
                 </p>
-                <img class="about-image--mobile" src="https://placehold.co/780x444" alt="house">
+                <img class="about-image--mobile" src="{{ $format_info['image'] }}" alt="house">
 
             </div>
             <div class="about-router">
+                @foreach ($format_info['links_list'] as $item)
                 <div class="about-router__item">
-                    <a href="/maps" class="about-router__link">
+                    <a href="{{$item['link']}}" class="about-router__link">
                         <span>
-                            {{ __('Карта построенных объектов') }}</span>
+                            {{ $item['text'] }}</span>
                         <img class="about-router__img"
                             src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="icon">
                     </a>
                 </div>
-                <div class="about-router__item">
-                    <a href="/maps" class="about-router__link">
-                        <span>
-                            {{ __('Услуги, которые мы предоставляем') }}</span>
-                        <img class="about-router__img"
-                            src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="icon">
-                    </a>
-                </div>
-                <div class="about-router__item">
-                    <a href="/maps" class="about-router__link">
-                        <span>
-                            {{ __('Готовые объекты') }}
-                        </span>
-                        <img class="about-router__img"
-                            src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="icon">
-                    </a>
-                </div>
-                <div class="about-router__item">
-                    <a href="/maps" class="about-router__link">
-                        <span>
-                            {{ __('Сертификаты и лицензии') }}</span>
-                        <img class="about-router__img"
-                            src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="icon">
-                    </a>
-                </div>
+                @endforeach
             </div>
         </div>
-        <img class="about-image" src="https://placehold.co/780x444" alt="house">
+        <img class="about-image" src="{{ $format_info['image'] }}" alt="house">
     </div>
 </section>
