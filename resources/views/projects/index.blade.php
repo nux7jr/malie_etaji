@@ -9,7 +9,6 @@
 
 <script>
     const data = '{!! json_encode($projects) !!}';
-    console.log(data)
     Window.data = JSON.parse(data);
 
 </script>

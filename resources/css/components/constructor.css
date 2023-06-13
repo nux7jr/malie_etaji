@@ -169,6 +169,10 @@
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+.ganeral-input + .ganeral-lablel.ganeral__date {
+    width: max-content;
+}
 @media (max-width: 1440px) {
     .constructor__wrapper {
         flex-wrap: wrap;

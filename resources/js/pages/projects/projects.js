@@ -33,7 +33,6 @@ function sortinSmallestToLargest(dataInfo) {
     Window.data = dataInfo;
 }
 function reRerenderHouses() {
-    console.log(Window.data.length);
     if (Window.data.length == 1) {
         console.log("ERRR");
         return;
@@ -168,9 +167,9 @@ const filterInit = () => {
     noUiSlider.create(price_slider, {
         connect: true,
         behaviour: "tap",
-        start: [3000000, 15700000],
+        start: [900000, 15700000],
         range: {
-            min: [3000000],
+            min: [900000],
             max: [15700000],
         },
         format: format_price,
@@ -196,7 +195,7 @@ const filterInit = () => {
     });
     square_slider.noUiSlider.set(["50", "250"]);
 
-    price_slider.noUiSlider.set(["3000000", "15700000"]);
+    price_slider.noUiSlider.set(["900000", "15700000"]);
     const formatValues = [
         document.querySelector(".formatting-end"),
         document.querySelector(".formatting-start"),
@@ -243,14 +242,14 @@ const filterInit = () => {
         fetch_data.data.forEach((el) => {
             Window.data.push(el);
         });
-        console.log(Window.data);
+
         reRerenderHouses();
     });
 
     cls_button.addEventListener("click", (evt) => {
         evt.preventDefault();
         filter_form.reset();
-        price_slider.noUiSlider.set(["3000000", "15700000"]);
+        price_slider.noUiSlider.set(["900000", "15700000"]);
         square_slider.noUiSlider.set(["50", "250"]);
         dropdownItems.firstChild.click();
     });

@@ -96,7 +96,6 @@ Route::get('/projects/double', function () {
     {
         return $arr['category'] === 'Двухэтажные';
     };
-
     $objects = (array_filter($baz, "filterDouble"));
 
     return view('projects.index', ["paths" => [
