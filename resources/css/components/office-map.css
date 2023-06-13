@@ -15,3 +15,35 @@
     padding-top: 50px;
     width: 100%;
 }
+@media (max-width: 1440px) {
+    .office-map {
+        padding-bottom: 40px;
+    }
+    .office-map__heading {
+        font-size: 24px;
+    }
+    .office-map__container {
+        padding-top: 30px;
+    }
+    .smi__wrapper {
+        padding: 20px;
+    }
+    .smi__h1 {
+        font-size: 24px;
+    }
+    .smi__span {
+        font-size: 16px;
+    }
+    .smi__span a {
+        font-size: 16px;
+    }
+    .smi__wrapper {
+        align-items: baseline;
+    }
+    .smi__call {
+        gap: 20px;
+    }
+    .smi__wrapper {
+        gap: 20px;
+    }
+}

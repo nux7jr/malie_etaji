@@ -172,3 +172,118 @@
 .main-page .certificates {
     padding-bottom: 100px;
 }
+.tech-about__h2 {
+    font-size: 31px;
+    line-height: 100%;
+    font-weight: 700;
+    color: var(--color-red);
+    font-feature-settings: "pnum" on, "lnum" on;
+}
+.part-more__button {
+    display: none;
+}
+@media (max-width: 1440px) {
+    .tech-about {
+        flex-direction: column-reverse;
+    }
+    .tech-call {
+        gap: 20px;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
+@media (max-width: 992px) {
+    .tech-slider__wrapper {
+        padding: 20px;
+    }
+    .unreal__option > .unreal-next {
+        display: none;
+    }
+    .unreal__option > .unreal-prev {
+        display: none;
+    }
+    .unreal-swiper * .unreal-slide {
+        height: 150px;
+    }
+    .unreal-swiper {
+        height: auto;
+    }
+    .tech-about__img {
+        width: auto;
+    }
+    .tech-call__item {
+        padding: 20px;
+    }
+    .tech-call__paraf {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .part-list__item {
+        padding: 20px;
+        display: none;
+    }
+    .part-list__heading {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .part-list__paraf {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .part-list {
+        gap: 20px;
+    }
+    .part-list__item:nth-child(1) {
+        padding: 20px;
+        flex: 1 0 30%;
+        display: block;
+    }
+    .part-list__item:nth-child(2) {
+        padding: 20px;
+        flex: 1 0 30%;
+        display: block;
+    }
+    .tech-slider {
+        padding-top: 50px;
+    }
+    .tech-slider__heading {
+        font-size: 24px;
+    }
+    .tech-about {
+        padding-top: 20px;
+    }
+    .tech-about__info {
+        gap: 15px;
+    }
+    .tech-part__wrapper {
+        font-size: 24px;
+    }
+    .tech-part {
+        padding-bottom: 40px;
+        padding-top: 56px;
+    }
+    .tech-part__paraf {
+        margin-top: 20px;
+    }
+    .part-list {
+        padding-top: 20px;
+    }
+    .part-more__button {
+        display: block;
+        margin: 0 auto;
+        color: var(--color-red);
+        background-color: var(--color-pink);
+        max-height: 50px;
+    }
+    .part-list__item:nth-child(7) {
+        padding: 20px;
+        flex: 1 1 60%;
+        display: block;
+    }
+    .part-list__item:nth-child(8) {
+        padding: 20px;
+        flex: 1 1 60%;
+        display: block;
+    }
+}

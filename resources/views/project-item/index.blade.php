@@ -37,6 +37,10 @@ use App\Content\main\HousesInfo;
       <h2 class="header-section__name">
         {{$info['name']}}</h2>
     </div>
+    <div class="timer">
+      <h1 class="timer__h1">Фундамент в подарок</h1>
+      <p class="timer__h2">Акция закончится через</p>
+    </div>
     <div class="header-section__item">
       <div class="header-section__price">
         <p class="header-section__about">
@@ -119,14 +123,7 @@ use App\Content\main\HousesInfo;
       @endif
     </div>
     @endisset
-    @isset ($info['item_info']['ceiling'])
-    <div class="project-settings__card">
-      <h1 class="project-settings__header">
-        {{$info['item_info']['ceiling']}}
-      </h1>
-      <p class="project-settings__name">{{__('высота потолков')}}</p>
-    </div>
-    @endisset
+
     @isset($info['item_info']['parking'])
     <div class="project-settings__card">
       <h1 class="project-settings__header">
@@ -248,8 +245,7 @@ use App\Content\main\HousesInfo;
           class="peculiarities__card flex-one"
           @endif
           class='peculiarities__card'
-          style="background-image:
-          url(https://placehold.co/600x400)">
+          style="">
           <p class="peculiarities__paraf">{{$item}}</p>
         </div>
         @endforeach

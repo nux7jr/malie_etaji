@@ -10,7 +10,7 @@
     <h1 class="faq__heading">
       {{__('Часто задаваемые вопросы')}}
     </h1>
-    <button class="default__button faq__button">
+    <button class="default__button faq__button pc-block">
       {{__('Не нашли ответ на свой вопрос? Задайте его специалисту.')}}
     </button>
   </div>
@@ -29,5 +29,8 @@
       </div>
   </div>
   @endfor
+  <button class="default__button faq__button mobile-block">
+    {{__('Не нашли ответ на свой вопрос? Задайте его специалисту.')}}
+  </button>
   </div>
 </section>

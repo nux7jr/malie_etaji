@@ -25,12 +25,24 @@ const project__about = new Swiper(".about-project__swiper", {
     },
 });
 const project__mortgage = new Swiper(".project-mortgage__swiper", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 50,
 
     navigation: {
         nextEl: ".project-mortgage__next",
         prevEl: ".project-mortgage__prev",
+    },
+    breakpoints: {
+        999: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 50,
+        },
+    },
+    breakpoints: {
+        1440: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 50,
+        },
     },
 });
 

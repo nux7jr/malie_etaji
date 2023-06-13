@@ -21,9 +21,6 @@
     </div>
 </section>
 <header>
-    {{-- @php
-    dd($path);
-    @endphp --}}
     <div class="header__wrapper">
         <nav class="header__item navigation">
             <a class="header__button header__link header__logo" href="/">
@@ -68,10 +65,7 @@
                     href="/mortgage/capital/#mortgage-programs">
                     {{ __('Материнский капитал') }}
                 </a>
-                {{-- <a title="{{ __('Ипотека траншами') }}" class="header__button header__link"
-                    href="/mortgage/tranches/#mortgage-programs">
-                    {{ __('Ипотека траншами') }}
-                </a> --}}
+
                 <a title="{{ __('Рассрочка') }}" class="header__button header__link"
                     href="/mortgage/installment/#mortgage-programs">
                     {{ __('Рассрочка') }}
@@ -97,14 +91,13 @@
                     class="header__button header__link submenu">
                     {{ __('Проекты') }}
                 </button>
-                {{-- <button data-menu="second" title="{{ __('Виды ипотеки') }}"
-                    class="header__button header__link submenu">
+                <button data-menu="second" title="{{ __('Виды ипотеки') }}" class="header__button header__link submenu">
                     {{ __('Ипотека') }}
-                </button> --}}
-                {{-- <a title="{{ __('Инвестиции') }}" class="header__button header__link" href="/invest">
+                </button>
+                <a title="{{ __('Инвестиции') }}" class="header__button header__link" href="/invest">
                     {{ __('Инвестиции') }}
-                </a> --}}
-                {{-- <a title="{{ __('Риэлтору') }}" class="header__button header__link" href="/realtors">
+                </a>
+                <a title="{{ __('Риэлтору') }}" class="header__button header__link" href="/realtors">
                     {{ __('Риэлтору') }}
                 </a>
                 <a title="{{ __('О нас') }}" class="header__button header__link" href="/about">
@@ -115,7 +108,7 @@
                 </a>
                 <a title="{{ __('Блог') }}" class="header__button header__link" href="/blog">
                     {{ __('Блог') }}
-                </a> --}}
+                </a>
                 <a title="{{ __('Контакты') }}" class="header__button header__link" href="/contacts">
                     {{ __('Контакты') }}
                 </a>

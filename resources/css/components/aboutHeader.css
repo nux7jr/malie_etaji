@@ -91,6 +91,16 @@
         align-items: flex-start;
         gap: 20px;
     }
+    .about-slogan__heading {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .about-slogan__text {
+        font-size: 12px;
+    }
+    .about__wrapper {
+        padding-bottom: 40px;
+    }
 }
 @media (max-width: 768px) {
 }

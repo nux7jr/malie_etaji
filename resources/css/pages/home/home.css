@@ -856,6 +856,13 @@
     margin-bottom: 52px;
 }
 @media (max-width: 1690px) {
+    .project-item {
+        max-width: 400px;
+    }
+    .home-projects__wrapper {
+        gap: 0;
+        justify-content: space-between;
+    }
     .spec__img {
         width: -webkit-fill-available;
     }

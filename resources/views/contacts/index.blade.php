@@ -28,6 +28,7 @@
     <div class="smi__call">
       <button class="default__button smi__button">Задать вопрос</button>
       <button class="default__button smi__button">Заказать звонок</button>
+      <button class="default__button smi__button">Направить предложение</button>
       <button class="default__button smi__button">Позвонить</button>
     </div>
 
