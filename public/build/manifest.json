@@ -60,7 +60,7 @@
     "src": "resources/css/components/certificates.css"
   },
   "resources/css/components/constructor.css": {
-    "file": "assets/constructor-bab9c961.css",
+    "file": "assets/constructor-5b5750fe.css",
     "isEntry": true,
     "src": "resources/css/components/constructor.css"
   },
@@ -455,9 +455,9 @@
     "file": "assets/2-5b91a51e.jpg",
     "src": "resources/images/barns/87-110/2.jpg"
   },
-  "resources/images/barns/87-110/31.jpg": {
-    "file": "assets/31-7884e9e0.jpg",
-    "src": "resources/images/barns/87-110/31.jpg"
+  "resources/images/barns/87-110/3.jpg": {
+    "file": "assets/3-7884e9e0.jpg",
+    "src": "resources/images/barns/87-110/3.jpg"
   },
   "resources/images/barns/87-110/4.jpg": {
     "file": "assets/4-b79924d3.jpg",
@@ -493,11 +493,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -535,17 +535,17 @@
     "file": "assets/toltip-3597fd91.svg",
     "src": "resources/images/components/toltip.svg"
   },
-  "resources/images/double/112-141/1-2.jpg": {
-    "file": "assets/1-2-e2ffd85d.jpg",
-    "src": "resources/images/double/112-141/1-2.jpg"
+  "resources/images/double/112-141/1.jpg": {
+    "file": "assets/1-e2ffd85d.jpg",
+    "src": "resources/images/double/112-141/1.jpg"
   },
   "resources/images/double/112-141/2.jpg": {
     "file": "assets/2-23325394.jpg",
     "src": "resources/images/double/112-141/2.jpg"
   },
-  "resources/images/double/112-141/3-2.jpg": {
-    "file": "assets/3-2-aeb4b5ca.jpg",
-    "src": "resources/images/double/112-141/3-2.jpg"
+  "resources/images/double/112-141/3.jpg": {
+    "file": "assets/3-aeb4b5ca.jpg",
+    "src": "resources/images/double/112-141/3.jpg"
   },
   "resources/images/double/112-141/4.jpg": {
     "file": "assets/4-41ea8076.jpg",
@@ -571,9 +571,9 @@
     "file": "assets/1-dbdc3a0d.jpg",
     "src": "resources/images/double/123-160/1.jpg"
   },
-  "resources/images/double/123-160/2-2.jpg": {
-    "file": "assets/2-2-b96fa6c6.jpg",
-    "src": "resources/images/double/123-160/2-2.jpg"
+  "resources/images/double/123-160/2.jpg": {
+    "file": "assets/2-b96fa6c6.jpg",
+    "src": "resources/images/double/123-160/2.jpg"
   },
   "resources/images/double/123-160/3.jpg": {
     "file": "assets/3-f1e39807.jpg",
@@ -1210,7 +1210,7 @@
     "src": "resources/js/pages/project-item/project-item.js"
   },
   "resources/js/pages/projects/projects.js": {
-    "file": "assets/projects-ded3a685.js",
+    "file": "assets/projects-30e6a5a2.js",
     "imports": [
       "_nouislider-2a461308.js",
       "_swiper-bundle.min-17f9adeb.js",

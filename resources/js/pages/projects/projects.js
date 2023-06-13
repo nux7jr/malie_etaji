@@ -186,14 +186,14 @@ const filterInit = () => {
     noUiSlider.create(square_slider, {
         connect: true,
         behaviour: "tap",
-        start: [50, 250],
+        start: [42, 250],
         range: {
-            min: [50],
+            min: [42],
             max: [250],
         },
         format: format_square,
     });
-    square_slider.noUiSlider.set(["50", "250"]);
+    square_slider.noUiSlider.set(["42", "250"]);
 
     price_slider.noUiSlider.set(["900000", "15700000"]);
     const formatValues = [
@@ -250,7 +250,7 @@ const filterInit = () => {
         evt.preventDefault();
         filter_form.reset();
         price_slider.noUiSlider.set(["900000", "15700000"]);
-        square_slider.noUiSlider.set(["50", "250"]);
+        square_slider.noUiSlider.set(["42", "250"]);
         dropdownItems.firstChild.click();
     });
 };

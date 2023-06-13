@@ -49,13 +49,12 @@
                     href="/projects/#constructor">
                     {{ __('Конструктор дома') }}
                 </a>
-                <a title="{{ __('Экскурсия по объектам') }}" class="header__button header__link" href="/ecs">
+                {{-- <a title="{{ __('Экскурсия по объектам') }}" class="header__button header__link" href="/ecs">
                     {{ __('Экскурсия по объектам') }}
-                </a>
-                <a title="{{ __('Live') }}" class="header__button header__link live__link" href="/live">
+                </a> --}}
+                {{-- <a title="{{ __('Live') }}" class="header__button header__link live__link" href="/live">
                     {{ __('Live') }}
-                    {{-- img! --}}
-                </a>
+                </a> --}}
             </div>
             <div class="header__submenu header__submenu--second">
                 <button class="header__goback">
@@ -88,7 +87,6 @@
                 <a title="{{ __('Trade-in') }}" class="header__button header__link"
                     href="/mortgage/trade/#mortgage-programs">
                     {{ __('Trade-in') }}
-                    {{-- img! --}}
                 </a>
             </div>
             <div class="header__links">
@@ -96,13 +94,14 @@
                     class="header__button header__link submenu">
                     {{ __('Проекты') }}
                 </button>
-                <button data-menu="second" title="{{ __('Виды ипотеки') }}" class="header__button header__link submenu">
+                {{-- <button data-menu="second" title="{{ __('Виды ипотеки') }}"
+                    class="header__button header__link submenu">
                     {{ __('Ипотека') }}
-                </button>
+                </button> --}}
                 {{-- <a title="{{ __('Инвестиции') }}" class="header__button header__link" href="/invest">
                     {{ __('Инвестиции') }}
                 </a> --}}
-                <a title="{{ __('Риэлтору') }}" class="header__button header__link" href="/realtors">
+                {{-- <a title="{{ __('Риэлтору') }}" class="header__button header__link" href="/realtors">
                     {{ __('Риэлтору') }}
                 </a>
                 <a title="{{ __('О нас') }}" class="header__button header__link" href="/about">
@@ -113,7 +112,7 @@
                 </a>
                 <a title="{{ __('Блог') }}" class="header__button header__link" href="/blog">
                     {{ __('Блог') }}
-                </a>
+                </a> --}}
                 <a title="{{ __('Контакты') }}" class="header__button header__link" href="/contacts">
                     {{ __('Контакты') }}
                 </a>

@@ -635,10 +635,10 @@ class HousesInfo implements Arrayable
           ],
           '3d' => [
             (new Image(
-              src: 'resources/images/barns/87-110/video1.mp4',
+              src: '',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/87-110/video1.mp4',
+              src: '',
             ))->getSrc(),
           ]
         ],
