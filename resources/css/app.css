@@ -220,6 +220,7 @@ header {
 .heading-info__button {
     cursor: pointer;
     transition: 0.4s;
+    line-height: initial;
 }
 .header__button:hover,
 .heading-info__button:hover {

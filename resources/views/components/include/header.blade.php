@@ -126,7 +126,7 @@
                         alt=" {{ __('Заказать звонок') }}">
                     {{ __('Заказать звонок') }}
                 </button>
-                <a class="header__button phone__link" href="tel:+7 (900) 999-99-99">+7 (900) 999-99-99</a>
+                <a class="header__button phone__link" href="tel:++7 (391) 205-3-444">+7 (391) 205-3-444</a>
             </div>
         </nav>
     </div>
