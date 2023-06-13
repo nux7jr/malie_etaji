@@ -18,8 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::group(['prefix' => 'houses'], function () {
-    Route::get('/', [HousesCardsControllers::class, 'index']);
     Route::post('/', [HousesCardsControllers::class, 'store']);
-
-    // Route::get('/{id}', [HousesCardsControllers::class, 'show']);
 });
