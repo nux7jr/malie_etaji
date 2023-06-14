@@ -19,3 +19,4 @@ yarn-error.log
 resources/images/barns
 resources/images/double
 *.mp4
+*.mov

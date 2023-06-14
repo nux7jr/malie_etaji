@@ -7,12 +7,17 @@
 
 @section('content')
 
-{{-- @php
-dd($path)
-@endphp --}}
+@php
+use App\Content\main\AboutHeading;
+$about_heading = new AboutHeading();
+$format_info = $about_heading->toArray();
+
+@endphp
 
 
-<x-section.about-header paths={!!json_encode($paths)!!}></x-section.about-header>
+<x-section.about-header format={!!json_encode($format_info)!!} paths={!!json_encode($paths)!!}>
+</x-section.about-header>
+
 
 <section class="your-house">
     <div class="your-house__section">
@@ -263,9 +268,13 @@ dd($path)
         </div>
         </div>
 </section>
+
+
+
+
 <x-section.tech>
 </x-section.tech>
-<x-section.certificates id='certificates'>
+<x-section.certificates>
 </x-section.certificates>
 <section class="photo-gallery" id='gallery'>
     <div class="photo-wrapper">

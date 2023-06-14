@@ -5,13 +5,8 @@ $advantages = new AdvantagesCard();
 use App\Content\main\WhichHouse;
 $which_house = new WhichHouse();
 
-use App\Content\main\StageCards;
-$stage = new StageCards();
-
 use App\Content\main\HousesInfo;
 
-use App\Content\main\SpecPeople;
-$spec_people = new SpecPeople();
 
 
 @endphp
@@ -88,10 +83,6 @@ $spec_people = new SpecPeople();
     </div>
 </section>
 <section class="which-house">
-    <h1 class="which-house__heading">
-        {{ __('Какие дома мы строим') }}
-    </h1>
-
     <div class="which-house__wrapper">
         @foreach($which_house->toArray() as $item) <x-ui.cards.autoplay title="{{$item['text']}}"
             background="{{$item['background']}}" linkText="{{$item['link']['text']}}" link="{{$item['link']['link']}}"
@@ -100,70 +91,7 @@ $spec_people = new SpecPeople();
         @endforeach
     </div>
 </section>
-<section class="services">
-    <h1 class="services__heading">
-        {{ __('Услуги компании «Малые этажи»') }}
-    </h1>
-    <div class="services__wrapper">
-        <div class="services-see">
-            <h3 class="services-see__heading">
-                {{ __('Посмотрите что мы можем еще') }}
-            </h3>
-            <p class="services-see__paraf">
-                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.') }}</p>
-            <a href="/about/#all-services" class="default__button services-see__button">{{ __('К разделу') }}</a>
-        </div>
-        <div class="swiper services-swiper">
-            <div class="swiper-wrapper services-wrapper">
-                <div class="swiper-slide services-slide">
-                    <div class="services__inner">
-                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="services">
-                        <div class="services-slide__info">
-                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
-                            <p class="services-slide__text">
-                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-                                века.') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide services-slide">
-                    <div class="services__inner">
-                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="services">
-                        <div class="services-slide__info">
-                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
-                            <p class="services-slide__text">
-                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-                                века.') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide services-slide">
-                    <div class="services__inner">
-                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="services">
-                        <div class="services-slide__info">
-                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
-                            <p class="services-slide__text">
-                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-                                века.') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-prev services-button-prev">
-                <img class="services-prev" src="{{ Vite::asset('resources/images/swiper/serv.svg') }}" alt="prev">
-            </div>
-            <div class="swiper-button-next services-button-next">
-                <img class="services-next" src="{{ Vite::asset('resources/images/swiper/serv.svg') }}" alt="next">
-            </div>
-        </div>
-    </div>
-</section>
+
 <section class="why-us">
     <div class="why-us__wrapper">
         <div class="why-us__info">
@@ -237,8 +165,9 @@ $spec_people = new SpecPeople();
                 {{ __('Дома, которые мы постоили') }}
             </h1>
             <p class="build__paraf">
-                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
-                некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.') }}
+                {{ __('Наши готовые решения включают всё необходимое для полноценной жизни в доме: коммуникации, септик,
+                скважина для водоснабжения, вентиляция, электричество, установка розеток. Полное решение «под ключ» и
+                также наружная и внутренняя отделка «белый куб».') }}
             </p>
         </div>
         <div class="build__option">
@@ -553,95 +482,10 @@ $spec_people = new SpecPeople();
         </div>
     </div>
 </section>
-<x-section.tech>
-</x-section.tech>
-<section class="stage">
-    <h1 class="stage__heading">
-        {{ __('Карта этапов строительства дома') }}
-    </h1>
-    <div class="stage__wrapper">
-        <div class="stage-pagination"></div>
-        <div class="swiper stage-swiper">
-            <div class="swiper-wrapper stage-wrapper">
-                @foreach ($stage->toArray() as $item) <div class="swiper-slide stage-slide">
-                    <div class="stage-inner">
-                        <div class="stage-right" style="background-image: url({{ $item['image'] }})">
-                        </div>
-                        <div class="stage-left">
-                            <p class="stage-slide__index">
-                                {{ $item['stage'] }}
-                            </p>
-                            <h2 class="stage-slide__heading">
-                                {{ $item['title']}}
-                            </h2>
-                            <div class="stage-slide__wrapper">
-                                <ul class="stage-slide__list">
-                                    <p class="stage-slide__ul-heading">
-                                        {{ $item['heading']}}
-                                    </p>
-                                    @foreach ($item['list'] as $items)
-                                    <li class="stage-slide__li">
-                                        {{$items}}
-                                    </li>
-                                    @endforeach
-                                </ul>
-                                <p class="stage-slide__paraf">
-                                    {{ $item['paraf'] }}
-                                </p>
-                            </div>
-                            <div class="stage-option">
-                                <div class="stage-button-prev">
-                                    <img class="stage-option__img stage-option__img-back"
-                                        src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
-                                </div>
-                                <div class="stage-button-next">
-                                    <img class="stage-option__img"
-                                        src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-</section>
-<section class="spec">
-    <div class="spec__header">
-        <h1 class="spec__heading">
-            {{ __('Каждый этапы работ выполняют отдельные специалисты') }}
-        </h1>
-        <p class="spec__small">
-            {{ __('А не мастер на все руки') }}
-        </p>
-        <div class="spec-pagination"></div>
-    </div>
-    <div class="swiper spec-swiper">
-        <div class="swiper-wrapper spec-wrapper">
-            @php
-            $data_spec = $spec_people->toArray();
-            @endphp
-            @foreach ($data_spec as $item) <div class="swiper-slide spec-slide">
-                <div class="spec__inner">
-                    <div class="spec__img" style="background-image: url({{$item['image']}})"></div>
-                    {{-- <img class="spec__img" src="{{$item['image']}}" alt="logo"> --}}
-                    <p class="spec__name">
-                        {{$item['name']}}</p>
-                    <p class="spec__profile">
-                        {{$item['spec']}}</p>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-    <div class="spec__option">
-        <div class="spec-button spec-button-prev">
-            <img class="spec-option__img" src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
-        </div>
-        <div class="spec-button spec-button-next">
-            <img class="spec-option__img" src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
-        </div>
-    </div>
-</section>
+{{-- <x-section.tech>
+</x-section.tech> --}}
+<x-section.reels>
+</x-section.reels>
 
 <x-section.constructor>
 </x-section.constructor>
@@ -664,6 +508,71 @@ $spec_people = new SpecPeople();
 </section>
 <x-section.order>
 </x-section.order>
+
+<section class="services">
+    <h1 class="services__heading">
+        {{ __('Услуги компании «Малые этажи»') }}
+    </h1>
+    <div class="services__wrapper">
+        <div class="services-see">
+            <h3 class="services-see__heading">
+                {{ __('Посмотрите что мы можем еще') }}
+            </h3>
+            <p class="services-see__paraf">
+                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.') }}</p>
+            <a href="/about/#all-services" class="default__button services-see__button">{{ __('К разделу') }}</a>
+        </div>
+        <div class="swiper services-swiper">
+            <div class="swiper-wrapper services-wrapper">
+                <div class="swiper-slide services-slide">
+                    <div class="services__inner">
+                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
+                            alt="services">
+                        <div class="services-slide__info">
+                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
+                            <p class="services-slide__text">
+                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                                века.') }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services-slide">
+                    <div class="services__inner">
+                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
+                            alt="services">
+                        <div class="services-slide__info">
+                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
+                            <p class="services-slide__text">
+                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                                века.') }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services-slide">
+                    <div class="services__inner">
+                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
+                            alt="services">
+                        <div class="services-slide__info">
+                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
+                            <p class="services-slide__text">
+                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                                века.') }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev services-button-prev">
+                <img class="services-prev" src="{{ Vite::asset('resources/images/swiper/serv.svg') }}" alt="prev">
+            </div>
+            <div class="swiper-button-next services-button-next">
+                <img class="services-next" src="{{ Vite::asset('resources/images/swiper/serv.svg') }}" alt="next">
+            </div>
+        </div>
+    </div>
+</section>
 
 <x-section.feedback>
 </x-section.feedback>

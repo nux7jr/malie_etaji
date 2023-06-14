@@ -3,12 +3,10 @@
 @vite('resources/css/components/aboutHeader.css')
 @endonce
 @endpush
-@php
-use App\Content\main\AboutHeading;
-$about_heading = new AboutHeading();
-$format_info = $about_heading->toArray();
-@endphp
 
+@php
+$format_info = json_decode($format, true);
+@endphp
 <section class="about">
     <x-ui.path.path paths="{!! $paths !!}">
     </x-ui.path.path>
@@ -17,6 +15,7 @@ $format_info = $about_heading->toArray();
             <div class="about-slogan__wrapper">
                 <h1 class="about-slogan__heading">{{$format_info['heading']}}</h1>
                 <p class="about-slogan__text">
+
                     {{ $format_info['text'] }}
                 </p>
                 <img class="about-image--mobile" src="{{ $format_info['image'] }}" alt="house">

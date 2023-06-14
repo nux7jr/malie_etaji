@@ -33,12 +33,6 @@ const project__mortgage = new Swiper(".project-mortgage__swiper", {
         prevEl: ".project-mortgage__prev",
     },
     breakpoints: {
-        999: {
-            slidesPerView: 2,
-            spaceBetweenSlides: 50,
-        },
-    },
-    breakpoints: {
         1440: {
             slidesPerView: 4,
             spaceBetweenSlides: 50,
@@ -58,6 +52,15 @@ const facade_swiper = new Swiper(".facade-swiper", {
     },
 });
 document.addEventListener("DOMContentLoaded", (evt) => {
+    const buttonPeculiarities = document.querySelector(".peculiarities__more");
+    const allPeculiarities = document.querySelectorAll(".peculiarities__card");
+
+    buttonPeculiarities.addEventListener("click", (evt) => {
+        allPeculiarities.forEach((elem) => {
+            elem.style.display = "block";
+        });
+        evt.target.style.display = "none";
+    });
     const allPreviewContent = document.querySelectorAll(
         ".project-preview__item"
     );

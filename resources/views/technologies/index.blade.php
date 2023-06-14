@@ -6,7 +6,23 @@
 @endsection
 
 @section('content')
-<x-section.about-header paths={!!json_encode($paths)!!}></x-section.about-header>
+
+
+@php
+use App\Content\main\StageCards;
+$stage = new StageCards();
+use App\Content\main\SpecPeople;
+$spec_people = new SpecPeople();
+
+use App\Content\main\AboutTech;
+$about_heading = new AboutTech();
+$format_info = $about_heading->toArray();
+
+@endphp
+
+
+<x-section.about-header format={!!json_encode($format_info)!!} paths={!!json_encode($paths)!!}>
+</x-section.about-header>
 
 <section class="tech-slider" id="technologies">
   <div class="tech-slider__wrapper">
@@ -65,7 +81,95 @@
     </div>
   </div>
 </section>
-<section class="tech-part">
+
+<section class="stage" id="stage">
+  <h1 class="stage__heading">
+    {{ __('Карта этапов строительства дома') }}
+  </h1>
+  <div class="stage__wrapper">
+    <div class="stage-pagination"></div>
+    <div class="swiper stage-swiper">
+      <div class="swiper-wrapper stage-wrapper">
+        @foreach ($stage->toArray() as $item) <div class="swiper-slide stage-slide">
+          <div class="stage-inner">
+            <div class="stage-right" style="background-image: url({{ $item['image'] }})">
+            </div>
+            <div class="stage-left">
+              <p class="stage-slide__index">
+                {{ $item['stage'] }}
+              </p>
+              <h2 class="stage-slide__heading">
+                {{ $item['title']}}
+              </h2>
+              <div class="stage-slide__wrapper">
+                <ul class="stage-slide__list">
+                  <p class="stage-slide__ul-heading">
+                    {{ $item['heading']}}
+                  </p>
+                  @foreach ($item['list'] as $items)
+                  <li class="stage-slide__li">
+                    {{$items}}
+                  </li>
+                  @endforeach
+                </ul>
+                <p class="stage-slide__paraf">
+                  {{ $item['paraf'] }}
+                </p>
+              </div>
+              <div class="stage-option">
+                <div class="stage-button-prev">
+                  <img class="stage-option__img stage-option__img-back"
+                    src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
+                </div>
+                <div class="stage-button-next">
+                  <img class="stage-option__img" src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @endforeach
+      </div>
+</section>
+<section class="spec">
+  <div class="spec__header">
+    <h1 class="spec__heading">
+      {{ __('Каждый этапы работ выполняют отдельные специалисты') }}
+    </h1>
+    <p class="spec__small">
+      {{ __('А не мастер на все руки') }}
+    </p>
+    <div class="spec-pagination"></div>
+  </div>
+  <div class="swiper spec-swiper">
+    <div class="swiper-wrapper spec-wrapper">
+      @php
+      $data_spec = $spec_people->toArray();
+      @endphp
+      @foreach ($data_spec as $item) <div class="swiper-slide spec-slide">
+        <div class="spec__inner">
+          <div class="spec__img" style="background-image: url({{$item['image']}})"></div>
+          {{-- <img class="spec__img" src="{{$item['image']}}" alt="logo"> --}}
+          <p class="spec__name">
+            {{$item['name']}}</p>
+          <p class="spec__profile">
+            {{$item['spec']}}</p>
+        </div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+  <div class="spec__option">
+    <div class="spec-button spec-button-prev">
+      <img class="spec-option__img" src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
+    </div>
+    <div class="spec-button spec-button-next">
+      <img class="spec-option__img" src="{{ Vite::asset('resources/images/swiper/next.svg') }}" alt="icon">
+    </div>
+  </div>
+</section>
+
+<section class="tech-part" id='partners'>
   <h1 class="tech-part__wrapper">{{__('Технологии партнеров')}}</h1>
   <p class="tech-part__paraf">
     {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
@@ -127,8 +231,6 @@
     <button class="default__button part-more__button">Все технологии</button>
   </div>
 </section>
-
-
 <x-section.certificates>
 </x-section.certificates>
 <x-section.feedback>

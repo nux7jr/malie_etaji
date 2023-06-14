@@ -292,6 +292,9 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .label_percents_toggle.space__between {
+        gap: 0px;
+    }
     .datepiker__list-inputs {
         gap: 20px;
         margin-bottom: -10px;
@@ -299,13 +302,88 @@
     .datepiker {
         gap: 20px;
     }
-    .label_percents_toggle.space__between {
-        gap: 0px;
-    }
     .datepiker__user-info__wrapper {
         gap: 20px;
     }
     .label_percents_toggle h4 {
         margin-bottom: 13px;
+    }
+    .peculiarities__head {
+        height: auto;
+        gap: 20px;
+    }
+    .peculiarities {
+        padding-top: 40px;
+    }
+    .peculiarities__list {
+        gap: 20px;
+    }
+    .peculiarities__head {
+        padding-top: 20px;
+    }
+    .peculiarities__paraf {
+        font-size: 12px;
+    }
+    .peculiarities__card {
+        padding: 20px;
+        min-height: 182px;
+    }
+    .flex-one {
+        flex: 1 1 29%;
+    }
+    .project-review {
+        margin-top: 50px;
+    }
+    .peculiarities {
+        padding-bottom: 40px;
+    }
+    .dropdown-select-selected {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .dropdown-select-items > div {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .dropdown-select-selected:after {
+        right: 10px;
+        top: 3px;
+    }
+    .dropdown-select-items {
+        border-radius: 9px;
+    }
+
+    .dropdown-select-selected {
+        padding-right: 50px;
+    }
+    .label_percents_toggle .space__between {
+        flex-direction: row;
+    }
+    .space__between {
+        gap: 0;
+    }
+    .datepiker__user-info__wrapper > .user-info__item {
+        padding: 12px 10px;
+        font-size: 12px;
+        font-family: "Raleway", sans-serif;
+    }
+    .default__button.user-info__item {
+        padding: 12px 15px;
+        width: fit-content;
+    }
+    .datepiker__policy {
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 10%;
+    }
+    .datepiker__policy {
+        display: inline-block;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .datepiker__policy a {
+        display: inline-block;
+        font-size: 10px;
+        line-height: 10px;
     }
 }

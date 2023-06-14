@@ -38,8 +38,33 @@ use App\Content\main\HousesInfo;
         {{$info['name']}}</h2>
     </div>
     <div class="timer">
-      <h1 class="timer__h1">Фундамент в подарок</h1>
-      <p class="timer__h2">Акция закончится через</p>
+      <h1 class="timer__h1">
+        {{__('Фундамент в подарок')}}
+      </h1>
+      <p class="timer__paraf">{{__('Акция закончится через')}}</p>
+      <div class="timer__label">
+        <div class="timer__item">
+          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__info">{{__('дня')}}</span>
+        </div>
+        :
+        <div class="timer__item">
+          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__info">{{__('час.')}}</span>
+        </div>
+        :
+        <div class="timer__item">
+          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__info">{{__('мин.')}}</span>
+        </div>
+        :
+        <div class="timer__item">
+          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__info">{{__('сек.')}}</span>
+        </div>
+      </div>
+      <p class="timer__lasttime">{{__('Успейте приобрести дом до 30 августа 2023')}}</p>
+      <a class="timer__link" href="#mortgage-calc">{{__('Рассчитать ипотеку')}}</a>
     </div>
     <div class="header-section__item">
       <div class="header-section__price">
@@ -231,11 +256,12 @@ use App\Content\main\HousesInfo;
   </h1>
   <div class="peculiarities__wrapper">
     <div class="peculiarities__head">
-      <div class="peculiarities__card" style="background-image: url(https://placehold.co/600x400)">
+      <div class="peculiarities__card peculiarities__big" style="background-image: url(https://placehold.co/600x400)">
         <p class="peculiarities__paraf">
           {{$info["peculiarities"][0]}}
         </p>
       </div>
+      <button class="default__button peculiarities__more">Показать все особености</button>
       <div class="peculiarities__list">
         @php
         unset($info["peculiarities"][0])

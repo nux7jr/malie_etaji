@@ -1,1 +1,0 @@
-import{S as e}from"./swiper-bundle.min-17f9adeb.js";import{i}from"./feedback-9e57aa4b.js";import{i as r}from"./certificates-c010d61a.js";import"./index-706639a7.js";i(e);r(e);new e(".unreal-swiper",{slidesPerView:3,spaceBetween:50,pagination:{el:".unreal-pagination",clickable:!0},loop:!0,navigation:{nextEl:".unreal-next",prevEl:".unreal-prev"}});

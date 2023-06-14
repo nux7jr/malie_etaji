@@ -47,3 +47,8 @@
         gap: 20px;
     }
 }
+@media (max-width: 400px) {
+    .office-map {
+        padding-top: 40px;
+    }
+}

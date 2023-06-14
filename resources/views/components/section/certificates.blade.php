@@ -10,7 +10,7 @@ $cert_cards = new CertCards();
 $cert_data = $cert_cards->toArray();
 @endphp
 
-<section class="certificates">
+<section class="certificates" id='certificates'>
   <h1 class="certificates__heading">
     {{__('Сертификаты')}}
   </h1>
