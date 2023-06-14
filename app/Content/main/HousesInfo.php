@@ -2,23 +2,21 @@
 
 namespace App\Content\main;
 
-use Illuminate\Contracts\Support\Arrayable;
+use Closure;
 use App\Structures\Image;
-use App\Structures\Link;
-use App\Structures\Video;
 use App\Structures\Pdf;
 use Illuminate\Support\Collection;
 
 class HousesInfo
 {
-  /**
-   * Element use App\Structures\Image for build assets
-   * @var Collection
-   */
-  public static Collection $card_elements;
-  public function __construct()
-  {
-    self::$card_elements = collect([
+    /**
+     * Element use App\Structures\Image for build assets
+     * @var Collection
+     */
+    public static Collection $card_elements;
+    public function __construct()
+    {
+        self::$card_elements = collect([
       [
         'id' => __('0'),
         'name' => __('Барн 29-42'),
@@ -26,18 +24,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/29-42/1.jpg',
+            src: 'resources/images/barns/29-42/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/2.jpg',
+            src: 'resources/images/barns/29-42/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/3.jpg',
+            src: 'resources/images/barns/29-42/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/4.jpg',
+            src: 'resources/images/barns/29-42/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/29-42/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/29-42/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/29-42/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/29-42/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 919000,
         'price_end' => 1797000,
         'price_finish' => 3619000,
@@ -77,10 +89,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/29-42/5.jpg',
+              src: 'resources/images/barns/29-42/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/29-42/6.jpg',
+              src: 'resources/images/barns/29-42/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -102,18 +114,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/53-56/1.jpg',
+            src: 'resources/images/barns/53-56/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/2.jpg',
+            src: 'resources/images/barns/53-56/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/3.jpg',
+            src: 'resources/images/barns/53-56/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/4.jpg',
+            src: 'resources/images/barns/53-56/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/53-56/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/53-56/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/53-56/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/53-56/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 1666000,
         'price_end' => 2729000,
         'price_finish' => 4803000,
@@ -153,10 +179,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/53-56/5.jpg',
+              src: 'resources/images/barns/53-56/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/53-56/6.jpg',
+              src: 'resources/images/barns/53-56/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -178,18 +204,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/60-78/1.jpg',
+            src: 'resources/images/barns/60-78/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/2.jpg',
+            src: 'resources/images/barns/60-78/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/3.jpg',
+            src: 'resources/images/barns/60-78/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/4.jpg',
+            src: 'resources/images/barns/60-78/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/60-78/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/60-78/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/60-78/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/60-78/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 1799000,
         'price_end' => 2854000,
         'price_finish' => 5227000,
@@ -227,10 +267,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/60-78/5.jpg',
+              src: 'resources/images/barns/60-78/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/60-78/6.jpg',
+              src: 'resources/images/barns/60-78/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -253,18 +293,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/62-67/1.jpg',
+            src: 'resources/images/barns/62-67/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/2.jpg',
+            src: 'resources/images/barns/62-67/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/3.jpg',
+            src: 'resources/images/barns/62-67/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/4.jpg',
+            src: 'resources/images/barns/62-67/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/62-67/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/62-67/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/62-67/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/62-67/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 1833000,
         'price_end' => 3000000,
         'price_finish' => 5107000,
@@ -301,10 +355,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/62-67/5.jpg',
+              src: 'resources/images/barns/62-67/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/62-67/6.jpg',
+              src: 'resources/images/barns/62-67/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -326,18 +380,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/63-76/1.jpg',
+            src: 'resources/images/barns/63-76/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/2.jpg',
+            src: 'resources/images/barns/63-76/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/8.jpg',
+            src: 'resources/images/barns/63-76/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/4.jpg',
+            src: 'resources/images/barns/63-76/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/63-76/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/63-76/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/63-76/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/63-76/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 1917000,
         'price_end' => 2123000,
         'price_finish' => 5400000,
@@ -374,10 +442,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/63-76/5.jpg',
+              src: 'resources/images/barns/63-76/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/63-76/6.jpg',
+              src: 'resources/images/barns/63-76/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -399,18 +467,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/75-90/1.jpg',
+            src: 'resources/images/barns/75-90/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/2.jpg',
+            src: 'resources/images/barns/75-90/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/3.jpg',
+            src: 'resources/images/barns/75-90/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/4.jpg',
+            src: 'resources/images/barns/75-90/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/75-90/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/75-90/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/75-90/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/75-90/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 2260000,
         'price_end' => 3501000,
         'price_finish' => 5860000,
@@ -447,10 +529,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/75-90/5.jpg',
+              src: 'resources/images/barns/75-90/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/75-90/6.jpg',
+              src: 'resources/images/barns/75-90/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -472,18 +554,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/86-102/1.jpg',
+            src: 'resources/images/barns/86-102/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/2.jpg',
+            src: 'resources/images/barns/86-102/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/3.jpg',
+            src: 'resources/images/barns/86-102/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/4.jpg',
+            src: 'resources/images/barns/86-102/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/86-102/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/86-102/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/86-102/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/86-102/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 2469000,
         'price_end' => 3724000,
         'price_finish' => 6393000,
@@ -520,10 +616,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/86-102/5.jpg',
+              src: 'resources/images/barns/86-102/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/86-102/6.jpg',
+              src: 'resources/images/barns/86-102/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -545,18 +641,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/87-110/1.jpg',
+            src: 'resources/images/barns/87-110/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/2.jpg',
+            src: 'resources/images/barns/87-110/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/3.jpg',
+            src: 'resources/images/barns/87-110/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/4.jpg',
+            src: 'resources/images/barns/87-110/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/barns/87-110/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/87-110/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/87-110/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/barns/87-110/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 2704000,
         'price_end' => 3913000,
         'price_finish' => 6675000,
@@ -593,10 +703,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/87-110/5.jpg',
+              src: 'resources/images/barns/87-110/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/87-110/6.jpg',
+              src: 'resources/images/barns/87-110/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -619,17 +729,31 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/112-141/1.jpg',
+            src: 'resources/images/double/112-141/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/2.jpg',
+            src: 'resources/images/double/112-141/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/3.jpg',
+            src: 'resources/images/double/112-141/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/4.jpg',
+            src: 'resources/images/double/112-141/4-main.jpg',
           ))->getSrc(),
+        ],
+        'small_images' => [
+            (new Image(
+                src: 'resources/images/double/112-141/1.jpg',
+            ))->getSrc(),
+            (new Image(
+                src: 'resources/images/double/112-141/2.jpg',
+            ))->getSrc(),
+            (new Image(
+                src: 'resources/images/double/112-141/3.jpg',
+            ))->getSrc(),
+            (new Image(
+                src: 'resources/images/double/112-141/4.jpg',
+            ))->getSrc(),
         ],
         'price_kit' => 2651000,
         'price_end' => 4643000,
@@ -667,10 +791,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/112-141/5.jpg',
+              src: 'resources/images/double/112-141/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/112-141/6.jpg',
+              src: 'resources/images/double/112-141/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -692,18 +816,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/123-160/1.jpg',
+            src: 'resources/images/double/123-160/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/2.jpg',
+            src: 'resources/images/double/123-160/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/3.jpg',
+            src: 'resources/images/double/123-160/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/4.jpg',
+            src: 'resources/images/double/123-160/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/double/123-160/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/123-160/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/123-160/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/123-160/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 2914000,
         'price_end' => 5041000,
         'price_finish' => 8686000,
@@ -740,10 +878,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/123-160/5.jpg',
+              src: 'resources/images/double/123-160/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/123-160/6.jpg',
+              src: 'resources/images/double/123-160/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -765,18 +903,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/136-165/1.jpg',
+            src: 'resources/images/double/136-165/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/2.jpg',
+            src: 'resources/images/double/136-165/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/3.jpg',
+            src: 'resources/images/double/136-165/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/4.jpg',
+            src: 'resources/images/double/136-165/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/double/136-165/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/136-165/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/136-165/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/136-165/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 3270000,
         'price_end' => 5481000,
         'price_finish' => 9027000,
@@ -813,10 +965,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/123-160/5.jpg',
+              src: 'resources/images/double/123-160/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/123-160/6.jpg',
+              src: 'resources/images/double/123-160/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -838,18 +990,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/136-165-2/1.jpg',
+            src: 'resources/images/double/136-165-2/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/2.jpg',
+            src: 'resources/images/double/136-165-2/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/3.jpg',
+            src: 'resources/images/double/136-165-2/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/4.jpg',
+            src: 'resources/images/double/136-165-2/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/double/136-165-2/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/136-165-2/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/136-165-2/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/136-165-2/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 3270000,
         'price_end' => 5481000,
         'price_finish' => 9027000,
@@ -886,10 +1052,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/136-165-2/5.jpg',
+              src: 'resources/images/double/136-165-2/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/136-165-2/6.jpg',
+              src: 'resources/images/double/136-165-2/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -911,18 +1077,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/72-92/1.jpg',
+            src: 'resources/images/double/72-92/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/2.jpg',
+            src: 'resources/images/double/72-92/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/3.jpg',
+            src: 'resources/images/double/72-92/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/4.jpg',
+            src: 'resources/images/double/72-92/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/double/72-92/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/72-92/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/72-92/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/72-92/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 1880000,
         'price_end' => 3262000,
         'price_finish' => 6173000,
@@ -960,10 +1140,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/72-92/5.jpg',
+              src: 'resources/images/double/72-92/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/72-92/6.jpg',
+              src: 'resources/images/double/72-92/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -985,18 +1165,32 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/75-92/1.jpg',
+            src: 'resources/images/double/75-92/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/2.jpg',
+            src: 'resources/images/double/75-92/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/3.jpg',
+            src: 'resources/images/double/75-92/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/4.jpg',
+            src: 'resources/images/double/75-92/4-main.jpg',
           ))->getSrc(),
         ],
+          'small_images' => [
+              (new Image(
+                  src: 'resources/images/double/75-92/1.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/75-92/2.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/75-92/3.jpg',
+              ))->getSrc(),
+              (new Image(
+                  src: 'resources/images/double/75-92/4.jpg',
+              ))->getSrc(),
+          ],
         'price_kit' => 1943000,
         'price_end' => 3442000,
         'price_finish' => 6481000,
@@ -1034,10 +1228,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/75-92/5.jpg',
+              src: 'resources/images/double/75-92/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/75-92/6.jpg',
+              src: 'resources/images/double/75-92/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -1053,28 +1247,44 @@ class HousesInfo
         ],
       ],
     ]);
-  }
+    }
 
-  public static function filter(array $settings): ?array
-  {
-    return self::$card_elements->filter(function ($element) use ($settings) {
-      $filtered =
-        ($settings['house-list'] === $element['category'] ||
-          $settings['house-list'] === 'Все' ||
-          $settings['house-list'] === 'Не выбрано') &&
-        $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
-        $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
-        $element['item_info']['square'] >= floatval($settings['square-start']) &&
-        $element['item_info']['square'] <= floatval($settings['square-end']);
-      if ($filtered) {
-        return $element;
-      }
-    })->toArray();
-  }
+    /**
+     * @param int $id
+     * @return Closure|null
+     */
+    public static function getItemById(int $id): Closure|array
+    {
+        return self::$card_elements->get($id);
+    }
+    /**
+     * @param array $settings
+     * @return array|null
+     */
+    public static function filter(array $settings): ?array
+    {
+        return self::$card_elements->filter(function ($element) use ($settings) {
+        $filtered =
+            ($settings['house-list'] === $element['category'] ||
+              $settings['house-list'] === 'Все' ||
+              $settings['house-list'] === 'Не выбрано') &&
+            $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
+            $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
+            $element['item_info']['square'] >= floatval($settings['square-start']) &&
+            $element['item_info']['square'] <= floatval($settings['square-end']);
+            if ($filtered) {
+                return $element;
+            }
+        })->toArray();
+    }
 
-  private static function strToMillion(string $value): int
-  {
-    $value = floatval($value) * 1000000;
-    return (int)$value;
-  }
+    /**
+     * @param string $value
+     * @return int
+     */
+    private static function strToMillion(string $value): int
+    {
+        $value = floatval($value) * 1000000;
+        return (int)$value;
+    }
 }

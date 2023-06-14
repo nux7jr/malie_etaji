@@ -5,6 +5,40 @@ $links = new Links();
 <footer>
     <div class="footer__wrapper">
         <div class="footer__item footer-info">
+            <a class="footer-info__link" href="/">
+                <img class="footer-info__img" src="{{ Vite::asset('resources/images/logos/logo.svg')}}" alt="logo">
+            </a>
+            <p class="footer-info__paraf">
+                {{ __('Федеральная строительная компания «Малые Этажи»') }}
+            </p>
+            <hr class="footer-info__hr" />
+            <h3 class="footer-info__title footer__title">
+                {{ __('Есть вопросы и предложения?') }}
+            </h3>
+            <button class="default__button footer-info__button">
+                {{ __('Напишите нам') }}
+            </button>
+            <hr class="footer-info__hr" />
+            <h3 class="footer-info__title footer__title">
+                {{ __('Соцсети') }}
+                <div class="footer-info__social social">
+                    <a class="social__link" href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/telega.svg')}}"
+                             alt="telegram">
+                    </a>
+                    <a class="social__link" href="https://www.youtube.com/channel/UCAKkEcrR2pzA8Z9KKbL-i7Q"
+                       target="_blank" rel="noopener noreferrer">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/youtube.svg')}}"
+                             alt="youtube">
+                    </a>
+                    <a class="social__link" href="https://vk.com/malie_etaji" target="_blank" rel="noopener noreferrer">
+                        <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/vk.svg')}}"
+                             alt="vk">
+                    </a>
+                </div>
+            </h3>
+        </div>
+        <div class="footer__item footer-info">
             <a class="footer-contact__link" href="tel:+7 (391) 205-3-444">+7 (391) 205-3-444</a>
             <a class="footer-contact__link"
                 href="https://yandex.ru/maps/62/krasnoyarsk/?from=mapframe&ll=92.921431%2C56.036889&mode=usermaps&source=mapframe&um=constructor%3Abdbfdb53bc5f7aa4ba9394ef3d92e9ac554c7d206019d7e87446bead86d16700&utm_source=mapframe&z=15">Главный

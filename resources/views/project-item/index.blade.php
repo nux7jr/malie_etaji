@@ -380,16 +380,18 @@ use App\Content\main\HousesInfo;
   </div>
   <div class="more-projects__wrapper">
     @php
-    $output = array_slice(HousesInfo::$card_elements->toArray(), 0, 3);
+        $less3 = 0;
+        while ($less3 < 3):
+        $item = HousesInfo::getItemById($less3);
+        $less3++;
     @endphp
-
-    @foreach ($output as $key => $item)
-    <x-cards.project-item info="{!! json_encode($item) !!}">
-    </x-cards.project-item>
-    @endforeach
+      <x-cards.project-item info="{!! json_encode($item) !!}">
+      </x-cards.project-item>
+    @php
+        endwhile;
+    @endphp
   </div>
 </section>
-
 
 @endsection
 {{-- @for ($i = 0; $i < 8; $i++) --}} {{-- @endfor --}}
