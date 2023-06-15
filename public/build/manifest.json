@@ -2830,6 +2830,11 @@
     "isEntry": true,
     "src": "resources/js/components/feedback.js"
   },
+  "resources/js/components/mob_menu.js": {
+    "file": "assets/mob_menu-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/components/mob_menu.js"
+  },
   "resources/js/components/modal.js": {
     "file": "assets/modal-be7cfe6b.js",
     "isEntry": true,
