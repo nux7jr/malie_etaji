@@ -61,26 +61,21 @@
                     href="/mortgage/family/#mortgage-programs">
                     {{ __('Семейная ипотека') }}
                 </a>
-                <a title="{{ __('Материнский капитал') }}" class="header__button header__link"
-                    href="/mortgage/capital/#mortgage-programs">
-                    {{ __('Материнский капитал') }}
+                <a title="{{ __('Господдержка') }}" class="header__button header__link"
+                    href="/mortgage/gos/#mortgage-programs">
+                    {{ __('Господдержка') }}
                 </a>
-
-                <a title="{{ __('Рассрочка') }}" class="header__button header__link"
-                    href="/mortgage/installment/#mortgage-programs">
-                    {{ __('Рассрочка') }}
+                <a title="{{ __('IT-ипотека') }}" class="header__button header__link"
+                    href="/mortgage/it/#mortgage-programs">
+                    {{ __('IT-ипотека') }}
                 </a>
-                <a title="{{ __('Военная ипотека') }}" class="header__button header__link"
-                    href="/mortgage/military/#mortgage-programs">
-                    {{ __('Военная ипотека') }}
+                <a title="{{ __('Дальневосточная') }}" class="header__button header__link"
+                    href="/mortgage/away/#mortgage-programs">
+                    {{ __('Дальневосточная') }}
                 </a>
-                <a title="{{ __('Субсидии') }}" class="header__button header__link"
-                    href="/mortgage/subsidies/#mortgage-programs">
-                    {{ __('Субсидии') }}
-                </a>
-                <a title="{{ __('Trade-in') }}" class="header__button header__link"
-                    href="/mortgage/trade/#mortgage-programs">
-                    {{ __('Trade-in') }}
+                <a title="{{ __('Сельская') }}" class="header__button header__link"
+                    href="/mortgage/village/#mortgage-programs">
+                    {{ __('Сельская') }}
                 </a>
             </div>
             <div class="header__links">

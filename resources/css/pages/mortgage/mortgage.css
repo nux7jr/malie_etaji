@@ -120,6 +120,10 @@
     background-color: var(--color-beige);
     padding: 50px;
     border-radius: var(--border-raduis-defalut);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .adv-card__heading {
     font-weight: 700;
@@ -158,9 +162,9 @@
 }
 .adv-card--first,
 .adv-card--last {
-    background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center center;
+    background-size: cover;
 }
 .adv-card--first {
     padding: 0;
@@ -177,6 +181,7 @@
 }
 .adv-person__img {
     border-radius: var(--border-raduis-defalut);
+    max-width: 360px;
 }
 .adv-person__name {
     margin-bottom: 7px;
@@ -185,6 +190,10 @@
     font-weight: 700;
     font-size: 42px;
     padding-bottom: 50px;
+}
+.adv-call__text,
+.adv-call__img {
+    cursor: pointer;
 }
 .adv-call {
     display: flex;
@@ -207,4 +216,11 @@
 .adv-call__img {
     width: 46px;
     height: 46px;
+}
+.mortgage-list__paraf {
+    font-weight: 700;
+}
+.mortgage-c__button {
+    background-color: var(--color-pink);
+    color: var(--color-red);
 }

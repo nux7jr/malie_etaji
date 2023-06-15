@@ -154,6 +154,9 @@
 }
 .selection__wrapper {
     padding: 50px;
-    background-color: blueviolet;
+    background-image: url(/resources/images/mortgage/form.png);
     border-radius: var(--border-raduis-defalut);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -40,7 +40,7 @@
     "src": "nouislider.css"
   },
   "resources/css/app.css": {
-    "file": "assets/app-e7b5ff99.css",
+    "file": "assets/app-19616025.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -84,13 +84,8 @@
     "isEntry": true,
     "src": "resources/css/components/house_card.css"
   },
-  "resources/css/components/mob_menu.css": {
-    "file": "assets/mob_menu-c0f7c127.css",
-    "isEntry": true,
-    "src": "resources/css/components/mob_menu.css"
-  },
   "resources/css/components/modal.css": {
-    "file": "assets/modal-6e7d1fa9.css",
+    "file": "assets/modal-04a94116.css",
     "isEntry": true,
     "src": "resources/css/components/modal.css"
   },
@@ -120,7 +115,7 @@
     "src": "resources/css/components/project-item.css"
   },
   "resources/css/components/reels.css": {
-    "file": "assets/reels-d8158dc3.css",
+    "file": "assets/reels-e616c009.css",
     "isEntry": true,
     "src": "resources/css/components/reels.css"
   },
@@ -160,12 +155,12 @@
     "src": "resources/css/pages/contacts/contacts.css"
   },
   "resources/css/pages/error/error.css": {
-    "file": "assets/error-cab68f11.css",
+    "file": "assets/error-37adedbb.css",
     "isEntry": true,
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-62b8d9ea.css",
+    "file": "assets/home-f81cfff3.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -175,7 +170,7 @@
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-efd95539.css",
+    "file": "assets/project-item-3882c1d6.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
@@ -238,7 +233,7 @@
     "src": "resources/images/icons/icon8.svg"
   },
   "resources/images/barns/29-42/1-main.jpg": {
-    "file": "assets/1-main-ff161cfd.jpg",
+    "file": "assets/1-main-df8d6ba0.jpg",
     "src": "resources/images/barns/29-42/1-main.jpg"
   },
   "resources/images/barns/29-42/1.jpg": {
@@ -246,7 +241,7 @@
     "src": "resources/images/barns/29-42/1.jpg"
   },
   "resources/images/barns/29-42/2-main.jpg": {
-    "file": "assets/2-main-f9c430e5.jpg",
+    "file": "assets/2-main-0ecef5a0.jpg",
     "src": "resources/images/barns/29-42/2-main.jpg"
   },
   "resources/images/barns/29-42/2.jpg": {
@@ -254,7 +249,7 @@
     "src": "resources/images/barns/29-42/2.jpg"
   },
   "resources/images/barns/29-42/3-main.jpg": {
-    "file": "assets/3-main-3a1b4e68.jpg",
+    "file": "assets/3-main-2e855fc4.jpg",
     "src": "resources/images/barns/29-42/3-main.jpg"
   },
   "resources/images/barns/29-42/3.jpg": {
@@ -262,7 +257,7 @@
     "src": "resources/images/barns/29-42/3.jpg"
   },
   "resources/images/barns/29-42/4-main.jpg": {
-    "file": "assets/4-main-9a62a206.jpg",
+    "file": "assets/4-main-709d65f7.jpg",
     "src": "resources/images/barns/29-42/4-main.jpg"
   },
   "resources/images/barns/29-42/4.jpg": {
@@ -290,7 +285,7 @@
     "src": "resources/images/barns/29-42/plan.pdf"
   },
   "resources/images/barns/53-56/1-main.jpg": {
-    "file": "assets/1-main-3be11973.jpg",
+    "file": "assets/1-main-7a233bf2.jpg",
     "src": "resources/images/barns/53-56/1-main.jpg"
   },
   "resources/images/barns/53-56/1.jpg": {
@@ -298,7 +293,7 @@
     "src": "resources/images/barns/53-56/1.jpg"
   },
   "resources/images/barns/53-56/2-main.jpg": {
-    "file": "assets/2-main-fde28e25.jpg",
+    "file": "assets/2-main-34d249fa.jpg",
     "src": "resources/images/barns/53-56/2-main.jpg"
   },
   "resources/images/barns/53-56/2.jpg": {
@@ -306,7 +301,7 @@
     "src": "resources/images/barns/53-56/2.jpg"
   },
   "resources/images/barns/53-56/3-main.jpg": {
-    "file": "assets/3-main-9e1d044c.jpg",
+    "file": "assets/3-main-2c9e3698.jpg",
     "src": "resources/images/barns/53-56/3-main.jpg"
   },
   "resources/images/barns/53-56/3.jpg": {
@@ -314,7 +309,7 @@
     "src": "resources/images/barns/53-56/3.jpg"
   },
   "resources/images/barns/53-56/4-main.jpg": {
-    "file": "assets/4-main-3dd82a19.jpg",
+    "file": "assets/4-main-ffb663dc.jpg",
     "src": "resources/images/barns/53-56/4-main.jpg"
   },
   "resources/images/barns/53-56/4.jpg": {
@@ -342,7 +337,7 @@
     "src": "resources/images/barns/53-56/plan.pdf"
   },
   "resources/images/barns/60-78/1-main.jpg": {
-    "file": "assets/1-main-1e9774b2.jpg",
+    "file": "assets/1-main-3571ae81.jpg",
     "src": "resources/images/barns/60-78/1-main.jpg"
   },
   "resources/images/barns/60-78/1.jpg": {
@@ -350,7 +345,7 @@
     "src": "resources/images/barns/60-78/1.jpg"
   },
   "resources/images/barns/60-78/2-main.jpg": {
-    "file": "assets/2-main-9b1100d9.jpg",
+    "file": "assets/2-main-6c5b312c.jpg",
     "src": "resources/images/barns/60-78/2-main.jpg"
   },
   "resources/images/barns/60-78/2.jpg": {
@@ -358,7 +353,7 @@
     "src": "resources/images/barns/60-78/2.jpg"
   },
   "resources/images/barns/60-78/3-main.jpg": {
-    "file": "assets/3-main-7442c52d.jpg",
+    "file": "assets/3-main-47966de2.jpg",
     "src": "resources/images/barns/60-78/3-main.jpg"
   },
   "resources/images/barns/60-78/3.jpg": {
@@ -366,7 +361,7 @@
     "src": "resources/images/barns/60-78/3.jpg"
   },
   "resources/images/barns/60-78/4-main.jpg": {
-    "file": "assets/4-main-8883e782.jpg",
+    "file": "assets/4-main-e88dc948.jpg",
     "src": "resources/images/barns/60-78/4-main.jpg"
   },
   "resources/images/barns/60-78/4.jpg": {
@@ -394,7 +389,7 @@
     "src": "resources/images/barns/60-78/plan.pdf"
   },
   "resources/images/barns/62-67/1-main.jpg": {
-    "file": "assets/1-main-3a7b3129.jpg",
+    "file": "assets/1-main-cafdde9c.jpg",
     "src": "resources/images/barns/62-67/1-main.jpg"
   },
   "resources/images/barns/62-67/1.jpg": {
@@ -402,7 +397,7 @@
     "src": "resources/images/barns/62-67/1.jpg"
   },
   "resources/images/barns/62-67/2-main.jpg": {
-    "file": "assets/2-main-1def4c85.jpg",
+    "file": "assets/2-main-225f24a0.jpg",
     "src": "resources/images/barns/62-67/2-main.jpg"
   },
   "resources/images/barns/62-67/2.jpg": {
@@ -410,7 +405,7 @@
     "src": "resources/images/barns/62-67/2.jpg"
   },
   "resources/images/barns/62-67/3-main.jpg": {
-    "file": "assets/3-main-4b4f78fb.jpg",
+    "file": "assets/3-main-232c5ffb.jpg",
     "src": "resources/images/barns/62-67/3-main.jpg"
   },
   "resources/images/barns/62-67/3.jpg": {
@@ -418,7 +413,7 @@
     "src": "resources/images/barns/62-67/3.jpg"
   },
   "resources/images/barns/62-67/4-main.jpg": {
-    "file": "assets/4-main-8c638c66.jpg",
+    "file": "assets/4-main-af69f097.jpg",
     "src": "resources/images/barns/62-67/4-main.jpg"
   },
   "resources/images/barns/62-67/4.jpg": {
@@ -446,7 +441,7 @@
     "src": "resources/images/barns/62-67/plan.pdf"
   },
   "resources/images/barns/63-76/1-main.jpg": {
-    "file": "assets/1-main-84b9a36c.jpg",
+    "file": "assets/1-main-5c02456d.jpg",
     "src": "resources/images/barns/63-76/1-main.jpg"
   },
   "resources/images/barns/63-76/1.jpg": {
@@ -454,7 +449,7 @@
     "src": "resources/images/barns/63-76/1.jpg"
   },
   "resources/images/barns/63-76/2-main.jpg": {
-    "file": "assets/2-main-0af82bc7.jpg",
+    "file": "assets/2-main-513ef13f.jpg",
     "src": "resources/images/barns/63-76/2-main.jpg"
   },
   "resources/images/barns/63-76/2.jpg": {
@@ -462,7 +457,7 @@
     "src": "resources/images/barns/63-76/2.jpg"
   },
   "resources/images/barns/63-76/3-main.jpg": {
-    "file": "assets/3-main-802f1561.jpg",
+    "file": "assets/3-main-1c2e51d3.jpg",
     "src": "resources/images/barns/63-76/3-main.jpg"
   },
   "resources/images/barns/63-76/3.jpg": {
@@ -470,7 +465,7 @@
     "src": "resources/images/barns/63-76/3.jpg"
   },
   "resources/images/barns/63-76/4-main.jpg": {
-    "file": "assets/4-main-c6f4b44f.jpg",
+    "file": "assets/4-main-dd2d2dd6.jpg",
     "src": "resources/images/barns/63-76/4-main.jpg"
   },
   "resources/images/barns/63-76/4.jpg": {
@@ -498,7 +493,7 @@
     "src": "resources/images/barns/63-76/plan.pdf"
   },
   "resources/images/barns/75-90/1-main.jpg": {
-    "file": "assets/1-main-df89aa31.jpg",
+    "file": "assets/1-main-658e7574.jpg",
     "src": "resources/images/barns/75-90/1-main.jpg"
   },
   "resources/images/barns/75-90/1.jpg": {
@@ -506,7 +501,7 @@
     "src": "resources/images/barns/75-90/1.jpg"
   },
   "resources/images/barns/75-90/2-main.jpg": {
-    "file": "assets/2-main-58e220ab.jpg",
+    "file": "assets/2-main-5fe48be8.jpg",
     "src": "resources/images/barns/75-90/2-main.jpg"
   },
   "resources/images/barns/75-90/2.jpg": {
@@ -514,7 +509,7 @@
     "src": "resources/images/barns/75-90/2.jpg"
   },
   "resources/images/barns/75-90/3-main.jpg": {
-    "file": "assets/3-main-2021da93.jpg",
+    "file": "assets/3-main-c7f9481c.jpg",
     "src": "resources/images/barns/75-90/3-main.jpg"
   },
   "resources/images/barns/75-90/3.jpg": {
@@ -522,7 +517,7 @@
     "src": "resources/images/barns/75-90/3.jpg"
   },
   "resources/images/barns/75-90/4-main.jpg": {
-    "file": "assets/4-main-cec4330f.jpg",
+    "file": "assets/4-main-6f9dbc2b.jpg",
     "src": "resources/images/barns/75-90/4-main.jpg"
   },
   "resources/images/barns/75-90/4.jpg": {
@@ -550,7 +545,7 @@
     "src": "resources/images/barns/75-90/plan.pdf"
   },
   "resources/images/barns/86-102/1-main.jpg": {
-    "file": "assets/1-main-b84306b4.jpg",
+    "file": "assets/1-main-8a3d1fe9.jpg",
     "src": "resources/images/barns/86-102/1-main.jpg"
   },
   "resources/images/barns/86-102/1.jpg": {
@@ -558,7 +553,7 @@
     "src": "resources/images/barns/86-102/1.jpg"
   },
   "resources/images/barns/86-102/2-main.jpg": {
-    "file": "assets/2-main-f4071af8.jpg",
+    "file": "assets/2-main-6f263eaf.jpg",
     "src": "resources/images/barns/86-102/2-main.jpg"
   },
   "resources/images/barns/86-102/2.jpg": {
@@ -566,7 +561,7 @@
     "src": "resources/images/barns/86-102/2.jpg"
   },
   "resources/images/barns/86-102/3-main.jpg": {
-    "file": "assets/3-main-490c3490.jpg",
+    "file": "assets/3-main-40edaa60.jpg",
     "src": "resources/images/barns/86-102/3-main.jpg"
   },
   "resources/images/barns/86-102/3.jpg": {
@@ -574,7 +569,7 @@
     "src": "resources/images/barns/86-102/3.jpg"
   },
   "resources/images/barns/86-102/4-main.jpg": {
-    "file": "assets/4-main-c5e5db39.jpg",
+    "file": "assets/4-main-e02bf936.jpg",
     "src": "resources/images/barns/86-102/4-main.jpg"
   },
   "resources/images/barns/86-102/4.jpg": {
@@ -602,7 +597,7 @@
     "src": "resources/images/barns/86-102/plan.pdf"
   },
   "resources/images/barns/87-110/1-main.jpg": {
-    "file": "assets/1-main-d02b2872.jpg",
+    "file": "assets/1-main-c0fa4a34.jpg",
     "src": "resources/images/barns/87-110/1-main.jpg"
   },
   "resources/images/barns/87-110/1.jpg": {
@@ -610,7 +605,7 @@
     "src": "resources/images/barns/87-110/1.jpg"
   },
   "resources/images/barns/87-110/2-main.jpg": {
-    "file": "assets/2-main-5b91a51e.jpg",
+    "file": "assets/2-main-c86a1c9c.jpg",
     "src": "resources/images/barns/87-110/2-main.jpg"
   },
   "resources/images/barns/87-110/2.jpg": {
@@ -618,7 +613,7 @@
     "src": "resources/images/barns/87-110/2.jpg"
   },
   "resources/images/barns/87-110/3-main.jpg": {
-    "file": "assets/3-main-7884e9e0.jpg",
+    "file": "assets/3-main-615cdd4c.jpg",
     "src": "resources/images/barns/87-110/3-main.jpg"
   },
   "resources/images/barns/87-110/3.jpg": {
@@ -626,7 +621,7 @@
     "src": "resources/images/barns/87-110/3.jpg"
   },
   "resources/images/barns/87-110/4-main.jpg": {
-    "file": "assets/4-main-b79924d3.jpg",
+    "file": "assets/4-main-75349b27.jpg",
     "src": "resources/images/barns/87-110/4-main.jpg"
   },
   "resources/images/barns/87-110/4.jpg": {
@@ -714,7 +709,7 @@
     "src": "resources/images/components/toltip.svg"
   },
   "resources/images/double/112-141/1-main.jpg": {
-    "file": "assets/1-main-e2ffd85d.jpg",
+    "file": "assets/1-main-8c8664c0.jpg",
     "src": "resources/images/double/112-141/1-main.jpg"
   },
   "resources/images/double/112-141/1.jpg": {
@@ -722,7 +717,7 @@
     "src": "resources/images/double/112-141/1.jpg"
   },
   "resources/images/double/112-141/2-main.jpg": {
-    "file": "assets/2-main-23325394.jpg",
+    "file": "assets/2-main-861f95cb.jpg",
     "src": "resources/images/double/112-141/2-main.jpg"
   },
   "resources/images/double/112-141/2.jpg": {
@@ -730,7 +725,7 @@
     "src": "resources/images/double/112-141/2.jpg"
   },
   "resources/images/double/112-141/3-main.jpg": {
-    "file": "assets/3-main-aeb4b5ca.jpg",
+    "file": "assets/3-main-d8c219c5.jpg",
     "src": "resources/images/double/112-141/3-main.jpg"
   },
   "resources/images/double/112-141/3.jpg": {
@@ -738,7 +733,7 @@
     "src": "resources/images/double/112-141/3.jpg"
   },
   "resources/images/double/112-141/4-main.jpg": {
-    "file": "assets/4-main-41ea8076.jpg",
+    "file": "assets/4-main-36386c5f.jpg",
     "src": "resources/images/double/112-141/4-main.jpg"
   },
   "resources/images/double/112-141/4.jpg": {
@@ -766,7 +761,7 @@
     "src": "resources/images/double/112-141/plan.pdf"
   },
   "resources/images/double/123-160/1-main.jpg": {
-    "file": "assets/1-main-dbdc3a0d.jpg",
+    "file": "assets/1-main-18ca487c.jpg",
     "src": "resources/images/double/123-160/1-main.jpg"
   },
   "resources/images/double/123-160/1.jpg": {
@@ -774,7 +769,7 @@
     "src": "resources/images/double/123-160/1.jpg"
   },
   "resources/images/double/123-160/2-main.jpg": {
-    "file": "assets/2-main-b96fa6c6.jpg",
+    "file": "assets/2-main-dd4b4eb2.jpg",
     "src": "resources/images/double/123-160/2-main.jpg"
   },
   "resources/images/double/123-160/2.jpg": {
@@ -782,7 +777,7 @@
     "src": "resources/images/double/123-160/2.jpg"
   },
   "resources/images/double/123-160/3-main.jpg": {
-    "file": "assets/3-main-f1e39807.jpg",
+    "file": "assets/3-main-b555f9db.jpg",
     "src": "resources/images/double/123-160/3-main.jpg"
   },
   "resources/images/double/123-160/3.jpg": {
@@ -790,7 +785,7 @@
     "src": "resources/images/double/123-160/3.jpg"
   },
   "resources/images/double/123-160/4-main.jpg": {
-    "file": "assets/4-main-5d2ebbab.jpg",
+    "file": "assets/4-main-7aa2eac0.jpg",
     "src": "resources/images/double/123-160/4-main.jpg"
   },
   "resources/images/double/123-160/4.jpg": {
@@ -818,7 +813,7 @@
     "src": "resources/images/double/123-160/plan.pdf"
   },
   "resources/images/double/136-165-2/1-main.jpg": {
-    "file": "assets/1-main-1fe3a377.jpg",
+    "file": "assets/1-main-faa5286e.jpg",
     "src": "resources/images/double/136-165-2/1-main.jpg"
   },
   "resources/images/double/136-165-2/1.jpg": {
@@ -826,7 +821,7 @@
     "src": "resources/images/double/136-165-2/1.jpg"
   },
   "resources/images/double/136-165-2/2-main.jpg": {
-    "file": "assets/2-main-e2c4ec53.jpg",
+    "file": "assets/2-main-790085ca.jpg",
     "src": "resources/images/double/136-165-2/2-main.jpg"
   },
   "resources/images/double/136-165-2/2.jpg": {
@@ -834,7 +829,7 @@
     "src": "resources/images/double/136-165-2/2.jpg"
   },
   "resources/images/double/136-165-2/3-main.jpg": {
-    "file": "assets/3-main-09c45489.jpg",
+    "file": "assets/3-main-ffa89862.jpg",
     "src": "resources/images/double/136-165-2/3-main.jpg"
   },
   "resources/images/double/136-165-2/3.jpg": {
@@ -842,7 +837,7 @@
     "src": "resources/images/double/136-165-2/3.jpg"
   },
   "resources/images/double/136-165-2/4-main.jpg": {
-    "file": "assets/4-main-54ae9c38.jpg",
+    "file": "assets/4-main-90fb5a3d.jpg",
     "src": "resources/images/double/136-165-2/4-main.jpg"
   },
   "resources/images/double/136-165-2/4.jpg": {
@@ -870,7 +865,7 @@
     "src": "resources/images/double/136-165-2/plan.pdf"
   },
   "resources/images/double/136-165/1-main.jpg": {
-    "file": "assets/1-main-1d8df3cb.jpg",
+    "file": "assets/1-main-d941d39c.jpg",
     "src": "resources/images/double/136-165/1-main.jpg"
   },
   "resources/images/double/136-165/1.jpg": {
@@ -878,7 +873,7 @@
     "src": "resources/images/double/136-165/1.jpg"
   },
   "resources/images/double/136-165/2-main.jpg": {
-    "file": "assets/2-main-5ce82efa.jpg",
+    "file": "assets/2-main-3570455c.jpg",
     "src": "resources/images/double/136-165/2-main.jpg"
   },
   "resources/images/double/136-165/2.jpg": {
@@ -886,7 +881,7 @@
     "src": "resources/images/double/136-165/2.jpg"
   },
   "resources/images/double/136-165/3-main.jpg": {
-    "file": "assets/3-main-bf30168d.jpg",
+    "file": "assets/3-main-a035d5f8.jpg",
     "src": "resources/images/double/136-165/3-main.jpg"
   },
   "resources/images/double/136-165/3.jpg": {
@@ -894,7 +889,7 @@
     "src": "resources/images/double/136-165/3.jpg"
   },
   "resources/images/double/136-165/4-main.jpg": {
-    "file": "assets/4-main-f9aac983.jpg",
+    "file": "assets/4-main-a8944f4f.jpg",
     "src": "resources/images/double/136-165/4-main.jpg"
   },
   "resources/images/double/136-165/4.jpg": {
@@ -922,7 +917,7 @@
     "src": "resources/images/double/136-165/plan.pdf"
   },
   "resources/images/double/72-92/1-main.jpg": {
-    "file": "assets/1-main-1f919920.jpg",
+    "file": "assets/1-main-e3feff87.jpg",
     "src": "resources/images/double/72-92/1-main.jpg"
   },
   "resources/images/double/72-92/1.jpg": {
@@ -934,7 +929,7 @@
     "src": "resources/images/double/72-92/1.png"
   },
   "resources/images/double/72-92/2-main.jpg": {
-    "file": "assets/2-main-93a0d6c7.jpg",
+    "file": "assets/2-main-3714ad8d.jpg",
     "src": "resources/images/double/72-92/2-main.jpg"
   },
   "resources/images/double/72-92/2.jpg": {
@@ -946,7 +941,7 @@
     "src": "resources/images/double/72-92/2.png"
   },
   "resources/images/double/72-92/3-main.jpg": {
-    "file": "assets/3-main-1b6f5732.jpg",
+    "file": "assets/3-main-a281def7.jpg",
     "src": "resources/images/double/72-92/3-main.jpg"
   },
   "resources/images/double/72-92/3.jpg": {
@@ -954,7 +949,7 @@
     "src": "resources/images/double/72-92/3.jpg"
   },
   "resources/images/double/72-92/4-main.jpg": {
-    "file": "assets/4-main-d07aa564.jpg",
+    "file": "assets/4-main-f22d08c8.jpg",
     "src": "resources/images/double/72-92/4-main.jpg"
   },
   "resources/images/double/72-92/4.jpg": {
@@ -986,7 +981,7 @@
     "src": "resources/images/double/72-92/plan.pdf"
   },
   "resources/images/double/75-92/1-main.jpg": {
-    "file": "assets/1-main-b47da065.jpg",
+    "file": "assets/1-main-7c209746.jpg",
     "src": "resources/images/double/75-92/1-main.jpg"
   },
   "resources/images/double/75-92/1.jpg": {
@@ -994,7 +989,7 @@
     "src": "resources/images/double/75-92/1.jpg"
   },
   "resources/images/double/75-92/2-main.jpg": {
-    "file": "assets/2-main-a1f919f7.jpg",
+    "file": "assets/2-main-b84f16b3.jpg",
     "src": "resources/images/double/75-92/2-main.jpg"
   },
   "resources/images/double/75-92/2.jpg": {
@@ -1002,7 +997,7 @@
     "src": "resources/images/double/75-92/2.jpg"
   },
   "resources/images/double/75-92/3-main.jpg": {
-    "file": "assets/3-main-4cc4b868.jpg",
+    "file": "assets/3-main-cb34ce0d.jpg",
     "src": "resources/images/double/75-92/3-main.jpg"
   },
   "resources/images/double/75-92/3.jpg": {
@@ -1010,7 +1005,7 @@
     "src": "resources/images/double/75-92/3.jpg"
   },
   "resources/images/double/75-92/4-main.jpg": {
-    "file": "assets/4-main-d74e27be.jpg",
+    "file": "assets/4-main-1c3d1dcc.jpg",
     "src": "resources/images/double/75-92/4-main.jpg"
   },
   "resources/images/double/75-92/4.jpg": {
@@ -1038,7 +1033,7 @@
     "src": "resources/images/double/75-92/plan.pdf"
   },
   "resources/images/double/80-96/1-main.jpg": {
-    "file": "assets/1-main-cba73854.jpg",
+    "file": "assets/1-main-1613260e.jpg",
     "src": "resources/images/double/80-96/1-main.jpg"
   },
   "resources/images/double/80-96/1.jpg": {
@@ -1046,7 +1041,7 @@
     "src": "resources/images/double/80-96/1.jpg"
   },
   "resources/images/double/80-96/2-main.jpg": {
-    "file": "assets/2-main-a4be5975.jpg",
+    "file": "assets/2-main-28f6df4e.jpg",
     "src": "resources/images/double/80-96/2-main.jpg"
   },
   "resources/images/double/80-96/2.jpg": {
@@ -1054,7 +1049,7 @@
     "src": "resources/images/double/80-96/2.jpg"
   },
   "resources/images/double/80-96/3-main.jpg": {
-    "file": "assets/3-main-4eb78073.jpg",
+    "file": "assets/3-main-81895d22.jpg",
     "src": "resources/images/double/80-96/3-main.jpg"
   },
   "resources/images/double/80-96/3.jpg": {
@@ -1062,7 +1057,7 @@
     "src": "resources/images/double/80-96/3.jpg"
   },
   "resources/images/double/80-96/4-main.jpg": {
-    "file": "assets/4-main-cd2045b8.jpg",
+    "file": "assets/4-main-e18f3c95.jpg",
     "src": "resources/images/double/80-96/4-main.jpg"
   },
   "resources/images/double/80-96/4.jpg": {
@@ -1090,7 +1085,7 @@
     "src": "resources/images/double/80-96/plan.pdf"
   },
   "resources/images/double/98-115/1-main.jpg": {
-    "file": "assets/1-main-36dc434a.jpg",
+    "file": "assets/1-main-676ac4fa.jpg",
     "src": "resources/images/double/98-115/1-main.jpg"
   },
   "resources/images/double/98-115/1.jpg": {
@@ -1098,7 +1093,7 @@
     "src": "resources/images/double/98-115/1.jpg"
   },
   "resources/images/double/98-115/2-main.jpg": {
-    "file": "assets/2-main-5eebf93e.jpg",
+    "file": "assets/2-main-2c63d867.jpg",
     "src": "resources/images/double/98-115/2-main.jpg"
   },
   "resources/images/double/98-115/2.jpg": {
@@ -1106,7 +1101,7 @@
     "src": "resources/images/double/98-115/2.jpg"
   },
   "resources/images/double/98-115/3-main.jpg": {
-    "file": "assets/3-main-c4c35347.jpg",
+    "file": "assets/3-main-40894fdc.jpg",
     "src": "resources/images/double/98-115/3-main.jpg"
   },
   "resources/images/double/98-115/3.jpg": {
@@ -1114,7 +1109,7 @@
     "src": "resources/images/double/98-115/3.jpg"
   },
   "resources/images/double/98-115/4-main.jpg": {
-    "file": "assets/4-main-ba57dcfe.jpg",
+    "file": "assets/4-main-080a0346.jpg",
     "src": "resources/images/double/98-115/4-main.jpg"
   },
   "resources/images/double/98-115/4.jpg": {
@@ -1277,22 +1272,6 @@
     "file": "assets/logo-1068b90d.svg",
     "src": "resources/images/logos/logo.svg"
   },
-  "resources/images/menu/menu.svg": {
-    "file": "assets/menu-d23f66da.svg",
-    "src": "resources/images/menu/menu.svg"
-  },
-  "resources/images/menu/motage.svg": {
-    "file": "assets/motage-093887fd.svg",
-    "src": "resources/images/menu/motage.svg"
-  },
-  "resources/images/menu/profile.svg": {
-    "file": "assets/profile-2ac4c9e4.svg",
-    "src": "resources/images/menu/profile.svg"
-  },
-  "resources/images/menu/projects.svg": {
-    "file": "assets/projects-e49d5a35.svg",
-    "src": "resources/images/menu/projects.svg"
-  },
   "resources/images/modals/Telega.svg": {
     "file": "assets/Telega-82e0ec60.svg",
     "src": "resources/images/modals/Telega.svg"
@@ -1320,22 +1299,6 @@
   "resources/images/mortgage/gos.jpg": {
     "file": "assets/gos-ae92a74e.jpg",
     "src": "resources/images/mortgage/gos.jpg"
-  },
-  "resources/images/mortgage/icons/1.svg": {
-    "file": "assets/1-ba117b87.svg",
-    "src": "resources/images/mortgage/icons/1.svg"
-  },
-  "resources/images/mortgage/icons/2.svg": {
-    "file": "assets/2-30adb22e.svg",
-    "src": "resources/images/mortgage/icons/2.svg"
-  },
-  "resources/images/mortgage/icons/3.svg": {
-    "file": "assets/3-b1b3272c.svg",
-    "src": "resources/images/mortgage/icons/3.svg"
-  },
-  "resources/images/mortgage/icons/4.svg": {
-    "file": "assets/4-9016a3a3.svg",
-    "src": "resources/images/mortgage/icons/4.svg"
   },
   "resources/images/mortgage/it.jpg": {
     "file": "assets/it-ab13eb01.jpg",
@@ -2835,13 +2798,8 @@
     "isEntry": true,
     "src": "resources/js/components/feedback.js"
   },
-  "resources/js/components/mob_menu.js": {
-    "file": "assets/mob_menu-4ed993c7.js",
-    "isEntry": true,
-    "src": "resources/js/components/mob_menu.js"
-  },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-be7cfe6b.js",
+    "file": "assets/modal-0237b33c.js",
     "isEntry": true,
     "src": "resources/js/components/modal.js"
   },
@@ -2900,7 +2858,7 @@
     "src": "resources/js/pages/contacts/contacts.js"
   },
   "resources/js/pages/home/home.js": {
-    "file": "assets/home-f522b89d.js",
+    "file": "assets/home-dc8e2e86.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
       "_feedback-9e57aa4b.js",

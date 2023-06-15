@@ -5,13 +5,18 @@
 @vite('resources/css/pages/mortgage/mortgage.css')
 @endsection
 
+@php
+use App\Content\main\Mortgage;
+$mortgage_list = (new Mortgage())->toArray();
+@endphp
+
 @section('content')
 <section class="mortgage">
   <x-ui.path.path paths={!!json_encode($paths)!!} class="mortgage__path"></x-ui.path.path>
   <div class="mortgage__wrapper">
-    <h1 class="mortgage__heading">{{__('Заголовок')}}</h1>
-    <p class="mortgage__paraf">{{__('С нами построили дом по ипотеке уже')}} <span class="mortgage__paraf--red">{{__('1
-        304 человека')}}</span> </p>
+    <h1 class="mortgage__heading">{{__('Ипотека от “Малые этажи”')}}</h1>
+    <p class="mortgage__paraf">{{__('С нами построили дом по ипотеке уже')}} <span
+        class="mortgage__paraf--red">{{__('>100 человек')}}</span> </p>
     <p class="mortgage__paraf">
       {{__('СК «Малые Этажи» входит в группу компаний Tiksan Group — компания лидер в строительной и околостроительной
       сфере.
@@ -19,20 +24,20 @@
     </p>
   </div>
   <div class="mortgage__option">
-    <a href="#calc" class="default__button">
+    <a href="#mortgage-calc" class="default__button">
       {{__('Калькулятор ипотеки')}}
     </a>
-    <a href="" class="default__button">
+    <a class="default__button mortgage-c__button" data-modal_id="modal__income">
       {{__('Получить консультацию')}}
     </a>
   </div>
   <div class="mortgage-list">
     @php
-    $mortgage_list = array("Выберите проект дома на нашем сайте", "Получите одобрение через нашего специалиста по
+    $mortgage_arr = array("Выберите проект дома на нашем сайте", "Получите одобрение через нашего специалиста по
     ипотеке", "Подпишите договор на строительство и кредитный договор", 'Дождитесь получения ключей — заезжайте и
     живите');
     @endphp
-    @foreach ($mortgage_list as $key => $item)
+    @foreach ($mortgage_arr as $key => $item)
     <div class="mortgage-list__item">
       <h1 class="mortgage-list__heading">
         {{$key + 1}}</h1>
@@ -51,10 +56,6 @@
         : "" }}" data-filter="family">
         {{__('Семейная')}}
       </button>
-      <button class="default__button mortgage-prog__button {{ $filter === 'capital' ? 'mortgage-prog__button-active'
-      : "" }}" data-filter="capital">
-        {{__('Под материнский капитал')}}
-      </button>
       <button class="default__button mortgage-prog__button {{ $filter === 'gos' ? 'mortgage-prog__button-active'
       : "" }}" data-filter="gos">
         {{__('Господдержка')}}
@@ -67,262 +68,25 @@
       : "" }}" data-filter="away">
         {{__('Дальневосточная')}}
       </button>
-      <button class="default__button mortgage-prog__button {{ $filter === 'installment' ? 'mortgage-prog__button-active'
-      : "" }}" data-filter="installment">
-        {{__('Рассрочка')}}
-      </button>
-      <button class="default__button mortgage-prog__button {{ $filter === 'military' ? 'mortgage-prog__button-active'
-      : "" }}" data-filter="military">
-        {{__('Военная')}}
+
+      <button class="default__button mortgage-prog__button {{ $filter === 'village' ? 'mortgage-prog__button-active'
+      : "" }}" data-filter="village">
+        {{__('Сельская')}}
       </button>
     </div>
     <div class="mortgage-prog__content">
-      <div class="mortgage-prog__section family-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="prgramm">
+      @foreach ($mortgage_list as $item)
+      <div class="mortgage-prog__section {{ $item['paramFilter'] . '-content' }} mortgage-prog__first">
+        <img class="mortgage-prog__img" src="{{$item['image']}}" alt="programm">
         <div class="mortgage-prog__info">
+          @foreach ($item['text'] as $textItem)
           <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+            {{$textItem}}
           </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
+          @endforeach
         </div>
       </div>
-      <div class="mortgage-prog__section capital-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="">
-        <div class="mortgage-prog__info">
-          <p class="mortgage-prog__paraf">
-            Сapital Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-            стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
-        </div>
-      </div>
-      <div class="mortgage-prog__section gos-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="">
-        <div class="mortgage-prog__info">
-          <p class="mortgage-prog__paraf">
-            Сapital Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-            стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
-        </div>
-      </div>
-      <div class="mortgage-prog__section it-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="">
-        <div class="mortgage-prog__info">
-          <p class="mortgage-prog__paraf">
-            Сapital Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-            стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
-        </div>
-      </div>
-      <div class="mortgage-prog__section away-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="">
-        <div class="mortgage-prog__info">
-          <p class="mortgage-prog__paraf">
-            Сapital Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-            стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
-        </div>
-      </div>
-      <div class="mortgage-prog__section tranches-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="">
-        <div class="mortgage-prog__info">
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
-        </div>
-      </div>
-      <div class="mortgage-prog__section installment-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="">
-        <div class="mortgage-prog__info">
-          <p class="mortgage-prog__paraf">
-            Installment Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-            стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
-        </div>
-      </div>
-      <div class="mortgage-prog__section military-content mortgage-prog__first">
-        <img class="mortgage-prog__img" src="https://placehold.co/600x400" alt="">
-        <div class="mortgage-prog__info">
-          <p class="mortgage-prog__paraf">
-            military Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-            стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-          </p>
-          <p class="mortgage-prog__paraf">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-            "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
-            коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
-            успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в
-            новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
-            время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-
-          </p>
-        </div>
-      </div>
+      @endforeach
     </div>
   </div>
 </section>
@@ -338,37 +102,60 @@
 
     <div class="adv__wrapper">
       <div class="adv__list">
-        <div class="adv-card adv-card--first">
-
+        <div class="adv-card adv-card--first"
+          style="background-image: url({{ Vite::asset('resources/images/mortgage/adv/1.png')}})">
         </div>
-        @for ($i = 0; $i < 4; $i++) <div class="adv-card">
-          <h1 class="adv-card__heading">{{__('Lorem Ipsum')}}</h1>
-          <p class="adv-card__paraf">{{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-            века.')}}</p>
+        @php
+        $adv_list = [
+        [
+        'title' => 'Одобрение за 1 день',
+        'text' => 'Мы работаем с 11 банками-партнерами и получаем решение по заявке быстрее чем при самостоятельном
+        обращении.'
+        ],
+        [
+        'title' => 'Страхование ниже чем в банках',
+        'text' => 'Мы партнеры страховых компаний, можем предложить скидку по тарифу до 40%.'
+        ],
+        [
+        'title' => 'Оформление по двум документам',
+        'text' => 'Для подачи заявки не требуется справка с работы, нужны только паспорт и снилс.'
+        ],
+        [
+        'title' => 'Сопровождение на всех этапах сделки',
+        'text' => 'Мы будем на связи в течение всего цикла сделки: от подачи заявки до подписания кредитного договора.'
+        ],
+        ]
+        @endphp
+        @foreach ($adv_list as $item) <div class="adv-card">
+          <h1 class="adv-card__heading">{{ $item['title']}}</h1>
+          <p class="adv-card__paraf">{{ $item['text']}}</p>
+        </div>
+        @endforeach
+        <div class="adv-card adv-card--last"
+          style="background-image: url({{ Vite::asset('resources/images/mortgage/adv/2.jpg')}})">
+        </div>
       </div>
-      @endfor
-      <div class="adv-card adv-card--last">
+      <div class="adv-person">
+        <img class="adv-person__img" src="{{ Vite::asset('resources/images/mortgage/adv/3.jpeg')}}" alt="person">
 
+        <h1 class="adv-person__name">{{__('Алена Крижановская')}}</h1>
+        <p class="adv-person__text">{{__('Ваш персональный ипотечный брокер')}}</p>
       </div>
     </div>
-    <div class="adv-person">
-      <img class="adv-person__img" src="https://placehold.co/360x530" alt="person">
-      <h1 class="adv-person__name">Анастасия Громовая</h1>
-      <p class="adv-person__text">Ваш персональный ипотечный брокер</p>
+    <div class="adv-call">
+      <a class="adv-call__link">
+        <span data-modal_id="modal__income" class="adv-call__text">Нет участка? <br /> Подберем с вами идеальный
+          вариант</span>
+        <img data-modal_id="modal__income" class="adv-call__img"
+          src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
+      </a>
+      <a class="adv-call__link">
+        <span data-modal_id="modal__income" class="adv-call__text">
+          Заказать расчет стоимости <br /> вашего проекта</span>
+        <img data-modal_id="modal__income" class="adv-call__img"
+          src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
+      </a>
     </div>
-  </div>
-  <div class="adv-call">
-    <a href="http://" class="adv-call__link">
-      <span class="adv-call__text">Нет участка? <br /> Подберем с вами идеальный вариант</span>
-      <img class="adv-call__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
-    </a>
-    <a href="http://" class="adv-call__link">
-      <span class="adv-call__text">
-        {{__('')}}
-        Нет участка? <br /> Подберем с вами идеальный вариант</span>
-      <img class="adv-call__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
-    </a>
-  </div>
 </section>
 <x-section.trusted>
 </x-section.trusted>
