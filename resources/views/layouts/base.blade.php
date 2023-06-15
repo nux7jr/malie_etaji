@@ -13,23 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-
-
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
     @yield('head')
     @stack('head')
-
-
     @vite('resources/css/components/modal.css')
     @vite('resources/js/components/modal.js')
-
+    @vite('resources/js/components/mob_menu.js')
+    @vite('resources/css/components/mob_menu.css')
 </head>
 
 <body>
-    {{-- @php
-    dd($path);
-    @endphp --}}
     <x-include.header path={{ $path }}></x-include.header>
     <div id="app" class="app">
         <div class="container">
@@ -38,6 +32,7 @@
             </div>
         </div>
     </div>
+    <x-include.mob_menu></x-include.mob_menu>
     <x-include.footer></x-include.footer>
     <x-include.modals></x-include.modals>
 </body>

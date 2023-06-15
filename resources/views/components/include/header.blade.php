@@ -114,7 +114,7 @@
                 </a>
             </div>
             <div class="header__call">
-                <button data-modal_id='modal__cell' class="header__button call__button">
+                <button data-modal_id='modal__income' class="header__button call__button">
                     <img class="call__img" src="{{ Vite::asset('resources/images/icons/call.svg') }}"
                         alt=" {{ __('Заказать звонок') }}">
                     {{ __('Заказать звонок') }}

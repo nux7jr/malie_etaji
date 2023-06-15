@@ -382,14 +382,14 @@
 .stability__heading {
     font-weight: 700;
     font-size: 42px;
-
-    color: var(--color--black);
+    min-width: 506px;
+    color: var(--color-black);
 }
 .stability__paraf {
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
-
+    max-width: 906px;
     font-feature-settings: "pnum" on, "lnum" on;
 
     color: var(--color-grayest);
@@ -644,6 +644,9 @@
 }
 
 @media (max-width: 768px) {
+    .stability__heading {
+        min-width: fit-content;
+    }
     .project-wrapper {
         display: block;
     }
