@@ -79,51 +79,37 @@ Route::get('/mortgage', function () {
         '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
     ], "filter" => "family"]);
 });
-
 Route::get('/mortgage/family', function () {
     return view('mortgage.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
     ], "filter" => "family"]);
 });
-Route::get('/mortgage/capital', function () {
+Route::get('/mortgage/gos', function () {
     return view('mortgage.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
-    ], "filter" => "capital"]);
+    ], "filter" => "gos"]);
 });
-Route::get('/mortgage/tranches', function () {
+Route::get('/mortgage/it', function () {
     return view('mortgage.index', ["paths" => [
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
-    ], "filter" => "tranches"]);
+    ], "filter" => "it"]);
+});
+Route::get('/mortgage/away', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "away"]);
+});
+Route::get('/mortgage/village', function () {
+    return view('mortgage.index', ["paths" => [
+        '0' => ['path' => '/', 'name' => 'Главная'],
+        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
+    ], "filter" => "village"]);
 });
 
-Route::get('/mortgage/installment', function () {
-    return view('mortgage.index', ["paths" => [
-        '0' => ['path' => '/', 'name' => 'Главная'],
-        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
-    ], "filter" => "installment"]);
-});
-
-Route::get('/mortgage/military', function () {
-    return view('mortgage.index', ["paths" => [
-        '0' => ['path' => '/', 'name' => 'Главная'],
-        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
-    ], "filter" => "military"]);
-});
-Route::get('/mortgage/subsidies', function () {
-    return view('mortgage.index', ["paths" => [
-        '0' => ['path' => '/', 'name' => 'Главная'],
-        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
-    ], "filter" => "subsidies"]);
-});
-Route::get('/mortgage/trade', function () {
-    return view('mortgage.index', ["paths" => [
-        '0' => ['path' => '/', 'name' => 'Главная'],
-        '1' => ['path' => '/mortgage', 'name' => 'Ипотека'],
-    ], "filter" => "trade"]);
-});
 
 
 Route::get('/projects/{id}', function ($id) {

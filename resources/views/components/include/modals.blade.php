@@ -101,7 +101,7 @@
           <img class="modal__image-close" src="{{ Vite::asset('resources/images/modals/X.svg') }}" alt="">
         </button>
         <div class="modal__info">
-          <h1 class="modal__heading">{{__('Свяжитесь с нами')}}</h1>
+          <h1 class="modal__heading">{{__('Заказать звонок')}}</h1>
           <p class="modal__paraf">{{__('Ответим на любой вопрос и выслушаем все предложения')}}</p>
         </div>
         <div class="modal__inner">

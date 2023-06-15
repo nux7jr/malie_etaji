@@ -40,7 +40,7 @@
     "src": "nouislider.css"
   },
   "resources/css/app.css": {
-    "file": "assets/app-19616025.css",
+    "file": "assets/app-e7b5ff99.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -85,7 +85,7 @@
     "src": "resources/css/components/house_card.css"
   },
   "resources/css/components/modal.css": {
-    "file": "assets/modal-04a94116.css",
+    "file": "assets/modal-6e7d1fa9.css",
     "isEntry": true,
     "src": "resources/css/components/modal.css"
   },
@@ -115,12 +115,12 @@
     "src": "resources/css/components/project-item.css"
   },
   "resources/css/components/reels.css": {
-    "file": "assets/reels-e616c009.css",
+    "file": "assets/reels-d8158dc3.css",
     "isEntry": true,
     "src": "resources/css/components/reels.css"
   },
   "resources/css/components/selection.css": {
-    "file": "assets/selection-fa607e9f.css",
+    "file": "assets/selection-86a3186d.css",
     "isEntry": true,
     "src": "resources/css/components/selection.css"
   },
@@ -155,22 +155,22 @@
     "src": "resources/css/pages/contacts/contacts.css"
   },
   "resources/css/pages/error/error.css": {
-    "file": "assets/error-37adedbb.css",
+    "file": "assets/error-cab68f11.css",
     "isEntry": true,
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-f81cfff3.css",
+    "file": "assets/home-f9304923.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
   "resources/css/pages/mortgage/mortgage.css": {
-    "file": "assets/mortgage-dc9d01c5.css",
+    "file": "assets/mortgage-87faedd9.css",
     "isEntry": true,
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-3882c1d6.css",
+    "file": "assets/project-item-efd95539.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
@@ -666,11 +666,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -1272,6 +1272,22 @@
     "file": "assets/logo-1068b90d.svg",
     "src": "resources/images/logos/logo.svg"
   },
+  "resources/images/menu/menu.svg": {
+    "file": "assets/menu-d23f66da.svg",
+    "src": "resources/images/menu/menu.svg"
+  },
+  "resources/images/menu/motage.svg": {
+    "file": "assets/motage-093887fd.svg",
+    "src": "resources/images/menu/motage.svg"
+  },
+  "resources/images/menu/profile.svg": {
+    "file": "assets/profile-2ac4c9e4.svg",
+    "src": "resources/images/menu/profile.svg"
+  },
+  "resources/images/menu/projects.svg": {
+    "file": "assets/projects-e49d5a35.svg",
+    "src": "resources/images/menu/projects.svg"
+  },
   "resources/images/modals/Telega.svg": {
     "file": "assets/Telega-82e0ec60.svg",
     "src": "resources/images/modals/Telega.svg"
@@ -1288,6 +1304,18 @@
     "file": "assets/X-8c0dbaf2.svg",
     "src": "resources/images/modals/X.svg"
   },
+  "resources/images/mortgage/adv/1.png": {
+    "file": "assets/1-7fdd722a.png",
+    "src": "resources/images/mortgage/adv/1.png"
+  },
+  "resources/images/mortgage/adv/2.jpg": {
+    "file": "assets/2-c80ada90.jpg",
+    "src": "resources/images/mortgage/adv/2.jpg"
+  },
+  "resources/images/mortgage/adv/3.jpeg": {
+    "file": "assets/3-7318cb61.jpeg",
+    "src": "resources/images/people/alena.jpeg"
+  },
   "resources/images/mortgage/away.jpg": {
     "file": "assets/away-3408e380.jpg",
     "src": "resources/images/mortgage/away.jpg"
@@ -1296,17 +1324,37 @@
     "file": "assets/famaly-506fc4fa.jpg",
     "src": "resources/images/mortgage/famaly.jpg"
   },
+  "resources/images/mortgage/form.png": {
+    "file": "assets/form-964e1195.png",
+    "src": "resources/images/mortgage/form.png"
+  },
   "resources/images/mortgage/gos.jpg": {
     "file": "assets/gos-ae92a74e.jpg",
     "src": "resources/images/mortgage/gos.jpg"
+  },
+  "resources/images/mortgage/icons/1.svg": {
+    "file": "assets/1-ba117b87.svg",
+    "src": "resources/images/mortgage/icons/1.svg"
+  },
+  "resources/images/mortgage/icons/2.svg": {
+    "file": "assets/2-30adb22e.svg",
+    "src": "resources/images/mortgage/icons/2.svg"
+  },
+  "resources/images/mortgage/icons/3.svg": {
+    "file": "assets/3-b1b3272c.svg",
+    "src": "resources/images/mortgage/icons/3.svg"
+  },
+  "resources/images/mortgage/icons/4.svg": {
+    "file": "assets/4-9016a3a3.svg",
+    "src": "resources/images/mortgage/icons/4.svg"
   },
   "resources/images/mortgage/it.jpg": {
     "file": "assets/it-ab13eb01.jpg",
     "src": "resources/images/mortgage/it.jpg"
   },
-  "resources/images/mortgage/vilage.jpg": {
-    "file": "assets/vilage-9301a592.jpg",
-    "src": "resources/images/mortgage/vilage.jpg"
+  "resources/images/mortgage/village.jpg": {
+    "file": "assets/village-9301a592.jpg",
+    "src": "resources/images/mortgage/village.jpg"
   },
   "resources/images/order/content.jpg": {
     "file": "assets/content-9d02146c.jpg",
@@ -1337,7 +1385,7 @@
     "src": "resources/images/peculiarities_projects/window.jpg"
   },
   "resources/images/people/alena.jpeg": {
-    "file": "assets/alena-7318cb61.jpeg",
+    "file": "assets/3-7318cb61.jpeg",
     "src": "resources/images/people/alena.jpeg"
   },
   "resources/images/people/sarvar.jpg": {
@@ -2799,7 +2847,7 @@
     "src": "resources/js/components/feedback.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-0237b33c.js",
+    "file": "assets/modal-be7cfe6b.js",
     "isEntry": true,
     "src": "resources/js/components/modal.js"
   },
@@ -2858,7 +2906,7 @@
     "src": "resources/js/pages/contacts/contacts.js"
   },
   "resources/js/pages/home/home.js": {
-    "file": "assets/home-dc8e2e86.js",
+    "file": "assets/home-f522b89d.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
       "_feedback-9e57aa4b.js",
