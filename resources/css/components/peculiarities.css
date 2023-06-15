@@ -196,6 +196,9 @@
     display: flex;
     gap: 11.5px;
 }
+.peculiarities__more {
+    display: none;
+}
 @media (max-width: 1690px) {
     .project-review {
         flex-wrap: wrap;
@@ -284,6 +287,9 @@
     }
 }
 @media (max-width: 768px) {
+    .peculiarities__more {
+        display: block;
+    }
     .datepiker__option > .custom-select-dropdown {
         max-width: fit-content;
         min-width: -webkit-fill-available;

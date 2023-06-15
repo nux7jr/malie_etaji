@@ -80,7 +80,7 @@
     "src": "resources/css/components/grid.css"
   },
   "resources/css/components/house_card.css": {
-    "file": "assets/house_card-37e71478.css",
+    "file": "assets/house_card-dfaaf819.css",
     "isEntry": true,
     "src": "resources/css/components/house_card.css"
   },
@@ -90,7 +90,7 @@
     "src": "resources/css/components/modal.css"
   },
   "resources/css/components/office-map.css": {
-    "file": "assets/office-map-d8e6cf94.css",
+    "file": "assets/office-map-cbda2955.css",
     "isEntry": true,
     "src": "resources/css/components/office-map.css"
   },
@@ -105,17 +105,17 @@
     "src": "resources/css/components/path.css"
   },
   "resources/css/components/peculiarities.css": {
-    "file": "assets/peculiarities-16a93c50.css",
+    "file": "assets/peculiarities-9ea1dde8.css",
     "isEntry": true,
     "src": "resources/css/components/peculiarities.css"
   },
   "resources/css/components/project-item.css": {
-    "file": "assets/project-item-f3a78bd4.css",
+    "file": "assets/project-item-3985a913.css",
     "isEntry": true,
     "src": "resources/css/components/project-item.css"
   },
   "resources/css/components/reels.css": {
-    "file": "assets/reels-461fa030.css",
+    "file": "assets/reels-e616c009.css",
     "isEntry": true,
     "src": "resources/css/components/reels.css"
   },
@@ -160,7 +160,7 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-7c3d7954.css",
+    "file": "assets/home-f81cfff3.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -170,7 +170,7 @@
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-5eb89062.css",
+    "file": "assets/project-item-3882c1d6.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
@@ -180,7 +180,7 @@
     "src": "resources/css/pages/projects/projects.css"
   },
   "resources/css/pages/technologies/technologies.css": {
-    "file": "assets/technologies-386f257a.css",
+    "file": "assets/technologies-8816d93e.css",
     "isEntry": true,
     "src": "resources/css/pages/technologies/technologies.css"
   },
@@ -191,6 +191,10 @@
   "resources/images/about/nf.jpg": {
     "file": "assets/nf-9f4fb9de.jpg",
     "src": "resources/images/about/nf.jpg"
+  },
+  "resources/images/about/sip.jpg": {
+    "file": "assets/9-829e45d9.jpg",
+    "src": "resources/images/sip/9.jpg"
   },
   "resources/images/about/xl-pipe.jpg": {
     "file": "assets/xl-pipe-3645f681.jpg",
@@ -227,6 +231,422 @@
   "resources/images/adv/icon8.svg": {
     "file": "assets/icon8-fe5b81d8.svg",
     "src": "resources/images/icons/icon8.svg"
+  },
+  "resources/images/barns/29-42/1-main.jpg": {
+    "file": "assets/1-main-df8d6ba0.jpg",
+    "src": "resources/images/barns/29-42/1-main.jpg"
+  },
+  "resources/images/barns/29-42/1.jpg": {
+    "file": "assets/1-f3e4d172.jpg",
+    "src": "resources/images/barns/29-42/1.jpg"
+  },
+  "resources/images/barns/29-42/2-main.jpg": {
+    "file": "assets/2-main-0ecef5a0.jpg",
+    "src": "resources/images/barns/29-42/2-main.jpg"
+  },
+  "resources/images/barns/29-42/2.jpg": {
+    "file": "assets/2-38fd5d79.jpg",
+    "src": "resources/images/barns/29-42/2.jpg"
+  },
+  "resources/images/barns/29-42/3-main.jpg": {
+    "file": "assets/3-main-2e855fc4.jpg",
+    "src": "resources/images/barns/29-42/3-main.jpg"
+  },
+  "resources/images/barns/29-42/3.jpg": {
+    "file": "assets/3-b9e18c56.jpg",
+    "src": "resources/images/barns/29-42/3.jpg"
+  },
+  "resources/images/barns/29-42/4-main.jpg": {
+    "file": "assets/4-main-709d65f7.jpg",
+    "src": "resources/images/barns/29-42/4-main.jpg"
+  },
+  "resources/images/barns/29-42/4.jpg": {
+    "file": "assets/4-5334150e.jpg",
+    "src": "resources/images/barns/29-42/4.jpg"
+  },
+  "resources/images/barns/29-42/5-facade.jpg": {
+    "file": "assets/5-facade-9d207845.jpg",
+    "src": "resources/images/barns/29-42/5-facade.jpg"
+  },
+  "resources/images/barns/29-42/5.jpg": {
+    "file": "assets/5-67629589.jpg",
+    "src": "resources/images/barns/29-42/5.jpg"
+  },
+  "resources/images/barns/29-42/6-facade.jpg": {
+    "file": "assets/6-facade-0fde2eb3.jpg",
+    "src": "resources/images/barns/29-42/6-facade.jpg"
+  },
+  "resources/images/barns/29-42/6.jpg": {
+    "file": "assets/6-73059434.jpg",
+    "src": "resources/images/barns/29-42/6.jpg"
+  },
+  "resources/images/barns/29-42/plan.pdf": {
+    "file": "assets/plan-ad0641bc.pdf",
+    "src": "resources/images/barns/29-42/plan.pdf"
+  },
+  "resources/images/barns/53-56/1-main.jpg": {
+    "file": "assets/1-main-7a233bf2.jpg",
+    "src": "resources/images/barns/53-56/1-main.jpg"
+  },
+  "resources/images/barns/53-56/1.jpg": {
+    "file": "assets/1-23feadad.jpg",
+    "src": "resources/images/barns/53-56/1.jpg"
+  },
+  "resources/images/barns/53-56/2-main.jpg": {
+    "file": "assets/2-main-34d249fa.jpg",
+    "src": "resources/images/barns/53-56/2-main.jpg"
+  },
+  "resources/images/barns/53-56/2.jpg": {
+    "file": "assets/2-6fff3175.jpg",
+    "src": "resources/images/barns/53-56/2.jpg"
+  },
+  "resources/images/barns/53-56/3-main.jpg": {
+    "file": "assets/3-main-2c9e3698.jpg",
+    "src": "resources/images/barns/53-56/3-main.jpg"
+  },
+  "resources/images/barns/53-56/3.jpg": {
+    "file": "assets/3-dbcc0e04.jpg",
+    "src": "resources/images/barns/53-56/3.jpg"
+  },
+  "resources/images/barns/53-56/4-main.jpg": {
+    "file": "assets/4-main-ffb663dc.jpg",
+    "src": "resources/images/barns/53-56/4-main.jpg"
+  },
+  "resources/images/barns/53-56/4.jpg": {
+    "file": "assets/4-8c580448.jpg",
+    "src": "resources/images/barns/53-56/4.jpg"
+  },
+  "resources/images/barns/53-56/5-facade.jpg": {
+    "file": "assets/5-facade-58f4eaae.jpg",
+    "src": "resources/images/barns/53-56/5-facade.jpg"
+  },
+  "resources/images/barns/53-56/5.jpg": {
+    "file": "assets/5-20694ef6.jpg",
+    "src": "resources/images/barns/53-56/5.jpg"
+  },
+  "resources/images/barns/53-56/6-facade.jpg": {
+    "file": "assets/6-facade-70460fe3.jpg",
+    "src": "resources/images/barns/53-56/6-facade.jpg"
+  },
+  "resources/images/barns/53-56/6.jpg": {
+    "file": "assets/6-390f8b0e.jpg",
+    "src": "resources/images/barns/53-56/6.jpg"
+  },
+  "resources/images/barns/53-56/plan.pdf": {
+    "file": "assets/plan-7ae58341.pdf",
+    "src": "resources/images/barns/53-56/plan.pdf"
+  },
+  "resources/images/barns/60-78/1-main.jpg": {
+    "file": "assets/1-main-3571ae81.jpg",
+    "src": "resources/images/barns/60-78/1-main.jpg"
+  },
+  "resources/images/barns/60-78/1.jpg": {
+    "file": "assets/1-dbacbe65.jpg",
+    "src": "resources/images/barns/60-78/1.jpg"
+  },
+  "resources/images/barns/60-78/2-main.jpg": {
+    "file": "assets/2-main-6c5b312c.jpg",
+    "src": "resources/images/barns/60-78/2-main.jpg"
+  },
+  "resources/images/barns/60-78/2.jpg": {
+    "file": "assets/2-aa9582f0.jpg",
+    "src": "resources/images/barns/60-78/2.jpg"
+  },
+  "resources/images/barns/60-78/3-main.jpg": {
+    "file": "assets/3-main-47966de2.jpg",
+    "src": "resources/images/barns/60-78/3-main.jpg"
+  },
+  "resources/images/barns/60-78/3.jpg": {
+    "file": "assets/3-015890fb.jpg",
+    "src": "resources/images/barns/60-78/3.jpg"
+  },
+  "resources/images/barns/60-78/4-main.jpg": {
+    "file": "assets/4-main-e88dc948.jpg",
+    "src": "resources/images/barns/60-78/4-main.jpg"
+  },
+  "resources/images/barns/60-78/4.jpg": {
+    "file": "assets/4-46cdf2ec.jpg",
+    "src": "resources/images/barns/60-78/4.jpg"
+  },
+  "resources/images/barns/60-78/5-facade.jpg": {
+    "file": "assets/5-facade-5da3bac3.jpg",
+    "src": "resources/images/barns/60-78/5-facade.jpg"
+  },
+  "resources/images/barns/60-78/5.jpg": {
+    "file": "assets/5-08708383.jpg",
+    "src": "resources/images/barns/60-78/5.jpg"
+  },
+  "resources/images/barns/60-78/6-facade.jpg": {
+    "file": "assets/6-facade-61927de2.jpg",
+    "src": "resources/images/barns/60-78/6-facade.jpg"
+  },
+  "resources/images/barns/60-78/6.jpg": {
+    "file": "assets/6-5c2094f7.jpg",
+    "src": "resources/images/barns/60-78/6.jpg"
+  },
+  "resources/images/barns/60-78/plan.pdf": {
+    "file": "assets/plan-f08c3da9.pdf",
+    "src": "resources/images/barns/60-78/plan.pdf"
+  },
+  "resources/images/barns/62-67/1-main.jpg": {
+    "file": "assets/1-main-cafdde9c.jpg",
+    "src": "resources/images/barns/62-67/1-main.jpg"
+  },
+  "resources/images/barns/62-67/1.jpg": {
+    "file": "assets/1-1725b11b.jpg",
+    "src": "resources/images/barns/62-67/1.jpg"
+  },
+  "resources/images/barns/62-67/2-main.jpg": {
+    "file": "assets/2-main-225f24a0.jpg",
+    "src": "resources/images/barns/62-67/2-main.jpg"
+  },
+  "resources/images/barns/62-67/2.jpg": {
+    "file": "assets/2-e3eedde0.jpg",
+    "src": "resources/images/barns/62-67/2.jpg"
+  },
+  "resources/images/barns/62-67/3-main.jpg": {
+    "file": "assets/3-main-232c5ffb.jpg",
+    "src": "resources/images/barns/62-67/3-main.jpg"
+  },
+  "resources/images/barns/62-67/3.jpg": {
+    "file": "assets/3-6b6d6404.jpg",
+    "src": "resources/images/barns/62-67/3.jpg"
+  },
+  "resources/images/barns/62-67/4-main.jpg": {
+    "file": "assets/4-main-af69f097.jpg",
+    "src": "resources/images/barns/62-67/4-main.jpg"
+  },
+  "resources/images/barns/62-67/4.jpg": {
+    "file": "assets/4-072021d4.jpg",
+    "src": "resources/images/barns/62-67/4.jpg"
+  },
+  "resources/images/barns/62-67/5-facade.jpg": {
+    "file": "assets/5-facade-0b54ec08.jpg",
+    "src": "resources/images/barns/62-67/5-facade.jpg"
+  },
+  "resources/images/barns/62-67/5.jpg": {
+    "file": "assets/5-c39637d2.jpg",
+    "src": "resources/images/barns/62-67/5.jpg"
+  },
+  "resources/images/barns/62-67/6-facade.jpg": {
+    "file": "assets/6-facade-3ea0e4e3.jpg",
+    "src": "resources/images/barns/62-67/6-facade.jpg"
+  },
+  "resources/images/barns/62-67/6.jpg": {
+    "file": "assets/6-6071492f.jpg",
+    "src": "resources/images/barns/62-67/6.jpg"
+  },
+  "resources/images/barns/62-67/plan.pdf": {
+    "file": "assets/plan-1310e32a.pdf",
+    "src": "resources/images/barns/62-67/plan.pdf"
+  },
+  "resources/images/barns/63-76/1-main.jpg": {
+    "file": "assets/1-main-5c02456d.jpg",
+    "src": "resources/images/barns/63-76/1-main.jpg"
+  },
+  "resources/images/barns/63-76/1.jpg": {
+    "file": "assets/1-51b9c5b9.jpg",
+    "src": "resources/images/barns/63-76/1.jpg"
+  },
+  "resources/images/barns/63-76/2-main.jpg": {
+    "file": "assets/2-main-513ef13f.jpg",
+    "src": "resources/images/barns/63-76/2-main.jpg"
+  },
+  "resources/images/barns/63-76/2.jpg": {
+    "file": "assets/2-c598e913.jpg",
+    "src": "resources/images/barns/63-76/2.jpg"
+  },
+  "resources/images/barns/63-76/3-main.jpg": {
+    "file": "assets/3-main-1c2e51d3.jpg",
+    "src": "resources/images/barns/63-76/3-main.jpg"
+  },
+  "resources/images/barns/63-76/3.jpg": {
+    "file": "assets/3-4ce6b8ba.jpg",
+    "src": "resources/images/barns/63-76/3.jpg"
+  },
+  "resources/images/barns/63-76/4-main.jpg": {
+    "file": "assets/4-main-dd2d2dd6.jpg",
+    "src": "resources/images/barns/63-76/4-main.jpg"
+  },
+  "resources/images/barns/63-76/4.jpg": {
+    "file": "assets/4-a82aed27.jpg",
+    "src": "resources/images/barns/63-76/4.jpg"
+  },
+  "resources/images/barns/63-76/5-facade.jpg": {
+    "file": "assets/5-facade-fabf235e.jpg",
+    "src": "resources/images/barns/63-76/5-facade.jpg"
+  },
+  "resources/images/barns/63-76/5.jpg": {
+    "file": "assets/5-df5a4d8b.jpg",
+    "src": "resources/images/barns/63-76/5.jpg"
+  },
+  "resources/images/barns/63-76/6-facade.jpg": {
+    "file": "assets/6-facade-9354321e.jpg",
+    "src": "resources/images/barns/63-76/6-facade.jpg"
+  },
+  "resources/images/barns/63-76/6.jpg": {
+    "file": "assets/6-3be7f51e.jpg",
+    "src": "resources/images/barns/63-76/6.jpg"
+  },
+  "resources/images/barns/63-76/plan.pdf": {
+    "file": "assets/plan-558e2b5e.pdf",
+    "src": "resources/images/barns/63-76/plan.pdf"
+  },
+  "resources/images/barns/75-90/1-main.jpg": {
+    "file": "assets/1-main-658e7574.jpg",
+    "src": "resources/images/barns/75-90/1-main.jpg"
+  },
+  "resources/images/barns/75-90/1.jpg": {
+    "file": "assets/1-142fc1d2.jpg",
+    "src": "resources/images/barns/75-90/1.jpg"
+  },
+  "resources/images/barns/75-90/2-main.jpg": {
+    "file": "assets/2-main-5fe48be8.jpg",
+    "src": "resources/images/barns/75-90/2-main.jpg"
+  },
+  "resources/images/barns/75-90/2.jpg": {
+    "file": "assets/2-a3c2d562.jpg",
+    "src": "resources/images/barns/75-90/2.jpg"
+  },
+  "resources/images/barns/75-90/3-main.jpg": {
+    "file": "assets/3-main-c7f9481c.jpg",
+    "src": "resources/images/barns/75-90/3-main.jpg"
+  },
+  "resources/images/barns/75-90/3.jpg": {
+    "file": "assets/3-fba89a23.jpg",
+    "src": "resources/images/barns/75-90/3.jpg"
+  },
+  "resources/images/barns/75-90/4-main.jpg": {
+    "file": "assets/4-main-6f9dbc2b.jpg",
+    "src": "resources/images/barns/75-90/4-main.jpg"
+  },
+  "resources/images/barns/75-90/4.jpg": {
+    "file": "assets/4-4257a7ff.jpg",
+    "src": "resources/images/barns/75-90/4.jpg"
+  },
+  "resources/images/barns/75-90/5-facade.jpg": {
+    "file": "assets/5-facade-13bd9c65.jpg",
+    "src": "resources/images/barns/75-90/5-facade.jpg"
+  },
+  "resources/images/barns/75-90/5.jpg": {
+    "file": "assets/5-74269d2e.jpg",
+    "src": "resources/images/barns/75-90/5.jpg"
+  },
+  "resources/images/barns/75-90/6-facade.jpg": {
+    "file": "assets/6-facade-9dad495b.jpg",
+    "src": "resources/images/barns/75-90/6-facade.jpg"
+  },
+  "resources/images/barns/75-90/6.jpg": {
+    "file": "assets/6-65c2fd2a.jpg",
+    "src": "resources/images/barns/75-90/6.jpg"
+  },
+  "resources/images/barns/75-90/plan.pdf": {
+    "file": "assets/plan-8641ea61.pdf",
+    "src": "resources/images/barns/75-90/plan.pdf"
+  },
+  "resources/images/barns/86-102/1-main.jpg": {
+    "file": "assets/1-main-8a3d1fe9.jpg",
+    "src": "resources/images/barns/86-102/1-main.jpg"
+  },
+  "resources/images/barns/86-102/1.jpg": {
+    "file": "assets/1-60a72e32.jpg",
+    "src": "resources/images/barns/86-102/1.jpg"
+  },
+  "resources/images/barns/86-102/2-main.jpg": {
+    "file": "assets/2-main-6f263eaf.jpg",
+    "src": "resources/images/barns/86-102/2-main.jpg"
+  },
+  "resources/images/barns/86-102/2.jpg": {
+    "file": "assets/2-4a0a1308.jpg",
+    "src": "resources/images/barns/86-102/2.jpg"
+  },
+  "resources/images/barns/86-102/3-main.jpg": {
+    "file": "assets/3-main-40edaa60.jpg",
+    "src": "resources/images/barns/86-102/3-main.jpg"
+  },
+  "resources/images/barns/86-102/3.jpg": {
+    "file": "assets/3-531b4c33.jpg",
+    "src": "resources/images/barns/86-102/3.jpg"
+  },
+  "resources/images/barns/86-102/4-main.jpg": {
+    "file": "assets/4-main-e02bf936.jpg",
+    "src": "resources/images/barns/86-102/4-main.jpg"
+  },
+  "resources/images/barns/86-102/4.jpg": {
+    "file": "assets/4-ac3c4891.jpg",
+    "src": "resources/images/barns/86-102/4.jpg"
+  },
+  "resources/images/barns/86-102/5-facade.jpg": {
+    "file": "assets/5-facade-a3ea3df3.jpg",
+    "src": "resources/images/barns/86-102/5-facade.jpg"
+  },
+  "resources/images/barns/86-102/5.jpg": {
+    "file": "assets/5-985d5e1e.jpg",
+    "src": "resources/images/barns/86-102/5.jpg"
+  },
+  "resources/images/barns/86-102/6-facade.jpg": {
+    "file": "assets/6-facade-d9a082ca.jpg",
+    "src": "resources/images/barns/86-102/6-facade.jpg"
+  },
+  "resources/images/barns/86-102/6.jpg": {
+    "file": "assets/6-7cb38dfd.jpg",
+    "src": "resources/images/barns/86-102/6.jpg"
+  },
+  "resources/images/barns/86-102/plan.pdf": {
+    "file": "assets/plan-445f87a6.pdf",
+    "src": "resources/images/barns/86-102/plan.pdf"
+  },
+  "resources/images/barns/87-110/1-main.jpg": {
+    "file": "assets/1-main-c0fa4a34.jpg",
+    "src": "resources/images/barns/87-110/1-main.jpg"
+  },
+  "resources/images/barns/87-110/1.jpg": {
+    "file": "assets/1-83d60d4a.jpg",
+    "src": "resources/images/barns/87-110/1.jpg"
+  },
+  "resources/images/barns/87-110/2-main.jpg": {
+    "file": "assets/2-main-c86a1c9c.jpg",
+    "src": "resources/images/barns/87-110/2-main.jpg"
+  },
+  "resources/images/barns/87-110/2.jpg": {
+    "file": "assets/2-5afadd5e.jpg",
+    "src": "resources/images/barns/87-110/2.jpg"
+  },
+  "resources/images/barns/87-110/3-main.jpg": {
+    "file": "assets/3-main-615cdd4c.jpg",
+    "src": "resources/images/barns/87-110/3-main.jpg"
+  },
+  "resources/images/barns/87-110/3.jpg": {
+    "file": "assets/3-e4477e71.jpg",
+    "src": "resources/images/barns/87-110/3.jpg"
+  },
+  "resources/images/barns/87-110/4-main.jpg": {
+    "file": "assets/4-main-75349b27.jpg",
+    "src": "resources/images/barns/87-110/4-main.jpg"
+  },
+  "resources/images/barns/87-110/4.jpg": {
+    "file": "assets/4-31a7ae75.jpg",
+    "src": "resources/images/barns/87-110/4.jpg"
+  },
+  "resources/images/barns/87-110/5-facade.jpg": {
+    "file": "assets/5-facade-64309be2.jpg",
+    "src": "resources/images/barns/87-110/5-facade.jpg"
+  },
+  "resources/images/barns/87-110/5.jpg": {
+    "file": "assets/5-eb2799da.jpg",
+    "src": "resources/images/barns/87-110/5.jpg"
+  },
+  "resources/images/barns/87-110/6-facade.jpg": {
+    "file": "assets/6-facade-bb0adbbe.jpg",
+    "src": "resources/images/barns/87-110/6-facade.jpg"
+  },
+  "resources/images/barns/87-110/6.jpg": {
+    "file": "assets/6-ee37955f.jpg",
+    "src": "resources/images/barns/87-110/6.jpg"
+  },
+  "resources/images/barns/87-110/plan.pdf": {
+    "file": "assets/plan-1201a739.pdf",
+    "src": "resources/images/barns/87-110/plan.pdf"
   },
   "resources/images/build/back.svg": {
     "file": "assets/back-4c90131f.svg",
@@ -288,6 +708,434 @@
     "file": "assets/toltip-3597fd91.svg",
     "src": "resources/images/components/toltip.svg"
   },
+  "resources/images/double/112-141/1-main.jpg": {
+    "file": "assets/1-main-8c8664c0.jpg",
+    "src": "resources/images/double/112-141/1-main.jpg"
+  },
+  "resources/images/double/112-141/1.jpg": {
+    "file": "assets/1-cad4a6f5.jpg",
+    "src": "resources/images/double/112-141/1.jpg"
+  },
+  "resources/images/double/112-141/2-main.jpg": {
+    "file": "assets/2-main-861f95cb.jpg",
+    "src": "resources/images/double/112-141/2-main.jpg"
+  },
+  "resources/images/double/112-141/2.jpg": {
+    "file": "assets/2-50368907.jpg",
+    "src": "resources/images/double/112-141/2.jpg"
+  },
+  "resources/images/double/112-141/3-main.jpg": {
+    "file": "assets/3-main-d8c219c5.jpg",
+    "src": "resources/images/double/112-141/3-main.jpg"
+  },
+  "resources/images/double/112-141/3.jpg": {
+    "file": "assets/3-12074612.jpg",
+    "src": "resources/images/double/112-141/3.jpg"
+  },
+  "resources/images/double/112-141/4-main.jpg": {
+    "file": "assets/4-main-36386c5f.jpg",
+    "src": "resources/images/double/112-141/4-main.jpg"
+  },
+  "resources/images/double/112-141/4.jpg": {
+    "file": "assets/4-8c532043.jpg",
+    "src": "resources/images/double/112-141/4.jpg"
+  },
+  "resources/images/double/112-141/5-facade.jpg": {
+    "file": "assets/5-facade-20069b55.jpg",
+    "src": "resources/images/double/112-141/5-facade.jpg"
+  },
+  "resources/images/double/112-141/5.jpg": {
+    "file": "assets/5-268c9572.jpg",
+    "src": "resources/images/double/112-141/5.jpg"
+  },
+  "resources/images/double/112-141/6-facade.jpg": {
+    "file": "assets/6-facade-2719ee66.jpg",
+    "src": "resources/images/double/112-141/6-facade.jpg"
+  },
+  "resources/images/double/112-141/6.jpg": {
+    "file": "assets/6-e6c21606.jpg",
+    "src": "resources/images/double/112-141/6.jpg"
+  },
+  "resources/images/double/112-141/plan.pdf": {
+    "file": "assets/plan-3cfdfb2a.pdf",
+    "src": "resources/images/double/112-141/plan.pdf"
+  },
+  "resources/images/double/123-160/1-main.jpg": {
+    "file": "assets/1-main-18ca487c.jpg",
+    "src": "resources/images/double/123-160/1-main.jpg"
+  },
+  "resources/images/double/123-160/1.jpg": {
+    "file": "assets/1-e6bfc21e.jpg",
+    "src": "resources/images/double/123-160/1.jpg"
+  },
+  "resources/images/double/123-160/2-main.jpg": {
+    "file": "assets/2-main-dd4b4eb2.jpg",
+    "src": "resources/images/double/123-160/2-main.jpg"
+  },
+  "resources/images/double/123-160/2.jpg": {
+    "file": "assets/2-385bf1d7.jpg",
+    "src": "resources/images/double/123-160/2.jpg"
+  },
+  "resources/images/double/123-160/3-main.jpg": {
+    "file": "assets/3-main-b555f9db.jpg",
+    "src": "resources/images/double/123-160/3-main.jpg"
+  },
+  "resources/images/double/123-160/3.jpg": {
+    "file": "assets/3-f9087ce7.jpg",
+    "src": "resources/images/double/123-160/3.jpg"
+  },
+  "resources/images/double/123-160/4-main.jpg": {
+    "file": "assets/4-main-7aa2eac0.jpg",
+    "src": "resources/images/double/123-160/4-main.jpg"
+  },
+  "resources/images/double/123-160/4.jpg": {
+    "file": "assets/4-efb31c99.jpg",
+    "src": "resources/images/double/123-160/4.jpg"
+  },
+  "resources/images/double/123-160/5-facade.jpg": {
+    "file": "assets/5-facade-24eecaec.jpg",
+    "src": "resources/images/double/123-160/5-facade.jpg"
+  },
+  "resources/images/double/123-160/5.jpg": {
+    "file": "assets/5-3f2372aa.jpg",
+    "src": "resources/images/double/123-160/5.jpg"
+  },
+  "resources/images/double/123-160/6-facade.jpg": {
+    "file": "assets/6-facade-75b8039a.jpg",
+    "src": "resources/images/double/123-160/6-facade.jpg"
+  },
+  "resources/images/double/123-160/6.jpg": {
+    "file": "assets/6-7907e893.jpg",
+    "src": "resources/images/double/123-160/6.jpg"
+  },
+  "resources/images/double/123-160/plan.pdf": {
+    "file": "assets/plan-176b60d3.pdf",
+    "src": "resources/images/double/123-160/plan.pdf"
+  },
+  "resources/images/double/136-165-2/1-main.jpg": {
+    "file": "assets/1-main-faa5286e.jpg",
+    "src": "resources/images/double/136-165-2/1-main.jpg"
+  },
+  "resources/images/double/136-165-2/1.jpg": {
+    "file": "assets/1-52aeb84a.jpg",
+    "src": "resources/images/double/136-165-2/1.jpg"
+  },
+  "resources/images/double/136-165-2/2-main.jpg": {
+    "file": "assets/2-main-790085ca.jpg",
+    "src": "resources/images/double/136-165-2/2-main.jpg"
+  },
+  "resources/images/double/136-165-2/2.jpg": {
+    "file": "assets/2-798ed6f0.jpg",
+    "src": "resources/images/double/136-165-2/2.jpg"
+  },
+  "resources/images/double/136-165-2/3-main.jpg": {
+    "file": "assets/3-main-ffa89862.jpg",
+    "src": "resources/images/double/136-165-2/3-main.jpg"
+  },
+  "resources/images/double/136-165-2/3.jpg": {
+    "file": "assets/3-72aa0b72.jpg",
+    "src": "resources/images/double/136-165-2/3.jpg"
+  },
+  "resources/images/double/136-165-2/4-main.jpg": {
+    "file": "assets/4-main-90fb5a3d.jpg",
+    "src": "resources/images/double/136-165-2/4-main.jpg"
+  },
+  "resources/images/double/136-165-2/4.jpg": {
+    "file": "assets/4-52d1008b.jpg",
+    "src": "resources/images/double/136-165-2/4.jpg"
+  },
+  "resources/images/double/136-165-2/5-facade.jpg": {
+    "file": "assets/5-facade-079b13e2.jpg",
+    "src": "resources/images/double/136-165-2/5-facade.jpg"
+  },
+  "resources/images/double/136-165-2/5.jpg": {
+    "file": "assets/5-dabe207c.jpg",
+    "src": "resources/images/double/136-165-2/5.jpg"
+  },
+  "resources/images/double/136-165-2/6-facade.jpg": {
+    "file": "assets/6-facade-e8bd4bec.jpg",
+    "src": "resources/images/double/136-165-2/6-facade.jpg"
+  },
+  "resources/images/double/136-165-2/6.jpg": {
+    "file": "assets/6-262d2f71.jpg",
+    "src": "resources/images/double/136-165-2/6.jpg"
+  },
+  "resources/images/double/136-165-2/plan.pdf": {
+    "file": "assets/plan-8412333b.pdf",
+    "src": "resources/images/double/136-165-2/plan.pdf"
+  },
+  "resources/images/double/136-165/1-main.jpg": {
+    "file": "assets/1-main-d941d39c.jpg",
+    "src": "resources/images/double/136-165/1-main.jpg"
+  },
+  "resources/images/double/136-165/1.jpg": {
+    "file": "assets/1-79b3a181.jpg",
+    "src": "resources/images/double/136-165/1.jpg"
+  },
+  "resources/images/double/136-165/2-main.jpg": {
+    "file": "assets/2-main-3570455c.jpg",
+    "src": "resources/images/double/136-165/2-main.jpg"
+  },
+  "resources/images/double/136-165/2.jpg": {
+    "file": "assets/2-bb78426b.jpg",
+    "src": "resources/images/double/136-165/2.jpg"
+  },
+  "resources/images/double/136-165/3-main.jpg": {
+    "file": "assets/3-main-a035d5f8.jpg",
+    "src": "resources/images/double/136-165/3-main.jpg"
+  },
+  "resources/images/double/136-165/3.jpg": {
+    "file": "assets/3-73383d69.jpg",
+    "src": "resources/images/double/136-165/3.jpg"
+  },
+  "resources/images/double/136-165/4-main.jpg": {
+    "file": "assets/4-main-a8944f4f.jpg",
+    "src": "resources/images/double/136-165/4-main.jpg"
+  },
+  "resources/images/double/136-165/4.jpg": {
+    "file": "assets/4-df1c798d.jpg",
+    "src": "resources/images/double/136-165/4.jpg"
+  },
+  "resources/images/double/136-165/5-facade.jpg": {
+    "file": "assets/5-facade-1be30750.jpg",
+    "src": "resources/images/double/136-165/5-facade.jpg"
+  },
+  "resources/images/double/136-165/5.jpg": {
+    "file": "assets/5-8daaa631.jpg",
+    "src": "resources/images/double/136-165/5.jpg"
+  },
+  "resources/images/double/136-165/6-facade.jpg": {
+    "file": "assets/6-facade-d05ab56d.jpg",
+    "src": "resources/images/double/136-165/6-facade.jpg"
+  },
+  "resources/images/double/136-165/6.jpg": {
+    "file": "assets/6-0aa86a81.jpg",
+    "src": "resources/images/double/136-165/6.jpg"
+  },
+  "resources/images/double/136-165/plan.pdf": {
+    "file": "assets/plan-46f36675.pdf",
+    "src": "resources/images/double/136-165/plan.pdf"
+  },
+  "resources/images/double/72-92/1-main.jpg": {
+    "file": "assets/1-main-e3feff87.jpg",
+    "src": "resources/images/double/72-92/1-main.jpg"
+  },
+  "resources/images/double/72-92/1.jpg": {
+    "file": "assets/1-61f3b7e4.jpg",
+    "src": "resources/images/double/72-92/1.jpg"
+  },
+  "resources/images/double/72-92/1.png": {
+    "file": "assets/1-45cf232d.png",
+    "src": "resources/images/double/72-92/1.png"
+  },
+  "resources/images/double/72-92/2-main.jpg": {
+    "file": "assets/2-main-3714ad8d.jpg",
+    "src": "resources/images/double/72-92/2-main.jpg"
+  },
+  "resources/images/double/72-92/2.jpg": {
+    "file": "assets/2-715548c3.jpg",
+    "src": "resources/images/double/72-92/2.jpg"
+  },
+  "resources/images/double/72-92/2.png": {
+    "file": "assets/2-f15bb403.png",
+    "src": "resources/images/double/72-92/2.png"
+  },
+  "resources/images/double/72-92/3-main.jpg": {
+    "file": "assets/3-main-a281def7.jpg",
+    "src": "resources/images/double/72-92/3-main.jpg"
+  },
+  "resources/images/double/72-92/3.jpg": {
+    "file": "assets/3-4b17f0fd.jpg",
+    "src": "resources/images/double/72-92/3.jpg"
+  },
+  "resources/images/double/72-92/4-main.jpg": {
+    "file": "assets/4-main-f22d08c8.jpg",
+    "src": "resources/images/double/72-92/4-main.jpg"
+  },
+  "resources/images/double/72-92/4.jpg": {
+    "file": "assets/4-4cf69a3e.jpg",
+    "src": "resources/images/double/72-92/4.jpg"
+  },
+  "resources/images/double/72-92/5-facade.jpg": {
+    "file": "assets/5-facade-3c49ee00.jpg",
+    "src": "resources/images/double/72-92/5-facade.jpg"
+  },
+  "resources/images/double/72-92/5.jpg": {
+    "file": "assets/5-0a6731a4.jpg",
+    "src": "resources/images/double/72-92/5.jpg"
+  },
+  "resources/images/double/72-92/6-facade.jpg": {
+    "file": "assets/6-facade-34536f92.jpg",
+    "src": "resources/images/double/72-92/6-facade.jpg"
+  },
+  "resources/images/double/72-92/6.jpg": {
+    "file": "assets/6-c2175866.jpg",
+    "src": "resources/images/double/72-92/6.jpg"
+  },
+  "resources/images/double/72-92/Thumbs.db": {
+    "file": "assets/Thumbs-f17fba29.db",
+    "src": "resources/images/double/72-92/Thumbs.db"
+  },
+  "resources/images/double/72-92/plan.pdf": {
+    "file": "assets/plan-fda803ff.pdf",
+    "src": "resources/images/double/72-92/plan.pdf"
+  },
+  "resources/images/double/75-92/1-main.jpg": {
+    "file": "assets/1-main-7c209746.jpg",
+    "src": "resources/images/double/75-92/1-main.jpg"
+  },
+  "resources/images/double/75-92/1.jpg": {
+    "file": "assets/1-0c2feedd.jpg",
+    "src": "resources/images/double/75-92/1.jpg"
+  },
+  "resources/images/double/75-92/2-main.jpg": {
+    "file": "assets/2-main-b84f16b3.jpg",
+    "src": "resources/images/double/75-92/2-main.jpg"
+  },
+  "resources/images/double/75-92/2.jpg": {
+    "file": "assets/2-e76798b5.jpg",
+    "src": "resources/images/double/75-92/2.jpg"
+  },
+  "resources/images/double/75-92/3-main.jpg": {
+    "file": "assets/3-main-cb34ce0d.jpg",
+    "src": "resources/images/double/75-92/3-main.jpg"
+  },
+  "resources/images/double/75-92/3.jpg": {
+    "file": "assets/3-fe7c9260.jpg",
+    "src": "resources/images/double/75-92/3.jpg"
+  },
+  "resources/images/double/75-92/4-main.jpg": {
+    "file": "assets/4-main-1c3d1dcc.jpg",
+    "src": "resources/images/double/75-92/4-main.jpg"
+  },
+  "resources/images/double/75-92/4.jpg": {
+    "file": "assets/4-dedf90e7.jpg",
+    "src": "resources/images/double/75-92/4.jpg"
+  },
+  "resources/images/double/75-92/5-facade.jpg": {
+    "file": "assets/5-facade-3f35afbc.jpg",
+    "src": "resources/images/double/75-92/5-facade.jpg"
+  },
+  "resources/images/double/75-92/5.jpg": {
+    "file": "assets/5-86ed5843.jpg",
+    "src": "resources/images/double/75-92/5.jpg"
+  },
+  "resources/images/double/75-92/6-facade.jpg": {
+    "file": "assets/6-facade-e903316b.jpg",
+    "src": "resources/images/double/75-92/6-facade.jpg"
+  },
+  "resources/images/double/75-92/6.jpg": {
+    "file": "assets/6-b78e17f1.jpg",
+    "src": "resources/images/double/75-92/6.jpg"
+  },
+  "resources/images/double/75-92/plan.pdf": {
+    "file": "assets/plan-825a6685.pdf",
+    "src": "resources/images/double/75-92/plan.pdf"
+  },
+  "resources/images/double/80-96/1-main.jpg": {
+    "file": "assets/1-main-1613260e.jpg",
+    "src": "resources/images/double/80-96/1-main.jpg"
+  },
+  "resources/images/double/80-96/1.jpg": {
+    "file": "assets/1-5c51f73b.jpg",
+    "src": "resources/images/double/80-96/1.jpg"
+  },
+  "resources/images/double/80-96/2-main.jpg": {
+    "file": "assets/2-main-28f6df4e.jpg",
+    "src": "resources/images/double/80-96/2-main.jpg"
+  },
+  "resources/images/double/80-96/2.jpg": {
+    "file": "assets/2-9c8d2970.jpg",
+    "src": "resources/images/double/80-96/2.jpg"
+  },
+  "resources/images/double/80-96/3-main.jpg": {
+    "file": "assets/3-main-81895d22.jpg",
+    "src": "resources/images/double/80-96/3-main.jpg"
+  },
+  "resources/images/double/80-96/3.jpg": {
+    "file": "assets/3-7129bb49.jpg",
+    "src": "resources/images/double/80-96/3.jpg"
+  },
+  "resources/images/double/80-96/4-main.jpg": {
+    "file": "assets/4-main-e18f3c95.jpg",
+    "src": "resources/images/double/80-96/4-main.jpg"
+  },
+  "resources/images/double/80-96/4.jpg": {
+    "file": "assets/4-c85d22ab.jpg",
+    "src": "resources/images/double/80-96/4.jpg"
+  },
+  "resources/images/double/80-96/5-facade.jpg": {
+    "file": "assets/5-facade-91ccbee3.jpg",
+    "src": "resources/images/double/80-96/5-facade.jpg"
+  },
+  "resources/images/double/80-96/5.jpg": {
+    "file": "assets/5-4aac7e83.jpg",
+    "src": "resources/images/double/80-96/5.jpg"
+  },
+  "resources/images/double/80-96/6-facade.jpg": {
+    "file": "assets/6-facade-1ca90d6b.jpg",
+    "src": "resources/images/double/80-96/6-facade.jpg"
+  },
+  "resources/images/double/80-96/6.jpg": {
+    "file": "assets/6-0e5ea38d.jpg",
+    "src": "resources/images/double/80-96/6.jpg"
+  },
+  "resources/images/double/80-96/plan.pdf": {
+    "file": "assets/plan-41ed6d61.pdf",
+    "src": "resources/images/double/80-96/plan.pdf"
+  },
+  "resources/images/double/98-115/1-main.jpg": {
+    "file": "assets/1-main-676ac4fa.jpg",
+    "src": "resources/images/double/98-115/1-main.jpg"
+  },
+  "resources/images/double/98-115/1.jpg": {
+    "file": "assets/1-10c7496e.jpg",
+    "src": "resources/images/double/98-115/1.jpg"
+  },
+  "resources/images/double/98-115/2-main.jpg": {
+    "file": "assets/2-main-2c63d867.jpg",
+    "src": "resources/images/double/98-115/2-main.jpg"
+  },
+  "resources/images/double/98-115/2.jpg": {
+    "file": "assets/2-c7186d6f.jpg",
+    "src": "resources/images/double/98-115/2.jpg"
+  },
+  "resources/images/double/98-115/3-main.jpg": {
+    "file": "assets/3-main-40894fdc.jpg",
+    "src": "resources/images/double/98-115/3-main.jpg"
+  },
+  "resources/images/double/98-115/3.jpg": {
+    "file": "assets/3-ca7a078e.jpg",
+    "src": "resources/images/double/98-115/3.jpg"
+  },
+  "resources/images/double/98-115/4-main.jpg": {
+    "file": "assets/4-main-080a0346.jpg",
+    "src": "resources/images/double/98-115/4-main.jpg"
+  },
+  "resources/images/double/98-115/4.jpg": {
+    "file": "assets/4-cca770bf.jpg",
+    "src": "resources/images/double/98-115/4.jpg"
+  },
+  "resources/images/double/98-115/5-facade.jpg": {
+    "file": "assets/5-facade-e6db2f0a.jpg",
+    "src": "resources/images/double/98-115/5-facade.jpg"
+  },
+  "resources/images/double/98-115/5.jpg": {
+    "file": "assets/5-11fdfdd7.jpg",
+    "src": "resources/images/double/98-115/5.jpg"
+  },
+  "resources/images/double/98-115/6-facade.jpg": {
+    "file": "assets/6-facade-c08ab919.jpg",
+    "src": "resources/images/double/98-115/6-facade.jpg"
+  },
+  "resources/images/double/98-115/6.jpg": {
+    "file": "assets/6-d09e56ec.jpg",
+    "src": "resources/images/double/98-115/6.jpg"
+  },
+  "resources/images/double/98-115/plan.pdf": {
+    "file": "assets/plan-37bf6204.pdf",
+    "src": "resources/images/double/98-115/plan.pdf"
+  },
   "resources/images/error/illustration.png": {
     "file": "assets/illustration-fa0e48ef.png",
     "src": "resources/images/error/illustration.png"
@@ -303,10 +1151,6 @@
   "resources/images/home/mont.png": {
     "file": "assets/mont-db8b3237.png",
     "src": "resources/images/home/mont.png"
-  },
-  "resources/images/house/home.mp4": {
-    "file": "assets/home-1361eaf6.mp4",
-    "src": "resources/images/house/home.mp4"
   },
   "resources/images/house/house.jpg": {
     "file": "assets/house-7bfb54e6.jpg",
@@ -444,9 +1288,53 @@
     "file": "assets/X-8c0dbaf2.svg",
     "src": "resources/images/modals/X.svg"
   },
+  "resources/images/mortgage/away.jpg": {
+    "file": "assets/away-3408e380.jpg",
+    "src": "resources/images/mortgage/away.jpg"
+  },
+  "resources/images/mortgage/famaly.jpg": {
+    "file": "assets/famaly-506fc4fa.jpg",
+    "src": "resources/images/mortgage/famaly.jpg"
+  },
+  "resources/images/mortgage/gos.jpg": {
+    "file": "assets/gos-ae92a74e.jpg",
+    "src": "resources/images/mortgage/gos.jpg"
+  },
+  "resources/images/mortgage/it.jpg": {
+    "file": "assets/it-ab13eb01.jpg",
+    "src": "resources/images/mortgage/it.jpg"
+  },
+  "resources/images/mortgage/vilage.jpg": {
+    "file": "assets/vilage-9301a592.jpg",
+    "src": "resources/images/mortgage/vilage.jpg"
+  },
   "resources/images/order/content.jpg": {
     "file": "assets/content-9d02146c.jpg",
     "src": "resources/images/order/content.jpg"
+  },
+  "resources/images/peculiarities_projects/Thumbs.db": {
+    "file": "assets/Thumbs-33d61bb7.db",
+    "src": "resources/images/peculiarities_projects/Thumbs.db"
+  },
+  "resources/images/peculiarities_projects/gard.jpg": {
+    "file": "assets/gard-0c5d8732.jpg",
+    "src": "resources/images/peculiarities_projects/gard.jpg"
+  },
+  "resources/images/peculiarities_projects/kitchen.jpg": {
+    "file": "assets/kitchen-e38c59b9.jpg",
+    "src": "resources/images/peculiarities_projects/kitchen.jpg"
+  },
+  "resources/images/peculiarities_projects/shale.jpg": {
+    "file": "assets/shale-4a962d30.jpg",
+    "src": "resources/images/peculiarities_projects/shale.jpg"
+  },
+  "resources/images/peculiarities_projects/terrase.jpg": {
+    "file": "assets/terrase-33a0ebb5.jpg",
+    "src": "resources/images/peculiarities_projects/terrase.jpg"
+  },
+  "resources/images/peculiarities_projects/window.jpg": {
+    "file": "assets/window-1a3f0427.jpg",
+    "src": "resources/images/peculiarities_projects/window.jpg"
   },
   "resources/images/people/alena.jpeg": {
     "file": "assets/alena-7318cb61.jpeg",
@@ -463,6 +1351,1398 @@
   "resources/images/project-item/plan.jpg": {
     "file": "assets/plan-9c24c624.jpg",
     "src": "resources/images/project-item/plan.jpg"
+  },
+  "resources/images/single/65-77/1.jpg": {
+    "file": "assets/1-200e210b.jpg",
+    "src": "resources/images/single/65-77/1.jpg"
+  },
+  "resources/images/single/65-77/2.jpg": {
+    "file": "assets/2-97f34a26.jpg",
+    "src": "resources/images/single/65-77/2.jpg"
+  },
+  "resources/images/single/65-77/3.jpg": {
+    "file": "assets/3-a9b8eb37.jpg",
+    "src": "resources/images/single/65-77/3.jpg"
+  },
+  "resources/images/single/65-77/4.jpg": {
+    "file": "assets/4-9a79f4a5.jpg",
+    "src": "resources/images/single/65-77/4.jpg"
+  },
+  "resources/images/single/65-77/Thumbs.db": {
+    "file": "assets/Thumbs-57618c4d.db",
+    "src": "resources/images/single/65-77/Thumbs.db"
+  },
+  "resources/images/single/65-77/plan.pdf": {
+    "file": "assets/plan-26d329de.pdf",
+    "src": "resources/images/single/65-77/plan.pdf"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3968.jpg": {
+    "file": "assets/IMG_3968-f287aa05.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3968.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3969.jpg": {
+    "file": "assets/IMG_3969-8de0f397.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3969.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3970.jpg": {
+    "file": "assets/IMG_3970-4e789ba9.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3970.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3973.jpg": {
+    "file": "assets/IMG_3973-c8479aea.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3973.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3974.jpg": {
+    "file": "assets/IMG_3974-f553f388.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3974.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3975.jpg": {
+    "file": "assets/IMG_3975-13ad9a2a.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3975.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3978.jpg": {
+    "file": "assets/IMG_3978-9adc49b6.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3978.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3979.jpg": {
+    "file": "assets/IMG_3979-7854d3c6.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3979.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3980.jpg": {
+    "file": "assets/IMG_3980-502424c1.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3980.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3981.jpg": {
+    "file": "assets/IMG_3981-68a70b5b.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3981.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3985.jpg": {
+    "file": "assets/IMG_3985-4a136594.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3985.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3986.jpg": {
+    "file": "assets/IMG_3986-751b6ce0.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3986.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3987.jpg": {
+    "file": "assets/IMG_3987-dfeac1cc.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3987.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3991.jpg": {
+    "file": "assets/IMG_3991-92c7482b.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3991.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3992.jpg": {
+    "file": "assets/IMG_3992-15a2c6bd.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3992.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3993.jpg": {
+    "file": "assets/IMG_3993-c0f06502.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3993.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3994.jpg": {
+    "file": "assets/IMG_3994-eae1c08d.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3994.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3995.jpg": {
+    "file": "assets/IMG_3995-4c1dd221.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3995.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3996.jpg": {
+    "file": "assets/IMG_3996-4b68a14b.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3996.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3997.jpg": {
+    "file": "assets/IMG_3997-567dcf9c.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3997.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/IMG_3998.jpg": {
+    "file": "assets/IMG_3998-e5df6e03.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3998.jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/Thumbs.db": {
+    "file": "assets/Thumbs-63bca5de.db",
+    "src": "resources/images/single/65-77/ОД 65 - 77/Thumbs.db"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/Казакова (3).jpg": {
+    "file": "assets/Казакова (3)-73ac25aa.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/Казакова (3).jpg"
+  },
+  "resources/images/single/65-77/ОД 65 - 77/Казакова (8).jpg": {
+    "file": "assets/Казакова (8)-7ef275be.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/Казакова (8).jpg"
+  },
+  "resources/images/single/69-81/1.jpg": {
+    "file": "assets/1-a52c48c1.jpg",
+    "src": "resources/images/single/69-81/1.jpg"
+  },
+  "resources/images/single/69-81/2.jpg": {
+    "file": "assets/2-b284b566.jpg",
+    "src": "resources/images/single/69-81/2.jpg"
+  },
+  "resources/images/single/69-81/3.jpg": {
+    "file": "assets/3-c70a4146.jpg",
+    "src": "resources/images/single/69-81/3.jpg"
+  },
+  "resources/images/single/69-81/4.jpg": {
+    "file": "assets/4-21167c78.jpg",
+    "src": "resources/images/single/69-81/4.jpg"
+  },
+  "resources/images/single/69-81/Thumbs.db": {
+    "file": "assets/Thumbs-38b896b2.db",
+    "src": "resources/images/single/69-81/Thumbs.db"
+  },
+  "resources/images/single/69-81/plan.pdf": {
+    "file": "assets/plan-f2f491e0.pdf",
+    "src": "resources/images/single/69-81/plan.pdf"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Thumbs.db": {
+    "file": "assets/Thumbs-d117e030.db",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Thumbs.db"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03731.jpg": {
+    "file": "assets/DSC03731-d21fddee.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03731.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03732.jpg": {
+    "file": "assets/DSC03732-a279a2e5.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03732.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03734.jpg": {
+    "file": "assets/DSC03734-01e6970d.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03734.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03735.jpg": {
+    "file": "assets/DSC03735-3c0983c2.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03735.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03738.jpg": {
+    "file": "assets/DSC03738-36edcdef.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03738.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03739.jpg": {
+    "file": "assets/DSC03739-8ddf4e57.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/DSC03739.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4058.jpg": {
+    "file": "assets/IMG_4058-d0da8e67.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4058.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4060.jpg": {
+    "file": "assets/IMG_4060-72e42bd5.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4060.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4061.jpg": {
+    "file": "assets/IMG_4061-6cc97211.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4061.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4062.jpg": {
+    "file": "assets/IMG_4062-23af133c.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4062.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4064.jpg": {
+    "file": "assets/IMG_4064-97044f87.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4064.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4065.jpg": {
+    "file": "assets/IMG_4065-1e07115d.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4065.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4066.jpg": {
+    "file": "assets/IMG_4066-e0089aab.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4066.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4068.jpg": {
+    "file": "assets/IMG_4068-f808bb63.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4068.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4069.jpg": {
+    "file": "assets/IMG_4069-afca0164.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4069.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4071.jpg": {
+    "file": "assets/IMG_4071-9fc0a878.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4071.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4072.jpg": {
+    "file": "assets/IMG_4072-e96c54ad.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4072.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4073.jpg": {
+    "file": "assets/IMG_4073-a45ef0dd.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4073.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4075.jpg": {
+    "file": "assets/IMG_4075-65d55f23.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4075.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4076.jpg": {
+    "file": "assets/IMG_4076-849f34a2.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4076.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4077.jpg": {
+    "file": "assets/IMG_4077-3d88fcf2.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4077.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4078.jpg": {
+    "file": "assets/IMG_4078-c3b8aa0f.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4078.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/Thumbs.db": {
+    "file": "assets/Thumbs-b1acca24.db",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/Thumbs.db"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3774.jpg": {
+    "file": "assets/IMG_3774-27aea032.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3774.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3776.jpg": {
+    "file": "assets/IMG_3776-9cca1d17.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3776.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3777.jpg": {
+    "file": "assets/IMG_3777-a287785f.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3777.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3778.jpg": {
+    "file": "assets/IMG_3778-6c25d25e.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3778.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3779.jpg": {
+    "file": "assets/IMG_3779-285ec605.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3779.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3780.jpg": {
+    "file": "assets/IMG_3780-bfa65661.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3780.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3783.jpg": {
+    "file": "assets/IMG_3783-9c02416e.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3783.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3784.jpg": {
+    "file": "assets/IMG_3784-989d9ede.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3784.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3785.jpg": {
+    "file": "assets/IMG_3785-0d595488.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3785.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3787.jpg": {
+    "file": "assets/IMG_3787-53ff7704.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3787.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3788.jpg": {
+    "file": "assets/IMG_3788-9fb05aa1.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3788.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3789.jpg": {
+    "file": "assets/IMG_3789-5f465986.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3789.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3790.jpg": {
+    "file": "assets/IMG_3790-86942b76.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3790.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3791.jpg": {
+    "file": "assets/IMG_3791-5729ab3f.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3791.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3792.jpg": {
+    "file": "assets/IMG_3792-4f0d820b.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3792.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3793.jpg": {
+    "file": "assets/IMG_3793-468bcbbe.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3793.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3794.jpg": {
+    "file": "assets/IMG_3794-fe903580.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3794.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3795.jpg": {
+    "file": "assets/IMG_3795-6feec36a.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3795.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3797.jpg": {
+    "file": "assets/IMG_3797-4647bd27.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3797.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3799.jpg": {
+    "file": "assets/IMG_3799-86f4a1e4.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3799.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3800.jpg": {
+    "file": "assets/IMG_3800-f1c2a8ad.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3800.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3801.jpg": {
+    "file": "assets/IMG_3801-71ecaaae.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3801.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3803.jpg": {
+    "file": "assets/IMG_3803-ead49246.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3803.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3804.jpg": {
+    "file": "assets/IMG_3804-8964a26b.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3804.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3805.jpg": {
+    "file": "assets/IMG_3805-ce8b9de4.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3805.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3806.jpg": {
+    "file": "assets/IMG_3806-a51077da.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3806.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3807.jpg": {
+    "file": "assets/IMG_3807-e71b951f.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3807.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3808.jpg": {
+    "file": "assets/IMG_3808-00c9469b.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3808.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3809.jpg": {
+    "file": "assets/IMG_3809-80fec043.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3809.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3811.jpg": {
+    "file": "assets/IMG_3811-18b80ebb.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3811.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3812.jpg": {
+    "file": "assets/IMG_3812-2f39c894.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3812.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3814.jpg": {
+    "file": "assets/IMG_3814-d9c5259b.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3814.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3815.jpg": {
+    "file": "assets/IMG_3815-960c7e60.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3815.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3816.jpg": {
+    "file": "assets/IMG_3816-37e17a2c.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3816.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3817.jpg": {
+    "file": "assets/IMG_3817-02160271.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3817.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3818.jpg": {
+    "file": "assets/IMG_3818-1180dac5.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3818.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3819.jpg": {
+    "file": "assets/IMG_3819-2c93c105.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3819.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3820.jpg": {
+    "file": "assets/IMG_3820-aa9495f9.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3820.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3821.jpg": {
+    "file": "assets/IMG_3821-50a69c47.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3821.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3822.jpg": {
+    "file": "assets/IMG_3822-3c03a308.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3822.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3823.jpg": {
+    "file": "assets/IMG_3823-8bb376ba.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3823.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3824.jpg": {
+    "file": "assets/IMG_3824-507f682a.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3824.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3825.jpg": {
+    "file": "assets/IMG_3825-a0560744.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3825.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3827.jpg": {
+    "file": "assets/IMG_3827-fa8172dd.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3827.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3829.jpg": {
+    "file": "assets/IMG_3829-8a50f726.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3829.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3830.jpg": {
+    "file": "assets/IMG_3830-db6fcb59.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3830.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3831.jpg": {
+    "file": "assets/IMG_3831-38d191f9.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3831.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3832.jpg": {
+    "file": "assets/IMG_3832-fb825ce0.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3832.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3833.jpg": {
+    "file": "assets/IMG_3833-b55b8c07.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3833.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3835.jpg": {
+    "file": "assets/IMG_3835-d536da93.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3835.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3837.jpg": {
+    "file": "assets/IMG_3837-31594131.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3837.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3838.jpg": {
+    "file": "assets/IMG_3838-cecbbdf6.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3838.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3839.jpg": {
+    "file": "assets/IMG_3839-e73126d4.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3839.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3840.jpg": {
+    "file": "assets/IMG_3840-b72abc0a.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3840.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3841.jpg": {
+    "file": "assets/IMG_3841-92ff3bc7.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3841.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3843.jpg": {
+    "file": "assets/IMG_3843-26a4555d.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3843.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3845.jpg": {
+    "file": "assets/IMG_3845-51657ca4.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3845.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3846.jpg": {
+    "file": "assets/IMG_3846-ba1eb352.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3846.jpg"
+  },
+  "resources/images/single/69-81/ОД 69 - 81/Слюсарь/Thumbs.db": {
+    "file": "assets/Thumbs-1eb1f86a.db",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/Thumbs.db"
+  },
+  "resources/images/single/79-101/1.jpg": {
+    "file": "assets/1-f63310eb.jpg",
+    "src": "resources/images/single/79-101/1.jpg"
+  },
+  "resources/images/single/79-101/2.jpg": {
+    "file": "assets/2-35f13f62.jpg",
+    "src": "resources/images/single/79-101/2.jpg"
+  },
+  "resources/images/single/79-101/3.jpg": {
+    "file": "assets/3-e2634206.jpg",
+    "src": "resources/images/single/79-101/3.jpg"
+  },
+  "resources/images/single/79-101/4.jpg": {
+    "file": "assets/4-9f7c41f7.jpg",
+    "src": "resources/images/single/79-101/4.jpg"
+  },
+  "resources/images/single/79-101/5.jpg": {
+    "file": "assets/5-9efe46d1.jpg",
+    "src": "resources/images/single/79-101/5.jpg"
+  },
+  "resources/images/single/79-101/Thumbs.db": {
+    "file": "assets/Thumbs-a77b8820.db",
+    "src": "resources/images/single/79-101/Thumbs.db"
+  },
+  "resources/images/single/79-101/plan.pdf": {
+    "file": "assets/plan-7b6c5a63.pdf",
+    "src": "resources/images/single/79-101/plan.pdf"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4002.jpg": {
+    "file": "assets/IMG_4002-42f022c2.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4002.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4003.jpg": {
+    "file": "assets/IMG_4003-77007613.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4003.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4004.jpg": {
+    "file": "assets/IMG_4004-a3f2ee37.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4004.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4006.jpg": {
+    "file": "assets/IMG_4006-23126789.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4006.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4007.jpg": {
+    "file": "assets/IMG_4007-b123287a.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4007.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4008.jpg": {
+    "file": "assets/IMG_4008-df6b4306.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4008.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4009.jpg": {
+    "file": "assets/IMG_4009-3bdb9fe1.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4009.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4010.jpg": {
+    "file": "assets/IMG_4010-09333819.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4010.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4012.jpg": {
+    "file": "assets/IMG_4012-4871bf5b.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4012.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4013.jpg": {
+    "file": "assets/IMG_4013-4917c3b9.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4013.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4014.jpg": {
+    "file": "assets/IMG_4014-f191f925.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4014.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4015.jpg": {
+    "file": "assets/IMG_4015-da9ffcf6.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4015.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4016.jpg": {
+    "file": "assets/IMG_4016-25ef5d9c.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4016.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4017.jpg": {
+    "file": "assets/IMG_4017-a756d2cc.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4017.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4018.jpg": {
+    "file": "assets/IMG_4018-b301ad92.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4018.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4019.jpg": {
+    "file": "assets/IMG_4019-a1666f6f.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4019.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4021.jpg": {
+    "file": "assets/IMG_4021-6c6808d1.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4021.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4022.jpg": {
+    "file": "assets/IMG_4022-b422f032.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4022.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4023.jpg": {
+    "file": "assets/IMG_4023-a1ea4850.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4023.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4024.jpg": {
+    "file": "assets/IMG_4024-a1580ff4.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4024.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4025.jpg": {
+    "file": "assets/IMG_4025-6644a070.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4025.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4027.jpg": {
+    "file": "assets/IMG_4027-264dccc3.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4027.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4028.jpg": {
+    "file": "assets/IMG_4028-9f97d1f0.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4028.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4029.jpg": {
+    "file": "assets/IMG_4029-89ea4661.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4029.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4030.jpg": {
+    "file": "assets/IMG_4030-5a2e4fcf.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4030.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4031.jpg": {
+    "file": "assets/IMG_4031-b8e21ca9.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4031.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4032.jpg": {
+    "file": "assets/IMG_4032-232ba52b.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4032.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4033.jpg": {
+    "file": "assets/IMG_4033-7605741a.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4033.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4034.jpg": {
+    "file": "assets/IMG_4034-bf0b2b1d.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4034.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4035.jpg": {
+    "file": "assets/IMG_4035-bb852391.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4035.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4036.jpg": {
+    "file": "assets/IMG_4036-76e215a0.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4036.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4038.jpg": {
+    "file": "assets/IMG_4038-3d0e9815.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4038.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4039.jpg": {
+    "file": "assets/IMG_4039-cbad17fc.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4039.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4040.jpg": {
+    "file": "assets/IMG_4040-4794bc67.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4040.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4041.jpg": {
+    "file": "assets/IMG_4041-d3b664dc.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4041.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4042.jpg": {
+    "file": "assets/IMG_4042-f0c553cf.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4042.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4043.jpg": {
+    "file": "assets/IMG_4043-00bda9d5.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4043.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4044.jpg": {
+    "file": "assets/IMG_4044-8f076a9f.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4044.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4045.jpg": {
+    "file": "assets/IMG_4045-aa9291d3.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4045.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4046.jpg": {
+    "file": "assets/IMG_4046-8638b779.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4046.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4047.jpg": {
+    "file": "assets/IMG_4047-6c3b9454.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4047.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4048.jpg": {
+    "file": "assets/IMG_4048-adca7c50.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4048.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4049.jpg": {
+    "file": "assets/IMG_4049-03d37394.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4049.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4050.jpg": {
+    "file": "assets/IMG_4050-b3a173bd.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4050.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4051.jpg": {
+    "file": "assets/IMG_4051-caef04cc.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4051.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4052.jpg": {
+    "file": "assets/IMG_4052-1e2618ea.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4052.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4053.jpg": {
+    "file": "assets/IMG_4053-a7e5b7fd.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4053.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4054.jpg": {
+    "file": "assets/IMG_4054-6a5d1ea8.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4054.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4055.jpg": {
+    "file": "assets/IMG_4055-b2e433f3.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4055.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4056.jpg": {
+    "file": "assets/IMG_4056-d564fe08.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4056.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/IMG_4057.jpg": {
+    "file": "assets/IMG_4057-555a926a.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4057.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Thumbs.db": {
+    "file": "assets/Thumbs-ab62c98e.db",
+    "src": "resources/images/single/79-101/ОД 79 -101/Thumbs.db"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Белик/Thumbs.db": {
+    "file": "assets/Thumbs-6bf81b42.db",
+    "src": "resources/images/single/79-101/ОД 79 -101/Белик/Thumbs.db"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Белик/Белик (3).JPG": {
+    "file": "assets/Белик (3)-dd9f40d9.JPG",
+    "src": "resources/images/single/79-101/ОД 79 -101/Белик/Белик (3).JPG"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Белик/Белик (4).JPG": {
+    "file": "assets/Белик (4)-381f786b.JPG",
+    "src": "resources/images/single/79-101/ОД 79 -101/Белик/Белик (4).JPG"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/DSC03742.jpg": {
+    "file": "assets/DSC03742-741b545a.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/DSC03742.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4166.jpg": {
+    "file": "assets/IMG_4166-fcbcb3a0.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4166.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4168.jpg": {
+    "file": "assets/IMG_4168-b0b7789d.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4168.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4169.jpg": {
+    "file": "assets/IMG_4169-52e77afb.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4169.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4170.jpg": {
+    "file": "assets/IMG_4170-33f184e9.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4170.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4171.jpg": {
+    "file": "assets/IMG_4171-ba00bf13.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4171.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4172.jpg": {
+    "file": "assets/IMG_4172-b578598c.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4172.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4174.jpg": {
+    "file": "assets/IMG_4174-4c64213c.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4174.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4175.jpg": {
+    "file": "assets/IMG_4175-96b1790c.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4175.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4176.jpg": {
+    "file": "assets/IMG_4176-ddc9306d.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4176.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4177.jpg": {
+    "file": "assets/IMG_4177-b48a20b5.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4177.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4178.jpg": {
+    "file": "assets/IMG_4178-8d0b4f6c.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4178.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4179.jpg": {
+    "file": "assets/IMG_4179-9eac7c22.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4179.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4180.jpg": {
+    "file": "assets/IMG_4180-503bc0eb.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4180.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4181.jpg": {
+    "file": "assets/IMG_4181-10f3eaf1.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4181.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4183.jpg": {
+    "file": "assets/IMG_4183-235fa025.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4183.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4184.jpg": {
+    "file": "assets/IMG_4184-7ba8ae7f.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4184.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4185.jpg": {
+    "file": "assets/IMG_4185-da193d80.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4185.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4186.jpg": {
+    "file": "assets/IMG_4186-b329131b.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4186.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4187.jpg": {
+    "file": "assets/IMG_4187-f783e7aa.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4187.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4189.jpg": {
+    "file": "assets/IMG_4189-af83123d.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4189.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4190.jpg": {
+    "file": "assets/IMG_4190-f95689a0.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4190.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4191.jpg": {
+    "file": "assets/IMG_4191-076b6b9e.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4191.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4192.jpg": {
+    "file": "assets/IMG_4192-216e2ab3.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4192.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4193.jpg": {
+    "file": "assets/IMG_4193-02889b92.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4193.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4194.jpg": {
+    "file": "assets/IMG_4194-d3ac17e1.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4194.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4195.jpg": {
+    "file": "assets/IMG_4195-62ffcc2f.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4195.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4196.jpg": {
+    "file": "assets/IMG_4196-cce8d2bd.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4196.jpg"
+  },
+  "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/Thumbs.db": {
+    "file": "assets/Thumbs-10ae4e85.db",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/Thumbs.db"
+  },
+  "resources/images/single/83-109/1.jpg": {
+    "file": "assets/1-4d63a13c.jpg",
+    "src": "resources/images/single/83-109/1.jpg"
+  },
+  "resources/images/single/83-109/2.jpg": {
+    "file": "assets/2-28f50343.jpg",
+    "src": "resources/images/single/83-109/2.jpg"
+  },
+  "resources/images/single/83-109/3.jpg": {
+    "file": "assets/3-73a93a85.jpg",
+    "src": "resources/images/single/83-109/3.jpg"
+  },
+  "resources/images/single/83-109/4.jpg": {
+    "file": "assets/4-0695b3a5.jpg",
+    "src": "resources/images/single/83-109/4.jpg"
+  },
+  "resources/images/single/83-109/5.jpg": {
+    "file": "assets/5-ff07328a.jpg",
+    "src": "resources/images/single/83-109/5.jpg"
+  },
+  "resources/images/single/83-109/Thumbs.db": {
+    "file": "assets/Thumbs-33c555fc.db",
+    "src": "resources/images/single/83-109/Thumbs.db"
+  },
+  "resources/images/single/83-109/plan.pdf": {
+    "file": "assets/plan-1e83510f.pdf",
+    "src": "resources/images/single/83-109/plan.pdf"
+  },
+  "resources/images/single/92-112/1.jpg": {
+    "file": "assets/1-46ecd1b1.jpg",
+    "src": "resources/images/single/92-112/1.jpg"
+  },
+  "resources/images/single/92-112/2.jpg": {
+    "file": "assets/2-efdec394.jpg",
+    "src": "resources/images/single/92-112/2.jpg"
+  },
+  "resources/images/single/92-112/3.jpg": {
+    "file": "assets/3-17943130.jpg",
+    "src": "resources/images/single/92-112/3.jpg"
+  },
+  "resources/images/single/92-112/4.jpg": {
+    "file": "assets/4-80f52c16.jpg",
+    "src": "resources/images/single/92-112/4.jpg"
+  },
+  "resources/images/single/92-112/Thumbs.db": {
+    "file": "assets/Thumbs-19ca7b6f.db",
+    "src": "resources/images/single/92-112/Thumbs.db"
+  },
+  "resources/images/single/92-112/plan.pdf": {
+    "file": "assets/plan-b73f6fc1.pdf",
+    "src": "resources/images/single/92-112/plan.pdf"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Thumbs.db": {
+    "file": "assets/Thumbs-b1fafd50.db",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Thumbs.db"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3731.jpg": {
+    "file": "assets/IMG_3731-685aef54.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3731.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3732.jpg": {
+    "file": "assets/IMG_3732-c88c8aad.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3732.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3737.jpg": {
+    "file": "assets/IMG_3737-31d44114.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3737.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3740.jpg": {
+    "file": "assets/IMG_3740-6624b52c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3740.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3742.jpg": {
+    "file": "assets/IMG_3742-58bd45a2.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3742.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3743.jpg": {
+    "file": "assets/IMG_3743-ea4c26ea.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3743.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3745.jpg": {
+    "file": "assets/IMG_3745-fb3a534d.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3745.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3748.jpg": {
+    "file": "assets/IMG_3748-980e8b17.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3748.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3749.jpg": {
+    "file": "assets/IMG_3749-da408a60.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3749.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3756.jpg": {
+    "file": "assets/IMG_3756-1f7c4a39.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3756.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3759.jpg": {
+    "file": "assets/IMG_3759-4ce1d2ec.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3759.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3760.jpg": {
+    "file": "assets/IMG_3760-5aaf010d.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3760.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3761.jpg": {
+    "file": "assets/IMG_3761-225f8d8a.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3761.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3763.jpg": {
+    "file": "assets/IMG_3763-d3cf1eb3.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3763.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3765.jpg": {
+    "file": "assets/IMG_3765-e505d233.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3765.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3767.jpg": {
+    "file": "assets/IMG_3767-7847fa63.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3767.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3769.jpg": {
+    "file": "assets/IMG_3769-addc57c0.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3769.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3771.jpg": {
+    "file": "assets/IMG_3771-eec1bb5f.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3771.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3772.jpg": {
+    "file": "assets/IMG_3772-e4d2c2c1.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3772.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3773.jpg": {
+    "file": "assets/IMG_3773-88677f0c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3773.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/Thumbs.db": {
+    "file": "assets/Thumbs-53773adb.db",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/Thumbs.db"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3847.jpg": {
+    "file": "assets/IMG_3847-728de67c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3847.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3848.jpg": {
+    "file": "assets/IMG_3848-a3527556.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3848.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3849.jpg": {
+    "file": "assets/IMG_3849-d2d94671.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3849.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3850.jpg": {
+    "file": "assets/IMG_3850-27a2150c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3850.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3851.jpg": {
+    "file": "assets/IMG_3851-a07d00b9.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3851.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3852.jpg": {
+    "file": "assets/IMG_3852-e7a085c7.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3852.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3853.jpg": {
+    "file": "assets/IMG_3853-6b7db5d4.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3853.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3854.jpg": {
+    "file": "assets/IMG_3854-de818cf0.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3854.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3856.jpg": {
+    "file": "assets/IMG_3856-e8fe0ee2.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3856.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3857.jpg": {
+    "file": "assets/IMG_3857-2e2770a7.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3857.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3860.jpg": {
+    "file": "assets/IMG_3860-cd384646.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3860.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3861.jpg": {
+    "file": "assets/IMG_3861-ffdc629a.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3861.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3862.jpg": {
+    "file": "assets/IMG_3862-862bd399.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3862.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3865.jpg": {
+    "file": "assets/IMG_3865-01d7b9f0.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3865.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3866.jpg": {
+    "file": "assets/IMG_3866-e3d0f4a7.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3866.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3867.jpg": {
+    "file": "assets/IMG_3867-e087b5d0.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3867.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3869.jpg": {
+    "file": "assets/IMG_3869-6c73fb70.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3869.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3871.jpg": {
+    "file": "assets/IMG_3871-5619decd.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3871.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3873.jpg": {
+    "file": "assets/IMG_3873-700362be.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3873.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3876.jpg": {
+    "file": "assets/IMG_3876-8ed133f7.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3876.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3879.jpg": {
+    "file": "assets/IMG_3879-d517999e.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3879.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3880.jpg": {
+    "file": "assets/IMG_3880-05b1c62d.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3880.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3881.jpg": {
+    "file": "assets/IMG_3881-e359b1a3.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3881.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3883.jpg": {
+    "file": "assets/IMG_3883-eb5f6a30.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3883.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3888.jpg": {
+    "file": "assets/IMG_3888-61d3018d.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3888.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3890.jpg": {
+    "file": "assets/IMG_3890-9c39a9cb.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3890.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3891.jpg": {
+    "file": "assets/IMG_3891-266cca31.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3891.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3892.jpg": {
+    "file": "assets/IMG_3892-6263e51e.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3892.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3893.jpg": {
+    "file": "assets/IMG_3893-66265180.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3893.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3894.jpg": {
+    "file": "assets/IMG_3894-afb2f4b5.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3894.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3896.jpg": {
+    "file": "assets/IMG_3896-324f22db.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3896.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3900.jpg": {
+    "file": "assets/IMG_3900-46dce2ee.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3900.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3902.jpg": {
+    "file": "assets/IMG_3902-c8942645.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3902.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3903.jpg": {
+    "file": "assets/IMG_3903-7c154be3.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3903.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3904.jpg": {
+    "file": "assets/IMG_3904-d7942c04.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3904.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3906.jpg": {
+    "file": "assets/IMG_3906-6bec2e43.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3906.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3907.jpg": {
+    "file": "assets/IMG_3907-00ae4053.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3907.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3908.jpg": {
+    "file": "assets/IMG_3908-d573308d.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3908.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3909.jpg": {
+    "file": "assets/IMG_3909-dc428081.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3909.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3910.jpg": {
+    "file": "assets/IMG_3910-185295f9.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3910.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3911.jpg": {
+    "file": "assets/IMG_3911-3541f099.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3911.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3912.jpg": {
+    "file": "assets/IMG_3912-9d5e360d.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3912.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3913.jpg": {
+    "file": "assets/IMG_3913-5a637e28.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3913.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3914.jpg": {
+    "file": "assets/IMG_3914-0b6c889f.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3914.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3918.jpg": {
+    "file": "assets/IMG_3918-e10c14b1.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3918.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3919.jpg": {
+    "file": "assets/IMG_3919-663a37b2.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3919.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3921.jpg": {
+    "file": "assets/IMG_3921-45b0d1a6.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3921.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3922.jpg": {
+    "file": "assets/IMG_3922-26d439a9.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3922.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3923.jpg": {
+    "file": "assets/IMG_3923-889b57c2.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3923.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3925.jpg": {
+    "file": "assets/IMG_3925-8bc664f4.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3925.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3926.jpg": {
+    "file": "assets/IMG_3926-438c6cc6.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3926.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3927.jpg": {
+    "file": "assets/IMG_3927-8ebdec8f.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3927.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3928.jpg": {
+    "file": "assets/IMG_3928-5f066f23.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3928.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3930.jpg": {
+    "file": "assets/IMG_3930-8b4b8a61.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3930.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3931.jpg": {
+    "file": "assets/IMG_3931-e368ba63.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3931.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3932.jpg": {
+    "file": "assets/IMG_3932-6251c183.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3932.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3933.jpg": {
+    "file": "assets/IMG_3933-565e4ec9.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3933.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3934.jpg": {
+    "file": "assets/IMG_3934-9803d0a6.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3934.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3935.jpg": {
+    "file": "assets/IMG_3935-cd58b662.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3935.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3936.jpg": {
+    "file": "assets/IMG_3936-36dde10e.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3936.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3938.jpg": {
+    "file": "assets/IMG_3938-55f78650.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3938.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3939.jpg": {
+    "file": "assets/IMG_3939-216aae9e.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3939.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3941.jpg": {
+    "file": "assets/IMG_3941-f8f8a151.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3941.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3944.jpg": {
+    "file": "assets/IMG_3944-21a4a4e4.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3944.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3945.jpg": {
+    "file": "assets/IMG_3945-a22d6279.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3945.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3946.jpg": {
+    "file": "assets/IMG_3946-ba4d9e1c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3946.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3947.jpg": {
+    "file": "assets/IMG_3947-a76f661c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3947.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3948.jpg": {
+    "file": "assets/IMG_3948-7422b36c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3948.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3950.jpg": {
+    "file": "assets/IMG_3950-b3633388.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3950.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3955.jpg": {
+    "file": "assets/IMG_3955-5924b596.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3955.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3956.jpg": {
+    "file": "assets/IMG_3956-d3da4ac3.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3956.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3957.jpg": {
+    "file": "assets/IMG_3957-30506ed2.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3957.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3958.jpg": {
+    "file": "assets/IMG_3958-3e1adf59.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3958.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3959.jpg": {
+    "file": "assets/IMG_3959-5479e382.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3959.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3960.jpg": {
+    "file": "assets/IMG_3960-160d4bf9.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3960.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3961.jpg": {
+    "file": "assets/IMG_3961-8965fdb4.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3961.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3963.jpg": {
+    "file": "assets/IMG_3963-69e2e0c7.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3963.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3964.jpg": {
+    "file": "assets/IMG_3964-a92e3a84.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3964.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3965.jpg": {
+    "file": "assets/IMG_3965-936dacd1.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3965.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3966.jpg": {
+    "file": "assets/IMG_3966-5c969916.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3966.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3967.jpg": {
+    "file": "assets/IMG_3967-794ecb40.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3967.jpg"
+  },
+  "resources/images/single/92-112/ОД 92 - 112/Самолетов/Thumbs.db": {
+    "file": "assets/Thumbs-4ba595ab.db",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/Thumbs.db"
+  },
+  "resources/images/sip/1.jpg": {
+    "file": "assets/1-0282cb6b.jpg",
+    "src": "resources/images/sip/1.jpg"
+  },
+  "resources/images/sip/10.jpg": {
+    "file": "assets/10-a090a3ea.jpg",
+    "src": "resources/images/sip/10.jpg"
+  },
+  "resources/images/sip/11.jpg": {
+    "file": "assets/11-51501f4e.jpg",
+    "src": "resources/images/sip/11.jpg"
+  },
+  "resources/images/sip/12.jpg": {
+    "file": "assets/12-a98ef450.jpg",
+    "src": "resources/images/sip/12.jpg"
+  },
+  "resources/images/sip/13.jpg": {
+    "file": "assets/13-26791333.jpg",
+    "src": "resources/images/sip/13.jpg"
+  },
+  "resources/images/sip/14.jpg": {
+    "file": "assets/14-928d2cb5.jpg",
+    "src": "resources/images/sip/14.jpg"
+  },
+  "resources/images/sip/15.jpg": {
+    "file": "assets/15-4b4134fb.jpg",
+    "src": "resources/images/sip/15.jpg"
+  },
+  "resources/images/sip/16.jpg": {
+    "file": "assets/16-0b665370.jpg",
+    "src": "resources/images/sip/16.jpg"
+  },
+  "resources/images/sip/17.jpg": {
+    "file": "assets/17-6fc1f543.jpg",
+    "src": "resources/images/sip/17.jpg"
+  },
+  "resources/images/sip/18.jpg": {
+    "file": "assets/18-8f6e874a.jpg",
+    "src": "resources/images/sip/18.jpg"
+  },
+  "resources/images/sip/19.jpg": {
+    "file": "assets/19-820378cc.jpg",
+    "src": "resources/images/sip/19.jpg"
+  },
+  "resources/images/sip/2.jpg": {
+    "file": "assets/2-a1837eda.jpg",
+    "src": "resources/images/sip/2.jpg"
+  },
+  "resources/images/sip/20.jpg": {
+    "file": "assets/20-ee1ab5b3.jpg",
+    "src": "resources/images/sip/20.jpg"
+  },
+  "resources/images/sip/21.jpg": {
+    "file": "assets/21-c2e9b88e.jpg",
+    "src": "resources/images/sip/21.jpg"
+  },
+  "resources/images/sip/3.jpg": {
+    "file": "assets/3-edc19ef9.jpg",
+    "src": "resources/images/sip/3.jpg"
+  },
+  "resources/images/sip/4.jpg": {
+    "file": "assets/4-59c1d55d.jpg",
+    "src": "resources/images/sip/4.jpg"
+  },
+  "resources/images/sip/5.jpg": {
+    "file": "assets/5-942578bc.jpg",
+    "src": "resources/images/sip/5.jpg"
+  },
+  "resources/images/sip/6.jpg": {
+    "file": "assets/6-ad89b6b7.jpg",
+    "src": "resources/images/sip/6.jpg"
+  },
+  "resources/images/sip/7.jpg": {
+    "file": "assets/7-6abc4623.jpg",
+    "src": "resources/images/sip/7.jpg"
+  },
+  "resources/images/sip/8.jpg": {
+    "file": "assets/8-78f572ba.jpg",
+    "src": "resources/images/sip/8.jpg"
+  },
+  "resources/images/sip/9.jpg": {
+    "file": "assets/9-829e45d9.jpg",
+    "src": "resources/images/sip/9.jpg"
   },
   "resources/images/stage/img.png": {
     "file": "assets/img-6a90b0cc.png",
@@ -599,7 +2879,7 @@
     "src": "resources/js/pages/mortgage/mortgage.js"
   },
   "resources/js/pages/project-item/project-item.js": {
-    "file": "assets/project-item-47ec3e61.js",
+    "file": "assets/project-item-cfc209e9.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
       "_project-item-5c3e1fdf.js"

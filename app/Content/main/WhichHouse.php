@@ -31,9 +31,7 @@ class WhichHouse implements Arrayable
                     src: 'resources/images/barns/29-42/4.jpg',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/about", text: 'Подробнее'))->toArray(),
-                'video' => (new Video(
-                    src: 'resources/images/house/home.mp4',
-                ))->getSrc()
+                'video' => '/video/main/home.mp4'
             ],
             [
                 'text'     => __('Рассчитайте ипотеку'),

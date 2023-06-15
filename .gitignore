@@ -17,7 +17,6 @@ yarn-error.log
 /.idea
 /.vscode
 /public/video
-/resources/images/barns
-/resources/images/double
+
 *.mp4
 *.mov

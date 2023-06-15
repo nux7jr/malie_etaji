@@ -18,13 +18,31 @@ class Reels implements Arrayable
   {
     self::$card_elements = [
       [
-        (new Video(
-          src: 'resources/images/reels/1.mov',
-        ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/2.mov',
-        ))->getSrc(),
-        
+        '/video/reels/2.mov',
+        '/video/reels/3.mov',
+        '/video/reels/4.mov',
+        '/video/reels/5.mov',
+        '/video/reels/6.mov',
+        '/video/reels/7.mov',
+        '/video/reels/8.mov',
+        '/video/reels/9.mov',
+        '/video/reels/10.mov',
+        '/video/reels/11.mov',
+        '/video/reels/12.mov',
+
+
+        '/video/reels/13.mp4',
+        '/video/reels/14.mp4',
+        '/video/reels/15.mp4',
+        '/video/reels/16.mp4',
+        '/video/reels/17.mp4',
+        '/video/reels/18.mp4',
+        '/video/reels/19.mp4',
+        '/video/reels/20.mp4',
+        '/video/reels/21.mp4',
+        '/video/reels/22.mp4',
+        '/video/reels/23.mp4',
+
       ],
     ];
   }
