@@ -24,30 +24,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/29-42/1-main.jpg',
+            src: 'barns/29-42/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/2-main.jpg',
+            src: 'barns/29-42/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/3-main.jpg',
+            src: 'barns/29-42/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/4-main.jpg',
+            src: 'barns/29-42/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/29-42/1.jpg',
+            src: 'barns/29-42/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/2.jpg',
+            src: 'barns/29-42/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/3.jpg',
+            src: 'barns/29-42/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/4.jpg',
+            src: 'barns/29-42/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 919000,
@@ -74,10 +74,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/29-42/5.jpg',
+            src: 'barns/29-42/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/29-42/6.jpg',
+            src: 'barns/29-42/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса'],
@@ -89,10 +89,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/29-42/5-facade.jpg',
+              src: 'barns/29-42/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/29-42/6-facade.jpg',
+              src: 'barns/29-42/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -114,30 +114,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/53-56/1-main.jpg',
+            src: 'barns/53-56/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/2-main.jpg',
+            src: 'barns/53-56/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/3-main.jpg',
+            src: 'barns/53-56/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/4-main.jpg',
+            src: 'barns/53-56/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/53-56/1.jpg',
+            src: 'barns/53-56/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/2.jpg',
+            src: 'barns/53-56/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/3.jpg',
+            src: 'barns/53-56/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/4.jpg',
+            src: 'barns/53-56/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 1666000,
@@ -164,10 +164,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/53-56/5.jpg',
+            src: 'barns/53-56/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/53-56/6.jpg',
+            src: 'barns/53-56/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Кладовая', 'Терраса'],
@@ -179,10 +179,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/53-56/5-facade.jpg',
+              src: 'barns/53-56/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/53-56/6-facade.jpg',
+              src: 'barns/53-56/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -204,30 +204,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/60-78/1-main.jpg',
+            src: 'barns/60-78/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/2-main.jpg',
+            src: 'barns/60-78/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/3-main.jpg',
+            src: 'barns/60-78/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/4-main.jpg',
+            src: 'barns/60-78/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/60-78/1.jpg',
+            src: 'barns/60-78/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/2.jpg',
+            src: 'barns/60-78/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/3.jpg',
+            src: 'barns/60-78/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/4.jpg',
+            src: 'barns/60-78/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 1799000,
@@ -252,10 +252,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/60-78/5.jpg',
+            src: 'barns/60-78/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/60-78/6.jpg',
+            src: 'barns/60-78/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Кладовая', 'Терраса'],
@@ -267,10 +267,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/60-78/5-facade.jpg',
+              src: 'barns/60-78/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/60-78/6-facade.jpg',
+              src: 'barns/60-78/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -293,30 +293,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/62-67/1-main.jpg',
+            src: 'barns/62-67/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/2-main.jpg',
+            src: 'barns/62-67/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/3-main.jpg',
+            src: 'barns/62-67/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/4-main.jpg',
+            src: 'barns/62-67/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/62-67/1.jpg',
+            src: 'barns/62-67/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/2.jpg',
+            src: 'barns/62-67/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/3.jpg',
+            src: 'barns/62-67/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/4.jpg',
+            src: 'barns/62-67/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 1833000,
@@ -340,10 +340,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/62-67/5.jpg',
+            src: 'barns/62-67/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/62-67/6.jpg',
+            src: 'barns/62-67/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса'],
@@ -355,10 +355,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/62-67/5-facade.jpg',
+              src: 'barns/62-67/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/62-67/6-facade.jpg',
+              src: 'barns/62-67/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -380,30 +380,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/63-76/1-main.jpg',
+            src: 'barns/63-76/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/2-main.jpg',
+            src: 'barns/63-76/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/3-main.jpg',
+            src: 'barns/63-76/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/4-main.jpg',
+            src: 'barns/63-76/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/63-76/1.jpg',
+            src: 'barns/63-76/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/2.jpg',
+            src: 'barns/63-76/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/3.jpg',
+            src: 'barns/63-76/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/4.jpg',
+            src: 'barns/63-76/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 1917000,
@@ -427,10 +427,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/63-76/5.jpg',
+            src: 'barns/63-76/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/63-76/6.jpg',
+            src: 'barns/63-76/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса', 'Кладовая'],
@@ -442,10 +442,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/63-76/5-facade.jpg',
+              src: 'barns/63-76/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/63-76/6-facade.jpg',
+              src: 'barns/63-76/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -467,30 +467,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/75-90/1-main.jpg',
+            src: 'barns/75-90/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/2-main.jpg',
+            src: 'barns/75-90/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/3-main.jpg',
+            src: 'barns/75-90/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/4-main.jpg',
+            src: 'barns/75-90/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/75-90/1.jpg',
+            src: 'barns/75-90/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/2.jpg',
+            src: 'barns/75-90/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/3.jpg',
+            src: 'barns/75-90/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/4.jpg',
+            src: 'barns/75-90/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 2260000,
@@ -514,10 +514,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/75-90/5.jpg',
+            src: 'barns/75-90/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/75-90/6.jpg',
+            src: 'barns/75-90/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса'],
@@ -529,10 +529,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/75-90/5-facade.jpg',
+              src: 'barns/75-90/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/75-90/6-facade.jpg',
+              src: 'barns/75-90/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -554,30 +554,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/86-102/1-main.jpg',
+            src: 'barns/86-102/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/2-main.jpg',
+            src: 'barns/86-102/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/3-main.jpg',
+            src: 'barns/86-102/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/4-main.jpg',
+            src: 'barns/86-102/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/86-102/1.jpg',
+            src: 'barns/86-102/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/2.jpg',
+            src: 'barns/86-102/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/3.jpg',
+            src: 'barns/86-102/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/4.jpg',
+            src: 'barns/86-102/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 2469000,
@@ -601,10 +601,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/86-102/5.jpg',
+            src: 'barns/86-102/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/86-102/6.jpg',
+            src: 'barns/86-102/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса'],
@@ -616,10 +616,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/86-102/5-facade.jpg',
+              src: 'barns/86-102/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/86-102/6-facade.jpg',
+              src: 'barns/86-102/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -641,30 +641,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/barns/87-110/1-main.jpg',
+            src: 'barns/87-110/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/2-main.jpg',
+            src: 'barns/87-110/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/3-main.jpg',
+            src: 'barns/87-110/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/4-main.jpg',
+            src: 'barns/87-110/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/barns/87-110/1.jpg',
+            src: 'barns/87-110/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/2.jpg',
+            src: 'barns/87-110/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/3.jpg',
+            src: 'barns/87-110/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/4.jpg',
+            src: 'barns/87-110/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 2704000,
@@ -688,10 +688,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/barns/87-110/5.jpg',
+            src: 'barns/87-110/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/barns/87-110/6.jpg',
+            src: 'barns/87-110/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса', 'Гардеробная'],
@@ -703,10 +703,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/barns/87-110/5-facade.jpg',
+              src: 'barns/87-110/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/barns/87-110/6-facade.jpg',
+              src: 'barns/87-110/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -729,30 +729,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/112-141/1-main.jpg',
+            src: 'double/112-141/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/2-main.jpg',
+            src: 'double/112-141/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/3-main.jpg',
+            src: 'double/112-141/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/4-main.jpg',
+            src: 'double/112-141/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/double/112-141/1.jpg',
+            src: 'double/112-141/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/2.jpg',
+            src: 'double/112-141/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/3.jpg',
+            src: 'double/112-141/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/4.jpg',
+            src: 'double/112-141/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 2651000,
@@ -776,10 +776,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/double/112-141/5.jpg',
+            src: 'double/112-141/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/112-141/6.jpg',
+            src: 'double/112-141/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса', 'Кабинет'],
@@ -791,10 +791,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/112-141/5-facade.jpg',
+              src: 'double/112-141/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/112-141/6-facade.jpg',
+              src: 'double/112-141/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -816,30 +816,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/123-160/1-main.jpg',
+            src: 'double/123-160/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/2-main.jpg',
+            src: 'double/123-160/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/3-main.jpg',
+            src: 'double/123-160/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/4-main.jpg',
+            src: 'double/123-160/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/double/123-160/1.jpg',
+            src: 'double/123-160/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/2.jpg',
+            src: 'double/123-160/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/3.jpg',
+            src: 'double/123-160/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/4.jpg',
+            src: 'double/123-160/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 2914000,
@@ -863,10 +863,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/double/123-160/5.jpg',
+            src: 'double/123-160/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/6.jpg',
+            src: 'double/123-160/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса', 'Балкон'],
@@ -878,10 +878,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/123-160/5-facade.jpg',
+              src: 'double/123-160/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/123-160/6-facade.jpg',
+              src: 'double/123-160/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -903,30 +903,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/136-165/1-main.jpg',
+            src: 'double/136-165/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/2-main.jpg',
+            src: 'double/136-165/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/3-main.jpg',
+            src: 'double/136-165/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/4-main.jpg',
+            src: 'double/136-165/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/double/136-165/1.jpg',
+            src: 'double/136-165/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/2.jpg',
+            src: 'double/136-165/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/3.jpg',
+            src: 'double/136-165/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165/4.jpg',
+            src: 'double/136-165/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 3270000,
@@ -950,10 +950,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/double/123-160/5.jpg',
+            src: 'double/123-160/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/123-160/6.jpg',
+            src: 'double/123-160/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Гараж', 'Терраса', 'Кабинет'],
@@ -965,10 +965,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/123-160/5-facade.jpg',
+              src: 'double/123-160/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/123-160/6-facade.jpg',
+              src: 'double/123-160/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -990,30 +990,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/136-165-2/1-main.jpg',
+            src: 'double/136-165-2/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/2-main.jpg',
+            src: 'double/136-165-2/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/3-main.jpg',
+            src: 'double/136-165-2/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/4-main.jpg',
+            src: 'double/136-165-2/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/double/136-165-2/1.jpg',
+            src: 'double/136-165-2/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/2.jpg',
+            src: 'double/136-165-2/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/3.jpg',
+            src: 'double/136-165-2/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/4.jpg',
+            src: 'double/136-165-2/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 3270000,
@@ -1037,10 +1037,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/double/136-165-2/5.jpg',
+            src: 'double/136-165-2/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/136-165-2/6.jpg',
+            src: 'double/136-165-2/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Гараж', 'Терраса', 'Кабинет'],
@@ -1052,10 +1052,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/136-165-2/5-facade.jpg',
+              src: 'double/136-165-2/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/136-165-2/6-facade.jpg',
+              src: 'double/136-165-2/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -1077,30 +1077,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/72-92/1-main.jpg',
+            src: 'double/72-92/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/2-main.jpg',
+            src: 'double/72-92/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/3-main.jpg',
+            src: 'double/72-92/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/4-main.jpg',
+            src: 'double/72-92/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/double/72-92/1.jpg',
+            src: 'double/72-92/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/2.jpg',
+            src: 'double/72-92/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/3.jpg',
+            src: 'double/72-92/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/4.jpg',
+            src: 'double/72-92/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 1880000,
@@ -1125,10 +1125,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/double/72-92/5.jpg',
+            src: 'double/72-92/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/72-92/6.jpg',
+            src: 'double/72-92/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса', 'Гардеробная'],
@@ -1140,10 +1140,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/72-92/5-facade.jpg',
+              src: 'double/72-92/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/72-92/6-facade.jpg',
+              src: 'double/72-92/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [
@@ -1165,30 +1165,30 @@ class HousesInfo
         'title' => __('Дом'),
         'big_slider_images' => [
           (new Image(
-            src: 'resources/images/double/75-92/1-main.jpg',
+            src: 'double/75-92/1-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/2-main.jpg',
+            src: 'double/75-92/2-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/3-main.jpg',
+            src: 'double/75-92/3-main.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/4-main.jpg',
+            src: 'double/75-92/4-main.jpg',
           ))->getSrc(),
         ],
         'small_images' => [
           (new Image(
-            src: 'resources/images/double/75-92/1.jpg',
+            src: 'double/75-92/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/2.jpg',
+            src: 'double/75-92/2.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/3.jpg',
+            src: 'double/75-92/3.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/4.jpg',
+            src: 'double/75-92/4.jpg',
           ))->getSrc(),
         ],
         'price_kit' => 1943000,
@@ -1213,10 +1213,10 @@ class HousesInfo
         'download' => '/someurl',
         'about_images' => [
           (new Image(
-            src: 'resources/images/double/75-92/5.jpg',
+            src: 'double/75-92/5.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'resources/images/double/75-92/6.jpg',
+            src: 'double/75-92/6.jpg',
           ))->getSrc(),
         ],
         'tags' => ['Терраса', 'Тех.помещение'],
@@ -1228,10 +1228,10 @@ class HousesInfo
           ],
           'facade' => [
             (new Image(
-              src: 'resources/images/double/75-92/5-facade.jpg',
+              src: 'double/75-92/5-facade.jpg',
             ))->getSrc(),
             (new Image(
-              src: 'resources/images/double/75-92/6-facade.jpg',
+              src: 'double/75-92/6-facade.jpg',
             ))->getSrc()
           ],
           '3d' => [

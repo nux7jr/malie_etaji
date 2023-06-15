@@ -19,7 +19,7 @@ class StageCards implements Arrayable
     self::$card_elements = [
       [
         'image' => (new Image(
-          src: 'resources/images/stage/img.png',
+          src: 'stage/img.png',
         ))->getSrc(),
         'title' => __('Согласование предварительных вопросов'),
         'stage' => __('Время: 1 день'),
@@ -33,7 +33,7 @@ class StageCards implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/stage/img.png',
+          src: 'stage/img.png',
         ))->getSrc(),
         'title' => __('Если нужен проект, выбираем из типовых или разрабатываем индивидуальный'),
         'stage' => __('Время: от 10 дней'),
@@ -49,7 +49,7 @@ class StageCards implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/stage/img.png',
+          src: 'stage/img.png',
         ))->getSrc(),
         'title' => __('Заливка фундамента. Начало строительства'),
         'stage' => __('Время: от 14 дней'),
@@ -62,12 +62,12 @@ class StageCards implements Arrayable
           __('Демонтаж опалубки;'),
           __('Обратная засыпка грунта.'),
         ],
-        'paraf' => __('Заливка фундамент - это самый тяжелый и ответственный этап строительства дома. 
+        'paraf' => __('Заливка фундамент - это самый тяжелый и ответственный этап строительства дома.
         ')
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/stage/img.png',
+          src: 'stage/img.png',
         ))->getSrc(),
         'title' => __('Возведение стен'),
         'stage' => __('Время: 20-30 дней'),
@@ -84,7 +84,7 @@ class StageCards implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/stage/img.png',
+          src: 'stage/img.png',
         ))->getSrc(),
         'title' => __('Установка крыши'),
         'stage' => __('Время: 7-14 дней'),
@@ -99,7 +99,7 @@ class StageCards implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/stage/img.png',
+          src: 'stage/img.png',
         ))->getSrc(),
         'title' => __('Внешняя отделка'),
         'stage' => __('Время: 7-14 дней'),

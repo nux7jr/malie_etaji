@@ -20,7 +20,7 @@ class WhichHouse implements Arrayable
             [
                 'text'     => __('Скачайте полный каталог'),
                 'background' => (new Image(
-                    src: 'resources/images/home/catal.png',
+                    src: 'home/catal.png',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/asd.pdf", text: 'Скачать в PDF'))->toArray(),
                 'video' => '',
@@ -28,7 +28,7 @@ class WhichHouse implements Arrayable
             [
                 'text'     => __('О компании Малые этажи'),
                 'background' => (new Image(
-                    src: 'resources/images/barns/29-42/4.jpg',
+                    src: 'barns/29-42/4.jpg',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/about", text: 'Подробнее'))->toArray(),
                 'video' => '/video/main/home.mp4'
@@ -36,7 +36,7 @@ class WhichHouse implements Arrayable
             [
                 'text'     => __('Рассчитайте ипотеку'),
                 'background' => (new Image(
-                    src: 'resources/images/home/mont.png',
+                    src: 'home/mont.png',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/mortgage/#mortgage-programs", text: 'Рассчитать'))->toArray(),
                 'video' => ''
