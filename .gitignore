@@ -16,7 +16,8 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-resources/images/barns
-resources/images/double
+/public/video
+/resources/images/barns
+/resources/images/double
 *.mp4
 *.mov

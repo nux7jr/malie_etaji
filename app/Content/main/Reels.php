@@ -24,27 +24,7 @@ class Reels implements Arrayable
         (new Video(
           src: 'resources/images/reels/2.mov',
         ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/3.mov',
-        ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/4.mov',
-        ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/5.mov',
-        ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/6.mov',
-        ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/7.mov',
-        ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/8.mov',
-        ))->getSrc(),
-        (new Video(
-          src: 'resources/images/reels/9.mov',
-        ))->getSrc(),
+        
       ],
     ];
   }
