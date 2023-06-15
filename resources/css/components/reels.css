@@ -3,7 +3,7 @@
     border-radius: var(--border-raduis-defalut);
 }
 .reels-swiper {
-    height: 409px;
+    height: 482px;
 }
 .reels__heading {
     font-weight: 700;
@@ -17,12 +17,36 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.pag-block {
+    position: relative;
+    height: 40px;
+}
+.reels-pagination {
+    top: -45px !important;
+}
+.reels-pagination > .swiper-pagination-bullet {
+    width: 40px;
+    height: 8px;
+    border-radius: 35px;
+    opacity: 1;
+    background-color: var(--color-pink);
+}
+.reels-pagination > .swiper-pagination-bullet-active {
+    width: 71px;
+    background-color: var(--color-red);
+}
 @media (max-width: 768px) {
     .reels__heading {
         padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 24px;
     }
     .reels {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    .reels-video {
+        margin: 0 auto;
+        display: block;
     }
 }

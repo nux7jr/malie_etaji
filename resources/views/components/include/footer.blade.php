@@ -15,7 +15,7 @@ $links = new Links();
             <h3 class="footer-info__title footer__title">
                 {{ __('Есть вопросы и предложения?') }}
             </h3>
-            <button class="default__button footer-info__button">
+            <button class="default__button footer-info__button" data-modal_id="modal__call">
                 {{ __('Напишите нам') }}
             </button>
             <hr class="footer-info__hr" />
@@ -24,16 +24,16 @@ $links = new Links();
                 <div class="footer-info__social social">
                     <a class="social__link" href="http://" target="_blank" rel="noopener noreferrer">
                         <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/telega.svg')}}"
-                             alt="telegram">
+                            alt="telegram">
                     </a>
                     <a class="social__link" href="https://www.youtube.com/channel/UCAKkEcrR2pzA8Z9KKbL-i7Q"
-                       target="_blank" rel="noopener noreferrer">
+                        target="_blank" rel="noopener noreferrer">
                         <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/youtube.svg')}}"
-                             alt="youtube">
+                            alt="youtube">
                     </a>
                     <a class="social__link" href="https://vk.com/malie_etaji" target="_blank" rel="noopener noreferrer">
                         <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/vk.svg')}}"
-                             alt="vk">
+                            alt="vk">
                     </a>
                 </div>
             </h3>

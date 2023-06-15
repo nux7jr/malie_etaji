@@ -175,3 +175,6 @@ Route::get('/contacts', function () {
         '1' => ['path' => '/contacts', 'name' => 'Контакты'],
     ]]);
 });
+Route::get('/menu', function () {
+    return view('menu.index');
+});

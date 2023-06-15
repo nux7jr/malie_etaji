@@ -23,6 +23,8 @@ $reels = (new Reels())->toArray();
       </div>
       @endforeach
     </div>
-    <div class="swiper-pagination reels-pagination"></div>
+    <div class="pag-block">
+      <div class="swiper-pagination reels-pagination"></div>
+    </div>
   </div>
 </section>

@@ -30,3 +30,28 @@
     background-color: var(--color-pink);
     font-weight: 700;
 }
+@media (max-width: 1200px) {
+    .error {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .error__text {
+        min-width: fit-content;
+        padding: 42px 20px;
+        height: auto;
+    }
+    .error__option {
+        flex-direction: column;
+    }
+    .error__link {
+        width: fit-content;
+    }
+    .error__heading {
+        font-size: 24px;
+    }
+    .error__paraf {
+        font-size: 12px;
+    }
+}

@@ -105,6 +105,67 @@
 .modal__image-close {
     pointer-events: none;
 }
+.modal-thx {
+    display: none;
+    gap: 30px;
+    position: relative;
+    border-top-right-radius: var(--border-raduis-defalut);
+    background-color: white;
+    border-top-left-radius: var(--border-raduis-defalut);
+    padding: 60px 50px;
+    padding-right: 100px;
+    color: var(--color--black);
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s all;
+}
+.modal-thx__heading {
+    color: var(--color--black);
+    font-size: 31px;
+}
+.modal-thx__paraf {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-grayest);
+}
+.call__form {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.modal__heading {
+    font-weight: 700;
+    font-size: 31px;
+}
+.modal__paraf {
+    font-size: 16px;
+}
+.call__item {
+    flex-direction: row;
+}
+.call__item > .default__input {
+    flex: 1;
+}
+.call__item > .default__button {
+    flex: 1;
+}
+.income__item {
+    flex-direction: row;
+}
+.income__item > .default__input {
+    flex: 1;
+}
+.income__item > .default__button {
+    flex: 1;
+}
+@media (max-width: 1440px) {
+    .income__item {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 1200px) {
     .modal__content,
     .modal__form {
@@ -114,14 +175,16 @@
         padding: 20px;
         padding-top: 60px;
     }
-    .modal__heading {
+    .modal__heading,
+    .modal-thx__heading {
         font-size: 20px;
     }
     .modal__close {
         right: 20px;
         top: 20px;
     }
-    .modal__paraf {
+    .modal__paraf,
+    .modal-thx__paraf {
         margin-top: 30px;
         font-size: 12px;
     }
@@ -147,6 +210,13 @@
         padding: 0;
         margin: 0;
         font-size: 10px;
+    }
+    .call__form {
+        display: flex;
+        gap: 10px;
+    }
+    .call__item {
+        flex-direction: column;
     }
 }
 @media (max-width: 992px) {

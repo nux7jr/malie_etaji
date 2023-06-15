@@ -1,33 +1,22 @@
-@push('head')
-@once
-@vite('resources/js/components/mob_menu.js')
-@vite('resources/css/components/mob_menu.css')
-@endonce
-@endpush
 
 <div class="mob-menu">
   <div class="mob-menu__wrapper">
-    <a href="/projects">
-      <img src="" alt="icon">
+    <a class="mob-menu__link" href="/projects">
+      <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/projects.svg') }}" alt="icon">
       <span>{{__('Проекты')}}</span>
     </a>
-    <a href="/projects">
-      <img src="" alt="icon">
+    <a class="mob-menu__link" href="/projects">
+      <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/motage.svg') }}" alt="icon">
+
       <span>{{__('Ипотека')}}</span>
     </a>
-    <a href="/profile">
-      <img src="" alt="icon">
+    <a class="mob-menu__link" href="/profile">
+      <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/profile.svg') }}" alt="icon">
       <span>{{__('Профиль')}}</span>
     </a>
-    <a>
-      <img src="" alt="icon">
+    <a class="mob-menu__link" href="/menu">
+      <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/menu.svg') }}" alt="icon">
       <span>{{__('Меню')}}</span>
     </a>
-  </div>
-  <div class="scroll-menu">
-    <button class="geo-menu">
-      <img class="geo-img" src="" alt="geo">
-      <span class="geo-text">{{__('Екатеринбург')}}</span>
-    </button>
   </div>
 </div>
