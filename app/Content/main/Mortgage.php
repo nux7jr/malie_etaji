@@ -19,7 +19,7 @@ class Mortgage implements Arrayable
     self::$card_elements = [
       [
         'image' => (new Image(
-          src: 'resources/images/mortgage/famaly.jpg',
+          src: 'mortgage/famaly.jpg',
         ))->getSrc(),
         'text' => [
           __('«Семейная ипотека» — это программа жилищного кредитования для российских семей с детьми, которые могут взять в ее рамках льготную ипотеку по сниженной ставке.'),
@@ -37,7 +37,7 @@ class Mortgage implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/mortgage/famaly.jpg',
+          src: 'mortgage/famaly.jpg',
         ))->getSrc(),
         'text' => [
           __('«Семейная ипотека» — это программа жилищного кредитования для российских семей с детьми, которые могут взять в ее рамках льготную ипотеку по сниженной ставке.'),

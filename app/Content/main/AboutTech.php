@@ -28,7 +28,7 @@ class AboutTech implements Arrayable
           (new Link(null, link: "/live", text: 'Live-трансляция строительства'))->toArray(),
         ],
         'image' => (new Image(
-          src: 'resources/images/about/sip.jpg',
+          src: 'about/sip.jpg',
         ))->getSrc(),
       ];
     // !img!

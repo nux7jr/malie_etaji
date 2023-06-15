@@ -19,67 +19,67 @@ class Sip implements Arrayable
     self::$card_elements = [
       [
         (new Image(
-          src: 'resources/images/sip/1.jpg',
+          src: 'sip/1.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/2.jpg',
+          src: 'sip/2.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/3.jpg',
+          src: 'sip/3.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/4.jpg',
+          src: 'sip/4.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/5.jpg',
+          src: 'sip/5.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/6.jpg',
+          src: 'sip/6.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/7.jpg',
+          src: 'sip/7.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/8.jpg',
+          src: 'sip/8.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/9.jpg',
+          src: 'sip/9.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/10.jpg',
+          src: 'sip/10.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/11.jpg',
+          src: 'sip/11.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/12.jpg',
+          src: 'sip/12.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/13.jpg',
+          src: 'sip/13.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/14.jpg',
+          src: 'sip/14.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/15.jpg',
+          src: 'sip/15.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/16.jpg',
+          src: 'sip/16.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/17.jpg',
+          src: 'sip/17.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/18.jpg',
+          src: 'sip/18.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/19.jpg',
+          src: 'sip/19.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/20.jpg',
+          src: 'sip/20.jpg',
         ))->getSrc(),
         (new Image(
-          src: 'resources/images/sip/21.jpg',
+          src: 'sip/21.jpg',
         ))->getSrc()
       ],
     ];

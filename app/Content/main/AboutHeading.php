@@ -28,7 +28,7 @@ class AboutHeading implements Arrayable
           (new Link(null, link: "#certificates", text: 'Сертификаты и лицензии'))->toArray(),
         ],
         'image' => (new Image(
-          src: 'resources/images/about/about.jpg',
+          src: 'about/about.jpg',
         ))->getSrc(),
       ];
     // !img!

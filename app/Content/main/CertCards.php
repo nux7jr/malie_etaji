@@ -18,25 +18,25 @@ class CertCards implements Arrayable
   {
     self::$card_elements = [
       (new Image(
-        src: 'resources/images/cert/4.jpg',
+        src: 'cert/4.jpg',
       ))->getSrc(),
       (new Image(
-        src: 'resources/images/cert/5.jpg',
+        src: 'cert/5.jpg',
       ))->getSrc(),
       (new Image(
-        src: 'resources/images/cert/6.jpg',
+        src: 'cert/6.jpg',
       ))->getSrc(),
       (new Image(
-        src: 'resources/images/cert/7.jpg',
+        src: 'cert/7.jpg',
       ))->getSrc(),
       (new Image(
-        src: 'resources/images/cert/1.jfif',
+        src: 'cert/1.jfif',
       ))->getSrc(),
       (new Image(
-        src: 'resources/images/cert/2.jfif',
+        src: 'cert/2.jfif',
       ))->getSrc(),
       (new Image(
-        src: 'resources/images/cert/3.jfif',
+        src: 'cert/3.jfif',
       ))->getSrc(),
 
     ];
