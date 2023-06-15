@@ -322,4 +322,15 @@ form.mortgage-calculator .label_percents_toggle h4.red_color {
     .mortgage-calc {
         padding-bottom: 40px;
     }
+    .mortgage-calc > .section_heading {
+        font-size: 24px;
+    }
+    .dropdown-select-items div,
+    .dropdown-select-selected {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .dropdown-select-selected:after {
+        top: 3px;
+    }
 }

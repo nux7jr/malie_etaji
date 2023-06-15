@@ -160,3 +160,66 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media (max-width: 1200px) {
+    #house-list > .dropdown-select-selected {
+        padding: 10px;
+        font-family: "Raleway", sans-serif;
+        font-size: 12px;
+    }
+    .dropdown-select-items div,
+    .dropdown-select-selected {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .dropdown-select-selected:after {
+        top: 6px;
+    }
+    .selection__wrapper {
+        padding-top: 150px;
+        padding: 20px;
+    }
+    .selection-input__rangees,
+    .floors__label {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .selection__label ~ .default__input {
+        padding: 10px;
+        font-size: 12px;
+        font-family: "Raleway", sans-serif;
+    }
+    .selection__heading {
+        font-size: 24px;
+    }
+    .rangees {
+        max-width: 80%;
+        padding-right: 20px;
+    }
+    .selection__label {
+        font-size: 12px;
+    }
+    .selection__form {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+        margin-top: 132px;
+        padding: 20px;
+    }
+    .selection__wrapper {
+        padding: 0;
+        padding-top: 2px;
+    }
+    .selection__wrapper {
+        background-position: top;
+        background-size: 100%;
+    }
+    .floors__input + .floors__label {
+        padding: 10px;
+        width: fit-content;
+    }
+    .selection {
+        padding-bottom: 40px;
+    }
+}

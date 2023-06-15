@@ -37,7 +37,7 @@ class Mortgage implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/mortgage/gos.jpg',
+          src: 'mortgage/gos.jpg',
         ))->getSrc(),
         'text' => [
           __('Это программа жилищного кредитования по сниженной ставке. Главное, что нужно от заёмщика, — иметь российское гражданство. Нет никаких требований к семейному положению, наличию детей, региону покупки квартиры или нынешним жилищным условиям.'),
@@ -53,7 +53,7 @@ class Mortgage implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/mortgage/it.jpg',
+          src: 'mortgage/it.jpg',
         ))->getSrc(),
         'text' => [
           __('Льготная ипотечная программа для специалистов, работающих в сфере информационных технологий'),
@@ -69,7 +69,7 @@ class Mortgage implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/mortgage/away.jpg',
+          src: 'mortgage/away.jpg',
         ))->getSrc(),
         'text' => [
           __('Программа предназначена для заселения дальневосточных регионов'),
@@ -85,7 +85,7 @@ class Mortgage implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'resources/images/mortgage/village.jpg',
+          src: 'mortgage/village.jpg',
         ))->getSrc(),
         'text' => [
           __('Программа предназначена для строительства жилья в сельской местности'),

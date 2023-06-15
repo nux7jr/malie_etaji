@@ -20,13 +20,7 @@
                     <h2 class="ganeral-header">
                         {{ __('Выберите тип дома') }}
 
-                        <button class="tooltip" type="button">
-                            <img class="toltip-button__img"
-                                src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
-                            <span class="tooltiptext">
-                                {{ __(' Tooltip text') }}
-                            </span>
-                        </button>
+
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -57,13 +51,7 @@
                 <div class="ganeral-select house-type">
                     <h2 class="ganeral-header">
                         {{ __('Выберите размер дома') }}
-                        <button class="tooltip" type="button">
-                            <img class="toltip-button__img"
-                                src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
-                            <span class="tooltiptext">
-                                {{ __(' Tooltip text') }}
-                            </span>
-                        </button>
+
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -95,13 +83,7 @@
                     <h2 class="ganeral-header">
                         {{ __('Выберите стоимость') }}
 
-                        <button class="tooltip" type="button">
-                            <img class="toltip-button__img"
-                                src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
-                            <span class="tooltiptext">
-                                {{ __(' Tooltip text') }}
-                            </span>
-                        </button>
+
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -166,13 +148,7 @@
                     <h2 class="ganeral-header">
                         {{ __('Выберите срок начала строительства') }}
 
-                        <button class="tooltip" type="button">
-                            <img class="toltip-button__img"
-                                src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
-                            <span class="tooltiptext">
-                                {{ __(' Tooltip text') }}
-                            </span>
-                        </button>
+
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -204,13 +180,7 @@
                     <h2 class="ganeral-header">
                         {{ __('Наличие участка для строительства') }}
 
-                        <button class="tooltip" type="button">
-                            <img class="toltip-button__img"
-                                src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
-                            <span class="tooltiptext">
-                                {{ __(' Tooltip text') }}
-                            </span>
-                        </button>
+
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -242,13 +212,7 @@
                     <h2 class="ganeral-header">
                         {{ __('Актуальность ипотеки или кредита') }}
 
-                        <button class="tooltip" type="button">
-                            <img class="toltip-button__img"
-                                src="{{ Vite::asset('resources/images/components/toltip.svg') }}" alt="toltip">
-                            <span class="tooltiptext">
-                                {{ __(' Tooltip text') }}
-                            </span>
-                        </button>
+
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -300,18 +264,17 @@
         </div>
     </form>
     <div class="constructor-call">
-        <button class="constructor-call__button">
+        <a href="/mortgage" class="constructor-call__button">
             <span class="constructor-call__text">
                 {{ __('Онлайн заявка на ипотеку') }}
 
             </span>
             <img class="constructor-call__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
                 alt="Онлайн заявка на ипотеку" />
-        </button>
-        <button class="constructor-call__button">
+        </a>
+        <button data-modal_id="modal__income" class="constructor-call__button">
             <span class="constructor-call__text">
                 {{ __('Помощь в подборе участка') }}
-
             </span>
             <img class="constructor-call__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
                 alt="Онлайн заявка на ипотеку" />

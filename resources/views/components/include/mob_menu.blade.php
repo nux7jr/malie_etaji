@@ -1,11 +1,10 @@
-
 <div class="mob-menu">
   <div class="mob-menu__wrapper">
     <a class="mob-menu__link" href="/projects">
       <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/projects.svg') }}" alt="icon">
       <span>{{__('Проекты')}}</span>
     </a>
-    <a class="mob-menu__link" href="/projects">
+    <a class="mob-menu__link" href="/mortgage">
       <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/motage.svg') }}" alt="icon">
 
       <span>{{__('Ипотека')}}</span>

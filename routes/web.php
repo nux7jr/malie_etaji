@@ -27,7 +27,7 @@ Route::get('/projects', function () {
         '0' => ['path' => '/', 'name' => 'Главная'],
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
     ], 'projects' => HousesInfo::$card_elements], ["house_setting" => [
-        'Не выбрано',
+        'Не выбранно',
         'Все',
         'Одноэтажные',
         'Двухэтажные',
@@ -40,7 +40,7 @@ Route::get('/projects/barn', function () {
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
     ], 'projects' => HousesInfo::$card_elements], ["house_setting" => [
         'Барны',
-        'Не выбрано',
+        'Не выбранно',
         'Все',
         'Одноэтажные',
         'Двухэтажные',
@@ -52,7 +52,7 @@ Route::get('/projects/single', function () {
         '1' => ['path' => '/projects', 'name' => 'Проекты'],
     ], 'projects' => HousesInfo::$card_elements], ["house_setting" => [
         'Одноэтажные',
-        'Не выбрано',
+        'Не выбранно',
         'Все',
         'Двухэтажные',
         'Барны',
@@ -67,7 +67,7 @@ Route::get('/projects/double', function () {
         'Одноэтажные',
         'Все',
         'Барны',
-        'Не выбрано',
+        'Не выбранно',
     ]]);
 });
 
