@@ -31,8 +31,7 @@
             179.93deg,
             #ffffff 24.65%,
             rgba(255, 255, 255, 0) 99.94%
-        ),
-        url(1080х1080_1@4x.png);
+        );
     pointer-events: none;
 }
 .offer-swiper {
