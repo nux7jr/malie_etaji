@@ -84,6 +84,11 @@
     "isEntry": true,
     "src": "resources/css/components/house_card.css"
   },
+  "resources/css/components/mob_menu.css": {
+    "file": "assets/mob_menu-c0f7c127.css",
+    "isEntry": true,
+    "src": "resources/css/components/mob_menu.css"
+  },
   "resources/css/components/modal.css": {
     "file": "assets/modal-6e7d1fa9.css",
     "isEntry": true,

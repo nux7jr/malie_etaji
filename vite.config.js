@@ -47,6 +47,7 @@ export default defineConfig({
                 "resources/css/components/trusted.css",
 
                 "resources/js/components/mob_menu.js",
+                "resources/css/components/mob_menu.css",
                 // for components
 
                 "resources/css/components/office-map.css",
