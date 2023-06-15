@@ -84,7 +84,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/29-42/plan.pdf',
+              src: 'resources/images/barns/29-42/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -174,7 +174,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/53-56/plan.pdf',
+              src: 'resources/images/barns/53-56/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -262,7 +262,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/60-78/plan.pdf',
+              src: 'resources/images/barns/60-78/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -350,7 +350,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/62-67/plan.pdf',
+              src: 'resources/images/barns/62-67/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -437,7 +437,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/63-76/plan.pdf',
+              src: 'resources/images/barns/63-76/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -524,7 +524,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/75-90/plan.pdf',
+              src: 'resources/images/barns/75-90/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -611,7 +611,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/86-102/plan.pdf',
+              src: 'resources/images/barns/86-102/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -698,7 +698,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'barns/87-110/plan.pdf',
+              src: 'resources/images/barns/87-110/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -786,7 +786,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'double/112-141/plan.pdf',
+              src: 'resources/images/double/112-141/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -873,7 +873,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'double/123-160/plan.pdf',
+              src: 'resources/images/double/123-160/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -960,7 +960,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'double/123-160/plan.pdf',
+              src: 'resources/images/double/123-160/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -1047,7 +1047,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'double/136-165-2/plan.pdf',
+              src: 'resources/images/double/136-165-2/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -1135,7 +1135,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'double/72-92/plan.pdf',
+              src: 'resources/images/double/72-92/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
@@ -1223,7 +1223,7 @@ class HousesInfo
         'preview' => [
           'plan' => [
             (new Pdf(
-              src: 'double/75-92/plan.pdf',
+              src: 'resources/images/double/75-92/plan.pdf',
             ))->getSrc(),
           ],
           'facade' => [
