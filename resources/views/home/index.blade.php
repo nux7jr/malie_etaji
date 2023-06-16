@@ -66,7 +66,8 @@ use App\Content\main\HousesInfo;
                 строительства с нами') }}
             </p>
             <button class="sec-offer__button">
-                <img class="sec-offer__img" src="{{ Vite::asset('resources/images/icons/offer_arr.svg') }}" alt="offer">
+                <img data-modal_id="modal__income" class="sec-offer__img"
+                    src="{{ Vite::asset('resources/images/icons/offer_arr.svg') }}" alt="offer">
             </button>
         </div>
         <div class="sec-offer">
@@ -74,8 +75,7 @@ use App\Content\main\HousesInfo;
             <p class="sec-offer__paraf">
                 {{ __('Строим современные энергоэффективные дома для жизни на природе') }}
             </p>
-            <a href="https://tiksan.ru/2023/05/19/dom-mechty-mozhet-stoit-vdvoe-deshevle-gorodskoj-kvartiry/"
-                class="sec-offer__button">
+            <a href="/projects" class="sec-offer__button">
                 <img class="sec-offer__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
                     alt="offer">
             </a>

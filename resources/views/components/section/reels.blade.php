@@ -9,8 +9,6 @@ use App\Content\main\Reels;
 $reels = (new Reels())->toArray();
 
 @endphp
-
-
 <section class="reels">
   <h1 class="reels__heading">Посмотрите короткие ролики, чтобы узнать о нас больше</h1>
   <div class="swiper reels-swiper">
@@ -23,8 +21,6 @@ $reels = (new Reels())->toArray();
       </div>
       @endforeach
     </div>
-    <div class="pag-block">
-      <div class="swiper-pagination reels-pagination"></div>
-    </div>
+    <div class="swiper-pagination reels-pagination"></div>
   </div>
 </section>

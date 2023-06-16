@@ -113,7 +113,7 @@
                 <a title="{{ __('О нас') }}" class="header__button header__link" href="/about">
                     {{ __('О нас') }}
                 </a>
-                <a title="{{ __('Карьера') }}" class="header__button header__link" href="/career">
+                <a title="{{ __('Карьера') }}" class="header__button header__link" href="https://krasnoyarsk.hh.ru/employer/895977">
                     {{ __('Карьера') }}
                 </a>
                 <a title="{{ __('Блог') }}" class="header__button header__link" href="/blog">

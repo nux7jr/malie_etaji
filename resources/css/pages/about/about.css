@@ -400,7 +400,15 @@
     border-bottom-left-radius: var(--border-raduis-defalut);
     border-bottom-right-radius: var(--border-raduis-defalut);
 }
-
+.stable__video {
+    max-width: 178px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.stable__video-paraf {
+    color: var(--color-gray);
+}
 @media (max-width: 1690px) {
     .stable {
         flex-wrap: wrap;

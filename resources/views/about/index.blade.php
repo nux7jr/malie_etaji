@@ -12,8 +12,14 @@ use App\Content\main\AboutHeading;
 $about_heading = new AboutHeading();
 $format_info = $about_heading->toArray();
 
-@endphp
+use App\Content\main\YourHouse;
+$yourHouse = (new YourHouse())->toArray();
 
+
+use App\Content\main\AboutGallery;
+$aboutGallery = (new AboutGallery())->toArray();
+
+@endphp
 
 <x-section.about-header format={!!json_encode($format_info)!!} paths={!!json_encode($paths)!!}>
 </x-section.about-header>
@@ -36,26 +42,15 @@ $format_info = $about_heading->toArray();
         </div>
         <div class="your-house__swipers swiper">
             <div class="your-house__wrapper swiper-wrapper">
-                @php
-                $house_info = [
-                '0' => 'Энергоэффективный дом',
-                '1' => 'Короткие сроки строительства',
-                '2' => 'Smart-планировки',
-                '3' => 'Свой дом от “Малые этажи” '
-                ]
-                @endphp
-                @foreach ($house_info as $item) <article class="swiper-slide">
+
+                @foreach ($yourHouse as $item) <article class="swiper-slide">
                     <div class="your-house__info">
-                        <img class="your-house__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="fire">
+                        <img class="your-house__img" src='{{$item["img"]}}' alt="fire">
                         <h3 class="your-house__act">
-                            {{$item}}
+                            {{$item['title']}}
                         </h3>
                         <p class="your-house__small-text">
-                            {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
-                            начала
-                            XVI
-                            века.')}}
+                            {{$item['text']}}
                         </p>
                     </div>
                 </article>
@@ -155,13 +150,14 @@ $format_info = $about_heading->toArray();
         </div>
         @endforeach
     </div>
-    <a class="stable__video" data-fslightbox="youtube-video" data-video-poster="https://placehold.co/255x300"
-        href="https://www.youtube.com/watch?v=d4eDWc8g0e0">
+    <a class="stable__video" data-fslightbox="video"
+        style="background-image: url({{ Vite::asset('resources/images/about/leader.jpg')}})"
+        data-video-poster="{{ Vite::asset('resources/images/about/leader.jpg')}}" href="/video/main/1.mov">
         <h1 class="stable__video-h1">
             {{__('Посмотрите видео от директора Малых этажей')}}
         </h1>
         <p class="stable__video-paraf">
-            {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.')}}</p>
+            {{__('От руководителя отдела продаж ФСК "Малые этажи" Владислава Горковенко')}}</p>
     </a>
 </section>
 <section id="all-services" class="all-services">
@@ -272,10 +268,10 @@ $format_info = $about_heading->toArray();
 
 
 
-<x-section.tech>
-</x-section.tech>
-<x-section.certificates>
-</x-section.certificates>
+<x-section.case>
+</x-section.case>
+{{-- <x-section.certificates>
+</x-section.certificates> --}}
 <section class="photo-gallery" id='gallery'>
     <div class="photo-wrapper">
         <div class="photo-header">
@@ -284,31 +280,32 @@ $format_info = $about_heading->toArray();
 
             </h1>
             <p class="photo-gallery__paraf">
-                {{__('Lorem Ipsum является стандартной "рыбой" для текстов
-                на латинице с начала XVI века. В то время некий безымянный
-                печатник создал большую коллекцию размеров и форм шрифтов.')}}
-
+                {{__('Узнайте больше о наших проектах через фотографии строящихся объектов. Посмотрите снимки наших
+                малоэтажных домов на разных этапах строительства, чтобы увидеть, как мы превращаем идеи в
+                реальность.')}}
             </p>
         </div>
         <div class="swiper photo-gallery__swiper">
             <div class="swiper-wrapper photo-gallery__wrapper">
-                @for ($i = 0; $i < 15; $i++) <div class="swiper-slide photo-gallery__slide">
-                    <div class="photo-gallery__img" style="background-image: url(https://placehold.co/228x313)">
+                @foreach ($aboutGallery as $item) <div class="swiper-slide photo-gallery__slide">
+                    <div class="photo-gallery__img" style="background-image: url({{$item}})">
                     </div>
+                </div>
+                @endforeach
             </div>
-            @endfor
-        </div>
-        <div class="swiper-pagination photo-pagination  photo-gallery__pagination">
-        </div>
-        <div class="photo-gallery__option">
-            <div class="photo-gallery__button-prev">
-                <img class="photo-gallery-prev" src="{{ Vite::asset('resources/images/build/next.svg') }}" alt="prev">
+            <div class="swiper-pagination photo-pagination  photo-gallery__pagination">
             </div>
-            <div class="photo-gallery__button-next">
-                <img class="photo-gallery-next" src="{{ Vite::asset('resources/images/build/next.svg') }}" alt="next">
+            <div class="photo-gallery__option">
+                <div class="photo-gallery__button-prev">
+                    <img class="photo-gallery-prev" src="{{ Vite::asset('resources/images/build/next.svg') }}"
+                        alt="prev">
+                </div>
+                <div class="photo-gallery__button-next">
+                    <img class="photo-gallery-next" src="{{ Vite::asset('resources/images/build/next.svg') }}"
+                        alt="next">
+                </div>
             </div>
         </div>
-    </div>
 </section>
 <x-section.order class="order-about">
 </x-section.order>
