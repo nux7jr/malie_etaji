@@ -1,9 +1,46 @@
-import ymaps from "ymaps";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 import { initCertificates } from "../../components/certificates";
 initCertificates(Swiper);
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map(
+            "map-container",
+            {
+                center: [56.142298, 93.15997],
+                zoom: 10,
+            },
+            {
+                searchControlProvider: "yandex#search",
+            }
+        ),
+        objectManager = new ymaps.ObjectManager({
+            clusterize: true,
+            gridSize: 32,
+            clusterDisableClickZoom: true,
+        });
+
+    objectManager.objects.options.set("preset", "islands#greenDotIcon");
+    objectManager.clusters.options.set("preset", "islands#greenClusterIcons");
+
+    myMap.geoObjects.add(objectManager);
+    myMap.behaviors.disable("scrollZoom");
+    myMap.controls.remove("geolocationControl");
+    myMap.controls.remove("trafficControl");
+    myMap.controls.remove("typeSelector");
+    myMap.controls.remove("fullscreenControl");
+    myMap.controls.remove("searchControl");
+
+    async function loadData() {
+        const response = await fetch("/geoMaps.json");
+        const data = await response.json();
+        objectManager.add(data);
+    }
+    loadData();
+}
 
 const gallerys = new Swiper(".photo-gallery__swiper", {
     slidesPerView: 1,
@@ -79,30 +116,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", async function () {
-    // about map
-    const mapParentFooter = document.querySelector(".map-container");
-    try {
-        const maps = await ymaps.load();
-        const mapContainer = document.createElement("div");
+// about map
+// 1b463e1c-30e3-4e94-b592-300f2f77b882
+// const mapParentFooter = document.querySelector(".map-container");
+// try {
+//     const maps = await ymaps.load();
+//     ymaps
+//         .load(
+//             "https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1b463e1c-30e3-4e94-b592-300f2f77b882"
+//         )
+//         .then((maps) => {
+//             const mapContainer = document.createElement("div");
 
-        mapContainer.style.height = "100%";
-        mapContainer.style.width = "100%";
-        mapParentFooter.appendChild(mapContainer);
-        const myMap = new maps.Map(mapContainer, {
-            center: [56.010569, 92.852572],
-            zoom: 8,
-        });
-        myMap.behaviors.disable("scrollZoom");
-        myMap.controls.remove("geolocationControl");
-        myMap.controls.remove("trafficControl");
-        myMap.controls.remove("typeSelector");
-        myMap.controls.remove("fullscreenControl");
-        myMap.controls.remove("searchControl");
-        // new obj
-
-        //end
-    } catch (error) {
-        console.error("Something went wrong", error);
-    }
-});
+//             mapContainer.style.height = "100%";
+//             mapContainer.style.width = "100%";
+//             mapParentFooter.appendChild(mapContainer);
+//             const myMap = new maps.Map(mapContainer, {
+//                 center: [56.010569, 92.852572],
+//                 zoom: 9,
+//             });
+//             myMap.behaviors.disable("scrollZoom");
+//             myMap.controls.remove("geolocationControl");
+//             myMap.controls.remove("trafficControl");
+//             myMap.controls.remove("typeSelector");
+//             myMap.controls.remove("fullscreenControl");
+//             myMap.controls.remove("searchControl");
+//             new obj
+//             console.log(maps.GeoObjects);
+//             const myGeoObject = new maps.GeoObjects({
+//                 geometry: {
+//                     type: "Point", // geometry type - point
+//                     coordinates: [56.010569, 92.852572], // координаты точки
+//                 },
+//             });
+//             console.log(myGeoObject, "myGeoObject");
+//             myMap.geoObjects.add(myGeoObject);
+//         });
+// } catch (error) {
+//     console.error("Something went wrong", error);
+// }

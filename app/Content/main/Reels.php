@@ -29,20 +29,15 @@ class Reels implements Arrayable
         '/video/reels/10.mov',
         '/video/reels/11.mov',
         '/video/reels/12.mov',
-
-
         '/video/reels/13.mp4',
         '/video/reels/14.mp4',
         '/video/reels/15.mp4',
         '/video/reels/16.mp4',
         '/video/reels/17.mp4',
-        '/video/reels/18.mp4',
         '/video/reels/19.mp4',
         '/video/reels/20.mp4',
         '/video/reels/21.mp4',
         '/video/reels/22.mp4',
-        '/video/reels/23.mp4',
-
       ],
     ];
   }

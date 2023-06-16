@@ -18,8 +18,10 @@ use App\Content\main\AboutTech;
 $about_heading = new AboutTech();
 $format_info = $about_heading->toArray();
 
-@endphp
+use App\Content\main\Service;
+$service = (new Service())->toArray();
 
+@endphp
 
 <x-section.about-header format={!!json_encode($format_info)!!} paths={!!json_encode($paths)!!}>
 </x-section.about-header>
@@ -29,7 +31,6 @@ $format_info = $about_heading->toArray();
     <h1 class="tech-slider__heading">
       {{__('Технологии, которые мы используем')}}
     </h1>
-
     <div class="tech-abs">
       <div class="tech-about">
         <img class="tech-about__img" src="{{ Vite::asset('resources/images/tech/sip.webp') }}" alt="sip">
@@ -38,10 +39,12 @@ $format_info = $about_heading->toArray();
             {{__('SIP-панели')}}
           </h2>
           <p class="tech-about__paraf">
-            {{__('СИП-панель (от англ. Structural insulated Panel (SIP) — структурно-изоляционная панель) — строительный материал, устроенный по принципу сэндвича из трех слоев.')}}
+            {{__('СИП-панель (от англ. Structural insulated Panel (SIP) — структурно-изоляционная панель) — строительный
+            материал, устроенный по принципу сэндвича из трех слоев.')}}
           </p>
           <p class="tech-about__paraf">
-            {{__('СИП-панель (от англ. Structural insulated Panel (SIP) — структурно-изоляционная панель) — строительный материал, устроенный по принципу сэндвича из трех слоев.')}}
+            {{__('СИП-панель (от англ. Structural insulated Panel (SIP) — структурно-изоляционная панель) — строительный
+            материал, устроенный по принципу сэндвича из трех слоев.')}}
           </p>
         </div>
       </div>
@@ -166,7 +169,7 @@ $format_info = $about_heading->toArray();
   </div>
 </section>
 
-<section class="tech-part" id='partners'>
+{{-- <section class="tech-part" id='partners'>
   <h1 class="tech-part__wrapper">{{__('Технологии партнеров')}}</h1>
   <p class="tech-part__paraf">
     {{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
@@ -227,7 +230,7 @@ $format_info = $about_heading->toArray();
     </div>
     <button class="default__button part-more__button">Все технологии</button>
   </div>
-</section>
+</section> --}}
 <x-section.certificates>
 </x-section.certificates>
 <x-section.feedback>

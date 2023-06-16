@@ -1,27 +1,16 @@
-import ymaps from "ymaps";
+function init() {
+    var myMap = new ymaps.Map("map-container-footer", {
+        center: [56.036678, 92.923116],
+        zoom: 13,
+        controls: [],
+    });
+    var searchControl = new ymaps.control.SearchControl({
+        options: {
+            provider: "yandex#search",
+        },
+    });
+    myMap.controls.add(searchControl);
 
-document.addEventListener("DOMContentLoaded", async function () {
-    // footer map
-    const mapParentFooter = document.querySelector(".map-container-footer");
-    try {
-        const maps = await ymaps.load();
-        const mapContainer = document.createElement("div");
-
-        mapContainer.style.height = "100%";
-        mapContainer.style.width = "100%";
-
-        mapParentFooter.appendChild(mapContainer);
-        const myMap = new maps.Map(mapContainer, {
-            center: [-8.369326, 115.166023],
-            zoom: 8,
-        });
-        myMap.behaviors.disable("scrollZoom");
-        myMap.controls.remove("geolocationControl");
-        myMap.controls.remove("trafficControl");
-        myMap.controls.remove("typeSelector");
-        myMap.controls.remove("fullscreenControl");
-        myMap.controls.remove("searchControl");
-    } catch (error) {
-        console.error("Something went wrong", error);
-    }
-});
+    searchControl.search("Малые этажи");
+}
+ymaps.ready(init);

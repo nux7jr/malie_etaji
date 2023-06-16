@@ -3,6 +3,8 @@
 @section('head')
 @vite('resources/js/pages/about/about.js')
 @vite('resources/css/pages/about/about.css')
+
+
 @endsection
 
 @section('content')
@@ -78,10 +80,10 @@ $aboutGallery = (new AboutGallery())->toArray();
             ссылке ниже можно перейти к подробной информации о проекте – визуализация проекта, поэтажные планы, фасады,
             фото готового объекта. На странице понравившегося проекта также можно оставить заявку или задать
             вопросы.')}}
-
         </p>
     </div>
-    <div class="map-container">
+
+    <div class="map-container" id="map-container">
     </div>
 </section>
 <section class="stable">

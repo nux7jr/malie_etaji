@@ -44,7 +44,7 @@ $links = new Links();
                 href="https://yandex.ru/maps/62/krasnoyarsk/?from=mapframe&ll=92.921431%2C56.036889&mode=usermaps&source=mapframe&um=constructor%3Abdbfdb53bc5f7aa4ba9394ef3d92e9ac554c7d206019d7e87446bead86d16700&utm_source=mapframe&z=15">Главный
                 офис: <br /> Красноярск, ул. Октябрьская, 8а,<br />офис 208</a>
             <a class="footer-contact__link" href="mailto:zakaz@malie-etaji.ru">zakaz@malie-etaji.ru</a>
-            <div class="map-container-footer">
+            <div class="map-container-footer" id="map-container-footer">
 
             </div>
         </div>

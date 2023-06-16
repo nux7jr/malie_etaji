@@ -33,10 +33,31 @@ class SpecPeople implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'people/sarvar.jpg',
+          src: 'people/vorobin.png',
         ))->getSrc(),
         'name' => __('Павел Воробин'),
         'spec' => __('Главный инженер'),
+      ],
+      [
+        'image' => (new Image(
+          src: 'people/popov.png',
+        ))->getSrc(),
+        'name' => __('Илья Попов'),
+        'spec' => __('Специалист отдела продаж'),
+      ],
+      [
+        'image' => (new Image(
+          src: 'people/anna.png',
+        ))->getSrc(),
+        'name' => __('Анна Данилова'),
+        'spec' => __('Специалист отдела продаж'),
+      ],
+      [
+        'image' => (new Image(
+          src: 'people/leader.jfif',
+        ))->getSrc(),
+        'name' => __('Владислав Горковенко'),
+        'spec' => __('Руководитель отдела продаж'),
       ],
       [
         'image' => (new Image(
@@ -51,27 +72,6 @@ class SpecPeople implements Arrayable
         ))->getSrc(),
         'name' => __('Ольга Демченко'),
         'spec' => __('Ипотечный брокер'),
-      ],
-      [
-        'image' => (new Image(
-          src: 'people/sarvar.jpg',
-        ))->getSrc(),
-        'name' => __('Анна Данилова'),
-        'spec' => __('Специалист отдела продаж'),
-      ],
-      [
-        'image' => (new Image(
-          src: 'people/sarvar.jpg',
-        ))->getSrc(),
-        'name' => __('Илья Попов'),
-        'spec' => __('Специалист отдела продаж'),
-      ],
-      [
-        'image' => (new Image(
-          src: 'people/sarvar.jpg',
-        ))->getSrc(),
-        'name' => __('Владислав Горковенко'),
-        'spec' => __('Руководитель отдела продаж'),
       ],
 
       [

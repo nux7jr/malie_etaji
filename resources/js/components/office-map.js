@@ -13,4 +13,4 @@
 //     "#f04b54"
 // );
 // });
-console.log("init map");
+// console.log("init map");

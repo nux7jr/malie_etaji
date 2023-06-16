@@ -238,9 +238,8 @@
                     <button type="button" class="constructor__button real-back">
                         <img src="{{ Vite::asset('resources/images/components/button.svg') }}" alt="button">
                     </button>
-                    <button type="submit" class="default__button constructor__next">
+                    <button type="button" class="default__button constructor__next" data-modal_id="modal__cell">
                         {{ __('Завершить') }}
-
                     </button>
                 </div>
             </div>
