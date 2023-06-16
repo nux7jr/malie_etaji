@@ -25,7 +25,7 @@ class AboutHeading implements Arrayable
           (new Link(null, link: "#building-maps", text: 'Карта построенных объектов'))->toArray(),
           (new Link(null, link: "#all-services", text: 'Услуги, которые мы предоставляем'))->toArray(),
           (new Link(null, link: "#gallery", text: 'Готовые объекты'))->toArray(),
-          (new Link(null, link: "#certificates", text: 'Сертификаты и лицензии'))->toArray(),
+          (new Link(null, link: "/about/technologies/#certificates", text: 'Сертификаты и лицензии'))->toArray(),
         ],
         'image' => (new Image(
           src: 'about/about.jpg',

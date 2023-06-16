@@ -1,1 +1,0 @@
-import"./index-706639a7.js";function s(e){new e(".certificates-swiper",{slidesPerView:1,spaceBetween:0,cssMode:!0,pagination:{el:".certificates-pagination",clickable:!0},breakpoints:{740:{slidesPerView:3,spaceBetweenSlides:60},1440:{slidesPerView:6,spaceBetweenSlides:60}}})}export{s as i};

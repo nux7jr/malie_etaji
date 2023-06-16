@@ -1,6 +1,6 @@
 {
-  "_certificates-c010d61a.js": {
-    "file": "assets/certificates-c010d61a.js",
+  "_certificates-e45e8ad8.js": {
+    "file": "assets/certificates-e45e8ad8.js",
     "imports": [
       "_index-706639a7.js"
     ]
@@ -120,7 +120,7 @@
     "src": "resources/css/components/project-item.css"
   },
   "resources/css/components/reels.css": {
-    "file": "assets/reels-d8158dc3.css",
+    "file": "assets/reels-bddad9b4.css",
     "isEntry": true,
     "src": "resources/css/components/reels.css"
   },
@@ -140,7 +140,7 @@
     "src": "resources/css/components/trusted.css"
   },
   "resources/css/pages/about/about.css": {
-    "file": "assets/about-c8f6b8fe.css",
+    "file": "assets/about-d47d0867.css",
     "isEntry": true,
     "src": "resources/css/pages/about/about.css"
   },
@@ -165,7 +165,7 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-62b8d9ea.css",
+    "file": "assets/home-2d2e1576.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -189,9 +189,33 @@
     "isEntry": true,
     "src": "resources/css/pages/technologies/technologies.css"
   },
+  "resources/images/about/1.svg": {
+    "file": "assets/1-ba117b87.svg",
+    "src": "resources/images/mortgage/icons/1.svg"
+  },
+  "resources/images/about/2.svg": {
+    "file": "assets/2-30adb22e.svg",
+    "src": "resources/images/mortgage/icons/2.svg"
+  },
+  "resources/images/about/3.svg": {
+    "file": "assets/3-b1b3272c.svg",
+    "src": "resources/images/mortgage/icons/3.svg"
+  },
+  "resources/images/about/4.svg": {
+    "file": "assets/4-9016a3a3.svg",
+    "src": "resources/images/mortgage/icons/4.svg"
+  },
   "resources/images/about/about.jpg": {
     "file": "assets/about-c3fa5471.jpg",
     "src": "resources/images/about/about.jpg"
+  },
+  "resources/images/about/img.png": {
+    "file": "assets/img-6f0c1393.png",
+    "src": "resources/images/about/img.png"
+  },
+  "resources/images/about/leader.jpg": {
+    "file": "assets/leader-8f0aabf6.jpg",
+    "src": "resources/images/about/leader.jpg"
   },
   "resources/images/about/nf.jpg": {
     "file": "assets/nf-9f4fb9de.jpg",
@@ -671,11 +695,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -1277,9 +1301,17 @@
     "file": "assets/logo-1068b90d.svg",
     "src": "resources/images/logos/logo.svg"
   },
+  "resources/images/menu/geo.svg": {
+    "file": "assets/geo-3a8a84b7.svg",
+    "src": "resources/images/menu/geo.svg"
+  },
   "resources/images/menu/menu.svg": {
     "file": "assets/menu-d23f66da.svg",
     "src": "resources/images/menu/menu.svg"
+  },
+  "resources/images/menu/menuItem.svg": {
+    "file": "assets/menuItem-2d177827.svg",
+    "src": "resources/images/menu/menuItem.svg"
   },
   "resources/images/menu/motage.svg": {
     "file": "assets/motage-093887fd.svg",
@@ -2890,11 +2922,11 @@
     "src": "resources/js/components/trusted.js"
   },
   "resources/js/pages/about/about.js": {
-    "file": "assets/about-640c6ba4.js",
+    "file": "assets/about-e669e8fd.js",
     "imports": [
       "_ymaps.esm-7917d817.js",
       "_swiper-bundle.min-17f9adeb.js",
-      "_certificates-c010d61a.js",
+      "_certificates-e45e8ad8.js",
       "_index-706639a7.js"
     ],
     "isEntry": true,
@@ -2956,11 +2988,11 @@
     "src": "resources/js/pages/projects/projects.js"
   },
   "resources/js/pages/technologies/technologies.js": {
-    "file": "assets/technologies-eeffedc9.js",
+    "file": "assets/technologies-33a8f0b7.js",
     "imports": [
       "_swiper-bundle.min-17f9adeb.js",
       "_feedback-9e57aa4b.js",
-      "_certificates-c010d61a.js",
+      "_certificates-e45e8ad8.js",
       "_index-706639a7.js"
     ],
     "isEntry": true,

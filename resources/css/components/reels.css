@@ -2,9 +2,7 @@
     height: 409px;
     border-radius: var(--border-raduis-defalut);
 }
-.reels-swiper {
-    height: 482px;
-}
+
 .reels__heading {
     font-weight: 700;
     font-size: 42px;
@@ -17,13 +15,8 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.pag-block {
-    position: relative;
-    height: 40px;
-}
-.reels-pagination {
-    top: -45px !important;
-}
+
+
 .reels-pagination > .swiper-pagination-bullet {
     width: 40px;
     height: 8px;
@@ -34,6 +27,10 @@
 .reels-pagination > .swiper-pagination-bullet-active {
     width: 71px;
     background-color: var(--color-red);
+}
+.reels-swiper > .swiper-pagination {
+    position: static;
+    padding-top: 20px;
 }
 @media (max-width: 768px) {
     .reels__heading {

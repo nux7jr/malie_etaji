@@ -8,18 +8,23 @@ document.addEventListener("DOMContentLoaded", (evt) => {
     const modalsState = {
         isActive: false,
     };
-    document.addEventListener(
-        "click",
-        (evt) => {
-            if (evt.target.dataset.modal_id) {
-                const modal_id = evt.target.dataset.modal_id;
-                const currModal = document.getElementById(modal_id);
-                currModal.style.display = "flex";
-                document.querySelector(".modal__close");
-            }
-        },
-        true
-    );
+    const allButtons = document.querySelectorAll("[data-modal_id]");
+
+    allButtons.forEach((element) => {
+        addEventListener(
+            "click",
+            (evt) => {
+                if (evt.target.dataset.modal_id) {
+                    const modal_id = evt.target.dataset.modal_id;
+                    const currModal = document.getElementById(modal_id);
+                    currModal.style.display = "flex";
+                    document.querySelector(".modal__close");
+                }
+            },
+            false
+        );
+    });
+
     const all_close_buttons = document.querySelectorAll(".modal__close");
     all_close_buttons.forEach((el) => {
         el.addEventListener("click", (evt) => {

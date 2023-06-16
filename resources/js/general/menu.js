@@ -31,7 +31,6 @@ close_button.forEach((element) => {
         setTimeout(() => {
             evt.target.parentNode.parentNode.style.display = "none";
         }, 500);
-
         setTimeout(() => {
             main_menu.style.opacity = "1";
             main_menu.style.transform = "translate(0px, 0px)";

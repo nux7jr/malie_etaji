@@ -44,7 +44,8 @@
         <hr class="project-item__hr" />
         <div class="project-item__option">
             <a class="default__button" href="/projects/{{$info['id']}}">{{ __('Подробнее') }}</a>
-            <button class="default__button project-item__call">{{ __('Хочу такой дом') }}</button>
+            <button data-modal_id="modal__income" class="default__button project-item__call">{{ __('Хочу такой дом')
+                }}</button>
         </div>
     </div>
 </article>
