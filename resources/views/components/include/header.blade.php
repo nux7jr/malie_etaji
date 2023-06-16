@@ -1,12 +1,27 @@
+@php $city = json_decode($city,true);@endphp
 <section class="heading-info">
     <div class="header-select__wrapper">
         <button title="{{ __('Выбор города') }}" class="heading-info__button geo__button">
             <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg') }}"
-                alt="{{ __('Красноярск') }}">
-            {{ __('Красноярск') }}
+                alt="{{ __($city['show']['name']) }}">
+            {{ __($city['show']['name']) }}
             <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg') }}"
-                alt="{{ __('Красноярск') }}">
+                alt="{{ __($city['show']['name']) }}">
         </button>
+        @foreach($city['hidden'] as $hidden_city)
+            @php
+            if (($subdomain = request()->route()->parameter('subdomain')) !== null){
+                $host = request()->host();
+                $new_host = str_replace($subdomain,$hidden_city['code'],$host);
+                $url = str_replace($host,$new_host,request()->fullUrl());
+            }else{
+                $host = request()->host();
+                $new_host = $hidden_city['code'] . '.' . request()->host();
+                $url = str_replace($host,$new_host,request()->fullUrl());
+            }
+            @endphp
+            <a href="{{$url}}">{{__($hidden_city['name'])}}</a>
+        @endforeach
         <div class="user__option">
             <button class="heading-info__button search">
                 <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg') }}"
