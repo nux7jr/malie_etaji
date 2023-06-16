@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <x-include.header path={{ $path }}></x-include.header>
+    <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
     <div id="app" class="app">
         <div class="container">
             <div class="main-page">
