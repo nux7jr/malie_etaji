@@ -12,17 +12,18 @@ class CitiesSeeder extends Seeder
      */
     public function run(): void
     {
-        foreach (['Красноярск',
-                  'Владивосток',
-                  'Иркутск',
-                  'Барнаул',
-                  'Тюмень',
-                  'Екатеринбург',
-                  'Пермь',
-                 ] as $city)
+        foreach (['krasnoyarsk' => 'Красноярск',
+                  'vladivostok' => 'Владивосток',
+                  'irkutsk' => 'Иркутск',
+                  'barnaul' => 'Барнаул',
+                  'tumen' => 'Тюмень',
+                  'ekb' => 'Екатеринбург',
+                  'perm' => 'Пермь',
+                 ] as $code => $city)
         {
             \App\Models\City::factory()->create([
                 'name' => $city,
+                'code' => $code,
             ]);
         }
     }
