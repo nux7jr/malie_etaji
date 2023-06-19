@@ -27,9 +27,7 @@ class WhichHouse implements Arrayable
             ],
             [
                 'text'     => __('О компании Малые этажи'),
-                'background' => (new Image(
-                    src: 'barns/29-42/4.jpg',
-                ))->getSrc(),
+                'background' => null,
                 'link' => (new Link(null, link: "/about", text: 'Подробнее'))->toArray(),
                 'video' => '/video/main/home.mp4'
             ],
