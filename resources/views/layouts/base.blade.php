@@ -30,18 +30,18 @@
             $city = [];
             $city['show']['name'] = 'Красноярск';
             $city['show']['code'] = 'krasnoyarsk';
-            $city[0]['hidden']['code'] = 'irkutsk';
-            $city[0]['hidden']['name'] = 'Иркутск';
-            $city[1]['hidden']['code'] = 'vladivostok';
-            $city[1]['hidden']['name'] = 'Владивосток';
-            $city[2]['hidden']['code'] = 'barnaul';
-            $city[2]['hidden']['name'] = 'Барнаул';
-            $city[3]['hidden']['code'] = 'tumen';
-            $city[3]['hidden']['name'] = 'Тюмень';
-            $city[4]['hidden']['code'] = 'ekb';
-            $city[4]['hidden']['name'] = 'Екатеринбург';
-            $city[5]['hidden']['code'] = 'perm';
-            $city[5]['hidden']['name'] = 'Пермь';
+            $city['hidden'][0]['code'] = 'irkutsk';
+            $city['hidden'][0]['name'] = 'Иркутск';
+            $city['hidden'][1]['code'] = 'vladivostok';
+            $city['hidden'][1]['name'] = 'Владивосток';
+            $city['hidden'][2]['code'] = 'barnaul';
+            $city['hidden'][2]['name'] = 'Барнаул';
+            $city['hidden'][3]['code'] = 'tumen';
+            $city['hidden'][3]['name'] = 'Тюмень';
+            $city['hidden'][4]['code'] = 'ekb';
+            $city['hidden'][4]['name'] = 'Екатеринбург';
+            $city['hidden'][5]['code'] = 'perm';
+            $city['hidden'][5]['name'] = 'Пермь';
         }
     @endphp
 </head>
