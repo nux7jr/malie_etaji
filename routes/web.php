@@ -17,36 +17,37 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Content\main\HousesInfo;
-Route::group(['domain'=>'{subdomain}.{domain}'], function (){
+
+Route::group(['domain' => '{subdomain}.{domain}'], function () {
     routeList();
 });
-Route::group(['domain'=>'{domain}'], function (){
+Route::group(['domain' => '{domain}'], function () {
     routeList();
 });
 function routeList(): void
 {
-    Route::get('/', function ($domain){
+    Route::get('/', function ($domain) {
         return view('home.index')->with('city', City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain));
     });
     // projects
-    Route::get('/projects', function ($domain){
+    Route::get('/projects', function ($domain) {
         return view('projects.index')->with([
-                'paths' => [
-                    ['path' => '/', 'name' => 'Главная'],
-                    ['path' => '/projects', 'name' => 'Проекты'],
-                ],
-                'projects' => HousesInfo::$card_elements,
-                'house_setting' => [
-                    'Не выбрано',
-                    'Все',
-                    'Одноэтажные',
-                    'Двухэтажные',
-                    'Барны'
-                ],
-                'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
-            ]);
+            'paths' => [
+                ['path' => '/', 'name' => 'Главная'],
+                ['path' => '/projects', 'name' => 'Проекты'],
+            ],
+            'projects' => HousesInfo::$card_elements,
+            'house_setting' => [
+                'Не выбрано',
+                'Все',
+                'Одноэтажные',
+                'Двухэтажные',
+                'Барны'
+            ],
+            'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
+        ]);
     });
-    Route::get('/projects/barn', function ($domain){
+    Route::get('/projects/barn', function ($domain) {
         return view('projects.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -63,7 +64,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/projects/single', function ($domain){
+    Route::get('/projects/single', function ($domain) {
         return view('projects.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -80,7 +81,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/projects/double', function ($domain){
+    Route::get('/projects/double', function ($domain) {
         return view('projects.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -100,7 +101,7 @@ function routeList(): void
 
     // mortgage
 
-    Route::get('/mortgage', function ($domain){
+    Route::get('/mortgage', function ($domain) {
         return view('mortgage.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -110,7 +111,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/mortgage/family', function ($domain){
+    Route::get('/mortgage/family', function ($domain) {
         return view('mortgage.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -120,7 +121,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/mortgage/gos', function ($domain){
+    Route::get('/mortgage/gos', function ($domain) {
         return view('mortgage.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -130,7 +131,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/mortgage/it', function ($domain){
+    Route::get('/mortgage/it', function ($domain) {
         return view('mortgage.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -140,7 +141,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/mortgage/away', function ($domain){
+    Route::get('/mortgage/away', function ($domain) {
         return view('mortgage.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -150,7 +151,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/mortgage/village', function ($domain){
+    Route::get('/mortgage/village', function ($domain) {
         return view('mortgage.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -163,7 +164,7 @@ function routeList(): void
 
 
 
-    Route::get('/projects/{id}', function ($domain,$id){
+    Route::get('/projects/{id}', function ($domain, $id) {
         $arrayInfo = HousesInfo::$card_elements;
         $infoInner = $arrayInfo[$id] ?? $arrayInfo[1];
 
@@ -177,7 +178,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/about/technologies', function ($domain){
+    Route::get('/about/technologies', function ($domain) {
         return view('technologies.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -187,7 +188,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/about', function ($domain){
+    Route::get('/about', function ($domain) {
         return view('about.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -196,15 +197,15 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/house_card', function ($domain){
+    Route::get('/house_card', function ($domain) {
         return view('cards.house-card')->with([
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
 
 
-// blog
-    Route::get('/blog', function ($domain){
+    // blog
+    Route::get('/blog', function ($domain) {
         return view('blog.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -214,7 +215,7 @@ function routeList(): void
         ]);
     });
 
-    Route::get('/blog/{id}', function ($domain,$id){
+    Route::get('/blog/{id}', function ($domain, $id) {
         return view('blog-item.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
@@ -224,7 +225,7 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/contacts', function ($domain){
+    Route::get('/contacts', function ($domain) {
         return view('contacts.index')->with([
             'paths' => [
                 '0' => ['path' => '/', 'name' => 'Главная'],
@@ -233,10 +234,9 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
-    Route::get('/menu', function ($domain){
+    Route::get('/menu', function ($domain) {
         return view('menu.index')->with([
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
 }
-

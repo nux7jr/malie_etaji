@@ -18,8 +18,7 @@ use App\Content\main\AboutTech;
 $about_heading = new AboutTech();
 $format_info = $about_heading->toArray();
 
-use App\Content\main\Service;
-$service = (new Service())->toArray();
+
 
 @endphp
 

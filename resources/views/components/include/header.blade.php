@@ -8,6 +8,7 @@
             <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg') }}"
                 alt="{{ __($city['show']['name']) }}">
         </button>
+        <div class="hidden-city">
         @foreach($city['hidden'] as $hidden_city)
             @php
             if (($subdomain = request()->route()->parameter('subdomain')) !== null){
@@ -18,10 +19,12 @@
                 $host = request()->host();
                 $new_host = $hidden_city['code'] . '.' . request()->host();
                 $url = str_replace($host,$new_host,request()->fullUrl());
+
             }
             @endphp
-            <a href="{{$url}}">{{__($hidden_city['name'])}}</a>
-        @endforeach
+                <a href="{{$url}}">{{__($hidden_city['name'])}}</a>
+                @endforeach
+            </div>
         <div class="user__option">
             <button class="heading-info__button search">
                 <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg') }}"

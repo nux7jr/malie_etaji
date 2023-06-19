@@ -1,4 +1,7 @@
 {
+  "__commonjsHelpers-725317a4.js": {
+    "file": "assets/_commonjsHelpers-725317a4.js"
+  },
   "_certificates-e45e8ad8.js": {
     "file": "assets/certificates-e45e8ad8.js",
     "imports": [
@@ -14,11 +17,14 @@
   "_index-706639a7.js": {
     "file": "assets/index-706639a7.js"
   },
-  "_nouislider-2a461308.js": {
+  "_nouislider-f12ee9ca.js": {
     "css": [
       "assets/nouislider-812efd31.css"
     ],
-    "file": "assets/nouislider-2a461308.js"
+    "file": "assets/nouislider-f12ee9ca.js",
+    "imports": [
+      "__commonjsHelpers-725317a4.js"
+    ]
   },
   "_project-item-5c3e1fdf.js": {
     "file": "assets/project-item-5c3e1fdf.js"
@@ -32,15 +38,12 @@
   "_trusted-191878d4.js": {
     "file": "assets/trusted-191878d4.js"
   },
-  "_ymaps.esm-7917d817.js": {
-    "file": "assets/ymaps.esm-7917d817.js"
-  },
   "nouislider.css": {
     "file": "assets/nouislider-812efd31.css",
     "src": "nouislider.css"
   },
   "resources/css/app.css": {
-    "file": "assets/app-e7b5ff99.css",
+    "file": "assets/app-1ce561e9.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -50,7 +53,7 @@
     "src": "resources/css/components/aboutHeader.css"
   },
   "resources/css/components/article.css": {
-    "file": "assets/article-a4351d04.css",
+    "file": "assets/article-2d473c63.css",
     "isEntry": true,
     "src": "resources/css/components/article.css"
   },
@@ -60,7 +63,7 @@
     "src": "resources/css/components/certificates.css"
   },
   "resources/css/components/constructor.css": {
-    "file": "assets/constructor-5b5750fe.css",
+    "file": "assets/constructor-6bde6821.css",
     "isEntry": true,
     "src": "resources/css/components/constructor.css"
   },
@@ -105,7 +108,7 @@
     "src": "resources/css/components/order.css"
   },
   "resources/css/components/path.css": {
-    "file": "assets/path-67bcedf6.css",
+    "file": "assets/path-4f47771a.css",
     "isEntry": true,
     "src": "resources/css/components/path.css"
   },
@@ -145,12 +148,12 @@
     "src": "resources/css/pages/about/about.css"
   },
   "resources/css/pages/blog-item/blog-item.css": {
-    "file": "assets/blog-item-32bb35e8.css",
+    "file": "assets/blog-item-14b2cb21.css",
     "isEntry": true,
     "src": "resources/css/pages/blog-item/blog-item.css"
   },
   "resources/css/pages/blog/blog.css": {
-    "file": "assets/blog-58326529.css",
+    "file": "assets/blog-41afb1cb.css",
     "isEntry": true,
     "src": "resources/css/pages/blog/blog.css"
   },
@@ -180,7 +183,7 @@
     "src": "resources/css/pages/project-item/project-item.css"
   },
   "resources/css/pages/projects/projects.css": {
-    "file": "assets/projects-93d48b31.css",
+    "file": "assets/projects-67b951c8.css",
     "isEntry": true,
     "src": "resources/css/pages/projects/projects.css"
   },
@@ -1169,6 +1172,74 @@
     "file": "assets/illustration-fa0e48ef.png",
     "src": "resources/images/error/illustration.png"
   },
+  "resources/images/gallery/1.jpg": {
+    "file": "assets/1-a76f661c.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3947.jpg"
+  },
+  "resources/images/gallery/10.jpg": {
+    "file": "assets/10-b0b7789d.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4168.jpg"
+  },
+  "resources/images/gallery/11.jpg": {
+    "file": "assets/11-4c64213c.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4174.jpg"
+  },
+  "resources/images/gallery/12.jpg": {
+    "file": "assets/12-d3ac17e1.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4194.jpg"
+  },
+  "resources/images/gallery/13.jpg": {
+    "file": "assets/13-da408a60.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3749.jpg"
+  },
+  "resources/images/gallery/14.jpg": {
+    "file": "assets/14-1f7c4a39.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3756.jpg"
+  },
+  "resources/images/gallery/15.jpg": {
+    "file": "assets/15-7847fa63.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3767.jpg"
+  },
+  "resources/images/gallery/16.jpg": {
+    "file": "assets/16-05b1c62d.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3880.jpg"
+  },
+  "resources/images/gallery/17.jpg": {
+    "file": "assets/17-185295f9.jpg",
+    "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3910.jpg"
+  },
+  "resources/images/gallery/2.jpg": {
+    "file": "assets/2-8964a26b.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3804.jpg"
+  },
+  "resources/images/gallery/3.jpg": {
+    "file": "assets/3-2f39c894.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3812.jpg"
+  },
+  "resources/images/gallery/4.jpg": {
+    "file": "assets/4-d536da93.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3835.jpg"
+  },
+  "resources/images/gallery/5.jpg": {
+    "file": "assets/5-e73126d4.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3839.jpg"
+  },
+  "resources/images/gallery/6.jpg": {
+    "file": "assets/6-751b6ce0.jpg",
+    "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3986.jpg"
+  },
+  "resources/images/gallery/7.jpg": {
+    "file": "assets/7-42f022c2.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4002.jpg"
+  },
+  "resources/images/gallery/8.jpg": {
+    "file": "assets/8-a1ea4850.jpg",
+    "src": "resources/images/single/79-101/ОД 79 -101/IMG_4023.jpg"
+  },
+  "resources/images/gallery/9.jpg": {
+    "file": "assets/9-e96c54ad.jpg",
+    "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4072.jpg"
+  },
   "resources/images/home/1.png": {
     "file": "assets/1-54f9a94a.png",
     "src": "resources/images/home/1.png"
@@ -1425,9 +1496,25 @@
     "file": "assets/3-7318cb61.jpeg",
     "src": "resources/images/people/alena.jpeg"
   },
+  "resources/images/people/anna.png": {
+    "file": "assets/anna-b7ffce5f.png",
+    "src": "resources/images/people/anna.png"
+  },
+  "resources/images/people/leader.jfif": {
+    "file": "assets/leader-a6fb9e6f.jfif",
+    "src": "resources/images/people/leader.jfif"
+  },
+  "resources/images/people/popov.png": {
+    "file": "assets/popov-32dec817.png",
+    "src": "resources/images/people/popov.png"
+  },
   "resources/images/people/sarvar.jpg": {
     "file": "assets/sarvar-209352a3.jpg",
     "src": "resources/images/people/sarvar.jpg"
+  },
+  "resources/images/people/vorobin.png": {
+    "file": "assets/vorobin-efc2048f.png",
+    "src": "resources/images/people/vorobin.png"
   },
   "resources/images/project-item/big.jpg": {
     "file": "assets/big-44bd5190.jpg",
@@ -1506,7 +1593,7 @@
     "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3985.jpg"
   },
   "resources/images/single/65-77/ОД 65 - 77/IMG_3986.jpg": {
-    "file": "assets/IMG_3986-751b6ce0.jpg",
+    "file": "assets/6-751b6ce0.jpg",
     "src": "resources/images/single/65-77/ОД 65 - 77/IMG_3986.jpg"
   },
   "resources/images/single/65-77/ОД 65 - 77/IMG_3987.jpg": {
@@ -1650,7 +1737,7 @@
     "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4071.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4072.jpg": {
-    "file": "assets/IMG_4072-e96c54ad.jpg",
+    "file": "assets/9-e96c54ad.jpg",
     "src": "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4072.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Семеновы_Солонцы/IMG_4073.jpg": {
@@ -1770,7 +1857,7 @@
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3803.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3804.jpg": {
-    "file": "assets/IMG_3804-8964a26b.jpg",
+    "file": "assets/2-8964a26b.jpg",
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3804.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3805.jpg": {
@@ -1798,7 +1885,7 @@
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3811.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3812.jpg": {
-    "file": "assets/IMG_3812-2f39c894.jpg",
+    "file": "assets/3-2f39c894.jpg",
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3812.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3814.jpg": {
@@ -1874,7 +1961,7 @@
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3833.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3835.jpg": {
-    "file": "assets/IMG_3835-d536da93.jpg",
+    "file": "assets/4-d536da93.jpg",
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3835.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3837.jpg": {
@@ -1886,7 +1973,7 @@
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3838.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3839.jpg": {
-    "file": "assets/IMG_3839-e73126d4.jpg",
+    "file": "assets/5-e73126d4.jpg",
     "src": "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3839.jpg"
   },
   "resources/images/single/69-81/ОД 69 - 81/Слюсарь/IMG_3840.jpg": {
@@ -1942,7 +2029,7 @@
     "src": "resources/images/single/79-101/plan.pdf"
   },
   "resources/images/single/79-101/ОД 79 -101/IMG_4002.jpg": {
-    "file": "assets/IMG_4002-42f022c2.jpg",
+    "file": "assets/7-42f022c2.jpg",
     "src": "resources/images/single/79-101/ОД 79 -101/IMG_4002.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/IMG_4003.jpg": {
@@ -2014,7 +2101,7 @@
     "src": "resources/images/single/79-101/ОД 79 -101/IMG_4022.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/IMG_4023.jpg": {
-    "file": "assets/IMG_4023-a1ea4850.jpg",
+    "file": "assets/8-a1ea4850.jpg",
     "src": "resources/images/single/79-101/ОД 79 -101/IMG_4023.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/IMG_4024.jpg": {
@@ -2170,7 +2257,7 @@
     "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4166.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4168.jpg": {
-    "file": "assets/IMG_4168-b0b7789d.jpg",
+    "file": "assets/10-b0b7789d.jpg",
     "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4168.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4169.jpg": {
@@ -2190,7 +2277,7 @@
     "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4172.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4174.jpg": {
-    "file": "assets/IMG_4174-4c64213c.jpg",
+    "file": "assets/11-4c64213c.jpg",
     "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4174.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4175.jpg": {
@@ -2262,7 +2349,7 @@
     "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4193.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4194.jpg": {
-    "file": "assets/IMG_4194-d3ac17e1.jpg",
+    "file": "assets/12-d3ac17e1.jpg",
     "src": "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4194.jpg"
   },
   "resources/images/single/79-101/ОД 79 -101/Вяткин_Скандинавия/IMG_4195.jpg": {
@@ -2366,11 +2453,11 @@
     "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3748.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3749.jpg": {
-    "file": "assets/IMG_3749-da408a60.jpg",
+    "file": "assets/13-da408a60.jpg",
     "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3749.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3756.jpg": {
-    "file": "assets/IMG_3756-1f7c4a39.jpg",
+    "file": "assets/14-1f7c4a39.jpg",
     "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3756.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3759.jpg": {
@@ -2394,7 +2481,7 @@
     "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3765.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3767.jpg": {
-    "file": "assets/IMG_3767-7847fa63.jpg",
+    "file": "assets/15-7847fa63.jpg",
     "src": "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3767.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Никифоров_Минино/IMG_3769.jpg": {
@@ -2502,7 +2589,7 @@
     "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3879.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3880.jpg": {
-    "file": "assets/IMG_3880-05b1c62d.jpg",
+    "file": "assets/16-05b1c62d.jpg",
     "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3880.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3881.jpg": {
@@ -2574,7 +2661,7 @@
     "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3909.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3910.jpg": {
-    "file": "assets/IMG_3910-185295f9.jpg",
+    "file": "assets/17-185295f9.jpg",
     "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3910.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3911.jpg": {
@@ -2682,7 +2769,7 @@
     "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3946.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3947.jpg": {
-    "file": "assets/IMG_3947-a76f661c.jpg",
+    "file": "assets/1-a76f661c.jpg",
     "src": "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3947.jpg"
   },
   "resources/images/single/92-112/ОД 92 - 112/Самолетов/IMG_3948.jpg": {
@@ -2850,9 +2937,9 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-34545dd7.js",
+    "file": "assets/app-afee9251.js",
     "imports": [
-      "_ymaps.esm-7917d817.js"
+      "__commonjsHelpers-725317a4.js"
     ],
     "isEntry": true,
     "src": "resources/js/app.js"
@@ -2889,12 +2976,12 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-729f7ebb.js",
+    "file": "assets/modal-c1aa5274.js",
     "isEntry": true,
     "src": "resources/js/components/modal.js"
   },
   "resources/js/components/office-map.js": {
-    "file": "assets/office-map-df40dd46.js",
+    "file": "assets/office-map-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/office-map.js"
   },
@@ -2909,9 +2996,10 @@
     "src": "resources/js/components/reels.js"
   },
   "resources/js/components/selection.js": {
-    "file": "assets/selection-8d7df662.js",
+    "file": "assets/selection-5ba38ea6.js",
     "imports": [
-      "_nouislider-2a461308.js"
+      "_nouislider-f12ee9ca.js",
+      "__commonjsHelpers-725317a4.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/selection.js"
@@ -2922,9 +3010,8 @@
     "src": "resources/js/components/trusted.js"
   },
   "resources/js/pages/about/about.js": {
-    "file": "assets/about-e669e8fd.js",
+    "file": "assets/about-28b0b3dd.js",
     "imports": [
-      "_ymaps.esm-7917d817.js",
       "_swiper-bundle.min-17f9adeb.js",
       "_certificates-e45e8ad8.js",
       "_index-706639a7.js"
@@ -2978,11 +3065,12 @@
     "src": "resources/js/pages/project-item/project-item.js"
   },
   "resources/js/pages/projects/projects.js": {
-    "file": "assets/projects-1506b8f6.js",
+    "file": "assets/projects-a89692c1.js",
     "imports": [
-      "_nouislider-2a461308.js",
+      "_nouislider-f12ee9ca.js",
       "_swiper-bundle.min-17f9adeb.js",
-      "_project-item-5c3e1fdf.js"
+      "_project-item-5c3e1fdf.js",
+      "__commonjsHelpers-725317a4.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/projects/projects.js"

@@ -11,6 +11,9 @@
     --swiper-theme-color: #f04b54;
     --border-raduis-defalut: 50px;
 }
+.hidden-city {
+    display: none;
+}
 html {
     scroll-behavior: smooth;
 }

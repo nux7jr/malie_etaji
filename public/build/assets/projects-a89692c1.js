@@ -1,4 +1,4 @@
-import{n as f}from"./nouislider-2a461308.js";import{S as _}from"./swiper-bundle.min-17f9adeb.js";import{i as j}from"./project-item-5c3e1fdf.js";j(_);const m=document.querySelector(".project-wrapper");function q(e){e.sort((r,o)=>r.price_kit>o.price_kit?1:r.price_kit<o.price_kit?-1:0),Window.data=e}function w(e){e.sort((r,o)=>r.price_kit<o.price_kit?1:r.price_kit>o.price_kit?-1:0),Window.data=e}function v(){Window.data.length!==0?(m.innerHTML="",Window.data.forEach(e=>{let r=`
+import{n as f}from"./nouislider-f12ee9ca.js";import{S as _}from"./swiper-bundle.min-17f9adeb.js";import{i as j}from"./project-item-5c3e1fdf.js";import"./_commonjsHelpers-725317a4.js";j(_);const m=document.querySelector(".project-wrapper");function q(e){e.sort((r,o)=>r.price_kit>o.price_kit?1:r.price_kit<o.price_kit?-1:0),Window.data=e}function w(e){e.sort((r,o)=>r.price_kit<o.price_kit?1:r.price_kit>o.price_kit?-1:0),Window.data=e}function v(){Window.data.length!==0?(m.innerHTML="",Window.data.forEach(e=>{let r=`
             <article class="project-item">
             <div class="swiper project-swiper">
                 <div class="swiper-wrapper">

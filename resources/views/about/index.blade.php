@@ -21,6 +21,8 @@ $yourHouse = (new YourHouse())->toArray();
 use App\Content\main\AboutGallery;
 $aboutGallery = (new AboutGallery())->toArray();
 
+use App\Content\main\Service;
+$service = (new Service())->toArray();
 @endphp
 
 <x-section.about-header format={!!json_encode($format_info)!!} paths={!!json_encode($paths)!!}>
@@ -169,7 +171,7 @@ $aboutGallery = (new AboutGallery())->toArray();
     </h1>
     <div class="all-services__inner services-filters">
         <div class="services-filters__option">
-            <button data-filter="support" data-title="{{__('Сопровождение покупки')}}"
+            <button data-filter="escort" data-title="{{__('Сопровождение покупки')}}"
                 class="default__button services-filters__button services-filters__button--active">
                 {{__('Сопровождение покупки')}}
 
@@ -184,20 +186,11 @@ $aboutGallery = (new AboutGallery())->toArray();
                 {{__('Строительство')}}
 
             </button>
-            <button data-filter="support" data-title="{{__('Инженерные услуги')}}"
-                class="default__button services-filters__button">
-                {{__('Инженерные услуги')}}
-
-            </button>
-            <button data-filter="special" data-title="{{__('Специалисты')}}"
-                class="default__button services-filters__button">
-                {{__('Специалисты')}}
-            </button>
         </div>
         <div class="services-filters__content">
             <h1 class="services-filters__heading">{{__('Сопровождение покупки')}}</h1>
             <div class="services-filters__wrapper">
-                @for ($i = 0; $i < 10; $i++) <div class="services-filters__item support">
+                @foreach ($service as $item) <div class="services-filters__item escort">
                     <div class="services-filters__header">
                         <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
                             alt="">
@@ -212,59 +205,44 @@ $aboutGallery = (new AboutGallery())->toArray();
                     </div>
                     <button class="default__button">
                         {{__('Отправить заявку')}}</button>
-            </div>
-            @endfor
-            @for ($i = 0; $i < 4; $i++) <div class="services-filters__item design">
-                <div class="services-filters__header">
-                    <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                        alt="">
-                    <div class="services-filters__head">
-                        <h3 class="services-filters__info">
-                            {{__('design')}}
-                        </h3>
-                        <p class="services-filters__text">
-                            {{__('Специальные условия для клиентов “Малые этажи”')}}</p>
+                </div>
+                @endforeach
+                @foreach ($service as $item) <div class="services-filters__item design">
+                    <div class="services-filters__header">
+                        <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
+                            alt="">
+                        <div class="services-filters__head">
+                            <h3 class="services-filters__info">
+                                {{__('design')}}
+                            </h3>
+                            <p class="services-filters__text">
+                                {{__('Специальные условия для клиентов “Малые этажи”')}}</p>
+                        </div>
                     </div>
+                    <button class="default__button">
+                        {{__('Отправить заявку')}}</button>
                 </div>
-                <button class="default__button">
-                    {{__('Отправить заявку')}}</button>
-        </div>
-        @endfor
-        @for ($i = 0; $i < 5; $i++) <div class="services-filters__item building">
-            <div class="services-filters__header">
-                <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}" alt="">
-                <div class="services-filters__head">
-                    <h3 class="services-filters__info">
-                        {{__('building')}}
-                    </h3>
-                    <p class="services-filters__text">
-                        {{__('Специальные условия для клиентов “Малые этажи”')}}</p>
+                @endforeach
+                @foreach ($service as $item) <div class="services-filters__item building">
+                    <div class="services-filters__header">
+                        <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
+                            alt="">
+                        <div class="services-filters__head">
+                            <h3 class="services-filters__info">
+                                {{__('building')}}
+                            </h3>
+                            <p class="services-filters__text">
+                                {{__('Специальные условия для клиентов “Малые этажи”')}}</p>
+                        </div>
+                    </div>
+                    <button class="default__button">
+                        {{__('Отправить заявку')}}
+                    </button>
                 </div>
+                @endforeach
             </div>
-            <button class="default__button">
-                {{__('Отправить заявку')}}
-            </button>
+        </div>
     </div>
-    @endfor
-    @for ($i = 0; $i < 5; $i++) <div class="services-filters__item special">
-        <div class="services-filters__header">
-            <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}" alt="">
-            <div class="services-filters__head">
-                <h3 class="services-filters__info">
-                    {{__('special')}}</h3>
-                <p class="services-filters__text">
-                    {{__('Специальные условия для клиентов “Малые этажи”')}}
-                </p>
-            </div>
-        </div>
-        <button class="default__button">
-            {{__('Отправить заявку')}}
-        </button>
-        </div>
-        @endfor
-        </div>
-        </div>
-        </div>
 </section>
 
 
