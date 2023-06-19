@@ -25,6 +25,25 @@
     @vite('resources/js/components/modal.js')
     @vite('resources/js/components/mob_menu.js')
     @vite('resources/css/components/mob_menu.css')
+    @php
+        if (!isset($city)){
+            $city = [];
+            $city['show']['name'] = 'Красноярск';
+            $city['show']['code'] = 'krasnoyarsk';
+            $city['hidden']['code'] = 'irkutsk';
+            $city['hidden']['name'] = 'Иркутск';
+            $city['hidden']['code'] = 'vladivostok';
+            $city['hidden']['name'] = 'Владивосток';
+            $city['hidden']['code'] = 'barnaul';
+            $city['hidden']['name'] = 'Барнаул';
+            $city['hidden']['code'] = 'tumen';
+            $city['hidden']['name'] = 'Тюмень';
+            $city['hidden']['code'] = 'ekb';
+            $city['hidden']['name'] = 'Екатеринбург';
+            $city['hidden']['code'] = 'perm';
+            $city['hidden']['name'] = 'Пермь';
+        }
+    @endphp
 </head>
 <body>
     <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
