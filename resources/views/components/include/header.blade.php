@@ -13,14 +13,13 @@
                 @foreach($city['hidden'] as $hidden_city)
                 @php
                 if (($subdomain = request()->route()->parameter('subdomain')) !== null){
-                $host = request()->host();
-                $new_host = str_replace($subdomain,$hidden_city['code'],$host);
-                $url = str_replace($host,$new_host,request()->fullUrl());
+                    $host = request()->host();
+                    $new_host = str_replace($subdomain,$hidden_city['code'],$host);
+                    $url = str_replace($host,$new_host,request()->fullUrl());
                 }else{
-                $host = request()->host();
-                $new_host = $hidden_city['code'] . '.' . request()->host();
-                $url = str_replace($host,$new_host,request()->fullUrl());
-
+                    $host = request()->host();
+                    $new_host = $hidden_city['code'] . '.' . request()->host();
+                    $url = str_replace($host,$new_host,request()->fullUrl());
                 }
                 @endphp
                 <a class="hidden-city__link" href="{{$url}}">{{__($hidden_city['name'])}}</a>

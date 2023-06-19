@@ -18,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Content\main\HousesInfo;
 
+Route::fallback(function ($domain){
+    return view('errors.404')->with('city', City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain));
+});
+
 Route::group(['domain' => '{subdomain}.{domain}.ru'], function () {
     routeList();
 });
