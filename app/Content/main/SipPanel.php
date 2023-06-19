@@ -7,7 +7,7 @@ use App\Structures\Image;
 use App\Structures\Link;
 use App\Structures\Video;
 
-class Sip implements Arrayable
+class SipPanel implements Arrayable
 {
   /**
    * Element use App\Structures\Image for build assets
