@@ -18,8 +18,9 @@ use App\Content\main\AboutTech;
 $about_heading = new AboutTech();
 $format_info = $about_heading->toArray();
 
-
-
+use App\Content\main\SipPanel;
+$sips = (new SipPanel())->toArray();
+// dd($sips);
 @endphp
 
 <x-section.about-header format={!!json_encode($format_info)!!} paths={!!json_encode($paths)!!}>
@@ -49,12 +50,9 @@ $format_info = $about_heading->toArray();
       </div>
       <div class="swiper unreal-swiper">
         <div class="swiper-wrapper unreal-wrapper">
-          <div class="swiper-slide unreal-slide"></div>
-          <div class="swiper-slide unreal-slide"></div>
-          <div class="swiper-slide unreal-slide"></div>
-          <div class="swiper-slide unreal-slide"></div>
-          <div class="swiper-slide unreal-slide"></div>
-          <div class="swiper-slide unreal-slide"></div>
+          @foreach ($sips[0] as $item)
+          <div class="swiper-slide unreal-slide" style="background-image: url({{ $item }})"></div>
+          @endforeach
         </div>
       </div>
       <div class="unreal__option">

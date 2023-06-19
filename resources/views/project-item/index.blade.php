@@ -256,9 +256,10 @@ use App\Content\main\HousesInfo;
   </h1>
   <div class="peculiarities__wrapper">
     <div class="peculiarities__head">
-      <div class="peculiarities__card peculiarities__big" style="background-image: url(https://placehold.co/600x400)">
+      <div class="peculiarities__card peculiarities__big"
+        style="background-image: url({{$info['peculiarities'][0]['img']}})">
         <p class="peculiarities__paraf">
-          {{$info["peculiarities"][0]}}
+          {{$info["peculiarities"][0]['text']}}
         </p>
       </div>
       <button class="default__button peculiarities__more">Показать все особености</button>
@@ -271,8 +272,8 @@ use App\Content\main\HousesInfo;
           class="peculiarities__card flex-one"
           @endif
           class='peculiarities__card'
-          style="">
-          <p class="peculiarities__paraf">{{$item}}</p>
+          style="background-image: url('{{$item['img']}}')">
+          <p class="peculiarities__paraf">{{$item['text']}}</p>
         </div>
         @endforeach
       </div>
@@ -380,16 +381,13 @@ use App\Content\main\HousesInfo;
   </div>
   <div class="more-projects__wrapper">
     @php
-        $less3 = 0;
-        while ($less3 < 3):
-        $item = HousesInfo::getItemById($less3);
-        $less3++;
-    @endphp
-      <x-cards.project-item info="{!! json_encode($item) !!}">
+    $less3 = 0;
+    while ($less3 < 3): $item=HousesInfo::getItemById($less3); $less3++; @endphp <x-cards.project-item
+      info="{!! json_encode($item) !!}">
       </x-cards.project-item>
-    @php
-        endwhile;
-    @endphp
+      @php
+      endwhile;
+      @endphp
   </div>
 </section>
 

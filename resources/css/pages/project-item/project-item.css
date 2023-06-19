@@ -35,6 +35,25 @@
     position: absolute;
     right: 150px;
 }
+.peculiarities__card {
+    position: relative;
+}
+.peculiarities__card::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    border-radius: var(--border-raduis-defalut);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    pointer-events: none;
+}
+.peculiarities__paraf {
+    position: relative;
+    z-index: 1;
+}
 .toltip-button__img {
     width: 20px;
     height: 20px;

@@ -100,11 +100,36 @@ class HousesInfo
           ]
         ],
         'peculiarities' => [
-          'Полноценная спальня',
-          'Современный вид',
-          'Просторная студия 25 м²',
-          'Просторная крытая терраса',
-          'Выделенная зона кухни, отдыха и входная группа',
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/big.jpg',
+            ))->getSrc(),
+            'text' => 'Полноценная спальня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => 'Современный вид'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/entrance.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная студия 25 м²'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrace.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная крытая терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/living_room-kitchen.jpg',
+            ))->getSrc(),
+            'text' => 'Выделенная зона кухни, отдыха и входная группа'
+          ],
         ],
       ],
       [
@@ -189,12 +214,38 @@ class HousesInfo
             ''
           ]
         ],
+
         'peculiarities' => [
-          'Входная группа-тамбур',
-          'Просторная кухня-гостиная',
-          'Полноценная спальня',
-          'Высокие потолки до 3,8 м',
-          'Панорамное остекление',
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/barn_style.jpg',
+            ))->getSrc(),
+            'text' => 'Входная группа-тамбур'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная кухня-гостиная'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/big.jpg',
+            ))->getSrc(),
+            'text' => 'Полноценная спальня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/high_ceilings.jpg',
+            ))->getSrc(),
+            'text' => 'Высокие потолки до 3,8 м'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/panoramic_windows.jpg',
+            ))->getSrc(),
+            'text' => 'Панорамное остекление'
+          ],
         ],
       ],
       [
@@ -277,12 +328,38 @@ class HousesInfo
             ''
           ]
         ],
+
         'peculiarities' => [
-          'Современный вид',
-          'Большая гостиная-кухня',
-          'Просторная терраса',
-          '2 комнаты/спальни',
-          'Высокие потолки'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/barn_style.jpg',
+            ))->getSrc(),
+            'text' => 'Современный вид'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Большая гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '2 комнаты/спальни'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/high_ceilings.jpg',
+            ))->getSrc(),
+            'text' => 'Высокие потолки'
+          ],
         ],
       ],
       // new
@@ -365,12 +442,38 @@ class HousesInfo
             ''
           ]
         ],
+
         'peculiarities' => [
-          'Наличие кладовой',
-          'Большая гостиная-кухня',
-          'Просторная терраса',
-          '2 комнаты/спальни',
-          'Панорамное остекление'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/storeroom.png',
+            ))->getSrc(),
+            'text' => 'Наличие кладовой'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Большая гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '2 комнаты/спальни'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/panoramic_windows.jpg',
+            ))->getSrc(),
+            'text' => 'Панорамное остекление'
+          ],
         ],
       ],
       [
@@ -453,11 +556,36 @@ class HousesInfo
           ]
         ],
         'peculiarities' => [
-          'Большая гостиная-кухня',
-          'Просторная крытая терраса',
-          '2 комнаты/спальни',
-          'Наличие кладовой',
-          'Панорамное остекление'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/storeroom.png',
+            ))->getSrc(),
+            'text' => 'Наличие кладовой'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Большая гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '2 комнаты/спальни'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/panoramic_windows.jpg',
+            ))->getSrc(),
+            'text' => 'Панорамное остекление'
+          ],
         ],
       ],
       [
@@ -539,12 +667,38 @@ class HousesInfo
             ''
           ]
         ],
+
         'peculiarities' => [
-          'Большая гостиная-кухня',
-          'Просторная крытая терраса',
-          '2 комнаты/спальни',
-          'Наличие гардеробной',
-          '2 санузла'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/dressing_room.jpg',
+            ))->getSrc(),
+            'text' => 'Наличие гардеробной'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Большая гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная крытая терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '2 комнаты/спальни'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/panoramic_windows.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
         ],
       ],
       [
@@ -627,11 +781,36 @@ class HousesInfo
           ]
         ],
         'peculiarities' => [
-          'Большая гостиная-кухня',
-          'Просторная крытая терраса',
-          '3 комнаты/спальни',
-          'Наличие кладовой',
-          '2 санузла'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/entrance.jpg',
+            ))->getSrc(),
+            'text' => 'Наличие кладовой'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Большая гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная крытая терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '3 комнаты/спальни'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/panoramic_windows.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
         ],
       ],
       [
@@ -714,11 +893,36 @@ class HousesInfo
           ]
         ],
         'peculiarities' => [
-          'Большая гостиная-кухня',
-          'Просторная крытая терраса',
-          '3 комнаты/спальни',
-          'Наличие гардеробной',
-          '2 санузла'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/entrance.jpg',
+            ))->getSrc(),
+            'text' => 'Наличие кладовой'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Большая гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная крытая терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '3 комнаты/спальни'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/panoramic_windows.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
         ],
       ],
       //
@@ -802,12 +1006,38 @@ class HousesInfo
           ]
         ],
         'peculiarities' => [
-          'Большая гостиная-кухня',
-          '5 полноценных спален',
-          'Отдельное тех. помещение',
-          'Уютный балкон',
-          '2 санузла'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/balcony.jpg',
+            ))->getSrc(),
+            'text' => 'Уютный балкон'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/entrance.jpg',
+            ))->getSrc(),
+            'text' => 'Отдельное тех. помещение'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Большая гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '5 полноценных спален'
+          ],
         ],
+
       ],
       [
         'id' => __('9'),
@@ -889,11 +1119,36 @@ class HousesInfo
           ]
         ],
         'peculiarities' => [
-          'Отдельная кухня-столовая и гостиная',
-          '4 полноценных спальни',
-          'Второй свет',
-          'Уютный балкон',
-          '2 санузла'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/balcony.jpg',
+            ))->getSrc(),
+            'text' => 'Уютный балкон'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Отдельная кухня-столовая и гостиная'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/second_light.jpg',
+            ))->getSrc(),
+            'text' => 'Второй свет'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '4 полноценных спален'
+          ],
         ],
       ],
       [
@@ -982,6 +1237,38 @@ class HousesInfo
           'Уютный балкон',
           '2 санузла'
         ],
+        'peculiarities' => [
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/garage.jpg',
+            ))->getSrc(),
+            'text' => 'Гараж на 1 м/м'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/balcony.jpg',
+            ))->getSrc(),
+            'text' => 'Уютный балкон'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '5 полноценных спален'
+          ],
+        ],
       ],
       [
         'id' => __('11'),
@@ -1062,12 +1349,38 @@ class HousesInfo
             ''
           ]
         ],
+
         'peculiarities' => [
-          'Гараж на 1 м/м',
-          'Гостиная-кухня',
-          '5 полноценных спален',
-          'Уютный балкон',
-          '2 санузла'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/garage.jpg',
+            ))->getSrc(),
+            'text' => 'Гараж на 1 м/м'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/balcony.jpg',
+            ))->getSrc(),
+            'text' => 'Уютный балкон'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '5 полноценных спален'
+          ],
         ],
       ],
       [
@@ -1150,13 +1463,40 @@ class HousesInfo
             ''
           ]
         ],
+
         'peculiarities' => [
-          'Гостиная-кухня',
-          '2 полноценных спальни',
-          'Уютный балкон',
-          '2 санузла',
-          'Гардеробная'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '2 полноценных спален'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/balcony.jpg',
+            ))->getSrc(),
+            'text' => 'Уютный балкон'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/dressing_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гардеробная'
+          ],
         ],
+
       ],
       [
         'id' => __('13'),
@@ -1238,13 +1578,268 @@ class HousesInfo
             ''
           ]
         ],
+
+
         'peculiarities' => [
-          'Просторная гостиная-кухня',
-          '2 полноценных спальни',
-          'Крытая терраса',
-          '2 санузла',
-          'Гардеробная'
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Просторная гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => '2 полноценных спален'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Крытая терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => '2 санузла'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/dressing_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гардеробная'
+          ],
         ],
+
+      ],
+      [
+        'id' => __('14'),
+        'name' => __('ДВ 80-93'),
+        'category' => __('Двухэтажные'),
+        'title' => __('Дом'),
+        'big_slider_images' => [
+          (new Image(
+            src: 'double/80-93/1-main.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/80-93/2-main.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/80-93/3-main.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/80-93/4-main.jpg',
+          ))->getSrc(),
+        ],
+        'small_images' => [
+          (new Image(
+            src: 'double/80-93/1.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/80-93/2.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/80-93/3.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/80-93/4.jpg',
+          ))->getSrc(),
+        ],
+        'price_kit' => 2024000,
+        'price_end' => 3394000,
+        'price_finish' => 6513000,
+        'price_small' => __('от 2 млн ₽'),
+        'item_info' => [
+          'square' => 80,
+          'floors' => '2',
+          'bedrooms' => '3',
+          'bathrooms' => '2',
+        ],
+        'formated_info' => [
+          'floors' => '2 этажа',
+          'bedrooms' => '3 комнаты',
+          'bathrooms' => '2 санузла',
+        ],
+        'about' => [
+          __('Дизайн этого дома идеально сочетает в себе функциональность и минимализм. Удобная Smart-планировка предполагает не только все основные помещения, но и просторную входную группу-тамбур и техническое помещение для хранения. На первом этаже располагается  гостиная-кухня, одна изолированная спальня, просторный холл. Гостиная-кухня имеет площадь 23 м² и выходит на большую крытую террасу. Второй этаж располагает крупной и компактной спальней, которая идеально подойдет для детской или кабинета. Помимо этого, есть вместительный гардероб в холле. Особое вниманием к деталям, обеспечит максимальный уровень удобства.'),
+        ],
+        'download' => '/someurl',
+        'about_images' => [
+          (new Image(
+            src: 'double/80-93/5.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/80-93/6.jpg',
+          ))->getSrc(),
+        ],
+        'tags' => ['Терраса', 'Гардеробная', 'Кладовая'],
+        'preview' => [
+          'plan' => [
+            (new Pdf(
+              src: 'resources/images/double/80-93/plan.pdf',
+            ))->getSrc(),
+          ],
+          'facade' => [
+            (new Image(
+              src: 'double/80-93/5-facade.jpg',
+            ))->getSrc(),
+            (new Image(
+              src: 'double/80-93/6-facade.jpg',
+            ))->getSrc()
+          ],
+          '3d' => [
+            ''
+          ]
+        ],
+        'peculiarities' => [
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => 'Несколько санузлов'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Крытая терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/entrance.jpg',
+            ))->getSrc(),
+            'text' => 'Кладовая'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/dressing_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гардеробная'
+          ],
+        ],
+
+      ],
+      [
+        'id' => __('15'),
+        'name' => __('ДВ 98-115'),
+        'category' => __('Двухэтажные'),
+        'title' => __('Дом'),
+        'big_slider_images' => [
+          (new Image(
+            src: 'double/98-115/1-main.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/98-115/2-main.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/98-115/3-main.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/98-115/4-main.jpg',
+          ))->getSrc(),
+        ],
+        'small_images' => [
+          (new Image(
+            src: 'double/98-115/1.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/98-115/2.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/98-115/3.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/98-115/4.jpg',
+          ))->getSrc(),
+        ],
+        'price_kit' => 1920000,
+        'price_end' => 2845000,
+        'price_finish' => 5252000,
+        'price_small' => __('от 2 млн ₽'),
+        'item_info' => [
+          'square' => 97,
+          'floors' => '2',
+          'bedrooms' => '5',
+          'bathrooms' => '2',
+        ],
+        'formated_info' => [
+          'floors' => '2 этажа',
+          'bedrooms' => '5 комнат',
+          'bathrooms' => '2 санузла',
+        ],
+        'about' => [
+          __('Этот проект имеет все преимущества для комфортной жизни большой семьи. Просторная гостиная-кухня на 1 этаже ведет на большую крытую террасу, которая в летнее время прекрасно подходит для проведения барбекю или отдыха. В доме спроектировано два входа: с террасы и с противоположной стороны - через крыльцо и тамбур. Предусмотрены два санузла на каждом этаже, что позволит избежать любых неудобств. '),
+          __('На втором этаже есть три полноценные спальни. Безупречная эргономика и высокое качество отделки - делают проект привлекательным. Не упустите шанс приобрести свою мечту.'),
+        ],
+        'download' => '/someurl',
+        'about_images' => [
+          (new Image(
+            src: 'double/98-115/5.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'double/98-115/6.jpg',
+          ))->getSrc(),
+        ],
+        'tags' => ['Терраса', 'Кладовая'],
+        'preview' => [
+          'plan' => [
+            (new Pdf(
+              src: 'resources/images/double/98-115/plan.pdf',
+            ))->getSrc(),
+          ],
+          'facade' => [
+            (new Image(
+              src: 'double/98-115/5-facade.jpg',
+            ))->getSrc(),
+            (new Image(
+              src: 'double/98-115/6-facade.jpg',
+            ))->getSrc()
+          ],
+          '3d' => [
+            ''
+          ]
+        ],
+        'peculiarities' => [
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/kitchen_dining_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гостиная-кухня'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/spacious_studio.jpg',
+            ))->getSrc(),
+            'text' => 'Несколько санузлов'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/terrase.jpg',
+            ))->getSrc(),
+            'text' => 'Крытая терраса'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/entrance.jpg',
+            ))->getSrc(),
+            'text' => 'Кладовая'
+          ],
+          [
+            'img' => (new Image(
+              src: 'peculiarities_projects/dressing_room.jpg',
+            ))->getSrc(),
+            'text' => 'Гардеробная'
+          ],
+        ],
+
       ],
     ]);
   }

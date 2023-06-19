@@ -36,6 +36,9 @@
 .unreal-slide {
     width: 300px;
     background-color: var(--color-grayest);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .unreal-swiper {
     height: 384px;
