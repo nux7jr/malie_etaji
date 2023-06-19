@@ -14,24 +14,37 @@ document.addEventListener("DOMContentLoaded", (evt) => {
     const allForm = document.querySelectorAll(".modal__form");
     const all_close_buttons = document.querySelectorAll(".modal__close");
 
-    allButtons.forEach((element) => {
-        element.addEventListener(
-            "click",
-            (evt) => {
-                if (evt.target.dataset.modal_id) {
-                    const modal_id = evt.target.dataset.modal_id;
-                    const currModal = document.getElementById(modal_id);
-                    // currModal.style.display = "flex";
-                    currModal.classList.toggle("modal__window--active");
-                }
-            },
-            false
-        );
+    allButtons.forEach((elem) => {
+        elem.onclick = (evt) => {
+            if (evt.target.dataset.modal_id) {
+                const modal_id = evt.target.dataset.modal_id;
+                const currModal = document.getElementById(modal_id);
+                currModal.classList.add("modal__window--active");
+                document.body.classList.add("modal__open");
+                currModal.addEventListener("click", (evt) => {
+                    if (evt.target.classList.contains("modal__window")) {
+                        closer(currModal);
+                    }
+                });
+            }
+        };
     });
-
+    function closer(form) {
+        const wrapper = form.querySelector(".modal__wrapper");
+        wrapper.classList.add("modal__wrapper--out");
+        form.classList.add("modal__window--out");
+        setTimeout(() => {
+            wrapper.classList.remove("modal__wrapper--out");
+            form.classList.remove("modal__window--active");
+        }, 500);
+        setTimeout(() => {
+            form.classList.remove("modal__window--out");
+        }, 501);
+        document.body.classList.remove("modal__open");
+    }
     all_close_buttons.forEach((el) => {
         el.addEventListener("click", (evt) => {
-            evt.target.parentNode.parentNode.parentNode.style.display = "none";
+            closer(evt.target.parentNode.parentNode.parentNode);
         });
     });
 
@@ -49,22 +62,4 @@ document.addEventListener("DOMContentLoaded", (evt) => {
             });
         });
     });
-
-    // allForm.forEach((elem) => {
-    //     elem.addEventListener("submit", async (evt) => {
-    //         evt.preventDefault();
-    //         const currForm = evt.target.parentNode.parentNode;
-    //         const thxMess = currForm.nextElementSibling;
-    //         console.log(currForm);
-    //         console.log(thxMess);
-
-    //         currForm.style.display = "none";
-    //         thxMess.style.display = "flex";
-    //         const res = await fetch("url", {
-    //             method: "POST",
-    //             body: "",
-    //         });
-    //         const bar = await res.json();
-    //     });
-    // });
 });

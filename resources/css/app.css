@@ -47,6 +47,11 @@ body {
     position: relative;
     overflow-x: hidden;
 }
+
+.modal__open {
+    overflow-y: hidden;
+    margin-right: 10px;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -713,6 +718,9 @@ footer {
     }
 }
 @media (max-width: 992px) {
+    .modal__open {
+        margin-right: 0px;
+    }
     .default__button {
         font-size: 12px;
     }

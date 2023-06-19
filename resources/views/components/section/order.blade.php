@@ -1,7 +1,8 @@
 @push('head')
-    @once
-        @vite('resources/css/components/order.css')
-    @endonce
+@once
+@vite('resources/js/components/order.js')
+@vite('resources/css/components/order.css')
+@endonce
 @endpush
 
 <section class="order-consultation">
@@ -29,5 +30,9 @@
                 </a>
             </p>
         </div>
+    </div>
+    <div class="order-consultation__thx">
+        <h1 class="order-consultation__heading">
+            {{ __('Скоро наш менеджер свяжется с вами') }}</h1>
     </div>
 </section>

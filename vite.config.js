@@ -63,6 +63,7 @@ export default defineConfig({
                 "resources/js/components/constructor.js",
 
                 "resources/css/components/order.css",
+                "resources/js/components/order.js",
                 "resources/css/components/feedback.css",
                 "resources/css/components/project-item.css",
 

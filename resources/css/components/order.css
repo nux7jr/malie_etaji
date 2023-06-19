@@ -12,6 +12,15 @@
     display: flex;
     justify-content: space-between;
 }
+.order-consultation__thx {
+    display: none;
+    border-radius: var(--border-raduis-defalut);
+    background-color: var(--color-beige);
+    padding: 31.5px 90px;
+
+    justify-content: center;
+    text-align: center;
+}
 .order-consultation__header {
     display: flex;
     flex-direction: column;

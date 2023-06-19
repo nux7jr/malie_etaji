@@ -1,7 +1,7 @@
 export function initReels(Swiper) {
     const reels = new Swiper(".reels-swiper", {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 47,
         // centeredSlides: true,
         pagination: {
             clickable: true,
