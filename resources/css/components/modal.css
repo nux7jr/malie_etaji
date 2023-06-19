@@ -160,6 +160,10 @@
 .income__item > .default__button {
     flex: 1;
 }
+.modal__window--active {
+    display: flex;
+    animation: ;
+}
 @media (max-width: 1440px) {
     .income__item {
         flex-direction: column;

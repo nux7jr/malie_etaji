@@ -19,6 +19,7 @@
               <h1 class="modal__h1">
                 {{__('Выберите мессенджер где вам удобнее получить проект')}}
               </h1>
+              
               <div class="modal__social">
                 <a class="modal__link" href="http://">
                   <img class="modal__img" src="{{ Vite::asset('resources/images/modals/Telega.svg') }}" alt="telega">
