@@ -82,6 +82,7 @@ export default defineConfig({
                 // modal
                 "resources/css/components/modal.css",
                 "resources/js/components/modal.js",
+                "resources/css/components/case.css",
             ],
             refresh: true,
         }),

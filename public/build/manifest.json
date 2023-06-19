@@ -57,6 +57,11 @@
     "isEntry": true,
     "src": "resources/css/components/article.css"
   },
+  "resources/css/components/case.css": {
+    "file": "assets/case-36f9d5cc.css",
+    "isEntry": true,
+    "src": "resources/css/components/case.css"
+  },
   "resources/css/components/certificates.css": {
     "file": "assets/certificates-6010b203.css",
     "isEntry": true,
