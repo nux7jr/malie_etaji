@@ -1,10 +1,4 @@
 <?php
-/**
- * GIT DEPLOYMENT SCRIPT
- *
- * Used for automatically deploying websites via GitHub
- *
- */
 
 // array of commands
 $commands = array(
@@ -13,7 +7,6 @@ $commands = array(
     'git commit -m temp',
     'git fetch --all',
     'git reset --hard origin/main',
-    'git pull',
     'git status',
     'git submodule sync',
     'git submodule update',
