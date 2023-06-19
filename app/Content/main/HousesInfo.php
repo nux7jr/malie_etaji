@@ -515,9 +515,9 @@ class HousesInfo
         'price_small' => __('от 1.9 млн ₽'),
         'item_info' => [
           'square' => 76,
-          'floors' => '1',
-          'bedrooms' => '3',
-          'bathrooms' => '1',
+          'floors' => 1,
+          'bedrooms' => 3,
+          'bathrooms' => 1,
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -627,9 +627,9 @@ class HousesInfo
         'price_small' => __('от 2,2 млн ₽'),
         'item_info' => [
           'square' => 90,
-          'floors' => '1',
-          'bedrooms' => '3',
-          'bathrooms' => '2',
+          'floors' => 1,
+          'bedrooms' => 3,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -740,9 +740,9 @@ class HousesInfo
         'price_small' => __('от 2,4 млн ₽'),
         'item_info' => [
           'square' => 102,
-          'floors' => '1',
-          'bedrooms' => '4',
-          'bathrooms' => '2',
+          'floors' => 1,
+          'bedrooms' => 4,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -852,9 +852,9 @@ class HousesInfo
         'price_small' => __('от 2,7 млн ₽'),
         'item_info' => [
           'square' => 110,
-          'floors' => '1',
-          'bedrooms' => '3',
-          'bathrooms' => '2',
+          'floors' => 1,
+          'bedrooms' => 3,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -965,9 +965,9 @@ class HousesInfo
         'price_small' => __('от 2,6 млн ₽'),
         'item_info' => [
           'square' => 111,
-          'floors' => '2',
-          'bedrooms' => '6',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 6,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1078,9 +1078,9 @@ class HousesInfo
         'price_small' => __('от 2,9 млн ₽'),
         'item_info' => [
           'square' => 112,
-          'floors' => '2',
-          'bedrooms' => '5',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 5,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1190,9 +1190,9 @@ class HousesInfo
         'price_small' => __('от 3.2 млн ₽'),
         'item_info' => [
           'square' => 135,
-          'floors' => '2',
-          'bedrooms' => '4',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 4,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1309,9 +1309,9 @@ class HousesInfo
         'price_small' => __('от 3.2 млн ₽'),
         'item_info' => [
           'square' => 135,
-          'floors' => '2',
-          'bedrooms' => '4',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 4,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1422,9 +1422,9 @@ class HousesInfo
         'price_small' => __('от 1.8 млн ₽'),
         'item_info' => [
           'square' => 72,
-          'floors' => '2',
-          'bedrooms' => '3',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 3,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1537,9 +1537,9 @@ class HousesInfo
         'price_small' => __('от 1.9 млн ₽'),
         'item_info' => [
           'square' => 72,
-          'floors' => '2',
-          'bedrooms' => '3',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 3,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1653,9 +1653,9 @@ class HousesInfo
         'price_small' => __('от 2 млн ₽'),
         'item_info' => [
           'square' => 80,
-          'floors' => '2',
-          'bedrooms' => '3',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 3,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1766,9 +1766,9 @@ class HousesInfo
         'price_small' => __('от 2 млн ₽'),
         'item_info' => [
           'square' => 97,
-          'floors' => '2',
-          'bedrooms' => '5',
-          'bathrooms' => '2',
+          'floors' => 2,
+          'bedrooms' => 5,
+          'bathrooms' => 2,
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1858,21 +1858,32 @@ class HousesInfo
    */
   public static function filter(array $settings): ?array
   {
-    return self::$card_elements->filter(function ($element) use ($settings) {
-      $filtered =
-        ($settings['house-list'] === $element['category'] ||
-          $settings['house-list'] === 'Все' ||
-          $settings['house-list'] === 'Не выбрано') &&
-        $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
-        $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
-        $element['item_info']['square'] >= floatval($settings['square-start']) &&
-        $element['item_info']['square'] <= floatval($settings['square-end']);
-      if ($filtered) {
-        return $element;
-      }
-    })->toArray();
+      return self::$card_elements->filter(function ($element) use ($settings) {
+          $filtered =
+              ($settings['house-list'] === $element['category'] ||
+                  $settings['house-list'] === 'Все' ||
+                  $settings['house-list'] === 'Не выбрано') &&
+              $element['price_kit'] >= self::strToMillion($settings['price-start']) &&
+              $element['price_kit'] <= self::strToMillion($settings['price-end']) &&
+              $element['item_info']['square'] >= floatval($settings['square-start']) &&
+              $element['item_info']['square'] <= floatval($settings['square-end']) &&
+              (!isset($settings['floor']) || $element['item_info']['floors'] === intval($settings['floor'])) &&
+              (!isset($settings['terrace']) || in_array('Терасса', $element['tags'])) &&
+              (!isset($settings['garage']) || in_array('Гараж', $element['tags'])) &&
+              (!isset($settings['stockroom']) || in_array('Кладовая', $element['tags']) || in_array('Гардеробная', $element['tags'])) &&
+              (!isset($settings['balcony']) || in_array('Балкон', $element['tags']));
+          if ($filtered) {
+              return $element;
+          }
+      })->toArray();
   }
-
+  public static function getCategoryByName(string $name_category){
+      return self::$card_elements->filter(function ($element) use ($name_category){
+          if ($element['category'] === $name_category){
+              return $element;
+          }
+      })->toArray();
+  }
   /**
    * @param string $value
    * @return int

@@ -11,9 +11,11 @@
     color: var(--color-grayest);
 }
 .rangees {
-    margin: 0 auto;
-    max-width: 314px;
+    margin-left: 8%;
+    margin-right: calc(8% + 16px);
+    max-width: 80%;
     margin-bottom: 0;
+
 }
 .project-filter__wrapper {
     display: flex;
@@ -45,7 +47,7 @@
 }
 .project-input__rangees {
     position: relative;
-    min-width: 330px;
+    min-width: 223px;
     background-color: white;
     height: 16px;
     padding: 20px;
@@ -118,6 +120,7 @@
 .floors__wrapper {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .floors__label {
     font-weight: 700;
@@ -137,8 +140,9 @@
     padding-top: 30px;
 }
 .rangees-square {
-    margin: 0 auto;
-    max-width: 314px;
+    margin-left: 8%;
+    margin-right: calc(8% + 16px);
+    max-width: 80%;
     margin-bottom: 0;
 }
 .project-input__label-price {
@@ -231,11 +235,15 @@
     max-width: 900px;
 }
 .more__button {
-    margin-top: 50px;
-    color: var(--color-red);
-    background-color: var(--color-pink);
+    margin: 0 auto;
+    text-align: center;
+    display: none;
 }
-
+@media (max-width: 1690px){
+    .project-filter__wrapper{
+        flex-wrap: wrap;
+    }
+}
 @media (max-width: 1440px) {
     .project-filter__wrapper {
         flex-direction: column;

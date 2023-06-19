@@ -55,12 +55,14 @@ document.addEventListener("DOMContentLoaded", (evt) => {
     const buttonPeculiarities = document.querySelector(".peculiarities__more");
     const allPeculiarities = document.querySelectorAll(".peculiarities__card");
 
-    buttonPeculiarities.addEventListener("click", (evt) => {
-        allPeculiarities.forEach((elem) => {
-            elem.style.display = "block";
+    if (buttonPeculiarities !== null){
+        buttonPeculiarities.addEventListener("click", (evt) => {
+            allPeculiarities.forEach((elem) => {
+                elem.style.display = "block";
+            });
+            evt.target.style.display = "none";
         });
-        evt.target.style.display = "none";
-    });
+    }
     const allPreviewContent = document.querySelectorAll(
         ".project-preview__item"
     );

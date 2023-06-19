@@ -36,7 +36,7 @@ function routeList(): void
                 ['path' => '/', 'name' => 'Главная'],
                 ['path' => '/projects', 'name' => 'Проекты'],
             ],
-            'projects' => HousesInfo::$card_elements,
+            'projects' => HousesInfo::getCategoryByName(__('Все')),
             'house_setting' => [
                 'Не выбрано',
                 'Все',
@@ -53,7 +53,7 @@ function routeList(): void
                 ['path' => '/', 'name' => 'Главная'],
                 ['path' => '/projects', 'name' => 'Проекты'],
             ],
-            'projects' => HousesInfo::$card_elements,
+            'projects' => HousesInfo::getCategoryByName(__('Барны')),
             'house_setting' => [
                 'Барны',
                 'Не выбрано',
@@ -70,7 +70,7 @@ function routeList(): void
                 ['path' => '/', 'name' => 'Главная'],
                 ['path' => '/projects', 'name' => 'Проекты'],
             ],
-            'projects' => HousesInfo::$card_elements,
+            'projects' => HousesInfo::getCategoryByName(__('Одноэтажные')),
             'house_setting' => [
                 'Одноэтажные',
                 'Не выбрано',
@@ -87,7 +87,7 @@ function routeList(): void
                 ['path' => '/', 'name' => 'Главная'],
                 ['path' => '/projects', 'name' => 'Проекты'],
             ],
-            'projects' => HousesInfo::$card_elements,
+            'projects' => HousesInfo::getCategoryByName(__('Двухэтажные')),
             'house_setting' => [
                 'Двухэтажные',
                 'Одноэтажные',

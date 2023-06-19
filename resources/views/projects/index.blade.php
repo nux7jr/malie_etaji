@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="project-input project-filter__item">
-                    <label for="floors" class="project-input__label">Кол-во этажей</label>
+                    <label for="floors" class="project-input__label">{{__('Кол-во этажей')}}</label>
                     <div class="floors__wrapper">
                         <div class="floors__item">
                             <input class="floors__input" type="radio" name="floor" value="1" id="one-floor">
@@ -84,25 +84,36 @@
                     </div>
                 </div>
                 <div class="project-input project-filter__item">
-                    <label for="floors" class="project-input__label">Дополнительно</label>
+                    <label for="floors" class="project-input__label">{{__('Дополнительно')}}</label>
                     <div class="floors__wrapper">
-
-                        <div class="floors__item">
-                            <input class="floors__input" type="checkbox" name="terrace" value="true" id="terrace">
-                            <label class="floors__label" for="terrace">+ терасса</label>
-                        </div>
                         <div class="floors__item">
                             <input class="floors__input" type="checkbox" name="garage" value="true" id="garage">
-                            <label class="floors__label" for="garage">+ гараж</label>
+                            <label class="floors__label" for="garage">{{__('+ гараж')}}</label>
+                        </div>
+                        <div class="floors__item">
+                            <input class="floors__input" type="checkbox" name="stockroom" value="true" id="stockroom">
+                            <label class="floors__label" for="stockroom">{{__('+ кладовая')}}</label>
+                        </div>
+                        <div class="floors__item">
+                            <input class="floors__input" type="checkbox" name="stockroom" value="true" id="wardrobe">
+                            <label class="floors__label" for="wardrobe">{{__('+ гардеробная')}}</label>
+                        </div>
+                        <div class="floors__item">
+                            <input class="floors__input" type="checkbox" name="terrace" value="true" id="terrace">
+                            <label class="floors__label" for="terrace">{{__('+ терасса')}}</label>
+                        </div>
+                        <div class="floors__item">
+                            <input class="floors__input" type="checkbox" name="balcony" value="true" id="balcony">
+                            <label class="floors__label" for="balcony">{{__('+ балкон')}}</label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="project-option">
-            <p class="project-option__text">Найдено <span class="quantity-obj">45</span> объектов</p>
-            <button class="default__button cls__button">Отменить фильтр</button>
-            <button class="default__button apply__button">Применить</button>
+            <p class="project-option__text">{{__('Найдено')}}<span class="quantity-obj"> {{count($projects)}} </span>{{__('объектов')}}</p>
+            <button class="default__button cls__button">{{__('Отменить фильтр')}}</button>
+            <button class="default__button apply__button">{{__('Применить')}}</button>
         </div>
     </form>
 </section>
@@ -130,8 +141,8 @@
         </x-cards.project-item>
         @endforeach
     </div>
-    <button class="default__button more__button">Показать еще <span class="q-projects">15</span>из
-        <span class="a-projects">45</span>проектов</button>
+    <button class="default__button more__button">{{__('Показать еще')}}<span class="q-projects">{{count($projects)}} </span>{{__('из')}}
+        <span class="a-projects"> {{\App\Content\main\HousesInfo::$card_elements->count()}} </span>{{__('проектов')}}</button>
     <div class="project-call">
         <h1 class="project-call__heading">{{__('Авторизуйтесь в личном кабинете, чтобы экономить время и отслеживать все
             действия и этапы строительства')}}</h1>
