@@ -26,7 +26,6 @@
     @vite('resources/js/components/mob_menu.js')
     @vite('resources/css/components/mob_menu.css')
 </head>
-
 <body>
     <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
     <div id="app" class="app">
