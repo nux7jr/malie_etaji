@@ -11,9 +11,30 @@
     --swiper-theme-color: #f04b54;
     --border-raduis-defalut: 50px;
 }
+/* geo */
 .hidden-city {
     display: none;
 }
+.hidden_city--active {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+}
+.geo-header {
+    display: flex;
+}
+.hidden-city__link {
+    color: var(--color-black);
+    transition: 0.2s;
+}
+.hidden-city__link:visited {
+    color: var(--color-black);
+}
+.hidden-city__link:hover {
+    opacity: 0.6;
+}
+/* end geo */
 html {
     scroll-behavior: smooth;
 }

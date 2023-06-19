@@ -4,6 +4,9 @@ const main_menu = document.querySelector(".header__links");
 const logo = document.querySelector(".header__logo");
 const close_button = document.querySelectorAll(".header__goback");
 
+const geo = document.querySelector(".geo__button");
+const hidden_city = document.querySelector(".hidden-city");
+
 sub_menu_links.forEach((element) => {
     element.addEventListener("click", (evt) => {
         const curr__submenu = evt.target.dataset.menu;
@@ -38,4 +41,8 @@ close_button.forEach((element) => {
             logo.classList.remove("visually-hidden");
         }, 500);
     });
+});
+
+geo.addEventListener("click", (evt) => {
+    hidden_city.classList.toggle("hidden_city--active")
 });

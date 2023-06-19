@@ -1,30 +1,32 @@
 @php $city = json_decode($city,true);@endphp
 <section class="heading-info">
     <div class="header-select__wrapper">
-        <button title="{{ __('Выбор города') }}" class="heading-info__button geo__button">
-            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg') }}"
-                alt="{{ __($city['show']['name']) }}">
-            {{ __($city['show']['name']) }}
-            <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg') }}"
-                alt="{{ __($city['show']['name']) }}">
-        </button>
-        <div class="hidden-city">
-        @foreach($city['hidden'] as $hidden_city)
-            @php
-            if (($subdomain = request()->route()->parameter('subdomain')) !== null){
+        <div class="geo-header">
+            <button title="{{ __('Выбор города') }}" class="heading-info__button geo__button">
+                <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo.svg') }}"
+                    alt="{{ __($city['show']['name']) }}">
+                {{ __($city['show']['name']) }}
+                <img class="geo__img" src="{{ Vite::asset('resources/images/icons/geo_arr.svg') }}"
+                    alt="{{ __($city['show']['name']) }}">
+            </button>
+            <div class="hidden-city">
+                @foreach($city['hidden'] as $hidden_city)
+                @php
+                if (($subdomain = request()->route()->parameter('subdomain')) !== null){
                 $host = request()->host();
                 $new_host = str_replace($subdomain,$hidden_city['code'],$host);
                 $url = str_replace($host,$new_host,request()->fullUrl());
-            }else{
+                }else{
                 $host = request()->host();
                 $new_host = $hidden_city['code'] . '.' . request()->host();
                 $url = str_replace($host,$new_host,request()->fullUrl());
 
-            }
-            @endphp
-                <a href="{{$url}}">{{__($hidden_city['name'])}}</a>
+                }
+                @endphp
+                <a class="hidden-city__link" href="{{$url}}">{{__($hidden_city['name'])}}</a>
                 @endforeach
             </div>
+        </div>
         <div class="user__option">
             <button class="heading-info__button search">
                 <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg') }}"
@@ -116,7 +118,8 @@
                 <a title="{{ __('О нас') }}" class="header__button header__link" href="/about">
                     {{ __('О нас') }}
                 </a>
-                <a title="{{ __('Карьера') }}" class="header__button header__link" href="https://krasnoyarsk.hh.ru/employer/895977">
+                <a title="{{ __('Карьера') }}" class="header__button header__link"
+                    href="https://krasnoyarsk.hh.ru/employer/895977">
                     {{ __('Карьера') }}
                 </a>
                 <a title="{{ __('Блог') }}" class="header__button header__link" href="/blog">
