@@ -18,10 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Content\main\HousesInfo;
 
-Route::group(['domain' => '{subdomain}.{domain}'], function () {
+Route::group(['domain' => '{subdomain}.{domain}.ru'], function () {
     routeList();
 });
-Route::group(['domain' => '{domain}'], function () {
+Route::group(['domain' => '{domain}.ru'], function () {
     routeList();
 });
 function routeList(): void
