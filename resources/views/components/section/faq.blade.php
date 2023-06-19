@@ -6,8 +6,7 @@
 @endpush
 
 @php
-use App\Content\main\Faq;
-$faq = (new Faq())->toArray();
+$techfaq = json_decode($faqs, true)
 @endphp
 
 <section class="faq">
@@ -20,7 +19,7 @@ $faq = (new Faq())->toArray();
     </button>
   </div>
   <div class="faq__wrapper">
-    @foreach ($faq as $item) <div class="faq__item">
+    @foreach ($techfaq as $item) <div class="faq__item">
       <div class="faq__toggle">
         <span>
           {{$item['question']}}
@@ -28,7 +27,11 @@ $faq = (new Faq())->toArray();
         <img class="faq__icon" src="{{ Vite::asset('resources/images/icons/faq.svg') }}" alt="faq__icon">
       </div>
       <div class="faq__content">
-        {{$item['ans']}}
+        @foreach ($item['ans'] as $item)
+        <p>
+          {{$item}}
+        </p>
+        @endforeach
       </div>
     </div>
     @endforeach

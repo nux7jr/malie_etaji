@@ -8,6 +8,11 @@
 @php
 use App\Content\main\Mortgage;
 $mortgage_list = (new Mortgage())->toArray();
+
+
+use App\Content\main\Faq;
+$faq = (new Faq())->toArray();
+
 @endphp
 
 @section('content')
@@ -186,8 +191,8 @@ $mortgage_list = (new Mortgage())->toArray();
   @endfor
   </div>
 </section> --}}
-<x-section.faq>
 
+<x-section.faq faqs='{!! json_encode($faq) !!}'>
 </x-section.faq>
 <x-section.selection>
 </x-section.selection>
