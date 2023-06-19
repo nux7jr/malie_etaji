@@ -47,6 +47,20 @@ class SpecPeople implements Arrayable
       ],
       [
         'image' => (new Image(
+          src: 'people/olga.png',
+        ))->getSrc(),
+        'name' => __('Ольга Демченко'),
+        'spec' => __('Ипотечный брокер'),
+      ],
+      [
+        'image' => (new Image(
+          src: 'people/Aseev.png',
+        ))->getSrc(),
+        'name' => __('Андрей Асеев'),
+        'spec' => __('Директор по строительству'),
+      ],
+      [
+        'image' => (new Image(
           src: 'people/anna.png',
         ))->getSrc(),
         'name' => __('Анна Данилова'),
@@ -59,28 +73,14 @@ class SpecPeople implements Arrayable
         'name' => __('Владислав Горковенко'),
         'spec' => __('Руководитель отдела продаж'),
       ],
-      [
-        'image' => (new Image(
-          src: 'people/sarvar.jpg',
-        ))->getSrc(),
-        'name' => __('Андрей Асеев'),
-        'spec' => __('Директор по строительству'),
-      ],
-      [
-        'image' => (new Image(
-          src: 'people/sarvar.jpg',
-        ))->getSrc(),
-        'name' => __('Ольга Демченко'),
-        'spec' => __('Ипотечный брокер'),
-      ],
 
-      [
-        'image' => (new Image(
-          src: 'people/sarvar.jpg',
-        ))->getSrc(),
-        'name' => __('Максим Иващенко'),
-        'spec' => __('Главный архитектор'),
-      ]
+      // [
+      //   'image' => (new Image(
+      //     src: 'people/sarvar.jpg',
+      //   ))->getSrc(),
+      //   'name' => __('Максим Иващенко'),
+      //   'spec' => __('Главный архитектор'),
+      // ]
     ];
   }
   /**

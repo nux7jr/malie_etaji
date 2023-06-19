@@ -108,12 +108,12 @@
                 <button data-menu="second" title="{{ __('Виды ипотеки') }}" class="header__button header__link submenu">
                     {{ __('Ипотека') }}
                 </button>
-                <a title="{{ __('Инвестиции') }}" class="header__button header__link" href="/invest">
+                {{-- <a title="{{ __('Инвестиции') }}" class="header__button header__link" href="/invest">
                     {{ __('Инвестиции') }}
                 </a>
                 <a title="{{ __('Риэлтору') }}" class="header__button header__link" href="/realtors">
                     {{ __('Риэлтору') }}
-                </a>
+                </a> --}}
                 <a title="{{ __('О нас') }}" class="header__button header__link" href="/about">
                     {{ __('О нас') }}
                 </a>

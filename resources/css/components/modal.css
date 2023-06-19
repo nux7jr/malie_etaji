@@ -16,19 +16,7 @@
     width: 36px;
     height: 36px;
 }
-.modal__wrapper {
-    width: 100%;
-    position: relative;
-}
-.modal__wrapper::after {
-    content: "";
-    width: 172.5px;
-    height: 2px;
-    top: 20px;
-    background-color: var(--color-gray);
-    position: absolute;
-    left: calc(50vw - 80px);
-}
+
 .modal__content {
     display: flex;
     gap: 20px;
@@ -39,7 +27,6 @@
     border-top-left-radius: var(--border-raduis-defalut);
     padding: 60px 50px;
     padding-right: 100px;
-
     color: var(--color--black);
 }
 .modal__form {
@@ -159,6 +146,64 @@
 }
 .income__item > .default__button {
     flex: 1;
+}
+
+@keyframes modal_in {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(-0px);
+    }
+}
+@keyframes modal_out {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(300px);
+    }
+}
+
+@keyframes opacity_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opacity_out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.modal__wrapper {
+    width: 100%;
+    position: relative;
+    animation: modal_in 0.5s ease-in-out forwards;
+}
+.modal__wrapper::after {
+    content: "";
+    width: 172.5px;
+    height: 2px;
+    top: 20px;
+    background-color: var(--color-gray);
+    position: absolute;
+    left: calc(50vw - 80px);
+}
+.modal__window--active {
+    display: flex;
+    animation: opacity_in 0.5s ease-in-out forwards;
+}
+.modal__window--out {
+    animation: opacity_out 0.5s ease-in-out forwards;
+}
+.modal__wrapper--out {
+    animation: modal_out 0.5s ease-in-out forwards;
 }
 @media (max-width: 1440px) {
     .income__item {

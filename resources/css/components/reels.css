@@ -1,8 +1,11 @@
 .reels-video {
     height: 409px;
     border-radius: var(--border-raduis-defalut);
-}
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 .reels__heading {
     font-weight: 700;
     font-size: 42px;
@@ -15,7 +18,6 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 
 .reels-pagination > .swiper-pagination-bullet {
     width: 40px;

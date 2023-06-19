@@ -20,7 +20,12 @@ $format_info = $about_heading->toArray();
 
 use App\Content\main\SipPanel;
 $sips = (new SipPanel())->toArray();
-// dd($sips);
+
+
+use App\Content\main\FaqTech;
+$faq = (new FaqTech())->toArray();
+
+
 @endphp
 
 <x-section.about-header format={!!json_encode($format_info)!!} paths={!!json_encode($paths)!!}>
@@ -43,8 +48,26 @@ $sips = (new SipPanel())->toArray();
             материал, устроенный по принципу сэндвича из трех слоев.')}}
           </p>
           <p class="tech-about__paraf">
-            {{__('СИП-панель (от англ. Structural insulated Panel (SIP) — структурно-изоляционная панель) — строительный
-            материал, устроенный по принципу сэндвича из трех слоев.')}}
+            {{__('«СИП представляет собой панель с сердцевиной из утеплителя, закрытого с обеих сторон
+            ориентированно-стружечными плитами (ОСП). Сами плиты производятся из щепок, расположенных перпендикулярно
+            друг другу. Они практически полностью состоят из дерева, несколько процентов в составе — это связующие
+            вещества. В качестве утеплителя обычно используется пенополистирол')}}
+          </p>
+          <p class="tech-about__paraf">
+            {{__('Энергоэффективность SIP-панелей в три раза выше, чем у дерева и газобетона, в три раза теплее бруса и
+            в 15 – кирпича. ')}}
+          </p>
+          <p class="tech-about__paraf">
+            {{__('Кроме этого, такой дом очень экологичный и в два раза дешевле квартиры (средняя стоимость квадрата
+            начинается от 55 тысяч рублей).')}}
+          </p>
+          <p class="tech-about__paraf">
+            {{__('SIP-панели - очень прочный материал, обладает отличными звукоизоляционными, теплоизоляционными
+            свойствами — это надёжность и качество. Срок службы дома из SIP-панелей - более 100 лет.')}}
+          </p>
+          <p class="tech-about__paraf">
+            {{__('Технология строительства из SIP-панелей относится к каркасному строительству. Дома, возводимые по
+            такой технологии - строятся быстро, выглядят после отделки презентабельно и внушают доверие.')}}
           </p>
         </div>
       </div>
@@ -63,16 +86,17 @@ $sips = (new SipPanel())->toArray();
     </div>
   </div>
   <div class="tech-call">
-    {{-- <img src="{{Vite::asset('/resources/images/icons/offer_arr_red.svg')}}" alt=""> --}}
-    <div class="tech-call__item">
-      <p class="tech-call__paraf">{{__('Не знаете что выбрать? Проконсультируйтесь с нашим специалистом')}}</p>
-      <a class="tech-call__link" href="/">
-        <img class="tech-call__img" src="{{Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
+    <div class="tech-call__item" data-modal_id="modal__income">
+      <p class="tech-call__paraf" data-modal_id="modal__income">{{__('Не знаете что выбрать? Проконсультируйтесь с нашим
+        специалистом')}}</p>
+      <a class="tech-call__link">
+        <img class="tech-call__img" data-modal_id="modal__income"
+          src="{{Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
       </a>
     </div>
     <div class="tech-call__item">
       <p class="tech-call__paraf">{{__('Расчитать проект')}}</p>
-      <a class="tech-call__link" href="/">
+      <a class="tech-call__link" href="/live">
         <img class="tech-call__img" src="{{Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
       </a>
     </div>
@@ -232,8 +256,12 @@ $sips = (new SipPanel())->toArray();
 </x-section.certificates>
 <x-section.feedback>
 </x-section.feedback>
-<x-section.faq>
+
+
+<x-section.faq faqs='{!! json_encode($faq) !!}'>
 </x-section.faq>
+
+
 <x-section.grid-template>
 </x-section.grid-template>
 @endsection
