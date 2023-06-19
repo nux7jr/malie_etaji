@@ -43,7 +43,7 @@
     "src": "nouislider.css"
   },
   "resources/css/app.css": {
-    "file": "assets/app-55816d4c.css",
+    "file": "assets/app-80792180.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -178,7 +178,7 @@
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-efd95539.css",
+    "file": "assets/project-item-b3087bf1.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
@@ -188,7 +188,7 @@
     "src": "resources/css/pages/projects/projects.css"
   },
   "resources/css/pages/technologies/technologies.css": {
-    "file": "assets/technologies-8816d93e.css",
+    "file": "assets/technologies-b0853104.css",
     "isEntry": true,
     "src": "resources/css/pages/technologies/technologies.css"
   },
@@ -698,11 +698,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -1185,8 +1185,8 @@
     "src": "resources/images/single/79-101/OD79-101/Вяткин_Скандинавия/IMG_4194.jpg"
   },
   "resources/images/gallery/13.jpg": {
-    "file": "assets/13-da408a60.jpg",
-    "src": "resources/images/single/92-112/OD92-112/Никифоров_Минино/IMG_3749.jpg"
+    "file": "assets/5-da408a60.jpg",
+    "src": "resources/images/stage/5.jpg"
   },
   "resources/images/gallery/14.jpg": {
     "file": "assets/14-1f7c4a39.jpg",
@@ -1229,8 +1229,8 @@
     "src": "resources/images/single/79-101/OD79-101/IMG_4002.jpg"
   },
   "resources/images/gallery/8.jpg": {
-    "file": "assets/8-a1ea4850.jpg",
-    "src": "resources/images/single/79-101/OD79-101/IMG_4023.jpg"
+    "file": "assets/6-a1ea4850.jpg",
+    "src": "resources/images/stage/6.jpg"
   },
   "resources/images/gallery/9.jpg": {
     "file": "assets/9-e96c54ad.jpg",
@@ -1410,7 +1410,7 @@
   },
   "resources/images/mortgage/adv/1.png": {
     "file": "assets/1-7fdd722a.png",
-    "src": "resources/images/mortgage/adv/1.png"
+    "src": "resources/images/stage/2.png"
   },
   "resources/images/mortgage/adv/2.jpg": {
     "file": "assets/2-c80ada90.jpg",
@@ -1464,25 +1464,97 @@
     "file": "assets/content-9d02146c.jpg",
     "src": "resources/images/order/content.jpg"
   },
+  "resources/images/peculiarities_projects/balcony.jpg": {
+    "file": "assets/balcony-e7cd656c.jpg",
+    "src": "resources/images/peculiarities_projects/balcony.jpg"
+  },
+  "resources/images/peculiarities_projects/barn_style.jpg": {
+    "file": "assets/barn_style-3c7e321d.jpg",
+    "src": "resources/images/peculiarities_projects/barn_style.jpg"
+  },
+  "resources/images/peculiarities_projects/big.jpg": {
+    "file": "assets/big-1a3f0427.jpg",
+    "src": "resources/images/peculiarities_projects/big.jpg"
+  },
+  "resources/images/peculiarities_projects/chalet_style.jpg": {
+    "file": "assets/chalet_style-0d1dbc47.jpg",
+    "src": "resources/images/peculiarities_projects/chalet_style.jpg"
+  },
+  "resources/images/peculiarities_projects/covered_terrace.jpg": {
+    "file": "assets/covered_terrace-7002d134.jpg",
+    "src": "resources/images/peculiarities_projects/covered_terrace.jpg"
+  },
+  "resources/images/peculiarities_projects/dressing_room.jpg": {
+    "file": "assets/dressing_room-05cb7971.jpg",
+    "src": "resources/images/peculiarities_projects/dressing_room.jpg"
+  },
+  "resources/images/peculiarities_projects/entrance.jpg": {
+    "file": "assets/entrance-df1cf3bc.jpg",
+    "src": "resources/images/peculiarities_projects/entrance.jpg"
+  },
+  "resources/images/peculiarities_projects/flat_roof.jpg": {
+    "file": "assets/flat_roof-ded1be92.jpg",
+    "src": "resources/images/peculiarities_projects/flat_roof.jpg"
+  },
+  "resources/images/peculiarities_projects/garage.jpg": {
+    "file": "assets/garage-99d5e12d.jpg",
+    "src": "resources/images/peculiarities_projects/garage.jpg"
+  },
   "resources/images/peculiarities_projects/gard.jpg": {
     "file": "assets/gard-0c5d8732.jpg",
     "src": "resources/images/peculiarities_projects/gard.jpg"
+  },
+  "resources/images/peculiarities_projects/high_ceilings.jpg": {
+    "file": "assets/high_ceilings-bddaf3a1.jpg",
+    "src": "resources/images/peculiarities_projects/high_ceilings.jpg"
   },
   "resources/images/peculiarities_projects/kitchen.jpg": {
     "file": "assets/kitchen-e38c59b9.jpg",
     "src": "resources/images/peculiarities_projects/kitchen.jpg"
   },
+  "resources/images/peculiarities_projects/kitchen_dining_room.jpg": {
+    "file": "assets/kitchen_dining_room-3cef40bc.jpg",
+    "src": "resources/images/peculiarities_projects/kitchen_dining_room.jpg"
+  },
+  "resources/images/peculiarities_projects/living_room-kitchen.jpg": {
+    "file": "assets/living_room-kitchen-b8bd57de.jpg",
+    "src": "resources/images/peculiarities_projects/living_room-kitchen.jpg"
+  },
+  "resources/images/peculiarities_projects/panoramic_windows.jpg": {
+    "file": "assets/panoramic_windows-04b97c4c.jpg",
+    "src": "resources/images/peculiarities_projects/panoramic_windows.jpg"
+  },
+  "resources/images/peculiarities_projects/second_light.jpg": {
+    "file": "assets/second_light-890beae7.jpg",
+    "src": "resources/images/peculiarities_projects/second_light.jpg"
+  },
+  "resources/images/peculiarities_projects/several_bathrooms.jpg": {
+    "file": "assets/several_bathrooms-5e2c8589.jpg",
+    "src": "resources/images/peculiarities_projects/several_bathrooms.jpg"
+  },
   "resources/images/peculiarities_projects/shale.jpg": {
     "file": "assets/shale-4a962d30.jpg",
     "src": "resources/images/peculiarities_projects/shale.jpg"
   },
+  "resources/images/peculiarities_projects/smart_layout.jpg": {
+    "file": "assets/smart_layout-d65572a0.jpg",
+    "src": "resources/images/peculiarities_projects/smart_layout.jpg"
+  },
+  "resources/images/peculiarities_projects/spacious_studio.jpg": {
+    "file": "assets/spacious_studio-8595e05c.jpg",
+    "src": "resources/images/peculiarities_projects/spacious_studio.jpg"
+  },
+  "resources/images/peculiarities_projects/storeroom.png": {
+    "file": "assets/storeroom-d3a5b72c.png",
+    "src": "resources/images/peculiarities_projects/storeroom.png"
+  },
+  "resources/images/peculiarities_projects/terrace.jpg": {
+    "file": "assets/terrace-0d1981fa.jpg",
+    "src": "resources/images/peculiarities_projects/terrace.jpg"
+  },
   "resources/images/peculiarities_projects/terrase.jpg": {
     "file": "assets/terrase-33a0ebb5.jpg",
     "src": "resources/images/peculiarities_projects/terrase.jpg"
-  },
-  "resources/images/peculiarities_projects/window.jpg": {
-    "file": "assets/window-1a3f0427.jpg",
-    "src": "resources/images/peculiarities_projects/window.jpg"
   },
   "resources/images/people/alena.jpeg": {
     "file": "assets/3-7318cb61.jpeg",
@@ -2077,8 +2149,8 @@
     "src": "resources/images/single/79-101/OD79-101/IMG_4022.jpg"
   },
   "resources/images/single/79-101/OD79-101/IMG_4023.jpg": {
-    "file": "assets/8-a1ea4850.jpg",
-    "src": "resources/images/single/79-101/OD79-101/IMG_4023.jpg"
+    "file": "assets/6-a1ea4850.jpg",
+    "src": "resources/images/stage/6.jpg"
   },
   "resources/images/single/79-101/OD79-101/IMG_4024.jpg": {
     "file": "assets/IMG_4024-a1580ff4.jpg",
@@ -2429,8 +2501,8 @@
     "src": "resources/images/single/92-112/OD92-112/Никифоров_Минино/IMG_3748.jpg"
   },
   "resources/images/single/92-112/OD92-112/Никифоров_Минино/IMG_3749.jpg": {
-    "file": "assets/13-da408a60.jpg",
-    "src": "resources/images/single/92-112/OD92-112/Никифоров_Минино/IMG_3749.jpg"
+    "file": "assets/5-da408a60.jpg",
+    "src": "resources/images/stage/5.jpg"
   },
   "resources/images/single/92-112/OD92-112/Никифоров_Минино/IMG_3756.jpg": {
     "file": "assets/14-1f7c4a39.jpg",
@@ -2865,8 +2937,8 @@
     "src": "resources/images/sip/2.jpg"
   },
   "resources/images/sip/20.jpg": {
-    "file": "assets/20-ee1ab5b3.jpg",
-    "src": "resources/images/sip/20.jpg"
+    "file": "assets/4-ee1ab5b3.jpg",
+    "src": "resources/images/stage/4.jpg"
   },
   "resources/images/sip/21.jpg": {
     "file": "assets/21-c2e9b88e.jpg",
@@ -2900,9 +2972,29 @@
     "file": "assets/9-829e45d9.jpg",
     "src": "resources/images/sip/9.jpg"
   },
-  "resources/images/stage/img.png": {
-    "file": "assets/img-6a90b0cc.png",
-    "src": "resources/images/stage/img.png"
+  "resources/images/stage/1.jpg": {
+    "file": "assets/1-d58a5870.jpg",
+    "src": "resources/images/stage/1.jpg"
+  },
+  "resources/images/stage/2.png": {
+    "file": "assets/1-7fdd722a.png",
+    "src": "resources/images/stage/2.png"
+  },
+  "resources/images/stage/3.jfif": {
+    "file": "assets/3-192eb18b.jfif",
+    "src": "resources/images/stage/3.jfif"
+  },
+  "resources/images/stage/4.jpg": {
+    "file": "assets/4-ee1ab5b3.jpg",
+    "src": "resources/images/stage/4.jpg"
+  },
+  "resources/images/stage/5.jpg": {
+    "file": "assets/5-da408a60.jpg",
+    "src": "resources/images/stage/5.jpg"
+  },
+  "resources/images/stage/6.jpg": {
+    "file": "assets/6-a1ea4850.jpg",
+    "src": "resources/images/stage/6.jpg"
   },
   "resources/images/swiper/back.svg": {
     "file": "assets/back-3fed7507.svg",
@@ -2921,7 +3013,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-afee9251.js",
+    "file": "assets/app-134a652e.js",
     "imports": [
       "__commonjsHelpers-725317a4.js"
     ],
