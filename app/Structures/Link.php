@@ -19,10 +19,25 @@ class Link implements Arrayable
      * @var string|null
      */
     protected static ?string $text;
+    protected static ?string $dataAttribute;
     public function __construct(?bool $header, ?string $link, ?string $text){
         self::$header   = (bool)$header;
         self::$link     = $link;
         self::$text     = $text;
+    }
+    public static function createClassWithDataAttribute(?bool $header, ?string $link, ?string $text, string $dataAttribute):self
+    {
+        $instance = new self(header:$header,link:$link,text:$text);
+        $instance::$dataAttribute = $dataAttribute;
+        return $instance;
+    }
+
+    /**
+     * @param string|null $dataAttribute
+     */
+    public static function setDataAttribute(?string $dataAttribute): void
+    {
+        self::$dataAttribute = $dataAttribute;
     }
 
     /**
@@ -31,9 +46,10 @@ class Link implements Arrayable
     public function toArray(): array
     {
         return [
-            'header'    => self::$header,
-            'link'      => self::$link,
-            'text'      => self::$text,
+            'header'            => self::$header,
+            'link'              => self::$link,
+            'text'              => self::$text,
+            'data-attribute'    => self::$dataAttribute ?? null
         ];
     }
 
