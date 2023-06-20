@@ -34,7 +34,7 @@ class BuiltHouses implements Arrayable
           ))->getSrc(),
         ],
         'info' => [
-          'square' => '80,7  м²',
+          'square' => '80,7',
           'time' => '7',
           'price' => '5 350 000'
         ]
@@ -56,7 +56,7 @@ class BuiltHouses implements Arrayable
 
         ],
         'info' => [
-          'square' => '101  м²',
+          'square' => '101',
           'time' => '5,5',
           'price' => '6 490 000'
         ]
@@ -80,7 +80,7 @@ class BuiltHouses implements Arrayable
           ))->getSrc(),
         ],
         'info' => [
-          'square' => '80  м²',
+          'square' => '80',
           'time' => '6',
           'price' => '5 400 000'
         ]
@@ -98,15 +98,62 @@ class BuiltHouses implements Arrayable
           ))->getSrc(),
           (new Image(
             src: 'built/4/3.jpg',
+          ))->getSrc()
+        ],
+        'info' => [
+          'square' => '120',
+          'time' => '4',
+          'price' => '6 553 000'
+        ]
+      ],
+      [
+        'filter' => 'single',
+        'name' => 'Дом 10-01С',
+        'about' => 'Вариация нашего типового проекта с корректировками от заказчика. При сохранении внутренних планировочных решений изменился внешний вид дома. Терраса вынесена на передний план, в остальном - стандартная кухня-гостиная, 3 спальных комнаты, санузел и гардероб.',
+        'img' => [
+          (new Image(
+            src: 'built/5/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'built/4/4.jpg',
+            src: 'built/5/2.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'built/5/3.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'built/5/4.jpg',
           ))->getSrc(),
         ],
         'info' => [
-          'square' => '80  м²',
+          'square' => '120',
+          'time' => '4',
+          'price' => '5 572 000'
+        ]
+      ],
+      [
+        'filter' => 'barn',
+        'name' => 'Барнхаус 60-78',
+        'about' => 'Барнхаус 60-78, п. Вечерницы, Емельяновский район
+        Очень приятный для визуального восприятия дом, яркое сочетание цветов отделочных материалов придают неповторимый облик этому проекту. При этом планировка дома повторяет комфорт и удобство трехкомнатной квартиры. Гостиная с панорамными окнами, две спальни, большая терраса.
+        ',
+        'img' => [
+          (new Image(
+            src: 'built/6/1.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'built/6/2.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'built/6/3.jpg',
+          ))->getSrc(),
+          (new Image(
+            src: 'built/6/4.jpg',
+          ))->getSrc(),
+        ],
+        'info' => [
+          'square' => '77',
           'time' => '6',
-          'price' => '5 400 000'
+          'price' => '4 763 000'
         ]
       ],
     ];

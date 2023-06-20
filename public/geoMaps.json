@@ -9,7 +9,7 @@
                 "coordinates": [56.003255431575, 92.762817270053]
             },
             "properties": {
-                "balloonContentHeader": "<p>Проект ДВ 112-141<p><img src=''  /><p>Общая прощадь: 101 м2<p>",
+                "balloonContentHeader": "<h2>Проект ДВ 112-141<h2><img src='/maps/0.jpeg'  /><p>Общая прощадь: 101 м2<p>",
                 "balloonContentBody": "<a href='/'>Перейти к проекту</a>"
             }
         },
@@ -21,7 +21,7 @@
                 "coordinates": [56.121890577383, 93.275646765307]
             },
             "properties": {
-                "balloonContentHeader": "<p>Проект ДВ 112-142<p><img src=''  /><p>Общая прощадь: 101 м2<p>",
+                "balloonContentHeader": "<h2>Проект ДВ 112-142<h2><img src='/maps/0.jpeg'  /><p>Общая прощадь: 101 м2<p>",
                 "balloonContentBody": "<a href='/'>Перейти к проекту</a>"
             }
         }

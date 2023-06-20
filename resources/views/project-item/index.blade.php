@@ -290,7 +290,7 @@ use App\Content\main\HousesInfo;
   <x-form.review>
   </x-form.review>
 </section>
-<x-cards.house-card class="project-mortgage">
+<x-cards.house-card>
 </x-cards.house-card>
 <section class="project-mortgage">
   <h1 class="project-mortgage__heading">
@@ -298,22 +298,31 @@ use App\Content\main\HousesInfo;
   </h1>
   <div class="project-mortgage__container">
     <div class="swiper project-mortgage__swiper">
+      @php
+      $mort_list = [
+      'от 5,0% для IT- специалистов',
+      'от 5,3% для семей с детьми',
+      'от 1,5% дальневосточная',
+      'от 7,3% с господдержкой',
+      'Сельская от 3%'
+      ]
+      @endphp
       <div class="swiper-wrapper project-mortgage__wrapper">
-        @for ($i = 0; $i < 8; $i++) <div class="swiper-slide project-mortgage__slide">
+        @foreach ($mort_list as $item) <div class="swiper-slide project-mortgage__slide">
           <div class="project-mortgage__inner">
             <h1 class="project-mortgage__h1">
-              {{__('от 3,5% для IT- специалистов')}}
+              {{$item}}
             </h1>
             <a href="/mortgage" class="default__button project-mortgage__link">
               {{__('Узнать больше')}}
             </a>
           </div>
+        </div>
+        @endforeach
       </div>
-      @endfor
     </div>
-  </div>
-  <div class="swiper-button-prev project-mortgage__prev"></div>
-  <div class="swiper-button-next project-mortgage__next"></div>
+    <div class="swiper-button-prev project-mortgage__prev"></div>
+    <div class="swiper-button-next project-mortgage__next"></div>
   </div>
 </section>
 <section class="stability">

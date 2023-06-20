@@ -20,7 +20,7 @@
     background-repeat: no-repeat;
     background-color: transparent;
 }
-.offer-slide::after {
+.image-swiper .offer-slide::after {
     content: "";
     position: absolute;
     top: 0;
@@ -302,22 +302,21 @@
 }
 
 .services-swiper .services-button-prev {
-    /* top: 61px; */
     left: 60px;
 }
 .services-swiper .services-button-next {
-    /* top: 61px; */
-    right: 70px;
+    right: 86px;
 }
 .services__inner {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 25px;
+    justify-content: space-between;
     background: #ffffff;
     border-radius: var(--border-raduis-defalut);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 34px 14px;
+    align-items: center;
 }
 .services-slide {
     max-width: 500px;
@@ -333,6 +332,13 @@
     max-width: 370px;
     color: var(--color-grayest);
     margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.services-wrapper > .services-slide {
+    display: flex;
 }
 .why-us {
     background-color: white;
@@ -440,6 +446,7 @@
 
 .image-swiper {
     min-width: 700px;
+    max-width: 50%;
     min-height: 410px;
     border-radius: var(--border-raduis-defalut);
 }
@@ -512,6 +519,9 @@
     font-size: 60px;
     color: var(--color-red);
     font-feature-settings: "pnum" on, "lnum" on;
+}
+.inner-time-info {
+    padding-top: 20px;
 }
 .inner-time__text,
 .inner-price__text {
@@ -897,6 +907,9 @@
     }
 }
 @media (max-width: 992px) {
+    .image-swiper {
+        max-width: fit-content;
+    }
     .build__option {
         flex-wrap: wrap;
         gap: 20px;
@@ -959,6 +972,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 30px 34px;
     }
     .services-see__button {
         margin-bottom: 20px;
@@ -968,9 +982,6 @@
     }
     .services-swiper .services-button-next {
         right: 10px;
-    }
-    .services__inner {
-        padding: 30px 34px;
     }
     .why-us__wrapper {
         padding-top: 40px;
@@ -1088,6 +1099,9 @@
     .inner-price__value {
         font-size: 40px;
     }
+    .inner-time-info {
+        padding-top: 10px;
+    }
     .mobile_nav {
         width: 46px;
     }
@@ -1101,6 +1115,20 @@
     }
     .services-swiper .services-button-next {
         top: 66px;
+    }
+    .inner-time {
+        gap: 0px;
+        justify-content: space-between;
+    }
+    .inner-time-info,
+    .inner-price__info {
+        font-size: 12px;
+    }
+    .inner-price__info {
+        padding-top: 10px;
+    }
+    .inner-price__value {
+        line-height: 20px;
     }
 }
 @media (max-width: 550px) {

@@ -19,12 +19,10 @@ function init() {
         ),
         objectManager = new ymaps.ObjectManager({
             clusterize: true,
-            gridSize: 32,
-            clusterDisableClickZoom: true,
+            gridSize: 50,
         });
-
-    objectManager.objects.options.set("preset", "islands#greenDotIcon");
-    objectManager.clusters.options.set("preset", "islands#greenClusterIcons");
+    objectManager.objects.options.set("preset", "islands#redIcon");
+    objectManager.clusters.options.set("preset", "islands#redClusterIcons");
 
     myMap.geoObjects.add(objectManager);
     myMap.behaviors.disable("scrollZoom");
@@ -33,13 +31,21 @@ function init() {
     myMap.controls.remove("typeSelector");
     myMap.controls.remove("fullscreenControl");
     myMap.controls.remove("searchControl");
+    
 
-    async function loadData() {
+    async function objLoading() {
         const response = await fetch("/geoMaps.json");
         const data = await response.json();
         objectManager.add(data);
     }
-    loadData();
+    objLoading();
+    const plot_button = document.querySelector(".changemap");
+    plot_button.addEventListener("click", async (evt) => {
+        const response = await fetch("/plotMaps.json");
+        const data = await response.json();
+        objectManager.removeAll();
+        objectManager.add(data);
+    });
 }
 
 const gallerys = new Swiper(".photo-gallery__swiper", {
@@ -109,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
             serv_heading.innerHTML = evt.target.dataset.title;
             serv_items.forEach((item) => {
                 if (item.classList.contains(evt.target.dataset.filter)) {
-                    item.style.display = "flex";
+                    item.style.display = "block";
                 }
             });
         });

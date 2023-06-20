@@ -74,7 +74,7 @@ $service = (new Service())->toArray();
 <section class="building-maps" id='building-maps'>
     <div class="building-maps__header">
         <h1 class="building-maps__heading">
-            {{__('Карта построенных объектов')}}
+            {{__('Карта объектов')}}
         </h1>
         <p class="building-maps__paraf">
             {{__('На карте отображены реализованные проекты. При нажатии на иконку появится дополнительная информация, а
@@ -87,6 +87,9 @@ $service = (new Service())->toArray();
 
     <div class="map-container" id="map-container">
     </div>
+    <hr />
+    <button class="all">all</button>
+    <button class="changemap">Участки</button>
 </section>
 <section class="stable">
     <div class="stable__header">
@@ -118,7 +121,6 @@ $service = (new Service())->toArray();
         </div>
     </div>
     <div class="stable__list">
-
         @php
         $why = [
         '0' => [
@@ -143,8 +145,6 @@ $service = (new Service())->toArray();
         ]
         ];
         @endphp
-
-
         @foreach ($why as $item) <div class="stable-card">
             <h1 class="stable-card__heading">
                 {{$item['title']}}
@@ -184,30 +184,32 @@ $service = (new Service())->toArray();
             <button data-filter="building" data-title="{{__('Строительство')}}"
                 class="default__button services-filters__button">
                 {{__('Строительство')}}
-
             </button>
         </div>
         <div class="services-filters__content">
             <h1 class="services-filters__heading">{{__('Сопровождение покупки')}}</h1>
             <div class="services-filters__wrapper">
-                @foreach ($service as $item) <div class="services-filters__item escort">
+
+                @foreach ($service as $item)
+                <div class="services-filters__item {{ $item['filter'] }}">
                     <div class="services-filters__header">
-                        <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="">
                         <div class="services-filters__head">
-                            <h3 class="services-filters__info">
-                                {{__('Ипотека')}}
-                            </h3>
-                            <p class="services-filters__text">
-                                {{__('Специальные условия для клиентов “Малые этажи”')}}
-                            </p>
+                            <img class="services-filters__img" src="{{ $item['icon'] }}" alt="icon">
+                            <div class="services-filters__text">
+                                <h3 class="services-filters__info">
+                                    {{ $item['title'] }}
+                                </h3>
+                                <p class="services-filters__text">
+                                    {{ $item['text'] }} </p>
+                            </div>
                         </div>
+                        <button data-modal_id="modal__income" data-info={{$item['heading']}}
+                            class="default__button service__button">
+                            {{__('Отправить заявку')}}</button>
                     </div>
-                    <button class="default__button">
-                        {{__('Отправить заявку')}}</button>
                 </div>
                 @endforeach
-                @foreach ($service as $item) <div class="services-filters__item design">
+                {{-- @foreach ($service as $item) <div class="services-filters__item design">
                     <div class="services-filters__header">
                         <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
                             alt="">
@@ -239,7 +241,7 @@ $service = (new Service())->toArray();
                         {{__('Отправить заявку')}}
                     </button>
                 </div>
-                @endforeach
+                @endforeach --}}
             </div>
         </div>
     </div>

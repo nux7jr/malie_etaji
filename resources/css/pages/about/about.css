@@ -215,7 +215,7 @@
 .services-filters__header {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
 }
 .services-filters__option {
     display: flex;
@@ -238,7 +238,7 @@
 }
 .services-filters__head {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 .services-filters__wrapper::-webkit-scrollbar-track {
@@ -265,17 +265,25 @@
     background-color: var(--color-red);
     color: white;
 }
-
+.services-filters__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service__button {
+    min-width: max-content;
+}
 .services-filters__item {
     display: none;
 }
-.services-filters__item.support {
-    display: flex;
+.services-filters__item.escort {
+    display: block;
 }
 .map-container {
     border-radius: var(--border-raduis-defalut);
 }
 
+/* only maps */
 .building-maps .map-container *.ymaps-2-1-79-inner-panes {
     border-radius: var(--border-raduis-defalut);
 }
@@ -285,11 +293,112 @@
 .building-maps .ymaps-2-1-79-float-button {
     background-color: var(--color-pink) !important;
     border-radius: var(--border-raduis-defalut) !important;
+    width: 26px !important;
+    height: 26px !important;
 }
 .building-maps .ymaps-2-1-79-zoom__runner {
     background-color: var(--color-red) !important;
 }
+.ymaps-2-1-79-zoom__minus {
+    bottom: -20px !important;
+    right: -5px;
+}
+.ymaps-2-1-79-zoom__plus {
+    top: -20px !important;
+    right: -5px;
+}
+.ymaps-2-1-79-zoom__minus,
+.ymaps-2-1-79-zoom__plus {
+    z-index: 1;
+}
+.ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon {
+    background-image: url(/resources/images/about/maps/pluse.svg) !important;
+}
+.ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
+    background-image: url(/resources/images/about/maps/min.svg) !important;
+}
+.ymaps-2-1-79-zoom__runner .ymaps-2-1-79-zoom__icon {
+    background-image: url(/resources/images/about/maps/range.svg) !important;
+}
+.building-maps .ymaps-2-1-79-controls__control {
+    inset: 178px auto auto 39px !important;
+}
+.ymaps-2-1-79-float-button-icon {
+    width: 25px !important;
+    height: 28px !important;
+}
+.building-maps .ymaps-2-1-79-zoom__scale {
+    box-shadow: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    background-color: white;
+    border-radius: 10px;
+}
+.ymaps-2-1-79-float-button-icon {
+    border: 0;
+}
+.building-maps .ymaps-2-1-79-float-button {
+    background-color: var(--color-pink) !important;
+    border-radius: var(--border-raduis-defalut) !important;
+    width: 38px !important;
+    height: 38px !important;
+}
+.building-maps .ymaps-2-1-79-zoom__runner {
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+.ymaps-2-1-79-balloon__content {
+    padding: 30px !important;
+    background: #ffffff;
+}
+.ymaps-2-1-79-balloon {
+    box-shadow: none !important;
+}
+.ymaps-2-1-79-balloon__layout {
+    border-radius: 25px;
+}
+.ymaps-2-1-79-balloon__close-button {
+    padding-left: 10px !important;
+}
+.ymaps-2-1-79-balloon__close + .ymaps-2-1-79-balloon__content {
+    margin-right: 0 !important;
+}
+.ymaps-2-1-79-balloon-content__header h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
 
+    color: var(--color-black);
+}
+.ymaps-2-1-79-balloon-content__header p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+
+    color: var(--color-grayest);
+}
+.ymaps-2-1-79-balloon-content__header a {
+    padding: 5px 20px;
+    background-color: var(--color-red);
+    color: white;
+    text-align: center;
+    border-radius: 70px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.ymaps-2-1-79-balloon-content__header img {
+    max-width: 300px;
+    padding: 20px 0;
+}
+.ymaps-2-1-79-balloon__close-button {
+    background: url(/public/maps/close.svg) 50% no-repeat !important;
+}
 .photo-gallery__heading {
     font-weight: 700;
     font-size: 42px;
@@ -297,7 +406,6 @@
     font-feature-settings: "pnum" on, "lnum" on;
     flex: 1 0 34%;
 }
-
 /* galley */
 
 .photo-gallery {
@@ -671,5 +779,8 @@
     }
     .your-house__swipers {
         padding: 0 20px !important;
+    }
+    .building-maps .ymaps-2-1-79-controls__control {
+        inset: 85px auto auto 19px !important;
     }
 }
