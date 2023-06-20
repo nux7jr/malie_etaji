@@ -2,12 +2,14 @@
 
 namespace App\Helpers\Senders;
 
+use App\Helpers\Senders\Abstracts\SendTelegram;
+use App\Helpers\Senders\Interface\SendFormInterface;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use http\Env\Request;
 
-class Bitrix24 extends SendTelegram
+class Bitrix24 extends SendTelegram implements SendFormInterface
 {
     private static Request $request;
     protected static Client $guzzle;
@@ -35,7 +37,8 @@ class Bitrix24 extends SendTelegram
     private static int|string $contactId;
     private static int|string|null $totalDeals;
     private static ?string $comment;
-    public function __construct(string $base_uri, ?int $direction){
+    private static string $subdomainBitrix;
+    public function __construct(string $subdomain_bitrix, string $base_uri, ?int $direction){
         self::$guzzle = new Client(
             config:[
                 'base_uri'  => $base_uri,
@@ -43,6 +46,7 @@ class Bitrix24 extends SendTelegram
             ]
         );
         self::$direction = $direction ?? 46; //46 is default value
+        self::$subdomainBitrix = $subdomain_bitrix;
     }
 
     /**
@@ -171,7 +175,7 @@ class Bitrix24 extends SendTelegram
         $dealInfo = self::post($method, $data);
         $stage = explode(':', $dealInfo['result']['STAGE_ID'])[1];
         if (self::isClosedStage($stage)){
-            self::$link = "https://tiksan-group.bitrix24.ru/crm/deal/details/{$dealInfo['result']['ID']}/";
+            self::$link = 'https://'.self::$subdomainBitrix.".bitrix24.ru/crm/deal/details/{$dealInfo['result']['ID']}/";
             if ($stage !== 'WON'){
                 self::$dealStageName = __('Сделка провалена');
             }

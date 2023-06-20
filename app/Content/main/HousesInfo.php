@@ -2436,7 +2436,7 @@ class HousesInfo
       }
     })->toArray();
   }
-  public static function getCategoryByName(string $name_category)
+  public static function getCategoryByName(string $name_category): array
   {
     return self::$card_elements->filter(function ($element) use ($name_category) {
       if ($element['category'] === $name_category) {

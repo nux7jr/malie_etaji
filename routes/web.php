@@ -40,7 +40,7 @@ function routeList(): void
                 ['path' => '/', 'name' => 'Главная'],
                 ['path' => '/projects', 'name' => 'Проекты'],
             ],
-            'projects' => HousesInfo::getCategoryByName(__('Все')),
+            'projects' => HousesInfo::$card_elements,
             'house_setting' => [
                 'Не выбранно',
                 'Все',

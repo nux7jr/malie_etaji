@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\Senders;
+namespace App\Helpers\Senders\Abstracts;
 
 use GuzzleHttp\Client;
 
