@@ -83,7 +83,7 @@ document.addEventListener("click", closeAllSelect);
 function setColorPercent() {
     const checkbox = this.querySelector('input[type="checkbox"]');
     const switch_ = checkbox.closest('.switch');
-    const h4 = switch_.closest('.space__between').querySelector('h4');
+    const h4 = switch_.closest('.row__reverse').querySelector('h4');
 
     checkbox.checked = !checkbox.checked;
 
