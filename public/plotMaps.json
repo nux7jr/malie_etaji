@@ -1,0 +1,41 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [56.003255431575, 91.462817270033]
+            },
+            "properties": {
+                "balloonContentHeader": "<h2>Тут описание<h2>",
+                "balloonContentBody": "<button data-modal_id='modal__income'>Позвоните нам</button>"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [55.121890577383, 91.275646765307]
+            },
+            "properties": {
+                "balloonContentHeader": "<h2>Тут описание<h2>",
+                "balloonContentBody": "<button data-modal_id='modal__income'>Позвоните нам</button>"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.121890577383, 91.275646765307]
+            },
+            "properties": {
+                "balloonContentHeader": "<h2>Тут описание<h2>",
+                "balloonContentBody": "<button data-modal_id='modal__income'>Позвоните нам</button>"
+            }
+        }
+    ]
+}

@@ -74,7 +74,7 @@ $service = (new Service())->toArray();
 <section class="building-maps" id='building-maps'>
     <div class="building-maps__header">
         <h1 class="building-maps__heading">
-            {{__('Карта построенных объектов')}}
+            {{__('Карта объектов')}}
         </h1>
         <p class="building-maps__paraf">
             {{__('На карте отображены реализованные проекты. При нажатии на иконку появится дополнительная информация, а
@@ -87,6 +87,9 @@ $service = (new Service())->toArray();
 
     <div class="map-container" id="map-container">
     </div>
+    <hr />
+    <button class="all">all</button>
+    <button class="changemap">Участки</button>
 </section>
 <section class="stable">
     <div class="stable__header">

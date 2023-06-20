@@ -283,6 +283,7 @@
     border-radius: var(--border-raduis-defalut);
 }
 
+/* only maps */
 .building-maps .map-container *.ymaps-2-1-79-inner-panes {
     border-radius: var(--border-raduis-defalut);
 }
@@ -346,6 +347,57 @@
     background-color: transparent !important;
     border: none;
     box-shadow: none;
+}
+.ymaps-2-1-79-balloon__content {
+    padding: 30px !important;
+    background: #ffffff;
+}
+.ymaps-2-1-79-balloon {
+    box-shadow: none !important;
+}
+.ymaps-2-1-79-balloon__layout {
+    border-radius: 25px;
+}
+.ymaps-2-1-79-balloon__close-button {
+    padding-left: 10px !important;
+}
+.ymaps-2-1-79-balloon__close + .ymaps-2-1-79-balloon__content {
+    margin-right: 0 !important;
+}
+.ymaps-2-1-79-balloon-content__header h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+
+    color: var(--color-black);
+}
+.ymaps-2-1-79-balloon-content__header p {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+
+    color: var(--color-grayest);
+}
+.ymaps-2-1-79-balloon-content__header a {
+    padding: 5px 20px;
+    background-color: var(--color-red);
+    color: white;
+    text-align: center;
+    border-radius: 70px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.ymaps-2-1-79-balloon-content__header img {
+    max-width: 300px;
+    padding: 20px 0;
+}
+.ymaps-2-1-79-balloon__close-button {
+    background: url(/public/maps/close.svg) 50% no-repeat !important;
 }
 .photo-gallery__heading {
     font-weight: 700;
@@ -727,5 +779,8 @@
     }
     .your-house__swipers {
         padding: 0 20px !important;
+    }
+    .building-maps .ymaps-2-1-79-controls__control {
+        inset: 85px auto auto 19px !important;
     }
 }
