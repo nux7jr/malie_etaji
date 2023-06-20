@@ -49,7 +49,7 @@ class Link implements Arrayable
             'header'            => self::$header,
             'link'              => self::$link,
             'text'              => self::$text,
-            'data-attribute'    => self::$dataAttribute
+            'data-attribute'    => self::$dataAttribute ?? null
         ];
     }
 
