@@ -5,6 +5,9 @@ $advantages = new AdvantagesCard();
 use App\Content\main\WhichHouse;
 $which_house = new WhichHouse();
 
+use App\Content\main\BuiltHouses;
+$built_houses = (new BuiltHouses())->toArray();
+
 use App\Content\main\HousesInfo;
 
 
@@ -179,7 +182,56 @@ use App\Content\main\HousesInfo;
         </div>
         <div class="swiper build-swiper">
             <div class="swiper-wrapper build-wrapper">
-                <div class="swiper-slide build-slide single">
+                @foreach ($built_houses as $item)
+                <div class="swiper-slide build-slide {{ $item['filter'] }}">
+                    <div class="build-inner">
+                        <div class="swiper image-swiper">
+                            <div class="swiper-wrapper image-wrapper">
+                                @foreach ($item['img'] as $img)
+                                <div class="swiper-slide image-slide" style="background-image: url('{{ $img }}');">
+                                </div>
+                                @endforeach
+                            </div>
+                            <div class="swiper-pagination image__pagination"></div>
+                        </div>
+                        <div class="build-inner__item inner-info">
+                            <h1 class="inner-info__heading">{{ __('Дом 8-02К (Шале), Мужичкино') }}</h1>
+                            <p class="inner-info__paraf">
+                                {{ $item['about'] }}
+                            </p>
+                            <div class="inner-time">
+                                <div class="inner-time__item">
+                                    <p class="inner-time__paraf">{{$item['info']['square']}} <span
+                                            class="inner-time__text">м2</span></p>
+                                    <p class="inner-time-info">
+                                        Площадь дома
+                                    </p>
+                                </div>
+                                <div class="inner-time__item">
+                                    <p class="inner-time__paraf">{{$item['info']['time']}} <span
+                                            class="inner-time__text">месяцев</span></p>
+                                    <p class="inner-time-info">
+                                        Всемя стройки
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="inner-price">
+                                <p class="inner-price__value">{{$item['info']['price']}} <span
+                                        class="inner-price__text">рублей</span>
+                                </p>
+                                <p class="inner-price__info">
+                                    Стоимость дома
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                @endforeach
+
+
+                {{-- <div class="swiper-slide build-slide single">
                     <div class="build-inner">
                         <div class="swiper image-swiper">
                             <div class="swiper-wrapper image-wrapper">
@@ -464,7 +516,7 @@ use App\Content\main\HousesInfo;
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="build-wrapper__navigation">
                 <div class="build-wrapper__option">

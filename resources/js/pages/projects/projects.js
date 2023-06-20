@@ -34,8 +34,10 @@ function sortinSmallestToLargest(dataInfo) {
 }
 function reRerenderHouses() {
     if (Window.data.length !== 0) {
+        const quantity = document.querySelector(".quantity-obj");
+        quantity.innerHTML = " " + Window.data.length + " ";
         parentEl.innerHTML = "";
-        console.log(Window.data);
+
         Window.data.forEach((element) => {
             let htm = `
             <article class="project-item">
@@ -102,6 +104,9 @@ function reRerenderHouses() {
     }
 }
 function conclusionNoHouses() {
+    const quantity = document.querySelector(".quantity-obj");
+    quantity.innerHTML = " 0 ";
+
     const htm = `<div>По заданым параметрам нет домов</div>`;
     parentEl.innerHTML = htm;
 }
