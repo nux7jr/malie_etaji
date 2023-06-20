@@ -35,6 +35,7 @@ function sortinSmallestToLargest(dataInfo) {
 function reRerenderHouses() {
     if (Window.data.length !== 0) {
         parentEl.innerHTML = "";
+        console.log(Window.data);
         Window.data.forEach((element) => {
             let htm = `
             <article class="project-item">
@@ -120,6 +121,7 @@ function initActivity() {
     const allProjectsAraeHover = document.querySelectorAll(
         ".project-item__info"
     );
+
     const allArticle = document.querySelectorAll(".project-item");
     allProjectsAraeHover.forEach((element) => {
         element.addEventListener("mouseover", (evt) => {
