@@ -2,7 +2,6 @@ import sender from "../general/sender";
 
 document.addEventListener("DOMContentLoaded", (evt) => {
     const modalsConfig = {
-        url: "/php",
         ym: "some ym",
         errorHander: "",
         historyLog: [],
@@ -39,8 +38,8 @@ document.addEventListener("DOMContentLoaded", (evt) => {
         }, 500);
         setTimeout(() => {
             form.classList.remove("modal__window--out");
+            document.body.classList.remove("modal__open");
         }, 501);
-        document.body.classList.remove("modal__open");
     }
     all_close_buttons.forEach((el) => {
         el.addEventListener("click", (evt) => {

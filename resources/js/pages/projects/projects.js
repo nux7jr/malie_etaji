@@ -37,7 +37,6 @@ function reRerenderHouses() {
         const quantity = document.querySelector(".quantity-obj");
         quantity.innerHTML = " " + Window.data.length + " ";
         parentEl.innerHTML = "";
-
         Window.data.forEach((element) => {
             let htm = `
             <article class="project-item">

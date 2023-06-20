@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
             serv_heading.innerHTML = evt.target.dataset.title;
             serv_items.forEach((item) => {
                 if (item.classList.contains(evt.target.dataset.filter)) {
-                    item.style.display = "flex";
+                    item.style.display = "block";
                 }
             });
         });

@@ -11,7 +11,8 @@ $built_houses = (new BuiltHouses())->toArray();
 use App\Content\main\HousesInfo;
 
 
-
+use App\Content\main\Service;
+$service = (new Service())->toArray();
 @endphp
 @extends ("layouts.base")
 
@@ -177,7 +178,8 @@ use App\Content\main\HousesInfo;
             <button class="default__button build__button build__button--active" data-filter="all">{{ __('Все')
                 }}</button>
             <button class="default__button build__button" data-filter="single">{{ __('Одноэтажные') }}</button>
-            <button class="default__button build__button" data-filter="double">{{ __('Двухэтажные') }}</button>
+            {{-- <button class="default__button build__button" data-filter="double">{{ __('Двухэтажные') }}</button>
+            --}}
             <button class="default__button build__button" data-filter="barn">{{ __('Барны') }}</button>
         </div>
         <div class="swiper build-swiper">
@@ -195,7 +197,7 @@ use App\Content\main\HousesInfo;
                             <div class="swiper-pagination image__pagination"></div>
                         </div>
                         <div class="build-inner__item inner-info">
-                            <h1 class="inner-info__heading">{{ __('Дом 8-02К (Шале), Мужичкино') }}</h1>
+                            <h1 class="inner-info__heading">{{ $item['name'] }}</h1>
                             <p class="inner-info__paraf">
                                 {{ $item['about'] }}
                             </p>
@@ -576,45 +578,20 @@ use App\Content\main\HousesInfo;
         </div>
         <div class="swiper services-swiper">
             <div class="swiper-wrapper services-wrapper">
+                @foreach ($service as $item)
                 <div class="swiper-slide services-slide">
                     <div class="services__inner">
-                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="services">
+                        <img class="services-slide__img" src="{{ $item['icon'] }}" alt="services">
                         <div class="services-slide__info">
-                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
+                            <p class="services-slide__heading">{{ $item['title'] }}</p>
                             <p class="services-slide__text">
-                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-                                века.') }}
+                                {{$item['text']}}
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide services-slide">
-                    <div class="services__inner">
-                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="services">
-                        <div class="services-slide__info">
-                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
-                            <p class="services-slide__text">
-                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-                                века.') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide services-slide">
-                    <div class="services__inner">
-                        <img class="services-slide__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="services">
-                        <div class="services-slide__info">
-                            <p class="services-slide__heading">{{ __('Подбор котлов отопления') }}</p>
-                            <p class="services-slide__text">
-                                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
-                                века.') }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
             <div class="swiper-button-prev services-button-prev">
                 <img class="services-prev" src="{{ Vite::asset('resources/images/swiper/serv.svg') }}" alt="prev">
