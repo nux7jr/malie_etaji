@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Content\main\HousesInfo;
 
-Route::fallback(function ($domain){
+Route::fallback(function ($domain) {
     return view('errors.404')->with('city', City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain));
 });
 
@@ -42,7 +42,7 @@ function routeList(): void
             ],
             'projects' => HousesInfo::getCategoryByName(__('Все')),
             'house_setting' => [
-                'Не выбрано',
+                'Не выбранно',
                 'Все',
                 'Одноэтажные',
                 'Двухэтажные',
@@ -60,10 +60,11 @@ function routeList(): void
             'projects' => HousesInfo::getCategoryByName(__('Барны')),
             'house_setting' => [
                 'Барны',
-                'Не выбрано',
+                'Не выбранно',
                 'Все',
                 'Одноэтажные',
                 'Двухэтажные',
+                'Барны',
             ],
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
@@ -77,10 +78,11 @@ function routeList(): void
             'projects' => HousesInfo::getCategoryByName(__('Одноэтажные')),
             'house_setting' => [
                 'Одноэтажные',
-                'Не выбрано',
+                'Не выбранно',
                 'Все',
                 'Двухэтажные',
                 'Барны',
+                'Одноэтажные'
             ],
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
@@ -98,6 +100,7 @@ function routeList(): void
                 'Все',
                 'Барны',
                 'Не выбрано',
+                'Двухэтажные'
             ],
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
