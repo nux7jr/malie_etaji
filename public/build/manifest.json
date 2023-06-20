@@ -1,39 +1,33 @@
 {
-  "__commonjsHelpers-725317a4.js": {
-    "file": "assets/_commonjsHelpers-725317a4.js"
-  },
-  "_certificates-e45e8ad8.js": {
-    "file": "assets/certificates-e45e8ad8.js",
+  "_certificates-b8134150.js": {
+    "file": "assets/certificates-b8134150.js",
     "imports": [
-      "_index-706639a7.js"
+      "resources/js/components/feedback.js"
     ]
   },
-  "_feedback-9e57aa4b.js": {
-    "file": "assets/feedback-9e57aa4b.js",
+  "_feedback-92cb115e.js": {
+    "file": "assets/feedback-92cb115e.js",
     "imports": [
-      "_index-706639a7.js"
+      "resources/js/components/feedback.js"
     ]
   },
-  "_index-706639a7.js": {
-    "file": "assets/index-706639a7.js"
-  },
-  "_nouislider-f12ee9ca.js": {
+  "_nouislider-1ddc2e5b.js": {
     "css": [
       "assets/nouislider-812efd31.css"
     ],
-    "file": "assets/nouislider-f12ee9ca.js",
-    "imports": [
-      "__commonjsHelpers-725317a4.js"
-    ]
+    "file": "assets/nouislider-1ddc2e5b.js"
   },
   "_project-item-5c3e1fdf.js": {
     "file": "assets/project-item-5c3e1fdf.js"
   },
-  "_swiper-bundle.min-17f9adeb.js": {
+  "_sender-836f7a84.js": {
+    "file": "assets/sender-836f7a84.js"
+  },
+  "_swiper-bundle.min-43b74ea1.js": {
     "css": [
-      "assets/swiper-bundle-1bced7a0.css"
+      "assets/swiper-bundle-130c6262.css"
     ],
-    "file": "assets/swiper-bundle.min-17f9adeb.js"
+    "file": "assets/swiper-bundle.min-43b74ea1.js"
   },
   "_trusted-191878d4.js": {
     "file": "assets/trusted-191878d4.js"
@@ -43,7 +37,7 @@
     "src": "nouislider.css"
   },
   "resources/css/app.css": {
-    "file": "assets/app-80792180.css",
+    "file": "assets/app-f6d8292c.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -98,7 +92,7 @@
     "src": "resources/css/components/mob_menu.css"
   },
   "resources/css/components/modal.css": {
-    "file": "assets/modal-6e7d1fa9.css",
+    "file": "assets/modal-b5a963ca.css",
     "isEntry": true,
     "src": "resources/css/components/modal.css"
   },
@@ -108,7 +102,7 @@
     "src": "resources/css/components/office-map.css"
   },
   "resources/css/components/order.css": {
-    "file": "assets/order-d3c71130.css",
+    "file": "assets/order-d7e93a17.css",
     "isEntry": true,
     "src": "resources/css/components/order.css"
   },
@@ -128,7 +122,7 @@
     "src": "resources/css/components/project-item.css"
   },
   "resources/css/components/reels.css": {
-    "file": "assets/reels-bddad9b4.css",
+    "file": "assets/reels-161969f5.css",
     "isEntry": true,
     "src": "resources/css/components/reels.css"
   },
@@ -188,7 +182,7 @@
     "src": "resources/css/pages/project-item/project-item.css"
   },
   "resources/css/pages/projects/projects.css": {
-    "file": "assets/projects-67b951c8.css",
+    "file": "assets/projects-d97a3935.css",
     "isEntry": true,
     "src": "resources/css/pages/projects/projects.css"
   },
@@ -696,6 +690,114 @@
   "resources/images/build/next.svg": {
     "file": "assets/next-2451d2e3.svg",
     "src": "resources/images/swiper/next.svg"
+  },
+  "resources/images/built/1/1.jpg": {
+    "file": "assets/1-45cc70ab.jpg",
+    "src": "resources/images/built/1/1.jpg"
+  },
+  "resources/images/built/1/2.jpg": {
+    "file": "assets/2-cdf8eb72.jpg",
+    "src": "resources/images/built/1/2.jpg"
+  },
+  "resources/images/built/1/3.jpg": {
+    "file": "assets/3-8874c8a8.jpg",
+    "src": "resources/images/built/1/3.jpg"
+  },
+  "resources/images/built/1/4.jpg": {
+    "file": "assets/4-6bc8939b.jpg",
+    "src": "resources/images/built/1/4.jpg"
+  },
+  "resources/images/built/1/Thumbs.db": {
+    "file": "assets/Thumbs-62d6c095.db",
+    "src": "resources/images/built/1/Thumbs.db"
+  },
+  "resources/images/built/2/1.jpg": {
+    "file": "assets/1-2d888f34.jpg",
+    "src": "resources/images/built/2/1.jpg"
+  },
+  "resources/images/built/2/2.jpg": {
+    "file": "assets/2-94119651.jpg",
+    "src": "resources/images/built/2/2.jpg"
+  },
+  "resources/images/built/2/3.jpg": {
+    "file": "assets/3-4be439e9.jpg",
+    "src": "resources/images/built/2/3.jpg"
+  },
+  "resources/images/built/2/Thumbs.db": {
+    "file": "assets/Thumbs-e8391862.db",
+    "src": "resources/images/built/2/Thumbs.db"
+  },
+  "resources/images/built/3/1.jpg": {
+    "file": "assets/1-2310d89e.jpg",
+    "src": "resources/images/built/3/1.jpg"
+  },
+  "resources/images/built/3/2.jpg": {
+    "file": "assets/2-5e0f7e84.jpg",
+    "src": "resources/images/built/3/2.jpg"
+  },
+  "resources/images/built/3/3.jpg": {
+    "file": "assets/3-04777e7f.jpg",
+    "src": "resources/images/built/3/3.jpg"
+  },
+  "resources/images/built/3/4.jpg": {
+    "file": "assets/4-8da3221c.jpg",
+    "src": "resources/images/built/3/4.jpg"
+  },
+  "resources/images/built/3/Thumbs.db": {
+    "file": "assets/Thumbs-b4e333d4.db",
+    "src": "resources/images/built/3/Thumbs.db"
+  },
+  "resources/images/built/4/1.jpg": {
+    "file": "assets/1-78734895.jpg",
+    "src": "resources/images/built/4/1.jpg"
+  },
+  "resources/images/built/4/2.JPG": {
+    "file": "assets/2-c556a00a.JPG",
+    "src": "resources/images/built/4/2.JPG"
+  },
+  "resources/images/built/4/3.JPG": {
+    "file": "assets/3-3b048f5d.JPG",
+    "src": "resources/images/built/4/3.JPG"
+  },
+  "resources/images/built/4/Thumbs.db": {
+    "file": "assets/Thumbs-78534621.db",
+    "src": "resources/images/built/4/Thumbs.db"
+  },
+  "resources/images/built/5/1.jpg": {
+    "file": "assets/1-6f0c0a1e.jpg",
+    "src": "resources/images/built/5/1.jpg"
+  },
+  "resources/images/built/5/2.jpg": {
+    "file": "assets/2-e57213ec.jpg",
+    "src": "resources/images/built/5/2.jpg"
+  },
+  "resources/images/built/5/3.jpg": {
+    "file": "assets/3-11c80487.jpg",
+    "src": "resources/images/built/5/3.jpg"
+  },
+  "resources/images/built/5/Thumbs.db": {
+    "file": "assets/Thumbs-84b609ed.db",
+    "src": "resources/images/built/5/Thumbs.db"
+  },
+  "resources/images/built/6/1.jpg": {
+    "file": "assets/1-1100d521.jpg",
+    "src": "resources/images/built/6/1.jpg"
+  },
+  "resources/images/built/6/2.jpg": {
+    "file": "assets/2-71e67464.jpg",
+    "src": "resources/images/built/6/2.jpg"
+  },
+  "resources/images/built/6/3.jpg": {
+    "file": "assets/3-a507cc33.jpg",
+    "src": "resources/images/built/6/3.jpg"
+  },
+  "resources/images/built/6/4.jpg": {
+    "file": "assets/4-b75db893.jpg",
+    "src": "resources/images/built/6/4.jpg"
+  },
+  "resources/images/built/6/Thumbs.db": {
+    "file": "assets/Thumbs-be87d802.db",
+    "src": "resources/images/built/6/Thumbs.db"
   },
   "resources/images/cards/card-img.jpg": {
     "file": "assets/card-img-67650da8.jpg",
@@ -1561,17 +1663,25 @@
     "file": "assets/terrase-33a0ebb5.jpg",
     "src": "resources/images/peculiarities_projects/terrase.jpg"
   },
+  "resources/images/people/Aseev.png": {
+    "file": "assets/Aseev-1023e9ec.png",
+    "src": "resources/images/people/Aseev.png"
+  },
   "resources/images/people/alena.jpeg": {
     "file": "assets/3-7318cb61.jpeg",
     "src": "resources/images/people/alena.jpeg"
   },
   "resources/images/people/anna.png": {
-    "file": "assets/anna-b7ffce5f.png",
+    "file": "assets/anna-fd78e590.png",
     "src": "resources/images/people/anna.png"
   },
   "resources/images/people/leader.jfif": {
     "file": "assets/leader-a6fb9e6f.jfif",
     "src": "resources/images/people/leader.jfif"
+  },
+  "resources/images/people/olga.png": {
+    "file": "assets/olga-bf0e77c9.png",
+    "src": "resources/images/people/olga.png"
   },
   "resources/images/people/popov.png": {
     "file": "assets/popov-32dec817.png",
@@ -1592,6 +1702,90 @@
   "resources/images/project-item/plan.jpg": {
     "file": "assets/plan-9c24c624.jpg",
     "src": "resources/images/project-item/plan.jpg"
+  },
+  "resources/images/reels/1.png": {
+    "file": "assets/1-aaba8aff.png",
+    "src": "resources/images/reels/1.png"
+  },
+  "resources/images/reels/10.jpg": {
+    "file": "assets/10-181839f1.jpg",
+    "src": "resources/images/reels/10.jpg"
+  },
+  "resources/images/reels/11.jpg": {
+    "file": "assets/11-ea7d9e43.jpg",
+    "src": "resources/images/reels/11.jpg"
+  },
+  "resources/images/reels/12.jpg": {
+    "file": "assets/12-cbe0b6df.jpg",
+    "src": "resources/images/reels/12.jpg"
+  },
+  "resources/images/reels/13.jpg": {
+    "file": "assets/13-2b5b89fe.jpg",
+    "src": "resources/images/reels/13.jpg"
+  },
+  "resources/images/reels/14.jpg": {
+    "file": "assets/14-d1b07e23.jpg",
+    "src": "resources/images/reels/14.jpg"
+  },
+  "resources/images/reels/15.jpg": {
+    "file": "assets/15-e29bec0e.jpg",
+    "src": "resources/images/reels/15.jpg"
+  },
+  "resources/images/reels/16.jpg": {
+    "file": "assets/16-ccebc5b2.jpg",
+    "src": "resources/images/reels/16.jpg"
+  },
+  "resources/images/reels/17.jpg": {
+    "file": "assets/17-5b373f07.jpg",
+    "src": "resources/images/reels/17.jpg"
+  },
+  "resources/images/reels/19.jpg": {
+    "file": "assets/19-cd3288c2.jpg",
+    "src": "resources/images/reels/19.jpg"
+  },
+  "resources/images/reels/2.jpg": {
+    "file": "assets/2-c7c5de59.jpg",
+    "src": "resources/images/reels/2.jpg"
+  },
+  "resources/images/reels/20.jpg": {
+    "file": "assets/20-4cfb9aad.jpg",
+    "src": "resources/images/reels/20.jpg"
+  },
+  "resources/images/reels/21.jpg": {
+    "file": "assets/21-24d6bbd0.jpg",
+    "src": "resources/images/reels/21.jpg"
+  },
+  "resources/images/reels/22.jpg": {
+    "file": "assets/22-5b42c34b.jpg",
+    "src": "resources/images/reels/22.jpg"
+  },
+  "resources/images/reels/3.png": {
+    "file": "assets/3-d5413ab3.png",
+    "src": "resources/images/reels/3.png"
+  },
+  "resources/images/reels/4.jpg": {
+    "file": "assets/4-53ae721a.jpg",
+    "src": "resources/images/reels/4.jpg"
+  },
+  "resources/images/reels/5.jpg": {
+    "file": "assets/5-1edf1d93.jpg",
+    "src": "resources/images/reels/5.jpg"
+  },
+  "resources/images/reels/6.jpg": {
+    "file": "assets/6-a5d52b55.jpg",
+    "src": "resources/images/reels/6.jpg"
+  },
+  "resources/images/reels/7.jpg": {
+    "file": "assets/7-4c85b865.jpg",
+    "src": "resources/images/reels/7.jpg"
+  },
+  "resources/images/reels/8.jpg": {
+    "file": "assets/8-b85e4076.jpg",
+    "src": "resources/images/reels/8.jpg"
+  },
+  "resources/images/reels/9.jpg": {
+    "file": "assets/9-5e769412.jpg",
+    "src": "resources/images/reels/9.jpg"
   },
   "resources/images/single/65-77/1.jpg": {
     "file": "assets/1-200e210b.jpg",
@@ -3018,17 +3212,14 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-134a652e.js",
-    "imports": [
-      "__commonjsHelpers-725317a4.js"
-    ],
+    "file": "assets/app-18813421.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/certificates.js": {
-    "file": "assets/certificates-14c0e025.js",
+    "file": "assets/certificates-9d66e9f9.js",
     "imports": [
-      "_index-706639a7.js"
+      "resources/js/components/feedback.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/certificates.js"
@@ -3044,10 +3235,7 @@
     "src": "resources/js/components/faq.js"
   },
   "resources/js/components/feedback.js": {
-    "file": "assets/feedback-14c0e025.js",
-    "imports": [
-      "_index-706639a7.js"
-    ],
+    "file": "assets/feedback-706639a7.js",
     "isEntry": true,
     "src": "resources/js/components/feedback.js"
   },
@@ -3057,7 +3245,10 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-c1aa5274.js",
+    "file": "assets/modal-24b5b6f3.js",
+    "imports": [
+      "_sender-836f7a84.js"
+    ],
     "isEntry": true,
     "src": "resources/js/components/modal.js"
   },
@@ -3066,36 +3257,52 @@
     "isEntry": true,
     "src": "resources/js/components/office-map.js"
   },
+  "resources/js/components/order.js": {
+    "file": "assets/order-04fbc393.js",
+    "imports": [
+      "_sender-836f7a84.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/components/order.js"
+  },
   "resources/js/components/project-item.js": {
-    "file": "assets/project-item-4ed993c7.js",
+    "file": "assets/project-item-b43c13e5.js",
+    "imports": [
+      "resources/js/pages/blog/blog.js"
+    ],
     "isEntry": true,
     "src": "resources/js/components/project-item.js"
   },
   "resources/js/components/reels.js": {
-    "file": "assets/reels-4ed993c7.js",
+    "file": "assets/reels-b43c13e5.js",
+    "imports": [
+      "resources/js/pages/blog/blog.js"
+    ],
     "isEntry": true,
     "src": "resources/js/components/reels.js"
   },
   "resources/js/components/selection.js": {
-    "file": "assets/selection-5ba38ea6.js",
+    "file": "assets/selection-bf2d8ba0.js",
     "imports": [
-      "_nouislider-f12ee9ca.js",
-      "__commonjsHelpers-725317a4.js"
+      "_nouislider-1ddc2e5b.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/selection.js"
   },
   "resources/js/components/trusted.js": {
-    "file": "assets/trusted-4ed993c7.js",
+    "file": "assets/trusted-b43c13e5.js",
+    "imports": [
+      "resources/js/pages/blog/blog.js"
+    ],
     "isEntry": true,
     "src": "resources/js/components/trusted.js"
   },
   "resources/js/pages/about/about.js": {
-    "file": "assets/about-28b0b3dd.js",
+    "file": "assets/about-ba296d7a.js",
     "imports": [
-      "_swiper-bundle.min-17f9adeb.js",
-      "_certificates-e45e8ad8.js",
-      "_index-706639a7.js"
+      "_swiper-bundle.min-43b74ea1.js",
+      "_certificates-b8134150.js",
+      "resources/js/components/feedback.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/about/about.js"
@@ -3116,59 +3323,58 @@
     "src": "resources/js/pages/contacts/contacts.js"
   },
   "resources/js/pages/home/home.js": {
-    "file": "assets/home-f522b89d.js",
+    "file": "assets/home-d8ec9649.js",
     "imports": [
-      "_swiper-bundle.min-17f9adeb.js",
-      "_feedback-9e57aa4b.js",
+      "_swiper-bundle.min-43b74ea1.js",
+      "_feedback-92cb115e.js",
       "_project-item-5c3e1fdf.js",
       "_trusted-191878d4.js",
-      "_index-706639a7.js"
+      "resources/js/components/feedback.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/home/home.js"
   },
   "resources/js/pages/mortgage/mortgage.js": {
-    "file": "assets/mortgage-8de06321.js",
+    "file": "assets/mortgage-003b311d.js",
     "imports": [
-      "_swiper-bundle.min-17f9adeb.js",
+      "_swiper-bundle.min-43b74ea1.js",
       "_trusted-191878d4.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/mortgage/mortgage.js"
   },
   "resources/js/pages/project-item/project-item.js": {
-    "file": "assets/project-item-cfc209e9.js",
+    "file": "assets/project-item-f3a127f6.js",
     "imports": [
-      "_swiper-bundle.min-17f9adeb.js",
+      "_swiper-bundle.min-43b74ea1.js",
       "_project-item-5c3e1fdf.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/project-item/project-item.js"
   },
   "resources/js/pages/projects/projects.js": {
-    "file": "assets/projects-a89692c1.js",
+    "file": "assets/projects-45dcb8ef.js",
     "imports": [
-      "_nouislider-f12ee9ca.js",
-      "_swiper-bundle.min-17f9adeb.js",
-      "_project-item-5c3e1fdf.js",
-      "__commonjsHelpers-725317a4.js"
+      "_nouislider-1ddc2e5b.js",
+      "_swiper-bundle.min-43b74ea1.js",
+      "_project-item-5c3e1fdf.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/projects/projects.js"
   },
   "resources/js/pages/technologies/technologies.js": {
-    "file": "assets/technologies-33a8f0b7.js",
+    "file": "assets/technologies-df9a6ef1.js",
     "imports": [
-      "_swiper-bundle.min-17f9adeb.js",
-      "_feedback-9e57aa4b.js",
-      "_certificates-e45e8ad8.js",
-      "_index-706639a7.js"
+      "_swiper-bundle.min-43b74ea1.js",
+      "_feedback-92cb115e.js",
+      "_certificates-b8134150.js",
+      "resources/js/components/feedback.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/technologies/technologies.js"
   },
   "swiper-bundle.css": {
-    "file": "assets/swiper-bundle-1bced7a0.css",
+    "file": "assets/swiper-bundle-130c6262.css",
     "src": "swiper-bundle.css"
   }
 }
