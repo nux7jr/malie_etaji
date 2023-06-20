@@ -2,6 +2,7 @@
 
 namespace App\Helpers\Senders;
 
+use App\Helpers\Senders\Abstracts\SendTelegram;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
