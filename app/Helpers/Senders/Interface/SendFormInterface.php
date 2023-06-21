@@ -2,7 +2,7 @@
 
 namespace App\Helpers\Senders\Interface;
 
-use http\Env\Request;
+use Illuminate\Http\Request;
 
 interface SendFormInterface
 {

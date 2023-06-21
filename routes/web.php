@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SendFormController;
 use App\Models\City;
 use Illuminate\Support\Facades\Route;
 
@@ -250,4 +251,6 @@ function routeList(): void
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
         ]);
     });
+
+    Route::post('send_modal', [SendFormController::class, 'sendForm']);
 }

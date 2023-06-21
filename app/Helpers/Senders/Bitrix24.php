@@ -7,7 +7,7 @@ use App\Helpers\Senders\Interface\SendFormInterface;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
-use http\Env\Request;
+use Illuminate\Http\Request;
 
 class Bitrix24 extends SendTelegram implements SendFormInterface
 {
@@ -39,6 +39,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
     private static ?string $comment;
     private static string $subdomainBitrix;
     public function __construct(string $subdomain_bitrix, string $base_uri, ?int $direction){
+        parent::__construct();
         self::$guzzle = new Client(
             config:[
                 'base_uri'  => $base_uri,
@@ -65,10 +66,10 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             }
             if (is_int($lastId)){
                 $needTask = self::needTask($lastId);
-                $needTask ? self::$dealId = self::addDealCrm() : '';
+                !$needTask ? self::$dealId = self::addDealCrm() : self::$dealId = $lastId;
             }
             if (empty(self::$dealId)){
-                self::sendTelegram(__('Не получилось отправить лид: referer = ') . $request->getRequestUrl() . __(' с сообщением: ') . self::$data['comment'], null);
+                self::sendTelegram(__('Не получилось отправить лид: referer = ') . $request->server('HTTP_REFERER') . __(' с сообщением: ') . self::$comment, null);
                 throw new Exception(__('Не удалось отправить форму - нет ответа от битрикс с созданным ID'));
             }
             self::addComment();
@@ -132,7 +133,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
     {
         $method = 'crm.livefeedmessage.add.json';
         if (empty(self::$comment)){
-            setDefaultComment();
+            self::setDefaultComment();
         }
         if (!empty(self::$link)){
             self::$comment .= "\n\nУ клиента уже была сделка, но она была закрыта по причне: " . self::$dealStageName . "!\nСсылка на предыдущую сделку:\n" . self::$link . "\nВсего сделок в этой воронке у клиента: " . self::$totalDeals;
@@ -159,7 +160,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         !empty(self::$data['city']) ? self::$comment .= "\nГород доставки: " . self::$data['city'] : '';
         !empty(self::$data['name']) ? self::$comment .= "\nИмя: " . self::$data['name'] : '';
         self::$comment .= "\nТелефон: " . self::$phone;
-        self::$comment .= "\nURL с которого была отправлена форма: " . self::$request->current();
+        self::$comment .= "\nURL с которого была отправлена форма: " . self::$request->server('HTTP_REFERER');
     }
     /**
      * @param int $id
@@ -206,6 +207,8 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         if (!empty(self::$data['subject'])){
             $namelead[] = self::$data['subject'];
         }
+        $parsed_referer = parse_url(self::$request->server('HTTP_REFERER'));
+        $referer = $parsed_referer['host'] . $parsed_referer['path'];
         $data = [
             'fields' => [
                 'TITLE' => implode(',', $namelead),
@@ -220,7 +223,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
                 'CURRENCY_ID' => __('RUB'),
                 'CATEGORY_ID' => self::$direction,
                 'UF_CRM_1651563289996' => self::$data['city'],
-                'UF_CRM_1681873184' => self::$request->current(),
+                'UF_CRM_1681873184' => $referer,
             ],
             'params' => ['REGISTER_SONET_EVENT' => 'Y'],
         ];
@@ -255,10 +258,12 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         }
         return null;
     }
+
     /**
+     * @return int
      * @throws GuzzleException
      */
-    private static function getContact():array
+    private static function getContact(): int
     {
         $method = 'crm.contact.list.json';
         $data = [
@@ -267,15 +272,15 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             'select' => ['ID'],
         ];
         $result = self::post(method:$method, data:$data);
-        if (!isset($result['result']['ID'])){
+        if (!isset($result['result'][0]['ID'])){
             $data['filter']['PHONE'] = self::replaceSymbolsPhone(self::$phone);
             $result = self::post(method: $method, data: $data);
         }
         if (!empty($result['total'])){
             self::$totalDeals = (int)$result['total'];
         }
-        if (isset($result['result']['ID'])){
-            return (int)$result['result']['ID'];
+        if (isset($result['result'][0]['ID'])){
+            return (int)$result['result'][0]['ID'];
         }else{
             return self::addContactCrm();
         }
@@ -329,6 +334,9 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         }
         if (isset($data['comment'])){
             self::$comment = $data['comment'];
+        }
+        if (empty(self::$comment)){
+            self::setDefaultComment();
         }
         if (isset($data['subject'])){
             $normalizedData['subject'] = $data['subject'];

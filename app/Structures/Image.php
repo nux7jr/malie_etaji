@@ -12,7 +12,11 @@ class Image implements Arrayable
      * @param string|null $src
      */
     public function __construct(?string $src){
-        $this->asset_src = Vite::image($src);
+        try {
+            $this->asset_src = Vite::image($src);
+        }catch (\Exception $error){
+            $this->asset_src = 'https://placehold.co/600x400';
+        }
     }
 
     /**
