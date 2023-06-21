@@ -19,7 +19,7 @@
               <h1 class="modal__h1">
                 {{__('Выберите мессенджер где вам удобнее получить проект')}}
               </h1>
-              
+
               <div class="modal__social">
                 <a class="modal__link" href="http://">
                   <img class="modal__img" src="{{ Vite::asset('resources/images/modals/Telega.svg') }}" alt="telega">
@@ -108,6 +108,7 @@
         <div class="modal__inner">
           <form class="modal__form income__form">
             <div class="modal__item income__item">
+              @csrf
               <x-ui.inputs.x-input placeholder="Имя" name="name"></x-ui.inputs.x-input>
               <x-ui.inputs.x-input placeholder="Номер телефона" name="phone"></x-ui.inputs.x-input>
               <button class="default__button">{{__('Отправить')}}</button>

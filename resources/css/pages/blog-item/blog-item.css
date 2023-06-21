@@ -85,4 +85,7 @@
     .blog-item .path__wrapper {
         padding-top: 37px;
     }
+    .blog-item {
+        padding-bottom: 40px;
+    }
 }

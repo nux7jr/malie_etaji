@@ -7,11 +7,18 @@
 
 @section('content')
 
+@php
+use App\Content\main\Articles;
+$articles_list = (new Articles())->toArray();
+@endphp
 
+<x-section.reels>
+</x-section.reels>
 <section class="blog-filter">
 
   <x-ui.path.path paths={!!json_encode($paths)!!}>
   </x-ui.path.path>
+
   <h1 class="blog-filter__heading">{{__('Блог')}}</h1>
   <div class="blog-filter__option">
     <button class="default__button blog-filter__button blog-filter__button-active">
@@ -39,7 +46,7 @@
       {{__('Полезное')}}
     </button>
   </div>
-  <p class="blog-filter__info">{{__('Найдено 115 статей')}}</p>
+  <p class="blog-filter__info">{{__('Найдено') }} <span class="q-count">{{count($articles_list)}}</span> {{__('статей')}}</p>
 </section>
 <section class="article-list">
   <x-ui.lists.dropdown id="article-sort" name="article-sort">
@@ -57,9 +64,10 @@
     @endforeach
   </x-ui.lists.dropdown>
   <div class="article-list__wrapper">
-    @for ($i = 0; $i < 6; $i++) <x-cards.article>
-      </x-cards.article>
-      @endfor
+    @foreach ($articles_list as $item)
+    <x-cards.article info='{!! json_encode($item) !!}'>
+    </x-cards.article>
+    @endforeach
   </div>
 </section>
 <section class="subscribe">
@@ -77,12 +85,14 @@
     <div class="subscribe__form">
       <img class="subscribe__img" src="{{ Vite::asset('resources/images/order/content.jpg') }}" alt="call">
       <form class="sub-form">
-        <x-ui.inputs.x-input class="sub-form__input sub-form" placeholder="Имя">
+        <x-ui.inputs.x-input class="sub-form__input sub-form" placeholder="Имя" name='name' type='text' required>
         </x-ui.inputs.x-input>
-        <x-ui.inputs.x-input class="sub-form__input sub-form" placeholder="E-mail">
+        <x-ui.inputs.x-input class="sub-form__input sub-form" placeholder="E-mail" name="email" type='email' required>
         </x-ui.inputs.x-input>
-        <button class="default__button sub-form">Подписаться</button>
+
+        <button type="submit" class="default__button sub-form">Подписаться</button>
       </form>
+      <div class="sub__thx">Спасибо за подписку!</div>
       <div class="sub-details">
         <span class="sub-details__text">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a
             class="sub-details__link" href="">обработку персональных
@@ -94,9 +104,10 @@
 </section>
 <section class="article-bottom">
   <div class="article-list__wrapper">
-    @for ($i = 0; $i < 6; $i++) <x-cards.article>
-      </x-cards.article>
-      @endfor
+    {{-- @foreach ($articles_list as $item)
+    <x-cards.article data_info='{!! json_encode($item) !!}'>
+    </x-cards.article>
+    @endforeach --}}
   </div>
   <div class="article-bottom__option">
     <button class="default__button article__more">Показать еще 15 из 102 статей</button>

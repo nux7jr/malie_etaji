@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Content\main\HousesInfo;
+use App\Content\main\Articles;
 
 Route::fallback(function ($domain) {
     return view('errors.404')->with('city', City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain));
@@ -223,13 +224,16 @@ function routeList(): void
     });
 
     Route::get('/blog/{id}', function ($domain, $id) {
+        $articlesAll = Articles::$card_elements;
+        $articlesInfo = $articlesAll[$id] ?? $articlesAll[1];
         return view('blog-item.index')->with([
             'paths' => [
                 ['path' => '/', 'name' => 'Главная'],
                 ['path' => '/blog', 'name' => 'Блог'],
-                ['path' => $id, 'name' => 'Название статьи'],
+                ['path' => $id, 'name' => $articlesInfo['title']],
             ],
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
+            'articlesInfo' => $articlesInfo,
         ]);
     });
     Route::get('/contacts', function ($domain) {
