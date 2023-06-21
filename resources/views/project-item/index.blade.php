@@ -74,7 +74,14 @@ use App\Content\main\HousesInfo;
             <img class="toltip-button__img" src="{{ Vite::asset('resources/images/components/toltip.svg') }}"
               alt="toltip">
             <span class="tooltiptext">
-              {{ __(' Tooltip text') }}
+              <span>Комплектация “Теплый контур”: </span>
+              <ul>
+                <li>фундамент;</li>
+                <li>коробка;</li>
+                <li>кровля;</li>
+                <li>окна;</li>
+                <li>входные двери;</li>
+              </ul>
             </span>
           </button>
         </p>
@@ -91,7 +98,17 @@ use App\Content\main\HousesInfo;
             <img class="toltip-button__img" src="{{ Vite::asset('resources/images/components/toltip.svg') }}"
               alt="toltip">
             <span class="tooltiptext">
-              {{ __(' Tooltip text') }}
+              <span>Цена “Под ключ”:</span>
+              <ul>
+                <li>фундамент;</li>
+                <li>коробка;</li>
+                <li>кровля;</li>
+                <li>окна;</li>
+                <li>входные двери.</li>
+                <li>отделка фасада;</li>
+                <li>внутренняя отделка "белый куб" (под обои);</li>
+                <li>проведение коммуникаций (водоснабжение, водоотведение, электричество, отопление) и пр.</li>
+              </ul>
             </span>
           </button>
         </p>
