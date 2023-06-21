@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use function PHPUnit\Framework\returnSelf;
 
 class City extends Model
 {
@@ -32,5 +33,10 @@ class City extends Model
         $cities['show'] = $cities['hidden'][$subdomain];
         unset($cities['hidden'][$subdomain]);
         return $cities;
+    }
+
+    public static function getCurrentCity(string $subdomain): string
+    {
+        return self::all()->where('code', $subdomain)->first()->name ?? $subdomain;
     }
 }

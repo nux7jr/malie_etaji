@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->formSenderInjection();
     }
 
     /**
@@ -25,7 +25,6 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->addAssetsViteMacros();
         $this->initClassHouseInfor();
-        $this->formSenderInjection();
     }
     private function addAssetsViteMacros():void
     {
@@ -39,7 +38,7 @@ class AppServiceProvider extends ServiceProvider
     private function formSenderInjection():void
     {
         $this->app->singleton(SendFormInterface::class,function ($app){
-            match ($app->make('config')->get('services.client-form-sender')){
+            return match ($app->make('config')->get('services.client-form-sender')){
                 'Bitrix24Tiksan' => new Bitrix24(env('TIKSAN_SUBDOMAIN_BITRIX24'),env('TIKSAN_WEBHOOK_BITRIX24_BASE_URI'),(int)env('DEFAULT_DIRECTION_TIKSAN_BITRIX24')),
                 'default' => new \RuntimeException("Unknown Form Sender Service"),
             };
