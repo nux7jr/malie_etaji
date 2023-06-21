@@ -573,7 +573,7 @@ $service = (new Service())->toArray();
                 {{ __('Посмотрите что мы можем еще') }}
             </h3>
             <p class="services-see__paraf">
-                {{ __('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.') }}</p>
+                {{ __('Для того, чтобы посмотреть полный список услуг, перейдите к разделу.') }}</p>
             <a href="/about/#all-services" class="default__button services-see__button">{{ __('К разделу') }}</a>
         </div>
         <div class="swiper services-swiper">
