@@ -20,8 +20,8 @@
   "_project-item-5c3e1fdf.js": {
     "file": "assets/project-item-5c3e1fdf.js"
   },
-  "_sender-836f7a84.js": {
-    "file": "assets/sender-836f7a84.js"
+  "_sender-f9f9299a.js": {
+    "file": "assets/sender-f9f9299a.js"
   },
   "_swiper-bundle.min-43b74ea1.js": {
     "css": [
@@ -35,6 +35,10 @@
   "nouislider.css": {
     "file": "assets/nouislider-812efd31.css",
     "src": "nouislider.css"
+  },
+  "public/maps/close.svg": {
+    "file": "assets/close-6fd29db5.svg",
+    "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
     "file": "assets/app-f6d8292c.css",
@@ -82,7 +86,7 @@
     "src": "resources/css/components/grid.css"
   },
   "resources/css/components/house_card.css": {
-    "file": "assets/house_card-b2a69ab7.css",
+    "file": "assets/house_card-5cb7f18f.css",
     "isEntry": true,
     "src": "resources/css/components/house_card.css"
   },
@@ -112,7 +116,7 @@
     "src": "resources/css/components/path.css"
   },
   "resources/css/components/peculiarities.css": {
-    "file": "assets/peculiarities-9ea1dde8.css",
+    "file": "assets/peculiarities-dbfdf4cb.css",
     "isEntry": true,
     "src": "resources/css/components/peculiarities.css"
   },
@@ -142,7 +146,7 @@
     "src": "resources/css/components/trusted.css"
   },
   "resources/css/pages/about/about.css": {
-    "file": "assets/about-d47d0867.css",
+    "file": "assets/about-73e36573.css",
     "isEntry": true,
     "src": "resources/css/pages/about/about.css"
   },
@@ -167,7 +171,7 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-2d2e1576.css",
+    "file": "assets/home-b6cfe577.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -177,7 +181,7 @@
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
   "resources/css/pages/project-item/project-item.css": {
-    "file": "assets/project-item-b3087bf1.css",
+    "file": "assets/project-item-bdbd277d.css",
     "isEntry": true,
     "src": "resources/css/pages/project-item/project-item.css"
   },
@@ -218,6 +222,18 @@
   "resources/images/about/leader.jpg": {
     "file": "assets/leader-8f0aabf6.jpg",
     "src": "resources/images/about/leader.jpg"
+  },
+  "resources/images/about/maps/min.svg": {
+    "file": "assets/min-78fff930.svg",
+    "src": "resources/images/about/maps/min.svg"
+  },
+  "resources/images/about/maps/pluse.svg": {
+    "file": "assets/pluse-530dd7a6.svg",
+    "src": "resources/images/about/maps/pluse.svg"
+  },
+  "resources/images/about/maps/range.svg": {
+    "file": "assets/range-434055b9.svg",
+    "src": "resources/images/about/maps/range.svg"
   },
   "resources/images/about/nf.jpg": {
     "file": "assets/nf-9f4fb9de.jpg",
@@ -1787,20 +1803,76 @@
     "file": "assets/9-5e769412.jpg",
     "src": "resources/images/reels/9.jpg"
   },
+  "resources/images/service/services-1.svg": {
+    "file": "assets/services-1-e57b3bac.svg",
+    "src": "resources/images/service/services-1.svg"
+  },
+  "resources/images/service/services-2.svg": {
+    "file": "assets/services-2-a92ee2be.svg",
+    "src": "resources/images/service/services-2.svg"
+  },
+  "resources/images/service/services-3.svg": {
+    "file": "assets/services-3-34ea2911.svg",
+    "src": "resources/images/service/services-3.svg"
+  },
+  "resources/images/service/services-4.svg": {
+    "file": "assets/services-4-bc603467.svg",
+    "src": "resources/images/service/services-4.svg"
+  },
+  "resources/images/service/services-5.svg": {
+    "file": "assets/services-5-14873502.svg",
+    "src": "resources/images/service/services-5.svg"
+  },
+  "resources/images/service/services-6.svg": {
+    "file": "assets/services-6-3d3827cb.svg",
+    "src": "resources/images/service/services-6.svg"
+  },
+  "resources/images/service/services-7.svg": {
+    "file": "assets/services-7-a681ec9f.svg",
+    "src": "resources/images/service/services-7.svg"
+  },
+  "resources/images/service/services-8.svg": {
+    "file": "assets/services-8-8035cf63.svg",
+    "src": "resources/images/service/services-8.svg"
+  },
+  "resources/images/service/services-9.svg": {
+    "file": "assets/services-9-e65d9cc2.svg",
+    "src": "resources/images/service/services-9.svg"
+  },
+  "resources/images/service/services.svg": {
+    "file": "assets/services-dfd9ae30.svg",
+    "src": "resources/images/service/services.svg"
+  },
+  "resources/images/single/65-77/1-main.jpg": {
+    "file": "assets/1-main-200e210b.jpg",
+    "src": "resources/images/single/65-77/1-main.jpg"
+  },
   "resources/images/single/65-77/1.jpg": {
-    "file": "assets/1-200e210b.jpg",
+    "file": "assets/1-b99f9d0c.jpg",
     "src": "resources/images/single/65-77/1.jpg"
   },
+  "resources/images/single/65-77/2-main.jpg": {
+    "file": "assets/2-main-97f34a26.jpg",
+    "src": "resources/images/single/65-77/2-main.jpg"
+  },
   "resources/images/single/65-77/2.jpg": {
-    "file": "assets/2-97f34a26.jpg",
+    "file": "assets/2-8bd919c3.jpg",
     "src": "resources/images/single/65-77/2.jpg"
   },
+  "resources/images/single/65-77/3-main.jpg": {
+    "file": "assets/3-main-a9b8eb37.jpg",
+    "src": "resources/images/single/65-77/3-main.jpg"
+  },
   "resources/images/single/65-77/3.jpg": {
-    "file": "assets/3-a9b8eb37.jpg",
+    "file": "assets/3-243f4283.jpg",
     "src": "resources/images/single/65-77/3.jpg"
   },
+  "resources/images/single/65-77/4-main.jpg": {
+    "file": "assets/4-main-9a79f4a5.jpg",
+    "src": "resources/images/single/65-77/4-main.jpg"
+  },
   "resources/images/single/65-77/4.jpg": {
-    "file": "assets/4-9a79f4a5.jpg",
+    "file": "assets/4-2e0a3cbe.jpg",
     "src": "resources/images/single/65-77/4.jpg"
   },
   "resources/images/single/65-77/OD65-77/IMG_3968.jpg": {
@@ -1899,20 +1971,36 @@
     "file": "assets/plan-26d329de.pdf",
     "src": "resources/images/single/65-77/plan.pdf"
   },
+  "resources/images/single/69-81/1-main.jpg": {
+    "file": "assets/1-main-a52c48c1.jpg",
+    "src": "resources/images/single/69-81/1-main.jpg"
+  },
   "resources/images/single/69-81/1.jpg": {
-    "file": "assets/1-a52c48c1.jpg",
+    "file": "assets/1-bd3c8748.jpg",
     "src": "resources/images/single/69-81/1.jpg"
   },
+  "resources/images/single/69-81/2-main.jpg": {
+    "file": "assets/2-main-b284b566.jpg",
+    "src": "resources/images/single/69-81/2-main.jpg"
+  },
   "resources/images/single/69-81/2.jpg": {
-    "file": "assets/2-b284b566.jpg",
+    "file": "assets/2-c40d7b84.jpg",
     "src": "resources/images/single/69-81/2.jpg"
   },
+  "resources/images/single/69-81/3-main.jpg": {
+    "file": "assets/3-main-c70a4146.jpg",
+    "src": "resources/images/single/69-81/3-main.jpg"
+  },
   "resources/images/single/69-81/3.jpg": {
-    "file": "assets/3-c70a4146.jpg",
+    "file": "assets/3-5a0bcdcd.jpg",
     "src": "resources/images/single/69-81/3.jpg"
   },
+  "resources/images/single/69-81/4-main.jpg": {
+    "file": "assets/4-main-21167c78.jpg",
+    "src": "resources/images/single/69-81/4-main.jpg"
+  },
   "resources/images/single/69-81/4.jpg": {
-    "file": "assets/4-21167c78.jpg",
+    "file": "assets/4-1267ed71.jpg",
     "src": "resources/images/single/69-81/4.jpg"
   },
   "resources/images/single/69-81/OD69-81/Thumbs.db": {
@@ -2255,20 +2343,36 @@
     "file": "assets/plan-f2f491e0.pdf",
     "src": "resources/images/single/69-81/plan.pdf"
   },
+  "resources/images/single/79-101/1-main.jpg": {
+    "file": "assets/1-main-f63310eb.jpg",
+    "src": "resources/images/single/79-101/1-main.jpg"
+  },
   "resources/images/single/79-101/1.jpg": {
-    "file": "assets/1-f63310eb.jpg",
+    "file": "assets/1-475901e0.jpg",
     "src": "resources/images/single/79-101/1.jpg"
   },
+  "resources/images/single/79-101/2-main.jpg": {
+    "file": "assets/2-main-35f13f62.jpg",
+    "src": "resources/images/single/79-101/2-main.jpg"
+  },
   "resources/images/single/79-101/2.jpg": {
-    "file": "assets/2-35f13f62.jpg",
+    "file": "assets/2-0925ddce.jpg",
     "src": "resources/images/single/79-101/2.jpg"
   },
+  "resources/images/single/79-101/3-main.jpg": {
+    "file": "assets/3-main-e2634206.jpg",
+    "src": "resources/images/single/79-101/3-main.jpg"
+  },
   "resources/images/single/79-101/3.jpg": {
-    "file": "assets/3-e2634206.jpg",
+    "file": "assets/3-95fa4e21.jpg",
     "src": "resources/images/single/79-101/3.jpg"
   },
+  "resources/images/single/79-101/4-main.jpg": {
+    "file": "assets/4-main-9f7c41f7.jpg",
+    "src": "resources/images/single/79-101/4-main.jpg"
+  },
   "resources/images/single/79-101/4.jpg": {
-    "file": "assets/4-9f7c41f7.jpg",
+    "file": "assets/4-2307b6e2.jpg",
     "src": "resources/images/single/79-101/4.jpg"
   },
   "resources/images/single/79-101/5.jpg": {
@@ -2619,20 +2723,36 @@
     "file": "assets/plan-7b6c5a63.pdf",
     "src": "resources/images/single/79-101/plan.pdf"
   },
+  "resources/images/single/83-109/1-main.jpg": {
+    "file": "assets/1-main-4d63a13c.jpg",
+    "src": "resources/images/single/83-109/1-main.jpg"
+  },
   "resources/images/single/83-109/1.jpg": {
-    "file": "assets/1-4d63a13c.jpg",
+    "file": "assets/1-ce46a36f.jpg",
     "src": "resources/images/single/83-109/1.jpg"
   },
+  "resources/images/single/83-109/2-main.jpg": {
+    "file": "assets/2-main-28f50343.jpg",
+    "src": "resources/images/single/83-109/2-main.jpg"
+  },
   "resources/images/single/83-109/2.jpg": {
-    "file": "assets/2-28f50343.jpg",
+    "file": "assets/2-023bd1d6.jpg",
     "src": "resources/images/single/83-109/2.jpg"
   },
+  "resources/images/single/83-109/3-main.jpg": {
+    "file": "assets/3-main-73a93a85.jpg",
+    "src": "resources/images/single/83-109/3-main.jpg"
+  },
   "resources/images/single/83-109/3.jpg": {
-    "file": "assets/3-73a93a85.jpg",
+    "file": "assets/3-8a011b0a.jpg",
     "src": "resources/images/single/83-109/3.jpg"
   },
+  "resources/images/single/83-109/4-main.jpg": {
+    "file": "assets/4-main-0695b3a5.jpg",
+    "src": "resources/images/single/83-109/4-main.jpg"
+  },
   "resources/images/single/83-109/4.jpg": {
-    "file": "assets/4-0695b3a5.jpg",
+    "file": "assets/4-b272e1f2.jpg",
     "src": "resources/images/single/83-109/4.jpg"
   },
   "resources/images/single/83-109/5.jpg": {
@@ -2647,20 +2767,36 @@
     "file": "assets/plan-1e83510f.pdf",
     "src": "resources/images/single/83-109/plan.pdf"
   },
+  "resources/images/single/92-112/1-main.jpg": {
+    "file": "assets/1-main-46ecd1b1.jpg",
+    "src": "resources/images/single/92-112/1-main.jpg"
+  },
   "resources/images/single/92-112/1.jpg": {
-    "file": "assets/1-46ecd1b1.jpg",
+    "file": "assets/1-aa8c2352.jpg",
     "src": "resources/images/single/92-112/1.jpg"
   },
+  "resources/images/single/92-112/2-main.jpg": {
+    "file": "assets/2-main-efdec394.jpg",
+    "src": "resources/images/single/92-112/2-main.jpg"
+  },
   "resources/images/single/92-112/2.jpg": {
-    "file": "assets/2-efdec394.jpg",
+    "file": "assets/2-30fb9bce.jpg",
     "src": "resources/images/single/92-112/2.jpg"
   },
+  "resources/images/single/92-112/3-main.jpg": {
+    "file": "assets/3-main-17943130.jpg",
+    "src": "resources/images/single/92-112/3-main.jpg"
+  },
   "resources/images/single/92-112/3.jpg": {
-    "file": "assets/3-17943130.jpg",
+    "file": "assets/3-1bab1945.jpg",
     "src": "resources/images/single/92-112/3.jpg"
   },
+  "resources/images/single/92-112/4-main.jpg": {
+    "file": "assets/4-main-80f52c16.jpg",
+    "src": "resources/images/single/92-112/4-main.jpg"
+  },
   "resources/images/single/92-112/4.jpg": {
-    "file": "assets/4-80f52c16.jpg",
+    "file": "assets/4-0346f4d3.jpg",
     "src": "resources/images/single/92-112/4.jpg"
   },
   "resources/images/single/92-112/OD92-112/Thumbs.db": {
@@ -3212,7 +3348,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-18813421.js",
+    "file": "assets/app-6b84f73d.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -3245,9 +3381,9 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-24b5b6f3.js",
+    "file": "assets/modal-2de9d003.js",
     "imports": [
-      "_sender-836f7a84.js"
+      "_sender-f9f9299a.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/modal.js"
@@ -3258,9 +3394,9 @@
     "src": "resources/js/components/office-map.js"
   },
   "resources/js/components/order.js": {
-    "file": "assets/order-04fbc393.js",
+    "file": "assets/order-418d9552.js",
     "imports": [
-      "_sender-836f7a84.js"
+      "_sender-f9f9299a.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/order.js"
@@ -3298,7 +3434,7 @@
     "src": "resources/js/components/trusted.js"
   },
   "resources/js/pages/about/about.js": {
-    "file": "assets/about-ba296d7a.js",
+    "file": "assets/about-93de0cf6.js",
     "imports": [
       "_swiper-bundle.min-43b74ea1.js",
       "_certificates-b8134150.js",
