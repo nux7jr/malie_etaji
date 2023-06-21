@@ -2,6 +2,33 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 import { initProjects } from "../../components/project-item";
+
+import moment from "moment";
+initProjects(Swiper);
+
+function initTimer() {
+    const nodeDay = document.querySelector(".nodeDay");
+    const nodeHourse = document.querySelector(".nodeHourse");
+    const nodeMin = document.querySelector(".nodeMin");
+    const nodeSec = document.querySelector(".nodeSec");
+
+    let eventTime = 1366549200; // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
+    let currentTime = 136447400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
+    const diffTime = eventTime - currentTime;
+    let duration = moment.duration(diffTime * 1000, "milliseconds");
+    const interval = 1000;
+
+    setInterval(function () {
+        duration = moment.duration(duration - interval, "milliseconds");
+
+        nodeDay.textContent = duration.days();
+        nodeHourse.textContent = duration.hours();
+        nodeMin.textContent = duration.minutes();
+        nodeSec.textContent = duration.seconds();
+    }, interval);
+}
+initTimer();
+
 initProjects(Swiper);
 
 const project_item = new Swiper(".project-item__swiper", {
@@ -55,7 +82,7 @@ document.addEventListener("DOMContentLoaded", (evt) => {
     const buttonPeculiarities = document.querySelector(".peculiarities__more");
     const allPeculiarities = document.querySelectorAll(".peculiarities__card");
 
-    if (buttonPeculiarities !== null){
+    if (buttonPeculiarities !== null) {
         buttonPeculiarities.addEventListener("click", (evt) => {
             allPeculiarities.forEach((elem) => {
                 elem.style.display = "block";

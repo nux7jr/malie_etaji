@@ -87,9 +87,8 @@ $service = (new Service())->toArray();
 
     <div class="map-container" id="map-container">
     </div>
-    <hr />
-    <button class="all">all</button>
-    <button class="changemap">Участки</button>
+    <button class="map_all default__button">Проекты</button>
+    <button class="map_plots default__button">Участки</button>
 </section>
 <section class="stable">
     <div class="stable__header">

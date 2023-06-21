@@ -44,22 +44,22 @@ use App\Content\main\HousesInfo;
       <p class="timer__paraf">{{__('Акция закончится через')}}</p>
       <div class="timer__label">
         <div class="timer__item">
-          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__time nodeDay">{{__('00')}}</span>
           <span class="timer__info">{{__('дня')}}</span>
         </div>
         :
         <div class="timer__item">
-          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__time nodeHourse">{{__('00')}}</span>
           <span class="timer__info">{{__('час.')}}</span>
         </div>
         :
         <div class="timer__item">
-          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__time nodeMin">{{__('00')}}</span>
           <span class="timer__info">{{__('мин.')}}</span>
         </div>
         :
         <div class="timer__item">
-          <span class="timer__time">{{__('00')}}</span>
+          <span class="timer__time nodeSec">{{__('00')}}</span>
           <span class="timer__info">{{__('сек.')}}</span>
         </div>
       </div>

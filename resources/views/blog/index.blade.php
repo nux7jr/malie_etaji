@@ -46,7 +46,8 @@ $articles_list = (new Articles())->toArray();
       {{__('Полезное')}}
     </button>
   </div>
-  <p class="blog-filter__info">{{__('Найдено') }} <span class="q-count">{{count($articles_list)}}</span> {{__('статей')}}</p>
+  <p class="blog-filter__info">{{__('Найдено') }} <span class="q-count">{{count($articles_list)}}</span>
+    {{__('статей')}}</p>
 </section>
 <section class="article-list">
   <x-ui.lists.dropdown id="article-sort" name="article-sort">
@@ -68,6 +69,10 @@ $articles_list = (new Articles())->toArray();
     <x-cards.article info='{!! json_encode($item) !!}'>
     </x-cards.article>
     @endforeach
+  </div>
+  <div class="article-bottom__option">
+    <button class="default__button article__more">Показать еще 15 из 102 статей</button>
+    <button class="default__button article__up">Вернуться вверх</button>
   </div>
 </section>
 <section class="subscribe">
@@ -102,16 +107,13 @@ $articles_list = (new Articles())->toArray();
     </div>
   </div>
 </section>
-<section class="article-bottom">
+{{-- <section class="article-bottom">
   <div class="article-list__wrapper">
-    {{-- @foreach ($articles_list as $item)
+    @foreach ($articles_list as $item)
     <x-cards.article data_info='{!! json_encode($item) !!}'>
     </x-cards.article>
-    @endforeach --}}
+    @endforeach
   </div>
-  <div class="article-bottom__option">
-    <button class="default__button article__more">Показать еще 15 из 102 статей</button>
-    <button class="default__button article__up">Вернуться вверх</button>
-  </div>
-</section>
+
+</section> --}}
 @endsection

@@ -5,6 +5,7 @@ import "swiper/css/bundle";
 import { initProjects } from "../../components/project-item";
 initProjects(Swiper);
 
+
 const parentEl = document.querySelector(".project-wrapper");
 
 // function whit data
