@@ -149,7 +149,6 @@
               обработку персональных данных
             </a></span>
         </div>
-
       </div>
       <div class="modal-thx">
         <button class="modal__close">
