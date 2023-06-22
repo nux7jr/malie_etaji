@@ -121,14 +121,6 @@
               обработку персональных данных
             </a></span>
         </div>
-          @php
-              $text = '<span class="modal__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a
-              class="policy__link" href="http://" target="_blank" rel="noopener noreferrer">
-              обработку персональных данных
-            </a></span>';
-              use Illuminate\View\Compilers\BladeCompiler;
-              echo BladeCompiler::render($text);
-          @endphp
       </div>
       <div class="modal-thx">
         <button class="modal__close">
