@@ -10,7 +10,15 @@
 @php
 use App\Content\main\Articles;
 $articles_list = (new Articles())->toArray();
+// dd($articles_list)
 @endphp
+
+<script>
+  const data = '{!! json_encode($articles_list)!!}';
+  Window.data = JSON.parse(data);
+  console.log(Window.data);
+</script>
+
 
 <x-section.reels>
 </x-section.reels>

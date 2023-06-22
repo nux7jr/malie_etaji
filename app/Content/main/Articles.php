@@ -23,10 +23,10 @@ class Articles implements Arrayable
         'id' => 0,
         'tags' => ['news'],
         'title' => 'someting',
-        'preview' => 'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
+        'preview' => 'Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
         'format_date' => Carbon::now(),
         'date' => Carbon::now()->format('d-m-Y'),
-        'html' => '
+        'html' => addslashes('
         <h1 class="blog-item__heading">Название статьи</h1>
         <time class="blog-item__time" datetime="15.05.2023">15.05.2023</time>
         <img class="blog-item__img" src="/articles/content.jpg" alt="call">
@@ -57,17 +57,17 @@ class Articles implements Arrayable
         <button class="default__button blog-item__call" data-modal_id="modal__income">
           Оставить заявку
         </button>
-        ',
+        '),
       ],
       [
         'id' => 1,
         'tags' => ['stock', 'events'],
         'title' => 'Название статьи1',
-        'preview' => 'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
+        'preview' => 'Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
         'format_date' => Carbon::now(),
         'date' => Carbon::now()->format('d-m-Y'),
-        'html' => '
-        <h1 class="blog-item__heading">Название статьи2</h1>
+        'html' => addslashes('
+        <h1 class="blog-item__heading">Название статьи</h1>
         <time class="blog-item__time" datetime="15.05.2023">15.05.2023</time>
         <img class="blog-item__img" src="/articles/content.jpg" alt="call">
         <p class="blog-item__text">
@@ -97,17 +97,17 @@ class Articles implements Arrayable
         <button class="default__button blog-item__call" data-modal_id="modal__income">
           Оставить заявку
         </button>
-        ',
+        '),
       ],
       [
         'id' => 2,
         'tags' => ['news', 'stock', 'events', 'media', 'mortgage', 'malie-etaji', 'useful'],
         'title' => 'Название статьи1',
-        'preview' => 'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
+        'preview' => 'Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
         'format_date' => Carbon::now(),
         'date' => Carbon::now()->format('d-m-Y'),
-        'html' => '
-        <h1 class="blog-item__heading">Название статьи2</h1>
+        'html' => addslashes('
+        <h1 class="blog-item__heading">Название статьи</h1>
         <time class="blog-item__time" datetime="15.05.2023">15.05.2023</time>
         <img class="blog-item__img" src="/articles/content.jpg" alt="call">
         <p class="blog-item__text">
@@ -137,7 +137,7 @@ class Articles implements Arrayable
         <button class="default__button blog-item__call" data-modal_id="modal__income">
           Оставить заявку
         </button>
-        ',
+        '),
       ],
 
     ]);
