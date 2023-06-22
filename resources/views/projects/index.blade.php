@@ -22,9 +22,9 @@
             <div class="project-filter__wrapper">
                 <div class="project-input project-filter__item">
                     <label for="house-list" class="project-input__label">Линейка домов</label>
-                    <x-ui.lists.dropdown class="house-list__dropdown" id="house-list" name="house-list">
+                    <x-ui.lists.dropdown class="house-list__dropdown cls" id="house-list" name="house-list">
                         @foreach($house_setting as $option)
-                        <x-ui.lists.option value="{{$option}}">
+                        <x-ui.lists.option value="{{$option}}" class="cls">
                             {{$option}}
                         </x-ui.lists.option>
                         @endforeach
@@ -47,7 +47,7 @@
                     </div>
                     <input type="hidden" name="price-start" class="hide-end" />
                     <input type="hidden" name="price-end" class="hide-start" />
-                    <div class="rangees"></div>
+                    <div class="rangees cls"></div>
                 </div>
 
                 <div class="project-input project-input__quare">
@@ -67,7 +67,7 @@
                     </div>
                     <input type="hidden" name="square-start" class="square-hide-end" />
                     <input type="hidden" name="square-end" class="square-hide-start" />
-                    <div class="rangees-square"></div>
+                    <div class="rangees-square cls"></div>
                 </div>
 
                 <div class="project-input project-filter__item">
@@ -75,11 +75,11 @@
                     <div class="floors__wrapper">
                         <div class="floors__item">
                             <input class="floors__input" type="radio" name="floor" value="1" id="one-floor">
-                            <label class="floors__label" for="one-floor">1</label>
+                            <label class="floors__label cls" for="one-floor">1</label>
                         </div>
                         <div class="floors__item">
                             <input class="floors__input" type="radio" name="floor" value="2" id="two-floor">
-                            <label class="floors__label" for="two-floor">2</label>
+                            <label class="floors__label cls" for="two-floor">2</label>
                         </div>
                     </div>
                 </div>
@@ -88,30 +88,31 @@
                     <div class="floors__wrapper">
                         <div class="floors__item">
                             <input class="floors__input" type="checkbox" name="garage" value="true" id="garage">
-                            <label class="floors__label" for="garage">{{__('+ гараж')}}</label>
+                            <label class="floors__label cls" for="garage">{{__('+ гараж')}}</label>
                         </div>
                         <div class="floors__item">
                             <input class="floors__input" type="checkbox" name="stockroom" value="true" id="stockroom">
-                            <label class="floors__label" for="stockroom">{{__('+ кладовая')}}</label>
+                            <label class="floors__label cls" for="stockroom">{{__('+ кладовая')}}</label>
                         </div>
                         <div class="floors__item">
                             <input class="floors__input" type="checkbox" name="stockroom" value="true" id="wardrobe">
-                            <label class="floors__label" for="wardrobe">{{__('+ гардеробная')}}</label>
+                            <label class="floors__label cls" for="wardrobe">{{__('+ гардеробная')}}</label>
                         </div>
                         <div class="floors__item">
                             <input class="floors__input" type="checkbox" name="terrace" value="true" id="terrace">
-                            <label class="floors__label" for="terrace">{{__('+ терасса')}}</label>
+                            <label class="floors__label cls" for="terrace">{{__('+ терасса')}}</label>
                         </div>
                         <div class="floors__item">
                             <input class="floors__input" type="checkbox" name="balcony" value="true" id="balcony">
-                            <label class="floors__label" for="balcony">{{__('+ балкон')}}</label>
+                            <label class="floors__label cls" for="balcony">{{__('+ балкон')}}</label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="project-option">
-            <p class="project-option__text">{{__('Найдено')}}<span class="quantity-obj"> {{count($projects)}} </span>{{__('объектов')}}</p>
+            <p class="project-option__text">{{__('Найдено')}}<span class="quantity-obj"> {{count($projects)}}
+                </span>{{__('объектов')}}</p>
             <button class="default__button cls__button">{{__('Отменить фильтр')}}</button>
             <button class="default__button apply__button">{{__('Применить')}}</button>
         </div>
@@ -141,8 +142,10 @@
         </x-cards.project-item>
         @endforeach
     </div>
-    <button class="default__button more__button">{{__('Показать еще')}}<span class="q-projects">{{count($projects)}} </span>{{__('из')}}
-        <span class="a-projects"> {{\App\Content\main\HousesInfo::$card_elements->count()}} </span>{{__('проектов')}}</button>
+    <button class="default__button more__button">{{__('Показать еще')}}<span class="q-projects">{{count($projects)}}
+        </span>{{__('из')}}
+        <span class="a-projects"> {{\App\Content\main\HousesInfo::$card_elements->count()}}
+        </span>{{__('проектов')}}</button>
     <div class="project-call">
         <h1 class="project-call__heading">{{__('Авторизуйтесь в личном кабинете, чтобы экономить время и отслеживать все
             действия и этапы строительства')}}</h1>

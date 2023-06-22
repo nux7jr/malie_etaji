@@ -63,10 +63,11 @@ all_buttons_build.forEach((element_button) => {
     });
 });
 
+// build
 const build = new Swiper(".build-swiper", {
+    lazy: true,
     observer: true,
     initialSlide: 0,
-    // build
     navigation: {
         nextEl: ".build-button-next",
         prevEl: ".build-button-prev",
@@ -90,6 +91,7 @@ const build = new Swiper(".build-swiper", {
 });
 
 const image = new Swiper(".image-swiper", {
+    lazy: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,

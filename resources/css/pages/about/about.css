@@ -517,6 +517,25 @@
 .stable__video-paraf {
     color: var(--color-gray);
 }
+/* .map__button map__button--active  */
+.map__button {
+    color: var(--color-red);
+    background-color: var(--color-pink);
+}
+.map__button--active {
+    background-color: var(--color-red);
+    color: white;
+}
+.map__option {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+    margin-top: -80px;
+}
+.map__wrapper {
+    position: relative;
+}
 @media (max-width: 1690px) {
     .stable {
         flex-wrap: wrap;
@@ -782,5 +801,9 @@
     }
     .building-maps .ymaps-2-1-79-controls__control {
         inset: 85px auto auto 19px !important;
+    }
+    .map__option {
+        display: flex;
+        gap: 20px;
     }
 }

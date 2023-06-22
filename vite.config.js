@@ -77,6 +77,8 @@ export default defineConfig({
                 "resources/css/components/faq.css",
 
                 "resources/css/components/peculiarities.css",
+                "resources/js/components/peculiarities.js",
+
 
                 "resources/js/components/reels.js",
                 "resources/css/components/reels.css",

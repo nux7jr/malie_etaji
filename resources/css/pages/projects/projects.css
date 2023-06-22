@@ -15,7 +15,6 @@
     margin-right: calc(8% + 16px);
     max-width: 80%;
     margin-bottom: 0;
-
 }
 .project-filter__wrapper {
     display: flex;
@@ -179,6 +178,10 @@
 .cls__button {
     background-color: var(--color-gray);
 }
+.cls__button--active {
+    color: white;
+    background-color: var(--color-red);
+}
 .project-info {
     border-top-left-radius: var(--border-raduis-defalut);
     border-top-right-radius: var(--border-raduis-defalut);
@@ -239,8 +242,8 @@
     text-align: center;
     display: none;
 }
-@media (max-width: 1690px){
-    .project-filter__wrapper{
+@media (max-width: 1690px) {
+    .project-filter__wrapper {
         flex-wrap: wrap;
     }
 }

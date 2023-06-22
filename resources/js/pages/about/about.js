@@ -39,12 +39,22 @@ function init() {
     }
     objLoading();
     const plot_button = document.querySelector(".map_plots");
-    const all_button = document.querySelector(".map_all");
-    all_button.addEventListener("click", function (evt) {
+    const projects_button = document.querySelector(".map_all");
+    function clear_buttons() {
+        const all_buttons = document.querySelectorAll(".map__button");
+        all_buttons.forEach((element) => {
+            element.classList.remove("map__button--active");
+        });
+    }
+    projects_button.addEventListener("click", function (evt) {
+        clear_buttons();
+        evt.target.classList.add("map__button--active");
         objectManager.removeAll();
         objLoading();
     });
     plot_button.addEventListener("click", async (evt) => {
+        clear_buttons();
+        evt.target.classList.add("map__button--active");
         const response = await fetch("/plotMaps.json");
         const data = await response.json();
         objectManager.removeAll();

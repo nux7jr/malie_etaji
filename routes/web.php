@@ -44,7 +44,7 @@ function routeList(): void
             ],
             'projects' => HousesInfo::$card_elements,
             'house_setting' => [
-                'Не выбранно',
+                'Все',
                 'Все',
                 'Одноэтажные',
                 'Двухэтажные',
@@ -62,7 +62,6 @@ function routeList(): void
             'projects' => HousesInfo::getCategoryByName(__('Барны')),
             'house_setting' => [
                 'Барны',
-                'Не выбранно',
                 'Все',
                 'Одноэтажные',
                 'Двухэтажные',
@@ -80,7 +79,6 @@ function routeList(): void
             'projects' => HousesInfo::getCategoryByName(__('Одноэтажные')),
             'house_setting' => [
                 'Одноэтажные',
-                'Не выбранно',
                 'Все',
                 'Двухэтажные',
                 'Барны',
@@ -101,7 +99,6 @@ function routeList(): void
                 'Одноэтажные',
                 'Все',
                 'Барны',
-                'Не выбрано',
                 'Двухэтажные'
             ],
             'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),

@@ -23,66 +23,74 @@ $service = (new Service())->toArray();
 
 @section('content')
 <section class="offer">
-    <div class="main-offer offer-swiper swiper">
-        <div class="offer-wrapper swiper-wrapper">
-            <div class="offer-slide swiper-slide"
-                style="background-image: url({{ Vite::asset('resources/images/home/1.png') }})">
-                <div class="offer-slider__inner">
-                    <h1 class="main-offer__heading">{{ __('Ипотека от 2,7%') }}</h1>
-                    <p class="main-offer__paraf">
-                        {{ __('Совместно с банками партнерами мы предлагаем самые выгодные ставки по загородной
-                        ипотеке.') }}
-                    </p>
-                    <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
-                        больше')
-                        }}</button>
-                </div>
-            </div>
-            {{-- <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/500x500)">
-                <div class="offer-slider__inner">
-                    <h1 class="main-offer__heading">{{ __('Клиент-тур на строительные объекты') }}</h1>
-                    <p class="main-offer__paraf">
-                        {{ __('Записывайтесь на бесплатные групповые экскурсии по нашим объектам и получайте выгодные
-                        условия строительства с нами') }}
-                    </p>
-                    <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
-                        больше')
-                        }}</button>
-                </div>
-            </div>
-            <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/1000x800)">
-                <div class="offer-slider__inner">
-                    <h1 class="main-offer__heading">{{ __('Дом вдвое дешевле городской квартиры') }}</h1>
-                    <p class="main-offer__paraf">
-                        {{ __('Строим современные энергоэффективные дома для жизни на природе') }}
-                    </p>
-                    <button class="default__button main-offer__button">{{ __('Узнать больше') }}</button>
-                </div>
-            </div> --}}
-        </div>
-        <div class="swiper-pagination offer-slide__pagination"></div>
+    <div class="offer__head">
+        <h1 class="offer__number">{{__('>120 домов')}}</h1>
+        <h1 class="offer__quantity">{{__('уже построено благодаря компании “Малые этажи”')}}</h1>
     </div>
-    <div class="offer__wrapper">
-        <div class="sec-offer">
-            <h1 class="sec-offer__heading">{{ __('Клиент-тур на строительные объекты') }}</h1>
-            <p class="sec-offer__paraf">
-                {{ __('Записывайтесь на бесплатные групповые экскурсии по нашим объектам и получайте выгодные условия
-                строительства с нами') }}
-            </p>
-            <button class="sec-offer__button">
-                <img data-modal_id="modal__income" class="sec-offer__img"
-                    src="{{ Vite::asset('resources/images/icons/offer_arr.svg') }}" alt="offer">
-            </button>
+    <div class="offer__container">
+        <div class="main-offer offer-swiper swiper">
+            <div class="offer-wrapper swiper-wrapper">
+                <div class="offer-slide swiper-slide"
+                    style="background-image: url({{ Vite::asset('resources/images/home/1.png') }})">
+                    <div class="offer-slider__inner">
+                        <h1 class="main-offer__heading">{{ __('Ипотека от 2,7%') }}</h1>
+                        <p class="main-offer__paraf">
+                            {{ __('Совместно с банками партнерами мы предлагаем самые выгодные ставки по загородной
+                            ипотеке.') }}
+                        </p>
+                        <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
+                            больше')
+                            }}</button>
+                    </div>
+                </div>
+                {{-- <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/500x500)">
+                    <div class="offer-slider__inner">
+                        <h1 class="main-offer__heading">{{ __('Клиент-тур на строительные объекты') }}</h1>
+                        <p class="main-offer__paraf">
+                            {{ __('Записывайтесь на бесплатные групповые экскурсии по нашим объектам и получайте
+                            выгодные
+                            условия строительства с нами') }}
+                        </p>
+                        <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
+                            больше')
+                            }}</button>
+                    </div>
+                </div>
+                <div class="offer-slide swiper-slide" style="background-image: url(https://placehold.co/1000x800)">
+                    <div class="offer-slider__inner">
+                        <h1 class="main-offer__heading">{{ __('Дом вдвое дешевле городской квартиры') }}</h1>
+                        <p class="main-offer__paraf">
+                            {{ __('Строим современные энергоэффективные дома для жизни на природе') }}
+                        </p>
+                        <button class="default__button main-offer__button">{{ __('Узнать больше') }}</button>
+                    </div>
+                </div> --}}
+            </div>
+            <div class="swiper-pagination offer-slide__pagination"></div>
         </div>
-        <div class="sec-offer">
-            <h1 class="sec-offer__heading">{{ __('Дом вдвое дешевле городской квартиры') }}</h1>
-            <p class="sec-offer__paraf">
-                {{ __('Строим современные энергоэффективные дома для жизни на природе') }}
-            </p>
-            <a href="/projects" class="sec-offer__button">
-                <img class="sec-offer__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
-                    alt="offer">
-            </a>
+        <div class="offer__wrapper">
+            <div class="sec-offer">
+                <h1 class="sec-offer__heading">{{ __('Клиент-тур на строительные объекты') }}</h1>
+                <p class="sec-offer__paraf">
+                    {{ __('Записывайтесь на бесплатные групповые экскурсии по нашим объектам и получайте выгодные
+                    условия
+                    строительства с нами') }}
+                </p>
+                <button class="sec-offer__button">
+                    <img data-modal_id="modal__income" class="sec-offer__img"
+                        src="{{ Vite::asset('resources/images/icons/offer_arr.svg') }}" alt="offer">
+                </button>
+            </div>
+            <div class="sec-offer">
+                <h1 class="sec-offer__heading">{{ __('Дом вдвое дешевле городской квартиры') }}</h1>
+                <p class="sec-offer__paraf">
+                    {{ __('Строим современные энергоэффективные дома для жизни на природе') }}
+                </p>
+                <a href="/projects" class="sec-offer__button">
+                    <img class="sec-offer__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
+                        alt="offer">
+                </a>
+            </div>
         </div>
     </div>
 </section>

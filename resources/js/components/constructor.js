@@ -18,3 +18,11 @@ const filterData = {
     size: "100",
     price: "2",
 };
+
+class Construcs {
+    constructor() {
+        this.type = "Одноэтажный";
+        this.size = "100-150";
+        this.price = "2-5";
+    }
+}

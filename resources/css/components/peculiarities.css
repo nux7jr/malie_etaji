@@ -199,6 +199,13 @@
 .peculiarities__more {
     display: none;
 }
+.review__thx {
+    display: none;
+    text-align: center;
+}
+.thx__heading {
+    padding-bottom: 10px;
+}
 @media (max-width: 1690px) {
     .project-review {
         flex-wrap: wrap;

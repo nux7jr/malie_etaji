@@ -94,10 +94,10 @@ class BuiltHouses implements Arrayable
             src: 'built/4/1.jpg',
           ))->getSrc(),
           (new Image(
-            src: 'built/4/2.jpg',
+            src: 'built/4/2.JPG',
           ))->getSrc(),
           (new Image(
-            src: 'built/4/3.jpg',
+            src: 'built/4/3.JPG',
           ))->getSrc()
         ],
         'info' => [

@@ -9,4 +9,13 @@ Inputmask({
             validator: "[0-69]",
         },
     },
-}).mask(allInputs, { autoclear: true });
+    clearMaskOnLostFocus: true,
+}).mask(allInputs);
+
+allInputs.forEach((elem) => {
+    elem.addEventListener("focusout", (evt) => {
+        if (elem.value.indexOf("_") !== -1) {
+            elem.value = "";
+        }
+    });
+});

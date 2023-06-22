@@ -263,7 +263,7 @@ use App\Content\main\HousesInfo;
         потребности. В наших домах представлен широкий выбор отделочных фасадных материалов, которые будет подобраны под
         ваш вкус. ')}}</p>
     </div>
-    <button class="default__button">{{__('Отправить заявку')}}</button>
+    <button data-modal_id="modal__income" class="default__button">{{__('Отправить заявку')}}</button>
   </div>
 </section>
 <section class="peculiarities">

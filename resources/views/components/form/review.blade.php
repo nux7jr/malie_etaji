@@ -1,7 +1,7 @@
 @push('head')
 @once
 @vite("resources/css/components/peculiarities.css")
-
+@vite("resources/js/components/peculiarities.js")
 @endonce
 @endpush
 
@@ -14,7 +14,8 @@
       просмотра, организует посещение предложения и проведёт вам экскурсию.')}}</p>
   </div>
   <div class="project-review__datepiker datepiker">
-    <h1 class="datepiker__heading">{{__('Выберите дату и время')}}</h1>
+
+    {{-- <h1 class="datepiker__heading">{{__('Выберите дату и время')}}</h1>
     <div class="datepiker__list-inputs">
       <div class="datepiker__list">
         <input class="datepiker__input" type="radio" name="day" value="now" id="now">
@@ -59,7 +60,6 @@
         </label>
       </div>
     </div>
-
     <div class="datepiker__flex">
       <div class="datepiker__option">
         <x-ui.lists.dropdown class="datepiker__dropdown" id="datepiker" name="datepiker">
@@ -91,12 +91,16 @@
           <h4 class="grayest"></h4>
         </div>
       </div>
-    </div>
-    <div class=" datepiker__user-info">
+    </div> --}}
+
+
+
+    <div class="datepiker__user-info">
       <div class="datepiker__user-info__wrapper">
-        <x-ui.inputs.x-input class="user-info__item" placeholder="Имя" name='name'>
+        @csrf
+        <x-ui.inputs.x-input required class="user-info__item" placeholder="Имя" name='name'>
         </x-ui.inputs.x-input>
-        <x-ui.inputs.x-input class="user-info__item" placeholder="Телефон" name='phone'>
+        <x-ui.inputs.x-input required class="user-info__item" placeholder="Телефон" name='phone'>
         </x-ui.inputs.x-input>
         <button type="submit" class="default__button user-info__item">
           Записаться на просмотр
@@ -104,6 +108,11 @@
       </div>
       <span class="datepiker__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a href="http://"
           target="_blank" rel="noopener noreferrer"> обработку персональных данных</a></span>
+    </div>
+
+    <div class="review__thx">
+      <h1 class="thx__heading">Спасибо за заявку!</h1>
+      <p class="thx__paraf">С вами свяжется специалист</p>
     </div>
   </div>
 </form>

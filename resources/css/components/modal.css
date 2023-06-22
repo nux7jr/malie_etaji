@@ -149,7 +149,31 @@
 .income__item > .default__button {
     flex: 1;
 }
-
+.modal__radio > input + label {
+    background-color: var(--color-pink);
+    padding: 5px 6px;
+    padding-bottom: 3px;
+    border-radius: 999px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+.modal__radio > input:checked + label {
+    background-color: var(--color-red);
+}
+.modal__radio > input:checked + label .fillable {
+    transition: 0.2s all;
+    fill: white;
+}
+.modal__soc {
+    display: flex;
+    gap: 20px;
+}
+.modal__radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
 @keyframes modal_in {
     0% {
         transform: translateY(300px);

@@ -5,7 +5,6 @@ import "swiper/css/bundle";
 import { initProjects } from "../../components/project-item";
 initProjects(Swiper);
 
-
 const parentEl = document.querySelector(".project-wrapper");
 
 // function whit data
@@ -91,7 +90,7 @@ function reRerenderHouses() {
                     <a class="default__button" href="/projects/${
                         element.id
                     }">Подробнее</a>
-                    <button class="default__button project-item__call">Хочу такой дом</button>
+                    <button class="default__button project-item__call" data-modal_id="modal__income">Хочу такой дом</button>
                 </div>
             </div>
         </article>
@@ -233,6 +232,13 @@ const filterInit = () => {
     const filter_form = document.querySelector(".filter__form");
     const cls_button = document.querySelector(".cls__button");
     const dropdownItems = document.querySelector(".dropdown-select-items");
+    const initCls = document.querySelectorAll(".cls");
+
+    initCls.forEach((elem) => {
+        elem.addEventListener("click", (evt) => {
+            cls_button.classList.add("cls__button--active");
+        });
+    });
 
     filter_form.addEventListener("submit", async (evt) => {
         evt.preventDefault();
@@ -245,7 +251,6 @@ const filterInit = () => {
         fetch_data.data.forEach((el) => {
             Window.data.push(el);
         });
-
         reRerenderHouses();
     });
 
@@ -255,6 +260,7 @@ const filterInit = () => {
         price_slider.noUiSlider.set(["900000", "15700000"]);
         square_slider.noUiSlider.set(["42", "250"]);
         dropdownItems.firstChild.click();
+        evt.target.classList.remove("cls__button--active");
     });
 };
 
