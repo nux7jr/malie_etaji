@@ -12,3 +12,9 @@ document.addEventListener("DOMContentLoaded", (evt) => {
         second_slide.style.display = "none";
     });
 });
+
+const filterData = {
+    type: "Одноэтажный",
+    size: "100",
+    price: "2",
+};

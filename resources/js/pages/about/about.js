@@ -31,7 +31,6 @@ function init() {
     myMap.controls.remove("typeSelector");
     myMap.controls.remove("fullscreenControl");
     myMap.controls.remove("searchControl");
-    
 
     async function objLoading() {
         const response = await fetch("/geoMaps.json");
@@ -39,7 +38,12 @@ function init() {
         objectManager.add(data);
     }
     objLoading();
-    const plot_button = document.querySelector(".changemap");
+    const plot_button = document.querySelector(".map_plots");
+    const all_button = document.querySelector(".map_all");
+    all_button.addEventListener("click", function (evt) {
+        objectManager.removeAll();
+        objLoading();
+    });
     plot_button.addEventListener("click", async (evt) => {
         const response = await fetch("/plotMaps.json");
         const data = await response.json();

@@ -6,17 +6,18 @@
 @endpush
 
 
-
-<article class="article-item">
+@php
+$data = json_decode($info, true);
+@endphp
+<article class="article-item @foreach ($data['tags'] as $item) {{ $item }} @endforeach ">
   <div class="article__info">
-    <h1 class="article__heading">{{__('Название статьи')}}</h1>
-    <p class="article__paraf">{{__('Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-      В то время некий
-      безымянный
-      печатник создал большую коллекцию размеров и форм шрифтов.')}}</p>
-    <time class="article__time" datetime="15.05.2025">{{__('15.05.2025')}}</time>
+    <h1 class="article__heading">{{$data['title']}}</h1>
+    <p class="article__paraf">
+      {{$data['preview']}}
+    </p>
+    <time class="article__time" datetime="{{ $data['date'] }}">{{ $data['date'] }} </time>
   </div>
-  <a class="article__link" href="/blog/229">
-    <img class="article__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="link">
+  <a class="article__link" href="/blog/{{ $data['id'] }}">
+    <img class="article__img" src="{{ Vite::image('icons/offer_arr_red.svg') }}" alt="link">
   </a>
 </article>

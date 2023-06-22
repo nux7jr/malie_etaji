@@ -19,8 +19,6 @@
                 <div class="ganeral-select house-type">
                     <h2 class="ganeral-header">
                         {{ __('Выберите тип дома') }}
-
-
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -272,11 +270,11 @@
                 alt="Онлайн заявка на ипотеку" />
         </a>
         <button data-modal_id="modal__income" class="constructor-call__button">
-            <span class="constructor-call__text">
+            <span data-modal_id="modal__income" class="constructor-call__text">
                 {{ __('Помощь в подборе участка') }}
             </span>
-            <img class="constructor-call__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
-                alt="Онлайн заявка на ипотеку" />
+            <img data-modal_id="modal__income" class="constructor-call__img"
+                src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="Онлайн заявка на ипотеку" />
         </button>
     </div>
 </section>

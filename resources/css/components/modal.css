@@ -16,7 +16,9 @@
     width: 36px;
     height: 36px;
 }
-
+#modal__income * .modal__paraf {
+    max-width: 364px;
+}
 .modal__content {
     display: flex;
     gap: 20px;

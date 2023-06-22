@@ -15,10 +15,30 @@
               <x-ui.inputs.x-input placeholder="Имя" name="name"></x-ui.inputs.x-input>
               <x-ui.inputs.x-input placeholder="Номер телефона" name="phone"></x-ui.inputs.x-input>
             </div>
-            <div class="modal__item modal__mess">
+            {{-- <div class="modal__item modal__mess">
               <h1 class="modal__h1">
                 {{__('Выберите мессенджер где вам удобнее получить проект')}}
               </h1>
+              <div class="modal__radio">
+                <input checked="" id="telegram__input" class="visually-hidden" type="radio" name="connect"
+                  value="telegram" checked>
+                <label class="" for="telegram__input">
+                  Да
+                </label>
+              </div>
+              <div class="modal__radio">
+                <input checked="" id="whatsUp__input" class="visually-hidden" type="radio" name="connect"
+                  value="whatsUp">
+                <label class="" for="whatsUp__input">
+                  Да
+                </label>
+              </div>
+              <div class="modal__radio">
+                <input checked="" id="viber__input" class="visually-hidden" type="radio" name="connect" value="viber">
+                <label class="" for="viber__input">
+                  Да
+                </label>
+              </div>
 
               <div class="modal__social">
                 <a class="modal__link" href="http://">
@@ -31,11 +51,11 @@
                   <img class="modal__img" src="{{ Vite::asset('resources/images/modals/Viber.svg') }}" alt="Viber">
                 </a>
               </div>
-            </div>
+            </div> --}}
             <div class="modal__item">
               <button class="default__button">{{__('Отправить')}}</button>
             </div>
-              @csrf
+            @csrf
           </form>
           <span class="modal__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a
               class="policy__link" href="http://" target="_blank" rel="noopener noreferrer">
@@ -75,7 +95,7 @@
               <x-ui.inputs.x-input placeholder="Номер телефона" name="phone"></x-ui.inputs.x-input>
               <button class="default__button">{{__('Отправить')}}</button>
             </div>
-              @csrf
+            @csrf
           </form>
           <span class="modal__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a
               class="policy__link" href="http://" target="_blank" rel="noopener noreferrer">
@@ -110,11 +130,11 @@
         <div class="modal__inner">
           <form class="modal__form income__form">
             <div class="modal__item income__item">
+              @csrf
               <x-ui.inputs.x-input placeholder="Имя" name="name"></x-ui.inputs.x-input>
               <x-ui.inputs.x-input placeholder="Номер телефона" name="phone"></x-ui.inputs.x-input>
               <button class="default__button">{{__('Отправить')}}</button>
             </div>
-              @csrf
           </form>
           <span class="modal__policy">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <a
               class="policy__link" href="http://" target="_blank" rel="noopener noreferrer">

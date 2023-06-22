@@ -35,6 +35,7 @@
 }
 .article-bottom__option {
     padding: 48px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,5 +85,8 @@
     }
     .blog-item .path__wrapper {
         padding-top: 37px;
+    }
+    .blog-item {
+        padding-bottom: 40px;
     }
 }

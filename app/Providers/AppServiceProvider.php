@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Content\main\HousesInfo;
+use App\Content\main\Articles;
 use App\Helpers\Senders\Bitrix24;
 use App\Helpers\Senders\Interface\SendFormInterface;
 use Illuminate\Support\Facades\Vite;
@@ -24,22 +25,24 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->addAssetsViteMacros();
-        $this->initClassHouseInfor();
+        $this->initClasses();
+        $this->formSenderInjection();
     }
-    private function addAssetsViteMacros():void
+    private function addAssetsViteMacros(): void
     {
-        Vite::macro('image', fn($asset) => $this->
-        asset("resources/images/{$asset}"));
+        Vite::macro('image', fn ($asset) => $this->asset("resources/images/{$asset}"));
     }
-    private function initClassHouseInfor():void
+    private function initClasses(): void
     {
         new HousesInfo();
+        new Articles();
     }
-    private function formSenderInjection():void
+
+    private function formSenderInjection(): void
     {
-        $this->app->singleton(SendFormInterface::class,function ($app){
-            return match ($app->make('config')->get('services.client-form-sender')){
-                'Bitrix24Tiksan' => new Bitrix24(env('TIKSAN_SUBDOMAIN_BITRIX24'),env('TIKSAN_WEBHOOK_BITRIX24_BASE_URI'),(int)env('DEFAULT_DIRECTION_TIKSAN_BITRIX24')),
+        $this->app->singleton(SendFormInterface::class, function ($app) {
+            match ($app->make('config')->get('services.client-form-sender')) {
+                'Bitrix24Tiksan' => new Bitrix24(env('TIKSAN_SUBDOMAIN_BITRIX24'), env('TIKSAN_WEBHOOK_BITRIX24_BASE_URI'), (int)env('DEFAULT_DIRECTION_TIKSAN_BITRIX24')),
                 'default' => new \RuntimeException("Unknown Form Sender Service"),
             };
         });
