@@ -671,6 +671,9 @@ footer {
 .standart-two-lables .htooltip {
     margin-left: 11.5px;
 }
+.mobile__social {
+    display: none;
+}
 /*END COMPONENTS*/
 /* for media */
 
@@ -741,6 +744,23 @@ footer {
     .footer__wrapper {
         padding-top: 30px;
     }
+    .mobile__social {
+        display: block;
+        padding-bottom: 20px;
+    }
+    .pc__social {
+        display: none;
+    }
+    .pc-block {
+        display: none;
+    }
+    .mobile-footer {
+        text-align: center;
+        align-items: center;
+    }
+    /* .last-block {
+        order: 5;
+    } */
 }
 @media (max-width: 768px) {
     .header__logo {

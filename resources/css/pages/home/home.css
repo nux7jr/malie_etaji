@@ -1165,6 +1165,12 @@
     .inner-price__value {
         line-height: 20px;
     }
+    .image-swiper {
+        min-height: 260px;
+    }
+    .image-swiper {
+        max-width: 100%;
+    }
 }
 @media (max-width: 550px) {
     .home-projects__wrapper {

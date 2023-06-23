@@ -120,9 +120,7 @@ class BuiltHouses implements Arrayable
           (new Image(
             src: 'built/5/3.jpg',
           ))->getSrc(),
-          (new Image(
-            src: 'built/5/4.jpg',
-          ))->getSrc(),
+
         ],
         'info' => [
           'square' => '120',
