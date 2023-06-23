@@ -80,11 +80,20 @@ function renderCalc() {
     if (!insurance){
         percent += 1;
     }
-    const monthPercent = percent / 100 / 12;
-    const monthLoan = loanTerm*12;
-    const monthPay = price * (monthPercent + (monthPercent / (((1+monthPercent)**monthLoan) - 1)));
-    const fullPrice = monthPay * monthLoan;
+    let monthPercent = percent / 100 / 12;
+    let monthLoan = loanTerm*12;
+    let monthPay = price * (monthPercent + (monthPercent / (((1+monthPercent)**monthLoan) - 1)));
+    let fullPrice = monthPay * monthLoan;
+    if (fullPrice < 0){
+        fullPrice = 0;
+    }
+    if (monthPay < 0){
+        monthPay = 0;
+    }
     let tax = (fullPrice - price)*0.13;
+    if (tax < 0){
+        tax = 0;
+    }
     if (tax > 2000000){
         tax = 2000000;
     }
@@ -92,11 +101,12 @@ function renderCalc() {
     calculator.querySelector('#calc-month-pay').innerText = monthPay.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
     calculator.querySelector('#calc-full-price').innerText = fullPrice.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0});
     calculator.querySelector('#tax').innerText = tax.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0});
-    calculator.addEventListener('input',function (evt){
-        renderCalc();
-    });
 }
 renderCalc();
+const calc = document.querySelector('.mortgage-calculator');
+calc.addEventListener('input',function (evt){
+    renderCalc();
+});
 function closeAllSelect(elmnt) {
     /* A function that will close all select boxes in the document,
     except the current select box: */
