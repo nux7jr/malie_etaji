@@ -1,9 +1,8 @@
 import * as noUiSlider from "nouislider";
 import "nouislider/dist/nouislider.css";
 
-const filterInit = () => {
+const selectionInit = () => {
     const nonLinearSlider = document.querySelector(".rangees");
-
     const formatForSlider = {
         from: function (formattedValue) {
             return Number(formattedValue);
@@ -35,18 +34,53 @@ const filterInit = () => {
     nonLinearSlider.noUiSlider.on(
         "update",
         function (values, handle, unencoded) {
-            // const bar = Number(values[handle].replace(",", ".")) * 1000000;
             const bar = values[handle].replace(",", ".");
-
             hiddenInputs[handle].value = bar;
             formatValues[handle].innerHTML = values[handle];
         }
     );
-    // send + cls
-    const selection__form = document.querySelector(".selection__form");
-    // const cls_button = document.querySelector(".cls__button");
-    // const dropdownItems = document.querySelector(".dropdown-select-items");
+    ///////////////////////////////////////////
+    const nonLinearSquare = document.querySelector(".rangees-square");
+    const formatForSquare = {
+        from: function (formattedValue) {
+            return Number(formattedValue);
+        },
+        to: function (numericValue) {
+            return Math.round(numericValue / 10) * 10;
+        },
+    };
+    noUiSlider.create(nonLinearSquare, {
+        connect: true,
+        behaviour: "tap",
+        start: [50, 250],
+        range: {
+            min: [50],
+            max: [250],
+        },
+        format: formatForSquare,
+    });
+    nonLinearSquare.noUiSlider.set(["50", "250"]);
+    const formatValuesSquare = [
+        document.querySelector(".formatting-end-square"),
+        document.querySelector(".formatting-start-square"),
+    ];
+    const hiddenInputsSquare = [
+        document.querySelector(".hide-end-square"),
+        document.querySelector(".hide-start-square"),
+    ];
+    nonLinearSquare.noUiSlider.on(
+        "update",
+        function (values, handle, unencoded) {
+            hiddenInputsSquare[handle].value = values[handle];
+            formatValuesSquare[handle].innerHTML = values[handle];
 
+            // const bar = values[handle].replace(",", ".");
+            // hiddenInputsSquare[handle].value = bar;
+            // formatValuesSquare[handle].innerHTML = values[handle];
+        }
+    );
+
+    // sender
     selection__form.addEventListener("submit", async (evt) => {
         evt.preventDefault();
         const res = await fetch("/kek", {
@@ -57,7 +91,6 @@ const filterInit = () => {
     });
 };
 const init = () => {
-    filterInit();
+    selectionInit();
 };
-
 window.addEventListener("DOMContentLoaded", init);

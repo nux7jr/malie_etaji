@@ -20,8 +20,11 @@
   "_project-item-5c3e1fdf.js": {
     "file": "assets/project-item-5c3e1fdf.js"
   },
-  "_sender-f9f9299a.js": {
-    "file": "assets/sender-f9f9299a.js"
+  "_reels-657b5833.js": {
+    "file": "assets/reels-657b5833.js"
+  },
+  "_sender-2b3cd42d.js": {
+    "file": "assets/sender-2b3cd42d.js"
   },
   "_swiper-bundle.min-43b74ea1.js": {
     "css": [
@@ -41,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-f6d8292c.css",
+    "file": "assets/app-6bd003e7.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -51,7 +54,7 @@
     "src": "resources/css/components/aboutHeader.css"
   },
   "resources/css/components/article.css": {
-    "file": "assets/article-2d473c63.css",
+    "file": "assets/article-7c745fa1.css",
     "isEntry": true,
     "src": "resources/css/components/article.css"
   },
@@ -66,7 +69,7 @@
     "src": "resources/css/components/certificates.css"
   },
   "resources/css/components/constructor.css": {
-    "file": "assets/constructor-6bde6821.css",
+    "file": "assets/constructor-a78b31e6.css",
     "isEntry": true,
     "src": "resources/css/components/constructor.css"
   },
@@ -96,7 +99,7 @@
     "src": "resources/css/components/mob_menu.css"
   },
   "resources/css/components/modal.css": {
-    "file": "assets/modal-b5a963ca.css",
+    "file": "assets/modal-e71da4b3.css",
     "isEntry": true,
     "src": "resources/css/components/modal.css"
   },
@@ -116,7 +119,7 @@
     "src": "resources/css/components/path.css"
   },
   "resources/css/components/peculiarities.css": {
-    "file": "assets/peculiarities-dbfdf4cb.css",
+    "file": "assets/peculiarities-af304672.css",
     "isEntry": true,
     "src": "resources/css/components/peculiarities.css"
   },
@@ -129,6 +132,11 @@
     "file": "assets/reels-161969f5.css",
     "isEntry": true,
     "src": "resources/css/components/reels.css"
+  },
+  "resources/css/components/search.css": {
+    "file": "assets/search-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/css/components/search.css"
   },
   "resources/css/components/selection.css": {
     "file": "assets/selection-5ef85c89.css",
@@ -146,17 +154,17 @@
     "src": "resources/css/components/trusted.css"
   },
   "resources/css/pages/about/about.css": {
-    "file": "assets/about-73e36573.css",
+    "file": "assets/about-06512b6e.css",
     "isEntry": true,
     "src": "resources/css/pages/about/about.css"
   },
   "resources/css/pages/blog-item/blog-item.css": {
-    "file": "assets/blog-item-14b2cb21.css",
+    "file": "assets/blog-item-770b9b63.css",
     "isEntry": true,
     "src": "resources/css/pages/blog-item/blog-item.css"
   },
   "resources/css/pages/blog/blog.css": {
-    "file": "assets/blog-41afb1cb.css",
+    "file": "assets/blog-d30cf478.css",
     "isEntry": true,
     "src": "resources/css/pages/blog/blog.css"
   },
@@ -171,7 +179,7 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-b6cfe577.css",
+    "file": "assets/home-2f2568b7.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -186,7 +194,7 @@
     "src": "resources/css/pages/project-item/project-item.css"
   },
   "resources/css/pages/projects/projects.css": {
-    "file": "assets/projects-d97a3935.css",
+    "file": "assets/projects-15aac2e0.css",
     "isEntry": true,
     "src": "resources/css/pages/projects/projects.css"
   },
@@ -821,11 +829,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -850,6 +858,10 @@
   "resources/images/components/button.svg": {
     "file": "assets/serv-c6f0285d.svg",
     "src": "resources/images/swiper/serv.svg"
+  },
+  "resources/images/components/content.jpg": {
+    "file": "assets/content-945da2b0.jpg",
+    "src": "resources/images/components/content.jpg"
   },
   "resources/images/components/img.svg": {
     "file": "assets/img-86c44b8f.svg",
@@ -1291,6 +1303,58 @@
     "file": "assets/illustration-fa0e48ef.png",
     "src": "resources/images/error/illustration.png"
   },
+  "resources/images/favicon/android-chrome-192x192.png": {
+    "file": "assets/android-chrome-192x192-3b82ac9a.png",
+    "src": "resources/images/favicon/android-chrome-192x192.png"
+  },
+  "resources/images/favicon/android-chrome-512x512.png": {
+    "file": "assets/android-chrome-512x512-ba6f25dd.png",
+    "src": "resources/images/favicon/android-chrome-512x512.png"
+  },
+  "resources/images/favicon/apple-touch-icon.png": {
+    "file": "assets/apple-touch-icon-f835762e.png",
+    "src": "resources/images/favicon/apple-touch-icon.png"
+  },
+  "resources/images/favicon/browserconfig.xml": {
+    "file": "assets/browserconfig-c348b0d6.xml",
+    "src": "resources/images/favicon/browserconfig.xml"
+  },
+  "resources/images/favicon/favicon-16x16.png": {
+    "file": "assets/favicon-16x16-33655eaf.png",
+    "src": "resources/images/favicon/favicon-16x16.png"
+  },
+  "resources/images/favicon/favicon-32x32.png": {
+    "file": "assets/favicon-32x32-b5006a4c.png",
+    "src": "resources/images/favicon/favicon-32x32.png"
+  },
+  "resources/images/favicon/favicon.ico": {
+    "file": "assets/favicon-f01f8aae.ico",
+    "src": "resources/images/favicon/favicon.ico"
+  },
+  "resources/images/favicon/mstile-144x144.png": {
+    "file": "assets/mstile-144x144-564ba45b.png",
+    "src": "resources/images/favicon/mstile-144x144.png"
+  },
+  "resources/images/favicon/mstile-150x150.png": {
+    "file": "assets/mstile-150x150-e335e53d.png",
+    "src": "resources/images/favicon/mstile-150x150.png"
+  },
+  "resources/images/favicon/mstile-310x150.png": {
+    "file": "assets/mstile-310x150-1811eacc.png",
+    "src": "resources/images/favicon/mstile-310x150.png"
+  },
+  "resources/images/favicon/mstile-310x310.png": {
+    "file": "assets/mstile-310x310-39bec53e.png",
+    "src": "resources/images/favicon/mstile-310x310.png"
+  },
+  "resources/images/favicon/mstile-70x70.png": {
+    "file": "assets/mstile-70x70-2d3e7fd8.png",
+    "src": "resources/images/favicon/mstile-70x70.png"
+  },
+  "resources/images/favicon/safari-pinned-tab.svg": {
+    "file": "assets/safari-pinned-tab-7eb8cb1e.svg",
+    "src": "resources/images/favicon/safari-pinned-tab.svg"
+  },
   "resources/images/gallery/1.jpg": {
     "file": "assets/1-a76f661c.jpg",
     "src": "resources/images/single/92-112/OD92-112/Самолетов/IMG_3947.jpg"
@@ -1495,6 +1559,10 @@
     "file": "assets/geo-3a8a84b7.svg",
     "src": "resources/images/menu/geo.svg"
   },
+  "resources/images/menu/main.svg": {
+    "file": "assets/main-06461a6a.svg",
+    "src": "resources/images/menu/main.svg"
+  },
   "resources/images/menu/menu.svg": {
     "file": "assets/menu-d23f66da.svg",
     "src": "resources/images/menu/menu.svg"
@@ -1530,6 +1598,18 @@
   "resources/images/modals/X.svg": {
     "file": "assets/X-8c0dbaf2.svg",
     "src": "resources/images/modals/X.svg"
+  },
+  "resources/images/modals/form/1.svg": {
+    "file": "assets/1-6767d699.svg",
+    "src": "resources/images/modals/form/1.svg"
+  },
+  "resources/images/modals/form/2.svg": {
+    "file": "assets/2-e39c9951.svg",
+    "src": "resources/images/modals/form/2.svg"
+  },
+  "resources/images/modals/form/3.svg": {
+    "file": "assets/3-8220fe60.svg",
+    "src": "resources/images/modals/form/3.svg"
   },
   "resources/images/mortgage/adv/1.png": {
     "file": "assets/1-7fdd722a.png",
@@ -3348,7 +3428,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-6b84f73d.js",
+    "file": "assets/app-776a592a.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -3361,12 +3441,21 @@
     "src": "resources/js/components/certificates.js"
   },
   "resources/js/components/constructor.js": {
-    "file": "assets/constructor-080922b9.js",
+    "assets": [
+      "assets/content-945da2b0.jpg",
+      "assets/1-main-f63310eb.jpg",
+      "assets/1-main-4d63a13c.jpg",
+      "assets/1-main-1f919920.jpg",
+      "assets/1-main-e2ffd85d.jpg",
+      "assets/1-main-df89aa31.jpg",
+      "assets/1-main-d02b2872.jpg"
+    ],
+    "file": "assets/constructor-c4368ba4.js",
     "isEntry": true,
     "src": "resources/js/components/constructor.js"
   },
   "resources/js/components/faq.js": {
-    "file": "assets/faq-2d62f49f.js",
+    "file": "assets/faq-e0f50294.js",
     "isEntry": true,
     "src": "resources/js/components/faq.js"
   },
@@ -3381,9 +3470,9 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-2de9d003.js",
+    "file": "assets/modal-c669b0aa.js",
     "imports": [
-      "_sender-f9f9299a.js"
+      "_sender-2b3cd42d.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/modal.js"
@@ -3394,28 +3483,41 @@
     "src": "resources/js/components/office-map.js"
   },
   "resources/js/components/order.js": {
-    "file": "assets/order-418d9552.js",
+    "file": "assets/order-9afec6fc.js",
     "imports": [
-      "_sender-f9f9299a.js"
+      "_sender-2b3cd42d.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/order.js"
   },
-  "resources/js/components/project-item.js": {
-    "file": "assets/project-item-b43c13e5.js",
+  "resources/js/components/peculiarities.js": {
+    "file": "assets/peculiarities-c2d25b60.js",
     "imports": [
-      "resources/js/pages/blog/blog.js"
+      "_sender-2b3cd42d.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/components/peculiarities.js"
+  },
+  "resources/js/components/project-item.js": {
+    "file": "assets/project-item-b382df91.js",
+    "imports": [
+      "resources/js/pages/blog-item/blog-item.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/project-item.js"
   },
   "resources/js/components/reels.js": {
-    "file": "assets/reels-b43c13e5.js",
+    "file": "assets/reels-b382df91.js",
     "imports": [
-      "resources/js/pages/blog/blog.js"
+      "resources/js/pages/blog-item/blog-item.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/reels.js"
+  },
+  "resources/js/components/search.js": {
+    "file": "assets/search-c42ce534.js",
+    "isEntry": true,
+    "src": "resources/js/components/search.js"
   },
   "resources/js/components/selection.js": {
     "file": "assets/selection-bf2d8ba0.js",
@@ -3426,15 +3528,15 @@
     "src": "resources/js/components/selection.js"
   },
   "resources/js/components/trusted.js": {
-    "file": "assets/trusted-b43c13e5.js",
+    "file": "assets/trusted-b382df91.js",
     "imports": [
-      "resources/js/pages/blog/blog.js"
+      "resources/js/pages/blog-item/blog-item.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/trusted.js"
   },
   "resources/js/pages/about/about.js": {
-    "file": "assets/about-93de0cf6.js",
+    "file": "assets/about-dc128364.js",
     "imports": [
       "_swiper-bundle.min-43b74ea1.js",
       "_certificates-b8134150.js",
@@ -3449,7 +3551,13 @@
     "src": "resources/js/pages/blog-item/blog-item.js"
   },
   "resources/js/pages/blog/blog.js": {
-    "file": "assets/blog-4ed993c7.js",
+    "file": "assets/blog-403c3665.js",
+    "imports": [
+      "_sender-2b3cd42d.js",
+      "_swiper-bundle.min-43b74ea1.js",
+      "_reels-657b5833.js",
+      "resources/js/components/feedback.js"
+    ],
     "isEntry": true,
     "src": "resources/js/pages/blog/blog.js"
   },
@@ -3459,12 +3567,13 @@
     "src": "resources/js/pages/contacts/contacts.js"
   },
   "resources/js/pages/home/home.js": {
-    "file": "assets/home-d8ec9649.js",
+    "file": "assets/home-7754e460.js",
     "imports": [
       "_swiper-bundle.min-43b74ea1.js",
       "_feedback-92cb115e.js",
       "_project-item-5c3e1fdf.js",
       "_trusted-191878d4.js",
+      "_reels-657b5833.js",
       "resources/js/components/feedback.js"
     ],
     "isEntry": true,
@@ -3480,7 +3589,7 @@
     "src": "resources/js/pages/mortgage/mortgage.js"
   },
   "resources/js/pages/project-item/project-item.js": {
-    "file": "assets/project-item-f3a127f6.js",
+    "file": "assets/project-item-67859f63.js",
     "imports": [
       "_swiper-bundle.min-43b74ea1.js",
       "_project-item-5c3e1fdf.js"
@@ -3489,7 +3598,7 @@
     "src": "resources/js/pages/project-item/project-item.js"
   },
   "resources/js/pages/projects/projects.js": {
-    "file": "assets/projects-45dcb8ef.js",
+    "file": "assets/projects-de55dcc3.js",
     "imports": [
       "_nouislider-1ddc2e5b.js",
       "_swiper-bundle.min-43b74ea1.js",

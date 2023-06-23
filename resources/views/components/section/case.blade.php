@@ -7,15 +7,15 @@
 
 <section class="case">
   <h1 class="case__heading">
-    {{ __('Наши проекты') }}
+    {{ __('Технологии современного дома') }}
   </h1>
   <div class="case__wrapper">
     <div class="case__item case-card">
       <div class="case-card__header">
         <h1 class="case-card__heading">{{ __('SIP-панели') }}</h1>
         <p class="case-card__paraf">
-          {{ __('SIP-панели - очень прочный материал, обладает отличными звукоизоляционными, теплоизоляционными
-          свойствами - это надежность и качество.') }}
+          {{ __('Самая энергоэффективная и экологичная технология строительства. Сэндвич-дом по СИП-технологиям – одно
+          из самых эффективных и технологичных решений на сегодняшний день.') }}
         </p>
       </div>
       <div class="case-card__img">
@@ -28,28 +28,28 @@
     <div class="nap-wrapper">
       <div class="small-card normal-card">
         <h1 class="small-card__heading">
-          {{ __('Оконные нано-фильтры') }}
+          {{ __('Электро-водяной пол XL PIPE') }}
         </h1>
         <p class="small-card__text">
-          {{ __('Инновационный фильтр из Южной Кореи, который состоит из нано-волокн размером 0,05-0,1 микрона. Защищает
-          от смога, пыли, бактерий и вирусов') }}
-        </p>
-        <a class="small-card__link" href="https://xn--80aaoumbhyk.xn--p1ai/" target="_blank" rel="noopener noreferrer">
-          <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="">
-        </a>
-      </div>
-      <div class="small-card normal-card">
-        <h1 class="small-card__heading">
-          {{ __('Теплые полы') }}
-        </h1>
-        <p class="small-card__text">
-          {{ __('Электро-водяной пол, который можно ремонтировать.') }}
+          {{ __('Экономичная, инновационная система отопления без котла.  ') }}
         </p>
         <a class="small-card__link" href="https://xl-pipe.ru/" target="_blank" rel="noopener noreferrer">
           <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="">
         </a>
       </div>
-      <div class="small-card smalls-card">
+      <div class="small-card normal-card">
+        <h1 class="small-card__heading">
+          {{ __('Оконные фильтры Nanofiber') }}
+        </h1>
+        <p class="small-card__text">
+          {{ __('Инновационный оконный фильтр из Южной Кореи для защиты от  внешних факторов из открытого окна в любое
+          время года, которому нет аналогов!') }}
+        </p>
+        <a class="small-card__link" href="https://xn--80aaoumbhyk.xn--p1ai/" target="_blank" rel="noopener noreferrer">
+          <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="">
+        </a>
+      </div>
+      {{-- <div class="small-card smalls-card">
         <h1 class="small-card__heading">
           {{ __('Котлы отопления') }}
         </h1>
@@ -71,7 +71,7 @@
         <a class="small-card__link" href="http://" target="_blank" rel="noopener noreferrer">
           <img class="small-card__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="">
         </a>
-      </div>
+      </div> --}}
     </div>
   </div>
 </section>

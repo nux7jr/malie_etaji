@@ -685,7 +685,6 @@ footer {
     .header__links {
         gap: 10px;
     }
-
     section,
     header,
     footer {
@@ -701,9 +700,7 @@ footer {
     .call__button {
         display: none;
     }
-    .header__links {
-        display: none;
-    }
+
     .footer__wrapper {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -718,6 +715,9 @@ footer {
     header,
     footer {
         padding: 0 20px;
+    }
+    .header__links {
+        display: none;
     }
 }
 @media (max-width: 992px) {

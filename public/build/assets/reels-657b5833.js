@@ -1,0 +1,1 @@
+function i(e){new e(".reels-swiper",{slidesPerView:1,spaceBetween:47,lazy:!0,pagination:{clickable:!0,el:".reels-pagination"},breakpoints:{499:{slidesPerView:1,spaceBetweenSlides:10},999:{slidesPerView:2,spaceBetweenSlides:27},1440:{slidesPerView:4,spaceBetweenSlides:27},1690:{slidesPerView:6,spaceBetweenSlides:47}}})}export{i};

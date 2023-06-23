@@ -791,7 +791,14 @@
         align-items: flex-start;
     }
     .services-filters__header {
+        gap: 20px;
+    }
+    .services-filters__info {
         margin-bottom: 20px;
+    }
+    .services-filters__head {
+        flex-direction: column;
+        gap: 20px;
     }
     .photo-gallery__swiper {
         padding: 0 50px;
