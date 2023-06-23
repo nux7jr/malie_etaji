@@ -78,7 +78,13 @@ function renderCalc() {
     const loanTerm = Number(calculator.querySelector('input[type="range"]#loan-term').value);
     let percent = Number(calculator.querySelector('.dropdown-select-selected').getAttribute('percent'));
     if (!insurance){
+        calculator.querySelector('#percents h2').innerText = percent + 1 + '%';
+        calculator.querySelector('#percents span').innerText = null;
         percent += 1;
+    }
+    if (insurance){
+        calculator.querySelector('#percents h2').innerText = percent + '%';
+        calculator.querySelector('#percents span').innerText = percent + 1 + '%';
     }
     let monthPercent = percent / 100 / 12;
     let monthLoan = loanTerm*12;
@@ -105,6 +111,9 @@ function renderCalc() {
 renderCalc();
 const calc = document.querySelector('.mortgage-calculator');
 calc.addEventListener('input',function (evt){
+    renderCalc();
+});
+calc.addEventListener('click',function (evt){
     renderCalc();
 });
 function closeAllSelect(elmnt) {

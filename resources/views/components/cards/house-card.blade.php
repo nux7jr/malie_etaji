@@ -40,7 +40,7 @@
         </div>
         <div class="mortgage-calculator-middle block">
             <h2 class="block__heading">{{__('Стандартная ипотека')}}</h2>
-            <x-text.two-labels-in-card label="{{__('Процентная ставка')}}" first="{{$first = '4,8%'}}"
+            <x-text.two-labels-in-card id="percents" label="{{__('Процентная ставка')}}" first="{{$first = '4,8%'}}"
                 second="{{$second = '8,3%'}}" tooltip="{{__('Подсказка')}}">
             </x-text.two-labels-in-card>
             <x-text.two-labels-in-card label="{{__('Ежемесячный платеж')}}">
