@@ -8,7 +8,16 @@ for (i = 0; i < l; i++) {
     /* For each element, create a new DIV that will act as the selected item: */
     a = document.createElement("DIV");
     a.setAttribute("class", "dropdown-select-selected");
+    a.setAttribute("name", selElmnt.options[selElmnt.selectedIndex].innerHTML);
     a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    if (selElmnt.options[selElmnt.selectedIndex].getAttribute('percent') !== ''){
+        a.style = "display:flex;flex-wrap:row;";
+        a.setAttribute("percent",selElmnt.options[selElmnt.selectedIndex].getAttribute('percent'));
+        const h4 = document.createElement('h4');
+        h4.classList.add('red_color');
+        h4.innerText = 'от ' + selElmnt.options[selElmnt.selectedIndex].getAttribute('percent') + '%';
+        a.innerHTML += '&nbsp;' + h4.outerHTML;
+    }
     x[i].appendChild(a);
     /* For each element, create a new DIV that will contain the option list: */
     b = document.createElement("DIV");
@@ -18,6 +27,14 @@ for (i = 0; i < l; i++) {
         create a new DIV that will act as an option item: */
         c = document.createElement("DIV");
         c.innerHTML = selElmnt.options[j].innerHTML;
+        if (selElmnt.options[j].getAttribute('percent') !== ''){
+            c.style = "display:flex;flex-wrap:row;";
+            c.setAttribute("percent",selElmnt.options[selElmnt.selectedIndex].getAttribute('percent'));
+            const h4 = document.createElement('h4');
+            h4.classList.add('red_color');
+            h4.innerText = 'от ' + selElmnt.options[j].getAttribute('percent') + '%';
+            c.innerHTML += '&nbsp;' + h4.outerHTML;
+        }
         c.addEventListener("click", function(e) {
             /* When an item is clicked, update the original select box,
             and the selected item: */
@@ -53,6 +70,33 @@ for (i = 0; i < l; i++) {
     });
 }
 
+function renderCalc() {
+    const calculator = document.querySelector('.mortgage-calculator');
+    const insurance = calculator.querySelector('input[type="checkbox"]').checked;
+    const startIncome = Number(calculator.querySelector('input[type="range"]#start-payment').value);
+    const price = Number(calculator.querySelector('input[type="range"]#price').value) - startIncome;
+    const loanTerm = Number(calculator.querySelector('input[type="range"]#loan-term').value);
+    let percent = Number(calculator.querySelector('.dropdown-select-selected').getAttribute('percent'));
+    if (!insurance){
+        percent += 1;
+    }
+    const monthPercent = percent / 100 / 12;
+    const monthLoan = loanTerm*12;
+    const monthPay = price * (monthPercent + (monthPercent / (((1+monthPercent)**monthLoan) - 1)));
+    const fullPrice = monthPay * monthLoan;
+    let tax = (fullPrice - price)*0.13;
+    if (tax > 2000000){
+        tax = 2000000;
+    }
+    calculator.querySelector('.mortgage-calculator-middle.block .block__heading').innerHTML = calculator.querySelector('.dropdown-select-selected').getAttribute('name');
+    calculator.querySelector('#calc-month-pay').innerText = monthPay.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
+    calculator.querySelector('#calc-full-price').innerText = fullPrice.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0});
+    calculator.querySelector('#tax').innerText = tax.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0});
+    calculator.addEventListener('input',function (evt){
+        renderCalc();
+    });
+}
+renderCalc();
 function closeAllSelect(elmnt) {
     /* A function that will close all select boxes in the document,
     except the current select box: */

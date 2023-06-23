@@ -28,6 +28,14 @@ form.mortgage-calculator h4 {
 
     color: var(--color-grayest);
 }
+form.mortgage-calculator h4.red_color{
+    color: var(--color-red);
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.dropdown-select-items div{
+    margin-bottom: 0px;
+}
 form.mortgage-calculator {
     display: flex;
     flex-direction: row;
@@ -161,7 +169,7 @@ form.mortgage-calculator .range .input h4.percent {
     line-height: 100%;
 }
 form.mortgage-calculator h4.m_padding {
-    padding-bottom: 64.6px;
+    padding-bottom: 45px;
     margin-bottom: 0;
 }
 
@@ -218,7 +226,7 @@ form.mortgage-calculator h4.clarification {
 .mortgage-calculator hr {
     height: 0;
     border: 1px solid var(--color-gray);
-    margin: 63.6px 0;
+    margin: auto 0;
     padding: 0;
 }
 .label_percents_toggle .space__between {
@@ -306,7 +314,7 @@ form.mortgage-calculator .row__reverse{
     .block__heading {
         margin-bottom: 20px;
     }
-    .standart-two-lables {
+    .standart-two-lables:nth-last-child(0) {
         margin-bottom: 20px;
     }
     .mortgage-calculator-right > .label_percents_toggle.space__between {
