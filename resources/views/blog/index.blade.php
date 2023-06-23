@@ -10,13 +10,22 @@
 @php
 use App\Content\main\Articles;
 $articles_list = (new Articles())->toArray();
-// dd($articles_list)
+// $articles_list1 = (new Articles())->toJson();
+// dd($articles_list1)
 @endphp
 
 <script>
   const data = '{!! json_encode($articles_list)!!}';
-  Window.data = JSON.parse(data);
-  console.log(Window.data);
+  const bar = JSON.stringify(data);
+  console.log(bar, "STRING");
+
+
+
+
+  const fo = JSON.parse(bar);
+  console.log(JSON.parse(fo), "json");
+  // Window.data = JSON.parse(bar);
+  // console.log(Window.data);
 </script>
 
 

@@ -23,24 +23,24 @@
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
                             <input id="single1" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-type" value="Одноэтажный" checked />
-                            <label class="ganeral-lablel house-type__label full__lablel" for="single1">
+                                name="house_type" value="Одноэтажный" checked />
+                            <label class="house-filter ganeral-lablel house-type__label full__lablel" for="single1">
                                 {{ __('Одноэтажный') }}
 
                             </label>
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="double1" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-type" value="Двухэтажный" />
-                            <label class="ganeral-lablel house-type__label" for="double1">
+                                name="house_type" value="Двухэтажный" />
+                            <label class="house-filter ganeral-lablel house-type__label" for="double1">
                                 {{ __('Двухэтажный') }}
 
                             </label>
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="barn1" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-type" value="Барнхаус" />
-                            <label class="ganeral-lablel house-type__label" for="barn1">
+                                name="house_type" value="Барнхаус" />
+                            <label class="house-filter ganeral-lablel house-type__label" for="barn1">
                                 {{ __('Барнхаус') }}
                             </label>
                         </div>
@@ -54,24 +54,24 @@
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
                             <input id="size1" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-size" value="100" />
-                            <label class="ganeral-lablel house-type__label" for="size1">
+                                name="house_size" value="100" />
+                            <label class="house-filter ganeral-lablel house-type__label" for="size1">
                                 {{ __('До 100 м2') }}
 
                             </label>
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="size2" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-size" value="100-150" checked />
-                            <label class="ganeral-lablel house-type__label" for="size2">
+                                name="house_size" value="100-150" checked />
+                            <label class="house-filter ganeral-lablel house-type__label" for="size2">
                                 {{ __('100-150 м2') }}
 
                             </label>
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="size3" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-size" value="150+" />
-                            <label class="ganeral-lablel house-type__label" for="size3">
+                                name="house_size" value="150+" />
+                            <label class="house-filter ganeral-lablel house-type__label" for="size3">
                                 {{ __('Более 150 м2') }}
                             </label>
                         </div>
@@ -80,30 +80,27 @@
                 <div class="ganeral-select house-type">
                     <h2 class="ganeral-header">
                         {{ __('Выберите стоимость') }}
-
-
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
                             <input checked id="price1" class="ganeral-input house-type__input visually-hidden"
-                                type="radio" name="house-price" value="2-5" checked />
-                            <label class="ganeral-lablel house-type__label" for="price1">
+                                type="radio" name="house_price" value="2-5" checked />
+                            <label class="house-filter ganeral-lablel house-type__label" for="price1">
                                 {{ __('От 2 млн до 5 млн') }}
 
                             </label>
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="price2" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-price" value="5-8" />
-                            <label class="ganeral-lablel house-type__label" for="price2">
+                                name="house_price" value="5-8" />
+                            <label class="house-filter ganeral-lablel house-type__label" for="price2">
                                 {{ __('От 5 млн до 8 млн') }}
-
                             </label>
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="price3" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house-price" value="8+" />
-                            <label class="ganeral-lablel house-type__label" for="price3">
+                                name="house_price" value="8+" />
+                            <label class="house-filter ganeral-lablel house-type__label" for="price3">
                                 {{ __('От 8 млн') }}
                             </label>
                         </div>
@@ -115,12 +112,11 @@
                     </button>
                     <button type="button" class="default__button constructor__next">
                         {{ __('Перейти дальше') }}
-
                     </button>
                 </div>
             </div>
-            <div class="constructor-preview"
-                style="background-image: url({{ Vite::asset('resources/images/double/72-92/2.jpg') }})">
+            <div class="constructor-preview prew"
+                style="background-image: url({{ Vite::asset('resources/images/single/83-109/1-main.jpg') }})">
                 <div class="constructor-preview__info">
                     <div class="constructor-preview__item">
                         <p class="constructor-preview__paraf">
@@ -145,8 +141,6 @@
                 <div class="ganeral-select house-type">
                     <h2 class="ganeral-header">
                         {{ __('Выберите срок начала строительства') }}
-
-
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -241,17 +235,17 @@
                     </button>
                 </div>
             </div>
-            <div class="constructor-preview"
-                style="background-image: url({{ Vite::asset('resources/images/double/72-92/2.jpg') }})">
+            <div class="constructor-preview prew"
+                style="background-image: url({{ Vite::asset('resources/images/single/83-109/1-main.jpg') }})">
                 <div class="constructor-preview__info">
                     <div class="constructor-preview__item">
-                        <p class="constructor-preview__paraf">
+                        <p class="constructor-preview__paraf preview__sq">
                             {{ __('80 м2') }}</p>
                         <p class="constructor-preview__text">
                             {{ __('Площадь дома') }}</p>
                     </div>
                     <div class="constructor-preview__item">
-                        <p class="constructor-preview__paraf">
+                        <p class="constructor-preview__paraf preview__fl">
                             {{ __('2') }}</p>
                         <p class="constructor-preview__text">
                             {{ __('Кол-во этажей') }}</p>

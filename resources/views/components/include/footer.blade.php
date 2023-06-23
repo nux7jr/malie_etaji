@@ -4,14 +4,14 @@ $links = new Links();
 @endphp
 <footer>
     <div class="footer__wrapper">
-        <div class="footer__item footer-info">
-            <a class="footer-info__link" href="/">
+        <div class="footer__item footer-info mobile-footer">
+            <a class="footer-info__link pc-block" href="/">
                 <img class="footer-info__img" src="{{ Vite::asset('resources/images/logos/logo.svg')}}" alt="logo">
             </a>
-            <p class="footer-info__paraf">
+            <p class="footer-info__paraf last-block">
                 {{ __('Федеральная строительная компания «Малые Этажи»') }}
             </p>
-            <hr class="footer-info__hr" />
+            <hr class="footer-info__hr pc-block" />
             <h3 class="footer-info__title footer__title">
                 {{ __('Есть вопросы и предложения?') }}
             </h3>
@@ -19,7 +19,7 @@ $links = new Links();
                 {{ __('Напишите нам') }}
             </button>
             <hr class="footer-info__hr" />
-            <h3 class="footer-info__title footer__title">
+            <h3 class="footer-info__title footer__title pc__social">
                 {{ __('Соцсети') }}
                 <div class="footer-info__social social">
                     <a class="social__link" href="http://" target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@ $links = new Links();
                 </div>
             </h3>
         </div>
-        <div class="footer__item footer-info">
+        <div class="footer__item footer-info pc-block">
             <a class="footer-contact__link" href="tel:+7 (391) 205-3-444">+7 (391) 205-3-444</a>
             <a class="footer-contact__link"
                 href="https://yandex.ru/maps/62/krasnoyarsk/?from=mapframe&ll=92.921431%2C56.036889&mode=usermaps&source=mapframe&um=constructor%3Abdbfdb53bc5f7aa4ba9394ef3d92e9ac554c7d206019d7e87446bead86d16700&utm_source=mapframe&z=15">Главный
@@ -52,11 +52,9 @@ $links = new Links();
         <div class="footer__item footer-pages">
             @foreach($elements as $label)
             @if($label['header'] === true)
-            <a class="footer-pages__link" href="{{$label['link']}}">
-                <h3 class="footer-pages__title footer__title">
-                    {{$label['text']}}
-                </h3>
-            </a>
+            <h3 class="footer-pages__title footer__title">
+                {{$label['text']}}
+            </h3>
             @else
             <a class="footer-pages__link" href="{{$label['link']}}">
                 {{$label['text']}}
@@ -66,7 +64,23 @@ $links = new Links();
         </div>
         @endforeach
     </div>
-
+    <h3 class="footer-info__title footer__title mobile__social">
+        {{ __('Соцсети') }}
+        <div class="footer-info__social social">
+            <a class="social__link" href="http://" target="_blank" rel="noopener noreferrer">
+                <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/telega.svg')}}"
+                    alt="telegram">
+            </a>
+            <a class="social__link" href="https://www.youtube.com/channel/UCAKkEcrR2pzA8Z9KKbL-i7Q" target="_blank"
+                rel="noopener noreferrer">
+                <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/youtube.svg')}}"
+                    alt="youtube">
+            </a>
+            <a class="social__link" href="https://vk.com/malie_etaji" target="_blank" rel="noopener noreferrer">
+                <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/vk.svg')}}" alt="vk">
+            </a>
+        </div>
+    </h3>
     <hr class="footer__hr">
     <div class="imp-info">
         <p class="imp-info__text">

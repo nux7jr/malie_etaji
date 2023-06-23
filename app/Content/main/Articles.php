@@ -103,7 +103,7 @@ class Articles implements Arrayable
         'id' => 2,
         'tags' => ['news', 'stock', 'events', 'media', 'mortgage', 'malie-etaji', 'useful'],
         'title' => 'Название статьи1',
-        'preview' => 'Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
+        'preview' => 'Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.',
         'format_date' => Carbon::now(),
         'date' => Carbon::now()->format('d-m-Y'),
         'html' => addslashes('

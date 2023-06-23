@@ -9,9 +9,9 @@
 
       <span>{{__('Ипотека')}}</span>
     </a>
-    <a class="mob-menu__link" href="/profile">
-      <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/profile.svg') }}" alt="icon">
-      <span>{{__('Профиль')}}</span>
+    <a class="mob-menu__link" href="/">
+      <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/main.svg') }}" alt="icon">
+      <span>{{__('Главная')}}</span>
     </a>
     <a class="mob-menu__link" href="/menu">
       <img class="mob-menu__icon" src="{{ Vite::asset('resources/images/menu/menu.svg') }}" alt="icon">

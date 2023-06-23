@@ -65,7 +65,6 @@ all_buttons_build.forEach((element_button) => {
 
 // build
 const build = new Swiper(".build-swiper", {
-    lazy: true,
     observer: true,
     initialSlide: 0,
     navigation: {
