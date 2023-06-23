@@ -29,7 +29,7 @@ for (i = 0; i < l; i++) {
         c.innerHTML = selElmnt.options[j].innerHTML;
         if (selElmnt.options[j].getAttribute('percent') !== ''){
             c.style = "display:flex;flex-wrap:row;";
-            c.setAttribute("percent",selElmnt.options[selElmnt.selectedIndex].getAttribute('percent'));
+            c.setAttribute("percent",selElmnt.options[j].getAttribute('percent'));
             const h4 = document.createElement('h4');
             h4.classList.add('red_color');
             h4.innerText = 'от ' + selElmnt.options[j].getAttribute('percent') + '%';
@@ -116,6 +116,50 @@ calc.addEventListener('input',function (evt){
 calc.addEventListener('click',function (evt){
     renderCalc();
 });
+calcDropdownEvents(calc);
+function calcDropdownEvents(calc){
+    if (calc !== 'undefined'){
+        calc.querySelectorAll('.dropdown-select-items div').forEach((evt) => {
+            evt.addEventListener('click', function (e) {
+                const selected = document.querySelector('.dropdown-select-selected');
+                selected.removeAttribute('class');
+                const tempThis = this.innerHTML;
+                const tempPercent = this.getAttribute('percent')
+                selected.removeAttribute('class');
+                this.setAttribute('percent',selected.getAttribute('percent'));
+
+                selected.setAttribute('percent',tempPercent);
+                this.innerHTML = selected.innerHTML;
+                selected.innerHTML = tempThis;
+                selected.classList.add('dropdown-select-selected');
+                const newSelected = document.querySelector('.dropdown-select-selected');
+                selectClickEvent(newSelected);
+                renderCalc();
+                calcDropdownEvents(document.querySelector('.mortgage-calculator'));
+            });
+        });
+    }
+}
+function selectClickEvent(select){
+    select.addEventListener("click", function(ev) {
+        console.log(hasClass(this,'dropdown-select-arrow-active)'));
+        if (hasClass(this,'dropdown-select-arrow-active)')){
+            /* When the select box is clicked, close any other select boxes,
+        and open/close the current select box: */
+            ev.stopPropagation();
+            closeAllSelect(this);
+            document.querySelector('.dropdown-select-items').classList.remove('dropdown-select-hide');
+            document.querySelector('.dropdown-select-selected').classList.remove("dropdown-select-arrow-active");
+        }else{
+            this.classList.add('dropdown-select-arrow-active');
+            console.log(document.querySelector('.dropdown-select-items'));
+            document.querySelector('.dropdown-select-items').classList.add("dropdown-select-hide");
+        }
+    });
+}
+function hasClass(element, className) {
+    return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+}
 function closeAllSelect(elmnt) {
     /* A function that will close all select boxes in the document,
     except the current select box: */
