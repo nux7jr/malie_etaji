@@ -178,7 +178,7 @@ function routeList(): void
 
     Route::get('/projects/{id}', function ($domain, $id) {
         $arrayInfo = HousesInfo::$card_elements;
-        $infoInner = $arrayInfo[$id] ?? $arrayInfo[1];
+        $infoInner = $arrayInfo[$id] ?? $arrayInfo[0];
 
         return view('project-item.index')->with([
             'paths' => [
