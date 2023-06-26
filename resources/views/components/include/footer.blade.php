@@ -22,7 +22,7 @@ $links = new Links();
             <h3 class="footer-info__title footer__title pc__social">
                 {{ __('Соцсети') }}
                 <div class="footer-info__social social">
-                    <a class="social__link" href="http://" target="_blank" rel="noopener noreferrer">
+                    <a class="social__link" href="https://t.me/+h973lkjz7V9lNjVi" target="_blank" rel="noopener noreferrer">
                         <img class="social__img" src="{{ Vite::asset('resources/images/icons/social/telega.svg')}}"
                             alt="telegram">
                     </a>
