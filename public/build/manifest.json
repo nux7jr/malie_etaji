@@ -23,8 +23,8 @@
   "_reels-657b5833.js": {
     "file": "assets/reels-657b5833.js"
   },
-  "_sender-2b3cd42d.js": {
-    "file": "assets/sender-2b3cd42d.js"
+  "_sender-11aaf2c3.js": {
+    "file": "assets/sender-11aaf2c3.js"
   },
   "_swiper-bundle.min-43b74ea1.js": {
     "css": [
@@ -834,11 +834,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -3475,9 +3475,9 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-c669b0aa.js",
+    "file": "assets/modal-8fa2d358.js",
     "imports": [
-      "_sender-2b3cd42d.js"
+      "_sender-11aaf2c3.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/modal.js"
@@ -3488,17 +3488,17 @@
     "src": "resources/js/components/office-map.js"
   },
   "resources/js/components/order.js": {
-    "file": "assets/order-9afec6fc.js",
+    "file": "assets/order-52b6dbb0.js",
     "imports": [
-      "_sender-2b3cd42d.js"
+      "_sender-11aaf2c3.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/order.js"
   },
   "resources/js/components/peculiarities.js": {
-    "file": "assets/peculiarities-c2d25b60.js",
+    "file": "assets/peculiarities-5baeb72f.js",
     "imports": [
-      "_sender-2b3cd42d.js"
+      "_sender-11aaf2c3.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/peculiarities.js"
@@ -3556,9 +3556,9 @@
     "src": "resources/js/pages/blog-item/blog-item.js"
   },
   "resources/js/pages/blog/blog.js": {
-    "file": "assets/blog-403c3665.js",
+    "file": "assets/blog-5952eb29.js",
     "imports": [
-      "_sender-2b3cd42d.js",
+      "_sender-11aaf2c3.js",
       "_swiper-bundle.min-43b74ea1.js",
       "_reels-657b5833.js",
       "resources/js/components/feedback.js"
