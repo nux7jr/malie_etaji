@@ -320,7 +320,10 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
 
         return '+'.$phone;
     }
+
     /**
+     * @param array $data
+     * @return array
      * @throws Exception
      */
     private static function normalizeData(array $data): array
@@ -332,7 +335,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             $normalizedData['city'] = 'Город не указан';
         }
         if (!empty($data['phone'])){
-            self::$phone = phoneFormatter($data['phone']);
+            self::$phone = self::phoneFormatter($data['phone']);
         }
         //TO DO FIX IT!
 //        else{
@@ -393,5 +396,34 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             ]
         );
         return json_decode($response->getBody()->getContents(), true);
+    }
+    private static function phoneFormatter(string $phone): string{
+        if (empty($phone)){
+            throw new Exception('empty $phone!');
+        }
+        $phone = trim($phone);
+        $phone = str_replace(array('(',' ','-',')','+'),'',$phone);
+        $phone[0] === '8' ? $phone[0] = '7' : null;
+        $phone = '+'.$phone;
+
+        return preg_replace(
+            array(
+                '/[\+]?([7|8])[-|\s]?\([-|\s]?(\d{3})[-|\s]?\)[-|\s]?(\d{3})[-|\s]?(\d{2})[-|\s]?(\d{2})/',
+                '/[\+]?([7|8])[-|\s]?(\d{3})[-|\s]?(\d{3})[-|\s]?(\d{2})[-|\s]?(\d{2})/',
+                '/[\+]?([7|8])[-|\s]?\([-|\s]?(\d{4})[-|\s]?\)[-|\s]?(\d{2})[-|\s]?(\d{2})[-|\s]?(\d{2})/',
+                '/[\+]?([7|8])[-|\s]?(\d{4})[-|\s]?(\d{2})[-|\s]?(\d{2})[-|\s]?(\d{2})/',
+                '/[\+]?([7|8])[-|\s]?\([-|\s]?(\d{4})[-|\s]?\)[-|\s]?(\d{3})[-|\s]?(\d{3})/',
+                '/[\+]?([7|8])[-|\s]?(\d{4})[-|\s]?(\d{3})[-|\s]?(\d{3})/',
+            ),
+            array(
+                '+7 ($2) $3-$4-$5',
+                '+7 ($2) $3-$4-$5',
+                '+7 ($2) $3-$4-$5',
+                '+7 ($2) $3-$4-$5',
+                '+7 ($2) $3-$4',
+                '+7 ($2) $3-$4',
+            ),
+            $phone
+        );
     }
 }
