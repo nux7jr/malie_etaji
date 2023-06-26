@@ -196,7 +196,7 @@ if (calc !== 'undefined'){
 }
 calcDropdownEvents(calc);
 function calcDropdownEvents(calc){
-    if (calc !== 'undefined'){
+    if (calc !== null){
         calc.querySelectorAll('.dropdown-select-items div').forEach((evt) => {
             evt.addEventListener('click', function (e) {
                 const selected = document.querySelector('.dropdown-select-selected');
