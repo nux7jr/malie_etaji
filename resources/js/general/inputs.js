@@ -185,8 +185,8 @@ function renderCalc() {
 }
 
 const calc = document.querySelector('.mortgage-calculator');
-renderCalc();
 if (calc !== 'undefined'){
+    renderCalc();
     calc.addEventListener('input',function (evt){
         renderCalc();
     });
