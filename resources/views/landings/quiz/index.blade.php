@@ -3,10 +3,9 @@
 <?
 ini_set("session.cookie_domain", ".malie-etaji.ru");
 session_start();
-// $subdomen = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
-// ($subdomen === 'malie-etaji') ? $subdomen = 'krasnoyarsk' : '';
+ $subdomen = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
+ ($subdomen === 'malie-etaji') ? $subdomen = 'krasnoyarsk' : '';
 
-$subdomen = 'krasnoyarsk';
 $city = [
     [
         'CITY' => "Красноярск",
@@ -54,7 +53,7 @@ $city = [
 
 $citydata = [];
 foreach ($city as $key => $value) {
-    if ($subdomen == $value['URL']) {
+    if ($subdomen === $value['URL']) {
         $citydata['CITY'] = $value['CITY'];
         $citydata['URL'] = $value['URL'];
         $citydata['PHONE'] = $value['PHONE'];
