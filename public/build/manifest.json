@@ -44,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-281ab22f.css",
+    "file": "assets/app-75ad79e8.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -59,7 +59,7 @@
     "src": "resources/css/components/article.css"
   },
   "resources/css/components/case.css": {
-    "file": "assets/case-36f9d5cc.css",
+    "file": "assets/case-0a1af72c.css",
     "isEntry": true,
     "src": "resources/css/components/case.css"
   },
@@ -94,7 +94,7 @@
     "src": "resources/css/components/house_card.css"
   },
   "resources/css/components/mob_menu.css": {
-    "file": "assets/mob_menu-c0f7c127.css",
+    "file": "assets/mob_menu-c2daa7b5.css",
     "isEntry": true,
     "src": "resources/css/components/mob_menu.css"
   },
@@ -133,8 +133,13 @@
     "isEntry": true,
     "src": "resources/css/components/reels.css"
   },
+  "resources/css/components/search.css": {
+    "file": "assets/search-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/css/components/search.css"
+  },
   "resources/css/components/selection.css": {
-    "file": "assets/selection-5ef85c89.css",
+    "file": "assets/selection-aec3ed4f.css",
     "isEntry": true,
     "src": "resources/css/components/selection.css"
   },
@@ -149,7 +154,7 @@
     "src": "resources/css/components/trusted.css"
   },
   "resources/css/pages/about/about.css": {
-    "file": "assets/about-06512b6e.css",
+    "file": "assets/about-b4821a9f.css",
     "isEntry": true,
     "src": "resources/css/pages/about/about.css"
   },
@@ -174,7 +179,7 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-2f2568b7.css",
+    "file": "assets/home-3db7ec61.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -1349,10 +1354,6 @@
   "resources/images/favicon/safari-pinned-tab.svg": {
     "file": "assets/safari-pinned-tab-7eb8cb1e.svg",
     "src": "resources/images/favicon/safari-pinned-tab.svg"
-  },
-  "resources/images/favicon/site.webmanifest": {
-    "file": "assets/site-310b8694.webmanifest",
-    "src": "resources/images/favicon/site.webmanifest"
   },
   "resources/images/gallery/1.jpg": {
     "file": "assets/1-a76f661c.jpg",
@@ -3427,7 +3428,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-7639028e.js",
+    "file": "assets/app-4dd89043.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -3513,8 +3514,13 @@
     "isEntry": true,
     "src": "resources/js/components/reels.js"
   },
+  "resources/js/components/search.js": {
+    "file": "assets/search-c42ce534.js",
+    "isEntry": true,
+    "src": "resources/js/components/search.js"
+  },
   "resources/js/components/selection.js": {
-    "file": "assets/selection-bf2d8ba0.js",
+    "file": "assets/selection-a399e3a6.js",
     "imports": [
       "_nouislider-1ddc2e5b.js"
     ],
