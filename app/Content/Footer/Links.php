@@ -51,7 +51,7 @@ final class Links
                 (new Link(null,link:'/blog',text:__('Блог')))->toArray(),
                 (new Link(null,link:'',text:__('Для инвесторов')))->toArray(),
                 (new Link(null,link:'',text:__('Для риэлторов')))->toArray(),
-                (new Link(null,link:'/career',text:__('Карьера')))->toArray(),
+                (new Link(null,link:'https://krasnoyarsk.hh.ru/employer/895977',text:__('Карьера')))->toArray(),
                 (new Link(null,link:'',text:__('Офис продаж')))->toArray(),
             ],
         ];
