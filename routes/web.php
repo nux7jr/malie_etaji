@@ -227,8 +227,9 @@ function routeList(): void
         ]);
     });
 
-    Route::get('/blog/{id}', function ($domain, $id) {
+    Route::get('/blog/{id}', function ($domain, $subdomainOrId, $idOrNull = null) {
         $articlesAll = Articles::$card_elements;
+        $id = $idOrNull === null ? $subdomainOrId : $idOrNull;
         $articlesInfo = $articlesAll[$id] ?? $articlesAll[1];
         return view('blog-item.index')->with([
             'paths' => [
