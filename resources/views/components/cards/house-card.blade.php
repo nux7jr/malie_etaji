@@ -32,7 +32,7 @@
                 label="{{__('Стоимость, ₽')}}"></x-ui.inputs.range>
             <x-ui.inputs.range name="start-payment" min="{{$min = 225000}}" max="{{$max = 1000000}}"
                 percent="{{$percent = 15}}" label="{{__('Первоначальный взнос, ₽')}}"></x-ui.inputs.range>
-            <x-ui.inputs.range name="loan-term" min="{{$min = 30}}" max="{{$max = 60}}"
+            <x-ui.inputs.range name="loan-term" min="{{$min = 10}}" max="{{$max = 30}}"
                 label="{{__('Срок кредита, лет')}}"></x-ui.inputs.range>
             <x-ui.buttons.button>
                 {{__('Получить одобрение онлайн')}}

@@ -183,14 +183,17 @@ function renderCalc() {
     calculator.querySelector('#calc-full-price').innerText = fullPrice.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0});
     calculator.querySelector('#tax').innerText = tax.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0});
 }
-renderCalc();
+
 const calc = document.querySelector('.mortgage-calculator');
-calc.addEventListener('input',function (evt){
-    renderCalc();
-});
-calc.addEventListener('click',function (evt){
-    renderCalc();
-});
+renderCalc();
+if (calc !== 'undefined'){
+    calc.addEventListener('input',function (evt){
+        renderCalc();
+    });
+    calc.addEventListener('click',function (evt){
+        renderCalc();
+    });
+}
 calcDropdownEvents(calc);
 function calcDropdownEvents(calc){
     if (calc !== 'undefined'){
