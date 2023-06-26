@@ -88,6 +88,9 @@ export default defineConfig({
 
                 "resources/js/components/search.js",
                 "resources/css/components/search.css",
+
+                "resources/js/pages/menu/menu.js",
+                "resources/css/pages/menu/menu.css",
             ],
             refresh: true,
         }),

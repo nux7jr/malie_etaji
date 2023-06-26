@@ -183,6 +183,11 @@
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
+  "resources/css/pages/menu/menu.css": {
+    "file": "assets/menu-555911b3.css",
+    "isEntry": true,
+    "src": "resources/css/pages/menu/menu.css"
+  },
   "resources/css/pages/mortgage/mortgage.css": {
     "file": "assets/mortgage-c392f414.css",
     "isEntry": true,
@@ -829,11 +834,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -3578,6 +3583,11 @@
     ],
     "isEntry": true,
     "src": "resources/js/pages/home/home.js"
+  },
+  "resources/js/pages/menu/menu.js": {
+    "file": "assets/menu-d4c271b0.js",
+    "isEntry": true,
+    "src": "resources/js/pages/menu/menu.js"
   },
   "resources/js/pages/mortgage/mortgage.js": {
     "file": "assets/mortgage-003b311d.js",

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",o=>{document.querySelectorAll(".mob-list__button").forEach(e=>{e.addEventListener("click",t=>{t.target.closest(".mob-list__item").querySelector(".mob-list__ul").classList.toggle("mob-list__ul--active"),t.target.closest(".mob-list__item").querySelector(".mob-list__img").classList.toggle("icon--active")},!1)})});
