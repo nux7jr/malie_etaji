@@ -128,7 +128,7 @@ $service = (new Service())->toArray();
         @php
         $why = [
         '0' => [
-        "title" => '150',
+        "title" => '120',
         "subtitle" => 'объектов',
         "text" => ' Построено нашими специалистами',
         ],
