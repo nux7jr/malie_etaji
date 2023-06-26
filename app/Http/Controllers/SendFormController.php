@@ -24,13 +24,13 @@ class SendFormController extends Controller
                 'email'     => 'string|nullable'
             ]);
             $validated['city'] = $city;
-            $this->writeLeads($city, $validated);
+            $this->writeLeads($request,$city, $validated);
             $sender->sendForm($validated, $request);
         }catch (\Exception $err){
             \Log::error('Ошибка отправки формы: ' . $err->getMessage());
         }
     }
-    private function writeLeads($city, $validated):void
+    private function writeLeads($request, $city, $validated):void
     {
         try {
             $fp = fopen("/home/admin/web/centr-polov.ru/public_html/upload/bd/alldealers_leads.txt","a+");
@@ -39,6 +39,41 @@ class SendFormController extends Controller
         }
 
         $referer = $_SERVER['HTTP_REFERER'];
+        if (str_contains($referer, '?')){
+            if (!str_contains($referer, 'utm_source')){
+                !empty($request->session()->get('utm')['utm_source']) ? $referer .= '&utm_source=' . $request->session()->get('utm')['utm_source'] : '';
+            }
+            if (!str_contains($referer, 'utm_medium')){
+                !empty($request->session()->get('utm')['utm_medium']) ? $referer .= '&utm_medium=' . $request->session()->get('utm')['utm_medium'] : '';
+            }
+            if (!str_contains($referer, 'utm_campaign')){
+                !empty($request->session()->get('utm')['utm_campaign']) ? $referer .= '&utm_campaign=' . $request->session()->get('utm')['utm_campaign'] : '';
+            }
+            if (!str_contains($referer, 'utm_term')){
+                !empty($request->session()->get('utm')['utm_term']) ? $referer .= '&utm_term=' . $request->session()->get('utm')['utm_term'] : '';
+            }
+            if (!str_contains($referer, 'utm_content')){
+                !empty($request->session()->get('utm')['utm_content']) ? $referer .= '&utm_content=' . $request->session()->get('utm')['utm_content'] : '';
+            }
+        }
+        else{
+            $referer .= '?';
+            if (!str_contains($referer, 'utm_source')){
+                !empty($request->session()->get('utm')['utm_source']) ? str_ends_with($referer, '?') ? $referer .= 'utm_source=' . $request->session()->get('utm')['utm_source'] : $referer .= '&utm_source=' . $request->session()->get('utm')['utm_source'] : '';
+            }
+            if (!str_contains($referer, 'utm_medium')){
+                !empty($request->session()->get('utm')['utm_medium']) ? str_ends_with($referer, '?') ? $referer .= 'utm_medium=' . $request->session()->get('utm')['utm_medium'] : $referer .= '&utm_medium=' . $request->session()->get('utm')['utm_medium'] : '';
+            }
+            if (!str_contains($referer, 'utm_campaign')){
+                !empty($request->session()->get('utm')['utm_campaign']) ? str_ends_with($referer, '?') ? $referer .= 'utm_campaign=' . $request->session()->get('utm')['utm_campaign'] : $referer .= '&utm_campaign=' . $request->session()->get('utm')['utm_campaign'] : '';
+            }
+            if (!str_contains($referer, 'utm_term')){
+                !empty($request->session()->get('utm')['utm_term']) ? str_ends_with($referer, '?') ? $referer .= 'utm_term=' . $request->session()->get('utm')['utm_term'] : $referer .= '&utm_term=' . $request->session()->get('utm')['utm_term'] : '';
+            }
+            if (!str_contains($referer, 'utm_content')){
+                !empty($request->session()->get('utm')['utm_content']) ? str_ends_with($referer, '?') ? $referer .= 'utm_content=' . $request->session()->get('utm')['utm_content'] : $referer .= '&utm_content=' . $request->session()->get('utm')['utm_content'] : '';
+            }
+        }
         $stroke_rewrite = date("d.m.y H:i").';'.$city.';'.''.';'.($validated['phone'] ?? 'empty').';'.($validated['email']??'empty email').';'.$city.';'.($validated['name'] ?? 'noname').';'.''.';;'.urldecode($referer).';'.$_SERVER['HTTP_X_REAL_IP']."\n";
         fwrite($fp,$stroke_rewrite);
         fclose($fp);
