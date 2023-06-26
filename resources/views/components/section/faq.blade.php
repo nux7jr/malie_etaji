@@ -9,7 +9,7 @@
 $techfaq = json_decode($faqs, true)
 @endphp
 
-<section class="faq">
+<section class="faq" id="mortgage-faq">
   <div class="faq__header">
     <h1 class="faq__heading">
       {{__('Часто задаваемые вопросы')}}

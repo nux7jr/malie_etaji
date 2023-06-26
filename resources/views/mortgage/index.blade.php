@@ -99,7 +99,7 @@ $faq = (new Faq())->toArray();
 </x-cards.house-card>
 <x-section.order class="mortgage__call">
 </x-section.order>
-<section class="adv">
+<section class="adv" id="mortgage-adv">
   <h1 class="adv__heading">
     {{__('Преимущества ипотеки от “Малых этажей”')}}
   </h1>

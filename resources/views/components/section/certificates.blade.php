@@ -14,11 +14,6 @@ $cert_data = $cert_cards->toArray();
   <h1 class="certificates__heading">
     {{__('Сертификаты')}}
   </h1>
-  <p class="certificates__text">
-    {{__('Lorem Ipsum является стандартной "рыбой" для текстов
-    на латинице с начала XVI века. В то время некий безымянный
-    печатник создал большую коллекцию размеров и форм шрифтов.')}}
-  </p>
 
   <div class="swiper certificates-swiper">
     <div class="swiper-wrapper certificates-wrapper">
