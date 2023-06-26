@@ -2,7 +2,7 @@
 <html lang="ru">
 <?
 ini_set("session.cookie_domain", ".malie-etaji.ru");
-session_start(); 
+session_start();
 // $subdomen = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
 // ($subdomen === 'malie-etaji') ? $subdomen = 'krasnoyarsk' : '';
 
@@ -355,7 +355,7 @@ $citys = array(
             <div class='step' data-step='6'><span>6</span></div>
           </div>
           <div class="windows" data-step='1'>
-            <form method="post" action="https://xl-pipe.ru/quiz/actions/send.php">
+            <form method="post" action="/send_modal">
               <input type='hidden' name='action' value='test'>
 
               <div class='window active' data-step='1' data-image='have' data-content='no'>
@@ -1391,7 +1391,7 @@ $citys = array(
                       </svg>― условия ипотеки под 4,7%;</span></div>
                 </div>
                 <div class="blk-right">
-                  <form class="form ajax" method="post" action="/quiz/actions/send.php">
+                  <form class="form ajax" method="post" action="/send_modal">
                     <input type="hidden" name="action" value="consut">
                     <div class="form-ttl"><span class="b1">Получить консультацию</span></div>
 
