@@ -207,6 +207,9 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         if (!empty(self::$data['city'])){
             $namelead[] = self::$data['city'];
         }
+        if (parse_url(self::$request->server('HTTP_REFERER'))['path'] === '/quiz'){
+            $namelead[] = 'Пройден квиз';
+        }
         $namelead[] = self::$phone;
         if (!empty(self::$data['subject'])){
             $namelead[] = self::$data['subject'];
