@@ -25,6 +25,8 @@
     @vite('resources/js/components/modal.js')
     @vite('resources/js/components/mob_menu.js')
     @vite('resources/css/components/mob_menu.css')
+    @vite('resources/js/components/search.js')
+    @vite('resources/css/components/search.css')
 
     {{-- favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href=" {{ Vite::image('favicon/apple-touch-icon.png')}}">
@@ -49,6 +51,7 @@
     <x-include.mob_menu></x-include.mob_menu>
     <x-include.footer></x-include.footer>
     <x-include.modals></x-include.modals>
+    <x-include.search></x-include.search>
 </body>
 
 </html>

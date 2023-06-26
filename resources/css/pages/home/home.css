@@ -245,7 +245,7 @@
 .auto-play__button {
     position: relative;
 }
-.default__button.auto-play__button {
+.auto-play__button {
     background: #ffffff;
     color: var(--color-black);
     font-weight: 700;
@@ -725,6 +725,12 @@
     }
 }
 @media (max-width: 1440px) {
+    .auto-play__heading {
+        font-size: 28px;
+    }
+    .offer__container {
+        justify-content: center;
+    }
     .offer > .main-offer {
         display: none;
     }
@@ -804,7 +810,8 @@
         flex-wrap: wrap;
     }
     .image-swiper {
-        min-width: auto;
+        min-width: 100%;
+        max-width: 100%;
     }
     .build__wrapper {
         padding: 20px;

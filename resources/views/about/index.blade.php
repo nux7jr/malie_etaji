@@ -213,39 +213,7 @@ $service = (new Service())->toArray();
                     </div>
                 </div>
                 @endforeach
-                {{-- @foreach ($service as $item) <div class="services-filters__item design">
-                    <div class="services-filters__header">
-                        <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="">
-                        <div class="services-filters__head">
-                            <h3 class="services-filters__info">
-                                {{__('design')}}
-                            </h3>
-                            <p class="services-filters__text">
-                                {{__('Специальные условия для клиентов “Малые этажи”')}}</p>
-                        </div>
-                    </div>
-                    <button class="default__button">
-                        {{__('Отправить заявку')}}</button>
-                </div>
-                @endforeach
-                @foreach ($service as $item) <div class="services-filters__item building">
-                    <div class="services-filters__header">
-                        <img class="services-filters__img" src="{{ Vite::asset('resources/images/icons/fire.svg') }}"
-                            alt="">
-                        <div class="services-filters__head">
-                            <h3 class="services-filters__info">
-                                {{__('building')}}
-                            </h3>
-                            <p class="services-filters__text">
-                                {{__('Специальные условия для клиентов “Малые этажи”')}}</p>
-                        </div>
-                    </div>
-                    <button class="default__button">
-                        {{__('Отправить заявку')}}
-                    </button>
-                </div>
-                @endforeach --}}
+
             </div>
         </div>
     </div>

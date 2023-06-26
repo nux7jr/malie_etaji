@@ -31,29 +31,52 @@
           </x-ui.lists.dropdown>
         </div>
         <div class="selection__item">
-          <label class="selection__label selection__price">Стоимость, млн ₽</label>
-          <div class="selection-input__rangees">
-            <div class="rangees__inner">
-              от
-              <div class="formatting-end">
+          <div class="selection__container">
+            <div class="selection__slide">
+              <label class="selection__label selection__price">Стоимость, млн ₽</label>
+              <div class="selection-input__rangees">
+                <div class="rangees__inner">
+                  от
+                  <div class="formatting-end">
+                  </div>
+                </div>
+                <div class="line">
+                  —
+                </div>
+                <div class="rangees__inner">
+                  до
+                  <div class="formatting-start">
+                  </div>
+                </div>
               </div>
+              <input type="hidden" name="price-start" class="hide-end" />
+              <input type="hidden" name="price-end" class="hide-start" />
+              <div class="rangees"></div>
             </div>
-            —
-            <div class="rangees__inner">
-              до
-              <div class="formatting-start">
+            <div class="selection__slide">
+              <label class="selection__label selection__price">Площадь, м2</label>
+              <div class="selection-input__rangees">
+                <div class="rangees__inner">
+                  от
+                  <div class="formatting-end-square">
+                  </div>
+                </div>
+                <div class="line">
+                  —
+                </div>
+                <div class="rangees__inner">
+                  до
+                  <div class="formatting-start-square">
+                  </div>
+                </div>
               </div>
+              <input type="hidden" name="price-start" class="hide-end-square" />
+              <input type="hidden" name="price-end" class="hide-start-square" />
+              <div class="rangees-square"></div>
             </div>
           </div>
-          <input type="hidden" name="price-start" class="hide-end" />
-          <input type="hidden" name="price-end" class="hide-start" />
-          <div class="rangees"></div>
         </div>
-        <div class="selection__item">
-          <label class="selection__label" for="square">Площадь, м2</label>
-          <x-ui.inputs.x-input id='square' class="selection__input square__input" placeholder="До">
-          </x-ui.inputs.x-input>
-        </div>
+
         <div class="selection__item selection-filter__item">
           <span for="floors" class="selection-input__label selection__label">Кол-во этажей</span>
           <div class="floors__wrapper">
@@ -65,13 +88,35 @@
               <input class="floors__input" type="radio" name="floor" value="2" id="two-floor">
               <label class="floors__label" for="two-floor">2</label>
             </div>
-            <div class="floors__item floors__item--last">
+          </div>
+        </div>
+        <div class="selection__item selection-filter__item">
+          <span for="floors" class="selection-input__label selection__label">Дополнительно</span>
+          <div class="floors__wrapper">
+            <div class="floors__item">
+              <input class="floors__input" type="checkbox" name="garage" value="true" id="garage">
+              <label class="floors__label" for="garage">+ гараж</label>
+            </div>
+            <div class="floors__item">
+              <input class="floors__input" type="checkbox" name="pantry" value="true" id="pantry">
+              <label class="floors__label" for="pantry">+ кладовая</label>
+            </div>
+            <div class="floors__item">
+              <input class="floors__input" type="checkbox" name="wardrobe" value="true" id="wardrobe">
+              <label class="floors__label" for="wardrobe">+ гардеробная</label>
+            </div>
+            <div class="floors__item">
               <input class="floors__input" type="checkbox" name="terrace" value="true" id="terrace">
-              <label class="floors__label floors__item--last" for="terrace">+ терасса</label>
+              <label class="floors__label" for="terrace">+ терасса</label>
+            </div>
+            <div class="floors__item">
+              <input class="floors__input" type="checkbox" name="balcony" value="true" id="balcony">
+              <label class="floors__label" for="balcony">+ балкон</label>
             </div>
           </div>
         </div>
-        <button class="default__button selection__submit" type="submit">{{__('Выбрать дом')}}</button>
+        <button class="default__button selection__submit" type="button" data-modal_id="modal__cell">{{__('Выбрать
+          дом')}}</button>
       </div>
     </form>
   </div>

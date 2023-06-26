@@ -39,9 +39,17 @@
 .noUi-horizontal {
     height: 2px !important;
 }
+.selection__container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.selection__slide {
+    flex: 1;
+}
 .selection-input__rangees {
     display: flex;
-    max-width: 417px;
+
     background-color: var(--color--background);
     padding: 20px;
     border-radius: var(--border-raduis-defalut);
@@ -49,10 +57,21 @@
     font-weight: 700;
     justify-content: space-between;
 }
-.rangees {
-    max-width: 350px;
+.rangees,
+.rangees-square {
+    max-width: 85%;
+    margin-right: 150px;
     display: block;
     margin: 0;
+    margin-left: 15px;
+}
+
+.selection-input__rangees {
+    position: relative;
+}
+.line {
+    position: absolute;
+    left: 49%;
 }
 .rangees__inner {
     display: flex;
@@ -60,7 +79,9 @@
     color: var(--color-grayest);
 }
 .formatting-end,
-.formatting-start {
+.formatting-start,
+.formatting-end-square,
+.formatting-start-square {
     color: var(--color-black);
 }
 .selection__form {
@@ -83,7 +104,8 @@
     z-index: 2;
 }
 .noUi-base {
-    margin-left: 37px;
+    margin: 0 auto;
+    display: block;
 }
 .selection__item {
     display: flex;
@@ -137,18 +159,26 @@
 .selection__submit {
     width: fit-content;
 }
+.selection__slide > .selection__label {
+    margin-bottom: 10px;
+    padding: 0;
+    display: block;
+
+    color: var(--color-grayest);
+}
+.selection-input__label,
+.selection__label {
+    color: var(--color-grayest);
+}
 .selection__label {
     padding-bottom: 10px;
 }
 .selection__option {
-    max-width: 506px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.floors__item--last > .floors__item--last {
-    width: 100%;
-}
+
 .floors__item--last {
     width: 100%;
 }
@@ -159,6 +189,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media (max-width: 1690px) {
+    .floors__wrapper {
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 1200px) {
     #house-list > .dropdown-select-selected {
@@ -191,10 +226,7 @@
     .selection__heading {
         font-size: 24px;
     }
-    .rangees {
-        max-width: 80%;
-        padding-right: 20px;
-    }
+
     .selection__label {
         font-size: 12px;
     }
@@ -221,5 +253,10 @@
     }
     .selection {
         padding-bottom: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .selection__container {
+        flex-direction: column;
     }
 }

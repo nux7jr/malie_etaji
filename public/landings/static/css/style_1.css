@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerRegular.eot');
+    src: local('MullerRegular'),
+        url('../fonts/MullerRegular.eot@') format('embedded-opentype'),
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.eot');
+    src: local('MullerBold'),
+        url('../fonts/MullerBold.eot@') format('embedded-opentype'),
+        url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerLight.eot');
+    src: local('MullerLight'),
+        url('../fonts/MullerLight.eot@') format('embedded-opentype'),
+        url('../fonts/MullerLight.woff') format('woff'),
+        url('../fonts/MullerLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerMedium.eot');
+    src: local('MullerMedium'),
+        url('../fonts/MullerMedium.eot@') format('embedded-opentype'),
+        url('../fonts/MullerMedium.woff') format('woff'),
+        url('../fonts/MullerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'Muller', sans-serif;
+}
+#test {
+    padding-bottom: 25px !important;
+}
+
+.window-rg>* {
+    width: 264px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.step-2-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0;
+}
+.test-info {
+    background: #e5ac8a;
+}
+
+.ti-num {
+    color: #e5ac8a;
+}
+
+.ti-title,
+.ti-bottom {
+    color: #093445;
+}
+
+.ti-second,
+.ti-txt {
+    color: #ffffff;
+}
+
+.ti-num {
+    background: #ffffff;
+}
+
+.test-data svg [fill='#1E92FD'] {
+    fill: #e5ac8a;
+}
+
+.test-data svg [fill='#093445'] {
+    fill: #093445;
+}
+
+.test-data svg [fill='#fff'] {
+    fill: #ffffff;
+}
+
+a.btn.btn-inverse {
+    border-color: #e31e28;
+}
+
+a.btn.btn-inverse span {
+    color: #e31e28;
+}
+
+a.btn.btn-inverse:hover {
+    background: #e31e28;
+}
+
+.add-kp-text:before,
+.add-kp-text:after {
+    background: #e31e28;
+}
+
+.color {
+    color: #e31e28;
+}
+
+a.btn {
+    background: #e31e28;
+}
+
+a.btn:hover {
+    box-shadow: 0px 7px 25px #e31e28;
+}
+
+.swiper-pagination-bullet-active {
+    background: #e31e28;
+}
+
+span.btn-span {
+    background: #e31e28;
+}
+
+.swiper-button-next svg [fill],
+.swiper-button-prev svg [fill] {
+    fill: #e31e28;
+}
+
+.blk-left>svg [fill] {
+    fill: #e31e28;
+}
+
+.window:not(.can-next) .next-step,
+form:not(.can-send) .btn-ajax,
+form:not(.can-send) .text-blk-btn input,
+.inputs-bottom:not(.can-send) .btn,
+#test:not(.can-next) .test-btns .next-step {
+    background: rgba(227, 30, 40, .3)
+}
+
+.form-input input,
+.form-file {
+    border-color: rgba(227, 30, 40, .3);
+}
+
+.input-icon {
+    border-color: #e31e28;
+}
+
+.input-icon:before {
+    background: #e31e28;
+}
+
+.input-icon svg [fill],
+.kp-text-inline svg [fill] {
+    fill: #e31e28;
+}
+
+.radio-bot,
+.input-bot input {
+    border-color: #e31e28;
+}
+
+.progressbar-text {
+    color: #e31e28 !important;
+}
+
+@keyframes arrow-color {
+    0% {
+        fill-opacity: 1;
+        fill: #e31e28
+    }
+
+    20% {
+        fill-opacity: 0.5;
+        fill: #7A7676;
+    }
+
+    40% {
+        fill-opacity: 1;
+        fill: #e31e28;
+    }
+
+    to {
+        fill-opacity: 1;
+        fill: #e31e28;
+    }
+}
+
+.test-clcl span {
+    background: #e31e28;
+}
+
+.radio-bot:before {
+    background: #e31e28;
+}
+
+.text-blk-input input[type='submit'] {
+    background: #e31e28;
+}
+
+.text-blk-input [name='phone'] {
+    border-color: #e31e28;
+}
+
+.sc-list span {
+    color: #e31e28;
+}
+
+.good-icon svg [fill],
+.mobile-btn svg [fill] {
+    fill: #e31e28;
+}
+
+body {
+    color: #093445;
+}
+
+a {
+    color: #093445;
+    border-bottom-color: #093445;
+}
+
+span.file-text {
+    color: rgba(0, 0, 0, .5);
+}
+
+.phone-text>span {
+    border-color: rgba(0, 0, 0, .5);
+}
+
+.swiper-itme:after {
+    box-shadow: 0px 0 0px 2px #093445 inset;
+}
+
+.input-default input {
+    color: #093445;
+}
+
+.step-blk {
+    background: #093445;
+}
+
+#page .slider-mini {
+    color: #093445;
+}
+
+.checkbox textarea::placeholder,
+.checkbox-text textarea {
+    color: #093445;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, .3);
+}
+
+.page-title-icon [stroke] {
+    stroke: #093445;
+}
+
+#footer-mobile {
+    background: #093445;
+}
+
+.blk-left-list>span svg [fill] {
+    fill: #093445;
+}
+
+.akp-name svg [fill] {
+    fill: #093445;
+}
+
+span.editor a {
+    color: #FFAA2A;
+}
+
+#interactive:before {
+    background-color: #ffffff
+}
+
+@keyframes shadow {
+    0% {
+        text-shadow: 0px 0px 15px #23ef0b;
+    }
+
+    50% {
+        text-shadow: 0px 0px 0px #23ef0b50;
+    }
+
+    to {
+        text-shadow: 0px 0px 15px #23ef0b;
+    }
+}
+
+.step.active span {
+    background: #235e76;
+}
+
+.step.active:before {
+    background: rgba(35, 94, 118, .4);
+}
+
+.phone-text:before,
+a.phone-mobile:before {
+    background: radial-gradient(50% 50% at 50% 50%, #33c31847 0%, #33c318 100%);
+}
+
+.input-text {
+    position: relative;
+    font-size: 16px !important;
+    line-height: 18px;
+    margin-right: 8px;
+    margin-left: 52px;
+    flex: 1 0;
+    font-weight: 400;
+}
+
+.witm {
+    width: auto;
+}
+
+@media (min-width:320px) and (max-width:900px) {
+    .input-img-have .input-txt {
+        min-height: 61px;
+    }
+
+    .witm {
+        width: 100% !important;
+    }
+}
+.adomrf {
+    color: #e31e28;
+    text-decoration: revert;
+}
+
+.adomrf:hover {
+    color: #e31e28;
+    text-decoration: none;
+}
+
+.textdescc {
+    width: 50%;
+}
+
+@media (min-width:320px) and (max-width:900px) {
+    .textdescc {
+        width: 100%;
+    }
+}

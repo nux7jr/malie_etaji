@@ -79,13 +79,15 @@ export default defineConfig({
                 "resources/css/components/peculiarities.css",
                 "resources/js/components/peculiarities.js",
 
-
                 "resources/js/components/reels.js",
                 "resources/css/components/reels.css",
                 // modal
                 "resources/css/components/modal.css",
                 "resources/js/components/modal.js",
                 "resources/css/components/case.css",
+
+                "resources/js/components/search.js",
+                "resources/css/components/search.css",
             ],
             refresh: true,
         }),

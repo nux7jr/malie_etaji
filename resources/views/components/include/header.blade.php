@@ -13,13 +13,13 @@
                 @foreach($city['hidden'] as $hidden_city)
                 @php
                 if (($subdomain = request()->route()->parameter('subdomain')) !== null){
-                    $host = request()->host();
-                    $new_host = str_replace($subdomain,$hidden_city['code'],$host);
-                    $url = str_replace($host,$new_host,request()->fullUrl());
+                $host = request()->host();
+                $new_host = str_replace($subdomain,$hidden_city['code'],$host);
+                $url = str_replace($host,$new_host,request()->fullUrl());
                 }else{
-                    $host = request()->host();
-                    $new_host = $hidden_city['code'] . '.' . request()->host();
-                    $url = str_replace($host,$new_host,request()->fullUrl());
+                $host = request()->host();
+                $new_host = $hidden_city['code'] . '.' . request()->host();
+                $url = str_replace($host,$new_host,request()->fullUrl());
                 }
                 @endphp
                 <a class="hidden-city__link" href="{{$url}}">{{__($hidden_city['name'])}}</a>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="user__option">
-            <button class="heading-info__button search">
+            {{-- <button class="heading-info__button search">
                 <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg') }}"
                     alt="{{ __('Поиск') }}">
                 {{ __('Поиск') }}
@@ -35,7 +35,7 @@
             <button class="heading-info__button login">
                 <img src="{{ Vite::asset('resources/images/icons/person.svg') }}" alt="{{ __('Войти') }}">
                 {{ __('Войти') }}
-            </button>
+            </button> --}}
         </div>
     </div>
 </section>
@@ -121,9 +121,9 @@
                     href="https://krasnoyarsk.hh.ru/employer/895977">
                     {{ __('Карьера') }}
                 </a>
-                <a title="{{ __('Блог') }}" class="header__button header__link" href="/blog">
+                {{-- <a title="{{ __('Блог') }}" class="header__button header__link" href="/blog">
                     {{ __('Блог') }}
-                </a>
+                </a> --}}
                 <a title="{{ __('Контакты') }}" class="header__button header__link" href="/contacts">
                     {{ __('Контакты') }}
                 </a>
