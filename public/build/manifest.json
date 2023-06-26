@@ -44,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-6bd003e7.css",
+    "file": "assets/app-281ab22f.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -89,7 +89,7 @@
     "src": "resources/css/components/grid.css"
   },
   "resources/css/components/house_card.css": {
-    "file": "assets/house_card-5cb7f18f.css",
+    "file": "assets/house_card-eb633959.css",
     "isEntry": true,
     "src": "resources/css/components/house_card.css"
   },
@@ -132,11 +132,6 @@
     "file": "assets/reels-161969f5.css",
     "isEntry": true,
     "src": "resources/css/components/reels.css"
-  },
-  "resources/css/components/search.css": {
-    "file": "assets/search-4ed993c7.js",
-    "isEntry": true,
-    "src": "resources/css/components/search.css"
   },
   "resources/css/components/selection.css": {
     "file": "assets/selection-5ef85c89.css",
@@ -829,11 +824,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -1354,6 +1349,10 @@
   "resources/images/favicon/safari-pinned-tab.svg": {
     "file": "assets/safari-pinned-tab-7eb8cb1e.svg",
     "src": "resources/images/favicon/safari-pinned-tab.svg"
+  },
+  "resources/images/favicon/site.webmanifest": {
+    "file": "assets/site-310b8694.webmanifest",
+    "src": "resources/images/favicon/site.webmanifest"
   },
   "resources/images/gallery/1.jpg": {
     "file": "assets/1-a76f661c.jpg",
@@ -3428,7 +3427,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-776a592a.js",
+    "file": "assets/app-7639028e.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -3513,11 +3512,6 @@
     ],
     "isEntry": true,
     "src": "resources/js/components/reels.js"
-  },
-  "resources/js/components/search.js": {
-    "file": "assets/search-c42ce534.js",
-    "isEntry": true,
-    "src": "resources/js/components/search.js"
   },
   "resources/js/components/selection.js": {
     "file": "assets/selection-bf2d8ba0.js",

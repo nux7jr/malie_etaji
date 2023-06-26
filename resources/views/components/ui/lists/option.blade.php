@@ -1,3 +1,3 @@
-<option {{$attributes->class(['someclass'])}} value={{$attributes->get('value')}}>
+<option value={{$attributes->get('value')}} percent={{$attributes->get('percent')}}>
     {{$slot}}
 </option>

@@ -542,7 +542,7 @@ footer {
     top: 100%;
     left: 0;
     right: 0;
-    /*z-index: 4;*/
+    z-index: 2;
 }
 
 .dropdown-select-hide {
@@ -615,7 +615,9 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
+.standart-two-lables:last-child{
+    margin-bottom: 0px;
+}
 .standart-two-lables div {
     display: flex;
     flex-direction: row;
