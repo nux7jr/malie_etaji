@@ -59,6 +59,9 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         self::$request = $request;
         try {
             self::$data = self::normalizeData($data);
+            if (empty(self::$comment)){
+                self::setDefaultComment();
+            }
             self::$contactId = self::getContact();
             $lastId = self::getLastDeal();
             if (is_null($lastId)){
@@ -154,13 +157,14 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
     }
     private static function setDefaultComment():void
     {
-        self::$comment = '';
+        self::$comment = 'Заявка с сайта malie-etaji.ru ';
         !empty(self::$data['subject']) ? self::$comment .= self::$data['subject'] : '';
         self::$comment .= "\nУникальный идентификатор посетителя - " . \Request::getClientIp();
         !empty(self::$data['city']) ? self::$comment .= "\nГород доставки: " . self::$data['city'] : '';
         !empty(self::$data['name']) ? self::$comment .= "\nИмя: " . self::$data['name'] : '';
         self::$comment .= "\nТелефон: " . self::$phone;
-        self::$comment .= "\nURL с которого была отправлена форма: " . self::$request->server('HTTP_REFERER');
+        self::$comment .= "\nURL с которого была отправлена форма: " . self::$request->server('HTTP_REFERER') . "\n";
+        self::$comment .= serialize(self::$data['else']);
     }
     /**
      * @param int $id
@@ -329,18 +333,24 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         }
         if (!empty($data['phone'])){
             self::$phone = phoneFormatter($data['phone']);
-        }else{
-            throw new Exception('empty $phone! data:' . serialize($data));
         }
+        //TO DO FIX IT!
+//        else{
+//            throw new Exception('empty $phone! data:' . serialize($data));
+//        }
         if (isset($data['comment'])){
             self::$comment = $data['comment'];
-        }
-        if (empty(self::$comment)){
-            self::setDefaultComment();
         }
         if (isset($data['subject'])){
             $normalizedData['subject'] = $data['subject'];
         }
+        $tempRequestData = self::$request->all();
+        foreach ($normalizedData as $key => $item){
+            if(isset($tempRequestData[$key])){
+                unset($tempRequestData[$key]);
+            }
+        }
+        $normalizedData['else'] = $tempRequestData;
         return $normalizedData;
     }
     /**

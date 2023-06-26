@@ -835,6 +835,7 @@ $citys = array(
                 </div>
                 <div class='step-bottom-text'>Автоматически сформированные результаты теста готовы</div>
               </div>
+                @csrf
             </form>
           </div>
           <div class="creator">
@@ -1412,6 +1413,7 @@ $citys = array(
                       <a href="#" class="btn btn-ajax" onclick="ym(67008322,'reachGoal','quiz');"><span>Получить
                           консультацию</span></a>
                     </div>
+                      @csrf
                   </form>
                 </div>
               </div>

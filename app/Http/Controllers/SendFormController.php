@@ -15,13 +15,32 @@ class SendFormController extends Controller
      * @return void
      */
     public function sendForm(Request $request,SendFormInterface $sender){
-        $city = City::getCurrentCity(request()->route()->parameter('subdomain') ?? 'krasnoyarsk');
-        $validated = $request->validate([
-            'phone'     => ['string','required','regex:/^(\+7|8)(\ )?\(?[\d]{3}\)?(\ )?[\d]{3}[\-|\ ]?[\d]{2}[\-|\ ]?[\d]{2}/'],
-            'name'      => 'string|required',
-            'question'  => 'string'
-        ]);
-        $validated['city'] = $city;
-        $sender->sendForm($validated, $request);
+        try {
+            $city = City::getCurrentCity(request()->route()->parameter('subdomain') ?? 'krasnoyarsk');
+            $validated = $request->validate([
+                'phone'     => ['string','regex:/^(\+7|8)(\ )?\(?[\d]{3}\)?(\ )?[\d]{3}[\-|\ ]?[\d]{2}[\-|\ ]?[\d]{2}/','nullable'],
+                'name'      => 'string|nullable',
+                'question'  => 'string|nullable',
+                'email'     => 'string|nullable'
+            ]);
+            $validated['city'] = $city;
+            $this->writeLeads($city, $validated);
+            $sender->sendForm($validated, $request);
+        }catch (\Exception $err){
+            \Log::error('Ошибка отправки формы: ' . $err->getMessage());
+        }
+    }
+    private function writeLeads($city, $validated):void
+    {
+        try {
+            $fp = fopen("/home/admin/web/centr-polov.ru/public_html/upload/bd/alldealers_leads.txt","a+");
+        }catch (\Exception $err){
+            $fp = fopen("alldealers_leads.txt","a+");
+        }
+
+        $referer = $_SERVER['HTTP_REFERER'];
+        $stroke_rewrite = date("d.m.y H:i").';'.$city.';'.''.';'.($validated['phone'] ?? 'empty').';'.($validated['email']??'empty email').';'.$city.';'.($validated['name'] ?? 'noname').';'.''.';;'.urldecode($referer).';'.$_SERVER['HTTP_X_REAL_IP']."\n";
+        fwrite($fp,$stroke_rewrite);
+        fclose($fp);
     }
 }

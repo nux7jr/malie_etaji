@@ -1,7 +1,7 @@
 $(document).ready(function(S){
      $(function(){
         $.mask.definitions['S']='[0-69]';
-         let phone_mask = "+7 (S99) 999-99-99";  
+         let phone_mask = "+7 (S99) 999-99-99";
          $('[type="phone"]').mask(phone_mask);
          $('[type="phone"]').on('focus click', function() {
          $(this)[0].setSelectionRange(4, 4);})});
@@ -18,7 +18,7 @@ jql = {}
 
 var wndw = {
     now_step: 1,
-    window_now: $(), 
+    window_now: $(),
     window_next: $(),
     main: $(".windows"),
     end: $(".window[data-step='end']"),
@@ -336,7 +336,7 @@ $(document).ready(function() {
             item.removeClass('open')
             content.slideUp(220)
         }else{
-            $(".input.open .input-content-right").click() 
+            $(".input.open .input-content-right").click()
             item.addClass('open')
             content.slideDown(220)
         }
@@ -364,7 +364,7 @@ $(document).ready(function() {
             if(type == "radio") wndwr.find(".next-step").click()
 
             var sib = parent.siblings()
-            sib.find("input[type='text']").val("") 
+            sib.find("input[type='text']").val("")
             if(type == "radio") {
                 sib.find("input:not([type='text'])").prop("checked", false)
             }else{
@@ -399,16 +399,16 @@ $(document).ready(function() {
         gg ? parents.addClass("can-send") : parents.removeClass("can-send")
         gg ? form.addClass("can-send") : form.removeClass("can-send")
     })
-    
+
     $('.input-default input').keyup(function() {
-        wndw.check_active() 
+        wndw.check_active()
     })
 	$(document).on('change keyup', '.checkbox-text textarea', function(){
 		var textarea = $(this),
             parent = textarea.parents(".input")
             value = textarea.val().trim(),
             wndwr = textarea.parents(".window")
- 
+
         if(value){
             parent.find("> input").prop("checked", true)
             wndwr.find("input:not([type='text']):not([value='checkbox-text'])").prop("checked", false)
@@ -419,7 +419,7 @@ $(document).ready(function() {
         }
         wndw.check_active()
 	})
- 
+
     //Отправка лида
     $(document).on("click", ".btn-send-test", function(){
 
@@ -439,21 +439,22 @@ $(document).ready(function() {
         var emails = $(".window[data-step='end'] input[name='email']").val();
 
         var city = $('.city_desctop').text();
+        var token = $('input[name="_token"]').val();
 
         if(actions == 'test') {
-     
+
             $.ajax({
               type: 'POST',
-              url: '/quiz/actions/send.php',
-              data: {'actions': actions, 'test[1]': test1, 'test[2]': test2, 'test[3]': test3, 'test[4]': test4, 'test[5]': test5, 'call': calls, 'phone': phones, 'email': emails, 'city': city},
+              url: '/send_modal',
+              data: {'actions': actions, 'test[1]': test1, 'test[2]': test2, 'test[3]': test3, 'test[4]': test4, 'test[5]': test5, 'call': calls, 'phone': phones, 'email': emails, 'city': city,'_token':token},
               success: function(result){
                     ym(67008322,'reachGoal','obrashenie');
                     setTimeout(function(){ window.location.href = "https://малые-этажи.рф/taplink";  }, 300);
               },
               error: function(data){
 
-              }         
-            });    
+              }
+            });
         }
 
         // phone
@@ -487,18 +488,18 @@ $(document).ready(function() {
         var form = event.target.parentNode.parentNode;
         var action = form.parentNode.querySelector("input[name='action']").value;
 
-        var phones = form.parentNode.querySelector("input[name='phone']").value; 
-        var comments = form.parentNode.querySelector("input[name='time']").value; 
+        var phones = form.parentNode.querySelector("input[name='phone']").value;
+        var comments = form.parentNode.querySelector("input[name='time']").value;
 
         var city = $('.city_desctop').text();
 
         $.ajax({
           type: 'POST',
-          url: '/quiz/actions/send.php',
+          url: '/send_modal',
           dataType: 'json',
           data: {'actions': action, 'phone': phones, 'time': comments, 'city': city},
           success: function(data){
-                
+
                 var open_modal = $(".modal.is-open")
                 if(open_modal.length) MicroModal.close(open_modal.attr("id").replace("#", ""));
                 MicroModal.show(action=="updatePhone" ? 'thanks-number' : 'thanks');
@@ -508,8 +509,8 @@ $(document).ready(function() {
           },
           error: function(data){
 
-            }         
-        });     
+            }
+        });
         return false;
     })
 
@@ -547,19 +548,19 @@ $(document).ready(function() {
                 req.send();
                 try {} catch(e) {}
 
-                //Если ошибка отправки в обычный обработчик 
+                //Если ошибка отправки в обычный обработчик
                 event.preventDefault();
                 $.ajax({
                     type: 'POST',
                     url: '/bitrix/error_hundler/error_handler.php',
-                    data: {'actions': actions, 'phone': phones},          
+                    data: {'actions': actions, 'phone': phones},
                     success: function(result){
                         var open_modal = $(".modal.is-open")
                         if(open_modal.length) MicroModal.close(open_modal.attr("id").replace("#", ""));
-                    }   
+                    }
                 });
-            }         
-        });    
+            }
+        });
 
 
         MicroModal.show(action=="updatePhone" ? 'thanks-number' : 'thanks');
@@ -571,16 +572,16 @@ $(document).ready(function() {
 
 
     /*$(document).on("click", "form.ajax [type='submit'], .btn-ajax", function(){*/
-/*      $(document).on("click", "text-blk-btn, [type='submit']", function(){  
+/*      $(document).on("click", "text-blk-btn, [type='submit']", function(){
         var form = $(this).parents("form");
 
         if(actions=="updatePhone"){
             var phones = form.find("input[name='phone']").val();
-            
+
         }
 
         if(actions == 'updatePhone') {
-    
+
             $.ajax({
               type: 'POST',
               url: '/actions/send.php',
@@ -596,16 +597,16 @@ $(document).ready(function() {
                     req.send();
                     try {} catch(e) {}
 
-                    //Если ошибка отправки в обычный обработчик 
+                    //Если ошибка отправки в обычный обработчик
                     event.preventDefault();
                     $.ajax({
                         type: 'POST',
                         url: '/bitrix/error_hundler/error_handler.php',
-                        data: {'actions': actions, 'phone': phones},          
-                        success: function(result){}   
+                        data: {'actions': actions, 'phone': phones},
+                        success: function(result){}
                     });
-                }         
-            });    
+                }
+            });
         }
 
 
@@ -883,7 +884,7 @@ function check_bottom(type){
         top_bottom = mob_footer >= ($(window).height() + doc) ? 0 : ($(window).height() + doc) - mob_footer
         $(".test-btns").css("bottom", top_bottom)
     } catch (err) {}
-    
+
 }
 $(document).ready(function(){ check_bottom() })
 $(document).resize(function(){ check_bottom() })
