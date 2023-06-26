@@ -72,79 +72,6 @@ function addDropdowns(){
     }
 }
 addDropdowns();
-function updateDropdownCalc() {
-    let x, i, j, l, ll, selElmnt, a, b, c;
-    /* Look for any elements with the class "custom-select": */
-    x = document.querySelector(".mortgage-calculator-left .custom-select-dropdown");
-    l = x.length;
-    for (i = 0; i < l; i++) {
-        selElmnt = x[i].getElementsByTagName("select")[0];
-        ll = selElmnt.length;
-        /* For each element, create a new DIV that will act as the selected item: */
-        a = document.createElement("DIV");
-        a.setAttribute("class", "dropdown-select-selected");
-        a.setAttribute("name", selElmnt.options[selElmnt.selectedIndex].innerHTML);
-        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-        if (selElmnt.options[selElmnt.selectedIndex].getAttribute('percent') !== ''){
-            a.style = "display:flex;flex-wrap:row;";
-            a.setAttribute("percent",selElmnt.options[selElmnt.selectedIndex].getAttribute('percent'));
-            const h4 = document.createElement('h4');
-            h4.classList.add('red_color');
-            h4.innerText = 'от ' + selElmnt.options[selElmnt.selectedIndex].getAttribute('percent') + '%';
-            a.innerHTML += '&nbsp;' + h4.outerHTML;
-        }
-        x[i].appendChild(a);
-        /* For each element, create a new DIV that will contain the option list: */
-        b = document.createElement("DIV");
-        b.setAttribute("class", "dropdown-select-items dropdown-select-hide");
-        for (j = 1; j < ll; j++) {
-            /* For each option in the original select element,
-            create a new DIV that will act as an option item: */
-            c = document.createElement("DIV");
-            c.innerHTML = selElmnt.options[j].innerHTML;
-            if (selElmnt.options[j].getAttribute('percent') !== ''){
-                c.style = "display:flex;flex-wrap:row;";
-                c.setAttribute("percent",selElmnt.options[j].getAttribute('percent'));
-                const h4 = document.createElement('h4');
-                h4.classList.add('red_color');
-                h4.innerText = 'от ' + selElmnt.options[j].getAttribute('percent') + '%';
-                c.innerHTML += '&nbsp;' + h4.outerHTML;
-            }
-            c.addEventListener("click", function(e) {
-                /* When an item is clicked, update the original select box,
-                and the selected item: */
-                let y, i, k, s, h, sl, yl;
-                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                sl = s.length;
-                h = this.parentNode.previousSibling;
-                for (i = 0; i < sl; i++) {
-                    if (s.options[i].innerHTML == this.innerHTML) {
-                        s.selectedIndex = i;
-                        h.innerHTML = this.innerHTML;
-                        y = this.parentNode.getElementsByClassName("dropdown-same-as-selected");
-                        yl = y.length;
-                        for (k = 0; k < yl; k++) {
-                            y[k].removeAttribute("class");
-                        }
-                        this.setAttribute("class", "dropdown-same-as-selected");
-                        break;
-                    }
-                }
-                h.click();
-            });
-            b.appendChild(c);
-        }
-        x[i].appendChild(b);
-        a.addEventListener("click", function(e) {
-            /* When the select box is clicked, close any other select boxes,
-            and open/close the current select box: */
-            e.stopPropagation();
-            closeAllSelect(this);
-            this.nextSibling.classList.toggle("dropdown-select-hide");
-            this.classList.toggle("dropdown-select-arrow-active");
-        });
-    }
-}
 function renderCalc() {
     const calculator = document.querySelector('.mortgage-calculator');
     const insurance = calculator.querySelector('input[type="checkbox"]').checked;
@@ -220,23 +147,14 @@ function calcDropdownEvents(calc){
 }
 function selectClickEvent(select){
     select.addEventListener("click", function(ev) {
-        console.log(hasClass(this,'dropdown-select-arrow-active)'));
-        if (hasClass(this,'dropdown-select-arrow-active)')){
-            /* When the select box is clicked, close any other select boxes,
-        and open/close the current select box: */
-            ev.stopPropagation();
-            closeAllSelect(this);
-            document.querySelector('.dropdown-select-items').classList.remove('dropdown-select-hide');
-            document.querySelector('.dropdown-select-selected').classList.remove("dropdown-select-arrow-active");
-        }else{
-            this.classList.add('dropdown-select-arrow-active');
-            console.log(document.querySelector('.dropdown-select-items'));
-            document.querySelector('.dropdown-select-items').classList.add("dropdown-select-hide");
+        if(document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.contains('dropdown-select-arrow-active') === true){
+            document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.add("dropdown-select-arrow-active");
+            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.add('dropdown-select-hide');
+        }else {
+            document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.remove("dropdown-select-arrow-active");
+            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.remove('dropdown-select-hide');
         }
-    });
-}
-function hasClass(element, className) {
-    return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
+    },true);
 }
 function closeAllSelect(elmnt) {
     /* A function that will close all select boxes in the document,
