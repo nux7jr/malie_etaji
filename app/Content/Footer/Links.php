@@ -20,7 +20,7 @@ final class Links
                 (new Link(null,link:'/projects/barn',text:__('Барны')))->toArray(),
                 (new Link(null,link:'/projects/garage',text:__('С гаражом')))->toArray(),
                 (new Link(header:true,link:'',text:__('Для клиентов')))->toArray(),
-                (new Link(null,link:'',text:__('Акции')))->toArray(),
+//                (new Link(null,link:'',text:__('Акции')))->toArray(),
                 (new Link(null,link:'',text:__('Личный кабинет')))->toArray(),
                 (new Link(null,link:'',text:__('Выдача ключей')))->toArray(),
                 (new Link(null,link:'',text:__('Документы проектов')))->toArray(),
