@@ -174,7 +174,7 @@ $service = (new Service())->toArray();
     <div class="build__wrapper">
         <div class="build__header">
             <h1 class="build__heading">
-                {{ __('Дома, которые мы постоили') }}
+                {{ __('Дома, которые мы построили') }}
             </h1>
             <p class="build__paraf">
                 {{ __('Наши готовые решения включают всё необходимое для полноценной жизни в доме: коммуникации, септик,
