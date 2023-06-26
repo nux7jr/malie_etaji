@@ -176,10 +176,10 @@ function routeList(): void
 
 
 
-    Route::get('/projects/{id}', function ($domain, $id) {
+    Route::get('/projects/{id}', function ($domain, $subdomainOrId, $idOrNull = null) {
         $arrayInfo = HousesInfo::$card_elements;
+        $id = $idOrNull === null ? $subdomainOrId : $idOrNull;
         $infoInner = $arrayInfo[$id] ?? $arrayInfo[0];
-
         return view('project-item.index')->with([
             'paths' => [
                 '0' => ['path' => '/', 'name' => 'Главная'],
