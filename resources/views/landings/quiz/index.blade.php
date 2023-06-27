@@ -3,8 +3,6 @@
 <?
 ini_set("session.cookie_domain", ".malie-etaji.ru");
 session_start();
-//  $subdomen = array_shift((explode('.', $_SERVER['HTTP_HOST'])));
-//  ($subdomen === 'malie-etaji') ? $subdomen = 'krasnoyarsk' : '';
 ?>
 @php
     $city1 = [
@@ -26,9 +24,9 @@ session_start();
                 'PHONE' => "+7 (423) 205-40-50",
                 'ADDRESS' => ""
             ],
-            'ekaterinburg' => [
+            'ekb' => [
                 'CITY' => "Екатеринбург",
-                'URL' => "ekaterinburg",
+                'URL' => "ekb",
                 'PHONE' => "+7 (343) 309-13-09",
                 'ADDRESS' => ""
             ],
@@ -44,17 +42,11 @@ session_start();
                 'PHONE' => "+7 (342) 255-10-10",
                 'ADDRESS' => ""
             ],
-            'tyumen' => [
+            'tumen' => [
                 'CITY' => "Тюмень",
-                'URL' => "tyumen",
+                'URL' => "tumen",
                 'PHONE' => "+7 (3452) 518-107",
                 'ADDRESS' => ""
-            ],
-            'malie-etaji' => [
-            'CITY' => "Красноярск",
-              'URL' => "malie-etaji",
-            'PHONE' => "+7 (3452) 518-107",
-            'ADDRESS' => ""
             ],
     ];
 @endphp
@@ -71,15 +63,11 @@ session_start();
 @endphp
 
 @php
-    $subdom = 'krasnoyarsk';
-@endphp
-
-@php
     $citydata = $city1[$city['show']['code']];
     if (empty($citydata)){
       $citydata = [
             'CITY' => "Красноярск",
-              'URL' => "krasnoyarsk",
+            'URL' => "krasnoyarsk",
             'PHONE' => "+7 (3452) 518-107",
             'ADDRESS' => ""
             ];
