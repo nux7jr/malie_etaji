@@ -49,6 +49,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         );
         self::$direction = $direction ?? 46; //46 is default value
         self::$subdomainBitrix = $subdomain_bitrix;
+        self::$houseSquareValueForBitrixDealInput = null;
     }
 
     /**
