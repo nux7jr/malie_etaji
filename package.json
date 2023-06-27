@@ -12,7 +12,9 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@barba/core": "^2.9.7",
         "fslightbox": "^3.4.1",
+        "gsap": "^3.12.1",
         "inputmask": "^5.0.8",
         "moment": "^2.29.4",
         "nouislider": "^15.7.0",
