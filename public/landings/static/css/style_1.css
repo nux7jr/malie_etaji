@@ -1,58 +1,58 @@
 @font-face {
-    font-family: 'Muller';
-    src: url('../fonts/MullerRegular.eot');
-    src: local('MullerRegular'),
-        url('../fonts/MullerRegular.eot@') format('embedded-opentype'),
-        url('../fonts/MullerRegular.woff') format('woff'),
-        url('../fonts/MullerRegular.ttf') format('truetype');
+    font-family: "Muller";
+    src: url("../fonts/MullerRegular.eot");
+    src: local("MullerRegular"),
+        url("../fonts/MullerRegular.eot@") format("embedded-opentype"),
+        url("../fonts/MullerRegular.woff") format("woff"),
+        url("../fonts/MullerRegular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: url('../fonts/MullerBold.eot');
-    src: local('MullerBold'),
-        url('../fonts/MullerBold.eot@') format('embedded-opentype'),
-        url('../fonts/MullerBold.woff') format('woff'),
-        url('../fonts/MullerBold.ttf') format('truetype');
+    font-family: "Muller";
+    src: url("../fonts/MullerBold.eot");
+    src: local("MullerBold"),
+        url("../fonts/MullerBold.eot@") format("embedded-opentype"),
+        url("../fonts/MullerBold.woff") format("woff"),
+        url("../fonts/MullerBold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: url('../fonts/MullerLight.eot');
-    src: local('MullerLight'),
-        url('../fonts/MullerLight.eot@') format('embedded-opentype'),
-        url('../fonts/MullerLight.woff') format('woff'),
-        url('../fonts/MullerLight.ttf') format('truetype');
+    font-family: "Muller";
+    src: url("../fonts/MullerLight.eot");
+    src: local("MullerLight"),
+        url("../fonts/MullerLight.eot@") format("embedded-opentype"),
+        url("../fonts/MullerLight.woff") format("woff"),
+        url("../fonts/MullerLight.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: url('../fonts/MullerMedium.eot');
-    src: local('MullerMedium'),
-        url('../fonts/MullerMedium.eot@') format('embedded-opentype'),
-        url('../fonts/MullerMedium.woff') format('woff'),
-        url('../fonts/MullerMedium.ttf') format('truetype');
+    font-family: "Muller";
+    src: url("../fonts/MullerMedium.eot");
+    src: local("MullerMedium"),
+        url("../fonts/MullerMedium.eot@") format("embedded-opentype"),
+        url("../fonts/MullerMedium.woff") format("woff"),
+        url("../fonts/MullerMedium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 body {
-    font-family: 'Muller', sans-serif;
+    font-family: "Muller", sans-serif;
 }
 #test {
     padding-bottom: 25px !important;
 }
 
-.window-rg>* {
+.window-rg > * {
     width: 264px;
     max-width: 100%;
     height: 100%;
@@ -86,15 +86,15 @@ body {
     background: #ffffff;
 }
 
-.test-data svg [fill='#1E92FD'] {
+.test-data svg [fill="#1E92FD"] {
     fill: #e5ac8a;
 }
 
-.test-data svg [fill='#093445'] {
+.test-data svg [fill="#093445"] {
     fill: #093445;
 }
 
-.test-data svg [fill='#fff'] {
+.test-data svg [fill="#fff"] {
     fill: #ffffff;
 }
 
@@ -140,7 +140,7 @@ span.btn-span {
     fill: #e31e28;
 }
 
-.blk-left>svg [fill] {
+.blk-left > svg [fill] {
     fill: #e31e28;
 }
 
@@ -149,12 +149,12 @@ form:not(.can-send) .btn-ajax,
 form:not(.can-send) .text-blk-btn input,
 .inputs-bottom:not(.can-send) .btn,
 #test:not(.can-next) .test-btns .next-step {
-    background: rgba(227, 30, 40, .3)
+    background: rgba(227, 30, 40, 0.3);
 }
 
 .form-input input,
 .form-file {
-    border-color: rgba(227, 30, 40, .3);
+    border-color: rgba(227, 30, 40, 0.3);
 }
 
 .input-icon {
@@ -182,12 +182,12 @@ form:not(.can-send) .text-blk-btn input,
 @keyframes arrow-color {
     0% {
         fill-opacity: 1;
-        fill: #e31e28
+        fill: #e31e28;
     }
 
     20% {
         fill-opacity: 0.5;
-        fill: #7A7676;
+        fill: #7a7676;
     }
 
     40% {
@@ -209,11 +209,11 @@ form:not(.can-send) .text-blk-btn input,
     background: #e31e28;
 }
 
-.text-blk-input input[type='submit'] {
+.text-blk-input input[type="submit"] {
     background: #e31e28;
 }
 
-.text-blk-input [name='phone'] {
+.text-blk-input [name="phone"] {
     border-color: #e31e28;
 }
 
@@ -236,11 +236,11 @@ a {
 }
 
 span.file-text {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.phone-text>span {
-    border-color: rgba(0, 0, 0, .5);
+.phone-text > span {
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 .swiper-itme:after {
@@ -265,7 +265,7 @@ span.file-text {
 }
 
 input::placeholder {
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .page-title-icon [stroke] {
@@ -276,7 +276,7 @@ input::placeholder {
     background: #093445;
 }
 
-.blk-left-list>span svg [fill] {
+.blk-left-list > span svg [fill] {
     fill: #093445;
 }
 
@@ -285,11 +285,11 @@ input::placeholder {
 }
 
 span.editor a {
-    color: #FFAA2A;
+    color: #ffaa2a;
 }
 
 #interactive:before {
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 @keyframes shadow {
@@ -311,7 +311,7 @@ span.editor a {
 }
 
 .step.active:before {
-    background: rgba(35, 94, 118, .4);
+    background: rgba(35, 94, 118, 0.4);
 }
 
 .phone-text:before,
@@ -333,7 +333,7 @@ a.phone-mobile:before {
     width: auto;
 }
 
-@media (min-width:320px) and (max-width:900px) {
+@media (min-width: 320px) and (max-width: 900px) {
     .input-img-have .input-txt {
         min-height: 61px;
     }
@@ -356,8 +356,13 @@ a.phone-mobile:before {
     width: 50%;
 }
 
-@media (min-width:320px) and (max-width:900px) {
+@media (min-width: 320px) and (max-width: 900px) {
     .textdescc {
         width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    #site > .imp-info {
+        display: none !important;
     }
 }

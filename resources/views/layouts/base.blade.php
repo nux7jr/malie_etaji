@@ -8,7 +8,14 @@
 
     <title>Малые Этажи</title>
 
-    {{-- maps --}}
+    <meta name="description" content="Малые этажи">
+    <meta name="facebook-domain-verification" content="gnveojw4a5geu2vgt61ltivssc8d4m" />
+    <meta property="og:locale" content="ru">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Малые этажи">
+    <meta name="twitter:card" content="summary">
+
+    <!-- maps -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1b463e1c-30e3-4e94-b592-300f2f77b882"
         type="text/javascript"></script>
     <!-- Fonts -->
@@ -27,6 +34,7 @@
     @vite('resources/css/components/mob_menu.css')
     @vite('resources/js/components/search.js')
     @vite('resources/css/components/search.css')
+    @vite('resources/js/general/barba.js')
 
     {{-- favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href=" {{ Vite::image('favicon/apple-touch-icon.png')}}">
@@ -37,21 +45,51 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(67008322, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/67008322" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
 </head>
 
-<body>
-    <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
-    <div id="app" class="app">
-        <div class="container">
-            <div class="main-page">
-                @yield('content')
+<body data-transition="malie-wrap">
+    <div class="page-transition-container">
+        <span class="page-transition"></span>
+        <span class="page-transition"></span>
+    </div>
+    <div data-transition="container">
+        <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
+        <div id="app" class="app">
+            <div class="container">
+                <div class="main-page">
+                    @yield('content')
+                </div>
             </div>
         </div>
+        <x-include.mob_menu></x-include.mob_menu>
+        <x-include.footer></x-include.footer>
+        <x-include.modals></x-include.modals>
+        <x-include.search></x-include.search>
     </div>
-    <x-include.mob_menu></x-include.mob_menu>
-    <x-include.footer></x-include.footer>
-    <x-include.modals></x-include.modals>
-    <x-include.search></x-include.search>
 </body>
 
 </html>

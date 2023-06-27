@@ -1511,7 +1511,7 @@ session_start();
         <div class="me_citymodal_background"></div>
     </div>
 
-    <div style="width: 1100px;display: flex;margin: 0 auto;">
+    <div class='imp-info' style="max-width: 1100px;display: flex;margin: 0 auto;">
         <div style="text-align: center;margin-bottom: 20px;
 }">©
             <?= date('Y') ?>, ООО СК "Малые Этажи" | ОГРН 1210800000652 | ИНН 0816040978| 660135, г. Красноярск, ул.
