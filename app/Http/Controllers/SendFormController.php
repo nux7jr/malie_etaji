@@ -18,16 +18,38 @@ class SendFormController extends Controller
         try {
             $city = City::getCurrentCity(request()->route()->parameter('subdomain') ?? 'krasnoyarsk');
             $validated = $request->validate([
-                'phone'     => ['string','regex:/^(\+7|8)(\ )?\(?[\d]{3}\)?(\ )?[\d]{3}[\-|\ ]?[\d]{2}[\-|\ ]?[\d]{2}/','nullable'],
-                'name'      => 'string|nullable',
-                'question'  => 'string|nullable',
-                'email'     => 'string|nullable'
+                'phone'             => ['string','regex:/^(\+7|8)(\ )?\(?[\d]{3}\)?(\ )?[\d]{3}[\-|\ ]?[\d]{2}[\-|\ ]?[\d]{2}/','nullable'],
+                'name'              => 'string|nullable',
+                'question'          => 'string|nullable',
+                'email'             => 'string|nullable',
+                'house_type'        => 'string|nullable',
+                'house_square'      => 'string|nullable',
+                'house_material'    => 'string|nullable',
+                'house_area'        => 'string|nullable',
+                'house_money'       => 'string|nullable',
+                'type'              => 'string|nullable',
+                'action'            => 'string|nullable',
+                'time'              => 'string|nullable',
+                'connect'           => 'string|nullable',
+                'house-date'        => 'string|nullable',
+                'house-place'       => 'string|nullable',
+                'house-credit'      => 'string|nullable',
             ]);
+            if (isset($validated['action']) && $validated['action'] === 'calc'){
+                $validated['comment'] = self::getCalcQuizMessage($validated, $request);
+                $validated['subject'] = 'Пройден КВИЗ на сайте malie-etaji.ru';
+            }
+            if (isset($validated['action']) && $validated['action'] === 'consut'){
+                $validated['comment'] = self::getCallQuizMessage($validated, $request);
+                $url = parse_url($request->server('HTTP_REFERER'));
+                $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+                $validated['subject'] = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
+            }
             $validated['city'] = $city;
             $this->writeLeads($request,$city, $validated);
             $sender->sendForm($validated, $request);
         }catch (\Exception $err){
-            \Log::error('Ошибка отправки формы: ' . $err->getMessage());
+            \Log::error('Ошибка отправки формы: ' . $err->getMessage() . ' DATA: ' . serialize($request->toArray()));
         }
     }
     private function writeLeads($request, $city, $validated):void
@@ -77,5 +99,42 @@ class SendFormController extends Controller
         $stroke_rewrite = date("d.m.y H:i").';'.$city.';'.''.';'.($validated['phone'] ?? 'empty').';'.($validated['email']??'empty email').';'.$city.';'.($validated['name'] ?? 'noname').';'.''.';;'.urldecode($referer).';'.$_SERVER['HTTP_X_REAL_IP']."\n";
         fwrite($fp,$stroke_rewrite);
         fclose($fp);
+    }
+
+    /**
+     * @param array $inputValidatedData
+     * @param Request $request
+     * @return string
+     */
+    private static function getCalcQuizMessage(array $inputValidatedData, Request $request): string
+    {
+        $message = 'Пройден КВИЗ на сайте malie-etaji.ru' . PHP_EOL;
+        $message .= 'Уникальный идентификатор посетителя: ' . $request->getClientIp() . PHP_EOL;
+        $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
+        $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
+        $message .= 'Способ отправки: ' . ($inputValidatedData['type'] ?? '') . PHP_EOL;
+        $message .= 'Ответы на квиз:' . PHP_EOL;
+        $message .= 'Какой объект планируете строить: ' .
+            ($inputValidatedData['house_type'] ?? '') . PHP_EOL;
+        $message .= 'Какой площади дом вас интересует: ' .
+            ($inputValidatedData['house_square'] ?? '') . PHP_EOL;
+        $message .= 'Материал, из которого планируете строительство дома: ' .
+            ($inputValidatedData['house_material'] ?? '') . PHP_EOL;
+        $message .= 'Имеется ли у вас земельный участок: ' .
+            ($inputValidatedData['house_area'] ?? '') . PHP_EOL;
+        $message .= 'Какой бюджет выделен на строительство: ' .
+            ($inputValidatedData['house_money'] ?? '') . PHP_EOL;
+        return $message;
+    }
+
+    private static function getCallQuizMessage(array $inputValidatedData, Request $request):string
+    {
+        $url = parse_url($request->server('HTTP_REFERER'));
+        $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+        $message = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
+        $message .= 'Уникальный идентификатор посетителя: ' . $request->getClientIp() . PHP_EOL;
+        $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
+        $message .= 'Удобное время для звонка: ' . ($inputValidatedData['time'] ?? '')  . PHP_EOL;
+        return $message;
     }
 }
