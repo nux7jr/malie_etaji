@@ -134,7 +134,7 @@
     "src": "resources/css/components/reels.css"
   },
   "resources/css/components/search.css": {
-    "file": "assets/search-4ed993c7.js",
+    "file": "assets/search-c42ce534.js",
     "isEntry": true,
     "src": "resources/css/components/search.css"
   },
@@ -834,11 +834,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -3520,7 +3520,7 @@
     "src": "resources/js/components/reels.js"
   },
   "resources/js/components/search.js": {
-    "file": "assets/search-c42ce534.js",
+    "file": "assets/search-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/search.js"
   },
