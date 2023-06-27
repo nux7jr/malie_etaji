@@ -149,10 +149,10 @@ function selectClickEvent(select){
     select.addEventListener("click", function(ev) {
         if(document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.contains('dropdown-select-arrow-active') === true){
             document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.add("dropdown-select-arrow-active");
-            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.add('dropdown-select-hide');
+            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.remove('dropdown-select-hide');
         }else {
             document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.remove("dropdown-select-arrow-active");
-            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.remove('dropdown-select-hide');
+            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.add('dropdown-select-hide');
         }
     },true);
 }
