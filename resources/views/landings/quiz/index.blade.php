@@ -1387,7 +1387,7 @@ session_start();
                         <path
                             d="M9.707 2.07L4.432 7.345c-.391.39-1.025.39-1.416 0L.293 4.62a1 1 0 011.415-1.415l2.016 2.016L8.292.654A1 1 0 019.707 2.07z"
                             fill="#093445"></path>
-                      </svg>― условия ипотеки под 4,7%;</span></div>
+                      </svg>― условия ипотеки под 3,0%;</span></div>
                             </div>
                             <div class="blk-right">
                                 <form class="form ajax" method="post" action="/send_modal">
