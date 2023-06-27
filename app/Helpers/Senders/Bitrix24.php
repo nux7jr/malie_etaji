@@ -51,7 +51,9 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
     }
 
     /**
-     * @throws Exception
+     * @param array $data
+     * @param Request $request
+     * @return bool|string
      * @throws GuzzleException
      */
     public function sendForm(array $data, Request $request): bool|string
@@ -304,9 +306,15 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             'fields' => [
                 'NAME'          => self::$data['name'] ?? '',
                 'ADDRESS_CITY'  => self::$data['city'] ?? '',
-                'PHONE'         => self::$phone,
+                'PHONE'         => [[
+                    'VALUE'         => self::$phone,
+                    'VALUE_TYPE'    => 'HOME',
+                ]],
                 'CREATED_BY_ID' => 1,
-                'EMAIL'         => self::$data['email'] ?? '',
+                'EMAIL'         => [[
+                    'VALUE'         => (self::$data['email'] ?? ''),
+                    'VALUE_TYPE'    => 'HOME',
+                ]],
             ],
             'params' => ['REGISTER_SONET_EVENT' => 'Y']
         ];
