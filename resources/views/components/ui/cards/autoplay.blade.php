@@ -8,10 +8,12 @@
     {{ $title }}
   </h2>
   <a
-      @if(empty($link))
-         data-modal_id="modal__cell"
-      @endif
+      @if(str_contains($link, '.pdf'))
+        data-modal_id="modal__cell"
+        class="default__button auto-play__button"
+      @else
       href="{{$link}}" class="default__button auto-play__button"
+      @endif
   >
     {{ $linkText }}
   </a>
