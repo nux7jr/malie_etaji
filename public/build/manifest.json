@@ -23,8 +23,8 @@
   "_reels-657b5833.js": {
     "file": "assets/reels-657b5833.js"
   },
-  "_sender-39a1ccaa.js": {
-    "file": "assets/sender-39a1ccaa.js"
+  "_sender-11aaf2c3.js": {
+    "file": "assets/sender-11aaf2c3.js"
   },
   "_swiper-bundle.min-43b74ea1.js": {
     "css": [
@@ -3475,9 +3475,9 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-d0e712b6.js",
+    "file": "assets/modal-e0481b7f.js",
     "imports": [
-      "_sender-39a1ccaa.js"
+      "_sender-11aaf2c3.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/modal.js"
@@ -3488,34 +3488,28 @@
     "src": "resources/js/components/office-map.js"
   },
   "resources/js/components/order.js": {
-    "file": "assets/order-ca6cf8f8.js",
+    "file": "assets/order-87daaff0.js",
     "imports": [
-      "_sender-39a1ccaa.js"
+      "_sender-11aaf2c3.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/order.js"
   },
   "resources/js/components/peculiarities.js": {
-    "file": "assets/peculiarities-dbd28a94.js",
+    "file": "assets/peculiarities-05cc8bf6.js",
     "imports": [
-      "_sender-39a1ccaa.js"
+      "_sender-11aaf2c3.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/peculiarities.js"
   },
   "resources/js/components/project-item.js": {
-    "file": "assets/project-item-b382df91.js",
-    "imports": [
-      "resources/js/pages/blog-item/blog-item.js"
-    ],
+    "file": "assets/project-item-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/project-item.js"
   },
   "resources/js/components/reels.js": {
-    "file": "assets/reels-b382df91.js",
-    "imports": [
-      "resources/js/pages/blog-item/blog-item.js"
-    ],
+    "file": "assets/reels-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/reels.js"
   },
@@ -3533,10 +3527,7 @@
     "src": "resources/js/components/selection.js"
   },
   "resources/js/components/trusted.js": {
-    "file": "assets/trusted-b382df91.js",
-    "imports": [
-      "resources/js/pages/blog-item/blog-item.js"
-    ],
+    "file": "assets/trusted-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/trusted.js"
   },
@@ -3561,9 +3552,9 @@
     "src": "resources/js/pages/blog-item/blog-item.js"
   },
   "resources/js/pages/blog/blog.js": {
-    "file": "assets/blog-acf27471.js",
+    "file": "assets/blog-5952eb29.js",
     "imports": [
-      "_sender-39a1ccaa.js",
+      "_sender-11aaf2c3.js",
       "_swiper-bundle.min-43b74ea1.js",
       "_reels-657b5833.js",
       "resources/js/components/feedback.js"
