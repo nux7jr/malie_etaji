@@ -19,6 +19,7 @@ class Service implements Arrayable
     self::$card_elements = [
       [
         'filter' => 'escort',
+        'dataAttr' => 'data-ym=ipoteka_about',
         'heading' => 'Сопровождение',
         'icon' => (new Image(
           src: 'service/services-9.svg',
@@ -29,6 +30,7 @@ class Service implements Arrayable
       [
         'filter' => 'escort',
         'heading' => 'Сопровождение',
+        'dataAttr' => 'data-ym=strahovanie_about',
         'icon' => (new Image(
           src: 'service/services-8.svg',
         ))->getSrc(),
@@ -38,6 +40,7 @@ class Service implements Arrayable
       [
         'filter' => 'escort',
         'heading' => 'Сопровождение',
+        'dataAttr' => 'data-ym=podbor_ZU_about',
         'icon' => (new Image(
           src: 'service/services-7.svg',
         ))->getSrc(),
@@ -47,6 +50,7 @@ class Service implements Arrayable
       [
         'filter' => 'escort',
         'heading' => 'Сопровождение',
+        'dataAttr' => 'data-ym=tehnolog',
         'icon' => (new Image(
           src: 'service/services-6.svg',
         ))->getSrc(),
@@ -56,6 +60,7 @@ class Service implements Arrayable
       [
         'filter' => 'design',
         'heading' => 'Проектирование',
+        'dataAttr' => '',
         'icon' => (new Image(
           src: 'service/services-5.svg',
         ))->getSrc(),
@@ -65,6 +70,7 @@ class Service implements Arrayable
       [
         'filter' => 'design',
         'heading' => 'Проектирование',
+        'dataAttr' => '',
         'icon' => (new Image(
           src: 'service/services-4.svg',
         ))->getSrc(),
@@ -74,6 +80,7 @@ class Service implements Arrayable
       [
         'filter' => 'design',
         'heading' => 'Проектирование',
+        'dataAttr' => '',
         'icon' => (new Image(
           src: 'service/services-3.svg',
         ))->getSrc(),
@@ -83,6 +90,7 @@ class Service implements Arrayable
       [
         'filter' => 'building',
         'heading' => 'Строительство',
+        'dataAttr' => '',
         'icon' => (new Image(
           src: 'service/services-2.svg',
         ))->getSrc(),
@@ -92,6 +100,7 @@ class Service implements Arrayable
       [
         'filter' => 'building',
         'heading' => 'Строительство',
+        'dataAttr' => '',
         'icon' => (new Image(
           src: 'service/services-1.svg',
         ))->getSrc(),
@@ -101,6 +110,7 @@ class Service implements Arrayable
       [
         'filter' => 'building',
         'heading' => 'Строительство',
+        'dataAttr' => '',
         'icon' => (new Image(
           src: 'service/services.svg',
         ))->getSrc(),

@@ -32,7 +32,7 @@ $faq = (new Faq())->toArray();
     <a href="#mortgage-calc" class="default__button">
       {{__('Калькулятор ипотеки')}}
     </a>
-    <a class="default__button mortgage-c__button" data-modal_id="modal__income">
+    <a class="default__button mortgage-c__button" data-ym="consult_ipoteka" data-modal_id="modal__income">
       {{__('Получить консультацию')}}
     </a>
   </div>
@@ -104,7 +104,6 @@ $faq = (new Faq())->toArray();
     {{__('Преимущества ипотеки от “Малых этажей”')}}
   </h1>
   <div class="adv__section">
-
     <div class="adv__wrapper">
       <div class="adv__list">
         <div class="adv-card adv-card--first"
@@ -149,15 +148,16 @@ $faq = (new Faq())->toArray();
     </div>
     <div class="adv-call">
       <a class="adv-call__link">
-        <span data-modal_id="modal__income" class="adv-call__text">Нет участка? <br /> Подберем с вами идеальный
+        <span data-modal_id="modal__income" data-ym="podbor_ZU_ipoteka" class="adv-call__text">Нет участка? <br />
+          Подберем с вами идеальный
           вариант</span>
-        <img data-modal_id="modal__income" class="adv-call__img"
+        <img data-modal_id="modal__income" data-ym="podbor_ZU_ipoteka" class="adv-call__img"
           src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
       </a>
       <a class="adv-call__link">
-        <span data-modal_id="modal__income" class="adv-call__text">
+        <span data-modal_id="modal__income" data-ym="raschet_proekta" class="adv-call__text">
           Заказать расчет стоимости <br /> вашего проекта</span>
-        <img data-modal_id="modal__income" class="adv-call__img"
+        <img data-modal_id="modal__income" data-ym="raschet_proekta" class="adv-call__img"
           src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
       </a>
     </div>

@@ -81,14 +81,14 @@ const selectionInit = () => {
     );
 
     // sender
-    selection__form.addEventListener("submit", async (evt) => {
-        evt.preventDefault();
-        const res = await fetch("/kek", {
-            method: "POST",
-            body: new FormData(selection__form),
-        });
-        console.log(res);
-    });
+    // selection__form.addEventListener("submit", async (evt) => {
+    //     evt.preventDefault();
+    //     const res = await fetch("/kek", {
+    //         method: "POST",
+    //         body: new FormData(selection__form),
+    //     });
+    //     console.log(res);
+    // });
 };
 const init = () => {
     selectionInit();

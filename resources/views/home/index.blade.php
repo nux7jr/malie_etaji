@@ -38,7 +38,8 @@ $service = (new Service())->toArray();
                             {{ __('Совместно с банками партнерами мы предлагаем самые выгодные ставки по загородной
                             ипотеке.') }}
                         </p>
-                        <button data-modal_id='modal__cell' class="default__button main-offer__button">{{ __('Узнать
+                        <button data-modal_id='modal__cell' data-ym='ipoteka_glavn'
+                            class="default__button main-offer__button">{{ __('Узнать
                             больше')
                             }}</button>
                     </div>
@@ -77,7 +78,7 @@ $service = (new Service())->toArray();
                     строительства с нами') }}
                 </p>
                 <button class="sec-offer__button">
-                    <img data-modal_id="modal__income" class="sec-offer__img"
+                    <img data-modal_id="modal__income" data-ym="client_tur" class="sec-offer__img"
                         src="{{ Vite::asset('resources/images/icons/offer_arr.svg') }}" alt="offer">
                 </button>
             </div>

@@ -7,10 +7,9 @@
 
 <section class="selection">
   <div class="selection__wrapper">
-    <form class="selection__form">
+    <form class="selection__form" id="selection-form">
       <h1 class="selection__heading">{{__('Подберите себе дом по комфорту!')}}</h1>
       <div class="selection__option">
-
         <div class="selection__item">
           <label class="selection__label" for="house-list">Линейка домов</label>
           <x-ui.lists.dropdown id="house-list" name="house-list">
@@ -115,7 +114,8 @@
             </div>
           </div>
         </div>
-        <button class="default__button selection__submit" type="button" data-modal_id="modal__cell">{{__('Выбрать
+        <button class="default__button selection__submit" type="button" data-ym="podbor_doma"
+          data-additional_form='selection-form' data-modal_id="modal__cell">{{__('Выбрать
           дом')}}</button>
       </div>
     </form>

@@ -15,11 +15,11 @@
             </p>
         </div>
         <div class="order-consultation__item sender">
-            <form class="order-consultation__form sender__item" action="">
+            <form class="order-consultation__form sender__item">
                 @csrf
                 <input class="order-consultation__input" placeholder="Имя" name="name" type="text" required>
                 <input class="order-consultation__input" placeholder="Телефон" name="phone" type="text" required>
-                <button class="order-consultation__submit">
+                <button class="order-consultation__submit" data-ym="consult_ipoteka">
                     <img src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="submit">
                 </button>
             </form>

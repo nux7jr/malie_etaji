@@ -23,8 +23,8 @@
   "_reels-657b5833.js": {
     "file": "assets/reels-657b5833.js"
   },
-  "_sender-11aaf2c3.js": {
-    "file": "assets/sender-11aaf2c3.js"
+  "_sender-39a1ccaa.js": {
+    "file": "assets/sender-39a1ccaa.js"
   },
   "_swiper-bundle.min-43b74ea1.js": {
     "css": [
@@ -134,7 +134,7 @@
     "src": "resources/css/components/reels.css"
   },
   "resources/css/components/search.css": {
-    "file": "assets/search-c42ce534.js",
+    "file": "assets/search-4ed993c7.js",
     "isEntry": true,
     "src": "resources/css/components/search.css"
   },
@@ -3475,9 +3475,9 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-8fa2d358.js",
+    "file": "assets/modal-d0e712b6.js",
     "imports": [
-      "_sender-11aaf2c3.js"
+      "_sender-39a1ccaa.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/modal.js"
@@ -3488,17 +3488,17 @@
     "src": "resources/js/components/office-map.js"
   },
   "resources/js/components/order.js": {
-    "file": "assets/order-52b6dbb0.js",
+    "file": "assets/order-ca6cf8f8.js",
     "imports": [
-      "_sender-11aaf2c3.js"
+      "_sender-39a1ccaa.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/order.js"
   },
   "resources/js/components/peculiarities.js": {
-    "file": "assets/peculiarities-5baeb72f.js",
+    "file": "assets/peculiarities-dbd28a94.js",
     "imports": [
-      "_sender-11aaf2c3.js"
+      "_sender-39a1ccaa.js"
     ],
     "isEntry": true,
     "src": "resources/js/components/peculiarities.js"
@@ -3520,12 +3520,12 @@
     "src": "resources/js/components/reels.js"
   },
   "resources/js/components/search.js": {
-    "file": "assets/search-4ed993c7.js",
+    "file": "assets/search-c42ce534.js",
     "isEntry": true,
     "src": "resources/js/components/search.js"
   },
   "resources/js/components/selection.js": {
-    "file": "assets/selection-a399e3a6.js",
+    "file": "assets/selection-d74144d2.js",
     "imports": [
       "_nouislider-1ddc2e5b.js"
     ],
@@ -3561,9 +3561,9 @@
     "src": "resources/js/pages/blog-item/blog-item.js"
   },
   "resources/js/pages/blog/blog.js": {
-    "file": "assets/blog-5952eb29.js",
+    "file": "assets/blog-acf27471.js",
     "imports": [
-      "_sender-11aaf2c3.js",
+      "_sender-39a1ccaa.js",
       "_swiper-bundle.min-43b74ea1.js",
       "_reels-657b5833.js",
       "resources/js/components/feedback.js"

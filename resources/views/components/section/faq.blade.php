@@ -35,7 +35,7 @@ $techfaq = json_decode($faqs, true)
       </div>
     </div>
     @endforeach
-    <button data-modal_id="modal__call" class="default__button faq__button mobile-block">
+    <button data-modal_id="modal__call" data-ym="napisat" class="default__button faq__button mobile-block">
       {{__('Не нашли ответ на свой вопрос? Задайте его специалисту.')}}
     </button>
   </div>
