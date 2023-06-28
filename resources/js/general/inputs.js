@@ -31,6 +31,7 @@ function addDropdowns(){
             if (selElmnt.options[j].getAttribute('percent') !== ''){
                 c.style = "display:flex;flex-wrap:row;";
                 c.setAttribute("percent",selElmnt.options[j].getAttribute('percent'));
+                c.setAttribute("name",selElmnt.options[j].innerHTML);
                 const h4 = document.createElement('h4');
                 h4.classList.add('red_color');
                 h4.innerText = 'от ' + selElmnt.options[j].getAttribute('percent') + '%';
@@ -138,11 +139,13 @@ function addListenerSelectCalc (e) {
     const selected = document.querySelector('.dropdown-select-selected');
     selected.removeAttribute('class');
     const tempThis = this.innerHTML;
-    const tempPercent = this.getAttribute('percent')
+    const tempPercent = this.getAttribute('percent');
+    const tempName = this.getAttribute('name');
     selected.removeAttribute('class');
     this.setAttribute('percent',selected.getAttribute('percent'));
-
+    this.setAttribute('name', selected.getAttribute('name'));
     selected.setAttribute('percent',tempPercent);
+    selected.setAttribute('name',tempName);
     this.innerHTML = selected.innerHTML;
     selected.innerHTML = tempThis;
     selected.classList.add('dropdown-select-selected');
