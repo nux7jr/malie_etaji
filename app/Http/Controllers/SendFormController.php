@@ -34,6 +34,10 @@ class SendFormController extends Controller
                 'house-date'        => 'string|nullable',
                 'house-place'       => 'string|nullable',
                 'house-credit'      => 'string|nullable',
+                'mortgage'          => 'string|nullable',
+                'price'             => 'numeric',
+                'start-payment'     => 'numeric',
+                'loan-term'         => 'numeric',
             ]);
             if (isset($validated['action']) && $validated['action'] === 'calc'){
                 $validated['comment'] = self::getCalcQuizMessage($validated, $request);

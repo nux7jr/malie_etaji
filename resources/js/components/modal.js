@@ -79,6 +79,12 @@ document.addEventListener("DOMContentLoaded", (evt) => {
                     modalsState.additionalForm = new FormData(
                         document.getElementById(`${form_id}`)
                     );
+                    if (modalsState.additionalForm.has('mortgage')){
+                        modalsState.additionalForm.set(
+                            'mortgage',
+                            document.getElementById(`${form_id}`).querySelector('.dropdown-select-selected').getAttribute('name')
+                        );
+                    }
                 } else {
                     modalsState.additionalForm = {};
                 }
