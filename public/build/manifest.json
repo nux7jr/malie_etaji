@@ -834,11 +834,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -3433,7 +3433,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-df9a1fd4.js",
+    "file": "assets/app-c9b0d0ea.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
