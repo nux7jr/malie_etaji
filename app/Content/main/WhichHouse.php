@@ -29,7 +29,7 @@ class WhichHouse implements Arrayable
                 'text'     => __('О компании Малые этажи'),
                 'background' => null,
                 'link' => (new Link(null, link: "/about", text: 'Подробнее'))->toArray(),
-                'video' => '/video/main/home.mp4'
+                'video' => '/video/main/home.mp4',
             ],
             [
                 'text'     => __('Рассчитайте ипотеку'),
@@ -37,7 +37,7 @@ class WhichHouse implements Arrayable
                     src: 'home/mont.png',
                 ))->getSrc(),
                 'link' => (new Link(null, link: "/mortgage/#mortgage-programs", text: 'Рассчитать'))->toArray(),
-                'video' => ''
+                'video' => '',
             ],
 
         ];

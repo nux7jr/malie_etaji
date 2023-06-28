@@ -7,7 +7,7 @@
 
 
 <section class="constructor" id="constructor">
-    <form class="constructor__form" id="constructor__form">
+    <form class="constructor__form" id='constructor__form'>
         <h1 class="constructor__heading">
             {{ __('Конструктор дома') }}
         </h1>
@@ -203,8 +203,6 @@
                 <div class="ganeral-select house-type">
                     <h2 class="ganeral-header">
                         {{ __('Актуальность ипотеки или кредита') }}
-
-
                     </h2>
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
@@ -230,8 +228,7 @@
                     <button type="button" class="constructor__button real-back">
                         <img src="{{ Vite::asset('resources/images/components/button.svg') }}" alt="button">
                     </button>
-                    <button type="button" class="default__button constructor__next" data-modal_id="modal__cell"
-                        data-additional_form="constructor__form" data-ym="konstruktor">
+                    <button type="button" class="default__button constructor__next" data-modal_id="modal__cell">
                         {{ __('Завершить') }}
                     </button>
                 </div>

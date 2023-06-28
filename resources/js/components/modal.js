@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", (evt) => {
         },
         false
     );
+
     // const allButtons = document.querySelectorAll("[data-modal_id]");
     // allButtons.forEach((elem) => {
     //     elem.onclick = (evt) => {

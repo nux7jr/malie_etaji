@@ -99,7 +99,8 @@ $service = (new Service())->toArray();
     <div class="which-house__wrapper">
         @foreach($which_house->toArray() as $item) <x-ui.cards.autoplay title="{{$item['text']}}"
             background="{{$item['background']}}" linkText="{{$item['link']['text']}}" link="{{$item['link']['link']}}"
-            video="{{$item['video']}}">
+            video="{{$item['video']}}"
+        >
         </x-ui.cards.autoplay>
         @endforeach
     </div>
