@@ -7,7 +7,12 @@
   <h2 class="auto-play__heading">
     {{ $title }}
   </h2>
-  <a href="{{$link}}" class="default__button auto-play__button">
+  <a
+      @if(empty($link))
+         data-modal_id="modal_id"
+      @endif
+      href="{{$link}}" class="default__button auto-play__button"
+  >
     {{ $linkText }}
   </a>
 </article>
