@@ -6,9 +6,7 @@ document.addEventListener("DOMContentLoaded", (evt) => {
         evt.preventDefault();
 
         sender(projectReview).then((res) => {
-            if (res.status) {
-                console.log("yandex metrik");
-            }
+            ym(67008322, "reachGoal", "leads");
             const form = document.querySelector(".datepiker__user-info");
             const thx = document.querySelector(".review__thx");
             form.style.display = "none";

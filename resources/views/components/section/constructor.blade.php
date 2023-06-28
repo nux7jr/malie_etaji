@@ -228,8 +228,8 @@
                     <button type="button" class="constructor__button real-back">
                         <img src="{{ Vite::asset('resources/images/components/button.svg') }}" alt="button">
                     </button>
-                    <button type="button" class="default__button constructor__next"
-                        data-additional_form='constructor__form' data-modal_id="modal__cell">
+                    <button type="button" class="default__button constructor__next" data-ym="konstruktor"
+                        data-modal_id="modal__cell">
                         {{ __('Завершить') }}
                     </button>
                 </div>
@@ -262,11 +262,11 @@
             <img class="constructor-call__img" src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}"
                 alt="Онлайн заявка на ипотеку" />
         </a>
-        <button data-modal_id="modal__income" class="constructor-call__button">
-            <span data-modal_id="modal__income" class="constructor-call__text">
+        <button data-modal_id="modal__income" data-ym="podbor_uchastka" class="constructor-call__button">
+            <span data-modal_id="modal__income" data-ym="podbor_uchastka" class="constructor-call__text">
                 {{ __('Помощь в подборе участка') }}
             </span>
-            <img data-modal_id="modal__income" class="constructor-call__img"
+            <img data-modal_id="modal__income" data-ym="podbor_uchastka" class="constructor-call__img"
                 src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="Онлайн заявка на ипотеку" />
         </button>
     </div>

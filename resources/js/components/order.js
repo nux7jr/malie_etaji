@@ -11,9 +11,8 @@ document.addEventListener("DOMContentLoaded", (evt) => {
     order_form.addEventListener("submit", (evt) => {
         evt.preventDefault();
         sender(order_form).then((res) => {
-            if (res.status == 500) {
-                console.log("yandex metrik");
-            }
+            ym(67008322, "reachGoal", "leads");
+            ym(67008322, "reachGoal", "consult_ipoteka");
             order_wrapper.style.display = "none";
             order_thx.style.display = "flex";
         });

@@ -34,7 +34,8 @@
                 percent="{{$percent = 15}}" label="{{__('Первоначальный взнос, ₽')}}"></x-ui.inputs.range>
             <x-ui.inputs.range name="loan-term" min="{{$min = 10}}" max="{{$max = 30}}"
                 label="{{__('Срок кредита, лет')}}"></x-ui.inputs.range>
-            <x-ui.buttons.button>
+            <x-ui.buttons.button data-additional_form="mortgage-forms" data-modal_id="modal__income"
+                data-ym="calculator_ipoteka" type='button'>
                 {{__('Получить одобрение онлайн')}}
             </x-ui.buttons.button>
         </div>
@@ -56,7 +57,8 @@
         <div class="mortgage-calculator-right block">
             <h2 class="block__heading">{{__('Хочешь свою ставку?')}}</h2>
 
-            <h4 class="m_padding">{{__('Выгода от снижения ставки - ')}}<span class="millions">до 2&nbsp;000&nbsp;000&nbsp;</span><span class="millions">₽</span> </h4>
+            <h4 class="m_padding">{{__('Выгода от снижения ставки - ')}}<span class="millions">до
+                    2&nbsp;000&nbsp;000&nbsp;</span><span class="millions">₽</span> </h4>
 
             <div>
                 <div class="label_percents_toggle space__between">
@@ -79,10 +81,12 @@
                     <h4 class="small__heading red_color">{{__('до 2,5% от базовой ставки')}}</h4>
                 </div>
                 <h4 class="clarification">
-                    {{__('Услуга «Своя ставка» поможет снизить платежи по ипотеке на весь срок. Вы платите один раз, а экономите каждый месяц. ')}}
+                    {{__('Услуга «Своя ставка» поможет снизить платежи по ипотеке на весь срок. Вы платите один раз, а
+                    экономите каждый месяц. ')}}
                 </h4>
                 <h4 class="black__heading">
-                    {{__('Конечный расчет по ипотеке с услугой “Своя ставка” вы можете узнать у ипотечного брокера “Малые этажи”')}}
+                    {{__('Конечный расчет по ипотеке с услугой “Своя ставка” вы можете узнать у ипотечного брокера
+                    “Малые этажи”')}}
                 </h4>
             </div>
 

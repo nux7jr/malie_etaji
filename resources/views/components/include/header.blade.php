@@ -129,12 +129,13 @@
                 </a>
             </div>
             <div class="header__call">
-                <button data-modal_id='modal__income' class="header__button call__button">
+                <button data-modal_id='modal__income' data-ym="call_zakaz" class="header__button call__button">
                     <img class="call__img" src="{{ Vite::asset('resources/images/icons/call.svg') }}"
                         alt=" {{ __('Заказать звонок') }}">
                     {{ __('Заказать звонок') }}
                 </button>
-                <a class="header__button phone__link" href="tel:++7 (391) 205-3-444">+7 (391) 205-3-444</a>
+                <a class="header__button phone__link" onclick='ym(67008322, "reachGoal", "leads")'
+                    href="tel:++7 (391) 205-3-444">+7 (391) 205-3-444</a>
             </div>
         </nav>
     </div>
