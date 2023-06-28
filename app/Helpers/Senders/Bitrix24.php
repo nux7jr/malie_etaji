@@ -38,6 +38,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
     private static int|string|null $totalDeals;
     private static ?string $comment;
     private static string $subdomainBitrix;
+    private static ?string $houseSquareValueForBitrixDealInput;
     public function __construct(string $subdomain_bitrix, string $base_uri, ?int $direction){
         parent::__construct();
         self::$guzzle = new Client(
@@ -48,10 +49,13 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         );
         self::$direction = $direction ?? 46; //46 is default value
         self::$subdomainBitrix = $subdomain_bitrix;
+        self::$houseSquareValueForBitrixDealInput = null;
     }
 
     /**
-     * @throws Exception
+     * @param array $data
+     * @param Request $request
+     * @return bool|string
      * @throws GuzzleException
      */
     public function sendForm(array $data, Request $request): bool|string
@@ -157,13 +161,23 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
     }
     private static function setDefaultComment():void
     {
-        self::$comment = 'Заявка с сайта malie-etaji.ru ';
+        $url = parse_url(self::$request->server('HTTP_REFERER'));
+        $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+        self::$comment = 'Заявка с сайта ' . $url . ' ';
         !empty(self::$data['subject']) ? self::$comment .= self::$data['subject'] : '';
-        self::$comment .= "\nУникальный идентификатор посетителя - " . \Request::getClientIp();
+        self::$comment .= "\nУникальный идентификатор посетителя - " . self::$request->getClientIp();
         !empty(self::$data['city']) ? self::$comment .= "\nГород доставки: " . self::$data['city'] : '';
         !empty(self::$data['name']) ? self::$comment .= "\nИмя: " . self::$data['name'] : '';
         self::$comment .= "\nТелефон: " . self::$phone;
+        !empty(self::$data['email']) ? self::$comment .= "\nEmail: " . self::$data['email'] : '';
+        !empty(self::$data['connect']) ? self::$comment .= "\nСпособ связи: " . self::$data['connect'] : '';
+        !empty(self::$data['question']) ? self::$comment .= "\nВопрос: " . self::$data['question'] : '';
         self::$comment .= "\nURL с которого была отправлена форма: " . self::$request->server('HTTP_REFERER') . "\n";
+        !empty(self::$data['house_type']) ? self::$comment .= "\nТип дома: " . self::$data['house_type'] : '';
+        !empty(self::$data['house_square']) ? self::$comment .= "\nРазмер дома: " . self::$data['house_square'] : '';
+        !empty(self::$data['house-date']) ? self::$comment .= "\nСрок строительства: " . self::$data['house-date'] : '';
+        !empty(self::$data['house-place']) ? self::$comment .= "\nНаличие участка: " . self::$data['house-place'] : '';
+        !empty(self::$data['house-credit']) ? self::$comment .= "\nАктуальность ипотеки: " . self::$data['house-credit'] : '';
         self::$comment .= serialize(self::$data['else']);
     }
     /**
@@ -207,9 +221,6 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         if (!empty(self::$data['city'])){
             $namelead[] = self::$data['city'];
         }
-        if (parse_url(self::$request->server('HTTP_REFERER'))['path'] === '/quiz'){
-            $namelead[] = 'Пройден КВИЗ на сайте malie-etaji.ru';
-        }
         $namelead[] = self::$phone;
         if (!empty(self::$data['subject'])){
             $namelead[] = self::$data['subject'];
@@ -231,6 +242,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
                 'CATEGORY_ID' => self::$direction,
                 'UF_CRM_1651563289996' => self::$data['city'],
                 'UF_CRM_1681873184' => $referer,
+                'UF_CRM_1663672202747' => self::$houseSquareValueForBitrixDealInput,
             ],
             'params' => ['REGISTER_SONET_EVENT' => 'Y'],
         ];
@@ -304,9 +316,15 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             'fields' => [
                 'NAME'          => self::$data['name'] ?? '',
                 'ADDRESS_CITY'  => self::$data['city'] ?? '',
-                'PHONE'         => self::$phone,
+                'PHONE'         => [[
+                    'VALUE'         => self::$phone,
+                    'VALUE_TYPE'    => 'HOME',
+                ]],
                 'CREATED_BY_ID' => 1,
-                'EMAIL'         => self::$data['email'] ?? '',
+                'EMAIL'         => [[
+                    'VALUE'         => (self::$data['email'] ?? ''),
+                    'VALUE_TYPE'    => 'HOME',
+                ]],
             ],
             'params' => ['REGISTER_SONET_EVENT' => 'Y']
         ];
@@ -340,15 +358,48 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         if (!empty($data['phone'])){
             self::$phone = self::phoneFormatter($data['phone']);
         }
+        if (!empty($data['name'])){
+            $normalizedData['name'] = $data['name'];
+        }
+        if (!empty($data['email'])){
+            $normalizedData['email'] = $data['email'];
+        }
+        if (!empty($data['connect'])){
+            $normalizedData['connect'] = $data['connect'];
+        }
+        if (!empty($data['question'])){
+            $normalizedData['question'] = $data['question'];
+        }
+        if (!empty($data['house_type'])){
+            $normalizedData['house_type'] = $data['house_type'];
+        }
+        if (!empty($data['house_square'])){
+            $normalizedData['house_square'] = $data['house_square'];
+        }
+        if (!empty($data['house_money'])){
+            $normalizedData['house_money'] = $data['house_money'];
+        }
+        if (!empty($data['house-date'])){
+            $normalizedData['house-date'] = $data['house-date'];
+        }
+        if (!empty($data['house-place'])){
+            $normalizedData['house-place'] = $data['house_money'];
+        }
+        if (!empty($data['house-credit'])){
+            $normalizedData['house-credit'] = $data['house-credit'];
+        }
         //TO DO FIX IT!
 //        else{
 //            throw new Exception('empty $phone! data:' . serialize($data));
 //        }
-        if (isset($data['comment'])){
+        if (!empty($data['comment'])){
             self::$comment = $data['comment'];
         }
-        if (isset($data['subject'])){
+        if (!empty($data['subject'])){
             $normalizedData['subject'] = $data['subject'];
+        }
+        if (isset($data['action']) && $data['action'] === 'calc' && !empty($data['house_square'])){
+            self::$houseSquareValueForBitrixDealInput = $data['house_square'];
         }
         $tempRequestData = self::$request->all();
         foreach ($normalizedData as $key => $item){

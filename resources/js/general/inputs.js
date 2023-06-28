@@ -124,35 +124,41 @@ if (calc !== null){
 calcDropdownEvents(calc);
 function calcDropdownEvents(calc){
     if (calc !== null){
+        document.querySelectorAll('.mortgage-calculator .dropdown-select-items div').forEach((itm) => {
+            try {
+                itm.removeEventListener('click', addListenerSelectCalc,true);
+            }catch (err){}
+        });
         calc.querySelectorAll('.dropdown-select-items div').forEach((evt) => {
-            evt.addEventListener('click', function (e) {
-                const selected = document.querySelector('.dropdown-select-selected');
-                selected.removeAttribute('class');
-                const tempThis = this.innerHTML;
-                const tempPercent = this.getAttribute('percent')
-                selected.removeAttribute('class');
-                this.setAttribute('percent',selected.getAttribute('percent'));
-
-                selected.setAttribute('percent',tempPercent);
-                this.innerHTML = selected.innerHTML;
-                selected.innerHTML = tempThis;
-                selected.classList.add('dropdown-select-selected');
-                const newSelected = document.querySelector('.dropdown-select-selected');
-                selectClickEvent(newSelected);
-                renderCalc();
-                calcDropdownEvents(document.querySelector('.mortgage-calculator'));
-            });
+            evt.addEventListener('click', addListenerSelectCalc);
         });
     }
+}
+function addListenerSelectCalc (e) {
+    const selected = document.querySelector('.dropdown-select-selected');
+    selected.removeAttribute('class');
+    const tempThis = this.innerHTML;
+    const tempPercent = this.getAttribute('percent')
+    selected.removeAttribute('class');
+    this.setAttribute('percent',selected.getAttribute('percent'));
+
+    selected.setAttribute('percent',tempPercent);
+    this.innerHTML = selected.innerHTML;
+    selected.innerHTML = tempThis;
+    selected.classList.add('dropdown-select-selected');
+    const newSelected = document.querySelector('.dropdown-select-selected');
+    selectClickEvent(newSelected);
+    renderCalc();
+    calcDropdownEvents(document.querySelector('.mortgage-calculator'));
 }
 function selectClickEvent(select){
     select.addEventListener("click", function(ev) {
         if(document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.contains('dropdown-select-arrow-active') === true){
             document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.add("dropdown-select-arrow-active");
-            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.add('dropdown-select-hide');
+            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.remove('dropdown-select-hide');
         }else {
             document.querySelector('.mortgage-calculator .dropdown-select-selected').classList.remove("dropdown-select-arrow-active");
-            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.remove('dropdown-select-hide');
+            document.querySelector('.mortgage-calculator .dropdown-select-items').classList.add('dropdown-select-hide');
         }
     },true);
 }

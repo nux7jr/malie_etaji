@@ -427,26 +427,26 @@ $(document).ready(function() {
         var actions = $("input[name='action']").val();
         var form = $(this).parents("form");
 
-        var test1 = $('input[name="test[1]"]:checked').closest('label').text().trim();
-        var test2 = $('input[name="test[2]"]:checked').closest('label').text().trim();
-        var test3 = $('input[name="test[3]"]:checked').closest('label').text().trim();
-        var test4 = $('input[name="test[4]"]:checked').closest('label').text().trim();
+        var test1 = $('input[name="house_type"]:checked').closest('label').text().trim();
+        var test2 = $('input[name="house_square"]:checked').closest('label').text().trim();
+        var test3 = $('input[name="house_material"]:checked').closest('label').text().trim();
+        var test4 = $('input[name="house_area"]:checked').closest('label').text().trim();
 
-        var test5 = $('input[name="test[5]"]:checked').closest('label').text().trim();
+        var test5 = $('input[name="house_money"]:checked').closest('label').text().trim();
 
         var phones = $(".window[data-step='end'] input[name='phone']").val();
-        var calls = $('input[name="call"]:checked').closest('label').text().trim();
+        var calls = $('input[name="type"]:checked').closest('label').text().trim();
         var emails = $(".window[data-step='end'] input[name='email']").val();
 
         var city = $('.city_desctop').text();
         var token = $('input[name="_token"]').val();
 
-        if(actions == 'test') {
+        if(actions == 'calc') {
 
             $.ajax({
               type: 'POST',
               url: '/send_modal',
-              data: {'actions': actions, 'test[1]': test1, 'test[2]': test2, 'test[3]': test3, 'test[4]': test4, 'test[5]': test5, 'call': calls, 'phone': phones, 'email': emails, 'city': city,'_token':token},
+              data: {'action': actions, 'house_type': test1, 'house_square': test2, 'house_material': test3, 'house_area': test4, 'house_money': test5, 'type': calls, 'phone': phones, 'email': emails, 'city': city,'_token':token},
               success: function(result){
                     ym(67008322,'reachGoal','obrashenie');
                     setTimeout(function(){ window.location.href = "https://малые-этажи.рф/taplink";  }, 300);
@@ -492,12 +492,12 @@ $(document).ready(function() {
         var comments = form.parentNode.querySelector("input[name='time']").value;
 
         var city = $('.city_desctop').text();
-
+        var token = $('input[name="_token"]').val();
         $.ajax({
           type: 'POST',
           url: '/send_modal',
           dataType: 'json',
-          data: {'actions': action, 'phone': phones, 'time': comments, 'city': city},
+          data: {'action': action, 'phone': phones, 'time': comments, 'city': city, '_token':token},
           success: function(data){
 
                 var open_modal = $(".modal.is-open")

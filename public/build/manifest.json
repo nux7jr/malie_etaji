@@ -44,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-75ad79e8.css",
+    "file": "assets/app-dd34b6f7.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -134,7 +134,7 @@
     "src": "resources/css/components/reels.css"
   },
   "resources/css/components/search.css": {
-    "file": "assets/search-4ed993c7.js",
+    "file": "assets/search-c42ce534.js",
     "isEntry": true,
     "src": "resources/css/components/search.css"
   },
@@ -3433,7 +3433,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-0565dc8f.js",
+    "file": "assets/app-df9a1fd4.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -3520,7 +3520,7 @@
     "src": "resources/js/components/reels.js"
   },
   "resources/js/components/search.js": {
-    "file": "assets/search-c42ce534.js",
+    "file": "assets/search-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/search.js"
   },
@@ -3539,6 +3539,11 @@
     ],
     "isEntry": true,
     "src": "resources/js/components/trusted.js"
+  },
+  "resources/js/general/barba.js": {
+    "file": "assets/barba-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/general/barba.js"
   },
   "resources/js/pages/about/about.js": {
     "file": "assets/about-dc128364.js",

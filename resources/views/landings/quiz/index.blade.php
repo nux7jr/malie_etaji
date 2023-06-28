@@ -354,14 +354,14 @@ session_start();
                 </div>
                 <div class="windows" data-step='1'>
                     <form method="post" action="/send_modal">
-                        <input type='hidden' name='action' value='test'>
+                        <input type='hidden' name='action' value='calc'>
 
                         <div class='window active' data-step='1' data-image='have' data-content='no'>
                             <div class='window-title q_1'>Какой объект планируете строить?</div>
                             <div class='window-content'>
                                 <div class='window-left'>
                                     <div class='window-left-wrp'><label class='input radio input-img-have  '>
-                                            <input type='radio' name='test[1]' value='Одноэтажный дом'>
+                                            <input type='radio' name='house_type' value='Одноэтажный дом'>
                                             <div class='input-img'><span><img src='landings/static/img/one.png'></span></div>
                                             <div class='input-txt'>
                                                 <div class='input-icon'>
@@ -369,7 +369,7 @@ session_start();
                                                 <div class='input-text'>Одноэтажный дом</div>
                                             </div>
                                         </label><label class='input radio input-img-have  '>
-                                            <input type='radio' name='test[1]' value='Двухэтажный дом'>
+                                            <input type='radio' name='house_type' value='Двухэтажный дом'>
                                             <div class='input-img'><span><img src='landings/static/img/two.png'></span></div>
                                             <div class='input-txt'>
                                                 <div class='input-icon'>
@@ -380,7 +380,7 @@ session_start();
 
                                             </div>
                                         </label><label class='input radio input-img-have  '>
-                                            <input type='radio' name='test[1]' value='Барнхаус'>
+                                            <input type='radio' name='house_type' value='Барнхаус'>
                                             <div class='input-img'><span><img src='landings/static/img/barn.png'></span></div>
                                             <div class='input-txt'>
                                                 <div class='input-icon'>
@@ -430,7 +430,7 @@ session_start();
                             <div class='window-content'>
                                 <div class='window-left'>
                                     <div class='window-left-wrp'><label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[2]' value='До 80 м2'>
+                                            <input type='radio' name='house_square' value='До 80 м2'>
 
                                             <div class='input-txt'>
                                                 <div class='input-icon'>
@@ -441,7 +441,7 @@ session_start();
 
                                             </div>
                                         </label><label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[2]' value='От 80 до 100 м2'>
+                                            <input type='radio' name='house_square' value='От 80 до 100 м2'>
 
                                             <div class='input-txt'>
                                                 <div class='input-icon'>
@@ -452,7 +452,7 @@ session_start();
 
                                             </div>
                                         </label><label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[2]' value='Более 100 м2'>
+                                            <input type='radio' name='house_square' value='Более 100 м2'>
 
                                             <div class='input-txt'>
                                                 <div class='input-icon'>
@@ -464,7 +464,7 @@ session_start();
                                             </div>
                                         </label>
                                         <label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[2]' value='Пока не решил'>
+                                            <input type='radio' name='house_square' value='Пока не решил'>
 
                                             <div class='input-txt'>
                                                 <div class='input-icon'>
@@ -534,7 +534,7 @@ session_start();
                                 <div class='window-left'>
                                     <div class='window-left-wrp'>
                                         <label class='input radio input-img-have  '>
-                                            <input type='radio' name='test[3]' value='Пенобетон/Газобетон'>
+                                            <input type='radio' name='house_material' value='Пенобетон/Газобетон'>
                                             <div class='input-img'><span><img src='landings/static/img/penobeton.png'></span></div>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
@@ -543,7 +543,7 @@ session_start();
                                         </label>
 
                                         <label class='input radio input-img-have  '>
-                                            <input type='radio' name='test[3]' value='Брус'>
+                                            <input type='radio' name='house_material' value='Брус'>
                                             <div class='input-img'><span><img src='landings/static/img/brus.png'></span></div>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
@@ -552,7 +552,7 @@ session_start();
                                         </label>
 
                                         <label class='input radio input-img-have  '>
-                                            <input type='radio' name='test[3]' value='Каркасный'>
+                                            <input type='radio' name='house_material' value='Каркасный'>
                                             <div class='input-img'><span><img src='landings/static/img/karkas.png'></span></div>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
@@ -561,7 +561,7 @@ session_start();
                                         </label>
 
                                         <label class='input radio input-img-have  '>
-                                            <input type='radio' name='test[3]' value='SIP-панели'>
+                                            <input type='radio' name='house_material' value='SIP-панели'>
                                             <div class='input-img'><span><img src='landings/static/img/nereshil.png'></span></div>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
@@ -569,7 +569,7 @@ session_start();
                                             </div>
                                         </label>
                                         <label class="input radio   input-type-radio witm">
-                                            <input type="radio" name="test[3]" value="Пока не решил">
+                                            <input type="radio" name="house_material" value="Пока не решил">
                                             <div class="input-txt">
                                                 <div class="input-icon"></div>
                                                 <div class="input-text">Пока не решил</div>
@@ -623,14 +623,14 @@ session_start();
                                 <div class='window-left'>
                                     <div class='window-left-wrp'>
                                         <label class='input radio  input-type-radio'>
-                                            <input type='radio' name='test[4]' value='Да'>
+                                            <input type='radio' name='house_area' value='Да'>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
                                                 <div class='input-text'>Да</div>
                                             </div>
                                         </label>
                                         <label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[4]' value='Нет'>
+                                            <input type='radio' name='house_area' value='Нет'>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
                                                 <div class='input-text'>Нет</div>
@@ -689,7 +689,7 @@ session_start();
                                     <div class='window-left-wrp'>
 
                                         <label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[5]' value='до 4-х млн рублей'>
+                                            <input type='radio' name='house_money' value='до 4-х млн рублей'>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
                                                 <div class='input-text'>до 4-х млн рублей</div>
@@ -697,7 +697,7 @@ session_start();
                                         </label>
 
                                         <label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[5]' value='4-6 млн рублей'>
+                                            <input type='radio' name='house_money' value='4-6 млн рублей'>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
                                                 <div class='input-text'>4-6 млн рублей</div>
@@ -705,7 +705,7 @@ session_start();
                                         </label>
 
                                         <label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[5]' value='6-10 млн рублей'>
+                                            <input type='radio' name='house_money' value='6-10 млн рублей'>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
                                                 <div class='input-text'>6-10 млн рублей</div>
@@ -713,7 +713,7 @@ session_start();
                                         </label>
 
                                         <label class='input radio   input-type-radio'>
-                                            <input type='radio' name='test[5]' value='от 10 млн рублей'>
+                                            <input type='radio' name='house_money' value='от 10 млн рублей'>
                                             <div class='input-txt'>
                                                 <div class='input-icon'></div>
                                                 <div class='input-text'>От 10 млн рублей</div>
@@ -776,13 +776,13 @@ session_start();
                                     <div class='form-inputs'>
                                         <div class='form-title'><span class='b2'>Куда прислать подбор дома? </span></div>
                                         <div class='chekboxs'><label>
-                                                <input type='radio' name='call' value='Пришлите в WhatsApp'>
+                                                <input type='radio' name='type' value='Пришлите в WhatsApp'>
                                                 <div class='radio-bot'></div>
                                                 <div class='radio-text'>Пришлите в <span class='b1'>WhatsApp</span></div>
                                             </label>
 
                                             <label>
-                                                <input type='radio' name='call' value='Перезвоните, у меня остались вопросы'>
+                                                <input type='radio' name='type' value='Перезвоните, у меня остались вопросы'>
                                                 <div class='radio-bot'></div>
                                                 <div class='radio-text'>Перезвоните, у меня остались вопросы</div>
                                             </label>
@@ -1387,7 +1387,7 @@ session_start();
                         <path
                             d="M9.707 2.07L4.432 7.345c-.391.39-1.025.39-1.416 0L.293 4.62a1 1 0 011.415-1.415l2.016 2.016L8.292.654A1 1 0 019.707 2.07z"
                             fill="#093445"></path>
-                      </svg>― условия ипотеки под 4,7%;</span></div>
+                      </svg>― условия ипотеки под 3,0%;</span></div>
                             </div>
                             <div class="blk-right">
                                 <form class="form ajax" method="post" action="/send_modal">
