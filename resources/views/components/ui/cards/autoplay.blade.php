@@ -9,7 +9,7 @@
   </h2>
   <a
       @if(empty($link))
-         data-modal_id="modal_id"
+         data-modal_id="modal__cell"
       @endif
       href="{{$link}}" class="default__button auto-play__button"
   >
