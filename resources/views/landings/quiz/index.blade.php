@@ -24,9 +24,9 @@ session_start();
                 'PHONE' => "+7 (423) 205-40-50",
                 'ADDRESS' => ""
             ],
-            'ekb' => [
+            'ekaterinburg' => [
                 'CITY' => "Екатеринбург",
-                'URL' => "ekb",
+                'URL' => "ekaterinburg",
                 'PHONE' => "+7 (343) 309-13-09",
                 'ADDRESS' => ""
             ],
@@ -42,9 +42,9 @@ session_start();
                 'PHONE' => "+7 (342) 255-10-10",
                 'ADDRESS' => ""
             ],
-            'tumen' => [
+            'tyumen' => [
                 'CITY' => "Тюмень",
-                'URL' => "tumen",
+                'URL' => "tyumen",
                 'PHONE' => "+7 (3452) 518-107",
                 'ADDRESS' => ""
             ],
