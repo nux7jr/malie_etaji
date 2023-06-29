@@ -8,6 +8,8 @@
 <section class="selection">
   <div class="selection__wrapper">
     <form class="selection__form" id="selection-form">
+      <x-ui.inputs.x-input type='hidden' name="subject" value='Подберите себе дом '></x-ui.inputs.x-input>
+
       <h1 class="selection__heading">{{__('Подберите себе дом по комфорту!')}}</h1>
       <div class="selection__option">
         <div class="selection__item">

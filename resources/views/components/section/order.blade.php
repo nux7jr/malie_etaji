@@ -17,6 +17,8 @@
         <div class="order-consultation__item sender">
             <form class="order-consultation__form sender__item">
                 @csrf
+                <x-ui.inputs.x-input type='hidden' name="subject" value='Заказать консультацию'></x-ui.inputs.x-input>
+
                 <input class="order-consultation__input" placeholder="Имя" name="name" type="text" required>
                 <input class="order-consultation__input" placeholder="Телефон" name="phone" type="text" required>
                 <button class="order-consultation__submit" data-ym="consult_ipoteka">
