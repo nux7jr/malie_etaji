@@ -49,6 +49,12 @@ class SendFormController extends Controller
                 $url = ($url['host'] ?? '') . ($url['path'] ?? '');
                 $validated['subject'] = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
             }
+            if (isset($validated['mortgage'])){
+                $validated['comment'] = self::getCalcMainMessage($validated, $request);
+                $url = parse_url($request->server('HTTP_REFERER'));
+                $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+                $validated['subject'] = 'Подана заявка на Ипотеку на сайте ' . $url . PHP_EOL;
+            }
             $validated['city'] = $city;
             $this->writeLeads($request,$city, $validated);
             $sender->sendForm($validated, $request);
@@ -131,6 +137,11 @@ class SendFormController extends Controller
         return $message;
     }
 
+    /**
+     * @param array $inputValidatedData
+     * @param Request $request
+     * @return string
+     */
     private static function getCallQuizMessage(array $inputValidatedData, Request $request):string
     {
         $url = parse_url($request->server('HTTP_REFERER'));
@@ -139,6 +150,24 @@ class SendFormController extends Controller
         $message .= 'Уникальный идентификатор посетителя: ' . $request->getClientIp() . PHP_EOL;
         $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
         $message .= 'Удобное время для звонка: ' . ($inputValidatedData['time'] ?? '')  . PHP_EOL;
+        $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
+        return $message;
+    }
+
+    private static function getCalcMainMessage(array $inputValidatedData, Request $request):string
+    {
+        $url = parse_url($request->server('HTTP_REFERER'));
+        $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+        $message = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
+        $message .= 'Уникальный идентификатор посетителя: ' . $request->getClientIp() . PHP_EOL;
+        $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
+        $message .= 'Имя: ' . ($inputValidatedData['name'] ?? '')  . PHP_EOL;
+        $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
+        $message .= 'Данные с ипотечного калькулятора:' . PHP_EOL;
+        $message .= 'Программа: ' . $inputValidatedData['mortgage'] . PHP_EOL;
+        $message .= 'Стоимость дома: ' . $inputValidatedData['price'] . PHP_EOL;
+        $message .= 'Первоначальный взнос: ' . $inputValidatedData['start-payment'] . PHP_EOL;
+        $message .= 'Срок кредита: ' . $inputValidatedData['loan-term'] . ' лет' . PHP_EOL;
         return $message;
     }
 }

@@ -27,7 +27,7 @@
            max="{{$attributes->get('max')}}"
            value="{{$attributes->get('min')}}"
            placeholder="{{$attributes->get('min')}}"
-           step="{{((float)$attributes->get('max') - (float)$attributes->get('min'))/100}}"
+           step="{{(int)(((float)$attributes->get('max') - (float)$attributes->get('min'))/100)}}"
 {{--           oninput="rangeValue.innerText = this.value"--}}
         >
     </div>
