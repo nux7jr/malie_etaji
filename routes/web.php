@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 use App\Content\main\HousesInfo;
 use App\Content\main\Articles;
 
-Route::fallback(function ($domain) {
+Route::fallback(function ($domain = 'krasnoyarsk') {
     return view('errors.404')->with('city', City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain));
 });
 
