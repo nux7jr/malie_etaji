@@ -12,6 +12,7 @@
         <div class="modal__inner">
           <form class="modal__form">
             <div class="modal__item">
+              <x-ui.inputs.x-input type='hidden' name="subject" value='Получить проект'></x-ui.inputs.x-input>
               <x-ui.inputs.x-input required placeholder="Имя" name="name"></x-ui.inputs.x-input>
               <x-ui.inputs.x-input required placeholder="Номер телефона" name="phone"></x-ui.inputs.x-input>
             </div>
@@ -96,6 +97,7 @@
         <div class="modal__inner">
           <form class="modal__form call__form">
             <div class="modal__item">
+              <x-ui.inputs.x-input type='hidden' name="subject" value='Свяжитесь с нами'></x-ui.inputs.x-input>
               <x-ui.inputs.x-input required placeholder="Вопрос или предложение" name="question"></x-ui.inputs.x-input>
             </div>
             <div class="modal__item call__item">
@@ -139,6 +141,7 @@
           <form class="modal__form income__form">
             <div class="modal__item income__item">
               @csrf
+              <x-ui.inputs.x-input type='hidden' name="subject" value='Заказать звонок'></x-ui.inputs.x-input>
               <x-ui.inputs.x-input required placeholder="Имя" name="name"></x-ui.inputs.x-input>
               <x-ui.inputs.x-input required placeholder="Номер телефона" name="phone"></x-ui.inputs.x-input>
               <button class="default__button">{{__('Отправить')}}</button>
