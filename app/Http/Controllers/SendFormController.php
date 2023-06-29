@@ -16,53 +16,86 @@ class SendFormController extends Controller
      */
     public function sendForm(Request $request,SendFormInterface $sender){
         try {
-            $city = City::getCurrentCity(request()->route()->parameter('subdomain') ?? 'krasnoyarsk');
-            $validated = $request->validate([
-                'phone'             => ['string','regex:/^(\+7|8)(\ )?\(?[\d]{3}\)?(\ )?[\d]{3}[\-|\ ]?[\d]{2}[\-|\ ]?[\d]{2}/','nullable'],
-                'name'              => 'string|nullable',
-                'question'          => 'string|nullable',
-                'email'             => 'string|nullable',
-                'house_type'        => 'string|nullable',
-                'house_square'      => 'string|nullable',
-                'house_material'    => 'string|nullable',
-                'house_area'        => 'string|nullable',
-                'house_money'       => 'string|nullable',
-                'type'              => 'string|nullable',
-                'action'            => 'string|nullable',
-                'time'              => 'string|nullable',
-                'connect'           => 'string|nullable',
-                'house-date'        => 'string|nullable',
-                'house-place'       => 'string|nullable',
-                'house-credit'      => 'string|nullable',
-                'mortgage'          => 'string|nullable',
-                'price'             => 'numeric',
-                'start-payment'     => 'numeric',
-                'loan-term'         => 'numeric',
-            ]);
-            if (isset($validated['action']) && $validated['action'] === 'calc'){
-                $validated['comment'] = self::getCalcQuizMessage($validated, $request);
-                $validated['subject'] = 'Пройден КВИЗ на сайте malie-etaji.ru';
-            }
-            if (isset($validated['action']) && $validated['action'] === 'consut'){
-                $validated['comment'] = self::getCallQuizMessage($validated, $request);
-                $url = parse_url($request->server('HTTP_REFERER'));
-                $url = ($url['host'] ?? '') . ($url['path'] ?? '');
-                $validated['subject'] = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
-            }
-            if (isset($validated['mortgage'])){
-                $validated['comment'] = self::getCalcMainMessage($validated, $request);
-                $url = parse_url($request->server('HTTP_REFERER'));
-                $url = ($url['host'] ?? '') . ($url['path'] ?? '');
-                $validated['subject'] = 'Подана заявка на Ипотеку на сайте ' . $url . PHP_EOL;
-            }
-            $validated['city'] = $city;
-            $this->writeLeads($request,$city, $validated);
+
+            $validated = self::validateRequest($request);
+            $validated = self::addCommentToInputData($validated, $request);
+            $validated = self::detectCityAndAddToInputData($validated);
+
+            $this->writeLeadsToFile($request, $validated);
             $sender->sendForm($validated, $request);
         }catch (\Exception $err){
             \Log::error('Ошибка отправки формы: ' . $err->getMessage() . ' DATA: ' . serialize($request->toArray()));
         }
     }
-    private function writeLeads($request, $city, $validated):void
+    private static function detectCityAndAddToInputData(array $validated):array
+    {
+        $city = City::getCurrentCity(request()->route()->parameter('subdomain') ?? 'krasnoyarsk');
+        $validated['city'] = $city;
+        return $validated;
+    }
+    /**
+     * @param Request $request
+     * @return array
+     */
+    private static function validateRequest(Request $request):array
+    {
+        return $request->validate([
+            'phone'             => ['string','regex:/^(\+7|8)(\ )?\(?[\d]{3}\)?(\ )?[\d]{3}[\-|\ ]?[\d]{2}[\-|\ ]?[\d]{2}/','nullable'],
+            'name'              => 'string|nullable',
+            'question'          => 'string|nullable',
+            'email'             => 'string|nullable',
+            'house_type'        => 'string|nullable',
+            'house_square'      => 'string|nullable',
+            'house_material'    => 'string|nullable',
+            'house_area'        => 'string|nullable',
+            'house_money'       => 'string|nullable',
+            'type'              => 'string|nullable',
+            'action'            => 'string|nullable',
+            'time'              => 'string|nullable',
+            'connect'           => 'string|nullable',
+            'house-date'        => 'string|nullable',
+            'house-place'       => 'string|nullable',
+            'house-credit'      => 'string|nullable',
+            'mortgage'          => 'string|nullable',
+            'price'             => 'numeric',
+            'start-payment'     => 'numeric',
+            'loan-term'         => 'numeric',
+        ]);
+    }
+
+    /**
+     * @param array $validated
+     * @return array
+     */
+    private static function addCommentToInputData(array $validated, Request $request):array
+    {
+        if (isset($validated['action']) && $validated['action'] === 'calc'){
+            $validated['comment'] = self::getCalcQuizMessage($validated, $request);
+            $validated['subject'] = 'Пройден КВИЗ на сайте malie-etaji.ru';
+        }
+
+        if (isset($validated['action']) && $validated['action'] === 'consut'){
+            $validated['comment'] = self::getCallQuizMessage($validated, $request);
+            $url = parse_url($request->server('HTTP_REFERER'));
+            $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+            $validated['subject'] = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
+        }
+
+        if (isset($validated['mortgage'])){
+            $validated['comment'] = self::getCalcMainMessage($validated, $request);
+            $url = parse_url($request->server('HTTP_REFERER'));
+            $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+            $validated['subject'] = 'Подана заявка на Ипотеку на сайте ' . $url . PHP_EOL;
+        }
+        return $validated;
+    }
+
+    /**
+     * @param Request $request
+     * @param array $validated
+     * @return void
+     */
+    private function writeLeadsToFile(Request $request, array $validated):void
     {
         try {
             $fp = fopen("/home/admin/web/centr-polov.ru/public_html/upload/bd/alldealers_leads.txt","a+");
@@ -106,7 +139,7 @@ class SendFormController extends Controller
                 !empty($request->session()->get('utm')['utm_content']) ? str_ends_with($referer, '?') ? $referer .= 'utm_content=' . $request->session()->get('utm')['utm_content'] : $referer .= '&utm_content=' . $request->session()->get('utm')['utm_content'] : '';
             }
         }
-        $stroke_rewrite = date("d.m.y H:i").';'.$city.';'.''.';'.($validated['phone'] ?? 'empty').';'.($validated['email']??'empty email').';'.$city.';'.($validated['name'] ?? 'noname').';'.''.';;'.urldecode($referer).';'.$_SERVER['HTTP_X_REAL_IP']."\n";
+        $stroke_rewrite = date("d.m.y H:i").';'.($validated['city'] ?? 'no city').';'.''.';'.($validated['phone'] ?? 'empty').';'.($validated['email']??'empty email').';'.($validated['city'] ?? 'no city').';'.($validated['name'] ?? 'noname').';'.''.';;'.urldecode($referer).';'.$_SERVER['HTTP_X_REAL_IP']."\n";
         fwrite($fp,$stroke_rewrite);
         fclose($fp);
     }
@@ -154,6 +187,11 @@ class SendFormController extends Controller
         return $message;
     }
 
+    /**
+     * @param array $inputValidatedData
+     * @param Request $request
+     * @return string
+     */
     private static function getCalcMainMessage(array $inputValidatedData, Request $request):string
     {
         $url = parse_url($request->server('HTTP_REFERER'));
