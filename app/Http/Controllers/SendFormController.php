@@ -65,6 +65,7 @@ class SendFormController extends Controller
 
     /**
      * @param array $validated
+     * @param Request $request
      * @return array
      */
     private static function addCommentToInputData(array $validated, Request $request):array
