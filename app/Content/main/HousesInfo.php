@@ -18,7 +18,7 @@ class HousesInfo
   {
     self::$card_elements = collect([
       [
-        'id' => __('0'),
+        'id' => 0,
         'name' => __('Барн 29-42'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -60,6 +60,7 @@ class HousesInfo
           'bedrooms' => 1,
           'bathrooms' => 1,
           'ceiling' => '2,9м',
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -133,7 +134,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('1'),
+        'id' => 1,
         'name' => __('Барн 53-56'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -175,6 +176,7 @@ class HousesInfo
           'bedrooms' => 2,
           'bathrooms' => 1,
           'ceiling' => '3.8м',
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -248,7 +250,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('2'),
+        'id' => 2,
         'name' => __('Барн 60-78'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -290,6 +292,7 @@ class HousesInfo
           'bedrooms' => 3,
           'bathrooms' => 1,
           'ceiling' => '2,9м',
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -362,7 +365,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('3'),
+        'id' => 3,
         'name' => __('Барн 62-67'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -403,6 +406,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 3,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -475,7 +479,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('4'),
+        'id' => 4,
         'name' => __('Барн 63-76'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -516,6 +520,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 3,
           'bathrooms' => 1,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -587,7 +592,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('5'),
+        'id' => 5,
         'name' => __('Барн 75-90'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -628,6 +633,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 3,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -700,7 +706,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('6'),
+        'id' => 6,
         'name' => __('Барн 86-102'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -741,6 +747,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 4,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -812,7 +819,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('7'),
+        'id' => 7,
         'name' => __('Барн 87-110'),
         'category' => __('Барны'),
         'title' => __('Дом'),
@@ -853,6 +860,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 3,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -924,7 +932,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('8'),
+        'id' => 8,
         'name' => __('ДВ 112-141'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -965,6 +973,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 6,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1037,7 +1046,7 @@ class HousesInfo
 
       ],
       [
-        'id' => __('9'),
+        'id' => 9,
         'name' => __('ДВ 123-160'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -1078,6 +1087,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 5,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1149,7 +1159,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('10'),
+        'id' => 10,
         'name' => __('ДВ 136-165'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -1190,6 +1200,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 4,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1261,7 +1272,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('11'),
+        'id' => 11,
         'name' => __('ДВ 136-165-2'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -1302,6 +1313,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 4,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1374,7 +1386,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('12'),
+        'id' => 12,
         'name' => __('ДВ 72-92'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -1415,6 +1427,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 3,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1487,7 +1500,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('13'),
+        'id' => 13,
         'name' => __('ДВ 75-92'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -1528,6 +1541,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 3,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1603,7 +1617,7 @@ class HousesInfo
 
       ],
       [
-        'id' => __('14'),
+        'id' => 14,
         'name' => __('ДВ 80-93'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -1644,6 +1658,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 3,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1716,7 +1731,7 @@ class HousesInfo
 
       ],
       [
-        'id' => __('15'),
+        'id' => 15,
         'name' => __('ДВ 98-115'),
         'category' => __('Двухэтажные'),
         'title' => __('Дом'),
@@ -1757,6 +1772,7 @@ class HousesInfo
           'floors' => 2,
           'bedrooms' => 5,
           'bathrooms' => 2,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '2 этажа',
@@ -1831,7 +1847,7 @@ class HousesInfo
       ],
       // new
       [
-        'id' => __('16'),
+        'id' => 16,
         'name' => __('ОД 65-77'),
         'category' => __('Одноэтажные'),
         'title' => __('Дом'),
@@ -1872,6 +1888,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 3,
           'bathrooms' => 1,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -1946,9 +1963,8 @@ class HousesInfo
         ],
 
       ],
-
       [
-        'id' => __('17'),
+        'id' => 17,
         'name' => __('ОД 69-81'),
         'category' => __('Одноэтажные'),
         'title' => __('Дом'),
@@ -1989,6 +2005,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 2,
           'bathrooms' => 1,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -2061,9 +2078,8 @@ class HousesInfo
         ],
 
       ],
-
       [
-        'id' => __('18'),
+        'id' => 18,
         'name' => __('ОД 79-101'),
         'category' => __('Одноэтажные'),
         'title' => __('Дом'),
@@ -2104,6 +2120,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 3,
           'bathrooms' => 1,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -2174,9 +2191,8 @@ class HousesInfo
           ],
         ],
       ],
-
       [
-        'id' => __('19'),
+        'id' => 19,
         'name' => __('ОД 83-109'),
         'category' => __('Одноэтажные'),
         'title' => __('Дом'),
@@ -2217,6 +2233,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 3,
           'bathrooms' => 1,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
@@ -2288,7 +2305,7 @@ class HousesInfo
         ],
       ],
       [
-        'id' => __('20'),
+        'id' => 20,
         'name' => __('ОД 92-112'),
         'category' => __('Одноэтажные'),
         'title' => __('Дом'),
@@ -2329,6 +2346,7 @@ class HousesInfo
           'floors' => 1,
           'bedrooms' => 4,
           'bathrooms' => 1,
+          'unit' => 'кв. м',
         ],
         'formated_info' => [
           'floors' => '1 этаж',
