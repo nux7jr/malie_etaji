@@ -9,7 +9,7 @@ session_start();
             'krasnoyarsk' => [
             'CITY' => "Красноярск",
               'URL' => "krasnoyarsk",
-            'PHONE' => "+7 (3452) 518-107",
+            'PHONE' => "+7 (391) 205-3-444",
             'ADDRESS' => ""
             ],
             'barnaul' => [
@@ -49,6 +49,12 @@ session_start();
                 'ADDRESS' => ""
             ],
     ];
+    if ((request()->session()->get('utm')['utm_source'] ?? false) === 'yandex'){
+      $city1['krasnoyarsk']['PHONE'] = '+7 (391) 205-37-13';
+    }
+    if ((request()->session()->get('utm')['utm_source'] ?? false) === 'vkontakte'){
+      $city1['krasnoyarsk']['PHONE'] = '+7 (391) 205-37-12';
+    }
 @endphp
 @php
     $citys = array(
