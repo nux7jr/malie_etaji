@@ -54,7 +54,7 @@
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
                             <input id="size1" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house_square" value="100" />
+                                name="house_size" value="100" />
                             <label class="house-filter ganeral-lablel house-type__label" for="size1">
                                 {{ __('До 100 м2') }}
 
@@ -62,7 +62,7 @@
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="size2" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house_square" value="100-150" checked />
+                                name="house_size" value="100-150" checked />
                             <label class="house-filter ganeral-lablel house-type__label" for="size2">
                                 {{ __('100-150 м2') }}
 
@@ -70,7 +70,7 @@
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="size3" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house_square" value="150+" />
+                                name="house_size" value="150+" />
                             <label class="house-filter ganeral-lablel house-type__label" for="size3">
                                 {{ __('Более 150 м2') }}
                             </label>
@@ -84,7 +84,7 @@
                     <div class="ganeral-wrapper house-type__wrapper">
                         <div class="ganeral-item house-type__item">
                             <input checked id="price1" class="ganeral-input house-type__input visually-hidden"
-                                type="radio" name="house_money" value="2-5" checked />
+                                type="radio" name="house_price" value="2-5" checked />
                             <label class="house-filter ganeral-lablel house-type__label" for="price1">
                                 {{ __('От 2 млн до 5 млн') }}
 
@@ -92,14 +92,14 @@
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="price2" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house_money" value="5-8" />
+                                name="house_price" value="5-8" />
                             <label class="house-filter ganeral-lablel house-type__label" for="price2">
                                 {{ __('От 5 млн до 8 млн') }}
                             </label>
                         </div>
                         <div class="ganeral-item house-type__item">
                             <input id="price3" class="ganeral-input house-type__input visually-hidden" type="radio"
-                                name="house_money" value="8+" />
+                                name="house_price" value="8+" />
                             <label class="house-filter ganeral-lablel house-type__label" for="price3">
                                 {{ __('От 8 млн') }}
                             </label>

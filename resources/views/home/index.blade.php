@@ -24,8 +24,11 @@ $service = (new Service())->toArray();
 @section('content')
 <section class="offer">
     <div class="offer__head">
-        <h1 class="offer__number">{{__('>120 домов')}}</h1>
-        <h1 class="offer__quantity">{{__('уже построено благодаря компании “Малые этажи”')}}</h1>
+        <div class="offer__cont">
+            <h1 class="offer__number">{{__('120 домов из 1000')}}</h1>
+            <h1 class="offer__text">{{__('уже построено')}}</h1>
+        </div>
+        <h1 class="offer__quantity">{{__('“Малые этажи” самая рекомендуемая строительная компания!')}}</h1>
     </div>
     <div class="offer__container">
         <div class="main-offer offer-swiper swiper">
@@ -35,8 +38,7 @@ $service = (new Service())->toArray();
                     <div class="offer-slider__inner">
                         <h1 class="main-offer__heading">{{ __('Ипотека от 2,7%') }}</h1>
                         <p class="main-offer__paraf">
-                            {{ __('Совместно с банками партнерами мы предлагаем самые выгодные ставки по загородной
-                            ипотеке.') }}
+                            {{ __('“Малые этажи” самая рекомендуемая строительная компания!') }}
                         </p>
                         <button data-modal_id='modal__cell' data-ym='ipoteka_glavn'
                             class="default__button main-offer__button">{{ __('Узнать

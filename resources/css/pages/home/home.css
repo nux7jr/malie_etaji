@@ -26,7 +26,7 @@
 .offer__head {
     padding-bottom: 31px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
     color: var(--color-black);
@@ -39,7 +39,11 @@
     border-radius: var(--border-raduis-defalut);
     font-weight: 700;
 }
-
+.offer__cont {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
 .image-swiper .offer-slide::after {
     content: "";
     position: absolute;
@@ -955,8 +959,14 @@
     .image-swiper {
         width: -webkit-fill-available;
     }
+    .offer__head {
+        flex-direction: column;
+    }
     .sec-offer__heading {
         font-size: 24px;
+    }
+    .offer__text {
+        font-size: 20px;
     }
     .sec-offer__paraf {
         font-size: 12px;

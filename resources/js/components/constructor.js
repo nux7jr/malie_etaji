@@ -76,10 +76,13 @@ const currInfo = [
 const filters_button = document.querySelectorAll(".house-filter");
 function filterElements() {
     return currInfo.filter(function (item) {
+        console.log(filter_data);
         for (var key in filter_data) {
-            if (item[key] === undefined || item[key] != filter_data[key])
-                return false;
+            if (item[key] === undefined || item[key] !== filter_data[key])
+            // console.log(false);
+            return false;
         }
+        // console.log(true);
         return true;
     });
 }
@@ -87,11 +90,13 @@ filters_button.forEach((element) => {
     element.addEventListener("click", (evt) => {
         filter_data[evt.target.previousElementSibling.name] =
             evt.target.previousElementSibling.value;
-        setCurrImage(filterElements());
+            console.log(filter_data);
+            const newArr = filterElements();
+        setCurrImage(newArr);
     });
 });
 function setCurrImage(data_info) {
-    console.log(data_info);
+    
     const preview = document.querySelectorAll(".prew");
     if (data_info[0] !== undefined) {
         preview.forEach((elem) => {
