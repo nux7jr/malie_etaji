@@ -449,6 +449,7 @@ $(document).ready(function() {
               data: {'action': actions, 'house_type': test1, 'house_square': test2, 'house_material': test3, 'house_area': test4, 'house_money': test5, 'type': calls, 'phone': phones, 'email': emails, 'city': city,'_token':token},
               success: function(result){
                     ym(67008322,'reachGoal','obrashenie');
+                    _tmr.push({ type: 'reachGoal', id: 3366612, goal: 'leadquiz'});
                     setTimeout(function(){ window.location.href = "https://малые-этажи.рф/taplink";  }, 300);
               },
               error: function(data){
@@ -504,6 +505,7 @@ $(document).ready(function() {
                 if(open_modal.length) MicroModal.close(open_modal.attr("id").replace("#", ""));
                 MicroModal.show(action=="updatePhone" ? 'thanks-number' : 'thanks');
 
+                _tmr.push({ type: 'reachGoal', id: 3366612, goal: 'leadquiz'});
                 ym(67008322,'reachGoal','obrashenie');
                 setTimeout(function(){ window.location.href = "https://малые-этажи.рф/taplink";  }, 300);
           },

@@ -158,6 +158,7 @@ document.addEventListener("DOMContentLoaded", (evt) => {
             sender(userForm).then((res) => {
                 // общяя метрка для всех форм
                 ym(67008322, "reachGoal", "leads");
+                _tmr.push({ type: 'reachGoal', id: 3366612, goal: 'lead'});
                 // метрика для каждой кнопки
                 if (modalsConfig.ym !== null) {
                     const countersFunction = ymData[`${modalsConfig.ym}`];
