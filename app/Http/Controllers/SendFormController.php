@@ -153,7 +153,7 @@ class SendFormController extends Controller
     private static function getCalcQuizMessage(array $inputValidatedData, Request $request): string
     {
         $message = 'Пройден КВИЗ на сайте malie-etaji.ru' . PHP_EOL;
-        $message .= 'Уникальный идентификатор посетителя: ' . $request->getClientIp() . PHP_EOL;
+        $message .= 'Уникальный идентификатор посетителя: ' . $_SERVER['HTTP_X_REAL_IP'] . PHP_EOL;
         $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
         $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
         $message .= 'Способ отправки: ' . ($inputValidatedData['type'] ?? '') . PHP_EOL;
@@ -181,7 +181,7 @@ class SendFormController extends Controller
         $url = parse_url($request->server('HTTP_REFERER'));
         $url = ($url['host'] ?? '') . ($url['path'] ?? '');
         $message = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
-        $message .= 'Уникальный идентификатор посетителя: ' . $request->getClientIp() . PHP_EOL;
+        $message .= 'Уникальный идентификатор посетителя: ' . $_SERVER['HTTP_X_REAL_IP'] . PHP_EOL;
         $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
         $message .= 'Удобное время для звонка: ' . ($inputValidatedData['time'] ?? '')  . PHP_EOL;
         $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
@@ -198,7 +198,7 @@ class SendFormController extends Controller
         $url = parse_url($request->server('HTTP_REFERER'));
         $url = ($url['host'] ?? '') . ($url['path'] ?? '');
         $message = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
-        $message .= 'Уникальный идентификатор посетителя: ' . $request->getClientIp() . PHP_EOL;
+        $message .= 'Уникальный идентификатор посетителя: ' . $_SERVER['HTTP_X_REAL_IP'] . PHP_EOL;
         $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
         $message .= 'Имя: ' . ($inputValidatedData['name'] ?? '')  . PHP_EOL;
         $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
