@@ -165,7 +165,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         $url = ($url['host'] ?? '') . ($url['path'] ?? '');
         self::$comment = 'Заявка с сайта ' . $url . ' ';
         !empty(self::$data['subject']) ? self::$comment .= self::$data['subject'] : '';
-        self::$comment .= "\nУникальный идентификатор посетителя - " . self::$request->getClientIp();
+        self::$comment .= "\nУникальный идентификатор посетителя - " . self::$request->server('HTTP_X_REAL_IP');
         !empty(self::$data['city']) ? self::$comment .= "\nГород доставки: " . self::$data['city'] : '';
         !empty(self::$data['name']) ? self::$comment .= "\nИмя: " . self::$data['name'] : '';
         self::$comment .= "\nТелефон: " . self::$phone;
