@@ -101,14 +101,11 @@ document.addEventListener("DOMContentLoaded", (evt) => {
                 
                 
                 // set subject
-
-                if (evt.target) {
-                    console.log(evt.target.subject);
+                if (evt.target.getAttribute("subject") !== null) {
+                    modalsState.subject = evt.target.getAttribute("subject");
                 }
                 else if (evt.target.textContent) {
-                    console.log(evt.target.subject);
                     modalsState.subject = evt.target.textContent.trim();
-                    
                 }
                 modalsState.isActive = true;
                 currModal.classList.add("modal__window--active");

@@ -199,7 +199,7 @@ $service = (new Service())->toArray();
                                     {{ $item['text'] }} </p>
                             </div>
                         </div>
-                        <button data-modal_id="modal__income" data-info={{$item['heading']}}
+                        <button subject="{{ $item['title'] }}" data-modal_id="modal__income" data-info={{$item['heading']}}
                             class="default__button service__button" {{$item["dataAttr"]}}>
                             {{__('Отправить заявку')}}</button>
                     </div>
