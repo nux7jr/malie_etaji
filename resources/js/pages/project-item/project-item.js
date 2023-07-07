@@ -2,32 +2,32 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
 import { initProjects } from "../../components/project-item";
+// import moment from "moment";
 
-import moment from "moment";
 initProjects(Swiper);
 
-function initTimer() {
-    const nodeDay = document.querySelector(".nodeDay");
-    const nodeHourse = document.querySelector(".nodeHourse");
-    const nodeMin = document.querySelector(".nodeMin");
-    const nodeSec = document.querySelector(".nodeSec");
+// function initTimer() {
+//     const nodeDay = document.querySelector(".nodeDay");
+//     const nodeHourse = document.querySelector(".nodeHourse");
+//     const nodeMin = document.querySelector(".nodeMin");
+//     const nodeSec = document.querySelector(".nodeSec");
 
-    let eventTime = 1366549200; // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
-    let currentTime = 136447400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
-    const diffTime = eventTime - currentTime;
-    let duration = moment.duration(diffTime * 1000, "milliseconds");
-    const interval = 1000;
+//     let eventTime = 1366549200; 
+//     let currentTime = 136447400; 
+//     const diffTime = eventTime - currentTime;
+//     let duration = moment.duration(diffTime * 1000, "milliseconds");
+//     const interval = 1000;
 
-    setInterval(function () {
-        duration = moment.duration(duration - interval, "milliseconds");
+//     setInterval(function () {
+//         duration = moment.duration(duration - interval, "milliseconds");
 
-        nodeDay.textContent = duration.days();
-        nodeHourse.textContent = duration.hours();
-        nodeMin.textContent = duration.minutes();
-        nodeSec.textContent = duration.seconds();
-    }, interval);
-}
-initTimer();
+//         nodeDay.textContent = duration.days();
+//         nodeHourse.textContent = duration.hours();
+//         nodeMin.textContent = duration.minutes();
+//         nodeSec.textContent = duration.seconds();
+//     }, interval);
+// }
+// initTimer();
 
 initProjects(Swiper);
 

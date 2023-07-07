@@ -1,8 +1,9 @@
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
+
+
 import { initFeedback } from "../../components/feedback";
 initFeedback(Swiper);
-
 import { initProjects } from "../../components/project-item";
 initProjects(Swiper);
 

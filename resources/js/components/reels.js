@@ -1,4 +1,6 @@
+
 export function initReels(Swiper) {
+    
     const reels = new Swiper(".reels-swiper", {
         slidesPerView: 1,
         spaceBetween: 47,
@@ -26,4 +28,22 @@ export function initReels(Swiper) {
             },
         },
     });
+    // function manageAutoplay() {
+    //     // sources array in elements object contains all sources of lightbox
+    //     fsLightbox.elements.sources.forEach((source, index) => {
+    //          if (source.tagName !== 'IFRAME') {
+    //             return;
+    //         }
+            
+    //         // stageIndexes object contains indexes of stage sources
+    //         if (fsLightbox.stageIndexes.current === index) {
+    //             // code that autoplays video
+    //             console.log("AUTOPLAY?")
+    //         } else {
+    //              // code that stops video if playing
+    //         } 
+    //     });
+    //  }
+     
+    //  fsLightbtoxInstances['video'].props.onOpen = manageAutoplay;
 }

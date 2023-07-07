@@ -1,7 +1,6 @@
 import sender from "../general/sender";
 
 document.addEventListener("DOMContentLoaded", (evt) => {
-    console.log("LOAD");
     const order_form = document.querySelector(".order-consultation__form");
     const order_wrapper = document.querySelector(
         ".order-consultation__wrapper"

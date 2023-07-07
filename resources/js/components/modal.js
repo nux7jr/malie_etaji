@@ -58,11 +58,11 @@ document.addEventListener("DOMContentLoaded", (evt) => {
     const modalsConfig = {
         errorHander: "",
         historyLog: [],
-        ym: null,
     };
     const modalsState = {
         isActive: false,
         additionalForm: {},
+        subject: null,
     };
     const allForm = document.querySelectorAll(".modal__form");
     const all_close_buttons = document.querySelectorAll(".modal__close");
@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", (evt) => {
             if (evt.target.dataset.modal_id) {
                 const modal_id = evt.target.dataset.modal_id;
                 const currModal = document.getElementById(modal_id);
+
                 // add more new FormData
                 if (evt.target.dataset.additional_form) {
                     const form_id = evt.target.dataset.additional_form;
@@ -83,17 +84,31 @@ document.addEventListener("DOMContentLoaded", (evt) => {
                         modalsState.additionalForm.set(
                             'mortgage',
                             document.getElementById(`${form_id}`).querySelector('.dropdown-select-selected').getAttribute('name')
-                        );
-                    }
+                            );
+                        }
                 } else {
                     modalsState.additionalForm = {};
                 }
+                
+                
                 // yandex metrik
                 if (evt.target.dataset.ym) {
                     const form_ym = evt.target.dataset.ym;
                     modalsConfig.ym = form_ym;
                 } else {
                     modalsConfig.ym = null;
+                }
+                
+                
+                // set subject
+
+                if (evt.target) {
+                    console.log(evt.target.subject);
+                }
+                else if (evt.target.textContent) {
+                    console.log(evt.target.subject);
+                    modalsState.subject = evt.target.textContent.trim();
+                    
                 }
                 modalsState.isActive = true;
                 currModal.classList.add("modal__window--active");
@@ -127,6 +142,7 @@ document.addEventListener("DOMContentLoaded", (evt) => {
     //     };
     // });
     function closer(form) {
+        modalsState.subject = null;
         const wrapper = form.querySelector(".modal__wrapper");
         wrapper.classList.add("modal__wrapper--out");
         form.classList.add("modal__window--out");
@@ -155,6 +171,14 @@ document.addEventListener("DOMContentLoaded", (evt) => {
                     userForm.append(pair[0], pair[1]);
                 }
             }
+            if (modalsState.subject !== null) {
+                userForm.append('subject', modalsState.subject);
+            }
+            const beforeHtml = evt.submitter.innerHTML // value before
+            console.log(beforeHtml);
+            const load = '<svg height="31px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ellipsis"> <!--circle(cx="16",cy="50",r="10")--> <circle cx="84" cy="50" r="0" fill="#ffffff"> <animate attributeName="r" values="10;0;0;0;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="0s"></animate> <animate attributeName="cx" values="84;84;84;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="0s"></animate> </circle> <circle cx="16" cy="50" r="9.73158" fill="#ffffff"> <animate attributeName="r" values="0;10;10;10;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="-1.3s"></animate> <animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="-1.3s"></animate> </circle> <circle cx="84" cy="50" r="0.268423" fill="#ffffff"> <animate attributeName="r" values="0;10;10;10;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="-0.65s"></animate> <animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="-0.65s"></animate> </circle> <circle cx="83.0874" cy="50" r="10" fill="#ffffff"> <animate attributeName="r" values="0;10;10;10;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="0s"></animate> <animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="0s"></animate> </circle> <circle cx="49.0874" cy="50" r="10" fill="#ffffff"> <animate attributeName="r" values="0;0;10;10;10" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="0s"></animate> <animate attributeName="cx" values="16;16;16;50;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="2.6s" repeatCount="indefinite" begin="0s"></animate> </circle> </svg>';
+            evt.submitter.innerHTML = load;
+            evt.submitter.setAttribute('disabled', 'true');
             sender(userForm).then((res) => {
                 // общяя метрка для всех форм
                 ym(67008322, "reachGoal", "leads");

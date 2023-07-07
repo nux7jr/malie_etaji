@@ -44,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-dd34b6f7.css",
+    "file": "assets/app-fc22064b.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -179,7 +179,7 @@
     "src": "resources/css/pages/error/error.css"
   },
   "resources/css/pages/home/home.css": {
-    "file": "assets/home-3db7ec61.css",
+    "file": "assets/home-6c6a6a85.css",
     "isEntry": true,
     "src": "resources/css/pages/home/home.css"
   },
@@ -834,11 +834,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/2.jfif"
+    "src": "resources/images/cert/1.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -1435,6 +1435,10 @@
   "resources/images/home/catal.png": {
     "file": "assets/catal-aa32937d.png",
     "src": "resources/images/home/catal.png"
+  },
+  "resources/images/home/load.gif": {
+    "file": "assets/load-854f1fb3.gif",
+    "src": "resources/images/home/load.gif"
   },
   "resources/images/home/mont.png": {
     "file": "assets/mont-db8b3237.png",
@@ -3455,7 +3459,7 @@
       "assets/1-main-df89aa31.jpg",
       "assets/1-main-d02b2872.jpg"
     ],
-    "file": "assets/constructor-c4368ba4.js",
+    "file": "assets/constructor-95b04c96.js",
     "isEntry": true,
     "src": "resources/js/components/constructor.js"
   },
@@ -3475,7 +3479,7 @@
     "src": "resources/js/components/mob_menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-58d6bcde.js",
+    "file": "assets/modal-42a1efd2.js",
     "imports": [
       "_sender-11aaf2c3.js"
     ],
@@ -3488,7 +3492,7 @@
     "src": "resources/js/components/office-map.js"
   },
   "resources/js/components/order.js": {
-    "file": "assets/order-87daaff0.js",
+    "file": "assets/order-e2d33f38.js",
     "imports": [
       "_sender-11aaf2c3.js"
     ],
@@ -3504,12 +3508,18 @@
     "src": "resources/js/components/peculiarities.js"
   },
   "resources/js/components/project-item.js": {
-    "file": "assets/project-item-4ed993c7.js",
+    "file": "assets/project-item-b382df91.js",
+    "imports": [
+      "resources/js/pages/blog-item/blog-item.js"
+    ],
     "isEntry": true,
     "src": "resources/js/components/project-item.js"
   },
   "resources/js/components/reels.js": {
-    "file": "assets/reels-4ed993c7.js",
+    "file": "assets/reels-b382df91.js",
+    "imports": [
+      "resources/js/pages/blog-item/blog-item.js"
+    ],
     "isEntry": true,
     "src": "resources/js/components/reels.js"
   },
@@ -3527,7 +3537,10 @@
     "src": "resources/js/components/selection.js"
   },
   "resources/js/components/trusted.js": {
-    "file": "assets/trusted-4ed993c7.js",
+    "file": "assets/trusted-b382df91.js",
+    "imports": [
+      "resources/js/pages/blog-item/blog-item.js"
+    ],
     "isEntry": true,
     "src": "resources/js/components/trusted.js"
   },
@@ -3535,6 +3548,11 @@
     "file": "assets/barba-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/general/barba.js"
+  },
+  "resources/js/general/pageChange.js": {
+    "file": "assets/pageChange-d4e0568f.js",
+    "isEntry": true,
+    "src": "resources/js/general/pageChange.js"
   },
   "resources/js/pages/about/about.js": {
     "file": "assets/about-dc128364.js",
@@ -3595,7 +3613,7 @@
     "src": "resources/js/pages/mortgage/mortgage.js"
   },
   "resources/js/pages/project-item/project-item.js": {
-    "file": "assets/project-item-67859f63.js",
+    "file": "assets/project-item-532206b8.js",
     "imports": [
       "_swiper-bundle.min-43b74ea1.js",
       "_project-item-5c3e1fdf.js"

@@ -37,7 +37,7 @@ use App\Content\main\HousesInfo;
       <h2 class="header-section__name">
         {{$info['name']}}</h2>
     </div>
-    <div class="timer">
+    <div class="timer" style="display: none;">
       <h1 class="timer__h1">
         {{__('Фундамент в подарок')}}
       </h1>
@@ -69,18 +69,39 @@ use App\Content\main\HousesInfo;
     <div class="header-section__item">
       <div class="header-section__price">
         <p class="header-section__about">
+          {{__('Цена “Домокомплекта”')}}
+          <button class="tooltip">
+            <img class="toltip-button__img" src="{{ Vite::asset('resources/images/components/toltip.svg') }}"
+              alt="toltip">
+            <span class="tooltiptext">
+              <span>{{__('Пакет “Домокомплект”:')}}</span>
+              <ul>
+                <li>{{__('фундамент;')}}</li>
+                <li>{{__('коробка;')}}</li>
+              </ul>
+            </span>
+          </button>
+        </p>
+        <h1 class="header-section__value">
+          @php
+          echo number_format($info['price_kit'], 0, '', ' ')." ₽";
+          @endphp
+        </h1>
+      </div>
+      <div class="header-section__price">
+        <p class="header-section__about">
           {{__('Цена под отделку')}}
           <button class="tooltip">
             <img class="toltip-button__img" src="{{ Vite::asset('resources/images/components/toltip.svg') }}"
               alt="toltip">
             <span class="tooltiptext">
-              <span>Комплектация “Теплый контур”: </span>
+              <span>{{__('Комплектация “Теплый контур”:')}}</span>
               <ul>
-                <li>фундамент;</li>
-                <li>коробка;</li>
-                <li>кровля;</li>
-                <li>окна;</li>
-                <li>входные двери;</li>
+                <li>{{__('фундамент;')}}</li>
+                <li>{{__('коробка;')}}</li>
+                <li>{{__('кровля;')}}</li>
+                <li>{{__('окна')}};</li>
+                <li>{{__('входные двери;')}}</li>
               </ul>
             </span>
           </button>
@@ -98,16 +119,16 @@ use App\Content\main\HousesInfo;
             <img class="toltip-button__img" src="{{ Vite::asset('resources/images/components/toltip.svg') }}"
               alt="toltip">
             <span class="tooltiptext">
-              <span>Цена “Под ключ”:</span>
+              <span>{{__('Цена “Под ключ”:')}}</span>
               <ul>
-                <li>фундамент;</li>
-                <li>коробка;</li>
-                <li>кровля;</li>
-                <li>окна;</li>
-                <li>входные двери.</li>
-                <li>отделка фасада;</li>
-                <li>внутренняя отделка "белый куб" (под обои);</li>
-                <li>проведение коммуникаций (водоснабжение, водоотведение, электричество, отопление) и пр.</li>
+                <li>{{__('фундамент;')}}</li>
+                <li>{{__('коробка;')}}</li>
+                <li>{{__('кровля;')}}</li>
+                <li>{{__('окна;')}}</li>
+                <li>{{__('входные двери.')}}</li>
+                <li>{{__('отделка фасада;')}}</li>
+                <li>{{__('внутренняя отделка "белый куб" (под обои);')}}</li>
+                <li>{{__('проведение коммуникаций (водоснабжение, водоотведение, электричество, отопление) и пр.')}}</li>
               </ul>
             </span>
           </button>

@@ -14,6 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Малые этажи">
     <meta name="twitter:card" content="summary">
+    {{-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> --}}
 
     <!-- maps -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1b463e1c-30e3-4e94-b592-300f2f77b882"
@@ -25,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
     @vite('resources/js/app.js')
+    @vite('resources/js/general/pageChange.js')
     @vite('resources/css/app.css')
     @yield('head')
     @stack('head')
@@ -83,15 +85,16 @@ _tmr.push({id: "3366612", type: "pageView", start: (new Date()).getTime()});
 </script>
 <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3366612;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
 <!-- /Top.Mail.Ru counter -->
-
 </head>
-
-<body data-transition="malie-wrap">
+<body>
     <div class="page-transition-container">
-        <span class="page-transition"></span>
-        <span class="page-transition"></span>
+        <lottie-player class="page-transition-loader" src="/files/load.json" background="transparent"  speed="2"  style="width: 300px; height: 300px;" loop autoplay>
+        </lottie-player>
+        <h1 class="page-transition-container__heading">
+            “Малые этажи” самая рекомендуемая строительная компания!
+        </h1>
     </div>
-    <div data-transition="container">
+    <div class="page-container">
         <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
         <div id="app" class="app">
             <div class="container">

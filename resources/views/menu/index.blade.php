@@ -29,7 +29,7 @@
         <a class="mob-list__link" href=/projects/double">{{__('Двухэтажные')}}</a>
       </li>
       <li class="mob-list__li">
-        <a class="mob-list__link" href="/projects/barns">{{__('Барны')}}</a>
+        <a class="mob-list__link" href="/projects/barn">{{__('Барны')}}</a>
       </li>
     </ul>
   </div>

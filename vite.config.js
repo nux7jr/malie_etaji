@@ -8,6 +8,7 @@ export default defineConfig({
                 // for all
                 "resources/css/app.css",
                 "resources/js/app.js",
+                "resources/js/general/pageChange.js",
 
                 "resources/css/pages/error/error.css",
                 // for page
