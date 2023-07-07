@@ -33,7 +33,7 @@ class StageCards implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'stage/2.png',
+          src: 'stage/2.jpg',
         ))->getSrc(),
         'title' => __('Если нужен проект, выбираем из типовых или разрабатываем индивидуальный'),
         'stage' => __('Время: от 10 дней'),
@@ -49,7 +49,7 @@ class StageCards implements Arrayable
       ],
       [
         'image' => (new Image(
-          src: 'stage/3.jfif',
+          src: 'stage/3.jpg',
         ))->getSrc(),
         'title' => __('Заливка фундамента. Начало строительства'),
         'stage' => __('Время: от 14 дней'),

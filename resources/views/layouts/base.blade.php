@@ -25,18 +25,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    @vite('resources/js/app.js')
     @vite('resources/js/general/pageChange.js')
+    @vite('resources/js/app.js')
     @vite('resources/css/app.css')
     @yield('head')
     @stack('head')
     @vite('resources/css/components/modal.css')
     @vite('resources/js/components/modal.js')
-    @vite('resources/js/components/mob_menu.js')
-    @vite('resources/css/components/mob_menu.css')
+    @vite('resources/js/components/mob-menu.js')
+    @vite('resources/css/components/mob-menu.css')
     @vite('resources/js/components/search.js')
     @vite('resources/css/components/search.css')
-    @vite('resources/js/general/barba.js')
 
     {{-- favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href=" {{ Vite::image('favicon/apple-touch-icon.png')}}">

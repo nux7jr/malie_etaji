@@ -1,6 +1,6 @@
 @push('head')
 @once
-@vite('resources/css/components/aboutHeader.css')
+@vite('resources/css/components/about-header.css')
 @endonce
 @endpush
 

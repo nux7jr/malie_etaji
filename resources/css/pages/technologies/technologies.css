@@ -316,7 +316,7 @@
 .spec__img {
     width: 255px;
     height: 300px;
-    background-position: center center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: var(--border-raduis-defalut);
@@ -347,6 +347,7 @@
 .spec-pagination {
     position: relative;
     z-index: 2;
+    max-width: 500px;
 }
 .spec__heading {
     font-weight: 700;

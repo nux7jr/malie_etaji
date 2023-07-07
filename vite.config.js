@@ -47,18 +47,18 @@ export default defineConfig({
                 "resources/js/components/trusted.js",
                 "resources/css/components/trusted.css",
 
-                "resources/js/components/mob_menu.js",
-                "resources/css/components/mob_menu.css",
+                "resources/js/components/mob-menu.js",
+                "resources/css/components/mob-menu.css",
                 // for components
 
                 "resources/css/components/office-map.css",
                 "resources/js/components/office-map.js",
 
                 "resources/css/components/path.css",
-                "resources/css/components/house_card.css",
+                "resources/css/components/house-card.css",
                 "resources/css/components/certificates.css",
                 "resources/css/components/tech.css",
-                "resources/css/components/aboutHeader.css",
+                "resources/css/components/about-header.css",
                 "resources/css/components/constructor.css",
 
                 "resources/js/components/constructor.js",

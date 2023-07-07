@@ -1,6 +1,6 @@
 @push('head')
 @once
-@vite("resources/css/components/house_card.css")
+@vite("resources/css/components/house-card.css")
 
 @endonce
 @endpush

@@ -10,9 +10,8 @@
     border-radius: var(--border-raduis-defalut);
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-between;
     padding: 50px 89px;
-
     color: var(--color-black);
 }
 .smi__info {
