@@ -41,7 +41,7 @@ allLink.forEach((elem) => {
                 .querySelector(".page-transition-loader")
                 .classList.add("page-transition-loader--active");
             setTimeout(() => {
-                document.location.replace(currLink.href);
+                window.location.href = currLink.href;
             }, 1000);
         }
     });

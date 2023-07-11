@@ -89,6 +89,9 @@ _tmr.push({id: "3366612", type: "pageView", start: (new Date()).getTime()});
     <div class="page-transition-container">
         <lottie-player class="page-transition-loader" src="/files/load.json" background="transparent"  speed="2"  style="width: 300px; height: 300px;" loop autoplay>
         </lottie-player>
+        {{-- <svg width="62" height="59" viewBox="0 0 62 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="main-slider__preloader-path" d="M3 26 31 4l28 22v30H3V26z" stroke="#96A0AA" stroke-width="6" style="--svg-total-length: 187.2179718017578px; stroke-dashoffset: 0.001; stroke-dasharray: 0px, 999999px;"></path>
+        </svg> --}}
         <h1 class="page-transition-container__heading">
             “Малые этажи” самая рекомендуемая строительная компания!
         </h1>
