@@ -16,7 +16,6 @@ class SendFormController extends Controller
      */
     public function sendForm(Request $request,SendFormInterface $sender){
         try {
-
             $validated = self::validateRequest($request);
             $validated = self::addCommentToInputData($validated, $request);
             $validated = self::detectCityAndAddToInputData($validated);
@@ -27,6 +26,11 @@ class SendFormController extends Controller
             \Log::error('Ошибка отправки формы: ' . $err->getMessage() . ' DATA: ' . serialize($request->toArray()));
         }
     }
+
+    /**
+     * @param array $validated
+     * @return array
+     */
     private static function detectCityAndAddToInputData(array $validated):array
     {
         $city = City::getCurrentCity(request()->route()->parameter('subdomain') ?? 'krasnoyarsk');
@@ -56,10 +60,13 @@ class SendFormController extends Controller
             'house-date'        => 'string|nullable',
             'house-place'       => 'string|nullable',
             'house-credit'      => 'string|nullable',
+            'house_size'        => 'string|nullable',
+            'house_price'       => 'string|nullable',
             'mortgage'          => 'string|nullable',
             'price'             => 'numeric',
             'start-payment'     => 'numeric',
             'loan-term'         => 'numeric',
+            'subject'           => 'string|nullable',
         ]);
     }
 
@@ -88,9 +95,50 @@ class SendFormController extends Controller
             $url = ($url['host'] ?? '') . ($url['path'] ?? '');
             $validated['subject'] = 'Подана заявка на Ипотеку на сайте ' . $url . PHP_EOL;
         }
+
+        if (isset($validated['house_size']) && isset($validated['house-place']) && isset($validated['house-credit'])){
+            $validated['comment'] = self::getConstructorMessage($validated, $request);
+            $url = parse_url($request->server('HTTP_REFERER'));
+            $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+            $validated['subject'] = 'Подана заявка в конструкторе дома на сайте ' . $url . PHP_EOL;
+        }
         return $validated;
     }
+    /**
+     * @param Request $request
+     * @param $phone
+     * @param string $subject
+     * @return string
+     */
+    private static function getHeaderComment(Request $request, $phone, string $subject): string
+    {
+        $url = parse_url($request->server('HTTP_REFERER'));
+        $url = ($url['host'] ?? '') . ($url['path'] ?? '');
+        $message = $subject . ' ' . $url . PHP_EOL;
+        $message .= 'Уникальный идентификатор посетителя: ' . $_SERVER['HTTP_X_REAL_IP'] . PHP_EOL;
+        $message .= 'Телефон: ' . ($phone ?? '') . PHP_EOL;
+        return $message;
+    }
 
+    /**
+     * @param array $inputValidatedData
+     * @param Request $request
+     * @return string
+     */
+    private static function getConstructorMessage(array $inputValidatedData, Request $request): string
+    {
+        $message = self::getHeaderComment($request, $inputValidatedData['phone'], 'Оформили заявку в конструкторе');
+        $message .= 'Имя: ' . ($inputValidatedData['name'] ?? '')  . PHP_EOL;
+        $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
+        $message .= 'Данные с конструктора дома:' . PHP_EOL;
+        $message .= 'Тип дома: ' . $inputValidatedData['house_type'] . PHP_EOL;
+        $message .= 'Размер дома: ' . $inputValidatedData['house_size'] . PHP_EOL;
+        $message .= 'Стоимость дома: ' . $inputValidatedData['house_price'] . ' млн.' . PHP_EOL;
+        $message .= 'Срок начала строительства: ' . $inputValidatedData['house-date'] . PHP_EOL;
+        $message .= 'Есть ли участок для строительства: ' . $inputValidatedData['house-place'] . PHP_EOL;
+        $message .= 'Актуальна ли ипотека: ' . $inputValidatedData['house-credit'] . PHP_EOL;
+        return $message;
+    }
     /**
      * @param Request $request
      * @param array $validated
@@ -178,11 +226,7 @@ class SendFormController extends Controller
      */
     private static function getCallQuizMessage(array $inputValidatedData, Request $request):string
     {
-        $url = parse_url($request->server('HTTP_REFERER'));
-        $url = ($url['host'] ?? '') . ($url['path'] ?? '');
-        $message = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
-        $message .= 'Уникальный идентификатор посетителя: ' . $_SERVER['HTTP_X_REAL_IP'] . PHP_EOL;
-        $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
+        $message = self::getHeaderComment($request, $inputValidatedData['phone'], 'Заказали консультацию на сайте');
         $message .= 'Удобное время для звонка: ' . ($inputValidatedData['time'] ?? '')  . PHP_EOL;
         $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
         return $message;
@@ -195,11 +239,7 @@ class SendFormController extends Controller
      */
     private static function getCalcMainMessage(array $inputValidatedData, Request $request):string
     {
-        $url = parse_url($request->server('HTTP_REFERER'));
-        $url = ($url['host'] ?? '') . ($url['path'] ?? '');
-        $message = 'Заказали консультацию на сайте ' . $url . PHP_EOL;
-        $message .= 'Уникальный идентификатор посетителя: ' . $_SERVER['HTTP_X_REAL_IP'] . PHP_EOL;
-        $message .= 'Телефон: ' . ($inputValidatedData['phone'] ?? '')  . PHP_EOL;
+        $message = self::getHeaderComment($request, $inputValidatedData['phone'], 'Оформили заявку в ипотечном калькуляторе на сайте');
         $message .= 'Имя: ' . ($inputValidatedData['name'] ?? '')  . PHP_EOL;
         $message .= 'URL с которого была отправлена форма: ' . $request->server('HTTP_REFERER')  . PHP_EOL;
         $message .= 'Данные с ипотечного калькулятора:' . PHP_EOL;
