@@ -12,8 +12,6 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "@barba/core": "^2.9.7",
-        "@lottiefiles/lottie-player": "^2.0.2",
         "fslightbox": "^3.4.1",
         "gsap": "^3.12.1",
         "inputmask": "^5.0.8",

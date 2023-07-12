@@ -1,4 +1,4 @@
-import "@lottiefiles/lottie-player";
+
 import "./bootstrap";
 import "./general/menu";
 import "./general/inputs";
