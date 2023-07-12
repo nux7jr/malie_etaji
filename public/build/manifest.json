@@ -134,7 +134,7 @@
     "src": "resources/css/components/reels.css"
   },
   "resources/css/components/search.css": {
-    "file": "assets/search-4ed993c7.js",
+    "file": "assets/search-c42ce534.js",
     "isEntry": true,
     "src": "resources/css/components/search.css"
   },
@@ -154,7 +154,7 @@
     "src": "resources/css/components/trusted.css"
   },
   "resources/css/pages/about/about.css": {
-    "file": "assets/about-b4821a9f.css",
+    "file": "assets/about-f3e62ba9.css",
     "isEntry": true,
     "src": "resources/css/pages/about/about.css"
   },
@@ -189,7 +189,7 @@
     "src": "resources/css/pages/menu/menu.css"
   },
   "resources/css/pages/mortgage/mortgage.css": {
-    "file": "assets/mortgage-c392f414.css",
+    "file": "assets/mortgage-45879ed4.css",
     "isEntry": true,
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
@@ -291,6 +291,50 @@
   "resources/images/adv/icon8.svg": {
     "file": "assets/icon8-fe5b81d8.svg",
     "src": "resources/images/icons/icon8.svg"
+  },
+  "resources/images/banks/dom.rf.svg": {
+    "file": "assets/dom.rf-5eb24b52.svg",
+    "src": "resources/images/banks/dom.rf.svg"
+  },
+  "resources/images/banks/levoberegniy.svg": {
+    "file": "assets/levoberegniy-50c1b115.svg",
+    "src": "resources/images/banks/levoberegniy.svg"
+  },
+  "resources/images/banks/mts.svg": {
+    "file": "assets/mts-10eb7bcb.svg",
+    "src": "resources/images/banks/mts.svg"
+  },
+  "resources/images/banks/pochta.svg": {
+    "file": "assets/pochta-db308c1f.svg",
+    "src": "resources/images/banks/pochta.svg"
+  },
+  "resources/images/banks/primsocbank.svg": {
+    "file": "assets/primsocbank-aa199b90.svg",
+    "src": "resources/images/banks/primsocbank.svg"
+  },
+  "resources/images/banks/rosbank.svg": {
+    "file": "assets/rosbank-f4ac941a.svg",
+    "src": "resources/images/banks/rosbank.svg"
+  },
+  "resources/images/banks/rosselhoz.svg": {
+    "file": "assets/rosselhoz-6a48b7b8.svg",
+    "src": "resources/images/banks/rosselhoz.svg"
+  },
+  "resources/images/banks/sber.svg": {
+    "file": "assets/sber-57fb6241.svg",
+    "src": "resources/images/banks/sber.svg"
+  },
+  "resources/images/banks/sngb.svg": {
+    "file": "assets/sngb-212ebfe7.svg",
+    "src": "resources/images/banks/sngb.svg"
+  },
+  "resources/images/banks/sovkombank.svg": {
+    "file": "assets/sovkombank-4b6c4220.svg",
+    "src": "resources/images/banks/sovkombank.svg"
+  },
+  "resources/images/banks/vtb.svg": {
+    "file": "assets/vtb-eb7f0124.svg",
+    "src": "resources/images/banks/vtb.svg"
   },
   "resources/images/barns/29-42/1-main.jpg": {
     "file": "assets/1-main-ff161cfd.jpg",
@@ -834,11 +878,11 @@
   },
   "resources/images/cert/1.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/2.jfif": {
     "file": "assets/1-a6a13e07.jfif",
-    "src": "resources/images/cert/1.jfif"
+    "src": "resources/images/cert/2.jfif"
   },
   "resources/images/cert/3.jfif": {
     "file": "assets/3-554a3972.jfif",
@@ -1540,6 +1584,10 @@
     "file": "assets/pit-e0b9a039.svg",
     "src": "resources/images/icons/pit.svg"
   },
+  "resources/images/icons/play.svg": {
+    "file": "assets/play-df1354d6.svg",
+    "src": "resources/images/icons/play.svg"
+  },
   "resources/images/icons/search.svg": {
     "file": "assets/search-2fdec445.svg",
     "src": "resources/images/icons/search.svg"
@@ -1632,9 +1680,9 @@
     "file": "assets/2-c80ada90.jpg",
     "src": "resources/images/mortgage/adv/2.jpg"
   },
-  "resources/images/mortgage/adv/3.jpeg": {
-    "file": "assets/3-7318cb61.jpeg",
-    "src": "resources/images/mortgage/adv/3.jpeg"
+  "resources/images/mortgage/adv/3.jpg": {
+    "file": "assets/1-cf60487b.jpg",
+    "src": "resources/images/people/1.jpg"
   },
   "resources/images/mortgage/away.jpg": {
     "file": "assets/away-3408e380.jpg",
@@ -3523,7 +3571,7 @@
     "src": "resources/js/components/mob-menu.js"
   },
   "resources/js/components/modal.js": {
-    "file": "assets/modal-48a690f7.js",
+    "file": "assets/modal-6c867310.js",
     "imports": [
       "_sender-11aaf2c3.js"
     ],
@@ -3562,7 +3610,7 @@
     "src": "resources/js/components/reels.js"
   },
   "resources/js/components/search.js": {
-    "file": "assets/search-c42ce534.js",
+    "file": "assets/search-4ed993c7.js",
     "isEntry": true,
     "src": "resources/js/components/search.js"
   },
