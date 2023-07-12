@@ -126,7 +126,7 @@ class SpecPeople implements Arrayable
         'image' => (new Image(
           src: 'people/16.jpg',
         ))->getSrc(),
-        'name' => __('Сарвар Джураем'),
+        'name' => __('Сарвар Джураев'),
         'spec' => __('Специалист отдела продаж'),
       ],
       [
