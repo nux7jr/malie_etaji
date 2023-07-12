@@ -618,10 +618,6 @@ $service = (new Service())->toArray();
 <x-section.feedback>
 </x-section.feedback>
 
-<x-section.trusted>
-</x-section.trusted>
-
-
 
 <section class="home-projects">
     <div class="home-projects__header">

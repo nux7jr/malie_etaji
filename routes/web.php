@@ -218,15 +218,15 @@ function routeList(): void
 
 
         // blog
-        Route::get('/blog', function ($domain) {
-            return view('blog.index')->with([
-                'paths' => [
-                    ['path' => '/', 'name' => 'Главная'],
-                    ['path' => '/blog', 'name' => 'Блог'],
-                ],
-                'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
-            ]);
-        });
+        // Route::get('/blog', function ($domain) {
+        //     return view('blog.index')->with([
+        //         'paths' => [
+        //             ['path' => '/', 'name' => 'Главная'],
+        //             ['path' => '/blog', 'name' => 'Блог'],
+        //         ],
+        //         'city' => City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain),
+        //     ]);
+        // });
 
         Route::get('/blog/{id}', function ($domain, $subdomainOrId, $idOrNull = null) {
             $articlesAll = Articles::$card_elements;

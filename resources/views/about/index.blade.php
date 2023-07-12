@@ -150,7 +150,8 @@ $service = (new Service())->toArray();
         </div>
         @endforeach
     </div>
-    <a class="stable__video" data-fslightbox="video"
+    <div class="stable__container">
+        <a class="stable__video" data-fslightbox="video"
         style="background-image: url({{ Vite::asset('resources/images/about/leader.jpg')}})"
         data-video-poster="{{ Vite::asset('resources/images/about/leader.jpg')}}" href="/video/main/1.mov">
         <h1 class="stable__video-h1">
@@ -158,7 +159,11 @@ $service = (new Service())->toArray();
         </h1>
         <p class="stable__video-paraf">
             {{__('От руководителя отдела продаж ФСК "Малые этажи" Владислава Горковенко')}}</p>
-    </a>
+        </a>
+        <button data-modal_id="modal__call" data-ym="napisat" class="stable__button default__button">
+            {{__('Задать вопрос директору')}}
+        </button>
+    </div>
 </section>
 <section id="all-services" class="all-services">
     <h1 class="all-services__heading">

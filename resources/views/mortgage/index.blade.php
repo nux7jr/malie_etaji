@@ -99,7 +99,7 @@ $faq = (new Faq())->toArray();
 </x-cards.house-card>
 <x-section.order class="mortgage__call">
 </x-section.order>
-<section class="adv" id="mortgage-adv">
+<section class="advantages" id="mortgage-adv">
   <h1 class="adv__heading">
     {{__('Преимущества ипотеки от “Малых этажей”')}}
   </h1>
@@ -140,7 +140,7 @@ $faq = (new Faq())->toArray();
         </div>
       </div>
       <div class="adv-person">
-        <img class="adv-person__img" src="{{ Vite::asset('resources/images/mortgage/adv/3.jpeg')}}" alt="person">
+        <img class="adv-person__img" src="{{ Vite::asset('resources/images/mortgage/adv/3.jpg')}}" alt="person">
 
         <h1 class="adv-person__name">{{__('Алена Крижановская')}}</h1>
         <p class="adv-person__text">{{__('Ваш персональный ипотечный брокер')}}</p>
@@ -148,16 +148,17 @@ $faq = (new Faq())->toArray();
     </div>
     <div class="adv-call">
       <a class="adv-call__link">
-        <span data-modal_id="modal__income" data-ym="podbor_ZU_ipoteka" class="adv-call__text">Нет участка? <br />
-          Подберем с вами идеальный
-          вариант</span>
-        <img data-modal_id="modal__income" data-ym="podbor_ZU_ipoteka" class="adv-call__img"
+        <span data-modal_id="modal__income" subject='Подберем участок' data-ym="podbor_ZU_ipoteka" class="adv-call__text">{{__('Нет участка?')}} <br />
+          {{__('Подберем с вами идеальный
+          вариант')}}
+          </span>
+        <img data-modal_id="modal__income" subject='Подберем участок' data-ym="podbor_ZU_ipoteka" class="adv-call__img"
           src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
       </a>
       <a class="adv-call__link">
-        <span data-modal_id="modal__income" data-ym="raschet_proekta" class="adv-call__text">
-          Заказать расчет стоимости <br /> вашего проекта</span>
-        <img data-modal_id="modal__income" data-ym="raschet_proekta" class="adv-call__img"
+        <span data-modal_id="modal__income" subject='Заказать расчет стоимости' data-ym="raschet_proekta" class="adv-call__text">
+           {{__('Заказать расчет стоимости')}} <br /> {{__('вашего проекта')}}</span>
+        <img data-modal_id="modal__income" subject='Заказать расчет стоимости' data-ym="raschet_proekta" class="adv-call__img"
           src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
       </a>
     </div>
@@ -165,37 +166,9 @@ $faq = (new Faq())->toArray();
 <x-section.trusted>
 </x-section.trusted>
 
-{{-- <section class="faq">
-  <div class="faq__header">
-    <h1 class="faq__heading">
-      {{__('Часто задаваемые вопросы')}}
-    </h1>
-    <button class="default__button faq__button">
-      {{__('Не нашли ответ на свой вопрос? Задайте его специалисту.')}}
-    </button>
-  </div>
-  <div class="faq__wrapper">
-    @for ($i = 0; $i < 5; $i++) <div class="faq__item">
-      <div class="faq__toggle">
-        <span>
-          {{__('Часто задаваемые вопросы?')}}
-        </span>
-        <img class="faq__icon" src="{{ Vite::asset('resources/images/icons/faq.svg') }}" alt="faq__icon">
-      </div>
-      <div class="faq__content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aut voluptate delectus soluta ratione dolorem
-        minima rerum molestiae maiores, cum tempore, molestias ea itaque quisquam totam veritatis repellat ipsa
-        voluptatem?
-      </div>
-  </div>
-  @endfor
-  </div>
-</section> --}}
-
 <x-section.faq faqs='{!! json_encode($faq) !!}'>
 </x-section.faq>
 <x-section.selection>
 </x-section.selection>
 
 @endsection
-{{-- @for ($i = 0; $i < 8; $i++) --}} {{-- @endfor --}}

@@ -228,7 +228,7 @@
                     <button type="button" class="constructor__button real-back">
                         <img src="{{ Vite::asset('resources/images/components/button.svg') }}" alt="button">
                     </button>
-                    <button type="button" data-additional_form='constructor__form' class="default__button constructor__next" data-ym="konstruktor"
+                    <button subject="Конструктор дома" type="button" data-additional_form='constructor__form' class="default__button constructor__next" data-ym="konstruktor"
                         data-modal_id="modal__cell">
                         {{ __('Завершить') }}
                     </button>
