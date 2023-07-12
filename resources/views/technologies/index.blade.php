@@ -151,11 +151,13 @@ $faq = (new FaqTech())->toArray();
         </div>
         @endforeach
       </div>
+    </div>
+  </div>
 </section>
 <section class="spec">
   <div class="spec__header">
     <h1 class="spec__heading">
-      {{ __('Каждый этапы работ выполняют отдельные специалисты') }}
+      {{ __('Каждый этап работ выполняют отдельные специалисты') }}
     </h1>
     <p class="spec__small">
       {{ __('А не мастер на все руки') }}

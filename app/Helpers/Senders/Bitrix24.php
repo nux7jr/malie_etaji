@@ -178,7 +178,6 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
         !empty(self::$data['house-date']) ? self::$comment .= "\nСрок строительства: " . self::$data['house-date'] : '';
         !empty(self::$data['house-place']) ? self::$comment .= "\nНаличие участка: " . self::$data['house-place'] : '';
         !empty(self::$data['house-credit']) ? self::$comment .= "\nАктуальность ипотеки: " . self::$data['house-credit'] : '';
-        self::$comment .= serialize(self::$data['else']);
     }
     /**
      * @param int $id
@@ -383,7 +382,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             $normalizedData['house-date'] = $data['house-date'];
         }
         if (!empty($data['house-place'])){
-            $normalizedData['house-place'] = $data['house_money'];
+            $normalizedData['house-place'] = $data['house-place'];
         }
         if (!empty($data['house-credit'])){
             $normalizedData['house-credit'] = $data['house-credit'];
