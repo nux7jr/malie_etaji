@@ -382,7 +382,7 @@ class Bitrix24 extends SendTelegram implements SendFormInterface
             $normalizedData['house-date'] = $data['house-date'];
         }
         if (!empty($data['house-place'])){
-            $normalizedData['house-place'] = $data['house_money'];
+            $normalizedData['house-place'] = $data['house-place'];
         }
         if (!empty($data['house-credit'])){
             $normalizedData['house-credit'] = $data['house-credit'];
