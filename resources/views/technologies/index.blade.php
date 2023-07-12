@@ -151,6 +151,8 @@ $faq = (new FaqTech())->toArray();
         </div>
         @endforeach
       </div>
+    </div>
+  </div>
 </section>
 <section class="spec">
   <div class="spec__header">
