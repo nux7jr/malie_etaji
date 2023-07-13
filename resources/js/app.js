@@ -1,4 +1,5 @@
 
+import "./general/pageChange";
 import "./bootstrap";
 import "./general/menu";
 import "./general/inputs";

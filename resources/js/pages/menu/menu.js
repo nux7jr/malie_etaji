@@ -17,11 +17,9 @@ document.addEventListener("DOMContentLoaded", (evt) => {
             false
         );
     });
-
-
     const cityToggler = document.querySelector(".mgeo__button");
-    const cityList = document.querySelector(".mgeo-city__list")
+    const cityList = document.querySelector(".mgeo-city__list");
     cityToggler.addEventListener("click", (evt) => {
         cityList.classList.toggle("mgeo-city__list--active");
-    })
+    });
 });

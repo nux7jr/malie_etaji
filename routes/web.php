@@ -41,7 +41,9 @@ function routeList(): void
         Route::get('/quiz', function ($domain) {
             return view('landings.quiz.index')->with('city', City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain));
         });
-
+        Route::get('/excursions', function ($domain) {
+            return view('landings.excursions.index')->with('city', City::getAllCitiesWithBaseCurrentSubdomain(request()->route()->parameter('subdomain') ?? $domain));
+        });
         // projects
         Route::get('/projects', function ($domain) {
             return view('projects.index')->with([

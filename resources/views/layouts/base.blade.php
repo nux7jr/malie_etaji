@@ -14,7 +14,6 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Малые этажи">
     <meta name="twitter:card" content="summary">
-    {{-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> --}}
 
     <!-- maps -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1b463e1c-30e3-4e94-b592-300f2f77b882"
@@ -25,7 +24,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    @vite('resources/js/general/pageChange.js')
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
     @yield('head')
@@ -90,6 +88,7 @@ _tmr.push({id: "3366612", type: "pageView", start: (new Date()).getTime()});
 </head>
 
 <body>
+    {{-- preloader --}}
     <div class="page-transition-container">
 
         <svg width="62" height="59" viewBox="0 0 62 59" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,26 +100,24 @@ _tmr.push({id: "3366612", type: "pageView", start: (new Date()).getTime()});
             “Малые этажи” самая рекомендуемая строительная компания!
         </h1>
         <style>
-            /* preloader */
             @keyframes animate-svg-stroke {
                 0% {
-                    stroke-dashoffset: 189.2179718017578px;
-                    stroke-dasharray: 189.2179718017578px;
+                    stroke-dashoffset: 189px;
+                    stroke-dasharray: 189px;
                 }
 
                 100% {
-                    stroke-dashoffset: 378.4359436035156px;
-                    stroke-dasharray: 189.2179718017578px;
+                    stroke-dashoffset: 378px;
+                    stroke-dasharray: 189px;
                 }
             }
 
             .preloader-page {
-                animation: animate-svg-stroke 1s ease-out 0s infinite;
+                animation: animate-svg-stroke 1000ms linear 0s infinite;
             }
-
-            /* end preloader */
         </style>
     </div>
+    {{-- end preloader --}}
     <div class="page-container">
         <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
         <div id="app" class="app">

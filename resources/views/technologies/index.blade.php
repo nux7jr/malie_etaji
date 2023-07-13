@@ -96,7 +96,7 @@ $faq = (new FaqTech())->toArray();
     </div>
     <div class="tech-call__item">
       <p class="tech-call__paraf">{{__('Расчитать проект')}}</p>
-      <a class="tech-call__link" href="/live">
+      <a class="tech-call__link" href="/mortgage">
         <img class="tech-call__img" src="{{Vite::asset('resources/images/icons/offer_arr_red.svg')}}" alt="link">
       </a>
     </div>
