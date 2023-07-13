@@ -44,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-60bace10.css",
+    "file": "assets/app-2c6bc41b.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -184,7 +184,7 @@
     "src": "resources/css/pages/home/home.css"
   },
   "resources/css/pages/menu/menu.css": {
-    "file": "assets/menu-555911b3.css",
+    "file": "assets/menu-6992aafe.css",
     "isEntry": true,
     "src": "resources/css/pages/menu/menu.css"
   },
@@ -3633,7 +3633,7 @@
     "src": "resources/js/general/barba.js"
   },
   "resources/js/general/pageChange.js": {
-    "file": "assets/pageChange-923566fb.js",
+    "file": "assets/pageChange-609afce5.js",
     "isEntry": true,
     "src": "resources/js/general/pageChange.js"
   },
@@ -3682,7 +3682,7 @@
     "src": "resources/js/pages/home/home.js"
   },
   "resources/js/pages/menu/menu.js": {
-    "file": "assets/menu-d4c271b0.js",
+    "file": "assets/menu-bd4fb18c.js",
     "isEntry": true,
     "src": "resources/js/pages/menu/menu.js"
   },
