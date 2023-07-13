@@ -100,13 +100,13 @@ $faq = (new Faq())->toArray();
 <x-section.order class="mortgage__call">
 </x-section.order>
 <section class="advantages" id="mortgage-adv">
-  <h1 class="adv__heading">
+  <h1 class="advantages__heading">
     {{__('Преимущества ипотеки от “Малых этажей”')}}
   </h1>
-  <div class="adv__section">
-    <div class="adv__wrapper">
-      <div class="adv__list">
-        <div class="adv-card adv-card--first"
+  <div class="advantages__section">
+    <div class="advantages__wrapper">
+      <div class="advantages__list">
+        <div class="advantages-card advantages-card--first"
           style="background-image: url({{ Vite::asset('resources/images/mortgage/adv/1.png')}})">
         </div>
         @php
@@ -130,35 +130,35 @@ $faq = (new Faq())->toArray();
         ],
         ]
         @endphp
-        @foreach ($adv_list as $item) <div class="adv-card">
-          <h1 class="adv-card__heading">{{ $item['title']}}</h1>
-          <p class="adv-card__paraf">{{ $item['text']}}</p>
+        @foreach ($adv_list as $item) <div class="advantages-card">
+          <h1 class="advantages-card__heading">{{ $item['title']}}</h1>
+          <p class="advantages-card__paraf">{{ $item['text']}}</p>
         </div>
         @endforeach
-        <div class="adv-card adv-card--last"
+        <div class="advantages-card advantages-card--last"
           style="background-image: url({{ Vite::asset('resources/images/mortgage/adv/2.jpg')}})">
         </div>
       </div>
-      <div class="adv-person">
-        <img class="adv-person__img" src="{{ Vite::asset('resources/images/mortgage/adv/3.jpg')}}" alt="person">
+      <div class="advantages-person">
+        <img class="advantages-person__img" src="{{ Vite::asset('resources/images/mortgage/adv/3.jpg')}}" alt="person">
 
-        <h1 class="adv-person__name">{{__('Алена Крижановская')}}</h1>
-        <p class="adv-person__text">{{__('Ваш персональный ипотечный брокер')}}</p>
+        <h1 class="advantages-person__name">{{__('Алена Крижановская')}}</h1>
+        <p class="advantages-person__text">{{__('Ваш персональный ипотечный брокер')}}</p>
       </div>
     </div>
-    <div class="adv-call">
-      <a class="adv-call__link">
-        <span data-modal_id="modal__income" subject='Подберем участок' data-ym="podbor_ZU_ipoteka" class="adv-call__text">{{__('Нет участка?')}} <br />
+    <div class="advantages-call">
+      <a class="advantages-call__link">
+        <span data-modal_id="modal__income" subject='Подберем участок' data-ym="podbor_ZU_ipoteka" class="advantages-call__text">{{__('Нет участка?')}} <br />
           {{__('Подберем с вами идеальный
           вариант')}}
           </span>
-        <img data-modal_id="modal__income" subject='Подберем участок' data-ym="podbor_ZU_ipoteka" class="adv-call__img"
+        <img data-modal_id="modal__income" subject='Подберем участок' data-ym="podbor_ZU_ipoteka" class="advantages-call__img"
           src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
       </a>
-      <a class="adv-call__link">
-        <span data-modal_id="modal__income" subject='Заказать расчет стоимости' data-ym="raschet_proekta" class="adv-call__text">
+      <a class="advantages-call__link">
+        <span data-modal_id="modal__income" subject='Заказать расчет стоимости' data-ym="raschet_proekta" class="advantages-call__text">
            {{__('Заказать расчет стоимости')}} <br /> {{__('вашего проекта')}}</span>
-        <img data-modal_id="modal__income" subject='Заказать расчет стоимости' data-ym="raschet_proekta" class="adv-call__img"
+        <img data-modal_id="modal__income" subject='Заказать расчет стоимости' data-ym="raschet_proekta" class="advantages-call__img"
           src="{{ Vite::asset('resources/images/icons/offer_arr_red.svg') }}" alt="offer">
       </a>
     </div>
