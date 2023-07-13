@@ -13,9 +13,46 @@ function getParentByTagName(node, tagname) {
         }
         parent = parent.parentNode;
     }
-
     return parent;
 }
+const pageState = {
+    contentLoad: false,
+};
+const _INTERVAL = 500;
+const _TIMEOUT_LOADER = 4500;
+
+const loaderContainer = document.querySelector(".page-transition-container");
+const loaderHeading = document.querySelector(
+    ".page-transition-container__heading"
+);
+const loaderIcon = document.querySelector(".preloader-page");
+
+const timerLoad = setTimeout(() => {
+    loaderContainer.classList.add("page-transition-container--active");
+
+    loaderHeading.classList.add("page-transition-container__heading--active");
+
+    loaderIcon.classList.add("preloader-page--active");
+
+    clearTimeout(timerLoad);
+}, _TIMEOUT_LOADER);
+
+const intervalLoad = setInterval((evt) => {
+    if (pageState.contentLoad) {
+        loaderContainer.classList.add("page-transition-container--active");
+
+        loaderHeading.classList.add(
+            "page-transition-container__heading--active"
+        );
+
+        loaderIcon.classList.add("preloader-page--active");
+
+        clearInterval(intervalLoad);
+    }
+}, _INTERVAL);
+document.addEventListener("DOMContentLoaded", (evt) => {
+    pageState.contentLoad = true;
+});
 
 allLink.forEach((elem) => {
     elem.addEventListener("click", (evt) => {
@@ -31,18 +68,7 @@ allLink.forEach((elem) => {
             currLink.getAttribute("data-fslightbox") === null
         ) {
             evt.preventDefault();
-            document
-                .querySelector(".page-transition-container")
-                .classList.add("page-transition-container--active");
-            document
-                .querySelector(".page-transition-container__heading")
-                .classList.add("page-transition-container__heading--active");
-            document
-                .querySelector(".page-transition-loader")
-                .classList.add("page-transition-loader--active");
-            setTimeout(() => {
-                window.location.href = currLink.href;
-            }, 600);
+            window.location.href = currLink.href;
         }
     });
 });

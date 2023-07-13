@@ -711,23 +711,15 @@ footer {
     margin: 0;
     pointer-events: none;
     background-color: var(--color--background);
-    animation: fade-out 0.45s ease-in-out forwards;
-}
-.page-transition-container__heading {
-    color: var(--color-black);
-    animation: fade-out 0.3s ease-in-out forwards;
 }
 .page-transition-container--active {
-    animation: fade-in 0.25s ease-in-out forwards;
-}
-.page-transition-container__heading--active {
-    animation: fade-in 0.2s ease-in-out forwards;
-}
-.page-transition-loader {
     animation: fade-out 0.3s ease-in-out forwards;
 }
-.page-transition-loader--active {
-    animation: fade-in 0.3s ease-in-out forwards;
+.page-transition-container__heading--active {
+    animation: fade-out 0.2s ease-in-out forwards;
+}
+.preloader-page--active {
+    animation: fade-out 0.1s ease-in-out forwards;
 }
 /*END COMPONENTS*/
 /* for media */
