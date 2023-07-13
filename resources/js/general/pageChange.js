@@ -42,7 +42,7 @@ allLink.forEach((elem) => {
                 .classList.add("page-transition-loader--active");
             setTimeout(() => {
                 window.location.href = currLink.href;
-            }, 1000);
+            }, 600);
         }
     });
 });

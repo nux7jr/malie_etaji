@@ -6,13 +6,29 @@
 @endsection
 
 @section('content')
-
 <section class="mob-list">
   <button class="default__button mgeo__button">
     <img class="mgeo__img" src="{{ Vite::asset('resources/images/menu/geo.svg')}}" alt="geo">
-    <span class="mgeo__text">{{__('Екатеринбург')}}</span>
+    <span class="mgeo__text">{{$city['show']['name']}}</span>
   </button>
-
+  <div class="mgeo-city">
+    <div class="mgeo-city__list">
+      @foreach($city['hidden'] as $hidden_city)
+      @php
+      if (($subdomain = request()->route()->parameter('subdomain')) !== null){
+      $host = request()->host();
+      $new_host = str_replace($subdomain,$hidden_city['code'],$host);
+      $url = str_replace($host,$new_host,request()->fullUrl());
+      }else{
+      $host = request()->host();
+      $new_host = $hidden_city['code'] . '.' . request()->host();
+      $url = str_replace($host,$new_host,request()->fullUrl());
+      }
+      @endphp
+      <a class="mgeo-city__link" href="{{$url}}">{{__($hidden_city['name'])}}</a>
+      @endforeach
+  </div>
+  </div>
   <div class="mob-list__item">
     <button class="mob-list__button">
       <span class="mob-list__span">{{__('Проекты')}}</span>

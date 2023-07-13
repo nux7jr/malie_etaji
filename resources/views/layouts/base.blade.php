@@ -71,8 +71,8 @@
     <!-- /Yandex.Metrika counter -->
 
     <!-- Top.Mail.Ru counter -->
-<script type="text/javascript">
-var _tmr = window._tmr || (window._tmr = []);
+    <script type="text/javascript">
+        var _tmr = window._tmr || (window._tmr = []);
 _tmr.push({id: "3366612", type: "pageView", start: (new Date()).getTime()});
 (function (d, w, id) {
   if (d.getElementById(id)) return;
@@ -81,20 +81,45 @@ _tmr.push({id: "3366612", type: "pageView", start: (new Date()).getTime()});
   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
 })(document, window, "tmr-code");
-</script>
-<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3366612;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
-<!-- /Top.Mail.Ru counter -->
+    </script>
+    <noscript>
+        <div><img src="https://top-fwz1.mail.ru/counter?id=3366612;js=na" style="position:absolute;left:-9999px;"
+                alt="Top.Mail.Ru" /></div>
+    </noscript>
+    <!-- /Top.Mail.Ru counter -->
 </head>
+
 <body>
     <div class="page-transition-container">
-        <lottie-player class="page-transition-loader" src="/files/load.json" background="transparent"  speed="2"  style="width: 300px; height: 300px;" loop autoplay>
-        </lottie-player>
-        {{-- <svg width="62" height="59" viewBox="0 0 62 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="main-slider__preloader-path" d="M3 26 31 4l28 22v30H3V26z" stroke="#96A0AA" stroke-width="6" style="--svg-total-length: 187.2179718017578px; stroke-dashoffset: 0.001; stroke-dasharray: 0px, 999999px;"></path>
-        </svg> --}}
+
+        <svg width="62" height="59" viewBox="0 0 62 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="preloader-page page-transition-loader" d="M3 26 31 4l28 22v30H3V26z" stroke="#f04b54"
+                stroke-width="6">
+            </path>
+        </svg>
         <h1 class="page-transition-container__heading">
             “Малые этажи” самая рекомендуемая строительная компания!
         </h1>
+        <style>
+            /* preloader */
+            @keyframes animate-svg-stroke {
+                0% {
+                    stroke-dashoffset: 189.2179718017578px;
+                    stroke-dasharray: 189.2179718017578px;
+                }
+
+                100% {
+                    stroke-dashoffset: 378.4359436035156px;
+                    stroke-dasharray: 189.2179718017578px;
+                }
+            }
+
+            .preloader-page {
+                animation: animate-svg-stroke 1s ease-out 0s infinite;
+            }
+
+            /* end preloader */
+        </style>
     </div>
     <div class="page-container">
         <x-include.header path={{ $path }} city={!!json_encode($city)!!}></x-include.header>
@@ -105,7 +130,7 @@ _tmr.push({id: "3366612", type: "pageView", start: (new Date()).getTime()});
                 </div>
             </div>
         </div>
-        <x-include.mob_menu></x-include.mob_menu>
+        <x-include.mob_menu city={!!json_encode($city)!!}></x-include.mob_menu>
         <x-include.footer></x-include.footer>
         <x-include.modals></x-include.modals>
         <x-include.search></x-include.search>

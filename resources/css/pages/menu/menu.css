@@ -5,6 +5,7 @@
 .mob-list__span,
 .mob-list__link {
     font-size: 16px;
+    cursor: pointer;
 }
 .mob-list__item {
     display: flex;
@@ -17,6 +18,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    cursor: pointer;
 }
 .mob-list__ul {
     display: none;
@@ -60,4 +62,32 @@
 }
 .mgeo__text {
     color: var(--color-red);
+}
+.mgeo-city__list {
+    padding-bottom: 0px;
+    gap: 20px;
+    flex-direction: column;
+    -webkit-transition: max-height 1s; 
+    -moz-transition: max-height 1s; 
+    -ms-transition: max-height 1s; 
+    -o-transition: max-height 1s; 
+    transition: max-height 1s;  
+    transition: padding-bottom 0.1s;  
+    overflow: hidden;
+    max-height: 0;
+}
+.mgeo-city__list--active {
+    max-height: 500px;
+    padding-bottom: 40px;
+    display: flex;
+}
+.mgeo-city__link {
+    color: var(--color-black);
+    transition: 0.3s;
+}
+.mgeo-city__link:visited {
+    color: var(--color-black);
+}
+.mgeo-city__link:hover {
+    opacity: 0.6;
 }
