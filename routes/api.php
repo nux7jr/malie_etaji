@@ -19,4 +19,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::group(['prefix' => 'houses'], function () {
     Route::post('/', [HousesCardsControllers::class, 'store']);
+
+    Route::get('/all', function (){
+        return \App\Content\main\HousesInfo::$card_elements->all();
+    });
+    Route::get('/{id}', function (int $id){
+        return \App\Content\main\HousesInfo::getItemById($id);
+    });
 });
