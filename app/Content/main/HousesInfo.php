@@ -2425,9 +2425,9 @@ class HousesInfo
    * @param int $id
    * @return Closure|null
    */
-  public static function getItemById(int $id): Closure|array
+  public static function getItemById(int $id): Closure|array|string
   {
-    return self::$card_elements->get($id);
+    return self::$card_elements->get($id)  ?? "{\"status\":\"error\",\"code\":\"404\",\"message\":\"house with id: $id undefined\"}";
   }
   /**
    * @param array $settings

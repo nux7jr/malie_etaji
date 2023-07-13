@@ -44,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-dd1d274f.css",
+    "file": "assets/app-60bace10.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -134,7 +134,7 @@
     "src": "resources/css/components/reels.css"
   },
   "resources/css/components/search.css": {
-    "file": "assets/search-c42ce534.js",
+    "file": "assets/search-4ed993c7.js",
     "isEntry": true,
     "src": "resources/css/components/search.css"
   },
@@ -189,7 +189,7 @@
     "src": "resources/css/pages/menu/menu.css"
   },
   "resources/css/pages/mortgage/mortgage.css": {
-    "file": "assets/mortgage-45879ed4.css",
+    "file": "assets/mortgage-8dd870d0.css",
     "isEntry": true,
     "src": "resources/css/pages/mortgage/mortgage.css"
   },
@@ -3529,7 +3529,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-17e76da5.js",
+    "file": "assets/app-7df7637a.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -3610,7 +3610,7 @@
     "src": "resources/js/components/reels.js"
   },
   "resources/js/components/search.js": {
-    "file": "assets/search-4ed993c7.js",
+    "file": "assets/search-c42ce534.js",
     "isEntry": true,
     "src": "resources/js/components/search.js"
   },
