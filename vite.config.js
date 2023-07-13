@@ -92,8 +92,6 @@ export default defineConfig({
 
                 "resources/js/pages/menu/menu.js",
                 "resources/css/pages/menu/menu.css",
-
-                "resources/js/general/barba.js",
             ],
             refresh: true,
         }),

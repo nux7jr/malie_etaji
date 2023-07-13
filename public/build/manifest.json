@@ -44,7 +44,7 @@
     "src": "public/maps/close.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-2c6bc41b.css",
+    "file": "assets/app-1636c90a.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -3529,7 +3529,7 @@
     "src": "resources/images/tech/sip.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-7df7637a.js",
+    "file": "assets/app-6f159a7f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -3627,13 +3627,8 @@
     "isEntry": true,
     "src": "resources/js/components/trusted.js"
   },
-  "resources/js/general/barba.js": {
-    "file": "assets/barba-4ed993c7.js",
-    "isEntry": true,
-    "src": "resources/js/general/barba.js"
-  },
   "resources/js/general/pageChange.js": {
-    "file": "assets/pageChange-609afce5.js",
+    "file": "assets/pageChange-dde9906b.js",
     "isEntry": true,
     "src": "resources/js/general/pageChange.js"
   },
