@@ -26,10 +26,10 @@
         Электронная почта: a.temerova@tiksan.ru</span>
     </div>
     <div class="smi__call">
-      <button class="default__button smi__button">Задать вопрос</button>
-      <button class="default__button smi__button">Заказать звонок</button>
-      <button class="default__button smi__button">Направить предложение</button>
-      <button class="default__button smi__button">Позвонить</button>
+      <button class="default__button smi__button" data-modal_id="modal__call">Задать вопрос</button>
+      <button class="default__button smi__button" data-modal_id="modal__income">Заказать звонок</button>
+      <button class="default__button smi__button" data-modal_id="modal__call">Направить предложение</button>
+      <button class="default__button smi__button" data-modal_id="modal__income">Позвонить</button>
     </div>
 
   </div>

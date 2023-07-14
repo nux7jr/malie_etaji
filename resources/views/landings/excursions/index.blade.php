@@ -198,11 +198,15 @@
                                 <h4>Экскурсия проводится каждую субботу, записаться можете в форме записи ниже</h4>
                             </div>
                             <form class="callback__form">
-                                <input class="callback__input" type="text" name="name" id="name" placeholder="Имя">
-                                <input class="callback__input" type="tel" name="phone" id="tel" placeholder="Телефон">
-                                <input class="callback__input callback__btn" type="submit" value="Записаться на просмотр" id="submit">
+                                <input type="hidden" name="subject" value="Записаться на групповую экскурсию">
+                                <input class="callback__input" type="text" name="name" id="name" placeholder="Имя" required>
+                                <input class="callback__input" type="tel" name="phone" id="tel" placeholder="Телефон" required>
+                                <button class="callback__btn" type="submit" id="submit">Записаться на просмотр</button>
                             </form>
                             <a class="callback__approval" href="/">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <span>обработку персональных данных</span></a>
+                        </div>
+                        <div class="callback__content-hidden">
+                            <h1 class="callback__heading">Спасибо за заявку, мы вам перезвоним</h1>
                         </div>
                     </div>
                 </section>
@@ -216,17 +220,19 @@
                     </a>
                     <p class="footer-info__paraf last-block">Федеральная строительная компания «Малые Этажи»</p>
                 </div>
-                <div class="footer__item footer-info footer-contact">
+                <div class="footer__item footer-info footer-contact footer-no-border">
                     <div class="footer-contact__block">
                         <h3 class="footer-contact__title footer__title">Контакты</h3>
                         <a class="footer-contact__link" href="tel:73912053444">+7 (391) 205-3-444</a>
                         <a class="footer-contact__link" href="https://yandex.ru/maps/62/krasnoyarsk/?from=mapframe&ll=92.921431%2C56.036889&mode=usermaps&source=mapframe&um=constructor%3Abdbfdb53bc5f7aa4ba9394ef3d92e9ac554c7d206019d7e87446bead86d16700&utm_source=mapframe&z=15">Главный офис: <br> Красноярск, ул. Октябрьская, 8а, <br> офис 208</a>
                         <a class="footer-contact__link" href="mailto:zakaz@malie-etaji.ru">zakaz@malie-etaji.ru</a>
                     </div>
+                </div>
+                <div class="footer__item footer-info footer-contact">
                     <div class="footer-contact__block footer-contact__img">
-                        <a href="/" target="_blank">
-                            <img src="/landings/excursions/images/map.jpg" alt="Map">
-                        </a>
+                        <div class="map-container-footer" id="map-container-footer">
+    
+                        </div>
                     </div>
                 </div>
                 <div class="footer__item footer-info">
@@ -259,32 +265,6 @@
                 </div>
             </div>
         </footer>
-        <div class="modal-callback" id="modal-callback">
-            <div class="modal-callback__wrapper">
-                <img src="/landings/excursions/images/close.svg" alt="Закрыть" id="modal-callback-close">
-                <div class="modal-callback__header"></div>
-                <div class="modal-callback__body">
-                    <div class="modal-callback__heading">
-                        <h2>Заказать звонок</h2>
-                        <h4>Наш менеджер свяжется с вами в ближайшее время</h4>
-                    </div>
-                    <form class="modal-callback__form">
-                        <div>
-                            <input class="callback__input" type="text" name="name_callback" id="name_callback" placeholder="Имя">
-                            <input class="callback__input" type="tel" name="tel_callback" id="tel_callback" placeholder="Номер телефона">
-                            <input class="callback__input callback__btn" type="submit" value="Отправить" id="submit_callback">
-                        </div>
-                        <a class="callback__approval" href="/">Нажимая кнопку «Отправить», вы подтверждаете свое согласие на <span>обработку персональных данных</span></a>
-                    </form>
-                </div>
-                <div class="modal-callback__thanks">
-                    <div class="modal-callback__heading">
-                        <h2>Скоро наш менеджер свяжется с вами</h2>
-                        <h4>Закройте форму, чтобы продолжить просмотр сайта</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <script src="/landings/excursions/js/jquery-3.5.1.js"></script>
         <script src="/landings/excursions/js/swiper-bundle.min.js"></script>
