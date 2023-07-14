@@ -440,7 +440,6 @@
     height: 384px;
 }
 .photo-gallery__img {
-    /* width: 418px; */
     height: 288px;
 
     background-color: var(--color-grayest);
@@ -552,6 +551,7 @@
     top: calc(50% - 23px);
     left: calc(50% - 23px);
 }
+
 @media (max-width: 1690px) {
     .stable {
         flex-wrap: wrap;

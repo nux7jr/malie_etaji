@@ -14,7 +14,6 @@ const unreal = new Swiper(".unreal-swiper", {
         el: ".unreal-pagination",
         clickable: true,
     },
-    // initialSlide: 2,
     loop: true,
     navigation: {
         nextEl: ".unreal-next",

@@ -39,6 +39,8 @@ export default defineConfig({
                 "resources/js/pages/contacts/contacts.js",
                 "resources/css/pages/contacts/contacts.css",
 
+                "resources/css/pages/excursions/excursions.css",
+                "resources/js/pages/excursions/excursions.js",
                 // js components
                 "resources/js/components/feedback.js",
                 "resources/js/components/project-item.js",
@@ -50,6 +52,7 @@ export default defineConfig({
                 "resources/js/components/mob-menu.js",
                 "resources/css/components/mob-menu.css",
                 // for components
+
 
                 "resources/css/components/office-map.css",
                 "resources/js/components/office-map.js",

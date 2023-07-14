@@ -27,15 +27,15 @@
             </div>
         </div>
         <div class="user__option">
-            {{-- <button class="heading-info__button search">
+            {{-- <button class="heading-info__button search" data-modal_id="modal__search">
                 <img class="search__img" src="{{ Vite::asset('resources/images/icons/search.svg') }}"
                     alt="{{ __('Поиск') }}">
                 {{ __('Поиск') }}
-            </button>
+            </button> --}}
             <button class="heading-info__button login">
                 <img src="{{ Vite::asset('resources/images/icons/person.svg') }}" alt="{{ __('Войти') }}">
                 {{ __('Войти') }}
-            </button> --}}
+            </button>
         </div>
     </div>
 </section>
@@ -117,7 +117,7 @@
                 <a title="{{ __('О нас') }}" class="header__button header__link" href="/about">
                     {{ __('О нас') }}
                 </a>
-                <a title="{{ __('Карьера') }}" class="header__button header__link"
+                <a title="{{ __('Карьера') }}" class="header__button header__link" target="_blank"
                     href="https://krasnoyarsk.hh.ru/employer/895977">
                     {{ __('Карьера') }}
                 </a>

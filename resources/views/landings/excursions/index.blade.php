@@ -238,7 +238,7 @@
                 <div class="footer__item footer-info">
                     <h3 class="footer-contact__title footer__title">Также вы можете записаться по телефону или в WhatsApp</h3>
                     <a class="footer-contact__link" href="tel:79915437635">+7 (991) 543-76-35</a>
-                    <button class="default__button footer-info__button"><img class="call__img" src="/landings/excursions/images/whatsapp.svg" alt="Запись в WhatsApp">Запись в WhatsApp</button>
+                    <button class="default__button footer-info__button"><img class="call__img" src="/landings/excursions/images/whatsapp-second.svg" alt="Запись в WhatsApp">Запись в WhatsApp</button>
                 </div>
                 <div class="footer__item footer-info">
                     <h3 class="footer-info__title footer__title">Соцсети</h3>
@@ -249,7 +249,7 @@
                         <a class="social__link" href="/" target="_blank" rel="noopener noreferrer">
                             <img class="social__img" src="/landings/excursions/images/telegram.svg" alt="Telegram">
                         </a>
-                        <a class="social__link" href="/" target="_blank" rel="noopener noreferrer">
+                        <a class="social__link" href="https://vk.com/malie_etaji" target="_blank" rel="noopener noreferrer">
                             <img class="social__img" src="/landings/excursions/images/vk.svg" alt="VK">
                         </a>
                     </div>
